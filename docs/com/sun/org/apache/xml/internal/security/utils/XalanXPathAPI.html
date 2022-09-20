@@ -208,11 +208,11 @@
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre>    private static java.util.logging.Logger log =</pre></td>
+<td><pre>    private static final com.sun.org.slf4j.internal.Logger LOG =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
-<td><pre>        java.util.logging.Logger.getLogger(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/utils/XalanXPathAPI.html#linenum49">XalanXPathAPI</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum630">getName</a>());</pre></td>
+<td><pre>        com.sun.org.slf4j.internal.LoggerFactory.getLogger(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/utils/XalanXPathAPI.html#linenum49">XalanXPathAPI</a>.class);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
@@ -220,7 +220,7 @@
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> xpathStr = null;</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> xpathStr;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
@@ -228,7 +228,7 @@
 </tr>
 <tr>
 <td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
-<td><pre>    private XPath xpath = null;</pre></td>
+<td><pre>    private XPath xpath;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
@@ -236,7 +236,7 @@
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre>    private static FunctionTable funcTable = null;</pre></td>
+<td><pre>    private static FunctionTable funcTable;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
@@ -264,7 +264,7 @@
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/utils/XalanXPathAPI.html#linenum168">fixupFunctionTable</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/utils/XalanXPathAPI.html#linenum166">fixupFunctionTable</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
@@ -460,7 +460,7 @@
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre>    public synchronized static boolean isInstalled() {</pre></td>
+<td><pre>    public static synchronized boolean isInstalled() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
@@ -540,11 +540,11 @@
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>        if (!<a class="variable" href="#linenum118">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum964">equals</a>(<a class="variable" href="#linenum54">xpathStr</a>)) {</pre></td>
+<td><pre>        if (!<a class="variable" href="#linenum118">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum976">equals</a>(<a class="variable" href="#linenum54">xpathStr</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum118">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1740">indexOf</a>(<span class='string'>&quot;here()&quot;</span>) &gt; 0) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum118">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1502">indexOf</a>(<span class='string'>&quot;here()&quot;</span>) &gt; 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
@@ -616,7 +616,7 @@
 </tr>
 <tr>
 <td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
-<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[]{<a class="variable" href="#linenum148">str</a>, null, <a class="variable" href="#linenum148">prefixResolver</a>, Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum829">valueOf</a>(XPath.SELECT), null, <a class="variable" href="#linenum58">funcTable</a>};</pre></td>
+<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[]{<a class="variable" href="#linenum148">str</a>, null, <a class="variable" href="#linenum148">prefixResolver</a>, XPath.SELECT, null, <a class="variable" href="#linenum58">funcTable</a>};</pre></td>
 </tr>
 <tr>
 <td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
@@ -624,7 +624,7 @@
 </tr>
 <tr>
 <td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Constructor.html#linenum60">Constructor</a>&lt;?&gt; constructor = XPath.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum1808">getConstructor</a>(<a class="variable" href="#linenum150">classes</a>);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Constructor.html#linenum60">Constructor</a>&lt;?&gt; constructor = XPath.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum1821">getConstructor</a>(<a class="variable" href="#linenum150">classes</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
@@ -636,214 +636,182 @@
 </tr>
 <tr>
 <td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum51">log</a>.isLoggable(java.util.logging.Level.FINE)) {</pre></td>
+<td><pre>            <a class="variable" href="#linenum51">LOG</a>.debug(ex.getMessage(), ex);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
-<td><pre>                <a class="variable" href="#linenum51">log</a>.log(java.util.logging.Level.FINE, ex.getMessage(), ex);</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre>            }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
 <td><pre>        if (<a class="variable" href="#linenum149">xpath</a> == null) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
+<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
 <td><pre>            <a class="variable" href="#linenum149">xpath</a> = new XPath(<a class="variable" href="#linenum148">str</a>, null, <a class="variable" href="#linenum148">prefixResolver</a>, XPath.SELECT, null);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
+<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
+<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
 <td><pre>        return <a class="variable" href="#linenum149">xpath</a>;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
+<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
 <td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
+<td><pre>    private static synchronized void fixupFunctionTable() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
-<td><pre>    private synchronized static void fixupFunctionTable() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
 <td><pre>        <a class="variable" href="#linenum60">installed</a> = false;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum51">log</a>.isLoggable(java.util.logging.Level.FINE)) {</pre></td>
+<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
+<td><pre>        <a class="variable" href="#linenum51">LOG</a>.debug(<span class='string'>&quot;Registering Here function&quot;</span>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre>            <a class="variable" href="#linenum51">log</a>.log(java.util.logging.Level.FINE, <span class='string'>&quot;Registering Here function&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
+<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
 <td><pre>        <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
+<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
 <td><pre><span class='comment'>         * Try to register our here() implementation as internal function.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
+<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
 <td><pre>         */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
+<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
 <td><pre>        try {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
+<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
 <td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;[] args = {<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>.class, Expression.class};</pre></td>
 </tr>
 <tr>
-<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> installFunction = FunctionTable.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum1767">getMethod</a>(<span class='string'>&quot;installFunction&quot;</span>, <a class="variable" href="#linenum177">args</a>);</pre></td>
+<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> installFunction = FunctionTable.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum1780">getMethod</a>(<span class='string'>&quot;installFunction&quot;</span>, <a class="variable" href="#linenum173">args</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
-<td><pre>            if ((<a class="variable" href="#linenum178">installFunction</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum186">getModifiers</a>() &amp; Modifier.STATIC) != 0) {</pre></td>
+<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
+<td><pre>            if ((<a class="variable" href="#linenum174">installFunction</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum200">getModifiers</a>() &amp; Modifier.STATIC) != 0) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
+<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
 <td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] params = {<span class='string'>&quot;here&quot;</span>, new <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/transforms/implementations/FuncHere.html#linenum56">FuncHere</a>()};</pre></td>
 </tr>
 <tr>
-<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
-<td><pre>                <a class="variable" href="#linenum178">installFunction</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum468">invoke</a>(null, <a class="variable" href="#linenum180">params</a>);</pre></td>
+<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
+<td><pre>                <a class="variable" href="#linenum174">installFunction</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum483">invoke</a>(null, <a class="variable" href="#linenum176">params</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
+<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
 <td><pre>                <a class="variable" href="#linenum60">installed</a> = true;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
+<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
 <td><pre>            }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
+<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
 <td><pre>        } catch (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Exception.html#linenum45">Exception</a> ex) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
-<td><pre>            <a class="variable" href="#linenum51">log</a>.log(java.util.logging.Level.FINE, <span class='string'>&quot;Error installing function using the static installFunction method&quot;</span>, <a class="variable" href="#linenum157">ex</a>);</pre></td>
+<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
+<td><pre>            <a class="variable" href="#linenum51">LOG</a>.debug(<span class='string'>&quot;Error installing function using the static installFunction method&quot;</span>, <a class="variable" href="#linenum157">ex</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
+<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
+<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
 <td><pre>        if (!<a class="variable" href="#linenum60">installed</a>) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
+<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
 <td><pre>            try {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
+<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
 <td><pre>                <a class="variable" href="#linenum58">funcTable</a> = new FunctionTable();</pre></td>
 </tr>
 <tr>
-<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
+<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
 <td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;[] args = {<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>.class, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>.class};</pre></td>
 </tr>
 <tr>
-<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> installFunction = FunctionTable.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum1767">getMethod</a>(<span class='string'>&quot;installFunction&quot;</span>, <a class="variable" href="#linenum190">args</a>);</pre></td>
+<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> installFunction = FunctionTable.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum1780">getMethod</a>(<span class='string'>&quot;installFunction&quot;</span>, <a class="variable" href="#linenum186">args</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
+<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
 <td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] params = {<span class='string'>&quot;here&quot;</span>, <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/transforms/implementations/FuncHere.html#linenum56">FuncHere</a>.class};</pre></td>
 </tr>
 <tr>
-<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
-<td><pre>                <a class="variable" href="#linenum191">installFunction</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum468">invoke</a>(<a class="variable" href="#linenum58">funcTable</a>, <a class="variable" href="#linenum192">params</a>);</pre></td>
+<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
+<td><pre>                <a class="variable" href="#linenum187">installFunction</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum483">invoke</a>(<a class="variable" href="#linenum58">funcTable</a>, <a class="variable" href="#linenum188">params</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
+<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
 <td><pre>                <a class="variable" href="#linenum60">installed</a> = true;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
+<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
 <td><pre>            } catch (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Exception.html#linenum45">Exception</a> ex) {</pre></td>
 </tr>
 <tr>
+<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
+<td><pre>                <a class="variable" href="#linenum51">LOG</a>.debug(<span class='string'>&quot;Error installing function using the static installFunction method&quot;</span>, <a class="variable" href="#linenum180">ex</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum60">installed</a>) {</pre></td>
+</tr>
+<tr>
 <td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
-<td><pre>                <a class="variable" href="#linenum51">log</a>.log(java.util.logging.Level.FINE, <span class='string'>&quot;Error installing function using the static installFunction method&quot;</span>, <a class="variable" href="#linenum184">ex</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum51">LOG</a>.debug(<span class='string'>&quot;Registered class {} for XPath function 'here()' function in internal table&quot;</span>, <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/transforms/implementations/FuncHere.html#linenum56">FuncHere</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum639">getName</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
-<td><pre>            }</pre></td>
+<td><pre>        } else {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            <a class="variable" href="#linenum51">LOG</a>.debug(<span class='string'>&quot;Unable to register class {} for XPath function 'here()' function in internal table&quot;</span>, <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/transforms/implementations/FuncHere.html#linenum56">FuncHere</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum639">getName</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum51">log</a>.isLoggable(java.util.logging.Level.FINE)) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum60">installed</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
-<td><pre>                <a class="variable" href="#linenum51">log</a>.log(java.util.logging.Level.FINE, <span class='string'>&quot;Registered class &quot;</span> + <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/transforms/implementations/FuncHere.html#linenum56">FuncHere</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum630">getName</a>()</pre></td>
-</tr>
-<tr>
-<td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
-<td><pre>                          + <span class='string'>&quot; for XPath function 'here()' function in internal table&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>            } else {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
-<td><pre>                <a class="variable" href="#linenum51">log</a>.log(java.util.logging.Level.FINE, <span class='string'>&quot;Unable to register class &quot;</span> + <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/transforms/implementations/FuncHere.html#linenum56">FuncHere</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum630">getName</a>()</pre></td>
-</tr>
-<tr>
-<td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
-<td><pre>                          + <span class='string'>&quot; for XPath function 'here()' function in internal table&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
-<td><pre>            }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
+<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
+<td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
+<td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

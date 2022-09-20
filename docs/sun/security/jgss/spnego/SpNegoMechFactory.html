@@ -216,7 +216,7 @@
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
-<td><pre>        GSSUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSUtil.html#linenum89">createOid</a>(<span class='string'>&quot;1.3.6.1.5.5.2&quot;</span>);</pre></td>
+<td><pre>        GSSUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSUtil.html#linenum91">createOid</a>(<span class='string'>&quot;1.3.6.1.5.5.2&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
@@ -300,11 +300,11 @@
 </tr>
 <tr>
 <td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/spnego/SpNegoCredElement.html#linenum43">SpNegoCredElement</a>&gt; creds =</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/spnego/SpNegoCredElement.html#linenum43">SpNegoCredElement</a>&gt; creds =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
-<td><pre>            GSSUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSUtil.html#linenum319">searchSubject</a>(<a class="variable" href="#linenum71">name</a>, <a class="variable" href="#linenum52">GSS_SPNEGO_MECH_OID</a>,</pre></td>
+<td><pre>            GSSUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSUtil.html#linenum315">searchSubject</a>(<a class="variable" href="#linenum71">name</a>, <a class="variable" href="#linenum52">GSS_SPNEGO_MECH_OID</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
@@ -340,7 +340,7 @@
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre>            if (GSSUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSUtil.html#linenum102">isKerberosMech</a>(<a class="variable" href="#linenum83">cred</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/spi/GSSCredentialSpi.html#linenum98">getMechanism</a>())) {</pre></td>
+<td><pre>            if (GSSUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSUtil.html#linenum104">isKerberosMech</a>(<a class="variable" href="#linenum83">cred</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/spi/GSSCredentialSpi.html#linenum98">getMechanism</a>())) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
@@ -352,11 +352,11 @@
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre>                    Krb5MechFactory.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5MechFactory.html#linenum138">checkInitCredPermission</a></pre></td>
+<td><pre>                    Krb5MechFactory.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5MechFactory.html#linenum140">checkInitCredPermission</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
-<td><pre>                        ((<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5NameElement.html#linenum43">Krb5NameElement</a>) <a class="variable" href="#linenum86">krbCred</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5InitCredential.html#linenum226">getName</a>());</pre></td>
+<td><pre>                        ((<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5NameElement.html#linenum46">Krb5NameElement</a>) <a class="variable" href="#linenum86">krbCred</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5InitCredential.html#linenum266">getName</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
@@ -368,11 +368,11 @@
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>                    Krb5MechFactory.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5MechFactory.html#linenum158">checkAcceptCredPermission</a></pre></td>
+<td><pre>                    Krb5MechFactory.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5MechFactory.html#linenum160">checkAcceptCredPermission</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>                        ((<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5NameElement.html#linenum43">Krb5NameElement</a>) <a class="variable" href="#linenum90">krbCred</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5AcceptCredential.html#linenum108">getName</a>(), <a class="variable" href="#linenum71">name</a>);</pre></td>
+<td><pre>                        ((<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5NameElement.html#linenum46">Krb5NameElement</a>) <a class="variable" href="#linenum90">krbCred</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5AcceptCredential.html#linenum108">getName</a>(), <a class="variable" href="#linenum71">name</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>

@@ -364,15 +364,15 @@
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum104">MessageDigest</a> md = sun.security.provider.MD4.getInstance();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum109">MessageDigest</a> md = sun.security.provider.MD4.getInstance();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>            <a class="variable" href="#linenum90">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum337">update</a>(<a class="variable" href="#linenum83">passwd</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum90">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum305">update</a>(<a class="variable" href="#linenum83">passwd</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>            <a class="variable" href="#linenum84">digest</a> = <a class="variable" href="#linenum90">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum397">digest</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum84">digest</a> = <a class="variable" href="#linenum90">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum366">digest</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
@@ -392,7 +392,7 @@
 </tr>
 <tr>
 <td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
-<td><pre>                Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3146">fill</a>(<a class="variable" href="#linenum83">passwd</a>, (byte)0);</pre></td>
+<td><pre>                Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2845">fill</a>(<a class="variable" href="#linenum83">passwd</a>, (byte)0);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
@@ -420,7 +420,7 @@
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum165">Cipher</a> getCipher(byte[] key, byte[] ivec, int mode)</pre></td>
+<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum164">Cipher</a> getCipher(byte[] key, byte[] ivec, int mode)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
@@ -448,11 +448,11 @@
 </tr>
 <tr>
 <td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a>(<a class="variable" href="#linenum104">key</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a>(<a class="variable" href="#linenum104">key</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum165">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum627">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum164">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum503">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
@@ -460,7 +460,7 @@
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre>        <a class="variable" href="#linenum112">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1647">init</a>(<a class="variable" href="#linenum104">mode</a>, <a class="variable" href="#linenum111">secretKey</a>, <a class="variable" href="#linenum113">encIv</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum112">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1688">init</a>(<a class="variable" href="#linenum104">mode</a>, <a class="variable" href="#linenum111">secretKey</a>, <a class="variable" href="#linenum113">encIv</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
@@ -516,15 +516,15 @@
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/SecretKey.html#linenum60">SecretKey</a> keyKi = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a>(<a class="variable" href="#linenum125">key</a>, <span class='string'>&quot;HmacMD5&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/SecretKey.html#linenum60">SecretKey</a> keyKi = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a>(<a class="variable" href="#linenum125">key</a>, <span class='string'>&quot;HmacMD5&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum75">Mac</a> m = Mac.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum249">getInstance</a>(<span class='string'>&quot;HmacMD5&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum75">Mac</a> m = Mac.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum169">getInstance</a>(<span class='string'>&quot;HmacMD5&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
-<td><pre>        <a class="variable" href="#linenum129">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum430">init</a>(<a class="variable" href="#linenum128">keyKi</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum129">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum440">init</a>(<a class="variable" href="#linenum128">keyKi</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
@@ -536,7 +536,7 @@
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>        byte[] hash = <a class="variable" href="#linenum129">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum614">doFinal</a>(<a class="variable" href="#linenum125">msg</a>);</pre></td>
+<td><pre>        byte[] hash = <a class="variable" href="#linenum129">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum629">doFinal</a>(<a class="variable" href="#linenum125">msg</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
@@ -596,7 +596,7 @@
 </tr>
 <tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum60">isValid</a>(<a class="variable" href="#linenum140">usage</a>)) {</pre></td>
+<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum61">isValid</a>(<a class="variable" href="#linenum140">usage</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
@@ -628,7 +628,7 @@
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre>           byte[] ss = <span class='string'>&quot;signaturekey&quot;</span>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum945">getBytes</a>();</pre></td>
+<td><pre>           byte[] ss = <span class='string'>&quot;signaturekey&quot;</span>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum957">getBytes</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
@@ -640,7 +640,7 @@
 </tr>
 <tr>
 <td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
-<td><pre>           System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum156">ss</a>, 0, <a class="variable" href="#linenum158">new_ss</a>, 0, <a class="variable" href="#linenum156">ss</a>.length);</pre></td>
+<td><pre>           System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum156">ss</a>, 0, <a class="variable" href="#linenum158">new_ss</a>, 0, <a class="variable" href="#linenum156">ss</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
@@ -660,7 +660,7 @@
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre>            <a class="variable" href="#linenum162">gse</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum454">initCause</a>(<a class="variable" href="#linenum93">e</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum162">gse</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum455">initCause</a>(<a class="variable" href="#linenum93">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
@@ -692,7 +692,7 @@
 </tr>
 <tr>
 <td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum104">MessageDigest</a> messageDigest = null;</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum109">MessageDigest</a> messageDigest = null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
@@ -700,7 +700,7 @@
 </tr>
 <tr>
 <td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
-<td><pre>            <a class="variable" href="#linenum172">messageDigest</a> = MessageDigest.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum257">getInstance</a>(<span class='string'>&quot;MD5&quot;</span>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum172">messageDigest</a> = MessageDigest.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum166">getInstance</a>(<span class='string'>&quot;MD5&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
@@ -716,7 +716,7 @@
 </tr>
 <tr>
 <td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
-<td><pre>            <a class="variable" href="#linenum176">gse</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum454">initCause</a>(<a class="variable" href="#linenum161">e</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum176">gse</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum455">initCause</a>(<a class="variable" href="#linenum161">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
@@ -728,15 +728,15 @@
 </tr>
 <tr>
 <td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
-<td><pre>        <a class="variable" href="#linenum172">messageDigest</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum337">update</a>(<a class="variable" href="#linenum169">salt</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum172">messageDigest</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum305">update</a>(<a class="variable" href="#linenum169">salt</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
-<td><pre>        <a class="variable" href="#linenum172">messageDigest</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum337">update</a>(<a class="variable" href="#linenum140">input</a>, <a class="variable" href="#linenum141">start</a>, <a class="variable" href="#linenum141">len</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum172">messageDigest</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum321">update</a>(<a class="variable" href="#linenum140">input</a>, <a class="variable" href="#linenum141">start</a>, <a class="variable" href="#linenum141">len</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
-<td><pre>        byte[] md5tmp = <a class="variable" href="#linenum172">messageDigest</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum397">digest</a>();</pre></td>
+<td><pre>        byte[] md5tmp = <a class="variable" href="#linenum172">messageDigest</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum366">digest</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
@@ -780,7 +780,7 @@
 </tr>
 <tr>
 <td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
-<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum186">hmac</a>, 0, <a class="variable" href="#linenum193">buf</a>, 0, <a class="variable" href="#linenum193">buf</a>.length);</pre></td>
+<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum186">hmac</a>, 0, <a class="variable" href="#linenum193">buf</a>, 0, <a class="variable" href="#linenum193">buf</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
@@ -840,7 +840,7 @@
 </tr>
 <tr>
 <td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
-<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum60">isValid</a>(<a class="variable" href="#linenum205">usage</a>)) {</pre></td>
+<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum61">isValid</a>(<a class="variable" href="#linenum205">usage</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
@@ -884,19 +884,19 @@
 </tr>
 <tr>
 <td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum165">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum627">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum164">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum503">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a>(<a class="variable" href="#linenum215">kSeq</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a>(<a class="variable" href="#linenum215">kSeq</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum222" class="linenum-cell" data-linenum="222" href="#linenum222"></a></td>
-<td><pre>        <a class="variable" href="#linenum220">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1647">init</a>(Cipher.ENCRYPT_MODE, <a class="variable" href="#linenum221">secretKey</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum220">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1688">init</a>(Cipher.ENCRYPT_MODE, <a class="variable" href="#linenum221">secretKey</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum223" class="linenum-cell" data-linenum="223" href="#linenum223"></a></td>
-<td><pre>        byte[] output = <a class="variable" href="#linenum220">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum2399">doFinal</a>(<a class="variable" href="#linenum206">plaintext</a>, <a class="variable" href="#linenum206">start</a>, <a class="variable" href="#linenum206">len</a>);</pre></td>
+<td><pre>        byte[] output = <a class="variable" href="#linenum220">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum2215">doFinal</a>(<a class="variable" href="#linenum206">plaintext</a>, <a class="variable" href="#linenum206">start</a>, <a class="variable" href="#linenum206">len</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum224" class="linenum-cell" data-linenum="224" href="#linenum224"></a></td>
@@ -944,7 +944,7 @@
 </tr>
 <tr>
 <td><a id="linenum235" class="linenum-cell" data-linenum="235" href="#linenum235"></a></td>
-<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum60">isValid</a>(<a class="variable" href="#linenum231">usage</a>)) {</pre></td>
+<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum61">isValid</a>(<a class="variable" href="#linenum231">usage</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum236" class="linenum-cell" data-linenum="236" href="#linenum236"></a></td>
@@ -992,19 +992,19 @@
 </tr>
 <tr>
 <td><a id="linenum247" class="linenum-cell" data-linenum="247" href="#linenum247"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum165">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum627">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum164">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum503">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum248" class="linenum-cell" data-linenum="248" href="#linenum248"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a>(<a class="variable" href="#linenum242">kSeq</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a>(<a class="variable" href="#linenum242">kSeq</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum249" class="linenum-cell" data-linenum="249" href="#linenum249"></a></td>
-<td><pre>        <a class="variable" href="#linenum247">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1647">init</a>(Cipher.DECRYPT_MODE, <a class="variable" href="#linenum248">secretKey</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum247">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1688">init</a>(Cipher.DECRYPT_MODE, <a class="variable" href="#linenum248">secretKey</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum250" class="linenum-cell" data-linenum="250" href="#linenum250"></a></td>
-<td><pre>        byte[] output = <a class="variable" href="#linenum247">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum2399">doFinal</a>(<a class="variable" href="#linenum232">ciphertext</a>, <a class="variable" href="#linenum232">start</a>, <a class="variable" href="#linenum232">len</a>);</pre></td>
+<td><pre>        byte[] output = <a class="variable" href="#linenum247">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum2215">doFinal</a>(<a class="variable" href="#linenum232">ciphertext</a>, <a class="variable" href="#linenum232">start</a>, <a class="variable" href="#linenum232">len</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum251" class="linenum-cell" data-linenum="251" href="#linenum251"></a></td>
@@ -1052,7 +1052,7 @@
 </tr>
 <tr>
 <td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
-<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum60">isValid</a>(<a class="variable" href="#linenum258">usage</a>)) {</pre></td>
+<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum61">isValid</a>(<a class="variable" href="#linenum258">usage</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum263" class="linenum-cell" data-linenum="263" href="#linenum263"></a></td>
@@ -1112,11 +1112,11 @@
 </tr>
 <tr>
 <td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum272">confounder</a>, 0, <a class="variable" href="#linenum276">toBeEncrypted</a>, 0, <a class="variable" href="#linenum272">confounder</a>.length);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum272">confounder</a>, 0, <a class="variable" href="#linenum276">toBeEncrypted</a>, 0, <a class="variable" href="#linenum272">confounder</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum259">plaintext</a>, <a class="variable" href="#linenum259">start</a>, <a class="variable" href="#linenum276">toBeEncrypted</a>,</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum259">plaintext</a>, <a class="variable" href="#linenum259">start</a>, <a class="variable" href="#linenum276">toBeEncrypted</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
@@ -1136,7 +1136,7 @@
 </tr>
 <tr>
 <td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum258">baseKey</a>, 0, <a class="variable" href="#linenum282">k1</a>, 0, <a class="variable" href="#linenum258">baseKey</a>.length);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum258">baseKey</a>, 0, <a class="variable" href="#linenum282">k1</a>, 0, <a class="variable" href="#linenum258">baseKey</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
@@ -1192,19 +1192,19 @@
 </tr>
 <tr>
 <td><a id="linenum297" class="linenum-cell" data-linenum="297" href="#linenum297"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum165">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum627">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum164">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum503">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum298" class="linenum-cell" data-linenum="298" href="#linenum298"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a>(<a class="variable" href="#linenum295">k3</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a>(<a class="variable" href="#linenum295">k3</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum299" class="linenum-cell" data-linenum="299" href="#linenum299"></a></td>
-<td><pre>        <a class="variable" href="#linenum297">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1647">init</a>(Cipher.ENCRYPT_MODE, <a class="variable" href="#linenum298">secretKey</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum297">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1688">init</a>(Cipher.ENCRYPT_MODE, <a class="variable" href="#linenum298">secretKey</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum300" class="linenum-cell" data-linenum="300" href="#linenum300"></a></td>
-<td><pre>        byte[] output = <a class="variable" href="#linenum297">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum2399">doFinal</a>(<a class="variable" href="#linenum276">toBeEncrypted</a>, 0, <a class="variable" href="#linenum276">toBeEncrypted</a>.length);</pre></td>
+<td><pre>        byte[] output = <a class="variable" href="#linenum297">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum2215">doFinal</a>(<a class="variable" href="#linenum276">toBeEncrypted</a>, 0, <a class="variable" href="#linenum276">toBeEncrypted</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum301" class="linenum-cell" data-linenum="301" href="#linenum301"></a></td>
@@ -1220,11 +1220,11 @@
 </tr>
 <tr>
 <td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum292">checksum</a>, 0, <a class="variable" href="#linenum303">result</a>, 0, <a class="variable" href="#linenum51">hashSize</a>);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum292">checksum</a>, 0, <a class="variable" href="#linenum303">result</a>, 0, <a class="variable" href="#linenum51">hashSize</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum305" class="linenum-cell" data-linenum="305" href="#linenum305"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum300">output</a>, 0, <a class="variable" href="#linenum303">result</a>, <a class="variable" href="#linenum51">hashSize</a>, <a class="variable" href="#linenum300">output</a>.length);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum300">output</a>, 0, <a class="variable" href="#linenum303">result</a>, <a class="variable" href="#linenum51">hashSize</a>, <a class="variable" href="#linenum300">output</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum306" class="linenum-cell" data-linenum="306" href="#linenum306"></a></td>
@@ -1272,7 +1272,7 @@
 </tr>
 <tr>
 <td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
-<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum60">isValid</a>(<a class="variable" href="#linenum313">usage</a>)) {</pre></td>
+<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum61">isValid</a>(<a class="variable" href="#linenum313">usage</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum318" class="linenum-cell" data-linenum="318" href="#linenum318"></a></td>
@@ -1368,19 +1368,19 @@
 </tr>
 <tr>
 <td><a id="linenum341" class="linenum-cell" data-linenum="341" href="#linenum341"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum165">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum627">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum164">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum503">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum342" class="linenum-cell" data-linenum="342" href="#linenum342"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a>(<a class="variable" href="#linenum333">kcrypt</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a>(<a class="variable" href="#linenum333">kcrypt</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum343" class="linenum-cell" data-linenum="343" href="#linenum343"></a></td>
-<td><pre>        <a class="variable" href="#linenum341">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1647">init</a>(Cipher.ENCRYPT_MODE, <a class="variable" href="#linenum342">secretKey</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum341">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1688">init</a>(Cipher.ENCRYPT_MODE, <a class="variable" href="#linenum342">secretKey</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum344" class="linenum-cell" data-linenum="344" href="#linenum344"></a></td>
-<td><pre>        byte[] output = <a class="variable" href="#linenum341">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum2399">doFinal</a>(<a class="variable" href="#linenum314">plaintext</a>, <a class="variable" href="#linenum314">start</a>, <a class="variable" href="#linenum314">len</a>);</pre></td>
+<td><pre>        byte[] output = <a class="variable" href="#linenum341">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum2215">doFinal</a>(<a class="variable" href="#linenum314">plaintext</a>, <a class="variable" href="#linenum314">start</a>, <a class="variable" href="#linenum314">len</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum345" class="linenum-cell" data-linenum="345" href="#linenum345"></a></td>
@@ -1432,7 +1432,7 @@
 </tr>
 <tr>
 <td><a id="linenum357" class="linenum-cell" data-linenum="357" href="#linenum357"></a></td>
-<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum60">isValid</a>(<a class="variable" href="#linenum353">usage</a>)) {</pre></td>
+<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum61">isValid</a>(<a class="variable" href="#linenum353">usage</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum358" class="linenum-cell" data-linenum="358" href="#linenum358"></a></td>
@@ -1472,7 +1472,7 @@
 </tr>
 <tr>
 <td><a id="linenum367" class="linenum-cell" data-linenum="367" href="#linenum367"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum353">baseKey</a>, 0, <a class="variable" href="#linenum366">k1</a>, 0, <a class="variable" href="#linenum353">baseKey</a>.length);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum353">baseKey</a>, 0, <a class="variable" href="#linenum366">k1</a>, 0, <a class="variable" href="#linenum353">baseKey</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum368" class="linenum-cell" data-linenum="368" href="#linenum368"></a></td>
@@ -1512,7 +1512,7 @@
 </tr>
 <tr>
 <td><a id="linenum377" class="linenum-cell" data-linenum="377" href="#linenum377"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum354">ciphertext</a>, <a class="variable" href="#linenum354">start</a>, <a class="variable" href="#linenum376">checksum</a>, 0, <a class="variable" href="#linenum51">hashSize</a>);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum354">ciphertext</a>, <a class="variable" href="#linenum354">start</a>, <a class="variable" href="#linenum376">checksum</a>, 0, <a class="variable" href="#linenum51">hashSize</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum378" class="linenum-cell" data-linenum="378" href="#linenum378"></a></td>
@@ -1528,19 +1528,19 @@
 </tr>
 <tr>
 <td><a id="linenum381" class="linenum-cell" data-linenum="381" href="#linenum381"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum165">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum627">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum164">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum503">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum382" class="linenum-cell" data-linenum="382" href="#linenum382"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a>(<a class="variable" href="#linenum378">k3</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a>(<a class="variable" href="#linenum378">k3</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum383" class="linenum-cell" data-linenum="383" href="#linenum383"></a></td>
-<td><pre>        <a class="variable" href="#linenum381">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1647">init</a>(Cipher.DECRYPT_MODE, <a class="variable" href="#linenum382">secretKey</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum381">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1688">init</a>(Cipher.DECRYPT_MODE, <a class="variable" href="#linenum382">secretKey</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum384" class="linenum-cell" data-linenum="384" href="#linenum384"></a></td>
-<td><pre>        byte[] plaintext = <a class="variable" href="#linenum381">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum2399">doFinal</a>(<a class="variable" href="#linenum354">ciphertext</a>, <a class="variable" href="#linenum354">start</a>+<a class="variable" href="#linenum51">hashSize</a>,</pre></td>
+<td><pre>        byte[] plaintext = <a class="variable" href="#linenum381">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum2215">doFinal</a>(<a class="variable" href="#linenum354">ciphertext</a>, <a class="variable" href="#linenum354">start</a>+<a class="variable" href="#linenum51">hashSize</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum385" class="linenum-cell" data-linenum="385" href="#linenum385"></a></td>
@@ -1660,7 +1660,7 @@
 </tr>
 <tr>
 <td><a id="linenum414" class="linenum-cell" data-linenum="414" href="#linenum414"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum384">plaintext</a>, <a class="variable" href="#linenum49">confounderSize</a>, <a class="variable" href="#linenum413">output</a>, 0, <a class="variable" href="#linenum413">output</a>.length);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum384">plaintext</a>, <a class="variable" href="#linenum49">confounderSize</a>, <a class="variable" href="#linenum413">output</a>, 0, <a class="variable" href="#linenum413">output</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum415" class="linenum-cell" data-linenum="415" href="#linenum415"></a></td>
@@ -1720,7 +1720,7 @@
 </tr>
 <tr>
 <td><a id="linenum429" class="linenum-cell" data-linenum="429" href="#linenum429"></a></td>
-<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum60">isValid</a>(<a class="variable" href="#linenum425">usage</a>)) {</pre></td>
+<td><pre>        if (!KeyUsage.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/crypto/KeyUsage.html#linenum61">isValid</a>(<a class="variable" href="#linenum425">usage</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum430" class="linenum-cell" data-linenum="430" href="#linenum430"></a></td>
@@ -1796,7 +1796,7 @@
 </tr>
 <tr>
 <td><a id="linenum448" class="linenum-cell" data-linenum="448" href="#linenum448"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum426">seqNum</a>, 0, <a class="variable" href="#linenum447">sequenceNum</a>, 0, <a class="variable" href="#linenum447">sequenceNum</a>.length);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum426">seqNum</a>, 0, <a class="variable" href="#linenum447">sequenceNum</a>, 0, <a class="variable" href="#linenum447">sequenceNum</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum449" class="linenum-cell" data-linenum="449" href="#linenum449"></a></td>
@@ -1816,19 +1816,19 @@
 </tr>
 <tr>
 <td><a id="linenum453" class="linenum-cell" data-linenum="453" href="#linenum453"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum165">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum627">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum164">Cipher</a> cipher = Cipher.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum503">getInstance</a>(<span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum454" class="linenum-cell" data-linenum="454" href="#linenum454"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a>(<a class="variable" href="#linenum444">kcrypt</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a> secretKey = new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a>(<a class="variable" href="#linenum444">kcrypt</a>, <span class='string'>&quot;ARCFOUR&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum455" class="linenum-cell" data-linenum="455" href="#linenum455"></a></td>
-<td><pre>        <a class="variable" href="#linenum453">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1647">init</a>(Cipher.DECRYPT_MODE, <a class="variable" href="#linenum454">secretKey</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum453">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum1688">init</a>(Cipher.DECRYPT_MODE, <a class="variable" href="#linenum454">secretKey</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum456" class="linenum-cell" data-linenum="456" href="#linenum456"></a></td>
-<td><pre>        byte[] output = <a class="variable" href="#linenum453">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum2399">doFinal</a>(<a class="variable" href="#linenum426">ciphertext</a>, <a class="variable" href="#linenum426">start</a>, <a class="variable" href="#linenum426">len</a>);</pre></td>
+<td><pre>        byte[] output = <a class="variable" href="#linenum453">cipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Cipher.html#linenum2215">doFinal</a>(<a class="variable" href="#linenum426">ciphertext</a>, <a class="variable" href="#linenum426">start</a>, <a class="variable" href="#linenum426">len</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum457" class="linenum-cell" data-linenum="457" href="#linenum457"></a></td>

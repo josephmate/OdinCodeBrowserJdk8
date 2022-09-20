@@ -332,15 +332,15 @@
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre>                      <a class="variable" href="#linenum77">apReq</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbApReq.html#linenum385">getCreds</a>().key,</pre></td>
+<td><pre>                      <a class="variable" href="#linenum77">apReq</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbApReq.html#linenum384">getCreds</a>().key,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
-<td><pre>                      <a class="variable" href="#linenum77">apReq</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbApReq.html#linenum389">getCtime</a>(),</pre></td>
+<td><pre>                      <a class="variable" href="#linenum77">apReq</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbApReq.html#linenum388">getCtime</a>(),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre>                      <a class="variable" href="#linenum77">apReq</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbApReq.html#linenum395">cusec</a>(),</pre></td>
+<td><pre>                      <a class="variable" href="#linenum77">apReq</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbApReq.html#linenum394">cusec</a>(),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
@@ -476,7 +476,7 @@
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> errStr = <a class="variable" href="#linenum117">err</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/KRBError.html#linenum290">getErrorString</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> errStr = <a class="variable" href="#linenum117">err</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/KRBError.html#linenum297">getErrorString</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
@@ -484,11 +484,11 @@
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum118">errStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum644">charAt</a>(<a class="variable" href="#linenum118">errStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() - 1) == 0)</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum118">errStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum656">charAt</a>(<a class="variable" href="#linenum118">errStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() - 1) == 0)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>                <a class="variable" href="#linenum119">eText</a> = <a class="variable" href="#linenum118">errStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(0, <a class="variable" href="#linenum118">errStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() - 1);</pre></td>
+<td><pre>                <a class="variable" href="#linenum119">eText</a> = <a class="variable" href="#linenum118">errStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a>(0, <a class="variable" href="#linenum118">errStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() - 1);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
@@ -500,11 +500,11 @@
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbException.html#linenum37">KrbException</a> ke = new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbException.html#linenum37">KrbException</a>(<a class="variable" href="#linenum117">err</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/KRBError.html#linenum281">getErrorCode</a>(), <a class="variable" href="#linenum119">eText</a>);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbException.html#linenum37">KrbException</a> ke = new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbException.html#linenum37">KrbException</a>(<a class="variable" href="#linenum117">err</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/KRBError.html#linenum288">getErrorCode</a>(), <a class="variable" href="#linenum119">eText</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>            <a class="variable" href="#linenum124">ke</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum454">initCause</a>(e);</pre></td>
+<td><pre>            <a class="variable" href="#linenum124">ke</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum455">initCause</a>(e);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
@@ -560,11 +560,11 @@
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum46">encPart</a>.ctime.getSeconds() != <a class="variable" href="#linenum137">apReq</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbApReq.html#linenum389">getCtime</a>().getSeconds() ||</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum46">encPart</a>.ctime.getSeconds() != <a class="variable" href="#linenum137">apReq</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbApReq.html#linenum388">getCtime</a>().getSeconds() ||</pre></td>
 </tr>
 <tr>
 <td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre>            <a class="variable" href="#linenum46">encPart</a>.cusec != <a class="variable" href="#linenum137">apReq</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbApReq.html#linenum389">getCtime</a>().getMicroSeconds())</pre></td>
+<td><pre>            <a class="variable" href="#linenum46">encPart</a>.cusec != <a class="variable" href="#linenum137">apReq</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/KrbApReq.html#linenum388">getCtime</a>().getMicroSeconds())</pre></td>
 </tr>
 <tr>
 <td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
@@ -696,7 +696,7 @@
 </tr>
 <tr>
 <td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
-<td><pre>                               <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/KerberosTime.html#linenum67">KerberosTime</a> ctime,</pre></td>
+<td><pre>                               <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/KerberosTime.html#linenum66">KerberosTime</a> ctime,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>

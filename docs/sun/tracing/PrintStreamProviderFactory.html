@@ -188,7 +188,7 @@
 </tr>
 <tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
-<td><pre>public class PrintStreamProviderFactory extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/ProviderFactory.html#linenum29">ProviderFactory</a> {</pre></td>
+<td><pre>public class PrintStreamProviderFactory extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/ProviderFactory.html#linenum53">ProviderFactory</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
@@ -220,7 +220,7 @@
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre>    public &lt;T extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/Provider.html#linenum55">Provider</a>&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> createProvider(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; cls) {</pre></td>
+<td><pre>    public &lt;T extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/Provider.html#linenum55">Provider</a>&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> createProvider(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; cls) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
@@ -272,11 +272,11 @@
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> probeName = <a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/ProviderSkeleton.html#linenum225">getAnnotationString</a>(<a class="variable" href="#linenum66">m</a>, ProbeName.class, <a class="variable" href="#linenum66">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum178">getName</a>());</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> probeName = <a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/ProviderSkeleton.html#linenum225">getAnnotationString</a>(<a class="variable" href="#linenum66">m</a>, ProbeName.class, <a class="variable" href="#linenum66">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum192">getName</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/PrintStreamProviderFactory.html#linenum86">PrintStreamProbe</a>(this, <a class="variable" href="#linenum67">probeName</a>, <a class="variable" href="#linenum66">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum248">getParameterTypes</a>());</pre></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/PrintStreamProviderFactory.html#linenum86">PrintStreamProbe</a>(this, <a class="variable" href="#linenum67">probeName</a>, <a class="variable" href="#linenum66">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum262">getParameterTypes</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
@@ -416,19 +416,19 @@
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre>        <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<a class="variable" href="#linenum88">provider</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/PrintStreamProviderFactory.html#linenum81">getName</a>());</pre></td>
+<td><pre>        <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>(<a class="variable" href="#linenum88">provider</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/PrintStreamProviderFactory.html#linenum81">getName</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre>        <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<span class='string'>&quot;.&quot;</span>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>(<span class='string'>&quot;.&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
-<td><pre>        <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<a class="variable" href="#linenum91">name</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum416">append</a>(<a class="variable" href="#linenum91">name</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre>        <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<span class='string'>&quot;(&quot;</span>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>(<span class='string'>&quot;(&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
@@ -444,7 +444,7 @@
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
-<td><pre>                <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<span class='string'>&quot;,&quot;</span>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>(<span class='string'>&quot;,&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
@@ -460,7 +460,7 @@
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre>            <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(o.toString());</pre></td>
+<td><pre>            <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>(o.toString());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
@@ -468,11 +468,11 @@
 </tr>
 <tr>
 <td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
-<td><pre>        <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<span class='string'>&quot;)&quot;</span>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>(<span class='string'>&quot;)&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
-<td><pre>        <a class="variable" href="#linenum88">provider</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/PrintStreamProviderFactory.html#linenum77">getStream</a>().println(<a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum668">toString</a>());</pre></td>
+<td><pre>        <a class="variable" href="#linenum88">provider</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/PrintStreamProviderFactory.html#linenum77">getStream</a>().println(<a class="variable" href="#linenum102">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum666">toString</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>

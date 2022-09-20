@@ -560,7 +560,7 @@
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum136">URL</a> jarFileURL;</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum142">URL</a> jarFileURL;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
@@ -628,7 +628,7 @@
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre>    protected JarURLConnection(<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum136">URL</a> url) throws <a class="type" href="/OdinCodeBrowserJdk8/java/net/MalformedURLException.html#linenum38">MalformedURLException</a> {</pre></td>
+<td><pre>    protected JarURLConnection(<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum142">URL</a> url) throws <a class="type" href="/OdinCodeBrowserJdk8/java/net/MalformedURLException.html#linenum38">MalformedURLException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
@@ -660,11 +660,11 @@
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre>    private void parseSpecs(<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum136">URL</a> url) throws <a class="type" href="/OdinCodeBrowserJdk8/java/net/MalformedURLException.html#linenum38">MalformedURLException</a> {</pre></td>
+<td><pre>    private void parseSpecs(<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum142">URL</a> url) throws <a class="type" href="/OdinCodeBrowserJdk8/java/net/MalformedURLException.html#linenum38">MalformedURLException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> spec = <a class="variable" href="#linenum164">url</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum818">getFile</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> spec = <a class="variable" href="#linenum164">url</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum843">getFile</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
@@ -672,7 +672,7 @@
 </tr>
 <tr>
 <td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre>        int separator = <a class="variable" href="#linenum165">spec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1740">indexOf</a>(<span class='string'>&quot;!/&quot;</span>);</pre></td>
+<td><pre>        int separator = <a class="variable" href="#linenum165">spec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1502">indexOf</a>(<span class='string'>&quot;!/&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
@@ -704,7 +704,7 @@
 </tr>
 <tr>
 <td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
-<td><pre>        <a class="variable" href="#linenum139">jarFileURL</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum136">URL</a>(<a class="variable" href="#linenum165">spec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(0, <a class="variable" href="#linenum167">separator</a>++));</pre></td>
+<td><pre>        <a class="variable" href="#linenum139">jarFileURL</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum142">URL</a>(<a class="variable" href="#linenum165">spec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a>(0, <a class="variable" href="#linenum167">separator</a>++));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
@@ -720,11 +720,11 @@
 </tr>
 <tr>
 <td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
-<td><pre>        if (++<a class="variable" href="#linenum167">separator</a> != <a class="variable" href="#linenum165">spec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>()) {</pre></td>
+<td><pre>        if (++<a class="variable" href="#linenum167">separator</a> != <a class="variable" href="#linenum165">spec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
-<td><pre>            <a class="variable" href="#linenum140">entryName</a> = <a class="variable" href="#linenum165">spec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(<a class="variable" href="#linenum167">separator</a>, <a class="variable" href="#linenum165">spec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>());</pre></td>
+<td><pre>            <a class="variable" href="#linenum140">entryName</a> = <a class="variable" href="#linenum165">spec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a>(<a class="variable" href="#linenum167">separator</a>, <a class="variable" href="#linenum165">spec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
@@ -764,7 +764,7 @@
 </tr>
 <tr>
 <td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum136">URL</a> getJarFileURL() {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum142">URL</a> getJarFileURL() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
@@ -1140,7 +1140,7 @@
 </tr>
 <tr>
 <td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
-<td><pre>        return <a class="variable" href="#linenum283">man</a> != null ? <a class="variable" href="#linenum283">man</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/jar/Manifest.html#linenum86">getMainAttributes</a>() : null;</pre></td>
+<td><pre>        return <a class="variable" href="#linenum283">man</a> != null ? <a class="variable" href="#linenum283">man</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/jar/Manifest.html#linenum100">getMainAttributes</a>() : null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum285" class="linenum-cell" data-linenum="285" href="#linenum285"></a></td>

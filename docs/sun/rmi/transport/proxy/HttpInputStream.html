@@ -236,7 +236,7 @@
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> key = <span class='string'>&quot;Content-length:&quot;</span>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2654">toLowerCase</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> key = <span class='string'>&quot;Content-length:&quot;</span>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2669">toLowerCase</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
@@ -292,7 +292,7 @@
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum60">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2654">toLowerCase</a>().startsWith(<a class="variable" href="#linenum58">key</a>)) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum60">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2669">toLowerCase</a>().startsWith(<a class="variable" href="#linenum58">key</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
@@ -316,7 +316,7 @@
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>                        Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum614">parseInt</a>(<a class="variable" href="#linenum60">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(<a class="variable" href="#linenum58">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>()).trim());</pre></td>
+<td><pre>                        Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum614">parseInt</a>(<a class="variable" href="#linenum60">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1925">substring</a>(<a class="variable" href="#linenum58">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>()).trim());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
@@ -356,11 +356,11 @@
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
-<td><pre>        } while ((<a class="variable" href="#linenum60">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() != 0) &amp;&amp;</pre></td>
+<td><pre>        } while ((<a class="variable" href="#linenum60">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() != 0) &amp;&amp;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre>                 (<a class="variable" href="#linenum60">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum644">charAt</a>(0) != '\r') &amp;&amp; (<a class="variable" href="#linenum60">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum644">charAt</a>(0) != '\n'));</pre></td>
+<td><pre>                 (<a class="variable" href="#linenum60">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum656">charAt</a>(0) != '\r') &amp;&amp; (<a class="variable" href="#linenum60">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum656">charAt</a>(0) != '\n'));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
@@ -508,7 +508,7 @@
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre>            int data = <a class="variable" href="#linenum48">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum161">read</a>();</pre></td>
+<td><pre>            int data = <a class="variable" href="#linenum48">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum65">read</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
@@ -536,7 +536,7 @@
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>                    ((<a class="variable" href="#linenum126">data</a> &amp; 0x7F) &lt; ' ' ? <span class='string'>&quot; &quot;</span> : String.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum3125">valueOf</a>((char) <a class="variable" href="#linenum126">data</a>)) +</pre></td>
+<td><pre>                    ((<a class="variable" href="#linenum126">data</a> &amp; 0x7F) &lt; ' ' ? <span class='string'>&quot; &quot;</span> : String.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2993">valueOf</a>((char) <a class="variable" href="#linenum126">data</a>)) +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>

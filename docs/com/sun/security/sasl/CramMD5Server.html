@@ -220,7 +220,7 @@
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre>final class CramMD5Server extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/sasl/CramMD5Base.html#linenum43">CramMD5Base</a> implements <a class="type" href="/OdinCodeBrowserJdk8/javax/security/sasl/SaslServer.html#linenum88">SaslServer</a> {</pre></td>
+<td><pre>final class CramMD5Server extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/sasl/CramMD5Base.html#linenum44">CramMD5Base</a> implements <a class="type" href="/OdinCodeBrowserJdk8/javax/security/sasl/SaslServer.html#linenum88">SaslServer</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
@@ -476,7 +476,7 @@
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
-<td><pre>                long timestamp = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>();</pre></td>
+<td><pre>                long timestamp = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
@@ -488,35 +488,35 @@
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>('&lt;');</pre></td>
+<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>('&lt;');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<a class="variable" href="#linenum117">rand</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>(<a class="variable" href="#linenum117">rand</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>('.');</pre></td>
+<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>('.');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<a class="variable" href="#linenum118">timestamp</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>(<a class="variable" href="#linenum118">timestamp</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>('@');</pre></td>
+<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>('@');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<a class="variable" href="#linenum55">fqdn</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum416">append</a>(<a class="variable" href="#linenum55">fqdn</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
-<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>('&gt;');</pre></td>
+<td><pre>                <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>('&gt;');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> challengeStr = <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum668">toString</a>();</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> challengeStr = <a class="variable" href="#linenum120">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum666">toString</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
@@ -536,7 +536,7 @@
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>                <a class="variable" href="#linenum56">challengeData</a> = <a class="variable" href="#linenum128">challengeStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum945">getBytes</a>(<span class='string'>&quot;UTF8&quot;</span>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum56">challengeData</a> = <a class="variable" href="#linenum128">challengeStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum915">getBytes</a>(<span class='string'>&quot;UTF8&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
@@ -724,7 +724,7 @@
 </tr>
 <tr>
 <td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
-<td><pre>                pw = <a class="variable" href="#linenum176">pwStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum945">getBytes</a>(<span class='string'>&quot;UTF8&quot;</span>);</pre></td>
+<td><pre>                pw = <a class="variable" href="#linenum176">pwStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum915">getBytes</a>(<span class='string'>&quot;UTF8&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
@@ -740,7 +740,7 @@
 </tr>
 <tr>
 <td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> digest = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/sasl/CramMD5Base.html#linenum156">HMAC_MD5</a>(pw, <a class="variable" href="#linenum56">challengeData</a>);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> digest = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/sasl/CramMD5Base.html#linenum157">HMAC_MD5</a>(pw, <a class="variable" href="#linenum56">challengeData</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
@@ -764,7 +764,7 @@
 </tr>
 <tr>
 <td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/sasl/CramMD5Base.html#linenum128">clearPassword</a>();</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/sasl/CramMD5Base.html#linenum129">clearPassword</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
@@ -776,7 +776,7 @@
 </tr>
 <tr>
 <td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
-<td><pre>                byte [] expectedDigest = <a class="variable" href="#linenum184">digest</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum945">getBytes</a>(<span class='string'>&quot;UTF8&quot;</span>);</pre></td>
+<td><pre>                byte [] expectedDigest = <a class="variable" href="#linenum184">digest</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum915">getBytes</a>(<span class='string'>&quot;UTF8&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>

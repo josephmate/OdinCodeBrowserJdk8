@@ -204,7 +204,7 @@
 </tr>
 <tr>
 <td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
-<td><pre>    final <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum47">Token</a> token;</pre></td>
+<td><pre>    final <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum48">Token</a> token;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
@@ -264,7 +264,7 @@
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
-<td><pre>    Session(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum47">Token</a> token, long id) {</pre></td>
+<td><pre>    Session(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum48">Token</a> token, long id) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
@@ -364,7 +364,7 @@
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum65">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum221">isPresent</a>(this.id) == false) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum65">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum255">isPresent</a>(this.id) == false) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
@@ -376,7 +376,7 @@
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
-<td><pre>        <a class="variable" href="#linenum61">lastAccess</a> = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum61">lastAccess</a> = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
@@ -532,11 +532,11 @@
 </tr>
 <tr>
 <td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
-<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Session.html#linenum44">Session</a>&gt; refQueue =</pre></td>
+<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Session.html#linenum44">Session</a>&gt; refQueue =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>        new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Session.html#linenum44">Session</a>&gt;();</pre></td>
+<td><pre>        new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Session.html#linenum44">Session</a>&gt;();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
@@ -548,7 +548,7 @@
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>        Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2242">synchronizedSortedSet</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/util/TreeSet.html#linenum92">TreeSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Session.html#linenum129">SessionRef</a>&gt;());</pre></td>
+<td><pre>        Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2184">synchronizedSortedSet</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/util/TreeSet.html#linenum92">TreeSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Session.html#linenum129">SessionRef</a>&gt;());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
@@ -556,7 +556,7 @@
 </tr>
 <tr>
 <td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Session.html#linenum44">Session</a>&gt; referenceQueue() {</pre></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Session.html#linenum44">Session</a>&gt; referenceQueue() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
@@ -628,7 +628,7 @@
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum47">Token</a> token;</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum48">Token</a> token;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
@@ -636,7 +636,7 @@
 </tr>
 <tr>
 <td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
-<td><pre>    SessionRef(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Session.html#linenum44">Session</a> session, long id, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum47">Token</a> token) {</pre></td>
+<td><pre>    SessionRef(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Session.html#linenum44">Session</a> session, long id, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum48">Token</a> token) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
@@ -684,7 +684,7 @@
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum158">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum221">isPresent</a>(<a class="variable" href="#linenum158">id</a>)) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum158">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum255">isPresent</a>(<a class="variable" href="#linenum158">id</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
@@ -716,7 +716,7 @@
 </tr>
 <tr>
 <td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
-<td><pre>            this.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/Reference.html#linenum212">clear</a>();</pre></td>
+<td><pre>            this.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/Reference.html#linenum264">clear</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>

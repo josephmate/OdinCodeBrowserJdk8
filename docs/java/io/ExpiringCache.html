@@ -156,7 +156,7 @@
 </tr>
 <tr>
 <td><a id="linenum38" class="linenum-cell" data-linenum="38" href="#linenum38"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>&gt; map;</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>&gt; map;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum39" class="linenum-cell" data-linenum="39" href="#linenum39"></a></td>
@@ -272,11 +272,11 @@
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre>        <a class="variable" href="#linenum38">map</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/LinkedHashMap.html#linenum163">LinkedHashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>&gt;() {</pre></td>
+<td><pre>        <a class="variable" href="#linenum38">map</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/LinkedHashMap.html#linenum163">LinkedHashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>&gt;() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre>            protected boolean removeEldestEntry(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>&gt; eldest) {</pre></td>
+<td><pre>            protected boolean removeEldestEntry(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>&gt; eldest) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
@@ -316,7 +316,7 @@
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a> entry = <a class="type" href="/OdinCodeBrowserJdk8/java/io/ExpiringCache.html#linenum102">entryFor</a>(<a class="variable" href="#linenum74">key</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a> entry = <a class="type" href="/OdinCodeBrowserJdk8/java/io/ExpiringCache.html#linenum102">entryFor</a>(<a class="variable" href="#linenum74">key</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
@@ -360,7 +360,7 @@
 </tr>
 <tr>
 <td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a> entry = <a class="type" href="/OdinCodeBrowserJdk8/java/io/ExpiringCache.html#linenum102">entryFor</a>(<a class="variable" href="#linenum85">key</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a> entry = <a class="type" href="/OdinCodeBrowserJdk8/java/io/ExpiringCache.html#linenum102">entryFor</a>(<a class="variable" href="#linenum85">key</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
@@ -368,7 +368,7 @@
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>            <a class="variable" href="#linenum89">entry</a>.setTimestamp(System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>());</pre></td>
+<td><pre>            <a class="variable" href="#linenum89">entry</a>.setTimestamp(System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
@@ -380,7 +380,7 @@
 </tr>
 <tr>
 <td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
-<td><pre>            <a class="variable" href="#linenum38">map</a>.put(<a class="variable" href="#linenum85">key</a>, new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>(System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>(), <a class="variable" href="#linenum85">val</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum38">map</a>.put(<a class="variable" href="#linenum85">key</a>, new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>(System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>(), <a class="variable" href="#linenum85">val</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
@@ -412,11 +412,11 @@
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a> entryFor(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> key) {</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a> entryFor(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> key) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a> entry = <a class="variable" href="#linenum38">map</a>.get(<a class="variable" href="#linenum102">key</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a> entry = <a class="variable" href="#linenum38">map</a>.get(<a class="variable" href="#linenum102">key</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
@@ -424,7 +424,7 @@
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
-<td><pre>            long delta = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>() - <a class="variable" href="#linenum103">entry</a>.timestamp();</pre></td>
+<td><pre>            long delta = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>() - <a class="variable" href="#linenum103">entry</a>.timestamp();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>

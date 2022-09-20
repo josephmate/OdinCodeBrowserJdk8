@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2003, 2013, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2003, 2016, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -440,7 +440,7 @@
 </tr>
 <tr>
 <td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>    private boolean running = false;</pre></td>
+<td><pre>    private volatile boolean running;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
@@ -480,7 +480,7 @@
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre>    private boolean recording = false;</pre></td>
+<td><pre>    private volatile boolean recording;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
@@ -504,7 +504,7 @@
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a> recordingTracks = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>();</pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a> recordingTracks = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
@@ -548,7 +548,7 @@
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a> metaEventListeners = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>();</pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a> metaEventListeners = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
@@ -572,7 +572,7 @@
 </tr>
 <tr>
 <td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a> controllerEventListeners = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>();</pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a> controllerEventListeners = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
@@ -884,7 +884,7 @@
 </tr>
 <tr>
 <td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RealTimeSequencer.html#linenum215">setSequence</a>((<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Sequence.html#linenum55">Sequence</a>) null);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RealTimeSequencer.html#linenum167">setSequence</a>((<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Sequence.html#linenum55">Sequence</a>) null);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
@@ -1292,7 +1292,7 @@
 </tr>
 <tr>
 <td><a id="linenum322" class="linenum-cell" data-linenum="322" href="#linenum322"></a></td>
-<td><pre>                <a class="variable" href="#linenum125">recordingTracks</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum540">add</a>(new RecordingTrack(<a class="variable" href="#linenum312">track</a>, <a class="variable" href="#linenum312">channel</a>));</pre></td>
+<td><pre>                <a class="variable" href="#linenum125">recordingTracks</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum238">add</a>(new RecordingTrack(<a class="variable" href="#linenum312">track</a>, <a class="variable" href="#linenum312">channel</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum323" class="linenum-cell" data-linenum="323" href="#linenum323"></a></td>
@@ -1336,7 +1336,7 @@
 </tr>
 <tr>
 <td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
-<td><pre>                <a class="variable" href="#linenum125">recordingTracks</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum555">remove</a>(<a class="variable" href="#linenum331">rc</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum125">recordingTracks</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum261">remove</a>(<a class="variable" href="#linenum331">rc</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
@@ -2204,7 +2204,7 @@
 </tr>
 <tr>
 <td><a id="linenum550" class="linenum-cell" data-linenum="550" href="#linenum550"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum70">masterSyncModes</a>, 0, <a class="variable" href="#linenum549">returnedModes</a>, 0, <a class="variable" href="#linenum70">masterSyncModes</a>.length);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum70">masterSyncModes</a>, 0, <a class="variable" href="#linenum549">returnedModes</a>, 0, <a class="variable" href="#linenum70">masterSyncModes</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum551" class="linenum-cell" data-linenum="551" href="#linenum551"></a></td>
@@ -2272,7 +2272,7 @@
 </tr>
 <tr>
 <td><a id="linenum567" class="linenum-cell" data-linenum="567" href="#linenum567"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum71">slaveSyncModes</a>, 0, <a class="variable" href="#linenum566">returnedModes</a>, 0, <a class="variable" href="#linenum71">slaveSyncModes</a>.length);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum71">slaveSyncModes</a>, 0, <a class="variable" href="#linenum566">returnedModes</a>, 0, <a class="variable" href="#linenum71">slaveSyncModes</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum568" class="linenum-cell" data-linenum="568" href="#linenum568"></a></td>
@@ -2484,7 +2484,7 @@
 </tr>
 <tr>
 <td><a id="linenum620" class="linenum-cell" data-linenum="620" href="#linenum620"></a></td>
-<td><pre>            if (! <a class="variable" href="#linenum136">metaEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum284">contains</a>(<a class="variable" href="#linenum618">listener</a>)) {</pre></td>
+<td><pre>            if (! <a class="variable" href="#linenum136">metaEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum305">contains</a>(<a class="variable" href="#linenum618">listener</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum621" class="linenum-cell" data-linenum="621" href="#linenum621"></a></td>
@@ -2492,7 +2492,7 @@
 </tr>
 <tr>
 <td><a id="linenum622" class="linenum-cell" data-linenum="622" href="#linenum622"></a></td>
-<td><pre>                <a class="variable" href="#linenum136">metaEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum457">add</a>(<a class="variable" href="#linenum618">listener</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum136">metaEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum478">add</a>(<a class="variable" href="#linenum618">listener</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum623" class="linenum-cell" data-linenum="623" href="#linenum623"></a></td>
@@ -2528,7 +2528,7 @@
 </tr>
 <tr>
 <td><a id="linenum631" class="linenum-cell" data-linenum="631" href="#linenum631"></a></td>
-<td><pre>            int index = <a class="variable" href="#linenum136">metaEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum295">indexOf</a>(<a class="variable" href="#linenum629">listener</a>);</pre></td>
+<td><pre>            int index = <a class="variable" href="#linenum136">metaEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum316">indexOf</a>(<a class="variable" href="#linenum629">listener</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum632" class="linenum-cell" data-linenum="632" href="#linenum632"></a></td>
@@ -2536,7 +2536,7 @@
 </tr>
 <tr>
 <td><a id="linenum633" class="linenum-cell" data-linenum="633" href="#linenum633"></a></td>
-<td><pre>                <a class="variable" href="#linenum136">metaEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum504">remove</a>(<a class="variable" href="#linenum631">index</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum136">metaEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum497">remove</a>(<a class="variable" href="#linenum631">index</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum634" class="linenum-cell" data-linenum="634" href="#linenum634"></a></td>
@@ -2588,7 +2588,7 @@
 </tr>
 <tr>
 <td><a id="linenum646" class="linenum-cell" data-linenum="646" href="#linenum646"></a></td>
-<td><pre>            for(int i=0; <a class="variable" href="#linenum646">i</a> &lt; <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum262">size</a>(); <a class="variable" href="#linenum646">i</a>++) {</pre></td>
+<td><pre>            for(int i=0; <a class="variable" href="#linenum646">i</a> &lt; <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum283">size</a>(); <a class="variable" href="#linenum646">i</a>++) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum647" class="linenum-cell" data-linenum="647" href="#linenum647"></a></td>
@@ -2596,7 +2596,7 @@
 </tr>
 <tr>
 <td><a id="linenum648" class="linenum-cell" data-linenum="648" href="#linenum648"></a></td>
-<td><pre>                <a class="variable" href="#linenum644">cve</a> = (ControllerListElement) <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum413">get</a>(<a class="variable" href="#linenum646">i</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum644">cve</a> = (ControllerListElement) <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum434">get</a>(<a class="variable" href="#linenum646">i</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum649" class="linenum-cell" data-linenum="649" href="#linenum649"></a></td>
@@ -2636,7 +2636,7 @@
 </tr>
 <tr>
 <td><a id="linenum658" class="linenum-cell" data-linenum="658" href="#linenum658"></a></td>
-<td><pre>                <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum457">add</a>(<a class="variable" href="#linenum644">cve</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum463">add</a>(<a class="variable" href="#linenum644">cve</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum659" class="linenum-cell" data-linenum="659" href="#linenum659"></a></td>
@@ -2688,11 +2688,11 @@
 </tr>
 <tr>
 <td><a id="linenum671" class="linenum-cell" data-linenum="671" href="#linenum671"></a></td>
-<td><pre>            for (int i=0; <a class="variable" href="#linenum671">i</a> &lt; <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum262">size</a>(); <a class="variable" href="#linenum671">i</a>++) {</pre></td>
+<td><pre>            for (int i=0; <a class="variable" href="#linenum671">i</a> &lt; <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum283">size</a>(); <a class="variable" href="#linenum671">i</a>++) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum672" class="linenum-cell" data-linenum="672" href="#linenum672"></a></td>
-<td><pre>                <a class="variable" href="#linenum669">cve</a> = (ControllerListElement) <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum413">get</a>(<a class="variable" href="#linenum671">i</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum669">cve</a> = (ControllerListElement) <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum434">get</a>(<a class="variable" href="#linenum671">i</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum673" class="linenum-cell" data-linenum="673" href="#linenum673"></a></td>
@@ -2736,7 +2736,7 @@
 </tr>
 <tr>
 <td><a id="linenum683" class="linenum-cell" data-linenum="683" href="#linenum683"></a></td>
-<td><pre>                int index = <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum295">indexOf</a>(<a class="variable" href="#linenum669">cve</a>);</pre></td>
+<td><pre>                int index = <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum316">indexOf</a>(<a class="variable" href="#linenum669">cve</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum684" class="linenum-cell" data-linenum="684" href="#linenum684"></a></td>
@@ -2744,7 +2744,7 @@
 </tr>
 <tr>
 <td><a id="linenum685" class="linenum-cell" data-linenum="685" href="#linenum685"></a></td>
-<td><pre>                    <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum504">remove</a>(<a class="variable" href="#linenum683">index</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum497">remove</a>(<a class="variable" href="#linenum683">index</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum686" class="linenum-cell" data-linenum="686" href="#linenum686"></a></td>
@@ -3692,7 +3692,7 @@
 </tr>
 <tr>
 <td><a id="linenum922" class="linenum-cell" data-linenum="922" href="#linenum922"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum136">metaEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum262">size</a>() == 0) return;</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum136">metaEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum283">size</a>() == 0) return;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum923" class="linenum-cell" data-linenum="923" href="#linenum923"></a></td>
@@ -3732,7 +3732,7 @@
 </tr>
 <tr>
 <td><a id="linenum932" class="linenum-cell" data-linenum="932" href="#linenum932"></a></td>
-<td><pre>        int size = <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum262">size</a>();</pre></td>
+<td><pre>        int size = <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum283">size</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum933" class="linenum-cell" data-linenum="933" href="#linenum933"></a></td>
@@ -3776,7 +3776,7 @@
 </tr>
 <tr>
 <td><a id="linenum943" class="linenum-cell" data-linenum="943" href="#linenum943"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a> sendToListeners = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a> sendToListeners = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum944" class="linenum-cell" data-linenum="944" href="#linenum944"></a></td>
@@ -3784,7 +3784,7 @@
 </tr>
 <tr>
 <td><a id="linenum945" class="linenum-cell" data-linenum="945" href="#linenum945"></a></td>
-<td><pre>            ControllerListElement cve = (ControllerListElement) <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum413">get</a>(<a class="variable" href="#linenum944">i</a>);</pre></td>
+<td><pre>            ControllerListElement cve = (ControllerListElement) <a class="variable" href="#linenum142">controllerEventListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum434">get</a>(<a class="variable" href="#linenum944">i</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum946" class="linenum-cell" data-linenum="946" href="#linenum946"></a></td>
@@ -3796,7 +3796,7 @@
 </tr>
 <tr>
 <td><a id="linenum948" class="linenum-cell" data-linenum="948" href="#linenum948"></a></td>
-<td><pre>                    <a class="variable" href="#linenum943">sendToListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum540">add</a>(<a class="variable" href="#linenum945">cve</a>.listener);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum943">sendToListeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum238">add</a>(<a class="variable" href="#linenum945">cve</a>.listener);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum949" class="linenum-cell" data-linenum="949" href="#linenum949"></a></td>
@@ -3944,7 +3944,7 @@
 </tr>
 <tr>
 <td><a id="linenum985" class="linenum-cell" data-linenum="985" href="#linenum985"></a></td>
-<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum979">array</a>, 0, <a class="variable" href="#linenum984">newArray</a>, 0, <a class="variable" href="#linenum979">array</a>.length);</pre></td>
+<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum979">array</a>, 0, <a class="variable" href="#linenum984">newArray</a>, 0, <a class="variable" href="#linenum979">array</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum986" class="linenum-cell" data-linenum="986" href="#linenum986"></a></td>
@@ -4892,7 +4892,7 @@
 </tr>
 <tr>
 <td><a id="linenum1222" class="linenum-cell" data-linenum="1222" href="#linenum1222"></a></td>
-<td><pre>                    RecordingTrack current = (RecordingTrack)<a class="variable" href="#linenum1216">recordingTracks</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum499">get</a>(<a class="variable" href="#linenum1221">i</a>);</pre></td>
+<td><pre>                    RecordingTrack current = (RecordingTrack)<a class="variable" href="#linenum1216">recordingTracks</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum544">get</a>(<a class="variable" href="#linenum1221">i</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1223" class="linenum-cell" data-linenum="1223" href="#linenum1223"></a></td>
@@ -4948,7 +4948,7 @@
 </tr>
 <tr>
 <td><a id="linenum1236" class="linenum-cell" data-linenum="1236" href="#linenum1236"></a></td>
-<td><pre>                    RecordingTrack current = (RecordingTrack)<a class="variable" href="#linenum1231">recordingTracks</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum499">get</a>(<a class="variable" href="#linenum1235">i</a>);</pre></td>
+<td><pre>                    RecordingTrack current = (RecordingTrack)<a class="variable" href="#linenum1231">recordingTracks</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum544">get</a>(<a class="variable" href="#linenum1235">i</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1237" class="linenum-cell" data-linenum="1237" href="#linenum1237"></a></td>
@@ -5056,7 +5056,7 @@
 </tr>
 <tr>
 <td><a id="linenum1263" class="linenum-cell" data-linenum="1263" href="#linenum1263"></a></td>
-<td><pre>            <a class="variable" href="#linenum1249">thread</a> = JSSecurityManager.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/JSSecurityManager.html#linenum170">createThread</a>(this,</pre></td>
+<td><pre>            <a class="variable" href="#linenum1249">thread</a> = JSSecurityManager.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/JSSecurityManager.html#linenum143">createThread</a>(this,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1264" class="linenum-cell" data-linenum="1264" href="#linenum1264"></a></td>
@@ -5228,7 +5228,7 @@
 </tr>
 <tr>
 <td><a id="linenum1306" class="linenum-cell" data-linenum="1306" href="#linenum1306"></a></td>
-<td><pre>            long t = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum399">nanoTime</a>() / 1000000l;</pre></td>
+<td><pre>            long t = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum401">nanoTime</a>() / 1000000l;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1307" class="linenum-cell" data-linenum="1307" href="#linenum1307"></a></td>
@@ -5244,7 +5244,7 @@
 </tr>
 <tr>
 <td><a id="linenum1310" class="linenum-cell" data-linenum="1310" href="#linenum1310"></a></td>
-<td><pre>                        <a class="variable" href="#linenum1250">lock</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum501">wait</a>(2000);</pre></td>
+<td><pre>                        <a class="variable" href="#linenum1250">lock</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum382">wait</a>(2000);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1311" class="linenum-cell" data-linenum="1311" href="#linenum1311"></a></td>
@@ -5268,7 +5268,7 @@
 </tr>
 <tr>
 <td><a id="linenum1316" class="linenum-cell" data-linenum="1316" href="#linenum1316"></a></td>
-<td><pre>                if ((System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum399">nanoTime</a>()/1000000l) - <a class="variable" href="#linenum1306">t</a> &gt; 1900) {</pre></td>
+<td><pre>                if ((System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum401">nanoTime</a>()/1000000l) - <a class="variable" href="#linenum1306">t</a> &gt; 1900) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1317" class="linenum-cell" data-linenum="1317" href="#linenum1317"></a></td>
@@ -5400,7 +5400,7 @@
 </tr>
 <tr>
 <td><a id="linenum1349" class="linenum-cell" data-linenum="1349" href="#linenum1349"></a></td>
-<td><pre>                    <a class="variable" href="#linenum1332">oldThread</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum1317">join</a>(2000);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum1332">oldThread</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum1241">join</a>(2000);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1350" class="linenum-cell" data-linenum="1350" href="#linenum1350"></a></td>
@@ -5488,7 +5488,7 @@
 </tr>
 <tr>
 <td><a id="linenum1371" class="linenum-cell" data-linenum="1371" href="#linenum1371"></a></td>
-<td><pre>                        Thread.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum325">sleep</a>(1);</pre></td>
+<td><pre>                        Thread.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum301">sleep</a>(1);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1372" class="linenum-cell" data-linenum="1372" href="#linenum1372"></a></td>
@@ -6108,7 +6108,7 @@
 </tr>
 <tr>
 <td><a id="linenum1526" class="linenum-cell" data-linenum="1526" href="#linenum1526"></a></td>
-<td><pre>            <a class="variable" href="#linenum1427">tracks</a> = <a class="variable" href="#linenum1521">seq</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Sequence.html#linenum285">getTracks</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum1427">tracks</a> = <a class="variable" href="#linenum1521">seq</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Sequence.html#linenum281">getTracks</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1527" class="linenum-cell" data-linenum="1527" href="#linenum1527"></a></td>
@@ -6276,7 +6276,7 @@
 </tr>
 <tr>
 <td><a id="linenum1568" class="linenum-cell" data-linenum="1568" href="#linenum1568"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;  noteOff: sent &quot;</span>+<a class="variable" href="#linenum1547">done</a>+<span class='string'>&quot; messages.&quot;</span>);</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;  noteOff: sent &quot;</span>+<a class="variable" href="#linenum1547">done</a>+<span class='string'>&quot; messages.&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1569" class="linenum-cell" data-linenum="1569" href="#linenum1569"></a></td>
@@ -6628,7 +6628,7 @@
 </tr>
 <tr>
 <td><a id="linenum1656" class="linenum-cell" data-linenum="1656" href="#linenum1656"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;  sendNoteOffIfOn: sent &quot;</span>+<a class="variable" href="#linenum1617">done</a>+<span class='string'>&quot; messages.&quot;</span>);</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;  sendNoteOffIfOn: sent &quot;</span>+<a class="variable" href="#linenum1617">done</a>+<span class='string'>&quot; messages.&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1657" class="linenum-cell" data-linenum="1657" href="#linenum1657"></a></td>
@@ -6916,7 +6916,7 @@
 </tr>
 <tr>
 <td><a id="linenum1728" class="linenum-cell" data-linenum="1728" href="#linenum1728"></a></td>
-<td><pre>                            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;  chaseEvents: setting trackReadPos[&quot;</span>+<a class="variable" href="#linenum1703">trackNum</a>+<span class='string'>&quot;] = &quot;</span>+<a class="variable" href="#linenum1429">trackReadPos</a>[<a class="variable" href="#linenum1703">trackNum</a>]);</pre></td>
+<td><pre>                            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;  chaseEvents: setting trackReadPos[&quot;</span>+<a class="variable" href="#linenum1703">trackNum</a>+<span class='string'>&quot;] = &quot;</span>+<a class="variable" href="#linenum1429">trackReadPos</a>[<a class="variable" href="#linenum1703">trackNum</a>]);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1729" class="linenum-cell" data-linenum="1729" href="#linenum1729"></a></td>
@@ -7128,7 +7128,7 @@
 </tr>
 <tr>
 <td><a id="linenum1781" class="linenum-cell" data-linenum="1781" href="#linenum1781"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;  chaseTrackEvents track &quot;</span>+<a class="variable" href="#linenum1703">trackNum</a>+<span class='string'>&quot;: sent &quot;</span>+<a class="variable" href="#linenum1758">numControllersSent</a>+<span class='string'>&quot; controllers.&quot;</span>);</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;  chaseTrackEvents track &quot;</span>+<a class="variable" href="#linenum1703">trackNum</a>+<span class='string'>&quot;: sent &quot;</span>+<a class="variable" href="#linenum1758">numControllersSent</a>+<span class='string'>&quot; controllers.&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1782" class="linenum-cell" data-linenum="1782" href="#linenum1782"></a></td>
@@ -7152,7 +7152,7 @@
 </tr>
 <tr>
 <td><a id="linenum1787" class="linenum-cell" data-linenum="1787" href="#linenum1787"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;&gt;&gt; chaseEvents from tick &quot;</span>+<a class="variable" href="#linenum1786">startTick</a>+<span class='string'>&quot;..&quot;</span>+(<a class="variable" href="#linenum1786">endTick</a>-1));</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;&gt;&gt; chaseEvents from tick &quot;</span>+<a class="variable" href="#linenum1786">startTick</a>+<span class='string'>&quot;..&quot;</span>+(<a class="variable" href="#linenum1786">endTick</a>-1));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1788" class="linenum-cell" data-linenum="1788" href="#linenum1788"></a></td>
@@ -7192,7 +7192,7 @@
 </tr>
 <tr>
 <td><a id="linenum1797" class="linenum-cell" data-linenum="1797" href="#linenum1797"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;&lt;&lt; chaseEvents&quot;</span>);</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;&lt;&lt; chaseEvents&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1798" class="linenum-cell" data-linenum="1798" href="#linenum1798"></a></td>
@@ -7220,7 +7220,7 @@
 </tr>
 <tr>
 <td><a id="linenum1804" class="linenum-cell" data-linenum="1804" href="#linenum1804"></a></td>
-<td><pre>            return System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum399">nanoTime</a>() / 1000000l;</pre></td>
+<td><pre>            return System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum401">nanoTime</a>() / 1000000l;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1805" class="linenum-cell" data-linenum="1805" href="#linenum1805"></a></td>
@@ -7344,7 +7344,7 @@
 </tr>
 <tr>
 <td><a id="linenum1835" class="linenum-cell" data-linenum="1835" href="#linenum1835"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;  reindexTrack: setting trackReadPos[&quot;</span>+<a class="variable" href="#linenum1832">trackNum</a>+<span class='string'>&quot;] = &quot;</span>+<a class="variable" href="#linenum1429">trackReadPos</a>[<a class="variable" href="#linenum1832">trackNum</a>]);</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;  reindexTrack: setting trackReadPos[&quot;</span>+<a class="variable" href="#linenum1832">trackNum</a>+<span class='string'>&quot;] = &quot;</span>+<a class="variable" href="#linenum1429">trackReadPos</a>[<a class="variable" href="#linenum1832">trackNum</a>]);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1836" class="linenum-cell" data-linenum="1836" href="#linenum1836"></a></td>
@@ -7692,7 +7692,7 @@
 </tr>
 <tr>
 <td><a id="linenum1922" class="linenum-cell" data-linenum="1922" href="#linenum1922"></a></td>
-<td><pre>                    if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;Need to re-index at &quot;</span>+<a class="variable" href="#linenum1908">currMillis</a>+<span class='string'>&quot; millis. TargetTick=&quot;</span>+<a class="variable" href="#linenum1909">targetTick</a>);</pre></td>
+<td><pre>                    if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;Need to re-index at &quot;</span>+<a class="variable" href="#linenum1908">currMillis</a>+<span class='string'>&quot; millis. TargetTick=&quot;</span>+<a class="variable" href="#linenum1909">targetTick</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1923" class="linenum-cell" data-linenum="1923" href="#linenum1923"></a></td>
@@ -7716,7 +7716,7 @@
 </tr>
 <tr>
 <td><a id="linenum1928" class="linenum-cell" data-linenum="1928" href="#linenum1928"></a></td>
-<td><pre>                        if (<a class="variable" href="#linenum55">DEBUG_PUMP_ALL</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;  Setting trackReadPos[&quot;</span>+<a class="variable" href="#linenum1926">t</a>+<span class='string'>&quot;]=&quot;</span>+<a class="variable" href="#linenum1429">trackReadPos</a>[<a class="variable" href="#linenum1926">t</a>]);</pre></td>
+<td><pre>                        if (<a class="variable" href="#linenum55">DEBUG_PUMP_ALL</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;  Setting trackReadPos[&quot;</span>+<a class="variable" href="#linenum1926">t</a>+<span class='string'>&quot;]=&quot;</span>+<a class="variable" href="#linenum1429">trackReadPos</a>[<a class="variable" href="#linenum1926">t</a>]);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1929" class="linenum-cell" data-linenum="1929" href="#linenum1929"></a></td>
@@ -7768,7 +7768,7 @@
 </tr>
 <tr>
 <td><a id="linenum1941" class="linenum-cell" data-linenum="1941" href="#linenum1941"></a></td>
-<td><pre>                    if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;New checkpoint to &quot;</span>+<a class="variable" href="#linenum1908">currMillis</a>+<span class='string'>&quot; millis. &quot;</span></pre></td>
+<td><pre>                    if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;New checkpoint to &quot;</span>+<a class="variable" href="#linenum1908">currMillis</a>+<span class='string'>&quot; millis. &quot;</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1942" class="linenum-cell" data-linenum="1942" href="#linenum1942"></a></td>
@@ -7792,7 +7792,7 @@
 </tr>
 <tr>
 <td><a id="linenum1947" class="linenum-cell" data-linenum="1947" href="#linenum1947"></a></td>
-<td><pre>                    if (<a class="variable" href="#linenum55">DEBUG_PUMP_ALL</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;targetTick = &quot;</span>+<a class="variable" href="#linenum1909">targetTick</a>+<span class='string'>&quot; at &quot;</span>+<a class="variable" href="#linenum1908">currMillis</a>+<span class='string'>&quot; millis&quot;</span>);</pre></td>
+<td><pre>                    if (<a class="variable" href="#linenum55">DEBUG_PUMP_ALL</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;targetTick = &quot;</span>+<a class="variable" href="#linenum1909">targetTick</a>+<span class='string'>&quot; at &quot;</span>+<a class="variable" href="#linenum1908">currMillis</a>+<span class='string'>&quot; millis&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1948" class="linenum-cell" data-linenum="1948" href="#linenum1948"></a></td>
@@ -7828,7 +7828,7 @@
 </tr>
 <tr>
 <td><a id="linenum1956" class="linenum-cell" data-linenum="1956" href="#linenum1956"></a></td>
-<td><pre>                            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;set doLoop to true. lastTick=&quot;</span>+<a class="variable" href="#linenum1430">lastTick</a></pre></td>
+<td><pre>                            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;set doLoop to true. lastTick=&quot;</span>+<a class="variable" href="#linenum1430">lastTick</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1957" class="linenum-cell" data-linenum="1957" href="#linenum1957"></a></td>
@@ -7848,7 +7848,7 @@
 </tr>
 <tr>
 <td><a id="linenum1961" class="linenum-cell" data-linenum="1961" href="#linenum1961"></a></td>
-<td><pre>                            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;  currMillis=&quot;</span>+<a class="variable" href="#linenum1908">currMillis</a></pre></td>
+<td><pre>                            if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;  currMillis=&quot;</span>+<a class="variable" href="#linenum1908">currMillis</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1962" class="linenum-cell" data-linenum="1962" href="#linenum1962"></a></td>
@@ -8212,7 +8212,7 @@
 </tr>
 <tr>
 <td><a id="linenum2052" class="linenum-cell" data-linenum="2052" href="#linenum2052"></a></td>
-<td><pre>                    if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;Execute loop: lastTick=&quot;</span>+<a class="variable" href="#linenum1430">lastTick</a></pre></td>
+<td><pre>                    if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;Execute loop: lastTick=&quot;</span>+<a class="variable" href="#linenum1430">lastTick</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum2053" class="linenum-cell" data-linenum="2053" href="#linenum2053"></a></td>
@@ -8272,7 +8272,7 @@
 </tr>
 <tr>
 <td><a id="linenum2067" class="linenum-cell" data-linenum="2067" href="#linenum2067"></a></td>
-<td><pre>                    if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum123">println</a>(<span class='string'>&quot;  Setting currMillis=&quot;</span>+<a class="variable" href="#linenum1908">currMillis</a></pre></td>
+<td><pre>                    if (<a class="variable" href="#linenum54">DEBUG_PUMP</a>) Printer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/Printer.html#linenum109">println</a>(<span class='string'>&quot;  Setting currMillis=&quot;</span>+<a class="variable" href="#linenum1908">currMillis</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum2068" class="linenum-cell" data-linenum="2068" href="#linenum2068"></a></td>

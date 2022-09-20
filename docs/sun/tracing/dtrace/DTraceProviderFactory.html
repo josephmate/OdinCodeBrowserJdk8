@@ -240,7 +240,7 @@
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
-<td><pre>public final class DTraceProviderFactory extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/ProviderFactory.html#linenum29">ProviderFactory</a> {</pre></td>
+<td><pre>public final class DTraceProviderFactory extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/ProviderFactory.html#linenum53">ProviderFactory</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
@@ -316,7 +316,7 @@
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>    public &lt;T extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/Provider.html#linenum55">Provider</a>&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> createProvider(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; cls) {</pre></td>
+<td><pre>    public &lt;T extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/Provider.html#linenum55">Provider</a>&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> createProvider(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; cls) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
@@ -324,7 +324,7 @@
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> proxy = <a class="variable" href="#linenum79">jsdt</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/dtrace/DTraceProvider.html#linenum97">newProxyInstance</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> proxy = <a class="variable" href="#linenum79">jsdt</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/dtrace/DTraceProvider.html#linenum97">newProxyInstance</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
@@ -488,15 +488,15 @@
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;? extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/Provider.html#linenum55">Provider</a>&gt;,<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/Provider.html#linenum55">Provider</a>&gt; map =</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;? extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/Provider.html#linenum55">Provider</a>&gt;,<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/Provider.html#linenum55">Provider</a>&gt; map =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;? extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/Provider.html#linenum55">Provider</a>&gt;,<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/Provider.html#linenum55">Provider</a>&gt;();</pre></td>
+<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;? extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/Provider.html#linenum55">Provider</a>&gt;,<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tracing/Provider.html#linenum55">Provider</a>&gt;();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum89">HashSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/dtrace/DTraceProvider.html#linenum47">DTraceProvider</a>&gt; jsdts = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum89">HashSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/dtrace/DTraceProvider.html#linenum47">DTraceProvider</a>&gt;();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum90">HashSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/dtrace/DTraceProvider.html#linenum47">DTraceProvider</a>&gt; jsdts = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum90">HashSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/tracing/dtrace/DTraceProvider.html#linenum47">DTraceProvider</a>&gt;();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
@@ -584,7 +584,7 @@
 </tr>
 <tr>
 <td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/SecurityManager.html#linenum226">SecurityManager</a> security = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum333">getSecurityManager</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/SecurityManager.html#linenum226">SecurityManager</a> security = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum335">getSecurityManager</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>

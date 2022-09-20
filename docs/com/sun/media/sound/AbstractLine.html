@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 1999, 2013, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 1999, 2016, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -204,11 +204,11 @@
 </tr>
 <tr>
 <td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
-<td><pre>    private boolean open     = false;</pre></td>
+<td><pre>    private volatile boolean open;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> listeners = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>();</pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> listeners = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
@@ -364,11 +364,11 @@
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>            if ( ! (<a class="variable" href="#linenum51">listeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum366">contains</a>(<a class="variable" href="#linenum88">listener</a>)) ) {</pre></td>
+<td><pre>            if ( ! (<a class="variable" href="#linenum51">listeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum371">contains</a>(<a class="variable" href="#linenum88">listener</a>)) ) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>                <a class="variable" href="#linenum51">listeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum618">addElement</a>(<a class="variable" href="#linenum88">listener</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum51">listeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum623">addElement</a>(<a class="variable" href="#linenum88">listener</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
@@ -412,7 +412,7 @@
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>        <a class="variable" href="#linenum51">listeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum639">removeElement</a>(<a class="variable" href="#linenum101">listener</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum51">listeners</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum644">removeElement</a>(<a class="variable" href="#linenum101">listener</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>

@@ -364,7 +364,7 @@
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(types, 0, <a class="variable" href="#linenum89">filetypes</a>, 0, types.length);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(types, 0, <a class="variable" href="#linenum89">filetypes</a>, 0, types.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
@@ -584,11 +584,11 @@
 </tr>
 <tr>
 <td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
-<td><pre>            int dataLength=<a class="variable" href="#linenum137">bytesWritten</a>-<a class="variable" href="#linenum132">waveFileFormat</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFileFormat.html#linenum109">getHeaderSize</a>();</pre></td>
+<td><pre>            int dataLength=<a class="variable" href="#linenum137">bytesWritten</a>-<a class="variable" href="#linenum132">waveFileFormat</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFileFormat.html#linenum105">getHeaderSize</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
-<td><pre>            int riffLength=<a class="variable" href="#linenum145">dataLength</a> + <a class="variable" href="#linenum132">waveFileFormat</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFileFormat.html#linenum109">getHeaderSize</a>() - 8;</pre></td>
+<td><pre>            int riffLength=<a class="variable" href="#linenum145">dataLength</a> + <a class="variable" href="#linenum132">waveFileFormat</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFileFormat.html#linenum105">getHeaderSize</a>() - 8;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
@@ -604,11 +604,11 @@
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre>            <a class="variable" href="#linenum148">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum431">skipBytes</a>(4);</pre></td>
+<td><pre>            <a class="variable" href="#linenum148">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum459">skipBytes</a>(4);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre>            <a class="variable" href="#linenum148">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum997">writeInt</a>(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/SunFileWriter.html#linenum120">big2little</a>( <a class="variable" href="#linenum146">riffLength</a> ));</pre></td>
+<td><pre>            <a class="variable" href="#linenum148">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum1029">writeInt</a>(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/SunFileWriter.html#linenum120">big2little</a>( <a class="variable" href="#linenum146">riffLength</a> ));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
@@ -616,11 +616,11 @@
 </tr>
 <tr>
 <td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
-<td><pre>            <a class="variable" href="#linenum148">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum431">skipBytes</a>(4+4+4+WaveFileFormat.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFileFormat.html#linenum115">getFmtChunkSize</a>(<a class="variable" href="#linenum132">waveFileFormat</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFileFormat.html#linenum100">getWaveType</a>())+4);</pre></td>
+<td><pre>            <a class="variable" href="#linenum148">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum459">skipBytes</a>(4+4+4+WaveFileFormat.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFileFormat.html#linenum115">getFmtChunkSize</a>(<a class="variable" href="#linenum132">waveFileFormat</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFileFormat.html#linenum100">getWaveType</a>())+4);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
-<td><pre>            <a class="variable" href="#linenum148">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum997">writeInt</a>(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/SunFileWriter.html#linenum120">big2little</a>( <a class="variable" href="#linenum145">dataLength</a> ));</pre></td>
+<td><pre>            <a class="variable" href="#linenum148">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum1029">writeInt</a>(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/SunFileWriter.html#linenum120">big2little</a>( <a class="variable" href="#linenum145">dataLength</a> ));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
@@ -628,7 +628,7 @@
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre>            <a class="variable" href="#linenum148">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum574">close</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum148">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum606">close</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
@@ -960,7 +960,7 @@
 </tr>
 <tr>
 <td><a id="linenum239" class="linenum-cell" data-linenum="239" href="#linenum239"></a></td>
-<td><pre>        while( (<a class="variable" href="#linenum233">bytesRead</a> = <a class="variable" href="#linenum235">fileStream</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum161">read</a>( <a class="variable" href="#linenum236">buffer</a> )) &gt;= 0 ) {</pre></td>
+<td><pre>        while( (<a class="variable" href="#linenum233">bytesRead</a> = <a class="variable" href="#linenum235">fileStream</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum100">read</a>( <a class="variable" href="#linenum236">buffer</a> )) &gt;= 0 ) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum240" class="linenum-cell" data-linenum="240" href="#linenum240"></a></td>
@@ -1068,7 +1068,7 @@
 </tr>
 <tr>
 <td><a id="linenum266" class="linenum-cell" data-linenum="266" href="#linenum266"></a></td>
-<td><pre>        int headerLength       = <a class="variable" href="#linenum261">waveFileFormat</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFileFormat.html#linenum109">getHeaderSize</a>();</pre></td>
+<td><pre>        int headerLength       = <a class="variable" href="#linenum261">waveFileFormat</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFileFormat.html#linenum105">getHeaderSize</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum267" class="linenum-cell" data-linenum="267" href="#linenum267"></a></td>
@@ -1220,7 +1220,7 @@
 </tr>
 <tr>
 <td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
-<td><pre>                    <a class="variable" href="#linenum292">codedAudioStream</a> = AudioSystem.<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioSystem.html#linenum1172">getAudioInputStream</a>( new <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFormat.html#linenum125">AudioFormat</a>(</pre></td>
+<td><pre>                    <a class="variable" href="#linenum292">codedAudioStream</a> = AudioSystem.<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioSystem.html#linenum866">getAudioInputStream</a>( new <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFormat.html#linenum125">AudioFormat</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum305" class="linenum-cell" data-linenum="305" href="#linenum305"></a></td>
@@ -1288,7 +1288,7 @@
 </tr>
 <tr>
 <td><a id="linenum321" class="linenum-cell" data-linenum="321" href="#linenum321"></a></td>
-<td><pre>                    <a class="variable" href="#linenum292">codedAudioStream</a> = AudioSystem.<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioSystem.html#linenum1172">getAudioInputStream</a>( new <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFormat.html#linenum125">AudioFormat</a>(</pre></td>
+<td><pre>                    <a class="variable" href="#linenum292">codedAudioStream</a> = AudioSystem.<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioSystem.html#linenum866">getAudioInputStream</a>( new <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFormat.html#linenum125">AudioFormat</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum322" class="linenum-cell" data-linenum="322" href="#linenum322"></a></td>
@@ -1452,7 +1452,7 @@
 </tr>
 <tr>
 <td><a id="linenum362" class="linenum-cell" data-linenum="362" href="#linenum362"></a></td>
-<td><pre>        <a class="variable" href="#linenum284">header</a> = <a class="variable" href="#linenum286">baos</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum177">toByteArray</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum284">header</a> = <a class="variable" href="#linenum286">baos</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum190">toByteArray</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum363" class="linenum-cell" data-linenum="363" href="#linenum363"></a></td>

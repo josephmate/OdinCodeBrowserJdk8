@@ -192,7 +192,7 @@
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
-<td><pre>public class GarbageCollectionNotifInfoCompositeData extends <a class="type" href="/OdinCodeBrowserJdk8/sun/management/LazyCompositeData.html#linenum45">LazyCompositeData</a> {</pre></td>
+<td><pre>public class GarbageCollectionNotifInfoCompositeData extends <a class="type" href="/OdinCodeBrowserJdk8/sun/management/LazyCompositeData.html#linenum46">LazyCompositeData</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
@@ -264,7 +264,7 @@
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
-<td><pre>        final <a class="type" href="/OdinCodeBrowserJdk8/sun/management/GcInfoBuilder.html#linenum43">GcInfoBuilder</a> builder = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a> (new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/management/GcInfoBuilder.html#linenum43">GcInfoBuilder</a>&gt;() {</pre></td>
+<td><pre>        final <a class="type" href="/OdinCodeBrowserJdk8/sun/management/GcInfoBuilder.html#linenum43">GcInfoBuilder</a> builder = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum297">doPrivileged</a> (new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/management/GcInfoBuilder.html#linenum43">GcInfoBuilder</a>&gt;() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
@@ -276,11 +276,11 @@
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre>                        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a> cl = Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum325">forName</a>(<span class='string'>&quot;com.sun.management.GcInfo&quot;</span>);</pre></td>
+<td><pre>                        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a> cl = Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum260">forName</a>(<span class='string'>&quot;com.sun.management.GcInfo&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
-<td><pre>                        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Field.html#linenum62">Field</a> f = <a class="variable" href="#linenum68">cl</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum2051">getDeclaredField</a>(<span class='string'>&quot;builder&quot;</span>);</pre></td>
+<td><pre>                        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Field.html#linenum62">Field</a> f = <a class="variable" href="#linenum68">cl</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum2064">getDeclaredField</a>(<span class='string'>&quot;builder&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum70" class="linenum-cell" data-linenum="70" href="#linenum70"></a></td>
@@ -288,7 +288,7 @@
 </tr>
 <tr>
 <td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
-<td><pre>                        return (<a class="type" href="/OdinCodeBrowserJdk8/sun/management/GcInfoBuilder.html#linenum43">GcInfoBuilder</a>)<a class="variable" href="#linenum69">f</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Field.html#linenum377">get</a>(<a class="variable" href="#linenum48">gcNotifInfo</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/management/GarbageCollectionNotificationInfo.html#linenum178">getGcInfo</a>());</pre></td>
+<td><pre>                        return (<a class="type" href="/OdinCodeBrowserJdk8/sun/management/GcInfoBuilder.html#linenum43">GcInfoBuilder</a>)<a class="variable" href="#linenum69">f</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Field.html#linenum383">get</a>(<a class="variable" href="#linenum48">gcNotifInfo</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/management/GarbageCollectionNotificationInfo.html#linenum178">getGcInfo</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
@@ -560,11 +560,11 @@
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/management/GcInfoBuilder.html#linenum43">GcInfoBuilder</a>,<a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/CompositeType.html#linenum48">CompositeType</a>&gt; compositeTypeByBuilder =</pre></td>
+<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/management/GcInfoBuilder.html#linenum43">GcInfoBuilder</a>,<a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/CompositeType.html#linenum48">CompositeType</a>&gt; compositeTypeByBuilder =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre>        new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>&lt;&gt;();</pre></td>
+<td><pre>        new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>&lt;&gt;();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
@@ -576,7 +576,7 @@
 </tr>
 <tr>
 <td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> gcname = <a class="type" href="/OdinCodeBrowserJdk8/sun/management/LazyCompositeData.html#linenum118">getString</a>(<a class="variable" href="#linenum142">cd</a>, <a class="variable" href="#linenum129">GC_NAME</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> gcname = <a class="type" href="/OdinCodeBrowserJdk8/sun/management/LazyCompositeData.html#linenum128">getString</a>(<a class="variable" href="#linenum142">cd</a>, <a class="variable" href="#linenum129">GC_NAME</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
@@ -612,7 +612,7 @@
 </tr>
 <tr>
 <td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> gcaction = <a class="type" href="/OdinCodeBrowserJdk8/sun/management/LazyCompositeData.html#linenum118">getString</a>(<a class="variable" href="#linenum151">cd</a>, <a class="variable" href="#linenum130">GC_ACTION</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> gcaction = <a class="type" href="/OdinCodeBrowserJdk8/sun/management/LazyCompositeData.html#linenum128">getString</a>(<a class="variable" href="#linenum151">cd</a>, <a class="variable" href="#linenum130">GC_ACTION</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
@@ -648,7 +648,7 @@
 </tr>
 <tr>
 <td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> gccause = <a class="type" href="/OdinCodeBrowserJdk8/sun/management/LazyCompositeData.html#linenum118">getString</a>(<a class="variable" href="#linenum160">cd</a>, <a class="variable" href="#linenum131">GC_CAUSE</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> gccause = <a class="type" href="/OdinCodeBrowserJdk8/sun/management/LazyCompositeData.html#linenum128">getString</a>(<a class="variable" href="#linenum160">cd</a>, <a class="variable" href="#linenum131">GC_CAUSE</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
@@ -736,7 +736,7 @@
 </tr>
 <tr>
 <td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
-<td><pre>        if (!<a class="type" href="/OdinCodeBrowserJdk8/sun/management/LazyCompositeData.html#linenum182">isTypeMatched</a>( <a class="type" href="/OdinCodeBrowserJdk8/sun/management/GarbageCollectionNotifInfoCompositeData.html#linenum191">getBaseGcNotifInfoCompositeType</a>(), <a class="variable" href="#linenum178">cd</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/CompositeData.html#linenum53">getCompositeType</a>())) {</pre></td>
+<td><pre>        if (!<a class="type" href="/OdinCodeBrowserJdk8/sun/management/LazyCompositeData.html#linenum165">isTypeMatched</a>( <a class="type" href="/OdinCodeBrowserJdk8/sun/management/GarbageCollectionNotifInfoCompositeData.html#linenum191">getBaseGcNotifInfoCompositeType</a>(), <a class="variable" href="#linenum178">cd</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/CompositeData.html#linenum53">getCompositeType</a>())) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>

@@ -220,7 +220,7 @@
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre>                return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/MethodFinder.html#linenum163">findAccessibleMethod</a>(<a class="variable" href="#linenum53">finder</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/AbstractFinder.html#linenum87">find</a>(<a class="variable" href="#linenum51">signature</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/Signature.html#linenum65">getType</a>().getMethods()));</pre></td>
+<td><pre>                return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/MethodFinder.html#linenum135">findAccessibleMethod</a>(<a class="variable" href="#linenum53">finder</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/AbstractFinder.html#linenum87">find</a>(<a class="variable" href="#linenum51">signature</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/Signature.html#linenum65">getType</a>().getMethods()));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
@@ -332,7 +332,7 @@
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre>            return (<a class="variable" href="#linenum81">method</a> == null) || isPackageAccessible(<a class="variable" href="#linenum81">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum169">getDeclaringClass</a>()) ? <a class="variable" href="#linenum81">method</a> : <a class="variable" href="#linenum49">CACHE</a>.create(<a class="variable" href="#linenum78">signature</a>);</pre></td>
+<td><pre>            return (<a class="variable" href="#linenum81">method</a> == null) || isPackageAccessible(<a class="variable" href="#linenum81">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum183">getDeclaringClass</a>()) ? <a class="variable" href="#linenum81">method</a> : <a class="variable" href="#linenum49">CACHE</a>.create(<a class="variable" href="#linenum78">signature</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
@@ -412,7 +412,7 @@
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>        if (Modifier.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Modifier.html#linenum103">isStatic</a>(<a class="variable" href="#linenum101">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum186">getModifiers</a>())) {</pre></td>
+<td><pre>        if (Modifier.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Modifier.html#linenum103">isStatic</a>(<a class="variable" href="#linenum101">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum200">getModifiers</a>())) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
@@ -488,7 +488,7 @@
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>        if (!Modifier.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Modifier.html#linenum103">isStatic</a>(<a class="variable" href="#linenum120">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum186">getModifiers</a>())) {</pre></td>
+<td><pre>        if (!Modifier.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Modifier.html#linenum103">isStatic</a>(<a class="variable" href="#linenum120">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum200">getModifiers</a>())) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
@@ -548,7 +548,7 @@
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; type = <a class="variable" href="#linenum135">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum169">getDeclaringClass</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; type = <a class="variable" href="#linenum135">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum183">getDeclaringClass</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
@@ -564,11 +564,11 @@
 </tr>
 <tr>
 <td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre>        if (Modifier.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Modifier.html#linenum103">isStatic</a>(<a class="variable" href="#linenum135">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum186">getModifiers</a>())) {</pre></td>
+<td><pre>        if (Modifier.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Modifier.html#linenum103">isStatic</a>(<a class="variable" href="#linenum135">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum200">getModifiers</a>())) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/NoSuchMethodException.html#linenum34">NoSuchMethodException</a>(<span class='string'>&quot;Method '&quot;</span> + <a class="variable" href="#linenum135">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum178">getName</a>() + <span class='string'>&quot;' is not accessible&quot;</span>);</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/NoSuchMethodException.html#linenum34">NoSuchMethodException</a>(<span class='string'>&quot;Method '&quot;</span> + <a class="variable" href="#linenum135">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum192">getName</a>() + <span class='string'>&quot;' is not accessible&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
@@ -660,11 +660,11 @@
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name = <a class="variable" href="#linenum163">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum178">getName</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name = <a class="variable" href="#linenum163">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum192">getName</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;[] params = <a class="variable" href="#linenum163">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum248">getParameterTypes</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;[] params = <a class="variable" href="#linenum163">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum262">getParameterTypes</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
@@ -676,7 +676,7 @@
 </tr>
 <tr>
 <td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
-<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/MethodFinder.html#linenum163">findAccessibleMethod</a>(<a class="variable" href="#linenum167">type</a>.getMethod(<a class="variable" href="#linenum164">name</a>, <a class="variable" href="#linenum165">params</a>));</pre></td>
+<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/MethodFinder.html#linenum135">findAccessibleMethod</a>(<a class="variable" href="#linenum167">type</a>.getMethod(<a class="variable" href="#linenum164">name</a>, <a class="variable" href="#linenum165">params</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
@@ -712,11 +712,11 @@
 </tr>
 <tr>
 <td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
-<td><pre>                        if (Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2810">equals</a>(<a class="variable" href="#linenum165">params</a>, <a class="variable" href="#linenum175">pts</a>)) {</pre></td>
+<td><pre>                        if (Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2570">equals</a>(<a class="variable" href="#linenum165">params</a>, <a class="variable" href="#linenum175">pts</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
-<td><pre>                            return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/MethodFinder.html#linenum163">findAccessibleMethod</a>(m);</pre></td>
+<td><pre>                            return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/MethodFinder.html#linenum135">findAccessibleMethod</a>(m);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
@@ -732,11 +732,11 @@
 </tr>
 <tr>
 <td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
-<td><pre>                            if (Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2810">equals</a>(<a class="variable" href="#linenum165">params</a>, TypeResolver.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/TypeResolver.html#linenum270">erase</a>(TypeResolver.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/TypeResolver.html#linenum214">resolve</a>(<a class="variable" href="#linenum171">pt</a>, <a class="variable" href="#linenum180">gpts</a>)))) {</pre></td>
+<td><pre>                            if (Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2570">equals</a>(<a class="variable" href="#linenum165">params</a>, TypeResolver.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/TypeResolver.html#linenum232">erase</a>(TypeResolver.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/TypeResolver.html#linenum214">resolve</a>(<a class="variable" href="#linenum171">pt</a>, <a class="variable" href="#linenum180">gpts</a>)))) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
-<td><pre>                                return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/MethodFinder.html#linenum163">findAccessibleMethod</a>(m);</pre></td>
+<td><pre>                                return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/MethodFinder.html#linenum135">findAccessibleMethod</a>(m);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
@@ -876,7 +876,7 @@
 </tr>
 <tr>
 <td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>
-<td><pre>        return super.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/AbstractFinder.html#linenum66">isValid</a>(<a class="variable" href="#linenum217">method</a>) &amp;&amp; <a class="variable" href="#linenum217">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum178">getName</a>().equals(this.name);</pre></td>
+<td><pre>        return super.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/finder/AbstractFinder.html#linenum66">isValid</a>(<a class="variable" href="#linenum217">method</a>) &amp;&amp; <a class="variable" href="#linenum217">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum192">getName</a>().equals(this.name);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>

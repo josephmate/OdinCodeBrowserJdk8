@@ -496,7 +496,7 @@
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>        private ValueCell(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> key, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> value, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a> queue) {</pre></td>
+<td><pre>        private ValueCell(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> key, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> value, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a> queue) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
@@ -520,7 +520,7 @@
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
-<td><pre>                                        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a> queue)</pre></td>
+<td><pre>                                        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a> queue)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
@@ -596,7 +596,7 @@
 </tr>
 <tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>            super.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/Reference.html#linenum212">clear</a>();</pre></td>
+<td><pre>            super.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/Reference.html#linenum264">clear</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
@@ -644,7 +644,7 @@
 </tr>
 <tr>
 <td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a> queue = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a>();</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a> queue = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
@@ -684,11 +684,11 @@
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>        while ((<a class="variable" href="#linenum169">vc</a> = (ValueCell)<a class="variable" href="#linenum160">queue</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum104">poll</a>()) != null) {</pre></td>
+<td><pre>        while ((<a class="variable" href="#linenum169">vc</a> = (ValueCell)<a class="variable" href="#linenum160">queue</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum105">poll</a>()) != null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum169">vc</a>.isValid()) <a class="variable" href="#linenum157">hash</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum784">remove</a>(<a class="variable" href="#linenum169">vc</a>.key);</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum169">vc</a>.isValid()) <a class="variable" href="#linenum157">hash</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum272">remove</a>(<a class="variable" href="#linenum169">vc</a>.key);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
@@ -772,7 +772,7 @@
 </tr>
 <tr>
 <td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
-<td><pre>        <a class="variable" href="#linenum157">hash</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>(initialCapacity, loadFactor);</pre></td>
+<td><pre>        <a class="variable" href="#linenum157">hash</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>(initialCapacity, loadFactor);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
@@ -824,7 +824,7 @@
 </tr>
 <tr>
 <td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
-<td><pre>        <a class="variable" href="#linenum157">hash</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>(<a class="variable" href="#linenum191">initialCapacity</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum157">hash</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>(<a class="variable" href="#linenum191">initialCapacity</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
@@ -856,7 +856,7 @@
 </tr>
 <tr>
 <td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
-<td><pre>        <a class="variable" href="#linenum157">hash</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum157">hash</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
@@ -1408,11 +1408,11 @@
 </tr>
 <tr>
 <td><a id="linenum351" class="linenum-cell" data-linenum="351" href="#linenum351"></a></td>
-<td><pre>    private class Entry implements <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a> {</pre></td>
+<td><pre>    private class Entry implements <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum352" class="linenum-cell" data-linenum="352" href="#linenum352"></a></td>
-<td><pre>        private <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a> ent;</pre></td>
+<td><pre>        private <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a> ent;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum353" class="linenum-cell" data-linenum="353" href="#linenum353"></a></td>
@@ -1432,7 +1432,7 @@
 </tr>
 <tr>
 <td><a id="linenum357" class="linenum-cell" data-linenum="357" href="#linenum357"></a></td>
-<td><pre>        Entry(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a> ent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> value) {</pre></td>
+<td><pre>        Entry(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a> ent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> value) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum358" class="linenum-cell" data-linenum="358" href="#linenum358"></a></td>
@@ -1504,11 +1504,11 @@
 </tr>
 <tr>
 <td><a id="linenum375" class="linenum-cell" data-linenum="375" href="#linenum375"></a></td>
-<td><pre>            if (! (<a class="variable" href="#linenum374">o</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>)) return false;</pre></td>
+<td><pre>            if (! (<a class="variable" href="#linenum374">o</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>)) return false;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum376" class="linenum-cell" data-linenum="376" href="#linenum376"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a> e = (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>)<a class="variable" href="#linenum374">o</a>;</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a> e = (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>)<a class="variable" href="#linenum374">o</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum377" class="linenum-cell" data-linenum="377" href="#linenum377"></a></td>
@@ -1596,7 +1596,7 @@
 </tr>
 <tr>
 <td><a id="linenum398" class="linenum-cell" data-linenum="398" href="#linenum398"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a> next = null;</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a> next = null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum399" class="linenum-cell" data-linenum="399" href="#linenum399"></a></td>
@@ -1612,7 +1612,7 @@
 </tr>
 <tr>
 <td><a id="linenum402" class="linenum-cell" data-linenum="402" href="#linenum402"></a></td>
-<td><pre>                        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a> ent = (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>)<a class="variable" href="#linenum397">hashIterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Iterator.html#linenum70">next</a>();</pre></td>
+<td><pre>                        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a> ent = (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>)<a class="variable" href="#linenum397">hashIterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Iterator.html#linenum70">next</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum403" class="linenum-cell" data-linenum="403" href="#linenum403"></a></td>
@@ -1640,7 +1640,7 @@
 </tr>
 <tr>
 <td><a id="linenum409" class="linenum-cell" data-linenum="409" href="#linenum409"></a></td>
-<td><pre>                        <a class="variable" href="#linenum398">next</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>(<a class="variable" href="#linenum402">ent</a>, <a class="variable" href="#linenum404">v</a>);</pre></td>
+<td><pre>                        <a class="variable" href="#linenum398">next</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>(<a class="variable" href="#linenum402">ent</a>, <a class="variable" href="#linenum404">v</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum410" class="linenum-cell" data-linenum="410" href="#linenum410"></a></td>
@@ -1676,7 +1676,7 @@
 </tr>
 <tr>
 <td><a id="linenum418" class="linenum-cell" data-linenum="418" href="#linenum418"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a> e = <a class="variable" href="#linenum398">next</a>;</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a> e = <a class="variable" href="#linenum398">next</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum419" class="linenum-cell" data-linenum="419" href="#linenum419"></a></td>
@@ -1772,7 +1772,7 @@
 </tr>
 <tr>
 <td><a id="linenum442" class="linenum-cell" data-linenum="442" href="#linenum442"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum440">o</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>) return <a class="variable" href="#linenum392">hashEntries</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Set.html#linenum249">remove</a>(((<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>)<a class="variable" href="#linenum440">o</a>).ent);</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum440">o</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>) return <a class="variable" href="#linenum392">hashEntries</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Set.html#linenum249">remove</a>(((<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>)<a class="variable" href="#linenum440">o</a>).ent);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum443" class="linenum-cell" data-linenum="443" href="#linenum443"></a></td>

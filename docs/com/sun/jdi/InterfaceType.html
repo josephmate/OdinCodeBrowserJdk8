@@ -332,6 +332,482 @@
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
+<td><pre><span class='comment'>     * Invokes the specified static {@link Method} in the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
+<td><pre><span class='comment'>     * target VM. The<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
+<td><pre><span class='comment'>     * specified method must be defined in this interface.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
+<td><pre><span class='comment'>     * The method must be a static method<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
+<td><pre><span class='comment'>     * but not a static initializer.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
+<td><pre><span class='comment'>     * The method invocation will occur in the specified thread.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
+<td><pre><span class='comment'>     * Method invocation can occur only if the specified thread<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
+<td><pre><span class='comment'>     * has been suspended by an event which occurred in that thread.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
+<td><pre><span class='comment'>     * Method invocation is not supported<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
+<td><pre><span class='comment'>     * when the target VM has been suspended through<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
+<td><pre><span class='comment'>     * {@link VirtualMachine#suspend} or when the specified thread<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
+<td><pre><span class='comment'>     * is suspended through {@link ThreadReference#suspend}.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
+<td><pre><span class='comment'>     * The specified method is invoked with the arguments in the specified<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
+<td><pre><span class='comment'>     * argument list.  The method invocation is synchronous; this method<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
+<td><pre><span class='comment'>     * does not return until the invoked method returns in the target VM.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
+<td><pre><span class='comment'>     * If the invoked method throws an exception, this method will throw<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
+<td><pre><span class='comment'>     * an {@link InvocationException} which contains a mirror to the exception<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
+<td><pre><span class='comment'>     * object thrown.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
+<td><pre><span class='comment'>     * Object arguments must be assignment compatible with the argument type<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
+<td><pre><span class='comment'>     * (This implies that the argument type must be loaded through the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
+<td><pre><span class='comment'>     * enclosing class' class loader). Primitive arguments must be<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
+<td><pre><span class='comment'>     * either assignment compatible with the argument type or must be<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
+<td><pre><span class='comment'>     * convertible to the argument type without loss of information.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
+<td><pre><span class='comment'>     * If the method being called accepts a variable number of arguments,<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
+<td><pre><span class='comment'>     * then the last argument type is an array of some component type.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
+<td><pre><span class='comment'>     * The argument in the matching position can be omitted, or can be null,<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
+<td><pre><span class='comment'>     * an array of the same component type, or an argument of the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
+<td><pre><span class='comment'>     * component type followed by any number of other arguments of the same<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
+<td><pre><span class='comment'>     * type. If the argument is omitted, then a 0 length array of the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
+<td><pre><span class='comment'>     * component type is passed.  The component type can be a primitive type.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
+<td><pre><span class='comment'>     * Autoboxing is not supported.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
+<td><pre><span class='comment'>     * See Section 5.2 of<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
+<td><pre><span class='comment'>     * &lt;cite&gt;The Java&amp;trade; Language Specification&lt;/cite&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
+<td><pre><span class='comment'>     * for more information on assignment compatibility.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
+<td><pre><span class='comment'>     * By default, all threads in the target VM are resumed while<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
+<td><pre><span class='comment'>     * the method is being invoked if they were previously<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
+<td><pre><span class='comment'>     * suspended by an event or by {@link VirtualMachine#suspend} or<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
+<td><pre><span class='comment'>     * {@link ThreadReference#suspend}. This is done to prevent the deadlocks<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
+<td><pre><span class='comment'>     * that will occur if any of the threads own monitors<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
+<td><pre><span class='comment'>     * that will be needed by the invoked method.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
+<td><pre><span class='comment'>     * Note, however, that this implicit resume acts exactly like<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
+<td><pre><span class='comment'>     * {@link ThreadReference#resume}, so if the thread's suspend<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
+<td><pre><span class='comment'>     * count is greater than 1, it will remain in a suspended state<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
+<td><pre><span class='comment'>     * during the invocation and thus a deadlock could still occur.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
+<td><pre><span class='comment'>     * By default, when the invocation completes,<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
+<td><pre><span class='comment'>     * all threads in the target VM are suspended, regardless their state<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
+<td><pre><span class='comment'>     * before the invocation.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
+<td><pre><span class='comment'>     * It is possible that<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
+<td><pre><span class='comment'>     * breakpoints or other events might occur during the invocation.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
+<td><pre><span class='comment'>     * This can cause deadlocks as described above. It can also cause a deadlock<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
+<td><pre><span class='comment'>     * if invokeMethod is called from the client's event handler thread.  In this<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
+<td><pre><span class='comment'>     * case, this thread will be waiting for the invokeMethod to complete and<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
+<td><pre><span class='comment'>     * won't read the EventSet that comes in for the new event.  If this<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
+<td><pre><span class='comment'>     * new EventSet is SUSPEND_ALL, then a deadlock will occur because no<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
+<td><pre><span class='comment'>     * one will resume the EventSet.  To avoid this, all EventRequests should<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
+<td><pre><span class='comment'>     * be disabled before doing the invokeMethod, or the invokeMethod should<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
+<td><pre><span class='comment'>     * not be done from the client's event handler thread.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
+<td><pre><span class='comment'>     * The resumption of other threads during the invocation can be prevented<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
+<td><pre><span class='comment'>     * by specifying the {@link #INVOKE_SINGLE_THREADED}<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
+<td><pre><span class='comment'>     * bit flag in the &lt;code&gt;options&lt;/code&gt; argument; however,<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
+<td><pre><span class='comment'>     * there is no protection against or recovery from the deadlocks<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
+<td><pre><span class='comment'>     * described above, so this option should be used with great caution.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
+<td><pre><span class='comment'>     * Only the specified thread will be resumed (as described for all<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
+<td><pre><span class='comment'>     * threads above). Upon completion of a single threaded invoke, the invoking thread<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
+<td><pre><span class='comment'>     * will be suspended once again. Note that any threads started during<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
+<td><pre><span class='comment'>     * the single threaded invocation will not be suspended when the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
+<td><pre><span class='comment'>     * invocation completes.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
+<td><pre><span class='comment'>     * If the target VM is disconnected during the invoke (for example, through<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
+<td><pre><span class='comment'>     * {@link VirtualMachine#dispose}) the method invocation continues.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
+<td><pre><span class='comment'>     * @param thread the thread in which to invoke.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
+<td><pre><span class='comment'>     * @param method the {@link Method} to invoke.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
+<td><pre><span class='comment'>     * @param arguments the list of {@link Value} arguments bound to the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
+<td><pre><span class='comment'>     * invoked method. Values from the list are assigned to arguments<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
+<td><pre><span class='comment'>     * in the order they appear in the method signature.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
+<td><pre><span class='comment'>     * @param options the integer bit flag options.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
+<td><pre><span class='comment'>     * @return a {@link Value} mirror of the invoked method's return value.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
+<td><pre><span class='comment'>     * @throws java.lang.IllegalArgumentException if the method is not<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
+<td><pre><span class='comment'>     * a member of this interface, if the size of the argument list<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
+<td><pre><span class='comment'>     * does not match the number of declared arguments for the method, or<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
+<td><pre><span class='comment'>     * if the method is not static or is a static initializer.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
+<td><pre><span class='comment'>     * @throws {@link InvalidTypeException} if any argument in the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
+<td><pre><span class='comment'>     * argument list is not assignable to the corresponding method argument<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
+<td><pre><span class='comment'>     * type.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
+<td><pre><span class='comment'>     * @throws ClassNotLoadedException if any argument type has not yet been loaded<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
+<td><pre><span class='comment'>     * through the appropriate class loader.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
+<td><pre><span class='comment'>     * @throws IncompatibleThreadStateException if the specified thread has not<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
+<td><pre><span class='comment'>     * been suspended by an event.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
+<td><pre><span class='comment'>     * @throws InvocationException if the method invocation resulted in<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
+<td><pre><span class='comment'>     * an exception in the target VM.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
+<td><pre><span class='comment'>     * @throws InvalidTypeException If the arguments do not meet this requirement --<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
+<td><pre><span class='comment'>     *         Object arguments must be assignment compatible with the argument<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
+<td><pre><span class='comment'>     *         type.  This implies that the argument type must be<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
+<td><pre><span class='comment'>     *         loaded through the enclosing class' class loader.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
+<td><pre><span class='comment'>     *         Primitive arguments must be either assignment compatible with the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
+<td><pre><span class='comment'>     *         argument type or must be convertible to the argument type without loss<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
+<td><pre><span class='comment'>     *         of information. See JLS section 5.2 for more information on assignment<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
+<td><pre><span class='comment'>     *         compatibility.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
+<td><pre><span class='comment'>     * @throws VMCannotBeModifiedException if the VirtualMachine is read-only - see {@link VirtualMachine#canBeModified()}.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
+<td><pre><span class='comment'>     * @since 1.8<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
+<td><pre>    default <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/Value.html#linenum171">Value</a> invokeMethod(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/ThreadReference.html#linenum39">ThreadReference</a> thread, <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/Method.html#linenum42">Method</a> method,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
+<td><pre>                       <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;? extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/Value.html#linenum171">Value</a>&gt; arguments, int options)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
+<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/InvalidTypeException.html#linenum35">InvalidTypeException</a>,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/ClassNotLoadedException.html#linenum70">ClassNotLoadedException</a>,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/IncompatibleThreadStateException.html#linenum35">IncompatibleThreadStateException</a>,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/InvocationException.html#linenum35">InvocationException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
+<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/UnsupportedOperationException.html#linenum38">UnsupportedOperationException</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

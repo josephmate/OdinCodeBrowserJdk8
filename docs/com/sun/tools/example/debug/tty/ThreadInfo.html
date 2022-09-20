@@ -196,7 +196,7 @@
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/example/debug/tty/ThreadInfo.html#linenum45">ThreadInfo</a>&gt; threads = Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2442">synchronizedList</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/example/debug/tty/ThreadInfo.html#linenum45">ThreadInfo</a>&gt;());</pre></td>
+<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/example/debug/tty/ThreadInfo.html#linenum45">ThreadInfo</a>&gt; threads = Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2378">synchronizedList</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/example/debug/tty/ThreadInfo.html#linenum45">ThreadInfo</a>&gt;());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
@@ -412,7 +412,7 @@
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>            MessageOutput.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/example/debug/tty/MessageOutput.html#linenum154">println</a>();</pre></td>
+<td><pre>            MessageOutput.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/example/debug/tty/MessageOutput.html#linenum121">println</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
@@ -456,7 +456,7 @@
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
-<td><pre>            return new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/example/debug/tty/ThreadInfo.html#linenum45">ThreadInfo</a>&gt;(<a class="variable" href="#linenum48">threads</a>);</pre></td>
+<td><pre>            return new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/example/debug/tty/ThreadInfo.html#linenum45">ThreadInfo</a>&gt;(<a class="variable" href="#linenum48">threads</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
@@ -760,7 +760,7 @@
 </tr>
 <tr>
 <td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/example/debug/tty/ThreadInfo.html#linenum192">getThreadInfo</a>(<a class="variable" href="#linenum188">tr</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/ObjectReference.html#linenum336">uniqueID</a>());</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/example/debug/tty/ThreadInfo.html#linenum174">getThreadInfo</a>(<a class="variable" href="#linenum188">tr</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/ObjectReference.html#linenum336">uniqueID</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
@@ -780,11 +780,11 @@
 </tr>
 <tr>
 <td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum192">idToken</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1420">startsWith</a>(<span class='string'>&quot;t@&quot;</span>)) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum192">idToken</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1433">startsWith</a>(<span class='string'>&quot;t@&quot;</span>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
-<td><pre>            <a class="variable" href="#linenum192">idToken</a> = <a class="variable" href="#linenum192">idToken</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(2);</pre></td>
+<td><pre>            <a class="variable" href="#linenum192">idToken</a> = <a class="variable" href="#linenum192">idToken</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1925">substring</a>(2);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
@@ -800,7 +800,7 @@
 </tr>
 <tr>
 <td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
-<td><pre>            <a class="variable" href="#linenum193">tinfo</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/example/debug/tty/ThreadInfo.html#linenum192">getThreadInfo</a>(<a class="variable" href="#linenum198">threadId</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum193">tinfo</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/example/debug/tty/ThreadInfo.html#linenum174">getThreadInfo</a>(<a class="variable" href="#linenum198">threadId</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>

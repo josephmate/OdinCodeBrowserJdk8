@@ -816,11 +816,11 @@
 </tr>
 <tr>
 <td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>                <a class="variable" href="#linenum201">c</a> = Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum325">forName</a>(<a class="variable" href="#linenum200">t</a>.getClassName(), false,</pre></td>
+<td><pre>                <a class="variable" href="#linenum201">c</a> = Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum329">forName</a>(<a class="variable" href="#linenum200">t</a>.getClassName(), false,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
-<td><pre>                                  <a class="type" href="/OdinCodeBrowserJdk8/javax/management/ObjectName.html#linenum222">ObjectName</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum667">getClassLoader</a>());</pre></td>
+<td><pre>                                  <a class="type" href="/OdinCodeBrowserJdk8/javax/management/ObjectName.html#linenum222">ObjectName</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum676">getClassLoader</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
@@ -864,7 +864,7 @@
 </tr>
 <tr>
 <td><a id="linenum215" class="linenum-cell" data-linenum="215" href="#linenum215"></a></td>
-<td><pre>                    final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; primitiveType = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;) <a class="variable" href="#linenum214">typeField</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Field.html#linenum377">get</a>(null);</pre></td>
+<td><pre>                    final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; primitiveType = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;) <a class="variable" href="#linenum214">typeField</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Field.html#linenum383">get</a>(null);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum216" class="linenum-cell" data-linenum="216" href="#linenum216"></a></td>
@@ -888,7 +888,7 @@
 </tr>
 <tr>
 <td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
-<td><pre>                            Array.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Array.html#linenum109">newInstance</a>(<a class="variable" href="#linenum215">primitiveType</a>, 0).getClass();</pre></td>
+<td><pre>                            Array.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Array.html#linenum73">newInstance</a>(<a class="variable" href="#linenum215">primitiveType</a>, 0).getClass();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum222" class="linenum-cell" data-linenum="222" href="#linenum222"></a></td>
@@ -1044,7 +1044,7 @@
 </tr>
 <tr>
 <td><a id="linenum260" class="linenum-cell" data-linenum="260" href="#linenum260"></a></td>
-<td><pre>            throw <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory.html#linenum1468">openDataException</a>(<span class='string'>&quot;Cannot convert type: &quot;</span> + typeName(<a class="variable" href="#linenum242">objType</a>), <a class="variable" href="#linenum232">e</a>);</pre></td>
+<td><pre>            throw <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory.html#linenum1464">openDataException</a>(<span class='string'>&quot;Cannot convert type: &quot;</span> + typeName(<a class="variable" href="#linenum242">objType</a>), <a class="variable" href="#linenum232">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum261" class="linenum-cell" data-linenum="261" href="#linenum261"></a></td>
@@ -1212,19 +1212,19 @@
 </tr>
 <tr>
 <td><a id="linenum302" class="linenum-cell" data-linenum="302" href="#linenum302"></a></td>
-<td><pre>    private static &lt;T extends <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Enum.html#linenum55">Enum</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt;&gt; <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/MXBeanMapping.html#linenum117">MXBeanMapping</a></pre></td>
+<td><pre>    private static &lt;T extends <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Enum.html#linenum55">Enum</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt;&gt; <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/MXBeanMapping.html#linenum117">MXBeanMapping</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum303" class="linenum-cell" data-linenum="303" href="#linenum303"></a></td>
-<td><pre>            makeEnumMapping(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; enumClass, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; fake) {</pre></td>
+<td><pre>            makeEnumMapping(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; enumClass, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; fake) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
-<td><pre>        ReflectUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/ReflectUtil.html#linenum176">checkPackageAccess</a>(<a class="variable" href="#linenum303">enumClass</a>);</pre></td>
+<td><pre>        ReflectUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/ReflectUtil.html#linenum163">checkPackageAccess</a>(<a class="variable" href="#linenum303">enumClass</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum305" class="linenum-cell" data-linenum="305" href="#linenum305"></a></td>
-<td><pre>        return new EnumMapping&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt;(Util.&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt;&gt;<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/Util.html#linenum108">cast</a>(<a class="variable" href="#linenum303">enumClass</a>));</pre></td>
+<td><pre>        return new EnumMapping&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt;(Util.&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt;&gt;<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/Util.html#linenum108">cast</a>(<a class="variable" href="#linenum303">enumClass</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum306" class="linenum-cell" data-linenum="306" href="#linenum306"></a></td>
@@ -1324,7 +1324,7 @@
 </tr>
 <tr>
 <td><a id="linenum330" class="linenum-cell" data-linenum="330" href="#linenum330"></a></td>
-<td><pre>            <a class="variable" href="#linenum323">openArrayClass</a> = Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum325">forName</a>(<a class="variable" href="#linenum324">openArrayClassName</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum323">openArrayClass</a> = Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum329">forName</a>(<a class="variable" href="#linenum324">openArrayClassName</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum331" class="linenum-cell" data-linenum="331" href="#linenum331"></a></td>
@@ -1332,7 +1332,7 @@
 </tr>
 <tr>
 <td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
-<td><pre>            throw <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory.html#linenum1468">openDataException</a>(<span class='string'>&quot;Cannot obtain array class&quot;</span>, <a class="variable" href="#linenum259">e</a>);</pre></td>
+<td><pre>            throw <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory.html#linenum1464">openDataException</a>(<span class='string'>&quot;Cannot obtain array class&quot;</span>, <a class="variable" href="#linenum259">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
@@ -1720,7 +1720,7 @@
 </tr>
 <tr>
 <td><a id="linenum429" class="linenum-cell" data-linenum="429" href="#linenum429"></a></td>
-<td><pre>        ReflectUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/ReflectUtil.html#linenum176">checkPackageAccess</a>(<a class="variable" href="#linenum418">c</a>);</pre></td>
+<td><pre>        ReflectUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/ReflectUtil.html#linenum163">checkPackageAccess</a>(<a class="variable" href="#linenum418">c</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum430" class="linenum-cell" data-linenum="430" href="#linenum430"></a></td>
@@ -1728,7 +1728,7 @@
 </tr>
 <tr>
 <td><a id="linenum431" class="linenum-cell" data-linenum="431" href="#linenum431"></a></td>
-<td><pre>                MBeanAnalyzer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/MBeanAnalyzer.html#linenum242">eliminateCovariantMethods</a>(Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3791">asList</a>(<a class="variable" href="#linenum418">c</a>.getMethods()));</pre></td>
+<td><pre>                MBeanAnalyzer.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/MBeanAnalyzer.html#linenum242">eliminateCovariantMethods</a>(Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3797">asList</a>(<a class="variable" href="#linenum418">c</a>.getMethods()));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum432" class="linenum-cell" data-linenum="432" href="#linenum432"></a></td>
@@ -1772,7 +1772,7 @@
 </tr>
 <tr>
 <td><a id="linenum442" class="linenum-cell" data-linenum="442" href="#linenum442"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum425">gcInfoHack</a> &amp;&amp; <a class="variable" href="#linenum438">propertyName</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum964">equals</a>(<span class='string'>&quot;CompositeType&quot;</span>))</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum425">gcInfoHack</a> &amp;&amp; <a class="variable" href="#linenum438">propertyName</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum976">equals</a>(<span class='string'>&quot;CompositeType&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum443" class="linenum-cell" data-linenum="443" href="#linenum443"></a></td>
@@ -1808,7 +1808,7 @@
 </tr>
 <tr>
 <td><a id="linenum451" class="linenum-cell" data-linenum="451" href="#linenum451"></a></td>
-<td><pre>                    <a class="variable" href="#linenum445">old</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum178">getName</a>() + <span class='string'>&quot;, &quot;</span> + method.getName();</pre></td>
+<td><pre>                    <a class="variable" href="#linenum445">old</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum192">getName</a>() + <span class='string'>&quot;, &quot;</span> + method.getName();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum452" class="linenum-cell" data-linenum="452" href="#linenum452"></a></td>
@@ -1872,7 +1872,7 @@
 </tr>
 <tr>
 <td><a id="linenum467" class="linenum-cell" data-linenum="467" href="#linenum467"></a></td>
-<td><pre>        for (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a>&gt; entry : <a class="variable" href="#linenum432">getterMap</a>.entrySet()) {</pre></td>
+<td><pre>        for (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a>&gt; entry : <a class="variable" href="#linenum432">getterMap</a>.entrySet()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum468" class="linenum-cell" data-linenum="468" href="#linenum468"></a></td>
@@ -1888,7 +1888,7 @@
 </tr>
 <tr>
 <td><a id="linenum471" class="linenum-cell" data-linenum="471" href="#linenum471"></a></td>
-<td><pre>            final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Type.html#linenum35">Type</a> retType = <a class="variable" href="#linenum469">getter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum239">getGenericReturnType</a>();</pre></td>
+<td><pre>            final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Type.html#linenum35">Type</a> retType = <a class="variable" href="#linenum469">getter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum253">getGenericReturnType</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum472" class="linenum-cell" data-linenum="472" href="#linenum472"></a></td>
@@ -2072,7 +2072,7 @@
 </tr>
 <tr>
 <td><a id="linenum517" class="linenum-cell" data-linenum="517" href="#linenum517"></a></td>
-<td><pre>    private static final class EnumMapping&lt;T extends <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Enum.html#linenum55">Enum</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt;&gt;</pre></td>
+<td><pre>    private static final class EnumMapping&lt;T extends <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Enum.html#linenum55">Enum</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt;&gt;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum518" class="linenum-cell" data-linenum="518" href="#linenum518"></a></td>
@@ -2084,7 +2084,7 @@
 </tr>
 <tr>
 <td><a id="linenum520" class="linenum-cell" data-linenum="520" href="#linenum520"></a></td>
-<td><pre>        EnumMapping(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; enumClass) {</pre></td>
+<td><pre>        EnumMapping(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; enumClass) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum521" class="linenum-cell" data-linenum="521" href="#linenum521"></a></td>
@@ -2128,7 +2128,7 @@
 </tr>
 <tr>
 <td><a id="linenum531" class="linenum-cell" data-linenum="531" href="#linenum531"></a></td>
-<td><pre>        final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> fromNonNullOpenValue(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> value)</pre></td>
+<td><pre>        final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> fromNonNullOpenValue(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> value)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum532" class="linenum-cell" data-linenum="532" href="#linenum532"></a></td>
@@ -2168,7 +2168,7 @@
 </tr>
 <tr>
 <td><a id="linenum541" class="linenum-cell" data-linenum="541" href="#linenum541"></a></td>
-<td><pre>        private final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; enumClass;</pre></td>
+<td><pre>        private final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; enumClass;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum542" class="linenum-cell" data-linenum="542" href="#linenum542"></a></td>
@@ -2236,7 +2236,7 @@
 </tr>
 <tr>
 <td><a id="linenum558" class="linenum-cell" data-linenum="558" href="#linenum558"></a></td>
-<td><pre>                Array.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Array.html#linenum109">newInstance</a>(getOpenClass().getComponentType(), <a class="variable" href="#linenum556">len</a>);</pre></td>
+<td><pre>                Array.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Array.html#linenum73">newInstance</a>(getOpenClass().getComponentType(), <a class="variable" href="#linenum556">len</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum559" class="linenum-cell" data-linenum="559" href="#linenum559"></a></td>
@@ -2328,7 +2328,7 @@
 </tr>
 <tr>
 <td><a id="linenum581" class="linenum-cell" data-linenum="581" href="#linenum581"></a></td>
-<td><pre>            <a class="variable" href="#linenum569">valueArray</a> = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[]) Array.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Array.html#linenum109">newInstance</a>((<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;) <a class="variable" href="#linenum570">componentType</a>,</pre></td>
+<td><pre>            <a class="variable" href="#linenum569">valueArray</a> = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[]) Array.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Array.html#linenum73">newInstance</a>((<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;) <a class="variable" href="#linenum570">componentType</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum582" class="linenum-cell" data-linenum="582" href="#linenum582"></a></td>
@@ -2468,7 +2468,7 @@
 </tr>
 <tr>
 <td><a id="linenum616" class="linenum-cell" data-linenum="616" href="#linenum616"></a></td>
-<td><pre>                <a class="variable" href="#linenum614">collC</a> = <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>.class;</pre></td>
+<td><pre>                <a class="variable" href="#linenum614">collC</a> = <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>.class;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum617" class="linenum-cell" data-linenum="617" href="#linenum617"></a></td>
@@ -2476,7 +2476,7 @@
 </tr>
 <tr>
 <td><a id="linenum618" class="linenum-cell" data-linenum="618" href="#linenum618"></a></td>
-<td><pre>                <a class="variable" href="#linenum614">collC</a> = <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum89">HashSet</a>.class;</pre></td>
+<td><pre>                <a class="variable" href="#linenum614">collC</a> = <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum90">HashSet</a>.class;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum619" class="linenum-cell" data-linenum="619" href="#linenum619"></a></td>
@@ -2576,7 +2576,7 @@
 </tr>
 <tr>
 <td><a id="linenum643" class="linenum-cell" data-linenum="643" href="#linenum643"></a></td>
-<td><pre>                Array.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Array.html#linenum109">newInstance</a>(getOpenClass().getComponentType(),</pre></td>
+<td><pre>                Array.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Array.html#linenum73">newInstance</a>(getOpenClass().getComponentType(),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum644" class="linenum-cell" data-linenum="644" href="#linenum644"></a></td>
@@ -2856,11 +2856,11 @@
 </tr>
 <tr>
 <td><a id="linenum713" class="linenum-cell" data-linenum="713" href="#linenum713"></a></td>
-<td><pre>            lookupNotNull(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; excClass)</pre></td>
+<td><pre>            lookupNotNull(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; excClass)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum714" class="linenum-cell" data-linenum="714" href="#linenum714"></a></td>
-<td><pre>                throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> {</pre></td>
+<td><pre>                throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum715" class="linenum-cell" data-linenum="715" href="#linenum715"></a></td>
@@ -2880,7 +2880,7 @@
 </tr>
 <tr>
 <td><a id="linenum719" class="linenum-cell" data-linenum="719" href="#linenum719"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> exc;</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> exc;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum720" class="linenum-cell" data-linenum="720" href="#linenum720"></a></td>
@@ -2888,7 +2888,7 @@
 </tr>
 <tr>
 <td><a id="linenum721" class="linenum-cell" data-linenum="721" href="#linenum721"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Constructor.html#linenum60">Constructor</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; con = <a class="variable" href="#linenum713">excClass</a>.getConstructor(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>.class);</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Constructor.html#linenum60">Constructor</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; con = <a class="variable" href="#linenum713">excClass</a>.getConstructor(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>.class);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum722" class="linenum-cell" data-linenum="722" href="#linenum722"></a></td>
@@ -3032,7 +3032,7 @@
 </tr>
 <tr>
 <td><a id="linenum757" class="linenum-cell" data-linenum="757" href="#linenum757"></a></td>
-<td><pre>            final <a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/TabularData.html#linenum45">TabularData</a> table = new <a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/TabularDataSupport.html#linenum74">TabularDataSupport</a>(<a class="variable" href="#linenum756">tabularType</a>);</pre></td>
+<td><pre>            final <a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/TabularData.html#linenum45">TabularData</a> table = new <a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/TabularDataSupport.html#linenum75">TabularDataSupport</a>(<a class="variable" href="#linenum756">tabularType</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum758" class="linenum-cell" data-linenum="758" href="#linenum758"></a></td>
@@ -3040,7 +3040,7 @@
 </tr>
 <tr>
 <td><a id="linenum759" class="linenum-cell" data-linenum="759" href="#linenum759"></a></td>
-<td><pre>            for (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ConditionalSpecialCasing.html#linenum432">Entry</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>&gt; entry : <a class="variable" href="#linenum746">valueMap</a>.entrySet()) {</pre></td>
+<td><pre>            for (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/FinalizerHistogram.html#linenum41">Entry</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>&gt; entry : <a class="variable" href="#linenum746">valueMap</a>.entrySet()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum760" class="linenum-cell" data-linenum="760" href="#linenum760"></a></td>
@@ -3344,7 +3344,7 @@
 </tr>
 <tr>
 <td><a id="linenum835" class="linenum-cell" data-linenum="835" href="#linenum835"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> got = MethodUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/MethodUtil.html#linenum272">invoke</a>(<a class="variable" href="#linenum808">getters</a>[<a class="variable" href="#linenum833">i</a>], <a class="variable" href="#linenum824">value</a>, (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[]) null);</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> got = MethodUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/MethodUtil.html#linenum273">invoke</a>(<a class="variable" href="#linenum808">getters</a>[<a class="variable" href="#linenum833">i</a>], <a class="variable" href="#linenum824">value</a>, (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[]) null);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum836" class="linenum-cell" data-linenum="836" href="#linenum836"></a></td>
@@ -3512,7 +3512,7 @@
 </tr>
 <tr>
 <td><a id="linenum877" class="linenum-cell" data-linenum="877" href="#linenum877"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> possibleCause = null;</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> possibleCause = null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum878" class="linenum-cell" data-linenum="878" href="#linenum878"></a></td>
@@ -3552,7 +3552,7 @@
 </tr>
 <tr>
 <td><a id="linenum887" class="linenum-cell" data-linenum="887" href="#linenum887"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> cause = <a class="variable" href="#linenum881">builder</a>.possibleCause();</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> cause = <a class="variable" href="#linenum881">builder</a>.possibleCause();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum888" class="linenum-cell" data-linenum="888" href="#linenum888"></a></td>
@@ -3564,7 +3564,7 @@
 </tr>
 <tr>
 <td><a id="linenum890" class="linenum-cell" data-linenum="890" href="#linenum890"></a></td>
-<td><pre>                    if (<a class="variable" href="#linenum882">whyNot</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() &gt; 0) {</pre></td>
+<td><pre>                    if (<a class="variable" href="#linenum882">whyNot</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() &gt; 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum891" class="linenum-cell" data-linenum="891" href="#linenum891"></a></td>
@@ -3572,7 +3572,7 @@
 </tr>
 <tr>
 <td><a id="linenum892" class="linenum-cell" data-linenum="892" href="#linenum892"></a></td>
-<td><pre>                            <a class="variable" href="#linenum876">whyNots</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<span class='string'>&quot;; &quot;</span>);</pre></td>
+<td><pre>                            <a class="variable" href="#linenum876">whyNots</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<span class='string'>&quot;; &quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum893" class="linenum-cell" data-linenum="893" href="#linenum893"></a></td>
@@ -3840,7 +3840,7 @@
 </tr>
 <tr>
 <td><a id="linenum959" class="linenum-cell" data-linenum="959" href="#linenum959"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> possibleCause() {</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> possibleCause() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum960" class="linenum-cell" data-linenum="960" href="#linenum960"></a></td>
@@ -3960,7 +3960,7 @@
 </tr>
 <tr>
 <td><a id="linenum989" class="linenum-cell" data-linenum="989" href="#linenum989"></a></td>
-<td><pre>                if (!Modifier.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Modifier.html#linenum103">isStatic</a>(<a class="variable" href="#linenum986">fromMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum186">getModifiers</a>())) {</pre></td>
+<td><pre>                if (!Modifier.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Modifier.html#linenum103">isStatic</a>(<a class="variable" href="#linenum986">fromMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum200">getModifiers</a>())) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum990" class="linenum-cell" data-linenum="990" href="#linenum990"></a></td>
@@ -3984,7 +3984,7 @@
 </tr>
 <tr>
 <td><a id="linenum995" class="linenum-cell" data-linenum="995" href="#linenum995"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum986">fromMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum211">getReturnType</a>() != getTargetClass()) {</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum986">fromMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum225">getReturnType</a>() != getTargetClass()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum996" class="linenum-cell" data-linenum="996" href="#linenum996"></a></td>
@@ -3996,7 +3996,7 @@
 </tr>
 <tr>
 <td><a id="linenum998" class="linenum-cell" data-linenum="998" href="#linenum998"></a></td>
-<td><pre>                        typeName(<a class="variable" href="#linenum986">fromMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum211">getReturnType</a>()) +</pre></td>
+<td><pre>                        typeName(<a class="variable" href="#linenum986">fromMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum225">getReturnType</a>()) +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum999" class="linenum-cell" data-linenum="999" href="#linenum999"></a></td>
@@ -4076,7 +4076,7 @@
 </tr>
 <tr>
 <td><a id="linenum1018" class="linenum-cell" data-linenum="1018" href="#linenum1018"></a></td>
-<td><pre>                return MethodUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/MethodUtil.html#linenum272">invoke</a>(<a class="variable" href="#linenum986">fromMethod</a>, null, new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] {<a class="variable" href="#linenum1013">cd</a>});</pre></td>
+<td><pre>                return MethodUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/MethodUtil.html#linenum273">invoke</a>(<a class="variable" href="#linenum986">fromMethod</a>, null, new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] {<a class="variable" href="#linenum1013">cd</a>});</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1019" class="linenum-cell" data-linenum="1019" href="#linenum1019"></a></td>
@@ -4240,7 +4240,7 @@
 </tr>
 <tr>
 <td><a id="linenum1059" class="linenum-cell" data-linenum="1059" href="#linenum1059"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> possibleCause() {</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> possibleCause() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1060" class="linenum-cell" data-linenum="1060" href="#linenum1060"></a></td>
@@ -4284,7 +4284,7 @@
 </tr>
 <tr>
 <td><a id="linenum1070" class="linenum-cell" data-linenum="1070" href="#linenum1070"></a></td>
-<td><pre>        private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> possibleCause;</pre></td>
+<td><pre>        private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> possibleCause;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1071" class="linenum-cell" data-linenum="1071" href="#linenum1071"></a></td>
@@ -4364,7 +4364,7 @@
 </tr>
 <tr>
 <td><a id="linenum1090" class="linenum-cell" data-linenum="1090" href="#linenum1090"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; returnType = <a class="variable" href="#linenum1089">getter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum211">getReturnType</a>();</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; returnType = <a class="variable" href="#linenum1089">getter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum225">getReturnType</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1091" class="linenum-cell" data-linenum="1091" href="#linenum1091"></a></td>
@@ -4388,7 +4388,7 @@
 </tr>
 <tr>
 <td><a id="linenum1096" class="linenum-cell" data-linenum="1096" href="#linenum1096"></a></td>
-<td><pre>                    if (<a class="variable" href="#linenum1093">setter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum211">getReturnType</a>() != void.class)</pre></td>
+<td><pre>                    if (<a class="variable" href="#linenum1093">setter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum225">getReturnType</a>() != void.class)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1097" class="linenum-cell" data-linenum="1097" href="#linenum1097"></a></td>
@@ -4464,7 +4464,7 @@
 </tr>
 <tr>
 <td><a id="linenum1115" class="linenum-cell" data-linenum="1115" href="#linenum1115"></a></td>
-<td><pre>                ReflectUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/ReflectUtil.html#linenum176">checkPackageAccess</a>(<a class="variable" href="#linenum1114">targetClass</a>);</pre></td>
+<td><pre>                ReflectUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/ReflectUtil.html#linenum163">checkPackageAccess</a>(<a class="variable" href="#linenum1114">targetClass</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1116" class="linenum-cell" data-linenum="1116" href="#linenum1116"></a></td>
@@ -4492,7 +4492,7 @@
 </tr>
 <tr>
 <td><a id="linenum1122" class="linenum-cell" data-linenum="1122" href="#linenum1122"></a></td>
-<td><pre>                        MethodUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/MethodUtil.html#linenum272">invoke</a>(<a class="variable" href="#linenum1087">setters</a>[<a class="variable" href="#linenum1117">i</a>], <a class="variable" href="#linenum1112">o</a>, new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] {<a class="variable" href="#linenum1120">javaItem</a>});</pre></td>
+<td><pre>                        MethodUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/MethodUtil.html#linenum273">invoke</a>(<a class="variable" href="#linenum1087">setters</a>[<a class="variable" href="#linenum1117">i</a>], <a class="variable" href="#linenum1112">o</a>, new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] {<a class="variable" href="#linenum1120">javaItem</a>});</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1123" class="linenum-cell" data-linenum="1123" href="#linenum1123"></a></td>
@@ -4604,11 +4604,11 @@
 </tr>
 <tr>
 <td><a id="linenum1150" class="linenum-cell" data-linenum="1150" href="#linenum1150"></a></td>
-<td><pre>                        Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum325">forName</a>(<span class='string'>&quot;java.beans.ConstructorProperties&quot;</span>, false,</pre></td>
+<td><pre>                        Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum329">forName</a>(<span class='string'>&quot;java.beans.ConstructorProperties&quot;</span>, false,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1151" class="linenum-cell" data-linenum="1151" href="#linenum1151"></a></td>
-<td><pre>                                      <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory.html#linenum121">DefaultMXBeanMappingFactory</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum667">getClassLoader</a>());</pre></td>
+<td><pre>                                      <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory.html#linenum121">DefaultMXBeanMappingFactory</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum676">getClassLoader</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1152" class="linenum-cell" data-linenum="1152" href="#linenum1152"></a></td>
@@ -4696,7 +4696,7 @@
 </tr>
 <tr>
 <td><a id="linenum1173" class="linenum-cell" data-linenum="1173" href="#linenum1173"></a></td>
-<td><pre>                    return (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>[]) <a class="variable" href="#linenum1141">valueMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum468">invoke</a>(<a class="variable" href="#linenum1169">a</a>);</pre></td>
+<td><pre>                    return (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>[]) <a class="variable" href="#linenum1141">valueMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum483">invoke</a>(<a class="variable" href="#linenum1169">a</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1174" class="linenum-cell" data-linenum="1174" href="#linenum1174"></a></td>
@@ -5036,7 +5036,7 @@
 </tr>
 <tr>
 <td><a id="linenum1258" class="linenum-cell" data-linenum="1258" href="#linenum1258"></a></td>
-<td><pre>                    if (<a class="variable" href="#linenum1239">present</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum644">get</a>(<a class="variable" href="#linenum1256">getterIndex</a>)) {</pre></td>
+<td><pre>                    if (<a class="variable" href="#linenum1239">present</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum621">get</a>(<a class="variable" href="#linenum1256">getterIndex</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1259" class="linenum-cell" data-linenum="1259" href="#linenum1259"></a></td>
@@ -5060,7 +5060,7 @@
 </tr>
 <tr>
 <td><a id="linenum1264" class="linenum-cell" data-linenum="1264" href="#linenum1264"></a></td>
-<td><pre>                    <a class="variable" href="#linenum1239">present</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum524">set</a>(<a class="variable" href="#linenum1256">getterIndex</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum1239">present</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum442">set</a>(<a class="variable" href="#linenum1256">getterIndex</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1265" class="linenum-cell" data-linenum="1265" href="#linenum1265"></a></td>
@@ -5068,7 +5068,7 @@
 </tr>
 <tr>
 <td><a id="linenum1266" class="linenum-cell" data-linenum="1266" href="#linenum1266"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Type.html#linenum35">Type</a> propertyType = <a class="variable" href="#linenum1265">getter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum239">getGenericReturnType</a>();</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Type.html#linenum35">Type</a> propertyType = <a class="variable" href="#linenum1265">getter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum253">getGenericReturnType</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1267" class="linenum-cell" data-linenum="1267" href="#linenum1267"></a></td>
@@ -5124,7 +5124,7 @@
 </tr>
 <tr>
 <td><a id="linenum1280" class="linenum-cell" data-linenum="1280" href="#linenum1280"></a></td>
-<td><pre>                        Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum4531">toString</a>(<a class="variable" href="#linenum1226">propertyNames</a>);</pre></td>
+<td><pre>                        Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum4316">toString</a>(<a class="variable" href="#linenum1226">propertyNames</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1281" class="linenum-cell" data-linenum="1281" href="#linenum1281"></a></td>
@@ -5244,7 +5244,7 @@
 </tr>
 <tr>
 <td><a id="linenum1310" class="linenum-cell" data-linenum="1310" href="#linenum1310"></a></td>
-<td><pre>                        <a class="variable" href="#linenum1309">u</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum933">or</a>(<a class="variable" href="#linenum1169">a</a>); <a class="variable" href="#linenum1309">u</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum933">or</a>(b);</pre></td>
+<td><pre>                        <a class="variable" href="#linenum1309">u</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum936">or</a>(<a class="variable" href="#linenum1169">a</a>); <a class="variable" href="#linenum1309">u</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum936">or</a>(b);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1311" class="linenum-cell" data-linenum="1311" href="#linenum1311"></a></td>
@@ -5256,11 +5256,11 @@
 </tr>
 <tr>
 <td><a id="linenum1313" class="linenum-cell" data-linenum="1313" href="#linenum1313"></a></td>
-<td><pre>                            for (int i = <a class="variable" href="#linenum1309">u</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum707">nextSetBit</a>(0); <a class="variable" href="#linenum1313">i</a> &gt;= 0;</pre></td>
+<td><pre>                            for (int i = <a class="variable" href="#linenum1309">u</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum710">nextSetBit</a>(0); <a class="variable" href="#linenum1313">i</a> &gt;= 0;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1314" class="linenum-cell" data-linenum="1314" href="#linenum1314"></a></td>
-<td><pre>                                 <a class="variable" href="#linenum1313">i</a> = <a class="variable" href="#linenum1309">u</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum707">nextSetBit</a>(<a class="variable" href="#linenum1313">i</a>+1))</pre></td>
+<td><pre>                                 <a class="variable" href="#linenum1313">i</a> = <a class="variable" href="#linenum1309">u</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum710">nextSetBit</a>(<a class="variable" href="#linenum1313">i</a>+1))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1315" class="linenum-cell" data-linenum="1315" href="#linenum1315"></a></td>
@@ -5372,7 +5372,7 @@
 </tr>
 <tr>
 <td><a id="linenum1342" class="linenum-cell" data-linenum="1342" href="#linenum1342"></a></td>
-<td><pre>                    <a class="variable" href="#linenum1339">present</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum524">set</a>(<a class="variable" href="#linenum1340">i</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum1339">present</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum442">set</a>(<a class="variable" href="#linenum1340">i</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1343" class="linenum-cell" data-linenum="1343" href="#linenum1343"></a></td>
@@ -5492,7 +5492,7 @@
 </tr>
 <tr>
 <td><a id="linenum1372" class="linenum-cell" data-linenum="1372" href="#linenum1372"></a></td>
-<td><pre>                ReflectUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/ReflectUtil.html#linenum176">checkPackageAccess</a>(<a class="variable" href="#linenum1345">max</a>.constructor.getDeclaringClass());</pre></td>
+<td><pre>                ReflectUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/ReflectUtil.html#linenum163">checkPackageAccess</a>(<a class="variable" href="#linenum1345">max</a>.constructor.getDeclaringClass());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1373" class="linenum-cell" data-linenum="1373" href="#linenum1373"></a></td>
@@ -5532,15 +5532,15 @@
 </tr>
 <tr>
 <td><a id="linenum1382" class="linenum-cell" data-linenum="1382" href="#linenum1382"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum65">BitSet</a> subcopy = (<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum65">BitSet</a>) <a class="variable" href="#linenum1381">sub</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum1093">clone</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum65">BitSet</a> subcopy = (<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum65">BitSet</a>) <a class="variable" href="#linenum1381">sub</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum1096">clone</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1383" class="linenum-cell" data-linenum="1383" href="#linenum1383"></a></td>
-<td><pre>            <a class="variable" href="#linenum1382">subcopy</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum1002">andNot</a>(<a class="variable" href="#linenum1381">sup</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum1382">subcopy</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum1005">andNot</a>(<a class="variable" href="#linenum1381">sup</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1384" class="linenum-cell" data-linenum="1384" href="#linenum1384"></a></td>
-<td><pre>            return <a class="variable" href="#linenum1382">subcopy</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum867">isEmpty</a>();</pre></td>
+<td><pre>            return <a class="variable" href="#linenum1382">subcopy</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/BitSet.html#linenum870">isEmpty</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1385" class="linenum-cell" data-linenum="1385" href="#linenum1385"></a></td>
@@ -5676,11 +5676,11 @@
 </tr>
 <tr>
 <td><a id="linenum1418" class="linenum-cell" data-linenum="1418" href="#linenum1418"></a></td>
-<td><pre>                newSet(Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3791">asList</a>(<a class="variable" href="#linenum1414">targetClass</a>.getMethods()));</pre></td>
+<td><pre>                newSet(Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3797">asList</a>(<a class="variable" href="#linenum1414">targetClass</a>.getMethods()));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1419" class="linenum-cell" data-linenum="1419" href="#linenum1419"></a></td>
-<td><pre>            <a class="variable" href="#linenum1417">methods</a>.removeAll(Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3791">asList</a>(<a class="variable" href="#linenum1413">getters</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum1417">methods</a>.removeAll(Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3797">asList</a>(<a class="variable" href="#linenum1413">getters</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1420" class="linenum-cell" data-linenum="1420" href="#linenum1420"></a></td>
@@ -5716,11 +5716,11 @@
 </tr>
 <tr>
 <td><a id="linenum1428" class="linenum-cell" data-linenum="1428" href="#linenum1428"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> om = <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum1767">getMethod</a>(<a class="variable" href="#linenum1425">mname</a>, <a class="variable" href="#linenum1426">mparams</a>);</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> om = <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum1780">getMethod</a>(<a class="variable" href="#linenum1425">mname</a>, <a class="variable" href="#linenum1426">mparams</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1429" class="linenum-cell" data-linenum="1429" href="#linenum1429"></a></td>
-<td><pre>                    if (!Modifier.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Modifier.html#linenum67">isPublic</a>(<a class="variable" href="#linenum1428">om</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum186">getModifiers</a>()))</pre></td>
+<td><pre>                    if (!Modifier.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Modifier.html#linenum67">isPublic</a>(<a class="variable" href="#linenum1428">om</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum200">getModifiers</a>()))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1430" class="linenum-cell" data-linenum="1430" href="#linenum1430"></a></td>
@@ -5800,7 +5800,7 @@
 </tr>
 <tr>
 <td><a id="linenum1449" class="linenum-cell" data-linenum="1449" href="#linenum1449"></a></td>
-<td><pre>                Proxy.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Proxy.html#linenum701">newProxyInstance</a>(<a class="variable" href="#linenum1447">targetClass</a>.getClassLoader(),</pre></td>
+<td><pre>                Proxy.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Proxy.html#linenum702">newProxyInstance</a>(<a class="variable" href="#linenum1447">targetClass</a>.getClassLoader(),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1450" class="linenum-cell" data-linenum="1450" href="#linenum1450"></a></td>
@@ -5828,11 +5828,11 @@
 </tr>
 <tr>
 <td><a id="linenum1456" class="linenum-cell" data-linenum="1456" href="#linenum1456"></a></td>
-<td><pre>                                                         <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> cause) {</pre></td>
+<td><pre>                                                         <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> cause) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1457" class="linenum-cell" data-linenum="1457" href="#linenum1457"></a></td>
-<td><pre>        return EnvHelp.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/util/EnvHelp.html#linenum226">initCause</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a>(<a class="variable" href="#linenum1455">msg</a>), <a class="variable" href="#linenum1456">cause</a>);</pre></td>
+<td><pre>        return EnvHelp.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/util/EnvHelp.html#linenum241">initCause</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a>(<a class="variable" href="#linenum1455">msg</a>), <a class="variable" href="#linenum1456">cause</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1458" class="linenum-cell" data-linenum="1458" href="#linenum1458"></a></td>
@@ -5844,11 +5844,11 @@
 </tr>
 <tr>
 <td><a id="linenum1460" class="linenum-cell" data-linenum="1460" href="#linenum1460"></a></td>
-<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a> invalidObjectException(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> cause) {</pre></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a> invalidObjectException(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> cause) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1461" class="linenum-cell" data-linenum="1461" href="#linenum1461"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory.html#linenum1460">invalidObjectException</a>(<a class="variable" href="#linenum1460">cause</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum376">getMessage</a>(), <a class="variable" href="#linenum1460">cause</a>);</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory.html#linenum1460">invalidObjectException</a>(<a class="variable" href="#linenum1460">cause</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum377">getMessage</a>(), <a class="variable" href="#linenum1460">cause</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1462" class="linenum-cell" data-linenum="1462" href="#linenum1462"></a></td>
@@ -5860,11 +5860,11 @@
 </tr>
 <tr>
 <td><a id="linenum1464" class="linenum-cell" data-linenum="1464" href="#linenum1464"></a></td>
-<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/OpenDataException.html#linenum39">OpenDataException</a> openDataException(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> msg, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> cause) {</pre></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/OpenDataException.html#linenum39">OpenDataException</a> openDataException(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> msg, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> cause) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1465" class="linenum-cell" data-linenum="1465" href="#linenum1465"></a></td>
-<td><pre>        return EnvHelp.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/util/EnvHelp.html#linenum226">initCause</a>(new <a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/OpenDataException.html#linenum39">OpenDataException</a>(<a class="variable" href="#linenum1464">msg</a>), <a class="variable" href="#linenum1464">cause</a>);</pre></td>
+<td><pre>        return EnvHelp.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/util/EnvHelp.html#linenum241">initCause</a>(new <a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/OpenDataException.html#linenum39">OpenDataException</a>(<a class="variable" href="#linenum1464">msg</a>), <a class="variable" href="#linenum1464">cause</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1466" class="linenum-cell" data-linenum="1466" href="#linenum1466"></a></td>
@@ -5876,11 +5876,11 @@
 </tr>
 <tr>
 <td><a id="linenum1468" class="linenum-cell" data-linenum="1468" href="#linenum1468"></a></td>
-<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/OpenDataException.html#linenum39">OpenDataException</a> openDataException(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> cause) {</pre></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/javax/management/openmbean/OpenDataException.html#linenum39">OpenDataException</a> openDataException(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> cause) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1469" class="linenum-cell" data-linenum="1469" href="#linenum1469"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory.html#linenum1468">openDataException</a>(<a class="variable" href="#linenum1468">cause</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum376">getMessage</a>(), <a class="variable" href="#linenum1468">cause</a>);</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory.html#linenum1468">openDataException</a>(<a class="variable" href="#linenum1468">cause</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum377">getMessage</a>(), <a class="variable" href="#linenum1468">cause</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1470" class="linenum-cell" data-linenum="1470" href="#linenum1470"></a></td>
@@ -5904,7 +5904,7 @@
 </tr>
 <tr>
 <td><a id="linenum1475" class="linenum-cell" data-linenum="1475" href="#linenum1475"></a></td>
-<td><pre>            || !<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Comparable.html#linenum96">Comparable</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum501">isAssignableFrom</a>((<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;) <a class="variable" href="#linenum1472">element</a>)) {</pre></td>
+<td><pre>            || !<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Comparable.html#linenum96">Comparable</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum510">isAssignableFrom</a>((<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;) <a class="variable" href="#linenum1472">element</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1476" class="linenum-cell" data-linenum="1476" href="#linenum1476"></a></td>
@@ -5920,7 +5920,7 @@
 </tr>
 <tr>
 <td><a id="linenum1479" class="linenum-cell" data-linenum="1479" href="#linenum1479"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Comparable.html#linenum96">Comparable</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum630">getName</a>();</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Comparable.html#linenum96">Comparable</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum639">getName</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1480" class="linenum-cell" data-linenum="1480" href="#linenum1480"></a></td>
@@ -5996,7 +5996,7 @@
 </tr>
 <tr>
 <td><a id="linenum1498" class="linenum-cell" data-linenum="1498" href="#linenum1498"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum1497">name</a> == null || <a class="variable" href="#linenum1497">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() == 0) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum1497">name</a> == null || <a class="variable" href="#linenum1497">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() == 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1499" class="linenum-cell" data-linenum="1499" href="#linenum1499"></a></td>
@@ -6008,7 +6008,7 @@
 </tr>
 <tr>
 <td><a id="linenum1501" class="linenum-cell" data-linenum="1501" href="#linenum1501"></a></td>
-<td><pre>        int offset1 = Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum5349">offsetByCodePoints</a>(<a class="variable" href="#linenum1497">name</a>, 0, 1);</pre></td>
+<td><pre>        int offset1 = Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum5366">offsetByCodePoints</a>(<a class="variable" href="#linenum1497">name</a>, 0, 1);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1502" class="linenum-cell" data-linenum="1502" href="#linenum1502"></a></td>
@@ -6016,11 +6016,11 @@
 </tr>
 <tr>
 <td><a id="linenum1503" class="linenum-cell" data-linenum="1503" href="#linenum1503"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum1501">offset1</a> &lt; <a class="variable" href="#linenum1497">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() &amp;&amp;</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum1501">offset1</a> &lt; <a class="variable" href="#linenum1497">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() &amp;&amp;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1504" class="linenum-cell" data-linenum="1504" href="#linenum1504"></a></td>
-<td><pre>                Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum5517">isUpperCase</a>(<a class="variable" href="#linenum1497">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum673">codePointAt</a>(<a class="variable" href="#linenum1501">offset1</a>)))</pre></td>
+<td><pre>                Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum5504">isUpperCase</a>(<a class="variable" href="#linenum1497">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum685">codePointAt</a>(<a class="variable" href="#linenum1501">offset1</a>)))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1505" class="linenum-cell" data-linenum="1505" href="#linenum1505"></a></td>
@@ -6028,11 +6028,11 @@
 </tr>
 <tr>
 <td><a id="linenum1506" class="linenum-cell" data-linenum="1506" href="#linenum1506"></a></td>
-<td><pre>        return <a class="variable" href="#linenum1497">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(0, <a class="variable" href="#linenum1501">offset1</a>).toLowerCase() +</pre></td>
+<td><pre>        return <a class="variable" href="#linenum1497">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a>(0, <a class="variable" href="#linenum1501">offset1</a>).toLowerCase() +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1507" class="linenum-cell" data-linenum="1507" href="#linenum1507"></a></td>
-<td><pre>               <a class="variable" href="#linenum1497">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(<a class="variable" href="#linenum1501">offset1</a>);</pre></td>
+<td><pre>               <a class="variable" href="#linenum1497">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1925">substring</a>(<a class="variable" href="#linenum1501">offset1</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1508" class="linenum-cell" data-linenum="1508" href="#linenum1508"></a></td>
@@ -6072,7 +6072,7 @@
 </tr>
 <tr>
 <td><a id="linenum1517" class="linenum-cell" data-linenum="1517" href="#linenum1517"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum1516">name</a> == null || <a class="variable" href="#linenum1516">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() == 0)</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum1516">name</a> == null || <a class="variable" href="#linenum1516">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() == 0)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1518" class="linenum-cell" data-linenum="1518" href="#linenum1518"></a></td>
@@ -6080,15 +6080,15 @@
 </tr>
 <tr>
 <td><a id="linenum1519" class="linenum-cell" data-linenum="1519" href="#linenum1519"></a></td>
-<td><pre>        int offset1 = <a class="variable" href="#linenum1516">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum758">offsetByCodePoints</a>(0, 1);</pre></td>
+<td><pre>        int offset1 = <a class="variable" href="#linenum1516">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum770">offsetByCodePoints</a>(0, 1);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1520" class="linenum-cell" data-linenum="1520" href="#linenum1520"></a></td>
-<td><pre>        return <a class="variable" href="#linenum1516">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(0, <a class="variable" href="#linenum1519">offset1</a>).toUpperCase() +</pre></td>
+<td><pre>        return <a class="variable" href="#linenum1516">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a>(0, <a class="variable" href="#linenum1519">offset1</a>).toUpperCase() +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1521" class="linenum-cell" data-linenum="1521" href="#linenum1521"></a></td>
-<td><pre>               <a class="variable" href="#linenum1516">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(<a class="variable" href="#linenum1519">offset1</a>);</pre></td>
+<td><pre>               <a class="variable" href="#linenum1516">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1925">substring</a>(<a class="variable" href="#linenum1519">offset1</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1522" class="linenum-cell" data-linenum="1522" href="#linenum1522"></a></td>
@@ -6108,39 +6108,39 @@
 </tr>
 <tr>
 <td><a id="linenum1526" class="linenum-cell" data-linenum="1526" href="#linenum1526"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name = <a class="variable" href="#linenum1524">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum178">getName</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name = <a class="variable" href="#linenum1524">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum192">getName</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1527" class="linenum-cell" data-linenum="1527" href="#linenum1527"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum1526">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1420">startsWith</a>(<span class='string'>&quot;get&quot;</span>))</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum1526">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1433">startsWith</a>(<span class='string'>&quot;get&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1528" class="linenum-cell" data-linenum="1528" href="#linenum1528"></a></td>
-<td><pre>            <a class="variable" href="#linenum1525">rest</a> = <a class="variable" href="#linenum1526">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(3);</pre></td>
+<td><pre>            <a class="variable" href="#linenum1525">rest</a> = <a class="variable" href="#linenum1526">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1925">substring</a>(3);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1529" class="linenum-cell" data-linenum="1529" href="#linenum1529"></a></td>
-<td><pre>        else if (<a class="variable" href="#linenum1526">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1420">startsWith</a>(<span class='string'>&quot;is&quot;</span>) &amp;&amp; <a class="variable" href="#linenum1524">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum211">getReturnType</a>() == boolean.class)</pre></td>
+<td><pre>        else if (<a class="variable" href="#linenum1526">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1433">startsWith</a>(<span class='string'>&quot;is&quot;</span>) &amp;&amp; <a class="variable" href="#linenum1524">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum225">getReturnType</a>() == boolean.class)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1530" class="linenum-cell" data-linenum="1530" href="#linenum1530"></a></td>
-<td><pre>            <a class="variable" href="#linenum1525">rest</a> = <a class="variable" href="#linenum1526">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(2);</pre></td>
+<td><pre>            <a class="variable" href="#linenum1525">rest</a> = <a class="variable" href="#linenum1526">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1925">substring</a>(2);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1531" class="linenum-cell" data-linenum="1531" href="#linenum1531"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum1525">rest</a> == null || <a class="variable" href="#linenum1525">rest</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() == 0</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum1525">rest</a> == null || <a class="variable" href="#linenum1525">rest</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() == 0</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1532" class="linenum-cell" data-linenum="1532" href="#linenum1532"></a></td>
-<td><pre>            || <a class="variable" href="#linenum1524">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum248">getParameterTypes</a>().length &gt; 0</pre></td>
+<td><pre>            || <a class="variable" href="#linenum1524">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum262">getParameterTypes</a>().length &gt; 0</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1533" class="linenum-cell" data-linenum="1533" href="#linenum1533"></a></td>
-<td><pre>            || <a class="variable" href="#linenum1524">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum211">getReturnType</a>() == void.class</pre></td>
+<td><pre>            || <a class="variable" href="#linenum1524">m</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum225">getReturnType</a>() == void.class</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1534" class="linenum-cell" data-linenum="1534" href="#linenum1534"></a></td>
-<td><pre>            || <a class="variable" href="#linenum1526">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum964">equals</a>(<span class='string'>&quot;getClass&quot;</span>))</pre></td>
+<td><pre>            || <a class="variable" href="#linenum1526">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum976">equals</a>(<span class='string'>&quot;getClass&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1535" class="linenum-cell" data-linenum="1535" href="#linenum1535"></a></td>

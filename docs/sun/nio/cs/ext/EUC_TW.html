@@ -332,7 +332,7 @@
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre>        super(<span class='string'>&quot;x-EUC-TW&quot;</span>, ExtendedCharsets.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/cs/ext/ExtendedCharsets.html#linenum1312">aliasesFor</a>(<span class='string'>&quot;x-EUC-TW&quot;</span>));</pre></td>
+<td><pre>        super(<span class='string'>&quot;x-EUC-TW&quot;</span>, ExtendedCharsets.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/cs/ext/ExtendedCharsets.html#linenum1320">aliasesFor</a>(<span class='string'>&quot;x-EUC-TW&quot;</span>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
@@ -500,7 +500,7 @@
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>            Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3146">fill</a>(<a class="variable" href="#linenum122">cnspToIndex</a>, (byte)-1);</pre></td>
+<td><pre>            Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2845">fill</a>(<a class="variable" href="#linenum122">cnspToIndex</a>, (byte)-1);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
@@ -544,7 +544,7 @@
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
-<td><pre>            byte[] flag = new byte[<a class="variable" href="#linenum132">b2cIsSuppStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() &lt;&lt; 1];</pre></td>
+<td><pre>            byte[] flag = new byte[<a class="variable" href="#linenum132">b2cIsSuppStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() &lt;&lt; 1];</pre></td>
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
@@ -552,11 +552,11 @@
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
-<td><pre>            for (int i = 0; <a class="variable" href="#linenum137">i</a> &lt; <a class="variable" href="#linenum132">b2cIsSuppStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>(); <a class="variable" href="#linenum137">i</a>++) {</pre></td>
+<td><pre>            for (int i = 0; <a class="variable" href="#linenum137">i</a> &lt; <a class="variable" href="#linenum132">b2cIsSuppStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>(); <a class="variable" href="#linenum137">i</a>++) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre>                char c = <a class="variable" href="#linenum132">b2cIsSuppStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum644">charAt</a>(<a class="variable" href="#linenum137">i</a>);</pre></td>
+<td><pre>                char c = <a class="variable" href="#linenum132">b2cIsSuppStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum656">charAt</a>(<a class="variable" href="#linenum137">i</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
@@ -648,11 +648,11 @@
 </tr>
 <tr>
 <td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre>                <a class="variable" href="#linenum149">c2</a>[0] = Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum5072">highSurrogate</a>(0x20000 + <a class="variable" href="#linenum154">c</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum149">c2</a>[0] = Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum5089">highSurrogate</a>(0x20000 + <a class="variable" href="#linenum154">c</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
-<td><pre>                <a class="variable" href="#linenum149">c2</a>[1] = Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum5101">lowSurrogate</a>(0x20000 + <a class="variable" href="#linenum154">c</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum149">c2</a>[1] = Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum5118">lowSurrogate</a>(0x20000 + <a class="variable" href="#linenum154">c</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
@@ -1252,7 +1252,7 @@
 </tr>
 <tr>
 <td><a id="linenum312" class="linenum-cell" data-linenum="312" href="#linenum312"></a></td>
-<td><pre>                if (Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4727">isHighSurrogate</a>(<a class="variable" href="#linenum311">c</a>)) {</pre></td>
+<td><pre>                if (Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4744">isHighSurrogate</a>(<a class="variable" href="#linenum311">c</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum313" class="linenum-cell" data-linenum="313" href="#linenum313"></a></td>
@@ -1268,7 +1268,7 @@
 </tr>
 <tr>
 <td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
-<td><pre>                    if (!Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4751">isLowSurrogate</a>(<a class="variable" href="#linenum315">low</a>) || <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/cs/ext/EUC_TW.html#linenum329">toEUC</a>(<a class="variable" href="#linenum311">c</a>, <a class="variable" href="#linenum315">low</a>, <a class="variable" href="#linenum298">bb</a>) == -1)</pre></td>
+<td><pre>                    if (!Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4768">isLowSurrogate</a>(<a class="variable" href="#linenum315">low</a>) || <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/cs/ext/EUC_TW.html#linenum325">toEUC</a>(<a class="variable" href="#linenum311">c</a>, <a class="variable" href="#linenum315">low</a>, <a class="variable" href="#linenum298">bb</a>) == -1)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
@@ -1276,7 +1276,7 @@
 </tr>
 <tr>
 <td><a id="linenum318" class="linenum-cell" data-linenum="318" href="#linenum318"></a></td>
-<td><pre>                } else if (!<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/cs/ext/EUC_TW.html#linenum308">canEncode</a>(<a class="variable" href="#linenum311">c</a>)) {</pre></td>
+<td><pre>                } else if (!<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/cs/ext/EUC_TW.html#linenum304">canEncode</a>(<a class="variable" href="#linenum311">c</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum319" class="linenum-cell" data-linenum="319" href="#linenum319"></a></td>
@@ -1308,7 +1308,7 @@
 </tr>
 <tr>
 <td><a id="linenum326" class="linenum-cell" data-linenum="326" href="#linenum326"></a></td>
-<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/cs/ext/EUC_TW.html#linenum462">encode</a>(<a class="variable" href="#linenum325">hi</a>, <a class="variable" href="#linenum325">low</a>, <a class="variable" href="#linenum325">bb</a>);</pre></td>
+<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/cs/ext/EUC_TW.html#linenum442">encode</a>(<a class="variable" href="#linenum325">hi</a>, <a class="variable" href="#linenum325">low</a>, <a class="variable" href="#linenum325">bb</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum327" class="linenum-cell" data-linenum="327" href="#linenum327"></a></td>
@@ -1456,7 +1456,7 @@
 </tr>
 <tr>
 <td><a id="linenum363" class="linenum-cell" data-linenum="363" href="#linenum363"></a></td>
-<td><pre>                            if (Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4727">isHighSurrogate</a>(<a class="variable" href="#linenum349">c</a>)) {</pre></td>
+<td><pre>                            if (Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4744">isHighSurrogate</a>(<a class="variable" href="#linenum349">c</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum364" class="linenum-cell" data-linenum="364" href="#linenum364"></a></td>
@@ -1468,7 +1468,7 @@
 </tr>
 <tr>
 <td><a id="linenum366" class="linenum-cell" data-linenum="366" href="#linenum366"></a></td>
-<td><pre>                                if (!Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4751">isLowSurrogate</a>(<a class="variable" href="#linenum336">sa</a>[<a class="variable" href="#linenum337">sp</a> + 1]))</pre></td>
+<td><pre>                                if (!Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4768">isLowSurrogate</a>(<a class="variable" href="#linenum336">sa</a>[<a class="variable" href="#linenum337">sp</a> + 1]))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum367" class="linenum-cell" data-linenum="367" href="#linenum367"></a></td>
@@ -1476,7 +1476,7 @@
 </tr>
 <tr>
 <td><a id="linenum368" class="linenum-cell" data-linenum="368" href="#linenum368"></a></td>
-<td><pre>                                <a class="variable" href="#linenum345">outSize</a> = <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/cs/ext/EUC_TW.html#linenum329">toEUC</a>(<a class="variable" href="#linenum349">c</a>, <a class="variable" href="#linenum336">sa</a>[<a class="variable" href="#linenum337">sp</a>+1], <a class="variable" href="#linenum329">bb</a>);</pre></td>
+<td><pre>                                <a class="variable" href="#linenum345">outSize</a> = <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/cs/ext/EUC_TW.html#linenum325">toEUC</a>(<a class="variable" href="#linenum349">c</a>, <a class="variable" href="#linenum336">sa</a>[<a class="variable" href="#linenum337">sp</a>+1], <a class="variable" href="#linenum329">bb</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum369" class="linenum-cell" data-linenum="369" href="#linenum369"></a></td>
@@ -1484,7 +1484,7 @@
 </tr>
 <tr>
 <td><a id="linenum370" class="linenum-cell" data-linenum="370" href="#linenum370"></a></td>
-<td><pre>                            } else if (Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4751">isLowSurrogate</a>(<a class="variable" href="#linenum349">c</a>)) {</pre></td>
+<td><pre>                            } else if (Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4768">isLowSurrogate</a>(<a class="variable" href="#linenum349">c</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum371" class="linenum-cell" data-linenum="371" href="#linenum371"></a></td>
@@ -1632,7 +1632,7 @@
 </tr>
 <tr>
 <td><a id="linenum407" class="linenum-cell" data-linenum="407" href="#linenum407"></a></td>
-<td><pre>                            if (Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4727">isHighSurrogate</a>(<a class="variable" href="#linenum400">c</a>)) {</pre></td>
+<td><pre>                            if (Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4744">isHighSurrogate</a>(<a class="variable" href="#linenum400">c</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum408" class="linenum-cell" data-linenum="408" href="#linenum408"></a></td>
@@ -1648,7 +1648,7 @@
 </tr>
 <tr>
 <td><a id="linenum411" class="linenum-cell" data-linenum="411" href="#linenum411"></a></td>
-<td><pre>                                if (!Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4751">isLowSurrogate</a>(<a class="variable" href="#linenum410">c2</a>))</pre></td>
+<td><pre>                                if (!Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4768">isLowSurrogate</a>(<a class="variable" href="#linenum410">c2</a>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum412" class="linenum-cell" data-linenum="412" href="#linenum412"></a></td>
@@ -1656,7 +1656,7 @@
 </tr>
 <tr>
 <td><a id="linenum413" class="linenum-cell" data-linenum="413" href="#linenum413"></a></td>
-<td><pre>                                <a class="variable" href="#linenum393">outSize</a> = <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/cs/ext/EUC_TW.html#linenum329">toEUC</a>(<a class="variable" href="#linenum400">c</a>, <a class="variable" href="#linenum410">c2</a>, <a class="variable" href="#linenum329">bb</a>);</pre></td>
+<td><pre>                                <a class="variable" href="#linenum393">outSize</a> = <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/cs/ext/EUC_TW.html#linenum325">toEUC</a>(<a class="variable" href="#linenum400">c</a>, <a class="variable" href="#linenum410">c2</a>, <a class="variable" href="#linenum329">bb</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum414" class="linenum-cell" data-linenum="414" href="#linenum414"></a></td>
@@ -1664,7 +1664,7 @@
 </tr>
 <tr>
 <td><a id="linenum415" class="linenum-cell" data-linenum="415" href="#linenum415"></a></td>
-<td><pre>                            } else if (Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4751">isLowSurrogate</a>(<a class="variable" href="#linenum400">c</a>)) {</pre></td>
+<td><pre>                            } else if (Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4768">isLowSurrogate</a>(<a class="variable" href="#linenum400">c</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum416" class="linenum-cell" data-linenum="416" href="#linenum416"></a></td>
@@ -1776,7 +1776,7 @@
 </tr>
 <tr>
 <td><a id="linenum443" class="linenum-cell" data-linenum="443" href="#linenum443"></a></td>
-<td><pre>            int c = Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4833">toCodePoint</a>(<a class="variable" href="#linenum442">hi</a>, <a class="variable" href="#linenum442">low</a>);</pre></td>
+<td><pre>            int c = Character.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Character.html#linenum4850">toCodePoint</a>(<a class="variable" href="#linenum442">hi</a>, <a class="variable" href="#linenum442">low</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum444" class="linenum-cell" data-linenum="444" href="#linenum444"></a></td>
@@ -2012,7 +2012,7 @@
 </tr>
 <tr>
 <td><a id="linenum502" class="linenum-cell" data-linenum="502" href="#linenum502"></a></td>
-<td><pre>            byte[] c2bPlane0 = new byte[Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1313">max</a>(EUC_TWMapping.C2BSIZE,</pre></td>
+<td><pre>            byte[] c2bPlane0 = new byte[Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1251">max</a>(EUC_TWMapping.C2BSIZE,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum503" class="linenum-cell" data-linenum="503" href="#linenum503"></a></td>
@@ -2024,11 +2024,11 @@
 </tr>
 <tr>
 <td><a id="linenum505" class="linenum-cell" data-linenum="505" href="#linenum505"></a></td>
-<td><pre>            Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3146">fill</a>(<a class="variable" href="#linenum500">c2b0</a>, (char)UNMAPPABLE_ENCODING);</pre></td>
+<td><pre>            Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2845">fill</a>(<a class="variable" href="#linenum500">c2b0</a>, (char)UNMAPPABLE_ENCODING);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum506" class="linenum-cell" data-linenum="506" href="#linenum506"></a></td>
-<td><pre>            Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3146">fill</a>(<a class="variable" href="#linenum501">c2bSupp0</a>, (char)UNMAPPABLE_ENCODING);</pre></td>
+<td><pre>            Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2845">fill</a>(<a class="variable" href="#linenum501">c2bSupp0</a>, (char)UNMAPPABLE_ENCODING);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum507" class="linenum-cell" data-linenum="507" href="#linenum507"></a></td>
@@ -2104,7 +2104,7 @@
 </tr>
 <tr>
 <td><a id="linenum525" class="linenum-cell" data-linenum="525" href="#linenum525"></a></td>
-<td><pre>                        char c = <a class="variable" href="#linenum509">db</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum644">charAt</a>(<a class="variable" href="#linenum522">off</a>);</pre></td>
+<td><pre>                        char c = <a class="variable" href="#linenum509">db</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum656">charAt</a>(<a class="variable" href="#linenum522">off</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum526" class="linenum-cell" data-linenum="526" href="#linenum526"></a></td>

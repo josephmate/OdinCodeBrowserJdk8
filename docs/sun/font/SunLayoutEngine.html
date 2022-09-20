@@ -156,542 +156,646 @@
 </tr>
 <tr>
 <td><a id="linenum38" class="linenum-cell" data-linenum="38" href="#linenum38"></a></td>
-<td><pre></pre></td>
+<td><pre>import java.util.WeakHashMap;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum39" class="linenum-cell" data-linenum="39" href="#linenum39"></a></td>
-<td><pre><span class='comment'>/*</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum40" class="linenum-cell" data-linenum="40" href="#linenum40"></a></td>
-<td><pre><span class='comment'> * different ways to do this<span class='comment'></pre></td>
+<td><pre><span class='comment'>/*</pre></td>
 </tr>
 <tr>
 <td><a id="linenum41" class="linenum-cell" data-linenum="41" href="#linenum41"></a></td>
-<td><pre><span class='comment'> * 1) each physical font2d keeps a hashtable mapping scripts to layout<span class='comment'></pre></td>
+<td><pre><span class='comment'> * different ways to do this<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
-<td><pre><span class='comment'> * engines, we query and fill this cache.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * 1) each physical font2d keeps a hashtable mapping scripts to layout<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
-<td><pre><span class='comment'> * 2) we keep a mapping independent of font using the key Most likely<span class='comment'></pre></td>
+<td><pre><span class='comment'> * engines, we query and fill this cache.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
-<td><pre><span class='comment'> * few fonts will be used, so option 2 seems better<span class='comment'></pre></td>
+<td><pre><span class='comment'> * 2) we keep a mapping independent of font using the key Most likely<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
-<td><pre><span class='comment'> *<span class='comment'></pre></td>
+<td><pre><span class='comment'> * few fonts will be used, so option 2 seems better<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
-<td><pre><span class='comment'> * Once we know which engine to use for a font, we always know, so we<span class='comment'></pre></td>
+<td><pre><span class='comment'> *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
-<td><pre><span class='comment'> * shouldn't have to recheck each time we do layout.  So the cache is<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Once we know which engine to use for a font, we always know, so we<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre><span class='comment'> * ok.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * shouldn't have to recheck each time we do layout.  So the cache is<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
-<td><pre><span class='comment'> *<span class='comment'></pre></td>
+<td><pre><span class='comment'> * ok.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
-<td><pre><span class='comment'> * Should we reuse engines?  We could instantiate an engine for each<span class='comment'></pre></td>
+<td><pre><span class='comment'> *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre><span class='comment'> * font/script pair.  The engine would hold onto the table(s) from the<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Should we reuse engines?  We could instantiate an engine for each<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
-<td><pre><span class='comment'> * font that it needs.  If we have multiple threads using the same<span class='comment'></pre></td>
+<td><pre><span class='comment'> * font/script pair.  The engine would hold onto the table(s) from the<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
-<td><pre><span class='comment'> * engine, we still need to keep the state separate, so the native<span class='comment'></pre></td>
+<td><pre><span class='comment'> * font that it needs.  If we have multiple threads using the same<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre><span class='comment'> * engines would still need to be allocated for each call, since they<span class='comment'></pre></td>
+<td><pre><span class='comment'> * engine, we still need to keep the state separate, so the native<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
-<td><pre><span class='comment'> * keep their state in themselves.  If they used the passed-in GVData<span class='comment'></pre></td>
+<td><pre><span class='comment'> * engines would still need to be allocated for each call, since they<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
-<td><pre><span class='comment'> * arrays directly (with some checks for space) then since each GVData<span class='comment'></pre></td>
+<td><pre><span class='comment'> * keep their state in themselves.  If they used the passed-in GVData<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
-<td><pre><span class='comment'> * is different per thread, we could reuse the layout engines.  This<span class='comment'></pre></td>
+<td><pre><span class='comment'> * arrays directly (with some checks for space) then since each GVData<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre><span class='comment'> * still requires a separate layout engine per font, because of the<span class='comment'></pre></td>
+<td><pre><span class='comment'> * is different per thread, we could reuse the layout engines.  This<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
-<td><pre><span class='comment'> * table state in the engine.  If we pushed that out too and passed it<span class='comment'></pre></td>
+<td><pre><span class='comment'> * still requires a separate layout engine per font, because of the<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
-<td><pre><span class='comment'> * in with the native call as well, we'd be ok if the layout engines<span class='comment'></pre></td>
+<td><pre><span class='comment'> * table state in the engine.  If we pushed that out too and passed it<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum61" class="linenum-cell" data-linenum="61" href="#linenum61"></a></td>
-<td><pre><span class='comment'> * keep all their process state on the stack, but I don't know if this<span class='comment'></pre></td>
+<td><pre><span class='comment'> * in with the native call as well, we'd be ok if the layout engines<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
-<td><pre><span class='comment'> * is true.  Then we'd basically just be down to an engine index which<span class='comment'></pre></td>
+<td><pre><span class='comment'> * keep all their process state on the stack, but I don't know if this<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum63" class="linenum-cell" data-linenum="63" href="#linenum63"></a></td>
-<td><pre><span class='comment'> * we pass into native and then invoke the engine code (now a<span class='comment'></pre></td>
+<td><pre><span class='comment'> * is true.  Then we'd basically just be down to an engine index which<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum64" class="linenum-cell" data-linenum="64" href="#linenum64"></a></td>
-<td><pre><span class='comment'> * procedure call, not an object invocation) based on a switch on the<span class='comment'></pre></td>
+<td><pre><span class='comment'> * we pass into native and then invoke the engine code (now a<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
-<td><pre><span class='comment'> * index.  There would be only half a dozen engine objects then, not<span class='comment'></pre></td>
+<td><pre><span class='comment'> * procedure call, not an object invocation) based on a switch on the<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
-<td><pre><span class='comment'> * potentially half a dozen per font.  But we'd have to stack-allocate<span class='comment'></pre></td>
+<td><pre><span class='comment'> * index.  There would be only half a dozen engine objects then, not<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre><span class='comment'> * some state that included the pointer to the required font tables.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * potentially half a dozen per font.  But we'd have to stack-allocate<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre><span class='comment'> *<span class='comment'></pre></td>
+<td><pre><span class='comment'> * some state that included the pointer to the required font tables.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
-<td><pre><span class='comment'> * Seems for now that the way to do things is to come in with a<span class='comment'></pre></td>
+<td><pre><span class='comment'> *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum70" class="linenum-cell" data-linenum="70" href="#linenum70"></a></td>
-<td><pre><span class='comment'> * selector and the font.  The selector indicates which engine to use,<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Seems for now that the way to do things is to come in with a<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
-<td><pre><span class='comment'> * the engine is stack allocated and initialized with the required<span class='comment'></pre></td>
+<td><pre><span class='comment'> * selector and the font.  The selector indicates which engine to use,<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
-<td><pre><span class='comment'> * font tables (the selector indicates which).  Then layout is called,<span class='comment'></pre></td>
+<td><pre><span class='comment'> * the engine is stack allocated and initialized with the required<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
-<td><pre><span class='comment'> * the contents are copied (or not), and the stack is destroyed on<span class='comment'></pre></td>
+<td><pre><span class='comment'> * font tables (the selector indicates which).  Then layout is called,<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
-<td><pre><span class='comment'> * exit. So the association is between the font/script (layout engine<span class='comment'></pre></td>
+<td><pre><span class='comment'> * the contents are copied (or not), and the stack is destroyed on<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
-<td><pre><span class='comment'> * desc) and and one of a few permanent engine objects, which are<span class='comment'></pre></td>
+<td><pre><span class='comment'> * exit. So the association is between the font/script (layout engine<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
-<td><pre><span class='comment'> * handed the key when they need to process something.  In the native<span class='comment'></pre></td>
+<td><pre><span class='comment'> * desc) and and one of a few permanent engine objects, which are<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
-<td><pre><span class='comment'> * case, the engine holds an index, and just passes it together with<span class='comment'></pre></td>
+<td><pre><span class='comment'> * handed the key when they need to process something.  In the native<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre><span class='comment'> * the key info down to native.  Some default cases are the 'default<span class='comment'></pre></td>
+<td><pre><span class='comment'> * case, the engine holds an index, and just passes it together with<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
-<td><pre><span class='comment'> * layout' case that just runs the c2gmapper, this stays in java and<span class='comment'></pre></td>
+<td><pre><span class='comment'> * the key info down to native.  Some default cases are the 'default<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre><span class='comment'> * just uses the mapper from the font/strike.  Another default case<span class='comment'></pre></td>
+<td><pre><span class='comment'> * layout' case that just runs the c2gmapper, this stays in java and<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
-<td><pre><span class='comment'> * might be the unicode arabic shaper, since this doesn't care about<span class='comment'></pre></td>
+<td><pre><span class='comment'> * just uses the mapper from the font/strike.  Another default case<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre><span class='comment'> * the font (or script or lang?) it wouldn't need to extract this<span class='comment'></pre></td>
+<td><pre><span class='comment'> * might be the unicode arabic shaper, since this doesn't care about<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
-<td><pre><span class='comment'> * data.  It could be (yikes) ported back to java even to avoid<span class='comment'></pre></td>
+<td><pre><span class='comment'> * the font (or script or lang?) it wouldn't need to extract this<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre><span class='comment'> * upcalls to check if the font supports a particular unicode<span class='comment'></pre></td>
+<td><pre><span class='comment'> * data.  It could be (yikes) ported back to java even to avoid<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre><span class='comment'> * character.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * upcalls to check if the font supports a particular unicode<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
-<td><pre><span class='comment'> *<span class='comment'></pre></td>
+<td><pre><span class='comment'> * character.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre><span class='comment'> * I'd expect that the majority of scripts use the default mapper for<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
-<td><pre><span class='comment'> * a particular font.  Loading the hastable with 40 or so keys 30+ of<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre><span class='comment'> * which all map to the same object is unfortunate.  It might be worth<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre><span class='comment'> * instead having a per-font list of 'scripts with non-default<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre><span class='comment'> * engines', e.g. the factory has a hashtable mapping fonts to 'script<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre><span class='comment'> * lists' (the factory has this since the design potentially has other<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
-<td><pre><span class='comment'> * factories, though I admit there's no client for this yet and no<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
-<td><pre><span class='comment'> * public api) and then the script list is queried for the script in<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
-<td><pre><span class='comment'> * question.  it can be preloaded at creation time with all the<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
-<td><pre><span class='comment'> * scripts that don't have default engines-- either a list or a hash<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
-<td><pre><span class='comment'> * table, so a null return from the table means 'default' and not 'i<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
-<td><pre><span class='comment'> * don't know yet'.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
 <td><pre><span class='comment'> *<span class='comment'></pre></td>
 </tr>
 <tr>
+<td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
+<td><pre><span class='comment'> * I'd expect that the majority of scripts use the default mapper for<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
+<td><pre><span class='comment'> * a particular font.  Loading the hastable with 40 or so keys 30+ of<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
+<td><pre><span class='comment'> * which all map to the same object is unfortunate.  It might be worth<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
+<td><pre><span class='comment'> * instead having a per-font list of 'scripts with non-default<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
+<td><pre><span class='comment'> * engines', e.g. the factory has a hashtable mapping fonts to 'script<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
+<td><pre><span class='comment'> * lists' (the factory has this since the design potentially has other<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
+<td><pre><span class='comment'> * factories, though I admit there's no client for this yet and no<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
+<td><pre><span class='comment'> * public api) and then the script list is queried for the script in<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
+<td><pre><span class='comment'> * question.  it can be preloaded at creation time with all the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
+<td><pre><span class='comment'> * scripts that don't have default engines-- either a list or a hash<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
+<td><pre><span class='comment'> * table, so a null return from the table means 'default' and not 'i<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
+<td><pre><span class='comment'> * don't know yet'.<span class='comment'></pre></td>
+</tr>
+<tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre><span class='comment'> * On the other hand, in most all cases the number of unique<span class='comment'></pre></td>
+<td><pre><span class='comment'> *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
-<td><pre><span class='comment'> * script/font combinations will be small, so a flat hashtable should<span class='comment'></pre></td>
+<td><pre><span class='comment'> * On the other hand, in most all cases the number of unique<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre><span class='comment'> * suffice.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * script/font combinations will be small, so a flat hashtable should<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre> * */</span></pre></td>
+<td><pre><span class='comment'> * suffice.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre>public final class SunLayoutEngine implements <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum167">LayoutEngine</a>, <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum155">LayoutEngineFactory</a> {</pre></td>
+<td><pre> * */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
-<td><pre>    private static native void initGVIDs();</pre></td>
+<td><pre>public final class SunLayoutEngine implements <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum167">LayoutEngine</a>, <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum155">LayoutEngineFactory</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre>    static {</pre></td>
+<td><pre>    private static native void initGVIDs();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
-<td><pre>        FontManagerNativeLibrary.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/FontManagerNativeLibrary.html#linenum76">load</a>();</pre></td>
+<td><pre>    static {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/font/SunLayoutEngine.html#linenum105">initGVIDs</a>();</pre></td>
+<td><pre>        FontManagerNativeLibrary.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/FontManagerNativeLibrary.html#linenum76">load</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/font/SunLayoutEngine.html#linenum106">initGVIDs</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum102">LayoutEngineKey</a> key;</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre></pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum102">LayoutEngineKey</a> key;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
-<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum155">LayoutEngineFactory</a> instance;</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre></pre></td>
+<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum155">LayoutEngineFactory</a> instance;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
-<td><pre>    public static <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum155">LayoutEngineFactory</a> instance() {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum113">instance</a> == null) {</pre></td>
+<td><pre>    public static <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum155">LayoutEngineFactory</a> instance() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
-<td><pre>            <a class="variable" href="#linenum113">instance</a> = new <a class="type" href="/OdinCodeBrowserJdk8/sun/font/SunLayoutEngine.html#linenum104">SunLayoutEngine</a>();</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum114">instance</a> == null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            <a class="variable" href="#linenum114">instance</a> = new <a class="type" href="/OdinCodeBrowserJdk8/sun/font/SunLayoutEngine.html#linenum105">SunLayoutEngine</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre>        return <a class="variable" href="#linenum113">instance</a>;</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        return <a class="variable" href="#linenum114">instance</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>    private SunLayoutEngine() {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>        // actually a factory, key is null so layout cannot be called on it</pre></td>
+<td><pre>    private SunLayoutEngine() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        // actually a factory, key is null so layout cannot be called on it</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum167">LayoutEngine</a> getEngine(<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum36">Font2D</a> font, int script, int lang) {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/sun/font/SunLayoutEngine.html#linenum131">getEngine</a>(new <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum102">LayoutEngineKey</a>(<a class="variable" href="#linenum126">font</a>, <a class="variable" href="#linenum126">script</a>, <a class="variable" href="#linenum126">lang</a>));</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum167">LayoutEngine</a> getEngine(<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum38">Font2D</a> font, int script, int lang) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/sun/font/SunLayoutEngine.html#linenum132">getEngine</a>(new <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum102">LayoutEngineKey</a>(<a class="variable" href="#linenum127">font</a>, <a class="variable" href="#linenum127">script</a>, <a class="variable" href="#linenum127">lang</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
-<td><pre>  <span class='comment'>// !!! don't need this unless we have more than one sun layout engine...</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum167">LayoutEngine</a> getEngine(<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum102">LayoutEngineKey</a> key) {</pre></td>
+<td><pre>  <span class='comment'>// !!! don't need this unless we have more than one sun layout engine...</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ConcurrentHashMap.html#linenum267">ConcurrentHashMap</a> cache = (<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ConcurrentHashMap.html#linenum267">ConcurrentHashMap</a>)cacheref.get();</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum167">LayoutEngine</a> getEngine(<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum102">LayoutEngineKey</a> key) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum132">cache</a> == null) {</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ConcurrentHashMap.html#linenum267">ConcurrentHashMap</a> cache = (<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ConcurrentHashMap.html#linenum267">ConcurrentHashMap</a>)cacheref.get();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>            <a class="variable" href="#linenum132">cache</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ConcurrentHashMap.html#linenum267">ConcurrentHashMap</a>();</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum133">cache</a> == null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
-<td><pre>            cacheref = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/SoftReference.html#linenum64">SoftReference</a>(<a class="variable" href="#linenum132">cache</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum133">cache</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ConcurrentHashMap.html#linenum267">ConcurrentHashMap</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            cacheref = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/SoftReference.html#linenum64">SoftReference</a>(<a class="variable" href="#linenum133">cache</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
-<td><pre></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum167">LayoutEngine</a> e = (<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum167">LayoutEngine</a>)<a class="variable" href="#linenum132">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ConcurrentHashMap.html#linenum934">get</a>(<a class="variable" href="#linenum131">key</a>);</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum138">e</a> == null) {</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum167">LayoutEngine</a> e = (<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum167">LayoutEngine</a>)<a class="variable" href="#linenum133">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ConcurrentHashMap.html#linenum934">get</a>(<a class="variable" href="#linenum132">key</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum102">LayoutEngineKey</a> copy = <a class="variable" href="#linenum131">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum120">copy</a>();</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum139">e</a> == null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
-<td><pre>            <a class="variable" href="#linenum138">e</a> = new <a class="type" href="/OdinCodeBrowserJdk8/sun/font/SunLayoutEngine.html#linenum104">SunLayoutEngine</a>(<a class="variable" href="#linenum140">copy</a>);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum102">LayoutEngineKey</a> copy = <a class="variable" href="#linenum132">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum120">copy</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre>            <a class="variable" href="#linenum132">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ConcurrentHashMap.html#linenum1005">put</a>(<a class="variable" href="#linenum140">copy</a>, <a class="variable" href="#linenum138">e</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum139">e</a> = new <a class="type" href="/OdinCodeBrowserJdk8/sun/font/SunLayoutEngine.html#linenum105">SunLayoutEngine</a>(<a class="variable" href="#linenum141">copy</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            <a class="variable" href="#linenum133">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ConcurrentHashMap.html#linenum1005">put</a>(<a class="variable" href="#linenum141">copy</a>, <a class="variable" href="#linenum139">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre>        return <a class="variable" href="#linenum138">e</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/SoftReference.html#linenum64">SoftReference</a> cacheref = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/SoftReference.html#linenum64">SoftReference</a>(null);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>    private SunLayoutEngine(<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum102">LayoutEngineKey</a> key) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre>        this.key = <a class="variable" href="#linenum131">key</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
-<td><pre>    public void layout(<a class="type" href="/OdinCodeBrowserJdk8/sun/font/FontStrikeDesc.html#linenum41">FontStrikeDesc</a> desc, float[] mat, int gmask,</pre></td>
-</tr>
-<tr>
-<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
-<td><pre>                       int baseIndex, <a class="type" href="/OdinCodeBrowserJdk8/sun/font/TextRecord.html#linenum36">TextRecord</a> tr, int typo_flags,</pre></td>
-</tr>
-<tr>
-<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
-<td><pre>                       <a class="type" href="/OdinCodeBrowserJdk8/java/awt/geom/Point2D.html#linenum42">Point2D</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Float.html#linenum49">Float</a> pt, <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum535">GVData</a> data) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum36">Font2D</a> font = <a class="variable" href="#linenum148">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum124">font</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/font/FontStrike.html#linenum33">FontStrike</a> strike = <a class="variable" href="#linenum155">font</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum296">getStrike</a>(<a class="variable" href="#linenum152">desc</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
-<td><pre>        long layoutTables = 0;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum155">font</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/font/TrueTypeFont.html#linenum63">TrueTypeFont</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
-<td><pre>            <a class="variable" href="#linenum157">layoutTables</a> = ((<a class="type" href="/OdinCodeBrowserJdk8/sun/font/TrueTypeFont.html#linenum63">TrueTypeFont</a>) <a class="variable" href="#linenum155">font</a>).getLayoutTableCache();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/font/SunLayoutEngine.html#linenum167">nativeLayout</a>(<a class="variable" href="#linenum155">font</a>, <a class="variable" href="#linenum156">strike</a>, <a class="variable" href="#linenum152">mat</a>, <a class="variable" href="#linenum152">gmask</a>, <a class="variable" href="#linenum153">baseIndex</a>,</pre></td>
+<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
+<td><pre>        return <a class="variable" href="#linenum139">e</a>;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
-<td><pre>             <a class="variable" href="#linenum153">tr</a>.text, <a class="variable" href="#linenum153">tr</a>.start, <a class="variable" href="#linenum153">tr</a>.limit, <a class="variable" href="#linenum153">tr</a>.min, <a class="variable" href="#linenum153">tr</a>.max,</pre></td>
-</tr>
-<tr>
-<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre>             <a class="variable" href="#linenum148">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum128">script</a>(), <a class="variable" href="#linenum148">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum132">lang</a>(), <a class="variable" href="#linenum153">typo_flags</a>, <a class="variable" href="#linenum154">pt</a>, <a class="variable" href="#linenum154">data</a>,</pre></td>
-</tr>
-<tr>
-<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre>             <a class="variable" href="#linenum155">font</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum454">getUnitsPerEm</a>(), <a class="variable" href="#linenum157">layoutTables</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
+<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
+<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/SoftReference.html#linenum64">SoftReference</a> cacheref = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/SoftReference.html#linenum64">SoftReference</a>(null);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
+<td><pre>    private SunLayoutEngine(<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum102">LayoutEngineKey</a> key) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
+<td><pre>        this.key = <a class="variable" href="#linenum132">key</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/util/WeakHashMap.html#linenum136">WeakHashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum38">Font2D</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Boolean.html#linenum43">Boolean</a>&gt; aatInfo = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/WeakHashMap.html#linenum136">WeakHashMap</a>&lt;&gt;();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
+<td><pre>    private boolean isAAT(<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum38">Font2D</a> font) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Boolean.html#linenum43">Boolean</a> aatObj;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
+<td><pre>        synchronized (<a class="variable" href="#linenum153">aatInfo</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
+<td><pre>            <a class="variable" href="#linenum156">aatObj</a> = <a class="variable" href="#linenum153">aatInfo</a>.get(<a class="variable" href="#linenum155">font</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum156">aatObj</a> != null) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
+<td><pre>            return <a class="variable" href="#linenum156">aatObj</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Boolean.html#linenum131">booleanValue</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
+<td><pre>        boolean aat = false;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum155">font</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/font/TrueTypeFont.html#linenum63">TrueTypeFont</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/font/TrueTypeFont.html#linenum63">TrueTypeFont</a> ttf = (<a class="type" href="/OdinCodeBrowserJdk8/sun/font/TrueTypeFont.html#linenum63">TrueTypeFont</a>)<a class="variable" href="#linenum155">font</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
+<td><pre>            <a class="variable" href="#linenum163">aat</a> =  <a class="variable" href="#linenum165">ttf</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/TrueTypeFont.html#linenum945">getDirectoryEntry</a>(TrueTypeFont.morxTag) != null ||</pre></td>
+</tr>
+<tr>
 <td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre>    private static native void</pre></td>
+<td><pre>                   <a class="variable" href="#linenum165">ttf</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/TrueTypeFont.html#linenum945">getDirectoryEntry</a>(TrueTypeFont.mortTag) != null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
-<td><pre>        nativeLayout(<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum36">Font2D</a> font, <a class="type" href="/OdinCodeBrowserJdk8/sun/font/FontStrike.html#linenum33">FontStrike</a> strike, float[] mat, int gmask,</pre></td>
+<td><pre>        } else if (<a class="variable" href="#linenum155">font</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/font/PhysicalFont.html#linenum37">PhysicalFont</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre>             int baseIndex, char[] chars, int offset, int limit,</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/font/PhysicalFont.html#linenum37">PhysicalFont</a> pf = (<a class="type" href="/OdinCodeBrowserJdk8/sun/font/PhysicalFont.html#linenum37">PhysicalFont</a>)<a class="variable" href="#linenum155">font</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>             int min, int max, int script, int lang, int typo_flags,</pre></td>
+<td><pre>            <a class="variable" href="#linenum163">aat</a> =  <a class="variable" href="#linenum169">pf</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum478">getTableBytes</a>(TrueTypeFont.morxTag) != null ||</pre></td>
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre>             <a class="type" href="/OdinCodeBrowserJdk8/java/awt/geom/Point2D.html#linenum42">Point2D</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Float.html#linenum49">Float</a> pt, <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum535">GVData</a> data, long upem, long layoutTables);</pre></td>
+<td><pre>                   <a class="variable" href="#linenum169">pf</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum478">getTableBytes</a>(TrueTypeFont.mortTag) != null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
+<td><pre>        synchronized (<a class="variable" href="#linenum153">aatInfo</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
+<td><pre>            <a class="variable" href="#linenum153">aatInfo</a>.put(<a class="variable" href="#linenum155">font</a>, Boolean.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Boolean.html#linenum149">valueOf</a>(<a class="variable" href="#linenum163">aat</a>));</pre></td>
+</tr>
+<tr>
+<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
+<td><pre>        return <a class="variable" href="#linenum163">aat</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
+<td><pre>    public void layout(<a class="type" href="/OdinCodeBrowserJdk8/sun/font/FontStrikeDesc.html#linenum41">FontStrikeDesc</a> desc, float[] mat, int gmask,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
+<td><pre>                       int baseIndex, <a class="type" href="/OdinCodeBrowserJdk8/sun/font/TextRecord.html#linenum36">TextRecord</a> tr, int typo_flags,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
+<td><pre>                       <a class="type" href="/OdinCodeBrowserJdk8/java/awt/geom/Point2D.html#linenum42">Point2D</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Float.html#linenum49">Float</a> pt, <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum538">GVData</a> data) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum38">Font2D</a> font = <a class="variable" href="#linenum149">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum124">font</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/font/FontStrike.html#linenum33">FontStrike</a> strike = <a class="variable" href="#linenum182">font</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum337">getStrike</a>(<a class="variable" href="#linenum179">desc</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
+<td><pre>        <span class='comment'>// Ignore layout tables for RTL AAT fonts due to lack of support in ICU</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
+<td><pre>        long layoutTables = (((<a class="variable" href="#linenum180">typo_flags</a> &amp; 0x80000000) != 0) &amp;&amp; <a class="type" href="/OdinCodeBrowserJdk8/sun/font/SunLayoutEngine.html#linenum155">isAAT</a>(<a class="variable" href="#linenum182">font</a>)) ? 0 :</pre></td>
+</tr>
+<tr>
+<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
+<td><pre>                                <a class="variable" href="#linenum182">font</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum485">getLayoutTableCache</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/font/SunLayoutEngine.html#linenum193">nativeLayout</a>(<a class="variable" href="#linenum182">font</a>, <a class="variable" href="#linenum183">strike</a>, <a class="variable" href="#linenum179">mat</a>, <a class="variable" href="#linenum179">gmask</a>, <a class="variable" href="#linenum180">baseIndex</a>,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
+<td><pre>             <a class="variable" href="#linenum180">tr</a>.text, <a class="variable" href="#linenum180">tr</a>.start, <a class="variable" href="#linenum180">tr</a>.limit, <a class="variable" href="#linenum180">tr</a>.min, <a class="variable" href="#linenum180">tr</a>.max,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
+<td><pre>             <a class="variable" href="#linenum149">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum128">script</a>(), <a class="variable" href="#linenum149">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum132">lang</a>(), <a class="variable" href="#linenum180">typo_flags</a>, <a class="variable" href="#linenum181">pt</a>, <a class="variable" href="#linenum181">data</a>,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
+<td><pre>             <a class="variable" href="#linenum182">font</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum490">getUnitsPerEm</a>(), <a class="variable" href="#linenum185">layoutTables</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
+<td><pre>    private static native void</pre></td>
+</tr>
+<tr>
+<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
+<td><pre>        nativeLayout(<a class="type" href="/OdinCodeBrowserJdk8/sun/font/Font2D.html#linenum38">Font2D</a> font, <a class="type" href="/OdinCodeBrowserJdk8/sun/font/FontStrike.html#linenum33">FontStrike</a> strike, float[] mat, int gmask,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
+<td><pre>             int baseIndex, char[] chars, int offset, int limit,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
+<td><pre>             int min, int max, int script, int lang, int typo_flags,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
+<td><pre>             <a class="type" href="/OdinCodeBrowserJdk8/java/awt/geom/Point2D.html#linenum42">Point2D</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Float.html#linenum49">Float</a> pt, <a class="type" href="/OdinCodeBrowserJdk8/sun/font/GlyphLayout.html#linenum538">GVData</a> data, long upem, long layoutTables);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

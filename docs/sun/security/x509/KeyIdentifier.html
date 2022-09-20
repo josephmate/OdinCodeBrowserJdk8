@@ -364,7 +364,7 @@
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum58">AlgorithmId</a> algid = AlgorithmId.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum344">parse</a>(<a class="variable" href="#linenum85">algAndKey</a>.data.getDerValue());</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum63">AlgorithmId</a> algid = AlgorithmId.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum385">parse</a>(<a class="variable" href="#linenum85">algAndKey</a>.data.getDerValue());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
@@ -376,7 +376,7 @@
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum104">MessageDigest</a> md = null;</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum109">MessageDigest</a> md = null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
@@ -384,7 +384,7 @@
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
-<td><pre>            <a class="variable" href="#linenum93">md</a> = MessageDigest.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum257">getInstance</a>(<span class='string'>&quot;SHA1&quot;</span>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum93">md</a> = MessageDigest.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum166">getInstance</a>(<span class='string'>&quot;SHA1&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
@@ -400,11 +400,11 @@
 </tr>
 <tr>
 <td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
-<td><pre>        <a class="variable" href="#linenum93">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum337">update</a>(<a class="variable" href="#linenum91">key</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum93">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum305">update</a>(<a class="variable" href="#linenum91">key</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre>        this.octetString = <a class="variable" href="#linenum93">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum397">digest</a>();</pre></td>
+<td><pre>        this.octetString = <a class="variable" href="#linenum93">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum366">digest</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
@@ -472,7 +472,7 @@
 </tr>
 <tr>
 <td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
-<td><pre>        <a class="variable" href="#linenum114">s</a> += <a class="variable" href="#linenum116">encoder</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/CharacterEncoder.html#linenum349">encodeBuffer</a>(<a class="variable" href="#linenum50">octetString</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum114">s</a> += <a class="variable" href="#linenum116">encoder</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/CharacterEncoder.html#linenum319">encodeBuffer</a>(<a class="variable" href="#linenum50">octetString</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
@@ -608,11 +608,11 @@
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre>        return java.util.Arrays.equals(<a class="variable" href="#linenum50">octetString</a>,</pre></td>
+<td><pre>        byte[] otherString = ((<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/KeyIdentifier.html#linenum42">KeyIdentifier</a>)<a class="variable" href="#linenum146">other</a>).octetString;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
-<td><pre>                                       ((<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/KeyIdentifier.html#linenum42">KeyIdentifier</a>)<a class="variable" href="#linenum146">other</a>).getIdentifier());</pre></td>
+<td><pre>        return java.util.Arrays.equals(<a class="variable" href="#linenum50">octetString</a>, <a class="variable" href="#linenum151">otherString</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>

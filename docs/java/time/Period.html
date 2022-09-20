@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2012, 2013, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2012, 2015, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -604,7 +604,7 @@
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre>            Pattern.<a class="type" href="/OdinCodeBrowserJdk8/java/util/regex/Pattern.html#linenum1656">compile</a>(<span class='string'>&quot;([-+]?)P(?:([-+]?[0-9]+)Y)?(?:([-+]?[0-9]+)M)?(?:([-+]?[0-9]+)W)?(?:([-+]?[0-9]+)D)?&quot;</span>, Pattern.CASE_INSENSITIVE);</pre></td>
+<td><pre>            Pattern.<a class="type" href="/OdinCodeBrowserJdk8/java/util/regex/Pattern.html#linenum1053">compile</a>(<span class='string'>&quot;([-+]?)P(?:([-+]?[0-9]+)Y)?(?:([-+]?[0-9]+)M)?(?:([-+]?[0-9]+)W)?(?:([-+]?[0-9]+)D)?&quot;</span>, Pattern.CASE_INSENSITIVE);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
@@ -628,7 +628,7 @@
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre>            Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum1346">unmodifiableList</a>(Arrays.&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/TemporalUnit.html#linenum97">TemporalUnit</a>&gt;<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3791">asList</a>(YEARS, MONTHS, DAYS));</pre></td>
+<td><pre>            Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum1288">unmodifiableList</a>(Arrays.&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/TemporalUnit.html#linenum97">TemporalUnit</a>&gt;<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3797">asList</a>(YEARS, MONTHS, DAYS));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
@@ -840,7 +840,7 @@
 </tr>
 <tr>
 <td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/Period.html#linenum397">create</a>(0, 0, Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum882">multiplyExact</a>(<a class="variable" href="#linenum208">weeks</a>, 7));</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/Period.html#linenum397">create</a>(0, 0, Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum864">multiplyExact</a>(<a class="variable" href="#linenum208">weeks</a>, 7));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
@@ -1332,23 +1332,23 @@
 </tr>
 <tr>
 <td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
-<td><pre>            int negate = (<span class='string'>&quot;-&quot;</span>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum964">equals</a>(<a class="variable" href="#linenum330">matcher</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/regex/Matcher.html#linenum571">group</a>(1)) ? -1 : 1);</pre></td>
+<td><pre>            int negate = (<span class='string'>&quot;-&quot;</span>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum976">equals</a>(<a class="variable" href="#linenum330">matcher</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/regex/Matcher.html#linenum534">group</a>(1)) ? -1 : 1);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> yearMatch = <a class="variable" href="#linenum330">matcher</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/regex/Matcher.html#linenum571">group</a>(2);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> yearMatch = <a class="variable" href="#linenum330">matcher</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/regex/Matcher.html#linenum534">group</a>(2);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> monthMatch = <a class="variable" href="#linenum330">matcher</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/regex/Matcher.html#linenum571">group</a>(3);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> monthMatch = <a class="variable" href="#linenum330">matcher</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/regex/Matcher.html#linenum534">group</a>(3);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum335" class="linenum-cell" data-linenum="335" href="#linenum335"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> weekMatch = <a class="variable" href="#linenum330">matcher</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/regex/Matcher.html#linenum571">group</a>(4);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> weekMatch = <a class="variable" href="#linenum330">matcher</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/regex/Matcher.html#linenum534">group</a>(4);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum336" class="linenum-cell" data-linenum="336" href="#linenum336"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> dayMatch = <a class="variable" href="#linenum330">matcher</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/regex/Matcher.html#linenum571">group</a>(5);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> dayMatch = <a class="variable" href="#linenum330">matcher</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/regex/Matcher.html#linenum534">group</a>(5);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum337" class="linenum-cell" data-linenum="337" href="#linenum337"></a></td>
@@ -1376,7 +1376,7 @@
 </tr>
 <tr>
 <td><a id="linenum343" class="linenum-cell" data-linenum="343" href="#linenum343"></a></td>
-<td><pre>                    <a class="variable" href="#linenum342">days</a> = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum805">addExact</a>(<a class="variable" href="#linenum342">days</a>, Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum882">multiplyExact</a>(<a class="variable" href="#linenum341">weeks</a>, 7));</pre></td>
+<td><pre>                    <a class="variable" href="#linenum342">days</a> = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum786">addExact</a>(<a class="variable" href="#linenum342">days</a>, Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum864">multiplyExact</a>(<a class="variable" href="#linenum341">weeks</a>, 7));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum344" class="linenum-cell" data-linenum="344" href="#linenum344"></a></td>
@@ -1440,7 +1440,7 @@
 </tr>
 <tr>
 <td><a id="linenum359" class="linenum-cell" data-linenum="359" href="#linenum359"></a></td>
-<td><pre>            return Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum882">multiplyExact</a>(<a class="variable" href="#linenum357">val</a>, <a class="variable" href="#linenum353">negate</a>);</pre></td>
+<td><pre>            return Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum864">multiplyExact</a>(<a class="variable" href="#linenum357">val</a>, <a class="variable" href="#linenum353">negate</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum360" class="linenum-cell" data-linenum="360" href="#linenum360"></a></td>
@@ -1548,7 +1548,7 @@
 </tr>
 <tr>
 <td><a id="linenum386" class="linenum-cell" data-linenum="386" href="#linenum386"></a></td>
-<td><pre>        return <a class="variable" href="#linenum385">startDateInclusive</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalDate.html#linenum1655">until</a>(<a class="variable" href="#linenum385">endDateExclusive</a>);</pre></td>
+<td><pre>        return <a class="variable" href="#linenum385">startDateInclusive</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalDate.html#linenum1661">until</a>(<a class="variable" href="#linenum385">endDateExclusive</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum387" class="linenum-cell" data-linenum="387" href="#linenum387"></a></td>
@@ -2480,7 +2480,7 @@
 </tr>
 <tr>
 <td><a id="linenum619" class="linenum-cell" data-linenum="619" href="#linenum619"></a></td>
-<td><pre><span class='comment'>     * @param amountToAdd  the period to add, not null<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param amountToAdd  the amount to add, not null<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum620" class="linenum-cell" data-linenum="620" href="#linenum620"></a></td>
@@ -2516,15 +2516,15 @@
 </tr>
 <tr>
 <td><a id="linenum628" class="linenum-cell" data-linenum="628" href="#linenum628"></a></td>
-<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum805">addExact</a>(<a class="variable" href="#linenum557">years</a>, <a class="variable" href="#linenum626">isoAmount</a>.years),</pre></td>
+<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum786">addExact</a>(<a class="variable" href="#linenum557">years</a>, <a class="variable" href="#linenum626">isoAmount</a>.years),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum629" class="linenum-cell" data-linenum="629" href="#linenum629"></a></td>
-<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum805">addExact</a>(<a class="variable" href="#linenum579">months</a>, <a class="variable" href="#linenum626">isoAmount</a>.months),</pre></td>
+<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum786">addExact</a>(<a class="variable" href="#linenum579">months</a>, <a class="variable" href="#linenum626">isoAmount</a>.months),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum630" class="linenum-cell" data-linenum="630" href="#linenum630"></a></td>
-<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum805">addExact</a>(<a class="variable" href="#linenum597">days</a>, <a class="variable" href="#linenum626">isoAmount</a>.days));</pre></td>
+<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum786">addExact</a>(<a class="variable" href="#linenum597">days</a>, <a class="variable" href="#linenum626">isoAmount</a>.days));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum631" class="linenum-cell" data-linenum="631" href="#linenum631"></a></td>
@@ -2604,7 +2604,7 @@
 </tr>
 <tr>
 <td><a id="linenum650" class="linenum-cell" data-linenum="650" href="#linenum650"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/Period.html#linenum397">create</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1009">toIntExact</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum805">addExact</a>(<a class="variable" href="#linenum557">years</a>, <a class="variable" href="#linenum646">yearsToAdd</a>)), <a class="variable" href="#linenum579">months</a>, <a class="variable" href="#linenum597">days</a>);</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/Period.html#linenum397">create</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1009">toIntExact</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum786">addExact</a>(<a class="variable" href="#linenum557">years</a>, <a class="variable" href="#linenum646">yearsToAdd</a>)), <a class="variable" href="#linenum579">months</a>, <a class="variable" href="#linenum597">days</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum651" class="linenum-cell" data-linenum="651" href="#linenum651"></a></td>
@@ -2684,7 +2684,7 @@
 </tr>
 <tr>
 <td><a id="linenum670" class="linenum-cell" data-linenum="670" href="#linenum670"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/Period.html#linenum397">create</a>(<a class="variable" href="#linenum557">years</a>, Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1009">toIntExact</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum805">addExact</a>(<a class="variable" href="#linenum579">months</a>, <a class="variable" href="#linenum666">monthsToAdd</a>)), <a class="variable" href="#linenum597">days</a>);</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/Period.html#linenum397">create</a>(<a class="variable" href="#linenum557">years</a>, Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1009">toIntExact</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum786">addExact</a>(<a class="variable" href="#linenum579">months</a>, <a class="variable" href="#linenum666">monthsToAdd</a>)), <a class="variable" href="#linenum597">days</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum671" class="linenum-cell" data-linenum="671" href="#linenum671"></a></td>
@@ -2764,7 +2764,7 @@
 </tr>
 <tr>
 <td><a id="linenum690" class="linenum-cell" data-linenum="690" href="#linenum690"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/Period.html#linenum397">create</a>(<a class="variable" href="#linenum557">years</a>, <a class="variable" href="#linenum579">months</a>, Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1009">toIntExact</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum805">addExact</a>(<a class="variable" href="#linenum597">days</a>, <a class="variable" href="#linenum686">daysToAdd</a>)));</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/Period.html#linenum397">create</a>(<a class="variable" href="#linenum557">years</a>, <a class="variable" href="#linenum579">months</a>, Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1009">toIntExact</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum786">addExact</a>(<a class="variable" href="#linenum597">days</a>, <a class="variable" href="#linenum686">daysToAdd</a>)));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum691" class="linenum-cell" data-linenum="691" href="#linenum691"></a></td>
@@ -2836,7 +2836,7 @@
 </tr>
 <tr>
 <td><a id="linenum708" class="linenum-cell" data-linenum="708" href="#linenum708"></a></td>
-<td><pre><span class='comment'>     * @param amountToSubtract  the period to subtract, not null<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param amountToSubtract  the amount to subtract, not null<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum709" class="linenum-cell" data-linenum="709" href="#linenum709"></a></td>
@@ -2872,15 +2872,15 @@
 </tr>
 <tr>
 <td><a id="linenum717" class="linenum-cell" data-linenum="717" href="#linenum717"></a></td>
-<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum844">subtractExact</a>(<a class="variable" href="#linenum557">years</a>, <a class="variable" href="#linenum715">isoAmount</a>.years),</pre></td>
+<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum824">subtractExact</a>(<a class="variable" href="#linenum557">years</a>, <a class="variable" href="#linenum715">isoAmount</a>.years),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum718" class="linenum-cell" data-linenum="718" href="#linenum718"></a></td>
-<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum844">subtractExact</a>(<a class="variable" href="#linenum579">months</a>, <a class="variable" href="#linenum715">isoAmount</a>.months),</pre></td>
+<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum824">subtractExact</a>(<a class="variable" href="#linenum579">months</a>, <a class="variable" href="#linenum715">isoAmount</a>.months),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum719" class="linenum-cell" data-linenum="719" href="#linenum719"></a></td>
-<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum844">subtractExact</a>(<a class="variable" href="#linenum597">days</a>, <a class="variable" href="#linenum715">isoAmount</a>.days));</pre></td>
+<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum824">subtractExact</a>(<a class="variable" href="#linenum597">days</a>, <a class="variable" href="#linenum715">isoAmount</a>.days));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum720" class="linenum-cell" data-linenum="720" href="#linenum720"></a></td>
@@ -3176,15 +3176,15 @@
 </tr>
 <tr>
 <td><a id="linenum793" class="linenum-cell" data-linenum="793" href="#linenum793"></a></td>
-<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum882">multiplyExact</a>(<a class="variable" href="#linenum557">years</a>, <a class="variable" href="#linenum788">scalar</a>),</pre></td>
+<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum864">multiplyExact</a>(<a class="variable" href="#linenum557">years</a>, <a class="variable" href="#linenum788">scalar</a>),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum794" class="linenum-cell" data-linenum="794" href="#linenum794"></a></td>
-<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum882">multiplyExact</a>(<a class="variable" href="#linenum579">months</a>, <a class="variable" href="#linenum788">scalar</a>),</pre></td>
+<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum864">multiplyExact</a>(<a class="variable" href="#linenum579">months</a>, <a class="variable" href="#linenum788">scalar</a>),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum795" class="linenum-cell" data-linenum="795" href="#linenum795"></a></td>
-<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum882">multiplyExact</a>(<a class="variable" href="#linenum597">days</a>, <a class="variable" href="#linenum788">scalar</a>));</pre></td>
+<td><pre>                Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum864">multiplyExact</a>(<a class="variable" href="#linenum597">days</a>, <a class="variable" href="#linenum788">scalar</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum796" class="linenum-cell" data-linenum="796" href="#linenum796"></a></td>
@@ -3592,7 +3592,7 @@
 </tr>
 <tr>
 <td><a id="linenum897" class="linenum-cell" data-linenum="897" href="#linenum897"></a></td>
-<td><pre>                <a class="variable" href="#linenum893">temporal</a> = <a class="variable" href="#linenum893">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum296">plus</a>(<a class="variable" href="#linenum557">years</a>, YEARS);</pre></td>
+<td><pre>                <a class="variable" href="#linenum893">temporal</a> = <a class="variable" href="#linenum893">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum297">plus</a>(<a class="variable" href="#linenum557">years</a>, YEARS);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum898" class="linenum-cell" data-linenum="898" href="#linenum898"></a></td>
@@ -3612,7 +3612,7 @@
 </tr>
 <tr>
 <td><a id="linenum902" class="linenum-cell" data-linenum="902" href="#linenum902"></a></td>
-<td><pre>                <a class="variable" href="#linenum893">temporal</a> = <a class="variable" href="#linenum893">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum296">plus</a>(<a class="variable" href="#linenum900">totalMonths</a>, MONTHS);</pre></td>
+<td><pre>                <a class="variable" href="#linenum893">temporal</a> = <a class="variable" href="#linenum893">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum297">plus</a>(<a class="variable" href="#linenum900">totalMonths</a>, MONTHS);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum903" class="linenum-cell" data-linenum="903" href="#linenum903"></a></td>
@@ -3628,7 +3628,7 @@
 </tr>
 <tr>
 <td><a id="linenum906" class="linenum-cell" data-linenum="906" href="#linenum906"></a></td>
-<td><pre>            <a class="variable" href="#linenum893">temporal</a> = <a class="variable" href="#linenum893">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum296">plus</a>(<a class="variable" href="#linenum597">days</a>, DAYS);</pre></td>
+<td><pre>            <a class="variable" href="#linenum893">temporal</a> = <a class="variable" href="#linenum893">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum297">plus</a>(<a class="variable" href="#linenum597">days</a>, DAYS);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum907" class="linenum-cell" data-linenum="907" href="#linenum907"></a></td>
@@ -3804,7 +3804,7 @@
 </tr>
 <tr>
 <td><a id="linenum950" class="linenum-cell" data-linenum="950" href="#linenum950"></a></td>
-<td><pre>                <a class="variable" href="#linenum946">temporal</a> = <a class="variable" href="#linenum946">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum368">minus</a>(<a class="variable" href="#linenum557">years</a>, YEARS);</pre></td>
+<td><pre>                <a class="variable" href="#linenum946">temporal</a> = <a class="variable" href="#linenum946">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum369">minus</a>(<a class="variable" href="#linenum557">years</a>, YEARS);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum951" class="linenum-cell" data-linenum="951" href="#linenum951"></a></td>
@@ -3824,7 +3824,7 @@
 </tr>
 <tr>
 <td><a id="linenum955" class="linenum-cell" data-linenum="955" href="#linenum955"></a></td>
-<td><pre>                <a class="variable" href="#linenum946">temporal</a> = <a class="variable" href="#linenum946">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum368">minus</a>(<a class="variable" href="#linenum953">totalMonths</a>, MONTHS);</pre></td>
+<td><pre>                <a class="variable" href="#linenum946">temporal</a> = <a class="variable" href="#linenum946">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum369">minus</a>(<a class="variable" href="#linenum953">totalMonths</a>, MONTHS);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum956" class="linenum-cell" data-linenum="956" href="#linenum956"></a></td>
@@ -3840,7 +3840,7 @@
 </tr>
 <tr>
 <td><a id="linenum959" class="linenum-cell" data-linenum="959" href="#linenum959"></a></td>
-<td><pre>            <a class="variable" href="#linenum946">temporal</a> = <a class="variable" href="#linenum946">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum368">minus</a>(<a class="variable" href="#linenum597">days</a>, DAYS);</pre></td>
+<td><pre>            <a class="variable" href="#linenum946">temporal</a> = <a class="variable" href="#linenum946">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum369">minus</a>(<a class="variable" href="#linenum597">days</a>, DAYS);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum960" class="linenum-cell" data-linenum="960" href="#linenum960"></a></td>
@@ -3880,7 +3880,7 @@
 </tr>
 <tr>
 <td><a id="linenum969" class="linenum-cell" data-linenum="969" href="#linenum969"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum157">Chronology</a> temporalChrono = <a class="variable" href="#linenum967">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/TemporalAccessor.html#linenum308">query</a>(TemporalQueries.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/TemporalQueries.html#linenum206">chronology</a>());</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum158">Chronology</a> temporalChrono = <a class="variable" href="#linenum967">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/TemporalAccessor.html#linenum308">query</a>(TemporalQueries.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/TemporalQueries.html#linenum206">chronology</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum970" class="linenum-cell" data-linenum="970" href="#linenum970"></a></td>
@@ -3888,7 +3888,7 @@
 </tr>
 <tr>
 <td><a id="linenum971" class="linenum-cell" data-linenum="971" href="#linenum971"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/time/DateTimeException.html#linenum75">DateTimeException</a>(<span class='string'>&quot;Chronology mismatch, expected: ISO, actual: &quot;</span> + <a class="variable" href="#linenum969">temporalChrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum276">getId</a>());</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/time/DateTimeException.html#linenum75">DateTimeException</a>(<span class='string'>&quot;Chronology mismatch, expected: ISO, actual: &quot;</span> + <a class="variable" href="#linenum969">temporalChrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum277">getId</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum972" class="linenum-cell" data-linenum="972" href="#linenum972"></a></td>
@@ -4108,7 +4108,7 @@
 </tr>
 <tr>
 <td><a id="linenum1026" class="linenum-cell" data-linenum="1026" href="#linenum1026"></a></td>
-<td><pre>            <a class="variable" href="#linenum1025">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>('P');</pre></td>
+<td><pre>            <a class="variable" href="#linenum1025">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>('P');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1027" class="linenum-cell" data-linenum="1027" href="#linenum1027"></a></td>
@@ -4116,7 +4116,7 @@
 </tr>
 <tr>
 <td><a id="linenum1028" class="linenum-cell" data-linenum="1028" href="#linenum1028"></a></td>
-<td><pre>                <a class="variable" href="#linenum1025">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="variable" href="#linenum557">years</a>).append('Y');</pre></td>
+<td><pre>                <a class="variable" href="#linenum1025">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<a class="variable" href="#linenum557">years</a>).append('Y');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1029" class="linenum-cell" data-linenum="1029" href="#linenum1029"></a></td>
@@ -4128,7 +4128,7 @@
 </tr>
 <tr>
 <td><a id="linenum1031" class="linenum-cell" data-linenum="1031" href="#linenum1031"></a></td>
-<td><pre>                <a class="variable" href="#linenum1025">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="variable" href="#linenum579">months</a>).append('M');</pre></td>
+<td><pre>                <a class="variable" href="#linenum1025">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<a class="variable" href="#linenum579">months</a>).append('M');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1032" class="linenum-cell" data-linenum="1032" href="#linenum1032"></a></td>
@@ -4140,7 +4140,7 @@
 </tr>
 <tr>
 <td><a id="linenum1034" class="linenum-cell" data-linenum="1034" href="#linenum1034"></a></td>
-<td><pre>                <a class="variable" href="#linenum1025">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="variable" href="#linenum597">days</a>).append('D');</pre></td>
+<td><pre>                <a class="variable" href="#linenum1025">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<a class="variable" href="#linenum597">days</a>).append('D');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1035" class="linenum-cell" data-linenum="1035" href="#linenum1035"></a></td>
@@ -4248,82 +4248,86 @@
 </tr>
 <tr>
 <td><a id="linenum1061" class="linenum-cell" data-linenum="1061" href="#linenum1061"></a></td>
-<td><pre><span class='comment'>     * @throws java.io.InvalidObjectException always<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param s the stream to read<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1062" class="linenum-cell" data-linenum="1062" href="#linenum1062"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * @throws java.io.InvalidObjectException always<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1063" class="linenum-cell" data-linenum="1063" href="#linenum1063"></a></td>
-<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum206">ObjectInputStream</a> s) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a> {</pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1064" class="linenum-cell" data-linenum="1064" href="#linenum1064"></a></td>
-<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a>(<span class='string'>&quot;Deserialization via serialization delegate&quot;</span>);</pre></td>
+<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum217">ObjectInputStream</a> s) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1065" class="linenum-cell" data-linenum="1065" href="#linenum1065"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a>(<span class='string'>&quot;Deserialization via serialization delegate&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1066" class="linenum-cell" data-linenum="1066" href="#linenum1066"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1067" class="linenum-cell" data-linenum="1067" href="#linenum1067"></a></td>
-<td><pre>    void writeExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum49">DataOutput</a> out) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1068" class="linenum-cell" data-linenum="1068" href="#linenum1068"></a></td>
-<td><pre>        <a class="variable" href="#linenum1067">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum193">writeInt</a>(<a class="variable" href="#linenum557">years</a>);</pre></td>
+<td><pre>    void writeExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum49">DataOutput</a> out) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1069" class="linenum-cell" data-linenum="1069" href="#linenum1069"></a></td>
-<td><pre>        <a class="variable" href="#linenum1067">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum193">writeInt</a>(<a class="variable" href="#linenum579">months</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum1068">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum193">writeInt</a>(<a class="variable" href="#linenum557">years</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1070" class="linenum-cell" data-linenum="1070" href="#linenum1070"></a></td>
-<td><pre>        <a class="variable" href="#linenum1067">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum193">writeInt</a>(<a class="variable" href="#linenum597">days</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum1068">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum193">writeInt</a>(<a class="variable" href="#linenum579">months</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1071" class="linenum-cell" data-linenum="1071" href="#linenum1071"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        <a class="variable" href="#linenum1068">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum193">writeInt</a>(<a class="variable" href="#linenum597">days</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1072" class="linenum-cell" data-linenum="1072" href="#linenum1072"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum1073" class="linenum-cell" data-linenum="1073" href="#linenum1073"></a></td>
-<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/time/Period.html#linenum135">Period</a> readExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum148">DataInput</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1074" class="linenum-cell" data-linenum="1074" href="#linenum1074"></a></td>
-<td><pre>        int years = <a class="variable" href="#linenum1073">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum393">readInt</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1075" class="linenum-cell" data-linenum="1075" href="#linenum1075"></a></td>
-<td><pre>        int months = <a class="variable" href="#linenum1073">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum393">readInt</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1076" class="linenum-cell" data-linenum="1076" href="#linenum1076"></a></td>
-<td><pre>        int days = <a class="variable" href="#linenum1073">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum393">readInt</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1077" class="linenum-cell" data-linenum="1077" href="#linenum1077"></a></td>
-<td><pre>        return Period.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Period.html#linenum236">of</a>(<a class="variable" href="#linenum1074">years</a>, <a class="variable" href="#linenum1075">months</a>, <a class="variable" href="#linenum1076">days</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1078" class="linenum-cell" data-linenum="1078" href="#linenum1078"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum1079" class="linenum-cell" data-linenum="1079" href="#linenum1079"></a></td>
+<td><a id="linenum1073" class="linenum-cell" data-linenum="1073" href="#linenum1073"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum1074" class="linenum-cell" data-linenum="1074" href="#linenum1074"></a></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/time/Period.html#linenum135">Period</a> readExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum148">DataInput</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1075" class="linenum-cell" data-linenum="1075" href="#linenum1075"></a></td>
+<td><pre>        int years = <a class="variable" href="#linenum1074">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum393">readInt</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1076" class="linenum-cell" data-linenum="1076" href="#linenum1076"></a></td>
+<td><pre>        int months = <a class="variable" href="#linenum1074">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum393">readInt</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1077" class="linenum-cell" data-linenum="1077" href="#linenum1077"></a></td>
+<td><pre>        int days = <a class="variable" href="#linenum1074">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum393">readInt</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1078" class="linenum-cell" data-linenum="1078" href="#linenum1078"></a></td>
+<td><pre>        return Period.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Period.html#linenum236">of</a>(<a class="variable" href="#linenum1075">years</a>, <a class="variable" href="#linenum1076">months</a>, <a class="variable" href="#linenum1077">days</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1079" class="linenum-cell" data-linenum="1079" href="#linenum1079"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
 <td><a id="linenum1080" class="linenum-cell" data-linenum="1080" href="#linenum1080"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum1081" class="linenum-cell" data-linenum="1081" href="#linenum1081"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

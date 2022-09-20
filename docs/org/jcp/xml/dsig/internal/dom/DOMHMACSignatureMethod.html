@@ -100,7 +100,7 @@
 </tr>
 <tr>
 <td><a id="linenum24" class="linenum-cell" data-linenum="24" href="#linenum24"></a></td>
-<td><pre> * Copyright (c) 2005, 2013, Oracle and/or its affiliates. All rights reserved.</pre></td>
+<td><pre> * Copyright (c) 2005, 2019, Oracle and/or its affiliates. All rights reserved.</pre></td>
 </tr>
 <tr>
 <td><a id="linenum25" class="linenum-cell" data-linenum="25" href="#linenum25"></a></td>
@@ -112,7 +112,7 @@
 </tr>
 <tr>
 <td><a id="linenum27" class="linenum-cell" data-linenum="27" href="#linenum27"></a></td>
-<td><pre><span class='comment'> * $Id: DOMHMACSignatureMethod.java 1333415 2012-05-03 12:03:51Z coheigea $<span class='comment'></pre></td>
+<td><pre><span class='comment'> * $Id: DOMHMACSignatureMethod.java 1854026 2019-02-21 09:30:01Z coheigea $<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum28" class="linenum-cell" data-linenum="28" href="#linenum28"></a></td>
@@ -216,319 +216,319 @@
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
-<td><pre><span class='comment'> * @author Sean Mullan<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
 <td><pre> */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
+<td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
 <td><pre>public abstract class DOMHMACSignatureMethod extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/AbstractDOMSignatureMethod.html#linenum48">AbstractDOMSignatureMethod</a> {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
+<td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
 <td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
+<td><pre>    private static final com.sun.org.slf4j.internal.Logger LOG =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
-<td><pre>    private static java.util.logging.Logger log =</pre></td>
+<td><pre>        com.sun.org.slf4j.internal.LoggerFactory.getLogger(<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum54">DOMHMACSignatureMethod</a>.class);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre>        java.util.logging.Logger.getLogger(<span class='string'>&quot;org.jcp.xml.dsig.internal.dom&quot;</span>);</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
 <td><pre>    <span class='comment'>// see RFC 4051 for these algorithm definitions</span></pre></td>
 </tr>
 <tr>
+<td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
+<td><pre>    static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> HMAC_SHA224 =</pre></td>
+</tr>
+<tr>
 <td><a id="linenum61" class="linenum-cell" data-linenum="61" href="#linenum61"></a></td>
-<td><pre>    static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> HMAC_SHA256 =</pre></td>
+<td><pre>        <span class='string'>&quot;http://www.w3.org/2001/04/xmldsig-more#hmac-sha224&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
-<td><pre>        <span class='string'>&quot;http://www.w3.org/2001/04/xmldsig-more#hmac-sha256&quot;</span>;</pre></td>
+<td><pre>    static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> HMAC_SHA256 =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum63" class="linenum-cell" data-linenum="63" href="#linenum63"></a></td>
-<td><pre>    static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> HMAC_SHA384 =</pre></td>
+<td><pre>        <span class='string'>&quot;http://www.w3.org/2001/04/xmldsig-more#hmac-sha256&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum64" class="linenum-cell" data-linenum="64" href="#linenum64"></a></td>
-<td><pre>        <span class='string'>&quot;http://www.w3.org/2001/04/xmldsig-more#hmac-sha384&quot;</span>;</pre></td>
+<td><pre>    static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> HMAC_SHA384 =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
-<td><pre>    static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> HMAC_SHA512 =</pre></td>
+<td><pre>        <span class='string'>&quot;http://www.w3.org/2001/04/xmldsig-more#hmac-sha384&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
-<td><pre>        <span class='string'>&quot;http://www.w3.org/2001/04/xmldsig-more#hmac-sha512&quot;</span>;</pre></td>
+<td><pre>    static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> HMAC_SHA512 =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre></pre></td>
+<td><pre>        <span class='string'>&quot;http://www.w3.org/2001/04/xmldsig-more#hmac-sha512&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum75">Mac</a> hmac;</pre></td>
+<td><pre>    static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> HMAC_RIPEMD160 =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
-<td><pre>    private int outputLength;</pre></td>
+<td><pre>        <span class='string'>&quot;http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum70" class="linenum-cell" data-linenum="70" href="#linenum70"></a></td>
-<td><pre>    private boolean outputLengthSet;</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a> params;</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum75">Mac</a> hmac;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
-<td><pre></pre></td>
+<td><pre>    private int outputLength;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>    private boolean outputLengthSet;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
-<td><pre><span class='comment'>     * Creates a &lt;code&gt;DOMHMACSignatureMethod&lt;/code&gt; with the specified params<span class='comment'></pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a> params;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
-<td><pre><span class='comment'>     * @param params algorithm-specific parameters (may be &lt;code&gt;null&lt;/code&gt;)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
-<td><pre><span class='comment'>     * @throws InvalidAlgorithmParameterException if params are inappropriate<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
-<td><pre>    DOMHMACSignatureMethod(<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> params)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a></pre></td>
-</tr>
-<tr>
-<td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
-<td><pre>    {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum103">checkParams</a>((<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a>)<a class="variable" href="#linenum71">params</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
-<td><pre>        this.params = (<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a>)<a class="variable" href="#linenum71">params</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre><span class='comment'>     * Creates a &lt;code&gt;DOMHMACSignatureMethod&lt;/code&gt; from an element.<span class='comment'></pre></td>
+<td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
+<td><pre><span class='comment'>     * Creates a {@code DOMHMACSignatureMethod} with the specified params<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
+<td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre><span class='comment'>     * @param smElem a SignatureMethod element<span class='comment'></pre></td>
+<td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
+<td><pre><span class='comment'>     * @param params algorithm-specific parameters (may be {@code null})<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
+<td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
+<td><pre><span class='comment'>     * @throws InvalidAlgorithmParameterException if params are inappropriate<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>    DOMHMACSignatureMethod(Element smElem) throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a> {</pre></td>
+<td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
+<td><pre>    DOMHMACSignatureMethod(<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> params)</pre></td>
 </tr>
 <tr>
-<td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>        Element paramsElem = DOMUtils.<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMUtils.html#linenum144">getFirstChildElement</a>(smElem);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum92">paramsElem</a> != null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
-<td><pre>            <a class="variable" href="#linenum79">params</a> = <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum123">unmarshalParams</a>(<a class="variable" href="#linenum92">paramsElem</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
-<td><pre>        try {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum103">checkParams</a>(<a class="variable" href="#linenum79">params</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
-<td><pre>        } catch (<a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a> iape) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a>(iape);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre>    void checkParams(<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a> params)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
+<td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
 <td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a></pre></td>
 </tr>
 <tr>
-<td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
+<td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
 <td><pre>    {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum106">checkParams</a>((<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a>)<a class="variable" href="#linenum74">params</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
+<td><pre>        this.params = (<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a>)<a class="variable" href="#linenum74">params</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
+<td><pre><span class='comment'>     * Creates a {@code DOMHMACSignatureMethod} from an element.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
+<td><pre><span class='comment'>     * @param smElem a SignatureMethod element<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
+<td><pre>    DOMHMACSignatureMethod(Element smElem) throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
+<td><pre>        Element paramsElem = DOMUtils.<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMUtils.html#linenum142">getFirstChildElement</a>(smElem);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum95">paramsElem</a> != null) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
+<td><pre>            <a class="variable" href="#linenum82">params</a> = <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum125">unmarshalParams</a>(<a class="variable" href="#linenum95">paramsElem</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
+<td><pre>        try {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum106">checkParams</a>(<a class="variable" href="#linenum82">params</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
+<td><pre>        } catch (<a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a> iape) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a>(iape);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum103">params</a> != null) {</pre></td>
+<td><pre>    @Override</pre></td>
 </tr>
 <tr>
 <td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
-<td><pre>            if (!(<a class="variable" href="#linenum103">params</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#linenum53">HMACParameterSpec</a>)) {</pre></td>
+<td><pre>    void checkParams(<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a> params)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
-<td><pre>                throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a></pre></td>
+<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>                    (<span class='string'>&quot;params must be of type HMACParameterSpec&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
-<td><pre>            }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
-<td><pre>            <a class="variable" href="#linenum69">outputLength</a> = ((<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#linenum53">HMACParameterSpec</a>)<a class="variable" href="#linenum103">params</a>).getOutputLength();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre>            <a class="variable" href="#linenum70">outputLengthSet</a> = true;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum57">log</a>.isLoggable(java.util.logging.Level.FINE)) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre>                <a class="variable" href="#linenum57">log</a>.log(java.util.logging.Level.FINE, <span class='string'>&quot;Setting outputLength from HMACParameterSpec to: &quot;</span> + <a class="variable" href="#linenum69">outputLength</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
-<td><pre>            }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre>    public final <a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> getParameterSpec() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
-<td><pre>        return <a class="variable" href="#linenum103">params</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a> unmarshalParams(Element paramsElem)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a></pre></td>
-</tr>
-<tr>
-<td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
 <td><pre>    {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre>        <a class="variable" href="#linenum69">outputLength</a> = Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum829">valueOf</a>(<a class="variable" href="#linenum123">paramsElem</a>.getFirstChild().getNodeValue()).intValue();</pre></td>
+<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum107">params</a> != null) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
-<td><pre>        <a class="variable" href="#linenum70">outputLengthSet</a> = true;</pre></td>
+<td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
+<td><pre>            if (!(<a class="variable" href="#linenum107">params</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#linenum53">HMACParameterSpec</a>)) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum57">log</a>.isLoggable(java.util.logging.Level.FINE)) {</pre></td>
+<td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
+<td><pre>                throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a></pre></td>
 </tr>
 <tr>
-<td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
-<td><pre>            <a class="variable" href="#linenum57">log</a>.log(java.util.logging.Level.FINE, <span class='string'>&quot;unmarshalled outputLength: &quot;</span> + <a class="variable" href="#linenum69">outputLength</a>);</pre></td>
+<td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
+<td><pre>                    (<span class='string'>&quot;params must be of type HMACParameterSpec&quot;</span>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
+<td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
+<td><pre>            <a class="variable" href="#linenum72">outputLength</a> = ((<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#linenum53">HMACParameterSpec</a>)<a class="variable" href="#linenum107">params</a>).getOutputLength();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
+<td><pre>            <a class="variable" href="#linenum73">outputLengthSet</a> = true;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
+<td><pre>            <a class="variable" href="#linenum56">LOG</a>.debug(<span class='string'>&quot;Setting outputLength from HMACParameterSpec to: {}&quot;</span>, <a class="variable" href="#linenum72">outputLength</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
+<td><pre>    public final <a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> getParameterSpec() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
+<td><pre>        return <a class="variable" href="#linenum107">params</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a> unmarshalParams(Element paramsElem)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
+<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
+<td><pre>    {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
+<td><pre>        <a class="variable" href="#linenum72">outputLength</a> = Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum614">parseInt</a>(<a class="variable" href="#linenum125">paramsElem</a>.getFirstChild().getNodeValue());</pre></td>
+</tr>
+<tr>
+<td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
+<td><pre>        <a class="variable" href="#linenum73">outputLengthSet</a> = true;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
+<td><pre>        <a class="variable" href="#linenum56">LOG</a>.debug(<span class='string'>&quot;unmarshalled outputLength: {}&quot;</span>, <a class="variable" href="#linenum72">outputLength</a>);</pre></td>
+</tr>
+<tr>
 <td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
-<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#linenum53">HMACParameterSpec</a>(<a class="variable" href="#linenum69">outputLength</a>);</pre></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#linenum53">HMACParameterSpec</a>(<a class="variable" href="#linenum72">outputLength</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
@@ -552,11 +552,11 @@
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
-<td><pre>        Document ownerDoc = DOMUtils.<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMUtils.html#linenum58">getOwnerDocument</a>(<a class="variable" href="#linenum134">parent</a>);</pre></td>
+<td><pre>        Document ownerDoc = DOMUtils.<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMUtils.html#linenum59">getOwnerDocument</a>(<a class="variable" href="#linenum134">parent</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre>        Element hmacElem = DOMUtils.<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMUtils.html#linenum76">createElement</a>(<a class="variable" href="#linenum137">ownerDoc</a>, <span class='string'>&quot;HMACOutputLength&quot;</span>,</pre></td>
+<td><pre>        Element hmacElem = DOMUtils.<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMUtils.html#linenum92">createElement</a>(<a class="variable" href="#linenum137">ownerDoc</a>, <span class='string'>&quot;HMACOutputLength&quot;</span>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
@@ -568,7 +568,7 @@
 </tr>
 <tr>
 <td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
-<td><pre>           (String.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum3125">valueOf</a>(<a class="variable" href="#linenum69">outputLength</a>)));</pre></td>
+<td><pre>           (String.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2993">valueOf</a>(<a class="variable" href="#linenum72">outputLength</a>)));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
@@ -628,7 +628,7 @@
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum68">hmac</a> == null) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum71">hmac</a> == null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
@@ -636,7 +636,7 @@
 </tr>
 <tr>
 <td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
-<td><pre>                <a class="variable" href="#linenum68">hmac</a> = Mac.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum249">getInstance</a>(<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/AbstractDOMSignatureMethod.html#linenum97">getJCAAlgorithm</a>());</pre></td>
+<td><pre>                <a class="variable" href="#linenum71">hmac</a> = Mac.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum169">getInstance</a>(<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/AbstractDOMSignatureMethod.html#linenum97">getJCAAlgorithm</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
@@ -656,7 +656,7 @@
 </tr>
 <tr>
 <td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum70">outputLengthSet</a> &amp;&amp; <a class="variable" href="#linenum69">outputLength</a> &lt; <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum218">getDigestLength</a>()) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum73">outputLengthSet</a> &amp;&amp; <a class="variable" href="#linenum72">outputLength</a> &lt; <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum218">getDigestLength</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
@@ -672,15 +672,15 @@
 </tr>
 <tr>
 <td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre>        <a class="variable" href="#linenum68">hmac</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum430">init</a>((<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/SecretKey.html#linenum60">SecretKey</a>)<a class="variable" href="#linenum146">key</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum71">hmac</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum440">init</a>(<a class="variable" href="#linenum146">key</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
-<td><pre>        ((<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMSignedInfo.html#linenum56">DOMSignedInfo</a>)<a class="variable" href="#linenum146">si</a>).canonicalize(<a class="variable" href="#linenum147">context</a>, new <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/MacOutputStream.html#linenum36">MacOutputStream</a>(<a class="variable" href="#linenum68">hmac</a>));</pre></td>
+<td><pre>        ((<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMSignedInfo.html#linenum53">DOMSignedInfo</a>)<a class="variable" href="#linenum146">si</a>).canonicalize(<a class="variable" href="#linenum147">context</a>, new <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/MacOutputStream.html#linenum34">MacOutputStream</a>(<a class="variable" href="#linenum71">hmac</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre>        byte[] result = <a class="variable" href="#linenum68">hmac</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum614">doFinal</a>();</pre></td>
+<td><pre>        byte[] result = <a class="variable" href="#linenum71">hmac</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum556">doFinal</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
@@ -688,7 +688,7 @@
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre>        return MessageDigest.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum430">isEqual</a>(<a class="variable" href="#linenum146">sig</a>, <a class="variable" href="#linenum169">result</a>);</pre></td>
+<td><pre>        return MessageDigest.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum451">isEqual</a>(<a class="variable" href="#linenum146">sig</a>, <a class="variable" href="#linenum169">result</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
@@ -736,7 +736,7 @@
 </tr>
 <tr>
 <td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum68">hmac</a> == null) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum71">hmac</a> == null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
@@ -744,7 +744,7 @@
 </tr>
 <tr>
 <td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
-<td><pre>                <a class="variable" href="#linenum68">hmac</a> = Mac.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum249">getInstance</a>(<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/AbstractDOMSignatureMethod.html#linenum97">getJCAAlgorithm</a>());</pre></td>
+<td><pre>                <a class="variable" href="#linenum71">hmac</a> = Mac.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum169">getInstance</a>(<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/AbstractDOMSignatureMethod.html#linenum97">getJCAAlgorithm</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
@@ -764,7 +764,7 @@
 </tr>
 <tr>
 <td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum70">outputLengthSet</a> &amp;&amp; <a class="variable" href="#linenum69">outputLength</a> &lt; <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum218">getDigestLength</a>()) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum73">outputLengthSet</a> &amp;&amp; <a class="variable" href="#linenum72">outputLength</a> &lt; <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum218">getDigestLength</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
@@ -780,15 +780,15 @@
 </tr>
 <tr>
 <td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
-<td><pre>        <a class="variable" href="#linenum68">hmac</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum430">init</a>((<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/SecretKey.html#linenum60">SecretKey</a>)<a class="variable" href="#linenum174">key</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum71">hmac</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum440">init</a>(<a class="variable" href="#linenum174">key</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
-<td><pre>        ((<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMSignedInfo.html#linenum56">DOMSignedInfo</a>)<a class="variable" href="#linenum174">si</a>).canonicalize(<a class="variable" href="#linenum174">context</a>, new <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/MacOutputStream.html#linenum36">MacOutputStream</a>(<a class="variable" href="#linenum68">hmac</a>));</pre></td>
+<td><pre>        ((<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMSignedInfo.html#linenum53">DOMSignedInfo</a>)<a class="variable" href="#linenum174">si</a>).canonicalize(<a class="variable" href="#linenum174">context</a>, new <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/MacOutputStream.html#linenum34">MacOutputStream</a>(<a class="variable" href="#linenum71">hmac</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
-<td><pre>        return <a class="variable" href="#linenum68">hmac</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum614">doFinal</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum71">hmac</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/Mac.html#linenum556">doFinal</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
@@ -804,7 +804,7 @@
 </tr>
 <tr>
 <td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
-<td><pre>        if (<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum119">getParameterSpec</a>() == <a class="variable" href="#linenum199">spec</a>) {</pre></td>
+<td><pre>        if (<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum121">getParameterSpec</a>() == <a class="variable" href="#linenum199">spec</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
@@ -836,7 +836,7 @@
 </tr>
 <tr>
 <td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
-<td><pre>        return (<a class="variable" href="#linenum69">outputLength</a> == <a class="variable" href="#linenum206">ospec</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#linenum72">getOutputLength</a>());</pre></td>
+<td><pre>        return <a class="variable" href="#linenum72">outputLength</a> == <a class="variable" href="#linenum206">ospec</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#linenum72">getOutputLength</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
@@ -884,7 +884,7 @@
 </tr>
 <tr>
 <td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
-<td><pre>    static final class SHA1 extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum55">DOMHMACSignatureMethod</a> {</pre></td>
+<td><pre>    static final class SHA1 extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum54">DOMHMACSignatureMethod</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
@@ -896,7 +896,7 @@
 </tr>
 <tr>
 <td><a id="linenum223" class="linenum-cell" data-linenum="223" href="#linenum223"></a></td>
-<td><pre>            super(<a class="variable" href="#linenum103">params</a>);</pre></td>
+<td><pre>            super(<a class="variable" href="#linenum107">params</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum224" class="linenum-cell" data-linenum="224" href="#linenum224"></a></td>
@@ -960,11 +960,11 @@
 </tr>
 <tr>
 <td><a id="linenum239" class="linenum-cell" data-linenum="239" href="#linenum239"></a></td>
-<td><pre>    static final class SHA256 extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum55">DOMHMACSignatureMethod</a> {</pre></td>
+<td><pre>    static final class SHA224 extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum54">DOMHMACSignatureMethod</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum240" class="linenum-cell" data-linenum="240" href="#linenum240"></a></td>
-<td><pre>        SHA256(<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> params)</pre></td>
+<td><pre>        SHA224(<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> params)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum241" class="linenum-cell" data-linenum="241" href="#linenum241"></a></td>
@@ -980,7 +980,7 @@
 </tr>
 <tr>
 <td><a id="linenum244" class="linenum-cell" data-linenum="244" href="#linenum244"></a></td>
-<td><pre>        SHA256(Element dmElem) throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a> {</pre></td>
+<td><pre>        SHA224(Element dmElem) throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum245" class="linenum-cell" data-linenum="245" href="#linenum245"></a></td>
@@ -992,75 +992,75 @@
 </tr>
 <tr>
 <td><a id="linenum247" class="linenum-cell" data-linenum="247" href="#linenum247"></a></td>
-<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getAlgorithm() {</pre></td>
+<td><pre>        @Override</pre></td>
 </tr>
 <tr>
 <td><a id="linenum248" class="linenum-cell" data-linenum="248" href="#linenum248"></a></td>
-<td><pre>            return <a class="variable" href="#linenum61">HMAC_SHA256</a>;</pre></td>
+<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getAlgorithm() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum249" class="linenum-cell" data-linenum="249" href="#linenum249"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            return <a class="variable" href="#linenum60">HMAC_SHA224</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum250" class="linenum-cell" data-linenum="250" href="#linenum250"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getJCAAlgorithm() {</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum251" class="linenum-cell" data-linenum="251" href="#linenum251"></a></td>
-<td><pre>            return <span class='string'>&quot;HmacSHA256&quot;</span>;</pre></td>
+<td><pre>        @Override</pre></td>
 </tr>
 <tr>
 <td><a id="linenum252" class="linenum-cell" data-linenum="252" href="#linenum252"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getJCAAlgorithm() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum253" class="linenum-cell" data-linenum="253" href="#linenum253"></a></td>
-<td><pre>        int getDigestLength() {</pre></td>
+<td><pre>            return <span class='string'>&quot;HmacSHA224&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum254" class="linenum-cell" data-linenum="254" href="#linenum254"></a></td>
-<td><pre>            return 256;</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum255" class="linenum-cell" data-linenum="255" href="#linenum255"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>        @Override</pre></td>
 </tr>
 <tr>
 <td><a id="linenum256" class="linenum-cell" data-linenum="256" href="#linenum256"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        int getDigestLength() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum257" class="linenum-cell" data-linenum="257" href="#linenum257"></a></td>
-<td><pre></pre></td>
+<td><pre>            return 224;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum258" class="linenum-cell" data-linenum="258" href="#linenum258"></a></td>
-<td><pre>    static final class SHA384 extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum55">DOMHMACSignatureMethod</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum259" class="linenum-cell" data-linenum="259" href="#linenum259"></a></td>
-<td><pre>        SHA384(<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> params)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum260" class="linenum-cell" data-linenum="260" href="#linenum260"></a></td>
-<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum261" class="linenum-cell" data-linenum="261" href="#linenum261"></a></td>
-<td><pre>            super(<a class="variable" href="#linenum240">params</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum259" class="linenum-cell" data-linenum="259" href="#linenum259"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum260" class="linenum-cell" data-linenum="260" href="#linenum260"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum261" class="linenum-cell" data-linenum="261" href="#linenum261"></a></td>
+<td><pre>    static final class SHA256 extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum54">DOMHMACSignatureMethod</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
+<td><pre>        SHA256(<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> params)</pre></td>
+</tr>
+<tr>
 <td><a id="linenum263" class="linenum-cell" data-linenum="263" href="#linenum263"></a></td>
-<td><pre>        SHA384(Element dmElem) throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a> {</pre></td>
+<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum264" class="linenum-cell" data-linenum="264" href="#linenum264"></a></td>
-<td><pre>            super(<a class="variable" href="#linenum244">dmElem</a>);</pre></td>
+<td><pre>            super(<a class="variable" href="#linenum240">params</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum265" class="linenum-cell" data-linenum="265" href="#linenum265"></a></td>
@@ -1068,11 +1068,11 @@
 </tr>
 <tr>
 <td><a id="linenum266" class="linenum-cell" data-linenum="266" href="#linenum266"></a></td>
-<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getAlgorithm() {</pre></td>
+<td><pre>        SHA256(Element dmElem) throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum267" class="linenum-cell" data-linenum="267" href="#linenum267"></a></td>
-<td><pre>            return <a class="variable" href="#linenum63">HMAC_SHA384</a>;</pre></td>
+<td><pre>            super(<a class="variable" href="#linenum244">dmElem</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum268" class="linenum-cell" data-linenum="268" href="#linenum268"></a></td>
@@ -1080,11 +1080,11 @@
 </tr>
 <tr>
 <td><a id="linenum269" class="linenum-cell" data-linenum="269" href="#linenum269"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getJCAAlgorithm() {</pre></td>
+<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getAlgorithm() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum270" class="linenum-cell" data-linenum="270" href="#linenum270"></a></td>
-<td><pre>            return <span class='string'>&quot;HmacSHA384&quot;</span>;</pre></td>
+<td><pre>            return <a class="variable" href="#linenum62">HMAC_SHA256</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum271" class="linenum-cell" data-linenum="271" href="#linenum271"></a></td>
@@ -1092,11 +1092,11 @@
 </tr>
 <tr>
 <td><a id="linenum272" class="linenum-cell" data-linenum="272" href="#linenum272"></a></td>
-<td><pre>        int getDigestLength() {</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getJCAAlgorithm() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum273" class="linenum-cell" data-linenum="273" href="#linenum273"></a></td>
-<td><pre>            return 384;</pre></td>
+<td><pre>            return <span class='string'>&quot;HmacSHA256&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
@@ -1104,39 +1104,39 @@
 </tr>
 <tr>
 <td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        int getDigestLength() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
-<td><pre></pre></td>
+<td><pre>            return 256;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
-<td><pre>    static final class SHA512 extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum55">DOMHMACSignatureMethod</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
-<td><pre>        SHA512(<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> params)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
-<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
-<td><pre>            super(<a class="variable" href="#linenum259">params</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
+<td><pre>    static final class SHA384 extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum54">DOMHMACSignatureMethod</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
+<td><pre>        SHA384(<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> params)</pre></td>
+</tr>
+<tr>
 <td><a id="linenum282" class="linenum-cell" data-linenum="282" href="#linenum282"></a></td>
-<td><pre>        SHA512(Element dmElem) throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a> {</pre></td>
+<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
-<td><pre>            super(<a class="variable" href="#linenum263">dmElem</a>);</pre></td>
+<td><pre>            super(<a class="variable" href="#linenum262">params</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
@@ -1144,11 +1144,11 @@
 </tr>
 <tr>
 <td><a id="linenum285" class="linenum-cell" data-linenum="285" href="#linenum285"></a></td>
-<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getAlgorithm() {</pre></td>
+<td><pre>        SHA384(Element dmElem) throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum286" class="linenum-cell" data-linenum="286" href="#linenum286"></a></td>
-<td><pre>            return <a class="variable" href="#linenum65">HMAC_SHA512</a>;</pre></td>
+<td><pre>            super(<a class="variable" href="#linenum266">dmElem</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum287" class="linenum-cell" data-linenum="287" href="#linenum287"></a></td>
@@ -1156,11 +1156,11 @@
 </tr>
 <tr>
 <td><a id="linenum288" class="linenum-cell" data-linenum="288" href="#linenum288"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getJCAAlgorithm() {</pre></td>
+<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getAlgorithm() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum289" class="linenum-cell" data-linenum="289" href="#linenum289"></a></td>
-<td><pre>            return <span class='string'>&quot;HmacSHA512&quot;</span>;</pre></td>
+<td><pre>            return <a class="variable" href="#linenum64">HMAC_SHA384</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum290" class="linenum-cell" data-linenum="290" href="#linenum290"></a></td>
@@ -1168,11 +1168,11 @@
 </tr>
 <tr>
 <td><a id="linenum291" class="linenum-cell" data-linenum="291" href="#linenum291"></a></td>
-<td><pre>        int getDigestLength() {</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getJCAAlgorithm() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum292" class="linenum-cell" data-linenum="292" href="#linenum292"></a></td>
-<td><pre>            return 512;</pre></td>
+<td><pre>            return <span class='string'>&quot;HmacSHA384&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum293" class="linenum-cell" data-linenum="293" href="#linenum293"></a></td>
@@ -1180,10 +1180,186 @@
 </tr>
 <tr>
 <td><a id="linenum294" class="linenum-cell" data-linenum="294" href="#linenum294"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        int getDigestLength() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum295" class="linenum-cell" data-linenum="295" href="#linenum295"></a></td>
+<td><pre>            return 384;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum296" class="linenum-cell" data-linenum="296" href="#linenum296"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum297" class="linenum-cell" data-linenum="297" href="#linenum297"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum298" class="linenum-cell" data-linenum="298" href="#linenum298"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum299" class="linenum-cell" data-linenum="299" href="#linenum299"></a></td>
+<td><pre>    static final class SHA512 extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum54">DOMHMACSignatureMethod</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum300" class="linenum-cell" data-linenum="300" href="#linenum300"></a></td>
+<td><pre>        SHA512(<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> params)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum301" class="linenum-cell" data-linenum="301" href="#linenum301"></a></td>
+<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum302" class="linenum-cell" data-linenum="302" href="#linenum302"></a></td>
+<td><pre>            super(<a class="variable" href="#linenum281">params</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum303" class="linenum-cell" data-linenum="303" href="#linenum303"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
+<td><pre>        SHA512(Element dmElem) throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum305" class="linenum-cell" data-linenum="305" href="#linenum305"></a></td>
+<td><pre>            super(<a class="variable" href="#linenum285">dmElem</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum306" class="linenum-cell" data-linenum="306" href="#linenum306"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum307" class="linenum-cell" data-linenum="307" href="#linenum307"></a></td>
+<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getAlgorithm() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
+<td><pre>            return <a class="variable" href="#linenum66">HMAC_SHA512</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum310" class="linenum-cell" data-linenum="310" href="#linenum310"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getJCAAlgorithm() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum311" class="linenum-cell" data-linenum="311" href="#linenum311"></a></td>
+<td><pre>            return <span class='string'>&quot;HmacSHA512&quot;</span>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum312" class="linenum-cell" data-linenum="312" href="#linenum312"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum313" class="linenum-cell" data-linenum="313" href="#linenum313"></a></td>
+<td><pre>        int getDigestLength() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum314" class="linenum-cell" data-linenum="314" href="#linenum314"></a></td>
+<td><pre>            return 512;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum315" class="linenum-cell" data-linenum="315" href="#linenum315"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum318" class="linenum-cell" data-linenum="318" href="#linenum318"></a></td>
+<td><pre>    static final class RIPEMD160 extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod.html#linenum54">DOMHMACSignatureMethod</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum319" class="linenum-cell" data-linenum="319" href="#linenum319"></a></td>
+<td><pre>        RIPEMD160(<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> params)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum320" class="linenum-cell" data-linenum="320" href="#linenum320"></a></td>
+<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum321" class="linenum-cell" data-linenum="321" href="#linenum321"></a></td>
+<td><pre>            super(<a class="variable" href="#linenum300">params</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum322" class="linenum-cell" data-linenum="322" href="#linenum322"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum323" class="linenum-cell" data-linenum="323" href="#linenum323"></a></td>
+<td><pre>        RIPEMD160(Element dmElem) throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum324" class="linenum-cell" data-linenum="324" href="#linenum324"></a></td>
+<td><pre>            super(<a class="variable" href="#linenum304">dmElem</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum325" class="linenum-cell" data-linenum="325" href="#linenum325"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum326" class="linenum-cell" data-linenum="326" href="#linenum326"></a></td>
+<td><pre>        @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum327" class="linenum-cell" data-linenum="327" href="#linenum327"></a></td>
+<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getAlgorithm() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum328" class="linenum-cell" data-linenum="328" href="#linenum328"></a></td>
+<td><pre>            return <a class="variable" href="#linenum68">HMAC_RIPEMD160</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum329" class="linenum-cell" data-linenum="329" href="#linenum329"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum330" class="linenum-cell" data-linenum="330" href="#linenum330"></a></td>
+<td><pre>        @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum331" class="linenum-cell" data-linenum="331" href="#linenum331"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getJCAAlgorithm() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
+<td><pre>            return <span class='string'>&quot;HMACRIPEMD160&quot;</span>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
+<td><pre>        @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum335" class="linenum-cell" data-linenum="335" href="#linenum335"></a></td>
+<td><pre>        int getDigestLength() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum336" class="linenum-cell" data-linenum="336" href="#linenum336"></a></td>
+<td><pre>            return 160;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum337" class="linenum-cell" data-linenum="337" href="#linenum337"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum338" class="linenum-cell" data-linenum="338" href="#linenum338"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum339" class="linenum-cell" data-linenum="339" href="#linenum339"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

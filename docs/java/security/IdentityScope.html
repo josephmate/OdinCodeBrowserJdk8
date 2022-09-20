@@ -308,7 +308,7 @@
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> classname = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a>(</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> classname = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum297">doPrivileged</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
@@ -360,7 +360,7 @@
 </tr>
 <tr>
 <td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre>                Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum325">forName</a>(<a class="variable" href="#linenum76">classname</a>);</pre></td>
+<td><pre>                Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum329">forName</a>(<a class="variable" href="#linenum76">classname</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
@@ -368,11 +368,11 @@
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>                //Security.error(&quot;unable to establish a system scope from &quot; +</pre></td>
+<td><pre>                System.err.println(<span class='string'>&quot;unable to establish a system scope from &quot;</span> +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>                <span class='comment'>//             classname);</span></pre></td>
+<td><pre>                             <a class="variable" href="#linenum76">classname</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
@@ -788,7 +788,7 @@
 </tr>
 <tr>
 <td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/security/IdentityScope.html#linenum207">getIdentity</a>(<a class="variable" href="#linenum195">principal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/Principal.html#linenum72">getName</a>());</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/security/IdentityScope.html#linenum182">getIdentity</a>(<a class="variable" href="#linenum195">principal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/Principal.html#linenum72">getName</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
@@ -992,7 +992,7 @@
 </tr>
 <tr>
 <td><a id="linenum247" class="linenum-cell" data-linenum="247" href="#linenum247"></a></td>
-<td><pre>        return super.<a class="type" href="/OdinCodeBrowserJdk8/java/security/Identity.html#linenum437">toString</a>() + <span class='string'>&quot;[&quot;</span> + <a class="type" href="/OdinCodeBrowserJdk8/java/security/IdentityScope.html#linenum172">size</a>() + <span class='string'>&quot;]&quot;</span>;</pre></td>
+<td><pre>        return super.<a class="type" href="/OdinCodeBrowserJdk8/java/security/Identity.html#linenum406">toString</a>() + <span class='string'>&quot;[&quot;</span> + <a class="type" href="/OdinCodeBrowserJdk8/java/security/IdentityScope.html#linenum172">size</a>() + <span class='string'>&quot;]&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum248" class="linenum-cell" data-linenum="248" href="#linenum248"></a></td>
@@ -1008,7 +1008,7 @@
 </tr>
 <tr>
 <td><a id="linenum251" class="linenum-cell" data-linenum="251" href="#linenum251"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/SecurityManager.html#linenum226">SecurityManager</a> security = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum333">getSecurityManager</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/SecurityManager.html#linenum226">SecurityManager</a> security = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum335">getSecurityManager</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum252" class="linenum-cell" data-linenum="252" href="#linenum252"></a></td>

@@ -344,7 +344,7 @@
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre>        this.count = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1393">min</a>(offset + length, <a class="variable" href="#linenum55">buf</a>.length);</pre></td>
+<td><pre>        this.count = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1335">min</a>(offset + length, <a class="variable" href="#linenum55">buf</a>.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
@@ -536,402 +536,418 @@
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum40">pos</a> + <a class="variable" href="#linenum120">len</a> &gt; <a class="variable" href="#linenum49">count</a>) {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>                <a class="variable" href="#linenum120">len</a> = <a class="variable" href="#linenum49">count</a> - <a class="variable" href="#linenum40">pos</a>;</pre></td>
+<td><pre>            int avail = <a class="variable" href="#linenum49">count</a> - <a class="variable" href="#linenum40">pos</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
-<td><pre>            }</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum120">len</a> &gt; <a class="variable" href="#linenum134">avail</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum120">len</a> &lt;= 0) {</pre></td>
+<td><pre>                <a class="variable" href="#linenum120">len</a> = <a class="variable" href="#linenum134">avail</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
-<td><pre>                return 0;</pre></td>
+<td><pre>            }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre>            }</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum120">len</a> &lt;= 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum78">buf</a>, <a class="variable" href="#linenum40">pos</a>, <a class="variable" href="#linenum120">b</a>, <a class="variable" href="#linenum120">off</a>, <a class="variable" href="#linenum120">len</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre>            <a class="variable" href="#linenum40">pos</a> += <a class="variable" href="#linenum120">len</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
-<td><pre>            return <a class="variable" href="#linenum120">len</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
-<td><pre><span class='comment'>     * Skips characters.  Returns the number of characters that were skipped.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;The &lt;code&gt;n&lt;/code&gt; parameter may be negative, even though the<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre><span class='comment'>     * &lt;code&gt;skip&lt;/code&gt; method of the {@link Reader} superclass throws<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre><span class='comment'>     * an exception in this case. If &lt;code&gt;n&lt;/code&gt; is negative, then<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre><span class='comment'>     * this method does nothing and returns &lt;code&gt;0&lt;/code&gt;.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
-<td><pre><span class='comment'>     * @param n The number of characters to skip<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
-<td><pre><span class='comment'>     * @return       The number of characters actually skipped<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre><span class='comment'>     * @exception  IOException If the stream is closed, or an I/O error occurs<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
-<td><pre>    public long skip(long n) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
-<td><pre>        synchronized (lock) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/io/CharArrayReader.html#linenum90">ensureOpen</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum40">pos</a> + <a class="variable" href="#linenum157">n</a> &gt; <a class="variable" href="#linenum49">count</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre>                <a class="variable" href="#linenum157">n</a> = <a class="variable" href="#linenum49">count</a> - <a class="variable" href="#linenum40">pos</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
-<td><pre>            }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum157">n</a> &lt; 0) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
 <td><pre>                return 0;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
+<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
 <td><pre>            }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
+<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum78">buf</a>, <a class="variable" href="#linenum40">pos</a>, <a class="variable" href="#linenum120">b</a>, <a class="variable" href="#linenum120">off</a>, <a class="variable" href="#linenum120">len</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
+<td><pre>            <a class="variable" href="#linenum40">pos</a> += <a class="variable" href="#linenum120">len</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
+<td><pre>            return <a class="variable" href="#linenum120">len</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
+<td><pre><span class='comment'>     * Skips characters.  Returns the number of characters that were skipped.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;The &lt;code&gt;n&lt;/code&gt; parameter may be negative, even though the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
+<td><pre><span class='comment'>     * &lt;code&gt;skip&lt;/code&gt; method of the {@link Reader} superclass throws<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
+<td><pre><span class='comment'>     * an exception in this case. If &lt;code&gt;n&lt;/code&gt; is negative, then<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
+<td><pre><span class='comment'>     * this method does nothing and returns &lt;code&gt;0&lt;/code&gt;.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
+<td><pre><span class='comment'>     * @param n The number of characters to skip<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
+<td><pre><span class='comment'>     * @return       The number of characters actually skipped<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
+<td><pre><span class='comment'>     * @exception  IOException If the stream is closed, or an I/O error occurs<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
+<td><pre>    public long skip(long n) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
+<td><pre>        synchronized (lock) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/io/CharArrayReader.html#linenum90">ensureOpen</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
+<td><pre>            long avail = <a class="variable" href="#linenum49">count</a> - <a class="variable" href="#linenum40">pos</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
+<td><pre>            if (<a class="variable" href="#linenum159">n</a> &gt; <a class="variable" href="#linenum163">avail</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
+<td><pre>                <a class="variable" href="#linenum159">n</a> = <a class="variable" href="#linenum163">avail</a>;</pre></td>
+</tr>
+<tr>
 <td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
-<td><pre>            <a class="variable" href="#linenum40">pos</a> += <a class="variable" href="#linenum157">n</a>;</pre></td>
+<td><pre>            }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre>            return <a class="variable" href="#linenum157">n</a>;</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum159">n</a> &lt; 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>                return 0;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>            }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre></pre></td>
+<td><pre>            <a class="variable" href="#linenum40">pos</a> += <a class="variable" href="#linenum159">n</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>            return <a class="variable" href="#linenum159">n</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
-<td><pre><span class='comment'>     * Tells whether this stream is ready to be read.  Character-array readers<span class='comment'></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
-<td><pre><span class='comment'>     * are always ready to be read.<span class='comment'></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
-<td><pre><span class='comment'>     * @exception  IOException  If an I/O error occurs<span class='comment'></pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * Tells whether this stream is ready to be read.  Character-array readers<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
-<td><pre>    public boolean ready() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre><span class='comment'>     * are always ready to be read.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
-<td><pre>        synchronized (lock) {</pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/io/CharArrayReader.html#linenum90">ensureOpen</a>();</pre></td>
+<td><pre><span class='comment'>     * @exception  IOException  If an I/O error occurs<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
-<td><pre>            return (<a class="variable" href="#linenum49">count</a> - <a class="variable" href="#linenum40">pos</a>) &gt; 0;</pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>    public boolean ready() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        synchronized (lock) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
-<td><pre></pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/io/CharArrayReader.html#linenum90">ensureOpen</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>            return (<a class="variable" href="#linenum49">count</a> - <a class="variable" href="#linenum40">pos</a>) &gt; 0;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
-<td><pre><span class='comment'>     * Tells whether this stream supports the mark() operation, which it does.<span class='comment'></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
-<td><pre>    public boolean markSupported() {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
-<td><pre>        return true;</pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
-<td><pre>    }</pre></td>
+<td><pre><span class='comment'>     * Tells whether this stream supports the mark() operation, which it does.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
-<td><pre></pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>    public boolean markSupported() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
-<td><pre><span class='comment'>     * Marks the present position in the stream.  Subsequent calls to reset()<span class='comment'></pre></td>
+<td><pre>        return true;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
-<td><pre><span class='comment'>     * will reposition the stream to this point.<span class='comment'></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
-<td><pre><span class='comment'>     * @param  readAheadLimit  Limit on the number of characters that may be<span class='comment'></pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
-<td><pre><span class='comment'>     *                         read while still preserving the mark.  Because<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Marks the present position in the stream.  Subsequent calls to reset()<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
-<td><pre><span class='comment'>     *                         the stream's input comes from a character array,<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * will reposition the stream to this point.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
-<td><pre><span class='comment'>     *                         there is no actual limit; hence this argument is<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
-<td><pre><span class='comment'>     *                         ignored.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param  readAheadLimit  Limit on the number of characters that may be<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *                         read while still preserving the mark.  Because<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
-<td><pre><span class='comment'>     * @exception  IOException  If an I/O error occurs<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *                         the stream's input comes from a character array,<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     *                         there is no actual limit; hence this argument is<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>    public void mark(int readAheadLimit) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre><span class='comment'>     *                         ignored.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
-<td><pre>        synchronized (lock) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/io/CharArrayReader.html#linenum90">ensureOpen</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
-<td><pre>            <a class="variable" href="#linenum43">markedPos</a> = <a class="variable" href="#linenum40">pos</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
-<td><pre><span class='comment'>     * Resets the stream to the most recent mark, or to the beginning if it has<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
-<td><pre><span class='comment'>     * never been marked.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
+<td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
 <td><pre><span class='comment'>     * @exception  IOException  If an I/O error occurs<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum215" class="linenum-cell" data-linenum="215" href="#linenum215"></a></td>
+<td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum216" class="linenum-cell" data-linenum="216" href="#linenum216"></a></td>
-<td><pre>    public void reset() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
+<td><pre>    public void mark(int readAheadLimit) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum217" class="linenum-cell" data-linenum="217" href="#linenum217"></a></td>
+<td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
 <td><pre>        synchronized (lock) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>
+<td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
 <td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/io/CharArrayReader.html#linenum90">ensureOpen</a>();</pre></td>
 </tr>
 <tr>
-<td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>
-<td><pre>            <a class="variable" href="#linenum40">pos</a> = <a class="variable" href="#linenum43">markedPos</a>;</pre></td>
+<td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
+<td><pre>            <a class="variable" href="#linenum43">markedPos</a> = <a class="variable" href="#linenum40">pos</a>;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
+<td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
+<td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum222" class="linenum-cell" data-linenum="222" href="#linenum222"></a></td>
+<td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum223" class="linenum-cell" data-linenum="223" href="#linenum223"></a></td>
+<td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum224" class="linenum-cell" data-linenum="224" href="#linenum224"></a></td>
-<td><pre><span class='comment'>     * Closes the stream and releases any system resources associated with<span class='comment'></pre></td>
+<td><a id="linenum215" class="linenum-cell" data-linenum="215" href="#linenum215"></a></td>
+<td><pre><span class='comment'>     * Resets the stream to the most recent mark, or to the beginning if it has<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum225" class="linenum-cell" data-linenum="225" href="#linenum225"></a></td>
-<td><pre><span class='comment'>     * it.  Once the stream has been closed, further read(), ready(),<span class='comment'></pre></td>
+<td><a id="linenum216" class="linenum-cell" data-linenum="216" href="#linenum216"></a></td>
+<td><pre><span class='comment'>     * never been marked.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum226" class="linenum-cell" data-linenum="226" href="#linenum226"></a></td>
-<td><pre><span class='comment'>     * mark(), reset(), or skip() invocations will throw an IOException.<span class='comment'></pre></td>
+<td><a id="linenum217" class="linenum-cell" data-linenum="217" href="#linenum217"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum227" class="linenum-cell" data-linenum="227" href="#linenum227"></a></td>
-<td><pre><span class='comment'>     * Closing a previously closed stream has no effect.<span class='comment'></pre></td>
+<td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>
+<td><pre><span class='comment'>     * @exception  IOException  If an I/O error occurs<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum228" class="linenum-cell" data-linenum="228" href="#linenum228"></a></td>
+<td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum229" class="linenum-cell" data-linenum="229" href="#linenum229"></a></td>
-<td><pre>    public void close() {</pre></td>
+<td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
+<td><pre>    public void reset() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum230" class="linenum-cell" data-linenum="230" href="#linenum230"></a></td>
-<td><pre>        <a class="variable" href="#linenum78">buf</a> = null;</pre></td>
+<td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
+<td><pre>        synchronized (lock) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum231" class="linenum-cell" data-linenum="231" href="#linenum231"></a></td>
+<td><a id="linenum222" class="linenum-cell" data-linenum="222" href="#linenum222"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/io/CharArrayReader.html#linenum90">ensureOpen</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum223" class="linenum-cell" data-linenum="223" href="#linenum223"></a></td>
+<td><pre>            <a class="variable" href="#linenum40">pos</a> = <a class="variable" href="#linenum43">markedPos</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum224" class="linenum-cell" data-linenum="224" href="#linenum224"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum225" class="linenum-cell" data-linenum="225" href="#linenum225"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum226" class="linenum-cell" data-linenum="226" href="#linenum226"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum227" class="linenum-cell" data-linenum="227" href="#linenum227"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum228" class="linenum-cell" data-linenum="228" href="#linenum228"></a></td>
+<td><pre><span class='comment'>     * Closes the stream and releases any system resources associated with<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum229" class="linenum-cell" data-linenum="229" href="#linenum229"></a></td>
+<td><pre><span class='comment'>     * it.  Once the stream has been closed, further read(), ready(),<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum230" class="linenum-cell" data-linenum="230" href="#linenum230"></a></td>
+<td><pre><span class='comment'>     * mark(), reset(), or skip() invocations will throw an IOException.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum231" class="linenum-cell" data-linenum="231" href="#linenum231"></a></td>
+<td><pre><span class='comment'>     * Closing a previously closed stream has no effect.<span class='comment'></pre></td>
+</tr>
+<tr>
 <td><a id="linenum232" class="linenum-cell" data-linenum="232" href="#linenum232"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum233" class="linenum-cell" data-linenum="233" href="#linenum233"></a></td>
+<td><pre>    public void close() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum234" class="linenum-cell" data-linenum="234" href="#linenum234"></a></td>
+<td><pre>        <a class="variable" href="#linenum78">buf</a> = null;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum235" class="linenum-cell" data-linenum="235" href="#linenum235"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum236" class="linenum-cell" data-linenum="236" href="#linenum236"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

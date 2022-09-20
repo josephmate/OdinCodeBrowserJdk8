@@ -116,159 +116,159 @@
 </tr>
 <tr>
 <td><a id="linenum28" class="linenum-cell" data-linenum="28" href="#linenum28"></a></td>
-<td><pre>import java.awt.Container;</pre></td>
+<td><pre>import java.awt.Component;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum29" class="linenum-cell" data-linenum="29" href="#linenum29"></a></td>
-<td><pre>import java.awt.Frame;</pre></td>
+<td><pre>import java.awt.Container;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum30" class="linenum-cell" data-linenum="30" href="#linenum30"></a></td>
-<td><pre>import java.awt.Graphics;</pre></td>
+<td><pre>import java.awt.Frame;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum31" class="linenum-cell" data-linenum="31" href="#linenum31"></a></td>
-<td><pre>import java.awt.Image;</pre></td>
+<td><pre>import java.awt.Graphics;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum32" class="linenum-cell" data-linenum="32" href="#linenum32"></a></td>
-<td><pre>import java.awt.MenuBar;</pre></td>
+<td><pre>import java.awt.Image;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum33" class="linenum-cell" data-linenum="33" href="#linenum33"></a></td>
-<td><pre>import java.awt.MenuComponent;</pre></td>
+<td><pre>import java.awt.MenuBar;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum34" class="linenum-cell" data-linenum="34" href="#linenum34"></a></td>
-<td><pre>import java.awt.Toolkit;</pre></td>
+<td><pre>import java.awt.MenuComponent;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum35" class="linenum-cell" data-linenum="35" href="#linenum35"></a></td>
-<td><pre>import java.awt.peer.FramePeer;</pre></td>
+<td><pre>import java.awt.Rectangle;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum36" class="linenum-cell" data-linenum="36" href="#linenum36"></a></td>
-<td><pre></pre></td>
+<td><pre>import java.awt.Toolkit;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum37" class="linenum-cell" data-linenum="37" href="#linenum37"></a></td>
-<td><pre><span class='comment'>/**</pre></td>
+<td><pre>import java.awt.dnd.DragGestureEvent;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum38" class="linenum-cell" data-linenum="38" href="#linenum38"></a></td>
-<td><pre><span class='comment'> * The class provides basic functionality for a lightweight frame<span class='comment'></pre></td>
+<td><pre>import java.awt.dnd.DragGestureListener;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum39" class="linenum-cell" data-linenum="39" href="#linenum39"></a></td>
-<td><pre><span class='comment'> * implementation. A subclass is expected to provide painting to an<span class='comment'></pre></td>
+<td><pre>import java.awt.dnd.DragGestureRecognizer;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum40" class="linenum-cell" data-linenum="40" href="#linenum40"></a></td>
-<td><pre><span class='comment'> * offscreen image and access to it. Thus it can be used for lightweight<span class='comment'></pre></td>
+<td><pre>import java.awt.dnd.DragSource;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum41" class="linenum-cell" data-linenum="41" href="#linenum41"></a></td>
-<td><pre><span class='comment'> * embedding.<span class='comment'></pre></td>
+<td><pre>import java.awt.dnd.DropTarget;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
-<td><pre><span class='comment'> *<span class='comment'></pre></td>
+<td><pre>import java.awt.dnd.InvalidDnDOperationException;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
-<td><pre><span class='comment'> * @author Artem Ananiev<span class='comment'></pre></td>
+<td><pre>import java.awt.dnd.peer.DragSourceContextPeer;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
-<td><pre><span class='comment'> * @author Anton Tarasov<span class='comment'></pre></td>
+<td><pre>import java.awt.peer.FramePeer;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
-<td><pre> */</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
-<td><pre>@SuppressWarnings(<span class='string'>&quot;serial&quot;</span>)</pre></td>
+<td><pre><span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
-<td><pre>public abstract class LightweightFrame extends <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Frame.html#linenum135">Frame</a> {</pre></td>
+<td><pre><span class='comment'> * The class provides basic functionality for a lightweight frame<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'> * implementation. A subclass is expected to provide painting to an<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre><span class='comment'> * offscreen image and access to it. Thus it can be used for lightweight<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
-<td><pre><span class='comment'>     * Constructs a new, initially invisible {@code LightweightFrame}<span class='comment'></pre></td>
+<td><pre><span class='comment'> * embedding.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre><span class='comment'>     * instance.<span class='comment'></pre></td>
+<td><pre><span class='comment'> *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'> * @author Artem Ananiev<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
-<td><pre>    public LightweightFrame() {</pre></td>
+<td><pre><span class='comment'> * @author Anton Tarasov<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Frame.html#linenum919">setUndecorated</a>(true);</pre></td>
+<td><pre> */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/LightweightFrame.html#linenum77">setResizable</a>(true);</pre></td>
+<td><pre>@SuppressWarnings(<span class='string'>&quot;serial&quot;</span>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1462">setEnabled</a>(true);</pre></td>
+<td><pre>public abstract class LightweightFrame extends <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Frame.html#linenum135">Frame</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
-<td><pre>    }</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
+<td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
+<td><pre><span class='comment'>     * Constructs a new, initially invisible {@code LightweightFrame}<span class='comment'></pre></td>
+</tr>
+<tr>
 <td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
-<td><pre><span class='comment'>     * Blocks introspection of a parent window by this child.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * instance.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum61" class="linenum-cell" data-linenum="61" href="#linenum61"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
-<td><pre><span class='comment'>     * @return null<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum63" class="linenum-cell" data-linenum="63" href="#linenum63"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
+<td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
+<td><pre>    public LightweightFrame() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum63" class="linenum-cell" data-linenum="63" href="#linenum63"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Frame.html#linenum919">setUndecorated</a>(true);</pre></td>
+</tr>
+<tr>
 <td><a id="linenum64" class="linenum-cell" data-linenum="64" href="#linenum64"></a></td>
-<td><pre>    @Override public final <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum90">Container</a> getParent() { return null; }</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/LightweightFrame.html#linenum86">setResizable</a>(true);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
-<td><pre></pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1477">setEnabled</a>(true);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
-<td><pre>    @Override public <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Graphics.html#linenum104">Graphics</a> getGraphics() { return null; }</pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
@@ -276,55 +276,55 @@
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre>    @Override public final boolean isResizable() { return true; }</pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * Blocks introspection of a parent window by this child.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum70" class="linenum-cell" data-linenum="70" href="#linenum70"></a></td>
-<td><pre>    // Block modification of any frame attributes, since they aren't</pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
-<td><pre>    // applicable for a lightweight frame.</pre></td>
+<td><pre><span class='comment'>     * @return null<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
-<td><pre></pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
-<td><pre>    @Override public final void setTitle(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> title) {}</pre></td>
+<td><pre>    @Override public final <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum94">Container</a> getParent() { return null; }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
-<td><pre>    @Override public final void setIconImage(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Image.html#linenum46">Image</a> image) {}</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
-<td><pre>    @Override public final void setIconImages(java.util.List&lt;? extends <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Image.html#linenum46">Image</a>&gt; icons) {}</pre></td>
+<td><pre>    @Override public <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Graphics.html#linenum104">Graphics</a> getGraphics() { return null; }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
-<td><pre>    @Override public final void setMenuBar(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/MenuBar.html#linenum70">MenuBar</a> mb) {}</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
-<td><pre>    @Override public final void setResizable(boolean resizable) {}</pre></td>
+<td><pre>    @Override public final boolean isResizable() { return true; }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>    @Override public final void remove(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/MenuComponent.html#linenum50">MenuComponent</a> m) {}</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
-<td><pre>    @Override public final void toFront() {}</pre></td>
+<td><pre>    // Block modification of any frame attributes, since they aren't</pre></td>
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre>    @Override public final void toBack() {}</pre></td>
+<td><pre>    // applicable for a lightweight frame.</pre></td>
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
@@ -332,186 +332,490 @@
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre>    @Override public void addNotify() {</pre></td>
+<td><pre>    @Override public final void setTitle(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> title) {}</pre></td>
 </tr>
 <tr>
 <td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
-<td><pre>        synchronized (<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1199">getTreeLock</a>()) {</pre></td>
+<td><pre>    @Override public final void setIconImage(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Image.html#linenum46">Image</a> image) {}</pre></td>
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre>            if (<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1070">getPeer</a>() == null) {</pre></td>
+<td><pre>    @Override public final void setIconImages(java.util.List&lt;? extends <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Image.html#linenum46">Image</a>&gt; icons) {}</pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/SunToolkit.html#linenum57">SunToolkit</a> stk = (<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/SunToolkit.html#linenum57">SunToolkit</a>)Toolkit.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Toolkit.html#linenum856">getDefaultToolkit</a>();</pre></td>
+<td><pre>    @Override public final void setMenuBar(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/MenuBar.html#linenum70">MenuBar</a> mb) {}</pre></td>
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
-<td><pre>                try {</pre></td>
+<td><pre>    @Override public final void setResizable(boolean resizable) {}</pre></td>
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/LightweightFrame.html#linenum96">setPeer</a>(<a class="variable" href="#linenum85">stk</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/SunToolkit.html#linenum140">createLightweightFrame</a>(this));</pre></td>
+<td><pre>    @Override public final void remove(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/MenuComponent.html#linenum50">MenuComponent</a> m) {}</pre></td>
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
-<td><pre>                } catch (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Exception.html#linenum45">Exception</a> e) {</pre></td>
+<td><pre>    @Override public final void toFront() {}</pre></td>
 </tr>
 <tr>
 <td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre>                    throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/RuntimeException.html#linenum43">RuntimeException</a>(e);</pre></td>
+<td><pre>    @Override public final void toBack() {}</pre></td>
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>                }</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>            }</pre></td>
+<td><pre>    @Override public void addNotify() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>            super.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Frame.html#linenum474">addNotify</a>();</pre></td>
+<td><pre>        synchronized (<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1195">getTreeLock</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            if (<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1068">getPeer</a>() == null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/SunToolkit.html#linenum62">SunToolkit</a> stk = (<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/SunToolkit.html#linenum62">SunToolkit</a>)Toolkit.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Toolkit.html#linenum852">getDefaultToolkit</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
-<td><pre></pre></td>
+<td><pre>                try {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
-<td><pre>    private void setPeer(final <a class="type" href="/OdinCodeBrowserJdk8/java/awt/peer/FramePeer.html#linenum42">FramePeer</a> p) {</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/LightweightFrame.html#linenum105">setPeer</a>(<a class="variable" href="#linenum94">stk</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/SunToolkit.html#linenum148">createLightweightFrame</a>(this));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
-<td><pre>        AWTAccessor.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/AWTAccessor.html#linenum771">getComponentAccessor</a>().setPeer(this, <a class="variable" href="#linenum96">p</a>);</pre></td>
+<td><pre>                } catch (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Exception.html#linenum45">Exception</a> e) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>                    throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/RuntimeException.html#linenum43">RuntimeException</a>(e);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
-<td><pre></pre></td>
+<td><pre>                }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>            }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
-<td><pre><span class='comment'>     * Requests the peer to emulate activation or deactivation of the<span class='comment'></pre></td>
+<td><pre>            super.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Frame.html#linenum474">addNotify</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre><span class='comment'>     * frame. Peers should override this method if they are to implement<span class='comment'></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre><span class='comment'>     * this functionality.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
-<td><pre><span class='comment'>     * @param activate if &lt;code&gt;true&lt;/code&gt;, activates the frame;<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre><span class='comment'>     *                 otherwise, deactivates the frame<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
-<td><pre>    public void emulateActivation(boolean activate) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>        ((<a class="type" href="/OdinCodeBrowserJdk8/java/awt/peer/FramePeer.html#linenum42">FramePeer</a>)<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1070">getPeer</a>()).emulateActivation(<a class="variable" href="#linenum108">activate</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
+<td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
 <td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
+<td><pre>    private void setPeer(final <a class="type" href="/OdinCodeBrowserJdk8/java/awt/peer/FramePeer.html#linenum42">FramePeer</a> p) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
+<td><pre>        AWTAccessor.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/AWTAccessor.html#linenum823">getComponentAccessor</a>().setPeer(this, <a class="variable" href="#linenum105">p</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
+<td><pre><span class='comment'>     * Requests the peer to emulate activation or deactivation of the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
+<td><pre><span class='comment'>     * frame. Peers should override this method if they are to implement<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre><span class='comment'>     * this functionality.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
-<td><pre><span class='comment'>     * Delegates the focus grab action to the client (embedding) application.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre><span class='comment'>     * The method is called by the AWT grab machinery.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param activate if &lt;code&gt;true&lt;/code&gt;, activates the frame;<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *                 otherwise, deactivates the frame<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
-<td><pre><span class='comment'>     * @see SunToolkit#grab(java.awt.Window)<span class='comment'></pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre>    public void emulateActivation(boolean activate) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
-<td><pre>    public abstract void grabFocus();</pre></td>
+<td><pre>        ((<a class="type" href="/OdinCodeBrowserJdk8/java/awt/peer/FramePeer.html#linenum42">FramePeer</a>)<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1068">getPeer</a>()).emulateActivation(<a class="variable" href="#linenum117">activate</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre><span class='comment'>     * Delegates the focus ungrab action to the client (embedding) application.<span class='comment'></pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre><span class='comment'>     * The method is called by the AWT grab machinery.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Delegates the focus grab action to the client (embedding) application.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * The method is called by the AWT grab machinery.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre><span class='comment'>     * @see SunToolkit#ungrab(java.awt.Window)<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * @see SunToolkit#grab(java.awt.Window)<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre>    public abstract void ungrabFocus();</pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
+<td><pre>    public abstract void grabFocus();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
+<td><pre><span class='comment'>     * Delegates the focus ungrab action to the client (embedding) application.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
+<td><pre><span class='comment'>     * The method is called by the AWT grab machinery.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
+<td><pre><span class='comment'>     * @see SunToolkit#ungrab(java.awt.Window)<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
+<td><pre>    public abstract void ungrabFocus();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
+<td><pre><span class='comment'>     * Returns the scale factor of this frame. The default value is 1.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
+<td><pre><span class='comment'>     * @return the scale factor<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
+<td><pre><span class='comment'>     * @see #notifyDisplayChanged(int)<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
+<td><pre>    public abstract int getScaleFactor();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
+<td><pre><span class='comment'>     * Called when display of the hosted frame is changed.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
+<td><pre><span class='comment'>     * @param scaleFactor the scale factor<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
+<td><pre>    public abstract void notifyDisplayChanged(int scaleFactor);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
+<td><pre><span class='comment'>     * Host window absolute bounds.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
+<td><pre>    private int hostX, hostY, hostW, hostH;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
+<td><pre><span class='comment'>     * Returns the absolute bounds of the host (embedding) window.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
+<td><pre><span class='comment'>     * @return the host window bounds<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Rectangle.html#linenum119">Rectangle</a> getHostBounds() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum155">hostX</a> == 0 &amp;&amp; <a class="variable" href="#linenum155">hostY</a> == 0 &amp;&amp; <a class="variable" href="#linenum155">hostW</a> == 0 &amp;&amp; <a class="variable" href="#linenum155">hostH</a> == 0) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
+<td><pre>            // The client app is probably unaware of the setHostBounds.</pre></td>
+</tr>
+<tr>
+<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
+<td><pre>            <span class='comment'>// A safe fall-back:</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
+<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum2226">getBounds</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Rectangle.html#linenum119">Rectangle</a>(<a class="variable" href="#linenum155">hostX</a>, <a class="variable" href="#linenum155">hostY</a>, <a class="variable" href="#linenum155">hostW</a>, <a class="variable" href="#linenum155">hostH</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
+<td><pre><span class='comment'>     * Sets the absolute bounds of the host (embedding) window.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
+<td><pre>    public void setHostBounds(int x, int y, int w, int h) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
+<td><pre>        <a class="variable" href="#linenum155">hostX</a> = <a class="variable" href="#linenum174">x</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
+<td><pre>        <a class="variable" href="#linenum155">hostY</a> = <a class="variable" href="#linenum174">y</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
+<td><pre>        <a class="variable" href="#linenum155">hostW</a> = <a class="variable" href="#linenum174">w</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
+<td><pre>        <a class="variable" href="#linenum155">hostH</a> = <a class="variable" href="#linenum174">h</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
+<td><pre><span class='comment'>     * Create a drag gesture recognizer for the lightweight frame.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
+<td><pre>    public abstract &lt;T extends <a class="type" href="/OdinCodeBrowserJdk8/java/awt/dnd/DragGestureRecognizer.html#linenum86">DragGestureRecognizer</a>&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> createDragGestureRecognizer(</pre></td>
+</tr>
+<tr>
+<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; abstractRecognizerClass,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/dnd/DragSource.html#linenum117">DragSource</a> ds, <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c, int srcActions,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/dnd/DragGestureListener.html#linenum48">DragGestureListener</a> dgl);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
+<td><pre><span class='comment'>     * Create a drag source context peer for the lightweight frame.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
+<td><pre>    public abstract <a class="type" href="/OdinCodeBrowserJdk8/java/awt/dnd/peer/DragSourceContextPeer.html#linenum46">DragSourceContextPeer</a> createDragSourceContextPeer(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/dnd/DragGestureEvent.html#linenum74">DragGestureEvent</a> dge) throws <a class="type" href="/OdinCodeBrowserJdk8/java/awt/dnd/InvalidDnDOperationException.html#linenum37">InvalidDnDOperationException</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
+<td><pre><span class='comment'>     * Adds a drop target to the lightweight frame.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
+<td><pre>    public abstract void addDropTarget(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/dnd/DropTarget.html#linenum67">DropTarget</a> dt);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
+<td><pre><span class='comment'>     * Removes a drop target from the lightweight frame.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
+<td><pre>    public abstract void removeDropTarget(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/dnd/DropTarget.html#linenum67">DropTarget</a> dt);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

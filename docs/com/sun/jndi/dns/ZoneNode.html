@@ -452,7 +452,7 @@
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre>            <a class="variable" href="#linenum109">znode</a> = (<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ZoneNode.html#linenum56">ZoneNode</a>) <a class="variable" href="#linenum109">znode</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/NameNode.html#linenum121">get</a>(<a class="variable" href="#linenum108">fqdn</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/DnsName.html#linenum408">getKey</a>(<a class="variable" href="#linenum111">i</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum109">znode</a> = (<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ZoneNode.html#linenum56">ZoneNode</a>) <a class="variable" href="#linenum109">znode</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/NameNode.html#linenum109">get</a>(<a class="variable" href="#linenum108">fqdn</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/DnsName.html#linenum408">getKey</a>(<a class="variable" href="#linenum111">i</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
@@ -536,11 +536,11 @@
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum40">ResourceRecord</a> rr = <a class="variable" href="#linenum126">rrs</a>.answer.elementAt(<a class="variable" href="#linenum132">i</a>);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum45">ResourceRecord</a> rr = <a class="variable" href="#linenum126">rrs</a>.answer.elementAt(<a class="variable" href="#linenum132">i</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/DnsName.html#linenum105">DnsName</a> n = <a class="variable" href="#linenum133">rr</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum139">getName</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/DnsName.html#linenum105">DnsName</a> n = <a class="variable" href="#linenum133">rr</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum149">getName</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
@@ -568,7 +568,7 @@
 </tr>
 <tr>
 <td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum133">rr</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum167">getType</a>() == ResourceRecord.TYPE_NS) {</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum133">rr</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum160">getType</a>() == ResourceRecord.TYPE_NS) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
@@ -592,7 +592,7 @@
 </tr>
 <tr>
 <td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum40">ResourceRecord</a> soa = <a class="variable" href="#linenum126">rrs</a>.answer.firstElement();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum45">ResourceRecord</a> soa = <a class="variable" href="#linenum126">rrs</a>.answer.firstElement();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
@@ -644,7 +644,7 @@
 </tr>
 <tr>
 <td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre>        <a class="variable" href="#linenum60">expiration</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Date.html#linenum131">Date</a>(System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>() +</pre></td>
+<td><pre>        <a class="variable" href="#linenum60">expiration</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Date.html#linenum131">Date</a>(System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>() +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
@@ -672,19 +672,19 @@
 </tr>
 <tr>
 <td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre>    private static long getMinimumTtl(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum40">ResourceRecord</a> soa) {</pre></td>
+<td><pre>    private static long getMinimumTtl(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum45">ResourceRecord</a> soa) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> rdata = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>) <a class="variable" href="#linenum167">soa</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum158">getRdata</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> rdata = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>) <a class="variable" href="#linenum167">soa</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum168">getRdata</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre>        int pos = <a class="variable" href="#linenum168">rdata</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1849">lastIndexOf</a>(' ') + 1;</pre></td>
+<td><pre>        int pos = <a class="variable" href="#linenum168">rdata</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1610">lastIndexOf</a>(' ') + 1;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>        return Long.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Long.html#linenum630">parseLong</a>(<a class="variable" href="#linenum168">rdata</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(<a class="variable" href="#linenum169">pos</a>));</pre></td>
+<td><pre>        return Long.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Long.html#linenum630">parseLong</a>(<a class="variable" href="#linenum168">rdata</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1925">substring</a>(<a class="variable" href="#linenum169">pos</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
@@ -732,7 +732,7 @@
 </tr>
 <tr>
 <td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
-<td><pre>    int compareSerialNumberTo(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum40">ResourceRecord</a> soa) {</pre></td>
+<td><pre>    int compareSerialNumberTo(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum45">ResourceRecord</a> soa) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
@@ -740,7 +740,7 @@
 </tr>
 <tr>
 <td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
-<td><pre>        return ResourceRecord.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum221">compareSerialNumbers</a>(<a class="variable" href="#linenum59">serialNumber</a>,</pre></td>
+<td><pre>        return ResourceRecord.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum231">compareSerialNumbers</a>(<a class="variable" href="#linenum59">serialNumber</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
@@ -768,11 +768,11 @@
 </tr>
 <tr>
 <td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
-<td><pre>    private static long getSerialNumber(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum40">ResourceRecord</a> soa) {</pre></td>
+<td><pre>    private static long getSerialNumber(<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum45">ResourceRecord</a> soa) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> rdata = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>) <a class="variable" href="#linenum191">soa</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum158">getRdata</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> rdata = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>) <a class="variable" href="#linenum191">soa</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jndi/dns/ResourceRecord.html#linenum168">getRdata</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
@@ -792,7 +792,7 @@
 </tr>
 <tr>
 <td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
-<td><pre>        int beg = <a class="variable" href="#linenum192">rdata</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>();</pre></td>
+<td><pre>        int beg = <a class="variable" href="#linenum192">rdata</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
@@ -808,7 +808,7 @@
 </tr>
 <tr>
 <td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
-<td><pre>            <a class="variable" href="#linenum197">beg</a> = <a class="variable" href="#linenum192">rdata</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1849">lastIndexOf</a>(' ', <a class="variable" href="#linenum198">end</a> - 1);</pre></td>
+<td><pre>            <a class="variable" href="#linenum197">beg</a> = <a class="variable" href="#linenum192">rdata</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1648">lastIndexOf</a>(' ', <a class="variable" href="#linenum198">end</a> - 1);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
@@ -816,7 +816,7 @@
 </tr>
 <tr>
 <td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>        return Long.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Long.html#linenum630">parseLong</a>(<a class="variable" href="#linenum192">rdata</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(<a class="variable" href="#linenum197">beg</a> + 1, <a class="variable" href="#linenum198">end</a>));</pre></td>
+<td><pre>        return Long.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Long.html#linenum630">parseLong</a>(<a class="variable" href="#linenum192">rdata</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a>(<a class="variable" href="#linenum197">beg</a> + 1, <a class="variable" href="#linenum198">end</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>

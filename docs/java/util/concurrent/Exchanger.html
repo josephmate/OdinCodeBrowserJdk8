@@ -1516,7 +1516,7 @@
 </tr>
 <tr>
 <td><a id="linenum378" class="linenum-cell" data-linenum="378" href="#linenum378"></a></td>
-<td><pre>                    long end = (<a class="variable" href="#linenum361">timed</a> &amp;&amp; <a class="variable" href="#linenum365">m</a> == 0) ? System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum399">nanoTime</a>() + <a class="variable" href="#linenum361">ns</a> : 0L;</pre></td>
+<td><pre>                    long end = (<a class="variable" href="#linenum361">timed</a> &amp;&amp; <a class="variable" href="#linenum365">m</a> == 0) ? System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum401">nanoTime</a>() + <a class="variable" href="#linenum361">ns</a> : 0L;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum379" class="linenum-cell" data-linenum="379" href="#linenum379"></a></td>
@@ -1568,7 +1568,7 @@
 </tr>
 <tr>
 <td><a id="linenum391" class="linenum-cell" data-linenum="391" href="#linenum391"></a></td>
-<td><pre>                                <a class="variable" href="#linenum380">h</a> = <a class="variable" href="#linenum292">SPINS</a> | (int)<a class="variable" href="#linenum379">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum1696">getId</a>();</pre></td>
+<td><pre>                                <a class="variable" href="#linenum380">h</a> = <a class="variable" href="#linenum292">SPINS</a> | (int)<a class="variable" href="#linenum379">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum1704">getId</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum392" class="linenum-cell" data-linenum="392" href="#linenum392"></a></td>
@@ -1596,7 +1596,7 @@
 </tr>
 <tr>
 <td><a id="linenum398" class="linenum-cell" data-linenum="398" href="#linenum398"></a></td>
-<td><pre>                        else if (!<a class="variable" href="#linenum379">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum968">isInterrupted</a>() &amp;&amp; <a class="variable" href="#linenum365">m</a> == 0 &amp;&amp;</pre></td>
+<td><pre>                        else if (!<a class="variable" href="#linenum379">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum963">isInterrupted</a>() &amp;&amp; <a class="variable" href="#linenum365">m</a> == 0 &amp;&amp;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum399" class="linenum-cell" data-linenum="399" href="#linenum399"></a></td>
@@ -1604,7 +1604,7 @@
 </tr>
 <tr>
 <td><a id="linenum400" class="linenum-cell" data-linenum="400" href="#linenum400"></a></td>
-<td><pre>                                  (<a class="variable" href="#linenum361">ns</a> = <a class="variable" href="#linenum378">end</a> - System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum399">nanoTime</a>()) &gt; 0L)) {</pre></td>
+<td><pre>                                  (<a class="variable" href="#linenum361">ns</a> = <a class="variable" href="#linenum378">end</a> - System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum401">nanoTime</a>()) &gt; 0L)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum401" class="linenum-cell" data-linenum="401" href="#linenum401"></a></td>
@@ -1664,7 +1664,7 @@
 </tr>
 <tr>
 <td><a id="linenum415" class="linenum-cell" data-linenum="415" href="#linenum415"></a></td>
-<td><pre>                            if (Thread.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum942">interrupted</a>())</pre></td>
+<td><pre>                            if (Thread.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum946">interrupted</a>())</pre></td>
 </tr>
 <tr>
 <td><a id="linenum416" class="linenum-cell" data-linenum="416" href="#linenum416"></a></td>
@@ -1832,7 +1832,7 @@
 </tr>
 <tr>
 <td><a id="linenum457" class="linenum-cell" data-linenum="457" href="#linenum457"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum456">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum968">isInterrupted</a>()) <span class='comment'>// preserve interrupt status so caller can recheck</span></pre></td>
+<td><pre>        if (<a class="variable" href="#linenum456">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum963">isInterrupted</a>()) <span class='comment'>// preserve interrupt status so caller can recheck</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum458" class="linenum-cell" data-linenum="458" href="#linenum458"></a></td>
@@ -1952,7 +1952,7 @@
 </tr>
 <tr>
 <td><a id="linenum487" class="linenum-cell" data-linenum="487" href="#linenum487"></a></td>
-<td><pre>        long end = <a class="variable" href="#linenum454">timed</a> ? System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum399">nanoTime</a>() + <a class="variable" href="#linenum454">ns</a> : 0L;</pre></td>
+<td><pre>        long end = <a class="variable" href="#linenum454">timed</a> ? System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum401">nanoTime</a>() + <a class="variable" href="#linenum454">ns</a> : 0L;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum488" class="linenum-cell" data-linenum="488" href="#linenum488"></a></td>
@@ -1980,7 +1980,7 @@
 </tr>
 <tr>
 <td><a id="linenum494" class="linenum-cell" data-linenum="494" href="#linenum494"></a></td>
-<td><pre>                    <a class="variable" href="#linenum486">h</a> = <a class="variable" href="#linenum292">SPINS</a> | (int)<a class="variable" href="#linenum456">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum1696">getId</a>();</pre></td>
+<td><pre>                    <a class="variable" href="#linenum486">h</a> = <a class="variable" href="#linenum292">SPINS</a> | (int)<a class="variable" href="#linenum456">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum1704">getId</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum495" class="linenum-cell" data-linenum="495" href="#linenum495"></a></td>
@@ -2004,11 +2004,11 @@
 </tr>
 <tr>
 <td><a id="linenum500" class="linenum-cell" data-linenum="500" href="#linenum500"></a></td>
-<td><pre>            else if (!<a class="variable" href="#linenum456">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum968">isInterrupted</a>() &amp;&amp; <a class="variable" href="#linenum337">arena</a> == null &amp;&amp;</pre></td>
+<td><pre>            else if (!<a class="variable" href="#linenum456">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum963">isInterrupted</a>() &amp;&amp; <a class="variable" href="#linenum337">arena</a> == null &amp;&amp;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum501" class="linenum-cell" data-linenum="501" href="#linenum501"></a></td>
-<td><pre>                     (!<a class="variable" href="#linenum454">timed</a> || (<a class="variable" href="#linenum454">ns</a> = <a class="variable" href="#linenum487">end</a> - System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum399">nanoTime</a>()) &gt; 0L)) {</pre></td>
+<td><pre>                     (!<a class="variable" href="#linenum454">timed</a> || (<a class="variable" href="#linenum454">ns</a> = <a class="variable" href="#linenum487">end</a> - System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum401">nanoTime</a>()) &gt; 0L)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum502" class="linenum-cell" data-linenum="502" href="#linenum502"></a></td>
@@ -2044,7 +2044,7 @@
 </tr>
 <tr>
 <td><a id="linenum510" class="linenum-cell" data-linenum="510" href="#linenum510"></a></td>
-<td><pre>                <a class="variable" href="#linenum489">v</a> = <a class="variable" href="#linenum454">timed</a> &amp;&amp; <a class="variable" href="#linenum454">ns</a> &lt;= 0L &amp;&amp; !<a class="variable" href="#linenum456">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum968">isInterrupted</a>() ? <a class="variable" href="#linenum306">TIMED_OUT</a> : null;</pre></td>
+<td><pre>                <a class="variable" href="#linenum489">v</a> = <a class="variable" href="#linenum454">timed</a> &amp;&amp; <a class="variable" href="#linenum454">ns</a> &lt;= 0L &amp;&amp; !<a class="variable" href="#linenum456">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum963">isInterrupted</a>() ? <a class="variable" href="#linenum306">TIMED_OUT</a> : null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum511" class="linenum-cell" data-linenum="511" href="#linenum511"></a></td>
@@ -2268,7 +2268,7 @@
 </tr>
 <tr>
 <td><a id="linenum566" class="linenum-cell" data-linenum="566" href="#linenum566"></a></td>
-<td><pre>            ((Thread.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum942">interrupted</a>() || <span class='comment'>// disambiguates null return</span></pre></td>
+<td><pre>            ((Thread.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum946">interrupted</a>() || <span class='comment'>// disambiguates null return</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum567" class="linenum-cell" data-linenum="567" href="#linenum567"></a></td>
@@ -2492,7 +2492,7 @@
 </tr>
 <tr>
 <td><a id="linenum622" class="linenum-cell" data-linenum="622" href="#linenum622"></a></td>
-<td><pre>            ((Thread.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum942">interrupted</a>() ||</pre></td>
+<td><pre>            ((Thread.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum946">interrupted</a>() ||</pre></td>
 </tr>
 <tr>
 <td><a id="linenum623" class="linenum-cell" data-linenum="623" href="#linenum623"></a></td>

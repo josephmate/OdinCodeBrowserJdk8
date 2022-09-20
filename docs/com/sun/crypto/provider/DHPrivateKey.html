@@ -552,7 +552,7 @@
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
-<td><pre>            if (!<a class="variable" href="#linenum136">parsedVersion</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum3444">equals</a>(<a class="variable" href="#linenum54">PKCS8_VERSION</a>)) {</pre></td>
+<td><pre>            if (!<a class="variable" href="#linenum136">parsedVersion</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum3709">equals</a>(<a class="variable" href="#linenum54">PKCS8_VERSION</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
@@ -604,11 +604,11 @@
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum59">DerInputStream</a> derInStream = <a class="variable" href="#linenum146">algid</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum844">toDerInputStream</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum59">DerInputStream</a> derInStream = <a class="variable" href="#linenum146">algid</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum871">toDerInputStream</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/ObjectIdentifier.html#linenum53">ObjectIdentifier</a> oid = <a class="variable" href="#linenum150">derInStream</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum280">getOID</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/ObjectIdentifier.html#linenum53">ObjectIdentifier</a> oid = <a class="variable" href="#linenum150">derInStream</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum319">getOID</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
@@ -624,7 +624,7 @@
 </tr>
 <tr>
 <td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum150">derInStream</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum593">available</a>() == 0) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum150">derInStream</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum665">available</a>() == 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
@@ -640,7 +640,7 @@
 </tr>
 <tr>
 <td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a> params = <a class="variable" href="#linenum150">derInStream</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum416">getDerValue</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a> params = <a class="variable" href="#linenum150">derInStream</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum456">getDerValue</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
@@ -904,11 +904,11 @@
 </tr>
 <tr>
 <td><a id="linenum225" class="linenum-cell" data-linenum="225" href="#linenum225"></a></td>
-<td><pre>                <a class="variable" href="#linenum224">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum182">putInteger</a>(this.p);</pre></td>
+<td><pre>                <a class="variable" href="#linenum224">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum163">putInteger</a>(this.p);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum226" class="linenum-cell" data-linenum="226" href="#linenum226"></a></td>
-<td><pre>                <a class="variable" href="#linenum224">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum182">putInteger</a>(this.g);</pre></td>
+<td><pre>                <a class="variable" href="#linenum224">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum163">putInteger</a>(this.g);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum227" class="linenum-cell" data-linenum="227" href="#linenum227"></a></td>
@@ -916,7 +916,7 @@
 </tr>
 <tr>
 <td><a id="linenum228" class="linenum-cell" data-linenum="228" href="#linenum228"></a></td>
-<td><pre>                    <a class="variable" href="#linenum224">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum182">putInteger</a>(this.l);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum224">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum163">putInteger</a>(this.l);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum229" class="linenum-cell" data-linenum="229" href="#linenum229"></a></td>
@@ -932,7 +932,7 @@
 </tr>
 <tr>
 <td><a id="linenum232" class="linenum-cell" data-linenum="232" href="#linenum232"></a></td>
-<td><pre>                                                      <a class="variable" href="#linenum224">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum177">toByteArray</a>());</pre></td>
+<td><pre>                                                      <a class="variable" href="#linenum224">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum190">toByteArray</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum233" class="linenum-cell" data-linenum="233" href="#linenum233"></a></td>
@@ -980,7 +980,7 @@
 </tr>
 <tr>
 <td><a id="linenum244" class="linenum-cell" data-linenum="244" href="#linenum244"></a></td>
-<td><pre>                this.encodedKey = <a class="variable" href="#linenum242">derKey</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum177">toByteArray</a>();</pre></td>
+<td><pre>                this.encodedKey = <a class="variable" href="#linenum242">derKey</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum190">toByteArray</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum245" class="linenum-cell" data-linenum="245" href="#linenum245"></a></td>
@@ -1112,7 +1112,7 @@
 </tr>
 <tr>
 <td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
-<td><pre>            this.x = <a class="variable" href="#linenum276">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum178">getBigInteger</a>();</pre></td>
+<td><pre>            this.x = <a class="variable" href="#linenum276">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum202">getBigInteger</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
@@ -1124,11 +1124,11 @@
 </tr>
 <tr>
 <td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
-<td><pre>                <span class='string'>&quot;Error parsing key encoding: &quot;</span> + <a class="variable" href="#linenum245">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum376">getMessage</a>());</pre></td>
+<td><pre>                <span class='string'>&quot;Error parsing key encoding: &quot;</span> + <a class="variable" href="#linenum245">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum377">getMessage</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
-<td><pre>            <a class="variable" href="#linenum279">ike</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum454">initCause</a>(<a class="variable" href="#linenum245">e</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum279">ike</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum455">initCause</a>(<a class="variable" href="#linenum245">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum282" class="linenum-cell" data-linenum="282" href="#linenum282"></a></td>

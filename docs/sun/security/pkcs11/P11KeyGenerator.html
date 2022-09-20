@@ -192,7 +192,7 @@
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum47">Token</a> token;</pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum48">Token</a> token;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
@@ -328,7 +328,7 @@
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
-<td><pre>    static int checkKeySize(long keyGenMech, int keySize, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum47">Token</a> token)</pre></td>
+<td><pre>    static int checkKeySize(long keyGenMech, int keySize, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum48">Token</a> token)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
@@ -432,7 +432,7 @@
 </tr>
 <tr>
 <td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
-<td><pre>                    <a class="variable" href="#linenum105">info</a> = <a class="variable" href="#linenum81">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum346">getMechanismInfo</a>(<a class="variable" href="#linenum81">keyGenMech</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum105">info</a> = <a class="variable" href="#linenum81">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum380">getMechanismInfo</a>(<a class="variable" href="#linenum81">keyGenMech</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
@@ -600,7 +600,7 @@
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre>    P11KeyGenerator(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum47">Token</a> token, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> algorithm, long mechanism)</pre></td>
+<td><pre>    P11KeyGenerator(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum48">Token</a> token, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> algorithm, long mechanism)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
@@ -828,11 +828,11 @@
 </tr>
 <tr>
 <td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
-<td><pre>    protected void engineInit(<a class="type" href="/OdinCodeBrowserJdk8/java/security/SecureRandom.html#linenum93">SecureRandom</a> random) {</pre></td>
+<td><pre>    protected void engineInit(<a class="type" href="/OdinCodeBrowserJdk8/java/security/SecureRandom.html#linenum94">SecureRandom</a> random) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
-<td><pre>        <a class="variable" href="#linenum149">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum213">ensureValid</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum149">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum247">ensureValid</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
@@ -856,7 +856,7 @@
 </tr>
 <tr>
 <td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/security/SecureRandom.html#linenum93">SecureRandom</a> random) throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a> {</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/security/SecureRandom.html#linenum94">SecureRandom</a> random) throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
@@ -880,11 +880,11 @@
 </tr>
 <tr>
 <td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>
-<td><pre>    protected void engineInit(int keySize, <a class="type" href="/OdinCodeBrowserJdk8/java/security/SecureRandom.html#linenum93">SecureRandom</a> random) {</pre></td>
+<td><pre>    protected void engineInit(int keySize, <a class="type" href="/OdinCodeBrowserJdk8/java/security/SecureRandom.html#linenum94">SecureRandom</a> random) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
-<td><pre>        <a class="variable" href="#linenum149">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum213">ensureValid</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum149">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum247">ensureValid</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
@@ -1016,7 +1016,7 @@
 </tr>
 <tr>
 <td><a id="linenum253" class="linenum-cell" data-linenum="253" href="#linenum253"></a></td>
-<td><pre>            <a class="variable" href="#linenum251">session</a> = <a class="variable" href="#linenum149">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum264">getObjSession</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum251">session</a> = <a class="variable" href="#linenum149">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum298">getObjSession</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum254" class="linenum-cell" data-linenum="254" href="#linenum254"></a></td>
@@ -1088,7 +1088,7 @@
 </tr>
 <tr>
 <td><a id="linenum271" class="linenum-cell" data-linenum="271" href="#linenum271"></a></td>
-<td><pre>            <a class="variable" href="#linenum254">attributes</a> = <a class="variable" href="#linenum149">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum280">getAttributes</a></pre></td>
+<td><pre>            <a class="variable" href="#linenum254">attributes</a> = <a class="variable" href="#linenum149">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum314">getAttributes</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum272" class="linenum-cell" data-linenum="272" href="#linenum272"></a></td>
@@ -1104,7 +1104,7 @@
 </tr>
 <tr>
 <td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
-<td><pre>            return P11Key.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum286">secretKey</a></pre></td>
+<td><pre>            return P11Key.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum317">secretKey</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
@@ -1124,7 +1124,7 @@
 </tr>
 <tr>
 <td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
-<td><pre>            <a class="variable" href="#linenum149">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum272">releaseSession</a>(<a class="variable" href="#linenum251">session</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum149">token</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/Token.html#linenum306">releaseSession</a>(<a class="variable" href="#linenum251">session</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>

@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2002, 2013, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2002, 2016, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -144,7 +144,7 @@
 </tr>
 <tr>
 <td><a id="linenum35" class="linenum-cell" data-linenum="35" href="#linenum35"></a></td>
-<td><pre>public class Messages_zh_TW extends java.util.ListResourceBundle {</pre></td>
+<td><pre>public final class Messages_zh_TW extends java.util.ListResourceBundle {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum36" class="linenum-cell" data-linenum="36" href="#linenum36"></a></td>
@@ -172,46 +172,38 @@
 </tr>
 <tr>
 <td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[][] getContents() {</pre></td>
+<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[][] getContents() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
-<td><pre>        return contents;</pre></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[][]{</pre></td>
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>            {<span class='string'>&quot;optpkg.versionerror&quot;</span>, <span class='string'>&quot;\u932F\u8AA4: {0} JAR \u6A94\u4F7F\u7528\u4E86\u7121\u6548\u7684\u7248\u672C\u683C\u5F0F\u3002\u8ACB\u6AA2\u67E5\u6587\u4EF6\uFF0C\u4EE5\u7372\u5F97\u652F\u63F4\u7684\u7248\u672C\u683C\u5F0F\u3002&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
-<td><pre></pre></td>
+<td><pre>            {<span class='string'>&quot;optpkg.attributeerror&quot;</span>, <span class='string'>&quot;\u932F\u8AA4: {1} JAR \u6A94\u4E2D\u672A\u8A2D\u5B9A\u5FC5\u8981\u7684 {0} JAR \u8CC7\u8A0A\u6E05\u55AE\u5C6C\u6027\u3002&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
-<td><pre>    private static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[][] contents = {</pre></td>
+<td><pre>            {<span class='string'>&quot;optpkg.attributeserror&quot;</span>, <span class='string'>&quot;\u932F\u8AA4: {0} JAR \u6A94\u4E2D\u672A\u8A2D\u5B9A\u67D0\u4E9B\u5FC5\u8981\u7684 JAR \u8CC7\u8A0A\u6E05\u55AE\u5C6C\u6027\u3002&quot;</span>}</pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
-<td><pre>        { <span class='string'>&quot;optpkg.versionerror&quot;</span>, <span class='string'>&quot;\u932F\u8AA4: {0} JAR \u6A94\u4F7F\u7528\u4E86\u7121\u6548\u7684\u7248\u672C\u683C\u5F0F\u3002\u8ACB\u6AA2\u67E5\u6587\u4EF6\uFF0C\u4EE5\u7372\u5F97\u652F\u63F4\u7684\u7248\u672C\u683C\u5F0F\u3002&quot;</span> },</pre></td>
+<td><pre>        };</pre></td>
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre>        { <span class='string'>&quot;optpkg.attributeerror&quot;</span>, <span class='string'>&quot;\u932F\u8AA4: {1} JAR \u6A94\u4E2D\u672A\u8A2D\u5B9A\u5FC5\u8981\u7684 {0} JAR \u8CC7\u8A0A\u6E05\u55AE\u5C6C\u6027\u3002&quot;</span> },</pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
-<td><pre>        { <span class='string'>&quot;optpkg.attributeserror&quot;</span>, <span class='string'>&quot;\u932F\u8AA4: {0} JAR \u6A94\u4E2D\u672A\u8A2D\u5B9A\u67D0\u4E9B\u5FC5\u8981\u7684 JAR \u8CC7\u8A0A\u6E05\u55AE\u5C6C\u6027\u3002&quot;</span> }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
-<td><pre>    };</pre></td>
-</tr>
-<tr>
-<td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
+<td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

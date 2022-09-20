@@ -248,15 +248,15 @@
 </tr>
 <tr>
 <td><a id="linenum61" class="linenum-cell" data-linenum="61" href="#linenum61"></a></td>
-<td><pre>    private static final <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum58">AlgorithmId</a> SHA1_ALGID</pre></td>
+<td><pre>    private static final <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum63">AlgorithmId</a> SHA1_ALGID</pre></td>
 </tr>
 <tr>
 <td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
-<td><pre>        = new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum58">AlgorithmId</a>(AlgorithmId.SHA_oid);</pre></td>
+<td><pre>        = new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum63">AlgorithmId</a>(AlgorithmId.SHA_oid);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum63" class="linenum-cell" data-linenum="63" href="#linenum63"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum58">AlgorithmId</a> hashAlgId;</pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum63">AlgorithmId</a> hashAlgId;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum64" class="linenum-cell" data-linenum="64" href="#linenum64"></a></td>
@@ -292,7 +292,7 @@
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
-<td><pre>    public CertId(<a class="type" href="/OdinCodeBrowserJdk8/java/security/cert/X509Certificate.html#linenum105">X509Certificate</a> issuerCert, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/SerialNumber.html#linenum39">SerialNumber</a> serialNumber)</pre></td>
+<td><pre>    public CertId(<a class="type" href="/OdinCodeBrowserJdk8/java/security/cert/X509Certificate.html#linenum107">X509Certificate</a> issuerCert, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/SerialNumber.html#linenum39">SerialNumber</a> serialNumber)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
@@ -336,7 +336,7 @@
 </tr>
 <tr>
 <td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum104">MessageDigest</a> md = null;</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum109">MessageDigest</a> md = null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
@@ -344,7 +344,7 @@
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre>            <a class="variable" href="#linenum83">md</a> = MessageDigest.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum257">getInstance</a>(<span class='string'>&quot;SHA1&quot;</span>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum83">md</a> = MessageDigest.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum166">getInstance</a>(<span class='string'>&quot;SHA1&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
@@ -364,11 +364,11 @@
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>        <a class="variable" href="#linenum83">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum337">update</a>(issuerName.getEncoded());</pre></td>
+<td><pre>        <a class="variable" href="#linenum83">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum305">update</a>(issuerName.getEncoded());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>        <a class="variable" href="#linenum64">issuerNameHash</a> = <a class="variable" href="#linenum83">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum397">digest</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum64">issuerNameHash</a> = <a class="variable" href="#linenum83">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum366">digest</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
@@ -404,11 +404,11 @@
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre>        <a class="variable" href="#linenum83">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum337">update</a>(<a class="variable" href="#linenum99">keyBytes</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum83">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum305">update</a>(<a class="variable" href="#linenum99">keyBytes</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
-<td><pre>        <a class="variable" href="#linenum65">issuerKeyHash</a> = <a class="variable" href="#linenum83">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum397">digest</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum65">issuerKeyHash</a> = <a class="variable" href="#linenum83">md</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum366">digest</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
@@ -436,7 +436,7 @@
 </tr>
 <tr>
 <td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
-<td><pre>                <a class="variable" href="#linenum105">encoder</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/CharacterEncoder.html#linenum349">encodeBuffer</a>(<a class="variable" href="#linenum64">issuerNameHash</a>));</pre></td>
+<td><pre>                <a class="variable" href="#linenum105">encoder</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/CharacterEncoder.html#linenum319">encodeBuffer</a>(<a class="variable" href="#linenum64">issuerNameHash</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
@@ -444,7 +444,7 @@
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
-<td><pre>                <a class="variable" href="#linenum105">encoder</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/CharacterEncoder.html#linenum349">encodeBuffer</a>(<a class="variable" href="#linenum65">issuerKeyHash</a>));</pre></td>
+<td><pre>                <a class="variable" href="#linenum105">encoder</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/CharacterEncoder.html#linenum319">encodeBuffer</a>(<a class="variable" href="#linenum65">issuerKeyHash</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
@@ -480,7 +480,7 @@
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre>        <a class="variable" href="#linenum63">hashAlgId</a> = AlgorithmId.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum344">parse</a>(derIn.getDerValue());</pre></td>
+<td><pre>        <a class="variable" href="#linenum63">hashAlgId</a> = AlgorithmId.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum385">parse</a>(derIn.getDerValue());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
@@ -516,7 +516,7 @@
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum58">AlgorithmId</a> getHashAlgorithm() {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum63">AlgorithmId</a> getHashAlgorithm() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
@@ -644,7 +644,7 @@
 </tr>
 <tr>
 <td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre>        <a class="variable" href="#linenum63">hashAlgId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum203">encode</a>(<a class="variable" href="#linenum159">tmp</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum63">hashAlgId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum230">encode</a>(<a class="variable" href="#linenum159">tmp</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
@@ -680,7 +680,7 @@
 </tr>
 <tr>
 <td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre>                <a class="variable" href="#linenum167">encoder</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/CharacterEncoder.html#linenum265">encode</a>(<a class="variable" href="#linenum157">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum177">toByteArray</a>()));</pre></td>
+<td><pre>                <a class="variable" href="#linenum167">encoder</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/CharacterEncoder.html#linenum186">encode</a>(<a class="variable" href="#linenum157">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum190">toByteArray</a>()));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
@@ -724,7 +724,7 @@
 </tr>
 <tr>
 <td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
-<td><pre>            <a class="variable" href="#linenum67">myhash</a> = <a class="variable" href="#linenum63">hashAlgId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum303">hashCode</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum67">myhash</a> = <a class="variable" href="#linenum63">hashAlgId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum343">hashCode</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
@@ -844,15 +844,15 @@
 </tr>
 <tr>
 <td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum63">hashAlgId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum294">equals</a>(<a class="variable" href="#linenum209">that</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/provider/certpath/CertId.html#linenum128">getHashAlgorithm</a>()) &amp;&amp;</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum63">hashAlgId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum304">equals</a>(<a class="variable" href="#linenum209">that</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/provider/certpath/CertId.html#linenum128">getHashAlgorithm</a>()) &amp;&amp;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
-<td><pre>            Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2810">equals</a>(<a class="variable" href="#linenum64">issuerNameHash</a>, <a class="variable" href="#linenum209">that</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/provider/certpath/CertId.html#linenum135">getIssuerNameHash</a>()) &amp;&amp;</pre></td>
+<td><pre>            Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2570">equals</a>(<a class="variable" href="#linenum64">issuerNameHash</a>, <a class="variable" href="#linenum209">that</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/provider/certpath/CertId.html#linenum135">getIssuerNameHash</a>()) &amp;&amp;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
-<td><pre>            Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2810">equals</a>(<a class="variable" href="#linenum65">issuerKeyHash</a>, <a class="variable" href="#linenum209">that</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/provider/certpath/CertId.html#linenum142">getIssuerKeyHash</a>()) &amp;&amp;</pre></td>
+<td><pre>            Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2570">equals</a>(<a class="variable" href="#linenum65">issuerKeyHash</a>, <a class="variable" href="#linenum209">that</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/provider/certpath/CertId.html#linenum142">getIssuerKeyHash</a>()) &amp;&amp;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
@@ -904,15 +904,15 @@
 </tr>
 <tr>
 <td><a id="linenum225" class="linenum-cell" data-linenum="225" href="#linenum225"></a></td>
-<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<span class='string'>&quot;CertId \n&quot;</span>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<span class='string'>&quot;CertId \n&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum226" class="linenum-cell" data-linenum="226" href="#linenum226"></a></td>
-<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<span class='string'>&quot;Algorithm: &quot;</span> + <a class="variable" href="#linenum63">hashAlgId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum327">toString</a>() +<span class='string'>&quot;\n&quot;</span>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<span class='string'>&quot;Algorithm: &quot;</span> + <a class="variable" href="#linenum63">hashAlgId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum367">toString</a>() +<span class='string'>&quot;\n&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum227" class="linenum-cell" data-linenum="227" href="#linenum227"></a></td>
-<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<span class='string'>&quot;issuerNameHash \n&quot;</span>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<span class='string'>&quot;issuerNameHash \n&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum228" class="linenum-cell" data-linenum="228" href="#linenum228"></a></td>
@@ -920,19 +920,19 @@
 </tr>
 <tr>
 <td><a id="linenum229" class="linenum-cell" data-linenum="229" href="#linenum229"></a></td>
-<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="variable" href="#linenum228">encoder</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/CharacterEncoder.html#linenum265">encode</a>(<a class="variable" href="#linenum64">issuerNameHash</a>));</pre></td>
+<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<a class="variable" href="#linenum228">encoder</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/CharacterEncoder.html#linenum186">encode</a>(<a class="variable" href="#linenum64">issuerNameHash</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum230" class="linenum-cell" data-linenum="230" href="#linenum230"></a></td>
-<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<span class='string'>&quot;\nissuerKeyHash: \n&quot;</span>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<span class='string'>&quot;\nissuerKeyHash: \n&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum231" class="linenum-cell" data-linenum="231" href="#linenum231"></a></td>
-<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="variable" href="#linenum228">encoder</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/CharacterEncoder.html#linenum265">encode</a>(<a class="variable" href="#linenum65">issuerKeyHash</a>));</pre></td>
+<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<a class="variable" href="#linenum228">encoder</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/CharacterEncoder.html#linenum186">encode</a>(<a class="variable" href="#linenum65">issuerKeyHash</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum232" class="linenum-cell" data-linenum="232" href="#linenum232"></a></td>
-<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<span class='string'>&quot;\n&quot;</span> +  <a class="variable" href="#linenum66">certSerialNumber</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/SerialNumber.html#linenum103">toString</a>());</pre></td>
+<td><pre>        <a class="variable" href="#linenum224">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<span class='string'>&quot;\n&quot;</span> +  <a class="variable" href="#linenum66">certSerialNumber</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/SerialNumber.html#linenum103">toString</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum233" class="linenum-cell" data-linenum="233" href="#linenum233"></a></td>

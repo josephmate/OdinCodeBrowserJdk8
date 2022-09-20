@@ -412,7 +412,7 @@
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>        <a class="variable" href="#linenum88">permsMap</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;, <a class="type" href="/OdinCodeBrowserJdk8/java/security/PermissionCollection.html#linenum94">PermissionCollection</a>&gt;(11);</pre></td>
+<td><pre>        <a class="variable" href="#linenum88">permsMap</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;, <a class="type" href="/OdinCodeBrowserJdk8/java/security/PermissionCollection.html#linenum94">PermissionCollection</a>&gt;(11);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
@@ -564,7 +564,7 @@
 </tr>
 <tr>
 <td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum124">permission</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermission.html#linenum101">UnresolvedPermission</a>) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum124">permission</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermission.html#linenum105">UnresolvedPermission</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
@@ -1136,7 +1136,7 @@
 </tr>
 <tr>
 <td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
-<td><pre>        (<a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermissionCollection.html#linenum48">UnresolvedPermissionCollection</a>) <a class="variable" href="#linenum88">permsMap</a>.get(<a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermission.html#linenum101">UnresolvedPermission</a>.class);</pre></td>
+<td><pre>        (<a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermissionCollection.html#linenum48">UnresolvedPermissionCollection</a>) <a class="variable" href="#linenum88">permsMap</a>.get(<a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermission.html#linenum105">UnresolvedPermission</a>.class);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
@@ -1160,7 +1160,7 @@
 </tr>
 <tr>
 <td><a id="linenum289" class="linenum-cell" data-linenum="289" href="#linenum289"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermission.html#linenum101">UnresolvedPermission</a>&gt; unresolvedPerms =</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermission.html#linenum105">UnresolvedPermission</a>&gt; unresolvedPerms =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum290" class="linenum-cell" data-linenum="290" href="#linenum290"></a></td>
@@ -1284,11 +1284,11 @@
 </tr>
 <tr>
 <td><a id="linenum320" class="linenum-cell" data-linenum="320" href="#linenum320"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermission.html#linenum101">UnresolvedPermission</a> up = <a class="variable" href="#linenum289">unresolvedPerms</a>.get(<a class="variable" href="#linenum319">i</a>);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermission.html#linenum105">UnresolvedPermission</a> up = <a class="variable" href="#linenum289">unresolvedPerms</a>.get(<a class="variable" href="#linenum319">i</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum321" class="linenum-cell" data-linenum="321" href="#linenum321"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a> perm = <a class="variable" href="#linenum320">up</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermission.html#linenum227">resolve</a>(<a class="variable" href="#linenum278">p</a>, <a class="variable" href="#linenum296">certs</a>);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a> perm = <a class="variable" href="#linenum320">up</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermission.html#linenum231">resolve</a>(<a class="variable" href="#linenum278">p</a>, <a class="variable" href="#linenum296">certs</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum322" class="linenum-cell" data-linenum="322" href="#linenum322"></a></td>
@@ -1392,7 +1392,7 @@
 </tr>
 <tr>
 <td><a id="linenum347" class="linenum-cell" data-linenum="347" href="#linenum347"></a></td>
-<td><pre>        new <a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectStreamField.html#linenum42">ObjectStreamField</a>(<span class='string'>&quot;perms&quot;</span>, <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>.class),</pre></td>
+<td><pre>        new <a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectStreamField.html#linenum42">ObjectStreamField</a>(<span class='string'>&quot;perms&quot;</span>, <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>.class),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum348" class="linenum-cell" data-linenum="348" href="#linenum348"></a></td>
@@ -1456,11 +1456,11 @@
 </tr>
 <tr>
 <td><a id="linenum363" class="linenum-cell" data-linenum="363" href="#linenum363"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;, <a class="type" href="/OdinCodeBrowserJdk8/java/security/PermissionCollection.html#linenum94">PermissionCollection</a>&gt; perms =</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;, <a class="type" href="/OdinCodeBrowserJdk8/java/security/PermissionCollection.html#linenum94">PermissionCollection</a>&gt; perms =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum364" class="linenum-cell" data-linenum="364" href="#linenum364"></a></td>
-<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;&gt;(<a class="variable" href="#linenum88">permsMap</a>.size()*2); <span class='comment'>// no sync; estimate</span></pre></td>
+<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;&gt;(<a class="variable" href="#linenum88">permsMap</a>.size()*2); <span class='comment'>// no sync; estimate</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum365" class="linenum-cell" data-linenum="365" href="#linenum365"></a></td>
@@ -1528,7 +1528,7 @@
 </tr>
 <tr>
 <td><a id="linenum381" class="linenum-cell" data-linenum="381" href="#linenum381"></a></td>
-<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum206">ObjectInputStream</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a>,</pre></td>
+<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum217">ObjectInputStream</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum382" class="linenum-cell" data-linenum="382" href="#linenum382"></a></td>
@@ -1548,7 +1548,7 @@
 </tr>
 <tr>
 <td><a id="linenum386" class="linenum-cell" data-linenum="386" href="#linenum386"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum206">ObjectInputStream</a>.GetField gfields = <a class="variable" href="#linenum381">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum530">readFields</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum217">ObjectInputStream</a>.GetField gfields = <a class="variable" href="#linenum381">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum662">readFields</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum387" class="linenum-cell" data-linenum="387" href="#linenum387"></a></td>
@@ -1584,15 +1584,15 @@
 </tr>
 <tr>
 <td><a id="linenum395" class="linenum-cell" data-linenum="395" href="#linenum395"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;, <a class="type" href="/OdinCodeBrowserJdk8/java/security/PermissionCollection.html#linenum94">PermissionCollection</a>&gt; perms =</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;, <a class="type" href="/OdinCodeBrowserJdk8/java/security/PermissionCollection.html#linenum94">PermissionCollection</a>&gt; perms =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum396" class="linenum-cell" data-linenum="396" href="#linenum396"></a></td>
-<td><pre>            (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;, <a class="type" href="/OdinCodeBrowserJdk8/java/security/PermissionCollection.html#linenum94">PermissionCollection</a>&gt;)<a class="variable" href="#linenum386">gfields</a>.get(<span class='string'>&quot;perms&quot;</span>, null);</pre></td>
+<td><pre>            (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;, <a class="type" href="/OdinCodeBrowserJdk8/java/security/PermissionCollection.html#linenum94">PermissionCollection</a>&gt;)<a class="variable" href="#linenum386">gfields</a>.get(<span class='string'>&quot;perms&quot;</span>, null);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum397" class="linenum-cell" data-linenum="397" href="#linenum397"></a></td>
-<td><pre>        <a class="variable" href="#linenum88">permsMap</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;, <a class="type" href="/OdinCodeBrowserJdk8/java/security/PermissionCollection.html#linenum94">PermissionCollection</a>&gt;(<a class="variable" href="#linenum395">perms</a>.size()*2);</pre></td>
+<td><pre>        <a class="variable" href="#linenum88">permsMap</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;, <a class="type" href="/OdinCodeBrowserJdk8/java/security/PermissionCollection.html#linenum94">PermissionCollection</a>&gt;(<a class="variable" href="#linenum395">perms</a>.size()*2);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum398" class="linenum-cell" data-linenum="398" href="#linenum398"></a></td>
@@ -1612,7 +1612,7 @@
 </tr>
 <tr>
 <td><a id="linenum402" class="linenum-cell" data-linenum="402" href="#linenum402"></a></td>
-<td><pre>        (<a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermissionCollection.html#linenum48">UnresolvedPermissionCollection</a>) <a class="variable" href="#linenum88">permsMap</a>.get(<a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermission.html#linenum101">UnresolvedPermission</a>.class);</pre></td>
+<td><pre>        (<a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermissionCollection.html#linenum48">UnresolvedPermissionCollection</a>) <a class="variable" href="#linenum88">permsMap</a>.get(<a class="type" href="/OdinCodeBrowserJdk8/java/security/UnresolvedPermission.html#linenum105">UnresolvedPermission</a>.class);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum403" class="linenum-cell" data-linenum="403" href="#linenum403"></a></td>
@@ -1968,7 +1968,7 @@
 </tr>
 <tr>
 <td><a id="linenum491" class="linenum-cell" data-linenum="491" href="#linenum491"></a></td>
-<td><pre>        <a class="variable" href="#linenum484">permsMap</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>&gt;(11);</pre></td>
+<td><pre>        <a class="variable" href="#linenum484">permsMap</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>&gt;(11);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum492" class="linenum-cell" data-linenum="492" href="#linenum492"></a></td>
@@ -2180,7 +2180,7 @@
 </tr>
 <tr>
 <td><a id="linenum544" class="linenum-cell" data-linenum="544" href="#linenum544"></a></td>
-<td><pre>            return Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum5266">enumeration</a>(<a class="variable" href="#linenum484">permsMap</a>.values());</pre></td>
+<td><pre>            return Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum5261">enumeration</a>(<a class="variable" href="#linenum484">permsMap</a>.values());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum545" class="linenum-cell" data-linenum="545" href="#linenum545"></a></td>
@@ -2232,7 +2232,7 @@
 </tr>
 <tr>
 <td><a id="linenum557" class="linenum-cell" data-linenum="557" href="#linenum557"></a></td>
-<td><pre>        new <a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectStreamField.html#linenum42">ObjectStreamField</a>(<span class='string'>&quot;perms&quot;</span>, <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>.class),</pre></td>
+<td><pre>        new <a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectStreamField.html#linenum42">ObjectStreamField</a>(<span class='string'>&quot;perms&quot;</span>, <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>.class),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum558" class="linenum-cell" data-linenum="558" href="#linenum558"></a></td>
@@ -2288,11 +2288,11 @@
 </tr>
 <tr>
 <td><a id="linenum571" class="linenum-cell" data-linenum="571" href="#linenum571"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>&gt; perms =</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>&gt; perms =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum572" class="linenum-cell" data-linenum="572" href="#linenum572"></a></td>
-<td><pre>                new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;&gt;(<a class="variable" href="#linenum484">permsMap</a>.size()*2);</pre></td>
+<td><pre>                new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;&gt;(<a class="variable" href="#linenum484">permsMap</a>.size()*2);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum573" class="linenum-cell" data-linenum="573" href="#linenum573"></a></td>
@@ -2352,7 +2352,7 @@
 </tr>
 <tr>
 <td><a id="linenum587" class="linenum-cell" data-linenum="587" href="#linenum587"></a></td>
-<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum206">ObjectInputStream</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a>,</pre></td>
+<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum217">ObjectInputStream</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum588" class="linenum-cell" data-linenum="588" href="#linenum588"></a></td>
@@ -2372,7 +2372,7 @@
 </tr>
 <tr>
 <td><a id="linenum592" class="linenum-cell" data-linenum="592" href="#linenum592"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum206">ObjectInputStream</a>.GetField gfields = <a class="variable" href="#linenum587">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum530">readFields</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum217">ObjectInputStream</a>.GetField gfields = <a class="variable" href="#linenum587">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum662">readFields</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum593" class="linenum-cell" data-linenum="593" href="#linenum593"></a></td>
@@ -2396,15 +2396,15 @@
 </tr>
 <tr>
 <td><a id="linenum598" class="linenum-cell" data-linenum="598" href="#linenum598"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>&gt; perms =</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>&gt; perms =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum599" class="linenum-cell" data-linenum="599" href="#linenum599"></a></td>
-<td><pre>                (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>&gt;)<a class="variable" href="#linenum592">gfields</a>.get(<span class='string'>&quot;perms&quot;</span>, null);</pre></td>
+<td><pre>                (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>&gt;)<a class="variable" href="#linenum592">gfields</a>.get(<span class='string'>&quot;perms&quot;</span>, null);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum600" class="linenum-cell" data-linenum="600" href="#linenum600"></a></td>
-<td><pre>        <a class="variable" href="#linenum484">permsMap</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>&gt;(<a class="variable" href="#linenum598">perms</a>.size()*2);</pre></td>
+<td><pre>        <a class="variable" href="#linenum484">permsMap</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/security/Permission.html#linenum65">Permission</a>&gt;(<a class="variable" href="#linenum598">perms</a>.size()*2);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum601" class="linenum-cell" data-linenum="601" href="#linenum601"></a></td>

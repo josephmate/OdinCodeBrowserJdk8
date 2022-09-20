@@ -596,11 +596,11 @@
 </tr>
 <tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>                <a class="variable" href="#linenum139">firstSegmentsBuffer</a> = Helpers.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pisces/Helpers.html#linenum163">widenArray</a>(<a class="variable" href="#linenum139">firstSegmentsBuffer</a>,</pre></td>
+<td><pre>                <a class="variable" href="#linenum139">firstSegmentsBuffer</a> = Helpers.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pisces/Helpers.html#linenum156">widenArray</a>(<a class="variable" href="#linenum139">firstSegmentsBuffer</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre>                                      <a class="variable" href="#linenum140">firstSegidx</a>, <a class="variable" href="#linenum143">type</a> - 2);</pre></td>
+<td><pre>                                      <a class="variable" href="#linenum140">firstSegidx</a>, <a class="variable" href="#linenum143">type</a> - 2 + 1);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
@@ -608,7 +608,7 @@
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum143">pts</a>, <a class="variable" href="#linenum143">off</a>, <a class="variable" href="#linenum139">firstSegmentsBuffer</a>, <a class="variable" href="#linenum140">firstSegidx</a>, <a class="variable" href="#linenum143">type</a> - 2);</pre></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum143">pts</a>, <a class="variable" href="#linenum143">off</a>, <a class="variable" href="#linenum139">firstSegmentsBuffer</a>, <a class="variable" href="#linenum140">firstSegidx</a>, <a class="variable" href="#linenum143">type</a> - 2);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
@@ -1332,7 +1332,7 @@
 </tr>
 <tr>
 <td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
-<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum331">pts</a>, 0, <a class="variable" href="#linenum290">recCurveStack</a>[0], 0, <a class="variable" href="#linenum331">type</a>);</pre></td>
+<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum331">pts</a>, 0, <a class="variable" href="#linenum290">recCurveStack</a>[0], 0, <a class="variable" href="#linenum331">type</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
@@ -1452,7 +1452,7 @@
 </tr>
 <tr>
 <td><a id="linenum362" class="linenum-cell" data-linenum="362" href="#linenum362"></a></td>
-<td><pre>                if (!Helpers.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pisces/Helpers.html#linenum46">within</a>(<a class="variable" href="#linenum357">len1</a>, <a class="variable" href="#linenum358">len2</a>, <a class="variable" href="#linenum355">err</a>*<a class="variable" href="#linenum358">len2</a>)) {</pre></td>
+<td><pre>                if (!Helpers.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pisces/Helpers.html#linenum41">within</a>(<a class="variable" href="#linenum357">len1</a>, <a class="variable" href="#linenum358">len2</a>, <a class="variable" href="#linenum355">err</a>*<a class="variable" href="#linenum358">len2</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum363" class="linenum-cell" data-linenum="363" href="#linenum363"></a></td>
@@ -1488,11 +1488,11 @@
 </tr>
 <tr>
 <td><a id="linenum371" class="linenum-cell" data-linenum="371" href="#linenum371"></a></td>
-<td><pre>                    if (!(Helpers.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pisces/Helpers.html#linenum46">within</a>(<a class="variable" href="#linenum358">len2</a>, <a class="variable" href="#linenum367">len3</a>, <a class="variable" href="#linenum355">err</a>*<a class="variable" href="#linenum367">len3</a>) &amp;&amp;</pre></td>
+<td><pre>                    if (!(Helpers.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pisces/Helpers.html#linenum41">within</a>(<a class="variable" href="#linenum358">len2</a>, <a class="variable" href="#linenum367">len3</a>, <a class="variable" href="#linenum355">err</a>*<a class="variable" href="#linenum367">len3</a>) &amp;&amp;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum372" class="linenum-cell" data-linenum="372" href="#linenum372"></a></td>
-<td><pre>                          Helpers.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pisces/Helpers.html#linenum46">within</a>(<a class="variable" href="#linenum357">len1</a>, <a class="variable" href="#linenum367">len3</a>, <a class="variable" href="#linenum355">err</a>*<a class="variable" href="#linenum367">len3</a>))) {</pre></td>
+<td><pre>                          Helpers.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pisces/Helpers.html#linenum41">within</a>(<a class="variable" href="#linenum357">len1</a>, <a class="variable" href="#linenum367">len3</a>, <a class="variable" href="#linenum355">err</a>*<a class="variable" href="#linenum367">len3</a>))) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum373" class="linenum-cell" data-linenum="373" href="#linenum373"></a></td>
@@ -1772,7 +1772,7 @@
 </tr>
 <tr>
 <td><a id="linenum442" class="linenum-cell" data-linenum="442" href="#linenum442"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum441">n</a> == 1 &amp;&amp; !Float.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Float.html#linenum542">isNaN</a>(<a class="variable" href="#linenum386">nextRoots</a>[0])) {</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum441">n</a> == 1 &amp;&amp; !Float.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Float.html#linenum462">isNaN</a>(<a class="variable" href="#linenum386">nextRoots</a>[0])) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum443" class="linenum-cell" data-linenum="443" href="#linenum443"></a></td>
@@ -1928,7 +1928,7 @@
 </tr>
 <tr>
 <td><a id="linenum481" class="linenum-cell" data-linenum="481" href="#linenum481"></a></td>
-<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum290">recCurveStack</a>[<a class="variable" href="#linenum307">recLevel</a>], 0, <a class="variable" href="#linenum290">recCurveStack</a>[<a class="variable" href="#linenum307">recLevel</a>+1], 0, <a class="variable" href="#linenum294">curveType</a>);</pre></td>
+<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum290">recCurveStack</a>[<a class="variable" href="#linenum307">recLevel</a>], 0, <a class="variable" href="#linenum290">recCurveStack</a>[<a class="variable" href="#linenum307">recLevel</a>+1], 0, <a class="variable" href="#linenum294">curveType</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum482" class="linenum-cell" data-linenum="482" href="#linenum482"></a></td>

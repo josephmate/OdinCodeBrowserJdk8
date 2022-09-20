@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 1997, 2013, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 1997, 2014, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -848,7 +848,7 @@
 </tr>
 <tr>
 <td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
-<td><pre>    &lt;T&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>[] toArray(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>[] a);</pre></td>
+<td><pre>    &lt;T&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>[] toArray(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>[] a);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
@@ -1644,11 +1644,11 @@
 </tr>
 <tr>
 <td><a id="linenum410" class="linenum-cell" data-linenum="410" href="#linenum410"></a></td>
-<td><pre>        Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum288">requireNonNull</a>(<a class="variable" href="#linenum409">operator</a>);</pre></td>
+<td><pre>        Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum201">requireNonNull</a>(<a class="variable" href="#linenum409">operator</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum411" class="linenum-cell" data-linenum="411" href="#linenum411"></a></td>
-<td><pre>        final <a class="type" href="/OdinCodeBrowserJdk8/java/util/ListIterator.html#linenum60">ListIterator</a>&lt;E&gt; li = this.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum625">listIterator</a>();</pre></td>
+<td><pre>        final <a class="type" href="/OdinCodeBrowserJdk8/java/util/ListIterator.html#linenum60">ListIterator</a>&lt;E&gt; li = this.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum653">listIterator</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum412" class="linenum-cell" data-linenum="412" href="#linenum412"></a></td>
@@ -1676,435 +1676,435 @@
 </tr>
 <tr>
 <td><a id="linenum418" class="linenum-cell" data-linenum="418" href="#linenum418"></a></td>
-<td><pre><span class='comment'>     * Sorts this list using the supplied {@code Comparator} to compare elements.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Sorts this list according to the order induced by the specified<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum419" class="linenum-cell" data-linenum="419" href="#linenum419"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * {@link Comparator}.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum420" class="linenum-cell" data-linenum="420" href="#linenum420"></a></td>
-<td><pre><span class='comment'>     * @implSpec<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum421" class="linenum-cell" data-linenum="421" href="#linenum421"></a></td>
-<td><pre><span class='comment'>     * The default implementation is equivalent to, for this {@code list}:<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * &lt;p&gt;All elements in this list must be &lt;i&gt;mutually comparable&lt;/i&gt; using the<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum422" class="linenum-cell" data-linenum="422" href="#linenum422"></a></td>
-<td><pre><span class='comment'>     * &lt;pre&gt;Collections.sort(list, c)&lt;/pre&gt;<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * specified comparator (that is, {@code c.compare(e1, e2)} must not throw<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum423" class="linenum-cell" data-linenum="423" href="#linenum423"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * a {@code ClassCastException} for any elements {@code e1} and {@code e2}<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum424" class="linenum-cell" data-linenum="424" href="#linenum424"></a></td>
-<td><pre><span class='comment'>     * @param c the {@code Comparator} used to compare list elements.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * in the list).<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum425" class="linenum-cell" data-linenum="425" href="#linenum425"></a></td>
-<td><pre><span class='comment'>     *          A {@code null} value indicates that the elements'<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum426" class="linenum-cell" data-linenum="426" href="#linenum426"></a></td>
-<td><pre><span class='comment'>     *          {@linkplain Comparable natural ordering} should be used<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * &lt;p&gt;If the specified comparator is {@code null} then all elements in this<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum427" class="linenum-cell" data-linenum="427" href="#linenum427"></a></td>
-<td><pre><span class='comment'>     * @throws ClassCastException if the list contains elements that are not<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * list must implement the {@link Comparable} interface and the elements'<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum428" class="linenum-cell" data-linenum="428" href="#linenum428"></a></td>
-<td><pre><span class='comment'>     *         &lt;i&gt;mutually comparable&lt;/i&gt; using the specified comparator<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * {@linkplain Comparable natural ordering} should be used.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum429" class="linenum-cell" data-linenum="429" href="#linenum429"></a></td>
-<td><pre><span class='comment'>     * @throws UnsupportedOperationException if the list's list-iterator does<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum430" class="linenum-cell" data-linenum="430" href="#linenum430"></a></td>
-<td><pre><span class='comment'>     *         not support the {@code set} operation<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * &lt;p&gt;This list must be modifiable, but need not be resizable.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum431" class="linenum-cell" data-linenum="431" href="#linenum431"></a></td>
-<td><pre><span class='comment'>     * @throws IllegalArgumentException<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum432" class="linenum-cell" data-linenum="432" href="#linenum432"></a></td>
-<td><pre><span class='comment'>     *         (&lt;a href=&quot;Collection.html#optional-restrictions&quot;&gt;optional&lt;/a&gt;)<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @implSpec<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum433" class="linenum-cell" data-linenum="433" href="#linenum433"></a></td>
-<td><pre><span class='comment'>     *         if the comparator is found to violate the {@link Comparator}<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * The default implementation obtains an array containing all elements in<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum434" class="linenum-cell" data-linenum="434" href="#linenum434"></a></td>
-<td><pre><span class='comment'>     *         contract<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * this list, sorts the array, and iterates over this list resetting each<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum435" class="linenum-cell" data-linenum="435" href="#linenum435"></a></td>
-<td><pre><span class='comment'>     * @since 1.8<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * element from the corresponding position in the array. (This avoids the<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum436" class="linenum-cell" data-linenum="436" href="#linenum436"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * n&lt;sup&gt;2&lt;/sup&gt; log(n) performance that would result from attempting<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum437" class="linenum-cell" data-linenum="437" href="#linenum437"></a></td>
-<td><pre>    default void sort(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Comparator.html#linenum108">Comparator</a>&lt;? super E&gt; c) {</pre></td>
+<td><pre><span class='comment'>     * to sort a linked list in place.)<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum438" class="linenum-cell" data-linenum="438" href="#linenum438"></a></td>
-<td><pre>        Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum227">sort</a>(this, <a class="variable" href="#linenum437">c</a>);</pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum439" class="linenum-cell" data-linenum="439" href="#linenum439"></a></td>
-<td><pre>    }</pre></td>
+<td><pre><span class='comment'>     * @implNote<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum440" class="linenum-cell" data-linenum="440" href="#linenum440"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * This implementation is a stable, adaptive, iterative mergesort that<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum441" class="linenum-cell" data-linenum="441" href="#linenum441"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre><span class='comment'>     * requires far fewer than n lg(n) comparisons when the input array is<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum442" class="linenum-cell" data-linenum="442" href="#linenum442"></a></td>
-<td><pre><span class='comment'>     * Removes all of the elements from this list (optional operation).<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * partially sorted, while offering the performance of a traditional<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum443" class="linenum-cell" data-linenum="443" href="#linenum443"></a></td>
-<td><pre><span class='comment'>     * The list will be empty after this call returns.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * mergesort when the input array is randomly ordered.  If the input array<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum444" class="linenum-cell" data-linenum="444" href="#linenum444"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * is nearly sorted, the implementation requires approximately n<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum445" class="linenum-cell" data-linenum="445" href="#linenum445"></a></td>
-<td><pre><span class='comment'>     * @throws UnsupportedOperationException if the &lt;tt&gt;clear&lt;/tt&gt; operation<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * comparisons.  Temporary storage requirements vary from a small constant<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum446" class="linenum-cell" data-linenum="446" href="#linenum446"></a></td>
-<td><pre><span class='comment'>     *         is not supported by this list<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * for nearly sorted input arrays to n/2 object references for randomly<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum447" class="linenum-cell" data-linenum="447" href="#linenum447"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * ordered input arrays.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum448" class="linenum-cell" data-linenum="448" href="#linenum448"></a></td>
-<td><pre>    void clear();</pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum449" class="linenum-cell" data-linenum="449" href="#linenum449"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * &lt;p&gt;The implementation takes equal advantage of ascending and<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum450" class="linenum-cell" data-linenum="450" href="#linenum450"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * descending order in its input array, and can take advantage of<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum451" class="linenum-cell" data-linenum="451" href="#linenum451"></a></td>
-<td><pre>    // Comparison and hashing</pre></td>
+<td><pre><span class='comment'>     * ascending and descending order in different parts of the same<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum452" class="linenum-cell" data-linenum="452" href="#linenum452"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * input array.  It is well-suited to merging two or more sorted arrays:<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum453" class="linenum-cell" data-linenum="453" href="#linenum453"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre><span class='comment'>     * simply concatenate the arrays and sort the resulting array.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum454" class="linenum-cell" data-linenum="454" href="#linenum454"></a></td>
-<td><pre><span class='comment'>     * Compares the specified object with this list for equality.  Returns<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum455" class="linenum-cell" data-linenum="455" href="#linenum455"></a></td>
-<td><pre><span class='comment'>     * &lt;tt&gt;true&lt;/tt&gt; if and only if the specified object is also a list, both<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * &lt;p&gt;The implementation was adapted from Tim Peters's list sort for Python<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum456" class="linenum-cell" data-linenum="456" href="#linenum456"></a></td>
-<td><pre><span class='comment'>     * lists have the same size, and all corresponding pairs of elements in<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * (&lt;a href=&quot;http://svn.python.org/projects/python/trunk/Objects/listsort.txt&quot;&gt;<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum457" class="linenum-cell" data-linenum="457" href="#linenum457"></a></td>
-<td><pre><span class='comment'>     * the two lists are &lt;i&gt;equal&lt;/i&gt;.  (Two elements &lt;tt&gt;e1&lt;/tt&gt; and<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * TimSort&lt;/a&gt;).  It uses techniques from Peter McIlroy's &quot;Optimistic<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum458" class="linenum-cell" data-linenum="458" href="#linenum458"></a></td>
-<td><pre><span class='comment'>     * &lt;tt&gt;e2&lt;/tt&gt; are &lt;i&gt;equal&lt;/i&gt; if &lt;tt&gt;(e1==null ? e2==null :<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Sorting and Information Theoretic Complexity&quot;, in Proceedings of the<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum459" class="linenum-cell" data-linenum="459" href="#linenum459"></a></td>
-<td><pre><span class='comment'>     * e1.equals(e2))&lt;/tt&gt;.)  In other words, two lists are defined to be<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Fourth Annual ACM-SIAM Symposium on Discrete Algorithms, pp 467-474,<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum460" class="linenum-cell" data-linenum="460" href="#linenum460"></a></td>
-<td><pre><span class='comment'>     * equal if they contain the same elements in the same order.  This<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * January 1993.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum461" class="linenum-cell" data-linenum="461" href="#linenum461"></a></td>
-<td><pre><span class='comment'>     * definition ensures that the equals method works properly across<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum462" class="linenum-cell" data-linenum="462" href="#linenum462"></a></td>
-<td><pre><span class='comment'>     * different implementations of the &lt;tt&gt;List&lt;/tt&gt; interface.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param c the {@code Comparator} used to compare list elements.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum463" class="linenum-cell" data-linenum="463" href="#linenum463"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *          A {@code null} value indicates that the elements'<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum464" class="linenum-cell" data-linenum="464" href="#linenum464"></a></td>
-<td><pre><span class='comment'>     * @param o the object to be compared for equality with this list<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *          {@linkplain Comparable natural ordering} should be used<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum465" class="linenum-cell" data-linenum="465" href="#linenum465"></a></td>
-<td><pre><span class='comment'>     * @return &lt;tt&gt;true&lt;/tt&gt; if the specified object is equal to this list<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @throws ClassCastException if the list contains elements that are not<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum466" class="linenum-cell" data-linenum="466" href="#linenum466"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     *         &lt;i&gt;mutually comparable&lt;/i&gt; using the specified comparator<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum467" class="linenum-cell" data-linenum="467" href="#linenum467"></a></td>
-<td><pre>    boolean equals(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> o);</pre></td>
+<td><pre><span class='comment'>     * @throws UnsupportedOperationException if the list's list-iterator does<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum468" class="linenum-cell" data-linenum="468" href="#linenum468"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     *         not support the {@code set} operation<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum469" class="linenum-cell" data-linenum="469" href="#linenum469"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre><span class='comment'>     * @throws IllegalArgumentException<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum470" class="linenum-cell" data-linenum="470" href="#linenum470"></a></td>
-<td><pre><span class='comment'>     * Returns the hash code value for this list.  The hash code of a list<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *         (&lt;a href=&quot;Collection.html#optional-restrictions&quot;&gt;optional&lt;/a&gt;)<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum471" class="linenum-cell" data-linenum="471" href="#linenum471"></a></td>
-<td><pre><span class='comment'>     * is defined to be the result of the following calculation:<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *         if the comparator is found to violate the {@link Comparator}<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum472" class="linenum-cell" data-linenum="472" href="#linenum472"></a></td>
-<td><pre><span class='comment'>     * &lt;pre&gt;{@code<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *         contract<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum473" class="linenum-cell" data-linenum="473" href="#linenum473"></a></td>
-<td><pre><span class='comment'>     *     int hashCode = 1;<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @since 1.8<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum474" class="linenum-cell" data-linenum="474" href="#linenum474"></a></td>
-<td><pre><span class='comment'>     *     for (E e : list)<span class='comment'></pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum475" class="linenum-cell" data-linenum="475" href="#linenum475"></a></td>
-<td><pre><span class='comment'>     *         hashCode = 31*hashCode + (e==null ? 0 : e.hashCode());<span class='comment'></pre></td>
+<td><pre>    @SuppressWarnings({<span class='string'>&quot;unchecked&quot;</span>, <span class='string'>&quot;rawtypes&quot;</span>})</pre></td>
 </tr>
 <tr>
 <td><a id="linenum476" class="linenum-cell" data-linenum="476" href="#linenum476"></a></td>
-<td><pre><span class='comment'>     * }&lt;/pre&gt;<span class='comment'></pre></td>
+<td><pre>    default void sort(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Comparator.html#linenum108">Comparator</a>&lt;? super E&gt; c) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum477" class="linenum-cell" data-linenum="477" href="#linenum477"></a></td>
-<td><pre><span class='comment'>     * This ensures that &lt;tt&gt;list1.equals(list2)&lt;/tt&gt; implies that<span class='comment'></pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] a = this.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum170">toArray</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum478" class="linenum-cell" data-linenum="478" href="#linenum478"></a></td>
-<td><pre><span class='comment'>     * &lt;tt&gt;list1.hashCode()==list2.hashCode()&lt;/tt&gt; for any two lists,<span class='comment'></pre></td>
+<td><pre>        Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum1431">sort</a>(<a class="variable" href="#linenum477">a</a>, (<a class="type" href="/OdinCodeBrowserJdk8/java/util/Comparator.html#linenum108">Comparator</a>) <a class="variable" href="#linenum476">c</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum479" class="linenum-cell" data-linenum="479" href="#linenum479"></a></td>
-<td><pre><span class='comment'>     * &lt;tt&gt;list1&lt;/tt&gt; and &lt;tt&gt;list2&lt;/tt&gt;, as required by the general<span class='comment'></pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/ListIterator.html#linenum60">ListIterator</a>&lt;E&gt; i = this.<a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum653">listIterator</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum480" class="linenum-cell" data-linenum="480" href="#linenum480"></a></td>
-<td><pre><span class='comment'>     * contract of {@link Object#hashCode}.<span class='comment'></pre></td>
+<td><pre>        for (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> e : <a class="variable" href="#linenum477">a</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum481" class="linenum-cell" data-linenum="481" href="#linenum481"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre>            <a class="variable" href="#linenum479">i</a>.next();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum482" class="linenum-cell" data-linenum="482" href="#linenum482"></a></td>
-<td><pre><span class='comment'>     * @return the hash code value for this list<span class='comment'></pre></td>
+<td><pre>            <a class="variable" href="#linenum479">i</a>.set((E) <a class="variable" href="#linenum238">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum483" class="linenum-cell" data-linenum="483" href="#linenum483"></a></td>
-<td><pre><span class='comment'>     * @see Object#equals(Object)<span class='comment'></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum484" class="linenum-cell" data-linenum="484" href="#linenum484"></a></td>
-<td><pre><span class='comment'>     * @see #equals(Object)<span class='comment'></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum485" class="linenum-cell" data-linenum="485" href="#linenum485"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum486" class="linenum-cell" data-linenum="486" href="#linenum486"></a></td>
-<td><pre>    int hashCode();</pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum487" class="linenum-cell" data-linenum="487" href="#linenum487"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * Removes all of the elements from this list (optional operation).<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum488" class="linenum-cell" data-linenum="488" href="#linenum488"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * The list will be empty after this call returns.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum489" class="linenum-cell" data-linenum="489" href="#linenum489"></a></td>
-<td><pre>    // Positional Access Operations</pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum490" class="linenum-cell" data-linenum="490" href="#linenum490"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * @throws UnsupportedOperationException if the &lt;tt&gt;clear&lt;/tt&gt; operation<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum491" class="linenum-cell" data-linenum="491" href="#linenum491"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum492" class="linenum-cell" data-linenum="492" href="#linenum492"></a></td>
-<td><pre><span class='comment'>     * Returns the element at the specified position in this list.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum493" class="linenum-cell" data-linenum="493" href="#linenum493"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum494" class="linenum-cell" data-linenum="494" href="#linenum494"></a></td>
-<td><pre><span class='comment'>     * @param index index of the element to return<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum495" class="linenum-cell" data-linenum="495" href="#linenum495"></a></td>
-<td><pre><span class='comment'>     * @return the element at the specified position in this list<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum496" class="linenum-cell" data-linenum="496" href="#linenum496"></a></td>
-<td><pre><span class='comment'>     * @throws IndexOutOfBoundsException if the index is out of range<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum497" class="linenum-cell" data-linenum="497" href="#linenum497"></a></td>
-<td><pre><span class='comment'>     *         (&lt;tt&gt;index &amp;lt; 0 || index &amp;gt;= size()&lt;/tt&gt;)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum498" class="linenum-cell" data-linenum="498" href="#linenum498"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum499" class="linenum-cell" data-linenum="499" href="#linenum499"></a></td>
-<td><pre>    E get(int index);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum500" class="linenum-cell" data-linenum="500" href="#linenum500"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum501" class="linenum-cell" data-linenum="501" href="#linenum501"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum502" class="linenum-cell" data-linenum="502" href="#linenum502"></a></td>
-<td><pre><span class='comment'>     * Replaces the element at the specified position in this list with the<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum503" class="linenum-cell" data-linenum="503" href="#linenum503"></a></td>
-<td><pre><span class='comment'>     * specified element (optional operation).<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum504" class="linenum-cell" data-linenum="504" href="#linenum504"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum505" class="linenum-cell" data-linenum="505" href="#linenum505"></a></td>
-<td><pre><span class='comment'>     * @param index index of the element to replace<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum506" class="linenum-cell" data-linenum="506" href="#linenum506"></a></td>
-<td><pre><span class='comment'>     * @param element element to be stored at the specified position<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum507" class="linenum-cell" data-linenum="507" href="#linenum507"></a></td>
-<td><pre><span class='comment'>     * @return the element previously at the specified position<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum508" class="linenum-cell" data-linenum="508" href="#linenum508"></a></td>
-<td><pre><span class='comment'>     * @throws UnsupportedOperationException if the &lt;tt&gt;set&lt;/tt&gt; operation<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum509" class="linenum-cell" data-linenum="509" href="#linenum509"></a></td>
 <td><pre><span class='comment'>     *         is not supported by this list<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum510" class="linenum-cell" data-linenum="510" href="#linenum510"></a></td>
-<td><pre><span class='comment'>     * @throws ClassCastException if the class of the specified element<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum511" class="linenum-cell" data-linenum="511" href="#linenum511"></a></td>
-<td><pre><span class='comment'>     *         prevents it from being added to this list<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum512" class="linenum-cell" data-linenum="512" href="#linenum512"></a></td>
-<td><pre><span class='comment'>     * @throws NullPointerException if the specified element is null and<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum513" class="linenum-cell" data-linenum="513" href="#linenum513"></a></td>
-<td><pre><span class='comment'>     *         this list does not permit null elements<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum514" class="linenum-cell" data-linenum="514" href="#linenum514"></a></td>
-<td><pre><span class='comment'>     * @throws IllegalArgumentException if some property of the specified<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum515" class="linenum-cell" data-linenum="515" href="#linenum515"></a></td>
-<td><pre><span class='comment'>     *         element prevents it from being added to this list<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum516" class="linenum-cell" data-linenum="516" href="#linenum516"></a></td>
-<td><pre><span class='comment'>     * @throws IndexOutOfBoundsException if the index is out of range<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum517" class="linenum-cell" data-linenum="517" href="#linenum517"></a></td>
-<td><pre><span class='comment'>     *         (&lt;tt&gt;index &amp;lt; 0 || index &amp;gt;= size()&lt;/tt&gt;)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum518" class="linenum-cell" data-linenum="518" href="#linenum518"></a></td>
+<td><a id="linenum492" class="linenum-cell" data-linenum="492" href="#linenum492"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum519" class="linenum-cell" data-linenum="519" href="#linenum519"></a></td>
-<td><pre>    E set(int index, E element);</pre></td>
+<td><a id="linenum493" class="linenum-cell" data-linenum="493" href="#linenum493"></a></td>
+<td><pre>    void clear();</pre></td>
 </tr>
 <tr>
-<td><a id="linenum520" class="linenum-cell" data-linenum="520" href="#linenum520"></a></td>
+<td><a id="linenum494" class="linenum-cell" data-linenum="494" href="#linenum494"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum521" class="linenum-cell" data-linenum="521" href="#linenum521"></a></td>
+<td><a id="linenum495" class="linenum-cell" data-linenum="495" href="#linenum495"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum496" class="linenum-cell" data-linenum="496" href="#linenum496"></a></td>
+<td><pre>    // Comparison and hashing</pre></td>
+</tr>
+<tr>
+<td><a id="linenum497" class="linenum-cell" data-linenum="497" href="#linenum497"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum498" class="linenum-cell" data-linenum="498" href="#linenum498"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
+<td><a id="linenum499" class="linenum-cell" data-linenum="499" href="#linenum499"></a></td>
+<td><pre><span class='comment'>     * Compares the specified object with this list for equality.  Returns<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum500" class="linenum-cell" data-linenum="500" href="#linenum500"></a></td>
+<td><pre><span class='comment'>     * &lt;tt&gt;true&lt;/tt&gt; if and only if the specified object is also a list, both<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum501" class="linenum-cell" data-linenum="501" href="#linenum501"></a></td>
+<td><pre><span class='comment'>     * lists have the same size, and all corresponding pairs of elements in<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum502" class="linenum-cell" data-linenum="502" href="#linenum502"></a></td>
+<td><pre><span class='comment'>     * the two lists are &lt;i&gt;equal&lt;/i&gt;.  (Two elements &lt;tt&gt;e1&lt;/tt&gt; and<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum503" class="linenum-cell" data-linenum="503" href="#linenum503"></a></td>
+<td><pre><span class='comment'>     * &lt;tt&gt;e2&lt;/tt&gt; are &lt;i&gt;equal&lt;/i&gt; if &lt;tt&gt;(e1==null ? e2==null :<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum504" class="linenum-cell" data-linenum="504" href="#linenum504"></a></td>
+<td><pre><span class='comment'>     * e1.equals(e2))&lt;/tt&gt;.)  In other words, two lists are defined to be<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum505" class="linenum-cell" data-linenum="505" href="#linenum505"></a></td>
+<td><pre><span class='comment'>     * equal if they contain the same elements in the same order.  This<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum506" class="linenum-cell" data-linenum="506" href="#linenum506"></a></td>
+<td><pre><span class='comment'>     * definition ensures that the equals method works properly across<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum507" class="linenum-cell" data-linenum="507" href="#linenum507"></a></td>
+<td><pre><span class='comment'>     * different implementations of the &lt;tt&gt;List&lt;/tt&gt; interface.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum508" class="linenum-cell" data-linenum="508" href="#linenum508"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum509" class="linenum-cell" data-linenum="509" href="#linenum509"></a></td>
+<td><pre><span class='comment'>     * @param o the object to be compared for equality with this list<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum510" class="linenum-cell" data-linenum="510" href="#linenum510"></a></td>
+<td><pre><span class='comment'>     * @return &lt;tt&gt;true&lt;/tt&gt; if the specified object is equal to this list<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum511" class="linenum-cell" data-linenum="511" href="#linenum511"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum512" class="linenum-cell" data-linenum="512" href="#linenum512"></a></td>
+<td><pre>    boolean equals(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> o);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum513" class="linenum-cell" data-linenum="513" href="#linenum513"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum514" class="linenum-cell" data-linenum="514" href="#linenum514"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum515" class="linenum-cell" data-linenum="515" href="#linenum515"></a></td>
+<td><pre><span class='comment'>     * Returns the hash code value for this list.  The hash code of a list<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum516" class="linenum-cell" data-linenum="516" href="#linenum516"></a></td>
+<td><pre><span class='comment'>     * is defined to be the result of the following calculation:<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum517" class="linenum-cell" data-linenum="517" href="#linenum517"></a></td>
+<td><pre><span class='comment'>     * &lt;pre&gt;{@code<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum518" class="linenum-cell" data-linenum="518" href="#linenum518"></a></td>
+<td><pre><span class='comment'>     *     int hashCode = 1;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum519" class="linenum-cell" data-linenum="519" href="#linenum519"></a></td>
+<td><pre><span class='comment'>     *     for (E e : list)<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum520" class="linenum-cell" data-linenum="520" href="#linenum520"></a></td>
+<td><pre><span class='comment'>     *         hashCode = 31*hashCode + (e==null ? 0 : e.hashCode());<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum521" class="linenum-cell" data-linenum="521" href="#linenum521"></a></td>
+<td><pre><span class='comment'>     * }&lt;/pre&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
 <td><a id="linenum522" class="linenum-cell" data-linenum="522" href="#linenum522"></a></td>
-<td><pre><span class='comment'>     * Inserts the specified element at the specified position in this list<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * This ensures that &lt;tt&gt;list1.equals(list2)&lt;/tt&gt; implies that<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum523" class="linenum-cell" data-linenum="523" href="#linenum523"></a></td>
-<td><pre><span class='comment'>     * (optional operation).  Shifts the element currently at that position<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * &lt;tt&gt;list1.hashCode()==list2.hashCode()&lt;/tt&gt; for any two lists,<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum524" class="linenum-cell" data-linenum="524" href="#linenum524"></a></td>
-<td><pre><span class='comment'>     * (if any) and any subsequent elements to the right (adds one to their<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * &lt;tt&gt;list1&lt;/tt&gt; and &lt;tt&gt;list2&lt;/tt&gt;, as required by the general<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum525" class="linenum-cell" data-linenum="525" href="#linenum525"></a></td>
-<td><pre><span class='comment'>     * indices).<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * contract of {@link Object#hashCode}.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum526" class="linenum-cell" data-linenum="526" href="#linenum526"></a></td>
@@ -2112,491 +2112,491 @@
 </tr>
 <tr>
 <td><a id="linenum527" class="linenum-cell" data-linenum="527" href="#linenum527"></a></td>
-<td><pre><span class='comment'>     * @param index index at which the specified element is to be inserted<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @return the hash code value for this list<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum528" class="linenum-cell" data-linenum="528" href="#linenum528"></a></td>
-<td><pre><span class='comment'>     * @param element element to be inserted<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @see Object#equals(Object)<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum529" class="linenum-cell" data-linenum="529" href="#linenum529"></a></td>
-<td><pre><span class='comment'>     * @throws UnsupportedOperationException if the &lt;tt&gt;add&lt;/tt&gt; operation<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @see #equals(Object)<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum530" class="linenum-cell" data-linenum="530" href="#linenum530"></a></td>
-<td><pre><span class='comment'>     *         is not supported by this list<span class='comment'></pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum531" class="linenum-cell" data-linenum="531" href="#linenum531"></a></td>
-<td><pre><span class='comment'>     * @throws ClassCastException if the class of the specified element<span class='comment'></pre></td>
+<td><pre>    int hashCode();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum532" class="linenum-cell" data-linenum="532" href="#linenum532"></a></td>
-<td><pre><span class='comment'>     *         prevents it from being added to this list<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum533" class="linenum-cell" data-linenum="533" href="#linenum533"></a></td>
-<td><pre><span class='comment'>     * @throws NullPointerException if the specified element is null and<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum534" class="linenum-cell" data-linenum="534" href="#linenum534"></a></td>
-<td><pre><span class='comment'>     *         this list does not permit null elements<span class='comment'></pre></td>
+<td><pre>    // Positional Access Operations</pre></td>
 </tr>
 <tr>
 <td><a id="linenum535" class="linenum-cell" data-linenum="535" href="#linenum535"></a></td>
-<td><pre><span class='comment'>     * @throws IllegalArgumentException if some property of the specified<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum536" class="linenum-cell" data-linenum="536" href="#linenum536"></a></td>
-<td><pre><span class='comment'>     *         element prevents it from being added to this list<span class='comment'></pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum537" class="linenum-cell" data-linenum="537" href="#linenum537"></a></td>
-<td><pre><span class='comment'>     * @throws IndexOutOfBoundsException if the index is out of range<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns the element at the specified position in this list.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum538" class="linenum-cell" data-linenum="538" href="#linenum538"></a></td>
-<td><pre><span class='comment'>     *         (&lt;tt&gt;index &amp;lt; 0 || index &amp;gt; size()&lt;/tt&gt;)<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum539" class="linenum-cell" data-linenum="539" href="#linenum539"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * @param index index of the element to return<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum540" class="linenum-cell" data-linenum="540" href="#linenum540"></a></td>
-<td><pre>    void add(int index, E element);</pre></td>
+<td><pre><span class='comment'>     * @return the element at the specified position in this list<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum541" class="linenum-cell" data-linenum="541" href="#linenum541"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * @throws IndexOutOfBoundsException if the index is out of range<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum542" class="linenum-cell" data-linenum="542" href="#linenum542"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum543" class="linenum-cell" data-linenum="543" href="#linenum543"></a></td>
-<td><pre><span class='comment'>     * Removes the element at the specified position in this list (optional<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum544" class="linenum-cell" data-linenum="544" href="#linenum544"></a></td>
-<td><pre><span class='comment'>     * operation).  Shifts any subsequent elements to the left (subtracts one<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum545" class="linenum-cell" data-linenum="545" href="#linenum545"></a></td>
-<td><pre><span class='comment'>     * from their indices).  Returns the element that was removed from the<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum546" class="linenum-cell" data-linenum="546" href="#linenum546"></a></td>
-<td><pre><span class='comment'>     * list.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum547" class="linenum-cell" data-linenum="547" href="#linenum547"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum548" class="linenum-cell" data-linenum="548" href="#linenum548"></a></td>
-<td><pre><span class='comment'>     * @param index the index of the element to be removed<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum549" class="linenum-cell" data-linenum="549" href="#linenum549"></a></td>
-<td><pre><span class='comment'>     * @return the element previously at the specified position<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum550" class="linenum-cell" data-linenum="550" href="#linenum550"></a></td>
-<td><pre><span class='comment'>     * @throws UnsupportedOperationException if the &lt;tt&gt;remove&lt;/tt&gt; operation<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum551" class="linenum-cell" data-linenum="551" href="#linenum551"></a></td>
-<td><pre><span class='comment'>     *         is not supported by this list<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum552" class="linenum-cell" data-linenum="552" href="#linenum552"></a></td>
-<td><pre><span class='comment'>     * @throws IndexOutOfBoundsException if the index is out of range<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum553" class="linenum-cell" data-linenum="553" href="#linenum553"></a></td>
 <td><pre><span class='comment'>     *         (&lt;tt&gt;index &amp;lt; 0 || index &amp;gt;= size()&lt;/tt&gt;)<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum554" class="linenum-cell" data-linenum="554" href="#linenum554"></a></td>
+<td><a id="linenum543" class="linenum-cell" data-linenum="543" href="#linenum543"></a></td>
 <td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum544" class="linenum-cell" data-linenum="544" href="#linenum544"></a></td>
+<td><pre>    E get(int index);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum545" class="linenum-cell" data-linenum="545" href="#linenum545"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum546" class="linenum-cell" data-linenum="546" href="#linenum546"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum547" class="linenum-cell" data-linenum="547" href="#linenum547"></a></td>
+<td><pre><span class='comment'>     * Replaces the element at the specified position in this list with the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum548" class="linenum-cell" data-linenum="548" href="#linenum548"></a></td>
+<td><pre><span class='comment'>     * specified element (optional operation).<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum549" class="linenum-cell" data-linenum="549" href="#linenum549"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum550" class="linenum-cell" data-linenum="550" href="#linenum550"></a></td>
+<td><pre><span class='comment'>     * @param index index of the element to replace<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum551" class="linenum-cell" data-linenum="551" href="#linenum551"></a></td>
+<td><pre><span class='comment'>     * @param element element to be stored at the specified position<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum552" class="linenum-cell" data-linenum="552" href="#linenum552"></a></td>
+<td><pre><span class='comment'>     * @return the element previously at the specified position<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum553" class="linenum-cell" data-linenum="553" href="#linenum553"></a></td>
+<td><pre><span class='comment'>     * @throws UnsupportedOperationException if the &lt;tt&gt;set&lt;/tt&gt; operation<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum554" class="linenum-cell" data-linenum="554" href="#linenum554"></a></td>
+<td><pre><span class='comment'>     *         is not supported by this list<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum555" class="linenum-cell" data-linenum="555" href="#linenum555"></a></td>
-<td><pre>    E remove(int index);</pre></td>
+<td><pre><span class='comment'>     * @throws ClassCastException if the class of the specified element<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum556" class="linenum-cell" data-linenum="556" href="#linenum556"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     *         prevents it from being added to this list<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum557" class="linenum-cell" data-linenum="557" href="#linenum557"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * @throws NullPointerException if the specified element is null and<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum558" class="linenum-cell" data-linenum="558" href="#linenum558"></a></td>
-<td><pre>    // Search Operations</pre></td>
+<td><pre><span class='comment'>     *         this list does not permit null elements<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum559" class="linenum-cell" data-linenum="559" href="#linenum559"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * @throws IllegalArgumentException if some property of the specified<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum560" class="linenum-cell" data-linenum="560" href="#linenum560"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre><span class='comment'>     *         element prevents it from being added to this list<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum561" class="linenum-cell" data-linenum="561" href="#linenum561"></a></td>
-<td><pre><span class='comment'>     * Returns the index of the first occurrence of the specified element<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum562" class="linenum-cell" data-linenum="562" href="#linenum562"></a></td>
-<td><pre><span class='comment'>     * in this list, or -1 if this list does not contain the element.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum563" class="linenum-cell" data-linenum="563" href="#linenum563"></a></td>
-<td><pre><span class='comment'>     * More formally, returns the lowest index &lt;tt&gt;i&lt;/tt&gt; such that<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum564" class="linenum-cell" data-linenum="564" href="#linenum564"></a></td>
-<td><pre><span class='comment'>     * &lt;tt&gt;(o==null&amp;nbsp;?&amp;nbsp;get(i)==null&amp;nbsp;:&amp;nbsp;o.equals(get(i)))&lt;/tt&gt;,<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum565" class="linenum-cell" data-linenum="565" href="#linenum565"></a></td>
-<td><pre><span class='comment'>     * or -1 if there is no such index.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum566" class="linenum-cell" data-linenum="566" href="#linenum566"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum567" class="linenum-cell" data-linenum="567" href="#linenum567"></a></td>
-<td><pre><span class='comment'>     * @param o element to search for<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum568" class="linenum-cell" data-linenum="568" href="#linenum568"></a></td>
-<td><pre><span class='comment'>     * @return the index of the first occurrence of the specified element in<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum569" class="linenum-cell" data-linenum="569" href="#linenum569"></a></td>
-<td><pre><span class='comment'>     *         this list, or -1 if this list does not contain the element<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum570" class="linenum-cell" data-linenum="570" href="#linenum570"></a></td>
-<td><pre><span class='comment'>     * @throws ClassCastException if the type of the specified element<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum571" class="linenum-cell" data-linenum="571" href="#linenum571"></a></td>
-<td><pre><span class='comment'>     *         is incompatible with this list<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum572" class="linenum-cell" data-linenum="572" href="#linenum572"></a></td>
-<td><pre><span class='comment'>     *         (&lt;a href=&quot;Collection.html#optional-restrictions&quot;&gt;optional&lt;/a&gt;)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum573" class="linenum-cell" data-linenum="573" href="#linenum573"></a></td>
-<td><pre><span class='comment'>     * @throws NullPointerException if the specified element is null and this<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum574" class="linenum-cell" data-linenum="574" href="#linenum574"></a></td>
-<td><pre><span class='comment'>     *         list does not permit null elements<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum575" class="linenum-cell" data-linenum="575" href="#linenum575"></a></td>
-<td><pre><span class='comment'>     *         (&lt;a href=&quot;Collection.html#optional-restrictions&quot;&gt;optional&lt;/a&gt;)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum576" class="linenum-cell" data-linenum="576" href="#linenum576"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum577" class="linenum-cell" data-linenum="577" href="#linenum577"></a></td>
-<td><pre>    int indexOf(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> o);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum578" class="linenum-cell" data-linenum="578" href="#linenum578"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum579" class="linenum-cell" data-linenum="579" href="#linenum579"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum580" class="linenum-cell" data-linenum="580" href="#linenum580"></a></td>
-<td><pre><span class='comment'>     * Returns the index of the last occurrence of the specified element<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum581" class="linenum-cell" data-linenum="581" href="#linenum581"></a></td>
-<td><pre><span class='comment'>     * in this list, or -1 if this list does not contain the element.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum582" class="linenum-cell" data-linenum="582" href="#linenum582"></a></td>
-<td><pre><span class='comment'>     * More formally, returns the highest index &lt;tt&gt;i&lt;/tt&gt; such that<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum583" class="linenum-cell" data-linenum="583" href="#linenum583"></a></td>
-<td><pre><span class='comment'>     * &lt;tt&gt;(o==null&amp;nbsp;?&amp;nbsp;get(i)==null&amp;nbsp;:&amp;nbsp;o.equals(get(i)))&lt;/tt&gt;,<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum584" class="linenum-cell" data-linenum="584" href="#linenum584"></a></td>
-<td><pre><span class='comment'>     * or -1 if there is no such index.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum585" class="linenum-cell" data-linenum="585" href="#linenum585"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum586" class="linenum-cell" data-linenum="586" href="#linenum586"></a></td>
-<td><pre><span class='comment'>     * @param o element to search for<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum587" class="linenum-cell" data-linenum="587" href="#linenum587"></a></td>
-<td><pre><span class='comment'>     * @return the index of the last occurrence of the specified element in<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum588" class="linenum-cell" data-linenum="588" href="#linenum588"></a></td>
-<td><pre><span class='comment'>     *         this list, or -1 if this list does not contain the element<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum589" class="linenum-cell" data-linenum="589" href="#linenum589"></a></td>
-<td><pre><span class='comment'>     * @throws ClassCastException if the type of the specified element<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum590" class="linenum-cell" data-linenum="590" href="#linenum590"></a></td>
-<td><pre><span class='comment'>     *         is incompatible with this list<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum591" class="linenum-cell" data-linenum="591" href="#linenum591"></a></td>
-<td><pre><span class='comment'>     *         (&lt;a href=&quot;Collection.html#optional-restrictions&quot;&gt;optional&lt;/a&gt;)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum592" class="linenum-cell" data-linenum="592" href="#linenum592"></a></td>
-<td><pre><span class='comment'>     * @throws NullPointerException if the specified element is null and this<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum593" class="linenum-cell" data-linenum="593" href="#linenum593"></a></td>
-<td><pre><span class='comment'>     *         list does not permit null elements<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum594" class="linenum-cell" data-linenum="594" href="#linenum594"></a></td>
-<td><pre><span class='comment'>     *         (&lt;a href=&quot;Collection.html#optional-restrictions&quot;&gt;optional&lt;/a&gt;)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum595" class="linenum-cell" data-linenum="595" href="#linenum595"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum596" class="linenum-cell" data-linenum="596" href="#linenum596"></a></td>
-<td><pre>    int lastIndexOf(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> o);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum597" class="linenum-cell" data-linenum="597" href="#linenum597"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum598" class="linenum-cell" data-linenum="598" href="#linenum598"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum599" class="linenum-cell" data-linenum="599" href="#linenum599"></a></td>
-<td><pre>    // List Iterators</pre></td>
-</tr>
-<tr>
-<td><a id="linenum600" class="linenum-cell" data-linenum="600" href="#linenum600"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum601" class="linenum-cell" data-linenum="601" href="#linenum601"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum602" class="linenum-cell" data-linenum="602" href="#linenum602"></a></td>
-<td><pre><span class='comment'>     * Returns a list iterator over the elements in this list (in proper<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum603" class="linenum-cell" data-linenum="603" href="#linenum603"></a></td>
-<td><pre><span class='comment'>     * sequence).<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum604" class="linenum-cell" data-linenum="604" href="#linenum604"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum605" class="linenum-cell" data-linenum="605" href="#linenum605"></a></td>
-<td><pre><span class='comment'>     * @return a list iterator over the elements in this list (in proper<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum606" class="linenum-cell" data-linenum="606" href="#linenum606"></a></td>
-<td><pre><span class='comment'>     *         sequence)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum607" class="linenum-cell" data-linenum="607" href="#linenum607"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum608" class="linenum-cell" data-linenum="608" href="#linenum608"></a></td>
-<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/java/util/ListIterator.html#linenum60">ListIterator</a>&lt;E&gt; listIterator();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum609" class="linenum-cell" data-linenum="609" href="#linenum609"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum610" class="linenum-cell" data-linenum="610" href="#linenum610"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum611" class="linenum-cell" data-linenum="611" href="#linenum611"></a></td>
-<td><pre><span class='comment'>     * Returns a list iterator over the elements in this list (in proper<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum612" class="linenum-cell" data-linenum="612" href="#linenum612"></a></td>
-<td><pre><span class='comment'>     * sequence), starting at the specified position in the list.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum613" class="linenum-cell" data-linenum="613" href="#linenum613"></a></td>
-<td><pre><span class='comment'>     * The specified index indicates the first element that would be<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum614" class="linenum-cell" data-linenum="614" href="#linenum614"></a></td>
-<td><pre><span class='comment'>     * returned by an initial call to {@link ListIterator#next next}.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum615" class="linenum-cell" data-linenum="615" href="#linenum615"></a></td>
-<td><pre><span class='comment'>     * An initial call to {@link ListIterator#previous previous} would<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum616" class="linenum-cell" data-linenum="616" href="#linenum616"></a></td>
-<td><pre><span class='comment'>     * return the element with the specified index minus one.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum617" class="linenum-cell" data-linenum="617" href="#linenum617"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum618" class="linenum-cell" data-linenum="618" href="#linenum618"></a></td>
-<td><pre><span class='comment'>     * @param index index of the first element to be returned from the<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum619" class="linenum-cell" data-linenum="619" href="#linenum619"></a></td>
-<td><pre><span class='comment'>     *        list iterator (by a call to {@link ListIterator#next next})<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum620" class="linenum-cell" data-linenum="620" href="#linenum620"></a></td>
-<td><pre><span class='comment'>     * @return a list iterator over the elements in this list (in proper<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum621" class="linenum-cell" data-linenum="621" href="#linenum621"></a></td>
-<td><pre><span class='comment'>     *         sequence), starting at the specified position in the list<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum622" class="linenum-cell" data-linenum="622" href="#linenum622"></a></td>
 <td><pre><span class='comment'>     * @throws IndexOutOfBoundsException if the index is out of range<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum623" class="linenum-cell" data-linenum="623" href="#linenum623"></a></td>
-<td><pre><span class='comment'>     *         ({@code index &lt; 0 || index &gt; size()})<span class='comment'></pre></td>
+<td><a id="linenum562" class="linenum-cell" data-linenum="562" href="#linenum562"></a></td>
+<td><pre><span class='comment'>     *         (&lt;tt&gt;index &amp;lt; 0 || index &amp;gt;= size()&lt;/tt&gt;)<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum624" class="linenum-cell" data-linenum="624" href="#linenum624"></a></td>
+<td><a id="linenum563" class="linenum-cell" data-linenum="563" href="#linenum563"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum625" class="linenum-cell" data-linenum="625" href="#linenum625"></a></td>
-<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/java/util/ListIterator.html#linenum60">ListIterator</a>&lt;E&gt; listIterator(int index);</pre></td>
+<td><a id="linenum564" class="linenum-cell" data-linenum="564" href="#linenum564"></a></td>
+<td><pre>    E set(int index, E element);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum626" class="linenum-cell" data-linenum="626" href="#linenum626"></a></td>
+<td><a id="linenum565" class="linenum-cell" data-linenum="565" href="#linenum565"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum627" class="linenum-cell" data-linenum="627" href="#linenum627"></a></td>
-<td><pre>    // View</pre></td>
-</tr>
-<tr>
-<td><a id="linenum628" class="linenum-cell" data-linenum="628" href="#linenum628"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum629" class="linenum-cell" data-linenum="629" href="#linenum629"></a></td>
+<td><a id="linenum566" class="linenum-cell" data-linenum="566" href="#linenum566"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum630" class="linenum-cell" data-linenum="630" href="#linenum630"></a></td>
-<td><pre><span class='comment'>     * Returns a view of the portion of this list between the specified<span class='comment'></pre></td>
+<td><a id="linenum567" class="linenum-cell" data-linenum="567" href="#linenum567"></a></td>
+<td><pre><span class='comment'>     * Inserts the specified element at the specified position in this list<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum631" class="linenum-cell" data-linenum="631" href="#linenum631"></a></td>
-<td><pre><span class='comment'>     * &lt;tt&gt;fromIndex&lt;/tt&gt;, inclusive, and &lt;tt&gt;toIndex&lt;/tt&gt;, exclusive.  (If<span class='comment'></pre></td>
+<td><a id="linenum568" class="linenum-cell" data-linenum="568" href="#linenum568"></a></td>
+<td><pre><span class='comment'>     * (optional operation).  Shifts the element currently at that position<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum632" class="linenum-cell" data-linenum="632" href="#linenum632"></a></td>
-<td><pre><span class='comment'>     * &lt;tt&gt;fromIndex&lt;/tt&gt; and &lt;tt&gt;toIndex&lt;/tt&gt; are equal, the returned list is<span class='comment'></pre></td>
+<td><a id="linenum569" class="linenum-cell" data-linenum="569" href="#linenum569"></a></td>
+<td><pre><span class='comment'>     * (if any) and any subsequent elements to the right (adds one to their<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum633" class="linenum-cell" data-linenum="633" href="#linenum633"></a></td>
-<td><pre><span class='comment'>     * empty.)  The returned list is backed by this list, so non-structural<span class='comment'></pre></td>
+<td><a id="linenum570" class="linenum-cell" data-linenum="570" href="#linenum570"></a></td>
+<td><pre><span class='comment'>     * indices).<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum634" class="linenum-cell" data-linenum="634" href="#linenum634"></a></td>
-<td><pre><span class='comment'>     * changes in the returned list are reflected in this list, and vice-versa.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum635" class="linenum-cell" data-linenum="635" href="#linenum635"></a></td>
-<td><pre><span class='comment'>     * The returned list supports all of the optional list operations supported<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum636" class="linenum-cell" data-linenum="636" href="#linenum636"></a></td>
-<td><pre><span class='comment'>     * by this list.&lt;p&gt;<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum637" class="linenum-cell" data-linenum="637" href="#linenum637"></a></td>
+<td><a id="linenum571" class="linenum-cell" data-linenum="571" href="#linenum571"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
+<td><a id="linenum572" class="linenum-cell" data-linenum="572" href="#linenum572"></a></td>
+<td><pre><span class='comment'>     * @param index index at which the specified element is to be inserted<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum573" class="linenum-cell" data-linenum="573" href="#linenum573"></a></td>
+<td><pre><span class='comment'>     * @param element element to be inserted<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum574" class="linenum-cell" data-linenum="574" href="#linenum574"></a></td>
+<td><pre><span class='comment'>     * @throws UnsupportedOperationException if the &lt;tt&gt;add&lt;/tt&gt; operation<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum575" class="linenum-cell" data-linenum="575" href="#linenum575"></a></td>
+<td><pre><span class='comment'>     *         is not supported by this list<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum576" class="linenum-cell" data-linenum="576" href="#linenum576"></a></td>
+<td><pre><span class='comment'>     * @throws ClassCastException if the class of the specified element<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum577" class="linenum-cell" data-linenum="577" href="#linenum577"></a></td>
+<td><pre><span class='comment'>     *         prevents it from being added to this list<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum578" class="linenum-cell" data-linenum="578" href="#linenum578"></a></td>
+<td><pre><span class='comment'>     * @throws NullPointerException if the specified element is null and<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum579" class="linenum-cell" data-linenum="579" href="#linenum579"></a></td>
+<td><pre><span class='comment'>     *         this list does not permit null elements<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum580" class="linenum-cell" data-linenum="580" href="#linenum580"></a></td>
+<td><pre><span class='comment'>     * @throws IllegalArgumentException if some property of the specified<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum581" class="linenum-cell" data-linenum="581" href="#linenum581"></a></td>
+<td><pre><span class='comment'>     *         element prevents it from being added to this list<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum582" class="linenum-cell" data-linenum="582" href="#linenum582"></a></td>
+<td><pre><span class='comment'>     * @throws IndexOutOfBoundsException if the index is out of range<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum583" class="linenum-cell" data-linenum="583" href="#linenum583"></a></td>
+<td><pre><span class='comment'>     *         (&lt;tt&gt;index &amp;lt; 0 || index &amp;gt; size()&lt;/tt&gt;)<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum584" class="linenum-cell" data-linenum="584" href="#linenum584"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum585" class="linenum-cell" data-linenum="585" href="#linenum585"></a></td>
+<td><pre>    void add(int index, E element);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum586" class="linenum-cell" data-linenum="586" href="#linenum586"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum587" class="linenum-cell" data-linenum="587" href="#linenum587"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum588" class="linenum-cell" data-linenum="588" href="#linenum588"></a></td>
+<td><pre><span class='comment'>     * Removes the element at the specified position in this list (optional<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum589" class="linenum-cell" data-linenum="589" href="#linenum589"></a></td>
+<td><pre><span class='comment'>     * operation).  Shifts any subsequent elements to the left (subtracts one<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum590" class="linenum-cell" data-linenum="590" href="#linenum590"></a></td>
+<td><pre><span class='comment'>     * from their indices).  Returns the element that was removed from the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum591" class="linenum-cell" data-linenum="591" href="#linenum591"></a></td>
+<td><pre><span class='comment'>     * list.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum592" class="linenum-cell" data-linenum="592" href="#linenum592"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum593" class="linenum-cell" data-linenum="593" href="#linenum593"></a></td>
+<td><pre><span class='comment'>     * @param index the index of the element to be removed<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum594" class="linenum-cell" data-linenum="594" href="#linenum594"></a></td>
+<td><pre><span class='comment'>     * @return the element previously at the specified position<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum595" class="linenum-cell" data-linenum="595" href="#linenum595"></a></td>
+<td><pre><span class='comment'>     * @throws UnsupportedOperationException if the &lt;tt&gt;remove&lt;/tt&gt; operation<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum596" class="linenum-cell" data-linenum="596" href="#linenum596"></a></td>
+<td><pre><span class='comment'>     *         is not supported by this list<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum597" class="linenum-cell" data-linenum="597" href="#linenum597"></a></td>
+<td><pre><span class='comment'>     * @throws IndexOutOfBoundsException if the index is out of range<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum598" class="linenum-cell" data-linenum="598" href="#linenum598"></a></td>
+<td><pre><span class='comment'>     *         (&lt;tt&gt;index &amp;lt; 0 || index &amp;gt;= size()&lt;/tt&gt;)<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum599" class="linenum-cell" data-linenum="599" href="#linenum599"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum600" class="linenum-cell" data-linenum="600" href="#linenum600"></a></td>
+<td><pre>    E remove(int index);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum601" class="linenum-cell" data-linenum="601" href="#linenum601"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum602" class="linenum-cell" data-linenum="602" href="#linenum602"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum603" class="linenum-cell" data-linenum="603" href="#linenum603"></a></td>
+<td><pre>    // Search Operations</pre></td>
+</tr>
+<tr>
+<td><a id="linenum604" class="linenum-cell" data-linenum="604" href="#linenum604"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum605" class="linenum-cell" data-linenum="605" href="#linenum605"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum606" class="linenum-cell" data-linenum="606" href="#linenum606"></a></td>
+<td><pre><span class='comment'>     * Returns the index of the first occurrence of the specified element<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum607" class="linenum-cell" data-linenum="607" href="#linenum607"></a></td>
+<td><pre><span class='comment'>     * in this list, or -1 if this list does not contain the element.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum608" class="linenum-cell" data-linenum="608" href="#linenum608"></a></td>
+<td><pre><span class='comment'>     * More formally, returns the lowest index &lt;tt&gt;i&lt;/tt&gt; such that<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum609" class="linenum-cell" data-linenum="609" href="#linenum609"></a></td>
+<td><pre><span class='comment'>     * &lt;tt&gt;(o==null&amp;nbsp;?&amp;nbsp;get(i)==null&amp;nbsp;:&amp;nbsp;o.equals(get(i)))&lt;/tt&gt;,<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum610" class="linenum-cell" data-linenum="610" href="#linenum610"></a></td>
+<td><pre><span class='comment'>     * or -1 if there is no such index.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum611" class="linenum-cell" data-linenum="611" href="#linenum611"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum612" class="linenum-cell" data-linenum="612" href="#linenum612"></a></td>
+<td><pre><span class='comment'>     * @param o element to search for<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum613" class="linenum-cell" data-linenum="613" href="#linenum613"></a></td>
+<td><pre><span class='comment'>     * @return the index of the first occurrence of the specified element in<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum614" class="linenum-cell" data-linenum="614" href="#linenum614"></a></td>
+<td><pre><span class='comment'>     *         this list, or -1 if this list does not contain the element<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum615" class="linenum-cell" data-linenum="615" href="#linenum615"></a></td>
+<td><pre><span class='comment'>     * @throws ClassCastException if the type of the specified element<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum616" class="linenum-cell" data-linenum="616" href="#linenum616"></a></td>
+<td><pre><span class='comment'>     *         is incompatible with this list<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum617" class="linenum-cell" data-linenum="617" href="#linenum617"></a></td>
+<td><pre><span class='comment'>     *         (&lt;a href=&quot;Collection.html#optional-restrictions&quot;&gt;optional&lt;/a&gt;)<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum618" class="linenum-cell" data-linenum="618" href="#linenum618"></a></td>
+<td><pre><span class='comment'>     * @throws NullPointerException if the specified element is null and this<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum619" class="linenum-cell" data-linenum="619" href="#linenum619"></a></td>
+<td><pre><span class='comment'>     *         list does not permit null elements<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum620" class="linenum-cell" data-linenum="620" href="#linenum620"></a></td>
+<td><pre><span class='comment'>     *         (&lt;a href=&quot;Collection.html#optional-restrictions&quot;&gt;optional&lt;/a&gt;)<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum621" class="linenum-cell" data-linenum="621" href="#linenum621"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum622" class="linenum-cell" data-linenum="622" href="#linenum622"></a></td>
+<td><pre>    int indexOf(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> o);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum623" class="linenum-cell" data-linenum="623" href="#linenum623"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum624" class="linenum-cell" data-linenum="624" href="#linenum624"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum625" class="linenum-cell" data-linenum="625" href="#linenum625"></a></td>
+<td><pre><span class='comment'>     * Returns the index of the last occurrence of the specified element<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum626" class="linenum-cell" data-linenum="626" href="#linenum626"></a></td>
+<td><pre><span class='comment'>     * in this list, or -1 if this list does not contain the element.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum627" class="linenum-cell" data-linenum="627" href="#linenum627"></a></td>
+<td><pre><span class='comment'>     * More formally, returns the highest index &lt;tt&gt;i&lt;/tt&gt; such that<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum628" class="linenum-cell" data-linenum="628" href="#linenum628"></a></td>
+<td><pre><span class='comment'>     * &lt;tt&gt;(o==null&amp;nbsp;?&amp;nbsp;get(i)==null&amp;nbsp;:&amp;nbsp;o.equals(get(i)))&lt;/tt&gt;,<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum629" class="linenum-cell" data-linenum="629" href="#linenum629"></a></td>
+<td><pre><span class='comment'>     * or -1 if there is no such index.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum630" class="linenum-cell" data-linenum="630" href="#linenum630"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum631" class="linenum-cell" data-linenum="631" href="#linenum631"></a></td>
+<td><pre><span class='comment'>     * @param o element to search for<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum632" class="linenum-cell" data-linenum="632" href="#linenum632"></a></td>
+<td><pre><span class='comment'>     * @return the index of the last occurrence of the specified element in<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum633" class="linenum-cell" data-linenum="633" href="#linenum633"></a></td>
+<td><pre><span class='comment'>     *         this list, or -1 if this list does not contain the element<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum634" class="linenum-cell" data-linenum="634" href="#linenum634"></a></td>
+<td><pre><span class='comment'>     * @throws ClassCastException if the type of the specified element<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum635" class="linenum-cell" data-linenum="635" href="#linenum635"></a></td>
+<td><pre><span class='comment'>     *         is incompatible with this list<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum636" class="linenum-cell" data-linenum="636" href="#linenum636"></a></td>
+<td><pre><span class='comment'>     *         (&lt;a href=&quot;Collection.html#optional-restrictions&quot;&gt;optional&lt;/a&gt;)<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum637" class="linenum-cell" data-linenum="637" href="#linenum637"></a></td>
+<td><pre><span class='comment'>     * @throws NullPointerException if the specified element is null and this<span class='comment'></pre></td>
+</tr>
+<tr>
 <td><a id="linenum638" class="linenum-cell" data-linenum="638" href="#linenum638"></a></td>
-<td><pre><span class='comment'>     * This method eliminates the need for explicit range operations (of<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *         list does not permit null elements<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum639" class="linenum-cell" data-linenum="639" href="#linenum639"></a></td>
-<td><pre><span class='comment'>     * the sort that commonly exist for arrays).  Any operation that expects<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *         (&lt;a href=&quot;Collection.html#optional-restrictions&quot;&gt;optional&lt;/a&gt;)<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum640" class="linenum-cell" data-linenum="640" href="#linenum640"></a></td>
-<td><pre><span class='comment'>     * a list can be used as a range operation by passing a subList view<span class='comment'></pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum641" class="linenum-cell" data-linenum="641" href="#linenum641"></a></td>
-<td><pre><span class='comment'>     * instead of a whole list.  For example, the following idiom<span class='comment'></pre></td>
+<td><pre>    int lastIndexOf(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> o);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum642" class="linenum-cell" data-linenum="642" href="#linenum642"></a></td>
-<td><pre><span class='comment'>     * removes a range of elements from a list:<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum643" class="linenum-cell" data-linenum="643" href="#linenum643"></a></td>
-<td><pre><span class='comment'>     * &lt;pre&gt;{@code<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum644" class="linenum-cell" data-linenum="644" href="#linenum644"></a></td>
-<td><pre><span class='comment'>     *      list.subList(from, to).clear();<span class='comment'></pre></td>
+<td><pre>    // List Iterators</pre></td>
 </tr>
 <tr>
 <td><a id="linenum645" class="linenum-cell" data-linenum="645" href="#linenum645"></a></td>
-<td><pre><span class='comment'>     * }&lt;/pre&gt;<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum646" class="linenum-cell" data-linenum="646" href="#linenum646"></a></td>
-<td><pre><span class='comment'>     * Similar idioms may be constructed for &lt;tt&gt;indexOf&lt;/tt&gt; and<span class='comment'></pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum647" class="linenum-cell" data-linenum="647" href="#linenum647"></a></td>
-<td><pre><span class='comment'>     * &lt;tt&gt;lastIndexOf&lt;/tt&gt;, and all of the algorithms in the<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a list iterator over the elements in this list (in proper<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum648" class="linenum-cell" data-linenum="648" href="#linenum648"></a></td>
-<td><pre><span class='comment'>     * &lt;tt&gt;Collections&lt;/tt&gt; class can be applied to a subList.&lt;p&gt;<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * sequence).<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum649" class="linenum-cell" data-linenum="649" href="#linenum649"></a></td>
@@ -2604,162 +2604,342 @@
 </tr>
 <tr>
 <td><a id="linenum650" class="linenum-cell" data-linenum="650" href="#linenum650"></a></td>
-<td><pre><span class='comment'>     * The semantics of the list returned by this method become undefined if<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @return a list iterator over the elements in this list (in proper<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum651" class="linenum-cell" data-linenum="651" href="#linenum651"></a></td>
-<td><pre><span class='comment'>     * the backing list (i.e., this list) is &lt;i&gt;structurally modified&lt;/i&gt; in<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *         sequence)<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum652" class="linenum-cell" data-linenum="652" href="#linenum652"></a></td>
-<td><pre><span class='comment'>     * any way other than via the returned list.  (Structural modifications are<span class='comment'></pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum653" class="linenum-cell" data-linenum="653" href="#linenum653"></a></td>
-<td><pre><span class='comment'>     * those that change the size of this list, or otherwise perturb it in such<span class='comment'></pre></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/java/util/ListIterator.html#linenum60">ListIterator</a>&lt;E&gt; listIterator();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum654" class="linenum-cell" data-linenum="654" href="#linenum654"></a></td>
-<td><pre><span class='comment'>     * a fashion that iterations in progress may yield incorrect results.)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum655" class="linenum-cell" data-linenum="655" href="#linenum655"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum656" class="linenum-cell" data-linenum="656" href="#linenum656"></a></td>
-<td><pre><span class='comment'>     * @param fromIndex low endpoint (inclusive) of the subList<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum657" class="linenum-cell" data-linenum="657" href="#linenum657"></a></td>
-<td><pre><span class='comment'>     * @param toIndex high endpoint (exclusive) of the subList<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum658" class="linenum-cell" data-linenum="658" href="#linenum658"></a></td>
-<td><pre><span class='comment'>     * @return a view of the specified range within this list<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum659" class="linenum-cell" data-linenum="659" href="#linenum659"></a></td>
-<td><pre><span class='comment'>     * @throws IndexOutOfBoundsException for an illegal endpoint index value<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum660" class="linenum-cell" data-linenum="660" href="#linenum660"></a></td>
-<td><pre><span class='comment'>     *         (&lt;tt&gt;fromIndex &amp;lt; 0 || toIndex &amp;gt; size ||<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum661" class="linenum-cell" data-linenum="661" href="#linenum661"></a></td>
-<td><pre><span class='comment'>     *         fromIndex &amp;gt; toIndex&lt;/tt&gt;)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum662" class="linenum-cell" data-linenum="662" href="#linenum662"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum663" class="linenum-cell" data-linenum="663" href="#linenum663"></a></td>
-<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;E&gt; subList(int fromIndex, int toIndex);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum664" class="linenum-cell" data-linenum="664" href="#linenum664"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum665" class="linenum-cell" data-linenum="665" href="#linenum665"></a></td>
+<td><a id="linenum655" class="linenum-cell" data-linenum="655" href="#linenum655"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
+<td><a id="linenum656" class="linenum-cell" data-linenum="656" href="#linenum656"></a></td>
+<td><pre><span class='comment'>     * Returns a list iterator over the elements in this list (in proper<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum657" class="linenum-cell" data-linenum="657" href="#linenum657"></a></td>
+<td><pre><span class='comment'>     * sequence), starting at the specified position in the list.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum658" class="linenum-cell" data-linenum="658" href="#linenum658"></a></td>
+<td><pre><span class='comment'>     * The specified index indicates the first element that would be<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum659" class="linenum-cell" data-linenum="659" href="#linenum659"></a></td>
+<td><pre><span class='comment'>     * returned by an initial call to {@link ListIterator#next next}.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum660" class="linenum-cell" data-linenum="660" href="#linenum660"></a></td>
+<td><pre><span class='comment'>     * An initial call to {@link ListIterator#previous previous} would<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum661" class="linenum-cell" data-linenum="661" href="#linenum661"></a></td>
+<td><pre><span class='comment'>     * return the element with the specified index minus one.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum662" class="linenum-cell" data-linenum="662" href="#linenum662"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum663" class="linenum-cell" data-linenum="663" href="#linenum663"></a></td>
+<td><pre><span class='comment'>     * @param index index of the first element to be returned from the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum664" class="linenum-cell" data-linenum="664" href="#linenum664"></a></td>
+<td><pre><span class='comment'>     *        list iterator (by a call to {@link ListIterator#next next})<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum665" class="linenum-cell" data-linenum="665" href="#linenum665"></a></td>
+<td><pre><span class='comment'>     * @return a list iterator over the elements in this list (in proper<span class='comment'></pre></td>
+</tr>
+<tr>
 <td><a id="linenum666" class="linenum-cell" data-linenum="666" href="#linenum666"></a></td>
-<td><pre><span class='comment'>     * Creates a {@link Spliterator} over the elements in this list.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *         sequence), starting at the specified position in the list<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum667" class="linenum-cell" data-linenum="667" href="#linenum667"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @throws IndexOutOfBoundsException if the index is out of range<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum668" class="linenum-cell" data-linenum="668" href="#linenum668"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;The {@code Spliterator} reports {@link Spliterator#SIZED} and<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *         ({@code index &lt; 0 || index &gt; size()})<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum669" class="linenum-cell" data-linenum="669" href="#linenum669"></a></td>
-<td><pre><span class='comment'>     * {@link Spliterator#ORDERED}.  Implementations should document the<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum670" class="linenum-cell" data-linenum="670" href="#linenum670"></a></td>
-<td><pre><span class='comment'>     * reporting of additional characteristic values.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum671" class="linenum-cell" data-linenum="671" href="#linenum671"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum672" class="linenum-cell" data-linenum="672" href="#linenum672"></a></td>
-<td><pre><span class='comment'>     * @implSpec<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum673" class="linenum-cell" data-linenum="673" href="#linenum673"></a></td>
-<td><pre><span class='comment'>     * The default implementation creates a<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum674" class="linenum-cell" data-linenum="674" href="#linenum674"></a></td>
-<td><pre><span class='comment'>     * &lt;em&gt;&lt;a href=&quot;Spliterator.html#binding&quot;&gt;late-binding&lt;/a&gt;&lt;/em&gt; spliterator<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum675" class="linenum-cell" data-linenum="675" href="#linenum675"></a></td>
-<td><pre><span class='comment'>     * from the list's {@code Iterator}.  The spliterator inherits the<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum676" class="linenum-cell" data-linenum="676" href="#linenum676"></a></td>
-<td><pre><span class='comment'>     * &lt;em&gt;fail-fast&lt;/em&gt; properties of the list's iterator.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum677" class="linenum-cell" data-linenum="677" href="#linenum677"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum678" class="linenum-cell" data-linenum="678" href="#linenum678"></a></td>
-<td><pre><span class='comment'>     * @implNote<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum679" class="linenum-cell" data-linenum="679" href="#linenum679"></a></td>
-<td><pre><span class='comment'>     * The created {@code Spliterator} additionally reports<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum680" class="linenum-cell" data-linenum="680" href="#linenum680"></a></td>
-<td><pre><span class='comment'>     * {@link Spliterator#SUBSIZED}.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum681" class="linenum-cell" data-linenum="681" href="#linenum681"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum682" class="linenum-cell" data-linenum="682" href="#linenum682"></a></td>
-<td><pre><span class='comment'>     * @return a {@code Spliterator} over the elements in this list<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum683" class="linenum-cell" data-linenum="683" href="#linenum683"></a></td>
-<td><pre><span class='comment'>     * @since 1.8<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum684" class="linenum-cell" data-linenum="684" href="#linenum684"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
+<td><a id="linenum670" class="linenum-cell" data-linenum="670" href="#linenum670"></a></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/java/util/ListIterator.html#linenum60">ListIterator</a>&lt;E&gt; listIterator(int index);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum671" class="linenum-cell" data-linenum="671" href="#linenum671"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum672" class="linenum-cell" data-linenum="672" href="#linenum672"></a></td>
+<td><pre>    // View</pre></td>
+</tr>
+<tr>
+<td><a id="linenum673" class="linenum-cell" data-linenum="673" href="#linenum673"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum674" class="linenum-cell" data-linenum="674" href="#linenum674"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum675" class="linenum-cell" data-linenum="675" href="#linenum675"></a></td>
+<td><pre><span class='comment'>     * Returns a view of the portion of this list between the specified<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum676" class="linenum-cell" data-linenum="676" href="#linenum676"></a></td>
+<td><pre><span class='comment'>     * &lt;tt&gt;fromIndex&lt;/tt&gt;, inclusive, and &lt;tt&gt;toIndex&lt;/tt&gt;, exclusive.  (If<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum677" class="linenum-cell" data-linenum="677" href="#linenum677"></a></td>
+<td><pre><span class='comment'>     * &lt;tt&gt;fromIndex&lt;/tt&gt; and &lt;tt&gt;toIndex&lt;/tt&gt; are equal, the returned list is<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum678" class="linenum-cell" data-linenum="678" href="#linenum678"></a></td>
+<td><pre><span class='comment'>     * empty.)  The returned list is backed by this list, so non-structural<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum679" class="linenum-cell" data-linenum="679" href="#linenum679"></a></td>
+<td><pre><span class='comment'>     * changes in the returned list are reflected in this list, and vice-versa.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum680" class="linenum-cell" data-linenum="680" href="#linenum680"></a></td>
+<td><pre><span class='comment'>     * The returned list supports all of the optional list operations supported<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum681" class="linenum-cell" data-linenum="681" href="#linenum681"></a></td>
+<td><pre><span class='comment'>     * by this list.&lt;p&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum682" class="linenum-cell" data-linenum="682" href="#linenum682"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum683" class="linenum-cell" data-linenum="683" href="#linenum683"></a></td>
+<td><pre><span class='comment'>     * This method eliminates the need for explicit range operations (of<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum684" class="linenum-cell" data-linenum="684" href="#linenum684"></a></td>
+<td><pre><span class='comment'>     * the sort that commonly exist for arrays).  Any operation that expects<span class='comment'></pre></td>
+</tr>
+<tr>
 <td><a id="linenum685" class="linenum-cell" data-linenum="685" href="#linenum685"></a></td>
-<td><pre>    @Override</pre></td>
+<td><pre><span class='comment'>     * a list can be used as a range operation by passing a subList view<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum686" class="linenum-cell" data-linenum="686" href="#linenum686"></a></td>
-<td><pre>    default <a class="type" href="/OdinCodeBrowserJdk8/java/util/Spliterator.html#linenum296">Spliterator</a>&lt;E&gt; spliterator() {</pre></td>
+<td><pre><span class='comment'>     * instead of a whole list.  For example, the following idiom<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum687" class="linenum-cell" data-linenum="687" href="#linenum687"></a></td>
-<td><pre>        return Spliterators.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Spliterators.html#linenum619">spliterator</a>(this, Spliterator.ORDERED);</pre></td>
+<td><pre><span class='comment'>     * removes a range of elements from a list:<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum688" class="linenum-cell" data-linenum="688" href="#linenum688"></a></td>
-<td><pre>    }</pre></td>
+<td><pre><span class='comment'>     * &lt;pre&gt;{@code<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum689" class="linenum-cell" data-linenum="689" href="#linenum689"></a></td>
+<td><pre><span class='comment'>     *      list.subList(from, to).clear();<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum690" class="linenum-cell" data-linenum="690" href="#linenum690"></a></td>
+<td><pre><span class='comment'>     * }&lt;/pre&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum691" class="linenum-cell" data-linenum="691" href="#linenum691"></a></td>
+<td><pre><span class='comment'>     * Similar idioms may be constructed for &lt;tt&gt;indexOf&lt;/tt&gt; and<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum692" class="linenum-cell" data-linenum="692" href="#linenum692"></a></td>
+<td><pre><span class='comment'>     * &lt;tt&gt;lastIndexOf&lt;/tt&gt;, and all of the algorithms in the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum693" class="linenum-cell" data-linenum="693" href="#linenum693"></a></td>
+<td><pre><span class='comment'>     * &lt;tt&gt;Collections&lt;/tt&gt; class can be applied to a subList.&lt;p&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum694" class="linenum-cell" data-linenum="694" href="#linenum694"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum695" class="linenum-cell" data-linenum="695" href="#linenum695"></a></td>
+<td><pre><span class='comment'>     * The semantics of the list returned by this method become undefined if<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum696" class="linenum-cell" data-linenum="696" href="#linenum696"></a></td>
+<td><pre><span class='comment'>     * the backing list (i.e., this list) is &lt;i&gt;structurally modified&lt;/i&gt; in<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum697" class="linenum-cell" data-linenum="697" href="#linenum697"></a></td>
+<td><pre><span class='comment'>     * any way other than via the returned list.  (Structural modifications are<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum698" class="linenum-cell" data-linenum="698" href="#linenum698"></a></td>
+<td><pre><span class='comment'>     * those that change the size of this list, or otherwise perturb it in such<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum699" class="linenum-cell" data-linenum="699" href="#linenum699"></a></td>
+<td><pre><span class='comment'>     * a fashion that iterations in progress may yield incorrect results.)<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum700" class="linenum-cell" data-linenum="700" href="#linenum700"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum701" class="linenum-cell" data-linenum="701" href="#linenum701"></a></td>
+<td><pre><span class='comment'>     * @param fromIndex low endpoint (inclusive) of the subList<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum702" class="linenum-cell" data-linenum="702" href="#linenum702"></a></td>
+<td><pre><span class='comment'>     * @param toIndex high endpoint (exclusive) of the subList<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum703" class="linenum-cell" data-linenum="703" href="#linenum703"></a></td>
+<td><pre><span class='comment'>     * @return a view of the specified range within this list<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum704" class="linenum-cell" data-linenum="704" href="#linenum704"></a></td>
+<td><pre><span class='comment'>     * @throws IndexOutOfBoundsException for an illegal endpoint index value<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum705" class="linenum-cell" data-linenum="705" href="#linenum705"></a></td>
+<td><pre><span class='comment'>     *         (&lt;tt&gt;fromIndex &amp;lt; 0 || toIndex &amp;gt; size ||<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum706" class="linenum-cell" data-linenum="706" href="#linenum706"></a></td>
+<td><pre><span class='comment'>     *         fromIndex &amp;gt; toIndex&lt;/tt&gt;)<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum707" class="linenum-cell" data-linenum="707" href="#linenum707"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum708" class="linenum-cell" data-linenum="708" href="#linenum708"></a></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;E&gt; subList(int fromIndex, int toIndex);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum709" class="linenum-cell" data-linenum="709" href="#linenum709"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum710" class="linenum-cell" data-linenum="710" href="#linenum710"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum711" class="linenum-cell" data-linenum="711" href="#linenum711"></a></td>
+<td><pre><span class='comment'>     * Creates a {@link Spliterator} over the elements in this list.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum712" class="linenum-cell" data-linenum="712" href="#linenum712"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum713" class="linenum-cell" data-linenum="713" href="#linenum713"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;The {@code Spliterator} reports {@link Spliterator#SIZED} and<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum714" class="linenum-cell" data-linenum="714" href="#linenum714"></a></td>
+<td><pre><span class='comment'>     * {@link Spliterator#ORDERED}.  Implementations should document the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum715" class="linenum-cell" data-linenum="715" href="#linenum715"></a></td>
+<td><pre><span class='comment'>     * reporting of additional characteristic values.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum716" class="linenum-cell" data-linenum="716" href="#linenum716"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum717" class="linenum-cell" data-linenum="717" href="#linenum717"></a></td>
+<td><pre><span class='comment'>     * @implSpec<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum718" class="linenum-cell" data-linenum="718" href="#linenum718"></a></td>
+<td><pre><span class='comment'>     * The default implementation creates a<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum719" class="linenum-cell" data-linenum="719" href="#linenum719"></a></td>
+<td><pre><span class='comment'>     * &lt;em&gt;&lt;a href=&quot;Spliterator.html#binding&quot;&gt;late-binding&lt;/a&gt;&lt;/em&gt; spliterator<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum720" class="linenum-cell" data-linenum="720" href="#linenum720"></a></td>
+<td><pre><span class='comment'>     * from the list's {@code Iterator}.  The spliterator inherits the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum721" class="linenum-cell" data-linenum="721" href="#linenum721"></a></td>
+<td><pre><span class='comment'>     * &lt;em&gt;fail-fast&lt;/em&gt; properties of the list's iterator.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum722" class="linenum-cell" data-linenum="722" href="#linenum722"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum723" class="linenum-cell" data-linenum="723" href="#linenum723"></a></td>
+<td><pre><span class='comment'>     * @implNote<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum724" class="linenum-cell" data-linenum="724" href="#linenum724"></a></td>
+<td><pre><span class='comment'>     * The created {@code Spliterator} additionally reports<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum725" class="linenum-cell" data-linenum="725" href="#linenum725"></a></td>
+<td><pre><span class='comment'>     * {@link Spliterator#SUBSIZED}.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum726" class="linenum-cell" data-linenum="726" href="#linenum726"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum727" class="linenum-cell" data-linenum="727" href="#linenum727"></a></td>
+<td><pre><span class='comment'>     * @return a {@code Spliterator} over the elements in this list<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum728" class="linenum-cell" data-linenum="728" href="#linenum728"></a></td>
+<td><pre><span class='comment'>     * @since 1.8<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum729" class="linenum-cell" data-linenum="729" href="#linenum729"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum730" class="linenum-cell" data-linenum="730" href="#linenum730"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum731" class="linenum-cell" data-linenum="731" href="#linenum731"></a></td>
+<td><pre>    default <a class="type" href="/OdinCodeBrowserJdk8/java/util/Spliterator.html#linenum296">Spliterator</a>&lt;E&gt; spliterator() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum732" class="linenum-cell" data-linenum="732" href="#linenum732"></a></td>
+<td><pre>        return Spliterators.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Spliterators.html#linenum140">spliterator</a>(this, Spliterator.ORDERED);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum733" class="linenum-cell" data-linenum="733" href="#linenum733"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum734" class="linenum-cell" data-linenum="734" href="#linenum734"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

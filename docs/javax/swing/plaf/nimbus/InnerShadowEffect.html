@@ -268,11 +268,11 @@
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
-<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum72">BufferedImage</a> applyEffect(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum72">BufferedImage</a> src, <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum72">BufferedImage</a> dst, int w, int h) {</pre></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum68">BufferedImage</a> applyEffect(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum68">BufferedImage</a> src, <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum68">BufferedImage</a> dst, int w, int h) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum66">src</a> == null || <a class="variable" href="#linenum66">src</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum844">getType</a>() != BufferedImage.TYPE_INT_ARGB){</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum66">src</a> == null || <a class="variable" href="#linenum66">src</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum843">getType</a>() != BufferedImage.TYPE_INT_ARGB){</pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
@@ -288,7 +288,7 @@
 </tr>
 <tr>
 <td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum66">dst</a> != null &amp;&amp; <a class="variable" href="#linenum66">dst</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum844">getType</a>() != BufferedImage.TYPE_INT_ARGB){</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum66">dst</a> != null &amp;&amp; <a class="variable" href="#linenum66">dst</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum843">getType</a>() != BufferedImage.TYPE_INT_ARGB){</pre></td>
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
@@ -352,7 +352,7 @@
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre>        Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3146">fill</a>(<a class="variable" href="#linenum86">srcAlphaBuf</a>, (byte) 0xFF);</pre></td>
+<td><pre>        Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2845">fill</a>(<a class="variable" href="#linenum86">srcAlphaBuf</a>, (byte) 0xFF);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
@@ -368,7 +368,7 @@
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/Raster.html#linenum126">Raster</a> srcRaster = <a class="variable" href="#linenum66">src</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum862">getRaster</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/Raster.html#linenum126">Raster</a> srcRaster = <a class="variable" href="#linenum66">src</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum861">getRaster</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
@@ -416,11 +416,11 @@
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre>        EffectUtils.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/plaf/nimbus/EffectUtils.html#linenum116">blur</a>(<a class="variable" href="#linenum86">srcAlphaBuf</a>, <a class="variable" href="#linenum89">tmpBuf2</a>, <a class="variable" href="#linenum82">tmpW</a>, <a class="variable" href="#linenum83">tmpH</a>, <a class="variable" href="#linenum102">kernel</a>, size * 2); <span class='comment'>// horizontal pass</span></pre></td>
+<td><pre>        EffectUtils.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/plaf/nimbus/EffectUtils.html#linenum178">blur</a>(<a class="variable" href="#linenum86">srcAlphaBuf</a>, <a class="variable" href="#linenum89">tmpBuf2</a>, <a class="variable" href="#linenum82">tmpW</a>, <a class="variable" href="#linenum83">tmpH</a>, <a class="variable" href="#linenum102">kernel</a>, size * 2); <span class='comment'>// horizontal pass</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre>        EffectUtils.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/plaf/nimbus/EffectUtils.html#linenum116">blur</a>(<a class="variable" href="#linenum89">tmpBuf2</a>, <a class="variable" href="#linenum88">tmpBuf1</a>, <a class="variable" href="#linenum83">tmpH</a>, <a class="variable" href="#linenum82">tmpW</a>, <a class="variable" href="#linenum102">kernel</a>, size * 2);<span class='comment'>// vertical pass</span></pre></td>
+<td><pre>        EffectUtils.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/plaf/nimbus/EffectUtils.html#linenum178">blur</a>(<a class="variable" href="#linenum89">tmpBuf2</a>, <a class="variable" href="#linenum88">tmpBuf1</a>, <a class="variable" href="#linenum83">tmpH</a>, <a class="variable" href="#linenum82">tmpW</a>, <a class="variable" href="#linenum102">kernel</a>, size * 2);<span class='comment'>// vertical pass</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
@@ -428,7 +428,7 @@
 </tr>
 <tr>
 <td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre>        float spread = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1393">min</a>(1 / (1 - (0.01f * this.spread)), 255);</pre></td>
+<td><pre>        float spread = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1335">min</a>(1 / (1 - (0.01f * this.spread)), 255);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
@@ -452,7 +452,7 @@
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum66">dst</a> == null) <a class="variable" href="#linenum66">dst</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum72">BufferedImage</a>(<a class="variable" href="#linenum66">w</a>, <a class="variable" href="#linenum66">h</a>,</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum66">dst</a> == null) <a class="variable" href="#linenum66">dst</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum68">BufferedImage</a>(<a class="variable" href="#linenum66">w</a>, <a class="variable" href="#linenum66">h</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
@@ -460,7 +460,7 @@
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/WritableRaster.html#linenum49">WritableRaster</a> shadowRaster = <a class="variable" href="#linenum66">dst</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum862">getRaster</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/WritableRaster.html#linenum49">WritableRaster</a> shadowRaster = <a class="variable" href="#linenum66">dst</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum861">getRaster</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
@@ -500,7 +500,7 @@
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>                int alphaVal = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1393">min</a>(<a class="variable" href="#linenum122">origianlAlphaVal</a>, <a class="variable" href="#linenum123">shadowVal</a>);</pre></td>
+<td><pre>                int alphaVal = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1335">min</a>(<a class="variable" href="#linenum122">origianlAlphaVal</a>, <a class="variable" href="#linenum123">shadowVal</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>

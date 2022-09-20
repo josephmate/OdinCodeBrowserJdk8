@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2003, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2003, 2014, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -108,238 +108,226 @@
 </tr>
 <tr>
 <td><a id="linenum26" class="linenum-cell" data-linenum="26" href="#linenum26"></a></td>
-<td><pre>package java.awt;</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum27" class="linenum-cell" data-linenum="27" href="#linenum27"></a></td>
-<td><pre></pre></td>
+<td><pre>package java.awt;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum28" class="linenum-cell" data-linenum="28" href="#linenum28"></a></td>
-<td><pre>/**</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum29" class="linenum-cell" data-linenum="29" href="#linenum29"></a></td>
-<td><pre> * A class that describes the pointer position.</pre></td>
+<td><pre><span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum30" class="linenum-cell" data-linenum="30" href="#linenum30"></a></td>
-<td><pre> * It provides the &lt;code&gt;GraphicsDevice&lt;/code&gt; where the</pre></td>
+<td><pre><span class='comment'> * A class that describes the pointer position.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum31" class="linenum-cell" data-linenum="31" href="#linenum31"></a></td>
-<td><pre> * pointer is and the &lt;code&gt;Point&lt;/code&gt; that represents</pre></td>
+<td><pre><span class='comment'> * It provides the {@code GraphicsDevice} where the pointer is and<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum32" class="linenum-cell" data-linenum="32" href="#linenum32"></a></td>
-<td><pre> * the coordinates of the pointer.</pre></td>
+<td><pre><span class='comment'> * the {@code Point} that represents the coordinates of the pointer.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum33" class="linenum-cell" data-linenum="33" href="#linenum33"></a></td>
-<td><pre> * &lt;p&gt;</pre></td>
+<td><pre><span class='comment'> * &lt;p&gt;<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum34" class="linenum-cell" data-linenum="34" href="#linenum34"></a></td>
-<td><pre> * Instances of this class should be obtained via</pre></td>
+<td><pre><span class='comment'> * Instances of this class should be obtained via<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum35" class="linenum-cell" data-linenum="35" href="#linenum35"></a></td>
-<td><pre> * {@link MouseInfo#getPointerInfo}.</pre></td>
+<td><pre><span class='comment'> * {@link MouseInfo#getPointerInfo}.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum36" class="linenum-cell" data-linenum="36" href="#linenum36"></a></td>
-<td><pre> * The &lt;code&gt;PointerInfo&lt;/code&gt; instance is not updated dynamically</pre></td>
+<td><pre><span class='comment'> * The {@code PointerInfo} instance is not updated dynamically as the mouse<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum37" class="linenum-cell" data-linenum="37" href="#linenum37"></a></td>
-<td><pre> * as the mouse moves. To get the updated location, you must call</pre></td>
+<td><pre><span class='comment'> * moves. To get the updated location, you must call<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum38" class="linenum-cell" data-linenum="38" href="#linenum38"></a></td>
-<td><pre> * {@link MouseInfo#getPointerInfo} again.</pre></td>
+<td><pre><span class='comment'> * {@link MouseInfo#getPointerInfo} again.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum39" class="linenum-cell" data-linenum="39" href="#linenum39"></a></td>
-<td><pre> *</pre></td>
+<td><pre><span class='comment'> *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum40" class="linenum-cell" data-linenum="40" href="#linenum40"></a></td>
-<td><pre> * @see MouseInfo#getPointerInfo</pre></td>
+<td><pre><span class='comment'> * @see MouseInfo#getPointerInfo<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum41" class="linenum-cell" data-linenum="41" href="#linenum41"></a></td>
-<td><pre> * @author      Roman Poborchiy</pre></td>
+<td><pre><span class='comment'> * @author Roman Poborchiy<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
-<td><pre> * @since       1.5</pre></td>
+<td><pre><span class='comment'> * @since 1.5<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
-<td><pre> */</pre></td>
+<td><pre> */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
 <td><pre>public class PointerInfo {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
+<td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
 <td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/awt/GraphicsDevice.html#linenum78">GraphicsDevice</a> device;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/awt/GraphicsDevice.html#linenum78">GraphicsDevice</a> device;</pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Point.html#linenum38">Point</a> location;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Point.html#linenum38">Point</a> location;</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
-<td><pre></pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
 <td><pre><span class='comment'>     * Package-private constructor to prevent instantiation.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
+<td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
 <td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
+<td><pre>    PointerInfo(final <a class="type" href="/OdinCodeBrowserJdk8/java/awt/GraphicsDevice.html#linenum78">GraphicsDevice</a> device, final <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Point.html#linenum38">Point</a> location) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
-<td><pre>    PointerInfo(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/GraphicsDevice.html#linenum78">GraphicsDevice</a> device, <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Point.html#linenum38">Point</a> location) {</pre></td>
+<td><pre>        this.device = <a class="variable" href="#linenum46">device</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre>        this.device = <a class="variable" href="#linenum47">device</a>;</pre></td>
+<td><pre>        this.location = <a class="variable" href="#linenum47">location</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
-<td><pre>        this.location = <a class="variable" href="#linenum48">location</a>;</pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
-<td><pre>    }</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
-<td><pre></pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre><span class='comment'>     * Returns the {@code GraphicsDevice} where the mouse pointer was at the<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
-<td><pre><span class='comment'>     * Returns the &lt;code&gt;GraphicsDevice&lt;/code&gt; where the mouse pointer<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * moment this {@code PointerInfo} was created.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
-<td><pre><span class='comment'>     * was at the moment this &lt;code&gt;PointerInfo&lt;/code&gt; was created.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum61" class="linenum-cell" data-linenum="61" href="#linenum61"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @return {@code GraphicsDevice} corresponding to the pointer<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
-<td><pre><span class='comment'>     * @return   &lt;code&gt;GraphicsDevice&lt;/code&gt; corresponding to the pointer<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @since 1.5<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum63" class="linenum-cell" data-linenum="63" href="#linenum63"></a></td>
-<td><pre><span class='comment'>     * @since    1.5<span class='comment'></pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum64" class="linenum-cell" data-linenum="64" href="#linenum64"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
 <td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/awt/GraphicsDevice.html#linenum78">GraphicsDevice</a> getDevice() {</pre></td>
 </tr>
 <tr>
+<td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
+<td><pre>        return <a class="variable" href="#linenum52">device</a>;</pre></td>
+</tr>
+<tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
-<td><pre>        return <a class="variable" href="#linenum53">device</a>;</pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre>    }</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
+<td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
+<td><pre><span class='comment'>     * Returns the {@code Point} that represents the coordinates of the pointer<span class='comment'></pre></td>
+</tr>
+<tr>
 <td><a id="linenum70" class="linenum-cell" data-linenum="70" href="#linenum70"></a></td>
-<td><pre><span class='comment'>     * Returns the &lt;code&gt;Point&lt;/code&gt; that represents the coordinates<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * on the screen. See {@link MouseInfo#getPointerInfo} for more information<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
-<td><pre><span class='comment'>     * of the pointer on the screen. See {@link MouseInfo#getPointerInfo}<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * about coordinate calculation for multiscreen systems.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
-<td><pre><span class='comment'>     * for more information about coordinate calculation for multiscreen<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
-<td><pre><span class='comment'>     * systems.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
+<td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
+<td><pre><span class='comment'>     * @return coordinates of mouse pointer<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
 <td><pre><span class='comment'>     * @see MouseInfo<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
+<td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
 <td><pre><span class='comment'>     * @see MouseInfo#getPointerInfo<span class='comment'></pre></td>
 </tr>
 <tr>
+<td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
+<td><pre><span class='comment'>     * @since 1.5<span class='comment'></pre></td>
+</tr>
+<tr>
 <td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
-<td><pre><span class='comment'>     * @return   coordinates of mouse pointer<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre><span class='comment'>     * @since    1.5<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
+<td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
 <td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Point.html#linenum38">Point</a> getLocation() {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
-<td><pre>        return <a class="variable" href="#linenum53">location</a>;</pre></td>
+<td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
+<td><pre>        return <a class="variable" href="#linenum52">location</a>;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
+<td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
+<td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

@@ -488,7 +488,7 @@
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>        implements <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/io/Serializable.html#linenum169">Serializable</a> {</pre></td>
+<td><pre>        implements <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/io/Serializable.html#linenum169">Serializable</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
@@ -736,7 +736,7 @@
 </tr>
 <tr>
 <td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum215">now</a>(Clock.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum177">systemDefaultZone</a>());</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum199">now</a>(Clock.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum177">systemDefaultZone</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
@@ -804,7 +804,7 @@
 </tr>
 <tr>
 <td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum215">now</a>(Clock.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum196">system</a>(<a class="variable" href="#linenum199">zone</a>));</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum199">now</a>(Clock.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum196">system</a>(<a class="variable" href="#linenum199">zone</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
@@ -1140,7 +1140,7 @@
 </tr>
 <tr>
 <td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
-<td><pre>        int[] dateInfo = <a class="variable" href="#linenum268">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum643">getHijrahDateInfo</a>((int)<a class="variable" href="#linenum165">epochDay</a>);</pre></td>
+<td><pre>        int[] dateInfo = <a class="variable" href="#linenum268">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum642">getHijrahDateInfo</a>((int)<a class="variable" href="#linenum165">epochDay</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum285" class="linenum-cell" data-linenum="285" href="#linenum285"></a></td>
@@ -1320,7 +1320,7 @@
 </tr>
 <tr>
 <td><a id="linenum329" class="linenum-cell" data-linenum="329" href="#linenum329"></a></td>
-<td><pre>        return <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum702">getMonthLength</a>(<a class="variable" href="#linenum268">prolepticYear</a>, <a class="variable" href="#linenum268">monthOfYear</a>);</pre></td>
+<td><pre>        return <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum701">getMonthLength</a>(<a class="variable" href="#linenum268">prolepticYear</a>, <a class="variable" href="#linenum268">monthOfYear</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum330" class="linenum-cell" data-linenum="330" href="#linenum330"></a></td>
@@ -1376,7 +1376,7 @@
 </tr>
 <tr>
 <td><a id="linenum343" class="linenum-cell" data-linenum="343" href="#linenum343"></a></td>
-<td><pre>        return <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum718">getYearLength</a>(<a class="variable" href="#linenum268">prolepticYear</a>);</pre></td>
+<td><pre>        return <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum717">getYearLength</a>(<a class="variable" href="#linenum268">prolepticYear</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum344" class="linenum-cell" data-linenum="344" href="#linenum344"></a></td>
@@ -1416,15 +1416,15 @@
 </tr>
 <tr>
 <td><a id="linenum353" class="linenum-cell" data-linenum="353" href="#linenum353"></a></td>
-<td><pre>                    case DAY_OF_MONTH: return ValueRange.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/ValueRange.html#linenum165">of</a>(1, <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum327">lengthOfMonth</a>());</pre></td>
+<td><pre>                    case DAY_OF_MONTH: return ValueRange.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/ValueRange.html#linenum125">of</a>(1, <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum327">lengthOfMonth</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum354" class="linenum-cell" data-linenum="354" href="#linenum354"></a></td>
-<td><pre>                    case DAY_OF_YEAR: return ValueRange.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/ValueRange.html#linenum165">of</a>(1, <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum341">lengthOfYear</a>());</pre></td>
+<td><pre>                    case DAY_OF_YEAR: return ValueRange.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/ValueRange.html#linenum125">of</a>(1, <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum341">lengthOfYear</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum355" class="linenum-cell" data-linenum="355" href="#linenum355"></a></td>
-<td><pre>                    case ALIGNED_WEEK_OF_MONTH: return ValueRange.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/ValueRange.html#linenum165">of</a>(1, 5);  <span class='comment'>// TODO</span></pre></td>
+<td><pre>                    case ALIGNED_WEEK_OF_MONTH: return ValueRange.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/ValueRange.html#linenum125">of</a>(1, 5);  <span class='comment'>// TODO</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum356" class="linenum-cell" data-linenum="356" href="#linenum356"></a></td>
@@ -1596,7 +1596,7 @@
 </tr>
 <tr>
 <td><a id="linenum398" class="linenum-cell" data-linenum="398" href="#linenum398"></a></td>
-<td><pre>            <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum580">range</a>(<a class="variable" href="#linenum396">f</a>).checkValidValue(<a class="variable" href="#linenum394">newValue</a>, <a class="variable" href="#linenum396">f</a>);    <span class='comment'>// TODO: validate value</span></pre></td>
+<td><pre>            <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum579">range</a>(<a class="variable" href="#linenum396">f</a>).checkValidValue(<a class="variable" href="#linenum394">newValue</a>, <a class="variable" href="#linenum396">f</a>);    <span class='comment'>// TODO: validate value</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum399" class="linenum-cell" data-linenum="399" href="#linenum399"></a></td>
@@ -1624,7 +1624,7 @@
 </tr>
 <tr>
 <td><a id="linenum405" class="linenum-cell" data-linenum="405" href="#linenum405"></a></td>
-<td><pre>                case DAY_OF_YEAR: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum551">plusDays</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1393">min</a>(<a class="variable" href="#linenum399">nvalue</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum341">lengthOfYear</a>()) - <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum490">getDayOfYear</a>());</pre></td>
+<td><pre>                case DAY_OF_YEAR: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum551">plusDays</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1335">min</a>(<a class="variable" href="#linenum399">nvalue</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum341">lengthOfYear</a>()) - <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum490">getDayOfYear</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum406" class="linenum-cell" data-linenum="406" href="#linenum406"></a></td>
@@ -1688,7 +1688,7 @@
 </tr>
 <tr>
 <td><a id="linenum421" class="linenum-cell" data-linenum="421" href="#linenum421"></a></td>
-<td><pre>        int monthDays = <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum702">getMonthLength</a>(<a class="variable" href="#linenum420">prolepticYear</a>, <a class="variable" href="#linenum420">month</a>);</pre></td>
+<td><pre>        int monthDays = <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum701">getMonthLength</a>(<a class="variable" href="#linenum420">prolepticYear</a>, <a class="variable" href="#linenum420">month</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum422" class="linenum-cell" data-linenum="422" href="#linenum422"></a></td>
@@ -1820,7 +1820,7 @@
 </tr>
 <tr>
 <td><a id="linenum454" class="linenum-cell" data-linenum="454" href="#linenum454"></a></td>
-<td><pre>        int monthDays = <a class="variable" href="#linenum449">chronology</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum691">getDayOfYear</a>(<a class="variable" href="#linenum420">prolepticYear</a>, <a class="variable" href="#linenum268">monthOfYear</a>);</pre></td>
+<td><pre>        int monthDays = <a class="variable" href="#linenum449">chronology</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum690">getDayOfYear</a>(<a class="variable" href="#linenum420">prolepticYear</a>, <a class="variable" href="#linenum268">monthOfYear</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum455" class="linenum-cell" data-linenum="455" href="#linenum455"></a></td>
@@ -1924,7 +1924,7 @@
 </tr>
 <tr>
 <td><a id="linenum480" class="linenum-cell" data-linenum="480" href="#linenum480"></a></td>
-<td><pre>        return <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum670">getEpochDay</a>(<a class="variable" href="#linenum420">prolepticYear</a>, <a class="variable" href="#linenum268">monthOfYear</a>, <a class="variable" href="#linenum268">dayOfMonth</a>);</pre></td>
+<td><pre>        return <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum669">getEpochDay</a>(<a class="variable" href="#linenum420">prolepticYear</a>, <a class="variable" href="#linenum268">monthOfYear</a>, <a class="variable" href="#linenum268">dayOfMonth</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum481" class="linenum-cell" data-linenum="481" href="#linenum481"></a></td>
@@ -1968,7 +1968,7 @@
 </tr>
 <tr>
 <td><a id="linenum491" class="linenum-cell" data-linenum="491" href="#linenum491"></a></td>
-<td><pre>        return <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum691">getDayOfYear</a>(<a class="variable" href="#linenum420">prolepticYear</a>, <a class="variable" href="#linenum268">monthOfYear</a>) + <a class="variable" href="#linenum268">dayOfMonth</a>;</pre></td>
+<td><pre>        return <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum690">getDayOfYear</a>(<a class="variable" href="#linenum420">prolepticYear</a>, <a class="variable" href="#linenum268">monthOfYear</a>) + <a class="variable" href="#linenum268">dayOfMonth</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum492" class="linenum-cell" data-linenum="492" href="#linenum492"></a></td>
@@ -2004,7 +2004,7 @@
 </tr>
 <tr>
 <td><a id="linenum500" class="linenum-cell" data-linenum="500" href="#linenum500"></a></td>
-<td><pre>        int dow0 = (int)Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1165">floorMod</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum478">toEpochDay</a>() + 3, 7);</pre></td>
+<td><pre>        int dow0 = (int)Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1138">floorMod</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum478">toEpochDay</a>() + 3, 7);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum501" class="linenum-cell" data-linenum="501" href="#linenum501"></a></td>
@@ -2124,7 +2124,7 @@
 </tr>
 <tr>
 <td><a id="linenum530" class="linenum-cell" data-linenum="530" href="#linenum530"></a></td>
-<td><pre>        int newYear = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum805">addExact</a>(this.prolepticYear, (int)<a class="variable" href="#linenum526">years</a>);</pre></td>
+<td><pre>        int newYear = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum786">addExact</a>(this.prolepticYear, (int)<a class="variable" href="#linenum526">years</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum531" class="linenum-cell" data-linenum="531" href="#linenum531"></a></td>
@@ -2168,11 +2168,11 @@
 </tr>
 <tr>
 <td><a id="linenum541" class="linenum-cell" data-linenum="541" href="#linenum541"></a></td>
-<td><pre>        int newYear = <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum616">checkValidYear</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1085">floorDiv</a>(<a class="variable" href="#linenum540">calcMonths</a>, 12L));</pre></td>
+<td><pre>        int newYear = <a class="variable" href="#linenum283">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum615">checkValidYear</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1051">floorDiv</a>(<a class="variable" href="#linenum540">calcMonths</a>, 12L));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum542" class="linenum-cell" data-linenum="542" href="#linenum542"></a></td>
-<td><pre>        int newMonth = (int)Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1165">floorMod</a>(<a class="variable" href="#linenum540">calcMonths</a>, 12L) + 1;</pre></td>
+<td><pre>        int newMonth = (int)Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1138">floorMod</a>(<a class="variable" href="#linenum540">calcMonths</a>, 12L) + 1;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum543" class="linenum-cell" data-linenum="543" href="#linenum543"></a></td>
@@ -2376,7 +2376,7 @@
 </tr>
 <tr>
 <td><a id="linenum593" class="linenum-cell" data-linenum="593" href="#linenum593"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoPeriod.html#linenum94">ChronoPeriod</a> until(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a> endDate) {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoPeriod.html#linenum94">ChronoPeriod</a> until(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a> endDate) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum594" class="linenum-cell" data-linenum="594" href="#linenum594"></a></td>
@@ -2632,166 +2632,170 @@
 </tr>
 <tr>
 <td><a id="linenum657" class="linenum-cell" data-linenum="657" href="#linenum657"></a></td>
-<td><pre><span class='comment'>     * @throws InvalidObjectException always<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param s the stream to read<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum658" class="linenum-cell" data-linenum="658" href="#linenum658"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * @throws InvalidObjectException always<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum659" class="linenum-cell" data-linenum="659" href="#linenum659"></a></td>
-<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum206">ObjectInputStream</a> s) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum660" class="linenum-cell" data-linenum="660" href="#linenum660"></a></td>
-<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a>(<span class='string'>&quot;Deserialization via serialization delegate&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum661" class="linenum-cell" data-linenum="661" href="#linenum661"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum662" class="linenum-cell" data-linenum="662" href="#linenum662"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum663" class="linenum-cell" data-linenum="663" href="#linenum663"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum664" class="linenum-cell" data-linenum="664" href="#linenum664"></a></td>
-<td><pre><span class='comment'>     * Writes the object using a<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum665" class="linenum-cell" data-linenum="665" href="#linenum665"></a></td>
-<td><pre><span class='comment'>     * &lt;a href=&quot;../../../serialized-form.html#java.time.chrono.Ser&quot;&gt;dedicated serialized form&lt;/a&gt;.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum666" class="linenum-cell" data-linenum="666" href="#linenum666"></a></td>
-<td><pre><span class='comment'>     * @serialData<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum667" class="linenum-cell" data-linenum="667" href="#linenum667"></a></td>
-<td><pre><span class='comment'>     * &lt;pre&gt;<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum668" class="linenum-cell" data-linenum="668" href="#linenum668"></a></td>
-<td><pre><span class='comment'>     *  out.writeByte(6);                 // identifies a HijrahDate<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum669" class="linenum-cell" data-linenum="669" href="#linenum669"></a></td>
-<td><pre><span class='comment'>     *  out.writeObject(chrono);          // the HijrahChronology variant<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum670" class="linenum-cell" data-linenum="670" href="#linenum670"></a></td>
-<td><pre><span class='comment'>     *  out.writeInt(get(YEAR));<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum671" class="linenum-cell" data-linenum="671" href="#linenum671"></a></td>
-<td><pre><span class='comment'>     *  out.writeByte(get(MONTH_OF_YEAR));<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum672" class="linenum-cell" data-linenum="672" href="#linenum672"></a></td>
-<td><pre><span class='comment'>     *  out.writeByte(get(DAY_OF_MONTH));<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum673" class="linenum-cell" data-linenum="673" href="#linenum673"></a></td>
-<td><pre><span class='comment'>     * &lt;/pre&gt;<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum674" class="linenum-cell" data-linenum="674" href="#linenum674"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum675" class="linenum-cell" data-linenum="675" href="#linenum675"></a></td>
-<td><pre><span class='comment'>     * @return the instance of {@code Ser}, not null<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum676" class="linenum-cell" data-linenum="676" href="#linenum676"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
+<td><a id="linenum660" class="linenum-cell" data-linenum="660" href="#linenum660"></a></td>
+<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum217">ObjectInputStream</a> s) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum661" class="linenum-cell" data-linenum="661" href="#linenum661"></a></td>
+<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a>(<span class='string'>&quot;Deserialization via serialization delegate&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum662" class="linenum-cell" data-linenum="662" href="#linenum662"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum663" class="linenum-cell" data-linenum="663" href="#linenum663"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum664" class="linenum-cell" data-linenum="664" href="#linenum664"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum665" class="linenum-cell" data-linenum="665" href="#linenum665"></a></td>
+<td><pre><span class='comment'>     * Writes the object using a<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum666" class="linenum-cell" data-linenum="666" href="#linenum666"></a></td>
+<td><pre><span class='comment'>     * &lt;a href=&quot;../../../serialized-form.html#java.time.chrono.Ser&quot;&gt;dedicated serialized form&lt;/a&gt;.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum667" class="linenum-cell" data-linenum="667" href="#linenum667"></a></td>
+<td><pre><span class='comment'>     * @serialData<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum668" class="linenum-cell" data-linenum="668" href="#linenum668"></a></td>
+<td><pre><span class='comment'>     * &lt;pre&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum669" class="linenum-cell" data-linenum="669" href="#linenum669"></a></td>
+<td><pre><span class='comment'>     *  out.writeByte(6);                 // identifies a HijrahDate<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum670" class="linenum-cell" data-linenum="670" href="#linenum670"></a></td>
+<td><pre><span class='comment'>     *  out.writeObject(chrono);          // the HijrahChronology variant<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum671" class="linenum-cell" data-linenum="671" href="#linenum671"></a></td>
+<td><pre><span class='comment'>     *  out.writeInt(get(YEAR));<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum672" class="linenum-cell" data-linenum="672" href="#linenum672"></a></td>
+<td><pre><span class='comment'>     *  out.writeByte(get(MONTH_OF_YEAR));<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum673" class="linenum-cell" data-linenum="673" href="#linenum673"></a></td>
+<td><pre><span class='comment'>     *  out.writeByte(get(DAY_OF_MONTH));<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum674" class="linenum-cell" data-linenum="674" href="#linenum674"></a></td>
+<td><pre><span class='comment'>     * &lt;/pre&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum675" class="linenum-cell" data-linenum="675" href="#linenum675"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum676" class="linenum-cell" data-linenum="676" href="#linenum676"></a></td>
+<td><pre><span class='comment'>     * @return the instance of {@code Ser}, not null<span class='comment'></pre></td>
+</tr>
+<tr>
 <td><a id="linenum677" class="linenum-cell" data-linenum="677" href="#linenum677"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> writeReplace() {</pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum678" class="linenum-cell" data-linenum="678" href="#linenum678"></a></td>
-<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Ser.html#linenum92">Ser</a>(Ser.HIJRAH_DATE_TYPE, this);</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> writeReplace() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum679" class="linenum-cell" data-linenum="679" href="#linenum679"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Ser.html#linenum92">Ser</a>(Ser.HIJRAH_DATE_TYPE, this);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum680" class="linenum-cell" data-linenum="680" href="#linenum680"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum681" class="linenum-cell" data-linenum="681" href="#linenum681"></a></td>
-<td><pre>    void writeExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectOutput.html#linenum39">ObjectOutput</a> out) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum682" class="linenum-cell" data-linenum="682" href="#linenum682"></a></td>
-<td><pre>        <span class='comment'>// HijrahChronology is implicit in the Hijrah_DATE_TYPE</span></pre></td>
+<td><pre>    void writeExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectOutput.html#linenum39">ObjectOutput</a> out) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum683" class="linenum-cell" data-linenum="683" href="#linenum683"></a></td>
-<td><pre>        <a class="variable" href="#linenum681">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectOutput.html#linenum48">writeObject</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum301">getChronology</a>());</pre></td>
+<td><pre>        <span class='comment'>// HijrahChronology is implicit in the Hijrah_DATE_TYPE</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum684" class="linenum-cell" data-linenum="684" href="#linenum684"></a></td>
-<td><pre>        <a class="variable" href="#linenum681">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum193">writeInt</a>(get(YEAR));</pre></td>
+<td><pre>        <a class="variable" href="#linenum682">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectOutput.html#linenum48">writeObject</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum301">getChronology</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum685" class="linenum-cell" data-linenum="685" href="#linenum685"></a></td>
-<td><pre>        <a class="variable" href="#linenum681">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(get(MONTH_OF_YEAR));</pre></td>
+<td><pre>        <a class="variable" href="#linenum682">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum193">writeInt</a>(get(YEAR));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum686" class="linenum-cell" data-linenum="686" href="#linenum686"></a></td>
-<td><pre>        <a class="variable" href="#linenum681">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(get(DAY_OF_MONTH));</pre></td>
+<td><pre>        <a class="variable" href="#linenum682">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(get(MONTH_OF_YEAR));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum687" class="linenum-cell" data-linenum="687" href="#linenum687"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        <a class="variable" href="#linenum682">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(get(DAY_OF_MONTH));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum688" class="linenum-cell" data-linenum="688" href="#linenum688"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum689" class="linenum-cell" data-linenum="689" href="#linenum689"></a></td>
-<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum119">HijrahDate</a> readExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInput.html#linenum39">ObjectInput</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ClassNotFoundException.html#linenum53">ClassNotFoundException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum690" class="linenum-cell" data-linenum="690" href="#linenum690"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum217">HijrahChronology</a> chrono = (<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum217">HijrahChronology</a>) <a class="variable" href="#linenum689">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInput.html#linenum50">readObject</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum691" class="linenum-cell" data-linenum="691" href="#linenum691"></a></td>
-<td><pre>        int year = <a class="variable" href="#linenum689">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum393">readInt</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum692" class="linenum-cell" data-linenum="692" href="#linenum692"></a></td>
-<td><pre>        int month = <a class="variable" href="#linenum689">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum290">readByte</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum693" class="linenum-cell" data-linenum="693" href="#linenum693"></a></td>
-<td><pre>        int dayOfMonth = <a class="variable" href="#linenum689">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum290">readByte</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum694" class="linenum-cell" data-linenum="694" href="#linenum694"></a></td>
-<td><pre>        return <a class="variable" href="#linenum690">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum518">date</a>(<a class="variable" href="#linenum691">year</a>, <a class="variable" href="#linenum692">month</a>, <a class="variable" href="#linenum693">dayOfMonth</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum695" class="linenum-cell" data-linenum="695" href="#linenum695"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum696" class="linenum-cell" data-linenum="696" href="#linenum696"></a></td>
+<td><a id="linenum689" class="linenum-cell" data-linenum="689" href="#linenum689"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum690" class="linenum-cell" data-linenum="690" href="#linenum690"></a></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahDate.html#linenum119">HijrahDate</a> readExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInput.html#linenum39">ObjectInput</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ClassNotFoundException.html#linenum53">ClassNotFoundException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum691" class="linenum-cell" data-linenum="691" href="#linenum691"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum217">HijrahChronology</a> chrono = (<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum217">HijrahChronology</a>) <a class="variable" href="#linenum690">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInput.html#linenum50">readObject</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum692" class="linenum-cell" data-linenum="692" href="#linenum692"></a></td>
+<td><pre>        int year = <a class="variable" href="#linenum690">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum393">readInt</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum693" class="linenum-cell" data-linenum="693" href="#linenum693"></a></td>
+<td><pre>        int month = <a class="variable" href="#linenum690">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum290">readByte</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum694" class="linenum-cell" data-linenum="694" href="#linenum694"></a></td>
+<td><pre>        int dayOfMonth = <a class="variable" href="#linenum690">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum290">readByte</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum695" class="linenum-cell" data-linenum="695" href="#linenum695"></a></td>
+<td><pre>        return <a class="variable" href="#linenum691">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/HijrahChronology.html#linenum451">date</a>(<a class="variable" href="#linenum692">year</a>, <a class="variable" href="#linenum693">month</a>, <a class="variable" href="#linenum694">dayOfMonth</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum696" class="linenum-cell" data-linenum="696" href="#linenum696"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
 <td><a id="linenum697" class="linenum-cell" data-linenum="697" href="#linenum697"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum698" class="linenum-cell" data-linenum="698" href="#linenum698"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

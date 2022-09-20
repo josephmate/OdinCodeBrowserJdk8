@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2012, 2013, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2012, 2016, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -372,7 +372,7 @@
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre><span class='comment'> * A time-zone offset is the period of time that a time-zone differs from Greenwich/UTC.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * A time-zone offset is the amount of time that a time-zone differs from Greenwich/UTC.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
@@ -852,7 +852,7 @@
 </tr>
 <tr>
 <td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
-<td><pre>        switch (<a class="variable" href="#linenum202">offsetId</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>()) {</pre></td>
+<td><pre>        switch (<a class="variable" href="#linenum202">offsetId</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
@@ -860,7 +860,7 @@
 </tr>
 <tr>
 <td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
-<td><pre>                <a class="variable" href="#linenum202">offsetId</a> = <a class="variable" href="#linenum202">offsetId</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum644">charAt</a>(0) + <span class='string'>&quot;0&quot;</span> + <a class="variable" href="#linenum202">offsetId</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum644">charAt</a>(1);  <span class='comment'>// fallthru</span></pre></td>
+<td><pre>                <a class="variable" href="#linenum202">offsetId</a> = <a class="variable" href="#linenum202">offsetId</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum656">charAt</a>(0) + <span class='string'>&quot;0&quot;</span> + <a class="variable" href="#linenum202">offsetId</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum656">charAt</a>(1);  <span class='comment'>// fallthru</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum215" class="linenum-cell" data-linenum="215" href="#linenum215"></a></td>
@@ -976,7 +976,7 @@
 </tr>
 <tr>
 <td><a id="linenum243" class="linenum-cell" data-linenum="243" href="#linenum243"></a></td>
-<td><pre>        char first = <a class="variable" href="#linenum202">offsetId</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum644">charAt</a>(0);</pre></td>
+<td><pre>        char first = <a class="variable" href="#linenum202">offsetId</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum656">charAt</a>(0);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum244" class="linenum-cell" data-linenum="244" href="#linenum244"></a></td>
@@ -1352,7 +1352,7 @@
 </tr>
 <tr>
 <td><a id="linenum337" class="linenum-cell" data-linenum="337" href="#linenum337"></a></td>
-<td><pre><span class='comment'>     * allowing it to be used in queries via method reference, {@code ZoneOffset::from}.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * allowing it to be used as a query via method reference, {@code ZoneOffset::from}.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum338" class="linenum-cell" data-linenum="338" href="#linenum338"></a></td>
@@ -1516,15 +1516,15 @@
 </tr>
 <tr>
 <td><a id="linenum378" class="linenum-cell" data-linenum="378" href="#linenum378"></a></td>
-<td><pre>        if (Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1237">abs</a>(<a class="variable" href="#linenum362">minutes</a>) &gt; 59) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum362">minutes</a> &lt; -59 || <a class="variable" href="#linenum362">minutes</a> &gt; 59) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum379" class="linenum-cell" data-linenum="379" href="#linenum379"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/time/DateTimeException.html#linenum75">DateTimeException</a>(<span class='string'>&quot;Zone offset minutes not in valid range: abs(value) &quot;</span> +</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/time/DateTimeException.html#linenum75">DateTimeException</a>(<span class='string'>&quot;Zone offset minutes not in valid range: value &quot;</span> +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum380" class="linenum-cell" data-linenum="380" href="#linenum380"></a></td>
-<td><pre>                    Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1237">abs</a>(<a class="variable" href="#linenum362">minutes</a>) + <span class='string'>&quot; is not in the range 0 to 59&quot;</span>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum362">minutes</a> + <span class='string'>&quot; is not in the range -59 to 59&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum381" class="linenum-cell" data-linenum="381" href="#linenum381"></a></td>
@@ -1532,15 +1532,15 @@
 </tr>
 <tr>
 <td><a id="linenum382" class="linenum-cell" data-linenum="382" href="#linenum382"></a></td>
-<td><pre>        if (Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1237">abs</a>(<a class="variable" href="#linenum362">seconds</a>) &gt; 59) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum362">seconds</a> &lt; -59 || <a class="variable" href="#linenum362">seconds</a> &gt; 59) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum383" class="linenum-cell" data-linenum="383" href="#linenum383"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/time/DateTimeException.html#linenum75">DateTimeException</a>(<span class='string'>&quot;Zone offset seconds not in valid range: abs(value) &quot;</span> +</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/time/DateTimeException.html#linenum75">DateTimeException</a>(<span class='string'>&quot;Zone offset seconds not in valid range: value &quot;</span> +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum384" class="linenum-cell" data-linenum="384" href="#linenum384"></a></td>
-<td><pre>                    Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1237">abs</a>(<a class="variable" href="#linenum362">seconds</a>) + <span class='string'>&quot; is not in the range 0 to 59&quot;</span>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum362">seconds</a> + <span class='string'>&quot; is not in the range -59 to 59&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum385" class="linenum-cell" data-linenum="385" href="#linenum385"></a></td>
@@ -1548,7 +1548,7 @@
 </tr>
 <tr>
 <td><a id="linenum386" class="linenum-cell" data-linenum="386" href="#linenum386"></a></td>
-<td><pre>        if (Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1237">abs</a>(<a class="variable" href="#linenum362">hours</a>) == 18 &amp;&amp; (Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1237">abs</a>(<a class="variable" href="#linenum362">minutes</a>) &gt; 0 || Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1237">abs</a>(<a class="variable" href="#linenum362">seconds</a>) &gt; 0)) {</pre></td>
+<td><pre>        if (Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1182">abs</a>(<a class="variable" href="#linenum362">hours</a>) == 18 &amp;&amp; (<a class="variable" href="#linenum362">minutes</a> | <a class="variable" href="#linenum362">seconds</a>) != 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum387" class="linenum-cell" data-linenum="387" href="#linenum387"></a></td>
@@ -1660,7 +1660,7 @@
 </tr>
 <tr>
 <td><a id="linenum414" class="linenum-cell" data-linenum="414" href="#linenum414"></a></td>
-<td><pre>        if (Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1237">abs</a>(<a class="variable" href="#linenum413">totalSeconds</a>) &gt; <a class="variable" href="#linenum142">MAX_SECONDS</a>) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum413">totalSeconds</a> &lt; -<a class="variable" href="#linenum142">MAX_SECONDS</a> || <a class="variable" href="#linenum413">totalSeconds</a> &gt; <a class="variable" href="#linenum142">MAX_SECONDS</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum415" class="linenum-cell" data-linenum="415" href="#linenum415"></a></td>
@@ -1796,7 +1796,7 @@
 </tr>
 <tr>
 <td><a id="linenum448" class="linenum-cell" data-linenum="448" href="#linenum448"></a></td>
-<td><pre>            int absTotalSeconds = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1237">abs</a>(<a class="variable" href="#linenum444">totalSeconds</a>);</pre></td>
+<td><pre>            int absTotalSeconds = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1182">abs</a>(<a class="variable" href="#linenum444">totalSeconds</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum449" class="linenum-cell" data-linenum="449" href="#linenum449"></a></td>
@@ -1812,7 +1812,7 @@
 </tr>
 <tr>
 <td><a id="linenum452" class="linenum-cell" data-linenum="452" href="#linenum452"></a></td>
-<td><pre>            <a class="variable" href="#linenum449">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="variable" href="#linenum444">totalSeconds</a> &lt; 0 ? <span class='string'>&quot;-&quot;</span> : <span class='string'>&quot;+&quot;</span>)</pre></td>
+<td><pre>            <a class="variable" href="#linenum449">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<a class="variable" href="#linenum444">totalSeconds</a> &lt; 0 ? <span class='string'>&quot;-&quot;</span> : <span class='string'>&quot;+&quot;</span>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum453" class="linenum-cell" data-linenum="453" href="#linenum453"></a></td>
@@ -1832,7 +1832,7 @@
 </tr>
 <tr>
 <td><a id="linenum457" class="linenum-cell" data-linenum="457" href="#linenum457"></a></td>
-<td><pre>                <a class="variable" href="#linenum449">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="variable" href="#linenum455">absSeconds</a> &lt; 10 ? <span class='string'>&quot;:0&quot;</span> : <span class='string'>&quot;:&quot;</span>).append(<a class="variable" href="#linenum455">absSeconds</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum449">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<a class="variable" href="#linenum455">absSeconds</a> &lt; 10 ? <span class='string'>&quot;:0&quot;</span> : <span class='string'>&quot;:&quot;</span>).append(<a class="variable" href="#linenum455">absSeconds</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum458" class="linenum-cell" data-linenum="458" href="#linenum458"></a></td>
@@ -2272,7 +2272,7 @@
 </tr>
 <tr>
 <td><a id="linenum567" class="linenum-cell" data-linenum="567" href="#linenum567"></a></td>
-<td><pre><span class='comment'>     * This queries this offset for the value for the specified field.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * This queries this offset for the value of the specified field.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum568" class="linenum-cell" data-linenum="568" href="#linenum568"></a></td>
@@ -2412,7 +2412,7 @@
 </tr>
 <tr>
 <td><a id="linenum602" class="linenum-cell" data-linenum="602" href="#linenum602"></a></td>
-<td><pre><span class='comment'>     * This queries this offset for the value for the specified field.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * This queries this offset for the value of the specified field.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum603" class="linenum-cell" data-linenum="603" href="#linenum603"></a></td>
@@ -2744,7 +2744,7 @@
 </tr>
 <tr>
 <td><a id="linenum685" class="linenum-cell" data-linenum="685" href="#linenum685"></a></td>
-<td><pre>        return <a class="variable" href="#linenum684">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum224">with</a>(OFFSET_SECONDS, <a class="variable" href="#linenum444">totalSeconds</a>);</pre></td>
+<td><pre>        return <a class="variable" href="#linenum684">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum225">with</a>(OFFSET_SECONDS, <a class="variable" href="#linenum444">totalSeconds</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum686" class="linenum-cell" data-linenum="686" href="#linenum686"></a></td>
@@ -2800,7 +2800,7 @@
 </tr>
 <tr>
 <td><a id="linenum699" class="linenum-cell" data-linenum="699" href="#linenum699"></a></td>
-<td><pre><span class='comment'>     * @return the comparator value, negative if less, postive if greater<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @return the comparator value, negative if less, positive if greater<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum700" class="linenum-cell" data-linenum="700" href="#linenum700"></a></td>
@@ -2820,382 +2820,390 @@
 </tr>
 <tr>
 <td><a id="linenum704" class="linenum-cell" data-linenum="704" href="#linenum704"></a></td>
-<td><pre>        return <a class="variable" href="#linenum703">other</a>.totalSeconds - <a class="variable" href="#linenum444">totalSeconds</a>;</pre></td>
+<td><pre>        <span class='comment'>// abs(totalSeconds) &lt;= MAX_SECONDS, so no overflow can happen here</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum705" class="linenum-cell" data-linenum="705" href="#linenum705"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        return <a class="variable" href="#linenum703">other</a>.totalSeconds - <a class="variable" href="#linenum444">totalSeconds</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum706" class="linenum-cell" data-linenum="706" href="#linenum706"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum707" class="linenum-cell" data-linenum="707" href="#linenum707"></a></td>
-<td><pre>    //-----------------------------------------------------------------------</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum708" class="linenum-cell" data-linenum="708" href="#linenum708"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum709" class="linenum-cell" data-linenum="709" href="#linenum709"></a></td>
-<td><pre><span class='comment'>     * Checks if this offset is equal to another offset.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum710" class="linenum-cell" data-linenum="710" href="#linenum710"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum711" class="linenum-cell" data-linenum="711" href="#linenum711"></a></td>
-<td><pre><span class='comment'>     * The comparison is based on the amount of the offset in seconds.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum712" class="linenum-cell" data-linenum="712" href="#linenum712"></a></td>
-<td><pre><span class='comment'>     * This is equivalent to a comparison by ID.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum713" class="linenum-cell" data-linenum="713" href="#linenum713"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum714" class="linenum-cell" data-linenum="714" href="#linenum714"></a></td>
-<td><pre><span class='comment'>     * @param obj  the object to check, null returns false<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum715" class="linenum-cell" data-linenum="715" href="#linenum715"></a></td>
-<td><pre><span class='comment'>     * @return true if this is equal to the other offset<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum716" class="linenum-cell" data-linenum="716" href="#linenum716"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum717" class="linenum-cell" data-linenum="717" href="#linenum717"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum718" class="linenum-cell" data-linenum="718" href="#linenum718"></a></td>
-<td><pre>    public boolean equals(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> obj) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum719" class="linenum-cell" data-linenum="719" href="#linenum719"></a></td>
-<td><pre>        if (this == <a class="variable" href="#linenum718">obj</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum720" class="linenum-cell" data-linenum="720" href="#linenum720"></a></td>
-<td><pre>           return true;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum721" class="linenum-cell" data-linenum="721" href="#linenum721"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum722" class="linenum-cell" data-linenum="722" href="#linenum722"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum718">obj</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum723" class="linenum-cell" data-linenum="723" href="#linenum723"></a></td>
-<td><pre>            return <a class="variable" href="#linenum444">totalSeconds</a> == ((<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a>) <a class="variable" href="#linenum718">obj</a>).totalSeconds;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum724" class="linenum-cell" data-linenum="724" href="#linenum724"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum725" class="linenum-cell" data-linenum="725" href="#linenum725"></a></td>
-<td><pre>        return false;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum726" class="linenum-cell" data-linenum="726" href="#linenum726"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum727" class="linenum-cell" data-linenum="727" href="#linenum727"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum728" class="linenum-cell" data-linenum="728" href="#linenum728"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum729" class="linenum-cell" data-linenum="729" href="#linenum729"></a></td>
-<td><pre><span class='comment'>     * A hash code for this offset.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum730" class="linenum-cell" data-linenum="730" href="#linenum730"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum731" class="linenum-cell" data-linenum="731" href="#linenum731"></a></td>
-<td><pre><span class='comment'>     * @return a suitable hash code<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum732" class="linenum-cell" data-linenum="732" href="#linenum732"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum733" class="linenum-cell" data-linenum="733" href="#linenum733"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum734" class="linenum-cell" data-linenum="734" href="#linenum734"></a></td>
-<td><pre>    public int hashCode() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum735" class="linenum-cell" data-linenum="735" href="#linenum735"></a></td>
-<td><pre>        return <a class="variable" href="#linenum444">totalSeconds</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum736" class="linenum-cell" data-linenum="736" href="#linenum736"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum737" class="linenum-cell" data-linenum="737" href="#linenum737"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum738" class="linenum-cell" data-linenum="738" href="#linenum738"></a></td>
 <td><pre>    //-----------------------------------------------------------------------</pre></td>
 </tr>
 <tr>
-<td><a id="linenum739" class="linenum-cell" data-linenum="739" href="#linenum739"></a></td>
+<td><a id="linenum709" class="linenum-cell" data-linenum="709" href="#linenum709"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum740" class="linenum-cell" data-linenum="740" href="#linenum740"></a></td>
-<td><pre><span class='comment'>     * Outputs this offset as a {@code String}, using the normalized ID.<span class='comment'></pre></td>
+<td><a id="linenum710" class="linenum-cell" data-linenum="710" href="#linenum710"></a></td>
+<td><pre><span class='comment'>     * Checks if this offset is equal to another offset.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum741" class="linenum-cell" data-linenum="741" href="#linenum741"></a></td>
+<td><a id="linenum711" class="linenum-cell" data-linenum="711" href="#linenum711"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum712" class="linenum-cell" data-linenum="712" href="#linenum712"></a></td>
+<td><pre><span class='comment'>     * The comparison is based on the amount of the offset in seconds.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum713" class="linenum-cell" data-linenum="713" href="#linenum713"></a></td>
+<td><pre><span class='comment'>     * This is equivalent to a comparison by ID.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum714" class="linenum-cell" data-linenum="714" href="#linenum714"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum742" class="linenum-cell" data-linenum="742" href="#linenum742"></a></td>
-<td><pre><span class='comment'>     * @return a string representation of this offset, not null<span class='comment'></pre></td>
+<td><a id="linenum715" class="linenum-cell" data-linenum="715" href="#linenum715"></a></td>
+<td><pre><span class='comment'>     * @param obj  the object to check, null returns false<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum743" class="linenum-cell" data-linenum="743" href="#linenum743"></a></td>
+<td><a id="linenum716" class="linenum-cell" data-linenum="716" href="#linenum716"></a></td>
+<td><pre><span class='comment'>     * @return true if this is equal to the other offset<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum717" class="linenum-cell" data-linenum="717" href="#linenum717"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum744" class="linenum-cell" data-linenum="744" href="#linenum744"></a></td>
+<td><a id="linenum718" class="linenum-cell" data-linenum="718" href="#linenum718"></a></td>
 <td><pre>    @Override</pre></td>
 </tr>
 <tr>
-<td><a id="linenum745" class="linenum-cell" data-linenum="745" href="#linenum745"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> toString() {</pre></td>
+<td><a id="linenum719" class="linenum-cell" data-linenum="719" href="#linenum719"></a></td>
+<td><pre>    public boolean equals(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> obj) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum746" class="linenum-cell" data-linenum="746" href="#linenum746"></a></td>
-<td><pre>        return <a class="variable" href="#linenum168">id</a>;</pre></td>
+<td><a id="linenum720" class="linenum-cell" data-linenum="720" href="#linenum720"></a></td>
+<td><pre>        if (this == <a class="variable" href="#linenum719">obj</a>) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum747" class="linenum-cell" data-linenum="747" href="#linenum747"></a></td>
-<td><pre>    }</pre></td>
+<td><a id="linenum721" class="linenum-cell" data-linenum="721" href="#linenum721"></a></td>
+<td><pre>           return true;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum748" class="linenum-cell" data-linenum="748" href="#linenum748"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum749" class="linenum-cell" data-linenum="749" href="#linenum749"></a></td>
-<td><pre>    // -----------------------------------------------------------------------</pre></td>
-</tr>
-<tr>
-<td><a id="linenum750" class="linenum-cell" data-linenum="750" href="#linenum750"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum751" class="linenum-cell" data-linenum="751" href="#linenum751"></a></td>
-<td><pre><span class='comment'>     * Writes the object using a<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum752" class="linenum-cell" data-linenum="752" href="#linenum752"></a></td>
-<td><pre><span class='comment'>     * &lt;a href=&quot;../../serialized-form.html#java.time.Ser&quot;&gt;dedicated serialized form&lt;/a&gt;.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum753" class="linenum-cell" data-linenum="753" href="#linenum753"></a></td>
-<td><pre><span class='comment'>     * @serialData<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum754" class="linenum-cell" data-linenum="754" href="#linenum754"></a></td>
-<td><pre><span class='comment'>     * &lt;pre&gt;<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum755" class="linenum-cell" data-linenum="755" href="#linenum755"></a></td>
-<td><pre><span class='comment'>     *  out.writeByte(8);                  // identifies a ZoneOffset<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum756" class="linenum-cell" data-linenum="756" href="#linenum756"></a></td>
-<td><pre><span class='comment'>     *  int offsetByte = totalSeconds % 900 == 0 ? totalSeconds / 900 : 127;<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum757" class="linenum-cell" data-linenum="757" href="#linenum757"></a></td>
-<td><pre><span class='comment'>     *  out.writeByte(offsetByte);<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum758" class="linenum-cell" data-linenum="758" href="#linenum758"></a></td>
-<td><pre><span class='comment'>     *  if (offsetByte == 127) {<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum759" class="linenum-cell" data-linenum="759" href="#linenum759"></a></td>
-<td><pre><span class='comment'>     *      out.writeInt(totalSeconds);<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum760" class="linenum-cell" data-linenum="760" href="#linenum760"></a></td>
-<td><pre><span class='comment'>     *  }<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum761" class="linenum-cell" data-linenum="761" href="#linenum761"></a></td>
-<td><pre><span class='comment'>     * &lt;/pre&gt;<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum762" class="linenum-cell" data-linenum="762" href="#linenum762"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum763" class="linenum-cell" data-linenum="763" href="#linenum763"></a></td>
-<td><pre><span class='comment'>     * @return the instance of {@code Ser}, not null<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum764" class="linenum-cell" data-linenum="764" href="#linenum764"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum765" class="linenum-cell" data-linenum="765" href="#linenum765"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> writeReplace() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum766" class="linenum-cell" data-linenum="766" href="#linenum766"></a></td>
-<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/java/time/Ser.html#linenum89">Ser</a>(Ser.ZONE_OFFSET_TYPE, this);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum767" class="linenum-cell" data-linenum="767" href="#linenum767"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum768" class="linenum-cell" data-linenum="768" href="#linenum768"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum769" class="linenum-cell" data-linenum="769" href="#linenum769"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum770" class="linenum-cell" data-linenum="770" href="#linenum770"></a></td>
-<td><pre><span class='comment'>     * Defend against malicious streams.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum771" class="linenum-cell" data-linenum="771" href="#linenum771"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum772" class="linenum-cell" data-linenum="772" href="#linenum772"></a></td>
-<td><pre><span class='comment'>     * @throws InvalidObjectException always<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum773" class="linenum-cell" data-linenum="773" href="#linenum773"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum774" class="linenum-cell" data-linenum="774" href="#linenum774"></a></td>
-<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum206">ObjectInputStream</a> s) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum775" class="linenum-cell" data-linenum="775" href="#linenum775"></a></td>
-<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a>(<span class='string'>&quot;Deserialization via serialization delegate&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum776" class="linenum-cell" data-linenum="776" href="#linenum776"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum777" class="linenum-cell" data-linenum="777" href="#linenum777"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum778" class="linenum-cell" data-linenum="778" href="#linenum778"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum779" class="linenum-cell" data-linenum="779" href="#linenum779"></a></td>
-<td><pre>    void write(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum49">DataOutput</a> out) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum780" class="linenum-cell" data-linenum="780" href="#linenum780"></a></td>
-<td><pre>        <a class="variable" href="#linenum779">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(Ser.ZONE_OFFSET_TYPE);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum781" class="linenum-cell" data-linenum="781" href="#linenum781"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum784">writeExternal</a>(<a class="variable" href="#linenum779">out</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum782" class="linenum-cell" data-linenum="782" href="#linenum782"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum783" class="linenum-cell" data-linenum="783" href="#linenum783"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum784" class="linenum-cell" data-linenum="784" href="#linenum784"></a></td>
-<td><pre>    void writeExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum49">DataOutput</a> out) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum785" class="linenum-cell" data-linenum="785" href="#linenum785"></a></td>
-<td><pre>        final int offsetSecs = <a class="variable" href="#linenum444">totalSeconds</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum786" class="linenum-cell" data-linenum="786" href="#linenum786"></a></td>
-<td><pre>        int offsetByte = <a class="variable" href="#linenum785">offsetSecs</a> % 900 == 0 ? <a class="variable" href="#linenum785">offsetSecs</a> / 900 : 127;  <span class='comment'>// compress to -72 to +72</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum787" class="linenum-cell" data-linenum="787" href="#linenum787"></a></td>
-<td><pre>        <a class="variable" href="#linenum784">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum786">offsetByte</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum788" class="linenum-cell" data-linenum="788" href="#linenum788"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum786">offsetByte</a> == 127) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum789" class="linenum-cell" data-linenum="789" href="#linenum789"></a></td>
-<td><pre>            <a class="variable" href="#linenum784">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum193">writeInt</a>(<a class="variable" href="#linenum785">offsetSecs</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum790" class="linenum-cell" data-linenum="790" href="#linenum790"></a></td>
+<td><a id="linenum722" class="linenum-cell" data-linenum="722" href="#linenum722"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum791" class="linenum-cell" data-linenum="791" href="#linenum791"></a></td>
+<td><a id="linenum723" class="linenum-cell" data-linenum="723" href="#linenum723"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum719">obj</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum724" class="linenum-cell" data-linenum="724" href="#linenum724"></a></td>
+<td><pre>            return <a class="variable" href="#linenum444">totalSeconds</a> == ((<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a>) <a class="variable" href="#linenum719">obj</a>).totalSeconds;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum725" class="linenum-cell" data-linenum="725" href="#linenum725"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum726" class="linenum-cell" data-linenum="726" href="#linenum726"></a></td>
+<td><pre>        return false;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum727" class="linenum-cell" data-linenum="727" href="#linenum727"></a></td>
 <td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum728" class="linenum-cell" data-linenum="728" href="#linenum728"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum729" class="linenum-cell" data-linenum="729" href="#linenum729"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum730" class="linenum-cell" data-linenum="730" href="#linenum730"></a></td>
+<td><pre><span class='comment'>     * A hash code for this offset.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum731" class="linenum-cell" data-linenum="731" href="#linenum731"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum732" class="linenum-cell" data-linenum="732" href="#linenum732"></a></td>
+<td><pre><span class='comment'>     * @return a suitable hash code<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum733" class="linenum-cell" data-linenum="733" href="#linenum733"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum734" class="linenum-cell" data-linenum="734" href="#linenum734"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum735" class="linenum-cell" data-linenum="735" href="#linenum735"></a></td>
+<td><pre>    public int hashCode() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum736" class="linenum-cell" data-linenum="736" href="#linenum736"></a></td>
+<td><pre>        return <a class="variable" href="#linenum444">totalSeconds</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum737" class="linenum-cell" data-linenum="737" href="#linenum737"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum738" class="linenum-cell" data-linenum="738" href="#linenum738"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum739" class="linenum-cell" data-linenum="739" href="#linenum739"></a></td>
+<td><pre>    //-----------------------------------------------------------------------</pre></td>
+</tr>
+<tr>
+<td><a id="linenum740" class="linenum-cell" data-linenum="740" href="#linenum740"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum741" class="linenum-cell" data-linenum="741" href="#linenum741"></a></td>
+<td><pre><span class='comment'>     * Outputs this offset as a {@code String}, using the normalized ID.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum742" class="linenum-cell" data-linenum="742" href="#linenum742"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum743" class="linenum-cell" data-linenum="743" href="#linenum743"></a></td>
+<td><pre><span class='comment'>     * @return a string representation of this offset, not null<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum744" class="linenum-cell" data-linenum="744" href="#linenum744"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum745" class="linenum-cell" data-linenum="745" href="#linenum745"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum746" class="linenum-cell" data-linenum="746" href="#linenum746"></a></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> toString() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum747" class="linenum-cell" data-linenum="747" href="#linenum747"></a></td>
+<td><pre>        return <a class="variable" href="#linenum168">id</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum748" class="linenum-cell" data-linenum="748" href="#linenum748"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum749" class="linenum-cell" data-linenum="749" href="#linenum749"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum750" class="linenum-cell" data-linenum="750" href="#linenum750"></a></td>
+<td><pre>    // -----------------------------------------------------------------------</pre></td>
+</tr>
+<tr>
+<td><a id="linenum751" class="linenum-cell" data-linenum="751" href="#linenum751"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum752" class="linenum-cell" data-linenum="752" href="#linenum752"></a></td>
+<td><pre><span class='comment'>     * Writes the object using a<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum753" class="linenum-cell" data-linenum="753" href="#linenum753"></a></td>
+<td><pre><span class='comment'>     * &lt;a href=&quot;../../serialized-form.html#java.time.Ser&quot;&gt;dedicated serialized form&lt;/a&gt;.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum754" class="linenum-cell" data-linenum="754" href="#linenum754"></a></td>
+<td><pre><span class='comment'>     * @serialData<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum755" class="linenum-cell" data-linenum="755" href="#linenum755"></a></td>
+<td><pre><span class='comment'>     * &lt;pre&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum756" class="linenum-cell" data-linenum="756" href="#linenum756"></a></td>
+<td><pre><span class='comment'>     *  out.writeByte(8);                  // identifies a ZoneOffset<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum757" class="linenum-cell" data-linenum="757" href="#linenum757"></a></td>
+<td><pre><span class='comment'>     *  int offsetByte = totalSeconds % 900 == 0 ? totalSeconds / 900 : 127;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum758" class="linenum-cell" data-linenum="758" href="#linenum758"></a></td>
+<td><pre><span class='comment'>     *  out.writeByte(offsetByte);<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum759" class="linenum-cell" data-linenum="759" href="#linenum759"></a></td>
+<td><pre><span class='comment'>     *  if (offsetByte == 127) {<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum760" class="linenum-cell" data-linenum="760" href="#linenum760"></a></td>
+<td><pre><span class='comment'>     *      out.writeInt(totalSeconds);<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum761" class="linenum-cell" data-linenum="761" href="#linenum761"></a></td>
+<td><pre><span class='comment'>     *  }<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum762" class="linenum-cell" data-linenum="762" href="#linenum762"></a></td>
+<td><pre><span class='comment'>     * &lt;/pre&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum763" class="linenum-cell" data-linenum="763" href="#linenum763"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum764" class="linenum-cell" data-linenum="764" href="#linenum764"></a></td>
+<td><pre><span class='comment'>     * @return the instance of {@code Ser}, not null<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum765" class="linenum-cell" data-linenum="765" href="#linenum765"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum766" class="linenum-cell" data-linenum="766" href="#linenum766"></a></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> writeReplace() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum767" class="linenum-cell" data-linenum="767" href="#linenum767"></a></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/java/time/Ser.html#linenum89">Ser</a>(Ser.ZONE_OFFSET_TYPE, this);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum768" class="linenum-cell" data-linenum="768" href="#linenum768"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum769" class="linenum-cell" data-linenum="769" href="#linenum769"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum770" class="linenum-cell" data-linenum="770" href="#linenum770"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum771" class="linenum-cell" data-linenum="771" href="#linenum771"></a></td>
+<td><pre><span class='comment'>     * Defend against malicious streams.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum772" class="linenum-cell" data-linenum="772" href="#linenum772"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum773" class="linenum-cell" data-linenum="773" href="#linenum773"></a></td>
+<td><pre><span class='comment'>     * @param s the stream to read<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum774" class="linenum-cell" data-linenum="774" href="#linenum774"></a></td>
+<td><pre><span class='comment'>     * @throws InvalidObjectException always<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum775" class="linenum-cell" data-linenum="775" href="#linenum775"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum776" class="linenum-cell" data-linenum="776" href="#linenum776"></a></td>
+<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum217">ObjectInputStream</a> s) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum777" class="linenum-cell" data-linenum="777" href="#linenum777"></a></td>
+<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a>(<span class='string'>&quot;Deserialization via serialization delegate&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum778" class="linenum-cell" data-linenum="778" href="#linenum778"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum779" class="linenum-cell" data-linenum="779" href="#linenum779"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum780" class="linenum-cell" data-linenum="780" href="#linenum780"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum781" class="linenum-cell" data-linenum="781" href="#linenum781"></a></td>
+<td><pre>    void write(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum49">DataOutput</a> out) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum782" class="linenum-cell" data-linenum="782" href="#linenum782"></a></td>
+<td><pre>        <a class="variable" href="#linenum781">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(Ser.ZONE_OFFSET_TYPE);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum783" class="linenum-cell" data-linenum="783" href="#linenum783"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum786">writeExternal</a>(<a class="variable" href="#linenum781">out</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum784" class="linenum-cell" data-linenum="784" href="#linenum784"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum785" class="linenum-cell" data-linenum="785" href="#linenum785"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum786" class="linenum-cell" data-linenum="786" href="#linenum786"></a></td>
+<td><pre>    void writeExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum49">DataOutput</a> out) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum787" class="linenum-cell" data-linenum="787" href="#linenum787"></a></td>
+<td><pre>        final int offsetSecs = <a class="variable" href="#linenum444">totalSeconds</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum788" class="linenum-cell" data-linenum="788" href="#linenum788"></a></td>
+<td><pre>        int offsetByte = <a class="variable" href="#linenum787">offsetSecs</a> % 900 == 0 ? <a class="variable" href="#linenum787">offsetSecs</a> / 900 : 127;  <span class='comment'>// compress to -72 to +72</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum789" class="linenum-cell" data-linenum="789" href="#linenum789"></a></td>
+<td><pre>        <a class="variable" href="#linenum786">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum788">offsetByte</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum790" class="linenum-cell" data-linenum="790" href="#linenum790"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum788">offsetByte</a> == 127) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum791" class="linenum-cell" data-linenum="791" href="#linenum791"></a></td>
+<td><pre>            <a class="variable" href="#linenum786">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum193">writeInt</a>(<a class="variable" href="#linenum787">offsetSecs</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum792" class="linenum-cell" data-linenum="792" href="#linenum792"></a></td>
-<td><pre></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum793" class="linenum-cell" data-linenum="793" href="#linenum793"></a></td>
-<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a> readExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum148">DataInput</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum794" class="linenum-cell" data-linenum="794" href="#linenum794"></a></td>
-<td><pre>        int offsetByte = <a class="variable" href="#linenum793">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum290">readByte</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum795" class="linenum-cell" data-linenum="795" href="#linenum795"></a></td>
-<td><pre>        return (<a class="variable" href="#linenum794">offsetByte</a> == 127 ? ZoneOffset.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum413">ofTotalSeconds</a>(<a class="variable" href="#linenum793">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum393">readInt</a>()) : ZoneOffset.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum413">ofTotalSeconds</a>(<a class="variable" href="#linenum794">offsetByte</a> * 900));</pre></td>
-</tr>
-<tr>
-<td><a id="linenum796" class="linenum-cell" data-linenum="796" href="#linenum796"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum797" class="linenum-cell" data-linenum="797" href="#linenum797"></a></td>
+<td><a id="linenum794" class="linenum-cell" data-linenum="794" href="#linenum794"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum795" class="linenum-cell" data-linenum="795" href="#linenum795"></a></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a> readExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum148">DataInput</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum796" class="linenum-cell" data-linenum="796" href="#linenum796"></a></td>
+<td><pre>        int offsetByte = <a class="variable" href="#linenum795">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum290">readByte</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum797" class="linenum-cell" data-linenum="797" href="#linenum797"></a></td>
+<td><pre>        return (<a class="variable" href="#linenum796">offsetByte</a> == 127 ? ZoneOffset.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum413">ofTotalSeconds</a>(<a class="variable" href="#linenum795">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum393">readInt</a>()) : ZoneOffset.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum413">ofTotalSeconds</a>(<a class="variable" href="#linenum796">offsetByte</a> * 900));</pre></td>
+</tr>
+<tr>
 <td><a id="linenum798" class="linenum-cell" data-linenum="798" href="#linenum798"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum799" class="linenum-cell" data-linenum="799" href="#linenum799"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum800" class="linenum-cell" data-linenum="800" href="#linenum800"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

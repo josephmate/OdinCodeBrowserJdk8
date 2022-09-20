@@ -168,7 +168,7 @@
 </tr>
 <tr>
 <td><a id="linenum41" class="linenum-cell" data-linenum="41" href="#linenum41"></a></td>
-<td><pre>class WrappedSocket extends <a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum53">Socket</a> {</pre></td>
+<td><pre>class WrappedSocket extends <a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum55">Socket</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
@@ -180,7 +180,7 @@
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
-<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum53">Socket</a> socket;</pre></td>
+<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum55">Socket</a> socket;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
@@ -252,7 +252,7 @@
 </tr>
 <tr>
 <td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
-<td><pre>    public WrappedSocket(<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum53">Socket</a> socket, <a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum45">InputStream</a> in, <a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum46">OutputStream</a> out)</pre></td>
+<td><pre>    public WrappedSocket(<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum55">Socket</a> socket, <a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum45">InputStream</a> in, <a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum46">OutputStream</a> out)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum63" class="linenum-cell" data-linenum="63" href="#linenum63"></a></td>
@@ -300,7 +300,7 @@
 </tr>
 <tr>
 <td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum188">InetAddress</a> getInetAddress()</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum189">InetAddress</a> getInetAddress()</pre></td>
 </tr>
 <tr>
 <td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
@@ -308,7 +308,7 @@
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
-<td><pre>        return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum688">getInetAddress</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum706">getInetAddress</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
@@ -332,15 +332,15 @@
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum188">InetAddress</a> getLocalAddress() {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum189">InetAddress</a> getLocalAddress() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
-<td><pre>        return  AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a>(</pre></td>
+<td><pre>        return  AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum297">doPrivileged</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre>                        new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum188">InetAddress</a>&gt;() {</pre></td>
+<td><pre>                        new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum189">InetAddress</a>&gt;() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
@@ -348,11 +348,11 @@
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
-<td><pre>                            public <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum188">InetAddress</a> run() {</pre></td>
+<td><pre>                            public <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum189">InetAddress</a> run() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre>                                return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum713">getLocalAddress</a>();</pre></td>
+<td><pre>                                return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum731">getLocalAddress</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
@@ -396,7 +396,7 @@
 </tr>
 <tr>
 <td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
-<td><pre>        return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum744">getPort</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum762">getPort</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
@@ -428,7 +428,7 @@
 </tr>
 <tr>
 <td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre>        return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum765">getLocalPort</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum783">getLocalPort</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
@@ -464,7 +464,7 @@
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
-<td><pre>            <a class="variable" href="#linenum62">in</a> = <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum901">getInputStream</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum62">in</a> = <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum919">getInputStream</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
@@ -504,7 +504,7 @@
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>            <a class="variable" href="#linenum62">out</a> = <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum941">getOutputStream</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum62">out</a> = <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum959">getOutputStream</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
@@ -540,7 +540,7 @@
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>        <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum977">setTcpNoDelay</a>(<a class="variable" href="#linenum132">on</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum995">setTcpNoDelay</a>(<a class="variable" href="#linenum132">on</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
@@ -572,7 +572,7 @@
 </tr>
 <tr>
 <td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre>        return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum993">getTcpNoDelay</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1011">getTcpNoDelay</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
@@ -604,7 +604,7 @@
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre>        <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1014">setSoLinger</a>(<a class="variable" href="#linenum148">on</a>, <a class="variable" href="#linenum148">val</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1032">setSoLinger</a>(<a class="variable" href="#linenum148">on</a>, <a class="variable" href="#linenum148">val</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
@@ -636,7 +636,7 @@
 </tr>
 <tr>
 <td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
-<td><pre>        return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1042">getSoLinger</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1060">getSoLinger</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
@@ -668,7 +668,7 @@
 </tr>
 <tr>
 <td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
-<td><pre>        <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1135">setSoTimeout</a>(<a class="variable" href="#linenum164">timeout</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1153">setSoTimeout</a>(<a class="variable" href="#linenum164">timeout</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
@@ -700,7 +700,7 @@
 </tr>
 <tr>
 <td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
-<td><pre>        return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1155">getSoTimeout</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1173">getSoTimeout</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
@@ -732,7 +732,7 @@
 </tr>
 <tr>
 <td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
-<td><pre>        <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1483">close</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1508">close</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
@@ -764,7 +764,7 @@
 </tr>
 <tr>
 <td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
-<td><pre>        return <span class='string'>&quot;Wrapped&quot;</span> + <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1558">toString</a>();</pre></td>
+<td><pre>        return <span class='string'>&quot;Wrapped&quot;</span> + <a class="variable" href="#linenum62">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/Socket.html#linenum1583">toString</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>

@@ -352,7 +352,7 @@
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre><span class='comment'>     * @size the number of bytes to read from the array.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param size the number of bytes to read from the array.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
@@ -496,11 +496,11 @@
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>        <a class="variable" href="#linenum121">os</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum106">write</a>(<a class="variable" href="#linenum121">val</a>&gt;&gt;&gt;8);</pre></td>
+<td><pre>        <a class="variable" href="#linenum121">os</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum62">write</a>(<a class="variable" href="#linenum121">val</a>&gt;&gt;&gt;8);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>        <a class="variable" href="#linenum121">os</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum106">write</a>(<a class="variable" href="#linenum121">val</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum121">os</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum62">write</a>(<a class="variable" href="#linenum121">val</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
@@ -580,7 +580,7 @@
 </tr>
 <tr>
 <td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre><span class='comment'>     * @returns the integer value<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @return the integer value<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
@@ -600,11 +600,11 @@
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre>        return (((0xFF &amp; <a class="variable" href="#linenum148">is</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum161">read</a>()) &lt;&lt; 8)</pre></td>
+<td><pre>        return (((0xFF &amp; <a class="variable" href="#linenum148">is</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum65">read</a>()) &lt;&lt; 8)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre>                 | (0xFF &amp; <a class="variable" href="#linenum148">is</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum161">read</a>()));</pre></td>
+<td><pre>                 | (0xFF &amp; <a class="variable" href="#linenum148">is</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum65">read</a>()));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
@@ -636,7 +636,7 @@
 </tr>
 <tr>
 <td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
-<td><pre><span class='comment'>     * @returns the integer value<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @return the integer value<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
@@ -684,11 +684,11 @@
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre><span class='comment'>     * @param throws EOFException if EOF is reached before all bytes are<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @throws EOFException if EOF is reached before all bytes are<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre><span class='comment'>     * read.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *         read.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
@@ -752,11 +752,11 @@
 </tr>
 <tr>
 <td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
-<td><pre><span class='comment'>     * @param throws EOFException if EOF is reached before all bytes are<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @throws EOFException if EOF is reached before all bytes are<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
-<td><pre><span class='comment'>     * read.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *         read.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
@@ -900,15 +900,15 @@
 </tr>
 <tr>
 <td><a id="linenum224" class="linenum-cell" data-linenum="224" href="#linenum224"></a></td>
-<td><pre>            <a class="variable" href="#linenum219">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum232">toHexString</a>(<a class="variable" href="#linenum221">b1</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum219">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>(Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum232">toHexString</a>(<a class="variable" href="#linenum221">b1</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum225" class="linenum-cell" data-linenum="225" href="#linenum225"></a></td>
-<td><pre>            <a class="variable" href="#linenum219">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum232">toHexString</a>(<a class="variable" href="#linenum222">b2</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum219">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>(Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum232">toHexString</a>(<a class="variable" href="#linenum222">b2</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum226" class="linenum-cell" data-linenum="226" href="#linenum226"></a></td>
-<td><pre>            <a class="variable" href="#linenum219">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(' ');</pre></td>
+<td><pre>            <a class="variable" href="#linenum219">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>(' ');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum227" class="linenum-cell" data-linenum="227" href="#linenum227"></a></td>
@@ -916,7 +916,7 @@
 </tr>
 <tr>
 <td><a id="linenum228" class="linenum-cell" data-linenum="228" href="#linenum228"></a></td>
-<td><pre>        return <a class="variable" href="#linenum219">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum668">toString</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum219">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum666">toString</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum229" class="linenum-cell" data-linenum="229" href="#linenum229"></a></td>

@@ -420,7 +420,7 @@
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre>final class ChronoZonedDateTimeImpl&lt;D extends <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a>&gt;</pre></td>
+<td><pre>final class ChronoZonedDateTimeImpl&lt;D extends <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a>&gt;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
@@ -540,7 +540,7 @@
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>    static &lt;R extends <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a>&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTime.html#linenum121">ChronoZonedDateTime</a>&lt;R&gt; ofBest(</pre></td>
+<td><pre>    static &lt;R extends <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a>&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTime.html#linenum121">ChronoZonedDateTime</a>&lt;R&gt; ofBest(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
@@ -548,7 +548,7 @@
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>        Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum288">requireNonNull</a>(<a class="variable" href="#linenum135">localDateTime</a>, <span class='string'>&quot;localDateTime&quot;</span>);</pre></td>
+<td><pre>        Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum226">requireNonNull</a>(<a class="variable" href="#linenum135">localDateTime</a>, <span class='string'>&quot;localDateTime&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
@@ -576,7 +576,7 @@
 </tr>
 <tr>
 <td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a>&gt; validOffsets = <a class="variable" href="#linenum141">rules</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneRules.html#linenum585">getValidOffsets</a>(<a class="variable" href="#linenum142">isoLDT</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a>&gt; validOffsets = <a class="variable" href="#linenum141">rules</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneRules.html#linenum586">getValidOffsets</a>(<a class="variable" href="#linenum142">isoLDT</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
@@ -596,15 +596,15 @@
 </tr>
 <tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneOffsetTransition.html#linenum99">ZoneOffsetTransition</a> trans = <a class="variable" href="#linenum141">rules</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneRules.html#linenum628">getTransition</a>(<a class="variable" href="#linenum142">isoLDT</a>);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneOffsetTransition.html#linenum99">ZoneOffsetTransition</a> trans = <a class="variable" href="#linenum141">rules</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneRules.html#linenum629">getTransition</a>(<a class="variable" href="#linenum142">isoLDT</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre>            <a class="variable" href="#linenum135">localDateTime</a> = <a class="variable" href="#linenum135">localDateTime</a>.plusSeconds(<a class="variable" href="#linenum148">trans</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneOffsetTransition.html#linenum319">getDuration</a>().getSeconds());</pre></td>
+<td><pre>            <a class="variable" href="#linenum135">localDateTime</a> = <a class="variable" href="#linenum135">localDateTime</a>.plusSeconds(<a class="variable" href="#linenum148">trans</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneOffsetTransition.html#linenum321">getDuration</a>().getSeconds());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre>            <a class="variable" href="#linenum144">offset</a> = <a class="variable" href="#linenum148">trans</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneOffsetTransition.html#linenum306">getOffsetAfter</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum144">offset</a> = <a class="variable" href="#linenum148">trans</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneOffsetTransition.html#linenum308">getOffsetAfter</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
@@ -684,7 +684,7 @@
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum104">ChronoZonedDateTimeImpl</a>&lt;?&gt; ofInstant(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum157">Chronology</a> chrono, <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum212">Instant</a> instant, <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum177">ZoneId</a> zone) {</pre></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum104">ChronoZonedDateTimeImpl</a>&lt;?&gt; ofInstant(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum158">Chronology</a> chrono, <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum207">Instant</a> instant, <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum177">ZoneId</a> zone) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
@@ -692,7 +692,7 @@
 </tr>
 <tr>
 <td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a> offset = <a class="variable" href="#linenum171">rules</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneRules.html#linenum535">getOffset</a>(<a class="variable" href="#linenum170">instant</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a> offset = <a class="variable" href="#linenum171">rules</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneRules.html#linenum536">getOffset</a>(<a class="variable" href="#linenum170">instant</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
@@ -700,11 +700,11 @@
 </tr>
 <tr>
 <td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalDateTime.html#linenum135">LocalDateTime</a> ldt = LocalDateTime.<a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalDateTime.html#linenum416">ofEpochSecond</a>(<a class="variable" href="#linenum170">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum623">getEpochSecond</a>(), <a class="variable" href="#linenum170">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum636">getNano</a>(), <a class="variable" href="#linenum172">offset</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalDateTime.html#linenum135">LocalDateTime</a> ldt = LocalDateTime.<a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalDateTime.html#linenum416">ofEpochSecond</a>(<a class="variable" href="#linenum170">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum618">getEpochSecond</a>(), <a class="variable" href="#linenum170">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum631">getNano</a>(), <a class="variable" href="#linenum172">offset</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateTimeImpl.html#linenum100">ChronoLocalDateTimeImpl</a>&lt;?&gt; cldt = (<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateTimeImpl.html#linenum100">ChronoLocalDateTimeImpl</a>&lt;?&gt;)<a class="variable" href="#linenum170">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum469">localDateTime</a>(<a class="variable" href="#linenum174">ldt</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateTimeImpl.html#linenum100">ChronoLocalDateTimeImpl</a>&lt;?&gt; cldt = (<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateTimeImpl.html#linenum100">ChronoLocalDateTimeImpl</a>&lt;?&gt;)<a class="variable" href="#linenum170">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum470">localDateTime</a>(<a class="variable" href="#linenum174">ldt</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
@@ -752,7 +752,7 @@
 </tr>
 <tr>
 <td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum104">ChronoZonedDateTimeImpl</a>&lt;D&gt; create(<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum212">Instant</a> instant, <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum177">ZoneId</a> zone) {</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum104">ChronoZonedDateTimeImpl</a>&lt;D&gt; create(<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum207">Instant</a> instant, <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum177">ZoneId</a> zone) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
@@ -804,7 +804,7 @@
 </tr>
 <tr>
 <td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
-<td><pre>    static &lt;R extends <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a>&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum104">ChronoZonedDateTimeImpl</a>&lt;R&gt; ensureValid(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum157">Chronology</a> chrono, <a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum129">Temporal</a> temporal) {</pre></td>
+<td><pre>    static &lt;R extends <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a>&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum104">ChronoZonedDateTimeImpl</a>&lt;R&gt; ensureValid(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum158">Chronology</a> chrono, <a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum129">Temporal</a> temporal) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
@@ -816,11 +816,11 @@
 </tr>
 <tr>
 <td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum200">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum729">equals</a>(<a class="variable" href="#linenum202">other</a>.getChronology()) == false) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum200">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum730">equals</a>(<a class="variable" href="#linenum202">other</a>.getChronology()) == false) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ClassCastException.html#linenum40">ClassCastException</a>(<span class='string'>&quot;Chronology mismatch, required: &quot;</span> + <a class="variable" href="#linenum200">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum276">getId</a>()</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ClassCastException.html#linenum40">ClassCastException</a>(<span class='string'>&quot;Chronology mismatch, required: &quot;</span> + <a class="variable" href="#linenum200">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum277">getId</a>()</pre></td>
 </tr>
 <tr>
 <td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
@@ -880,15 +880,15 @@
 </tr>
 <tr>
 <td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>
-<td><pre>        this.dateTime = Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum288">requireNonNull</a>(<a class="variable" href="#linenum115">dateTime</a>, <span class='string'>&quot;dateTime&quot;</span>);</pre></td>
+<td><pre>        this.dateTime = Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum226">requireNonNull</a>(<a class="variable" href="#linenum115">dateTime</a>, <span class='string'>&quot;dateTime&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
-<td><pre>        this.offset = Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum288">requireNonNull</a>(<a class="variable" href="#linenum172">offset</a>, <span class='string'>&quot;offset&quot;</span>);</pre></td>
+<td><pre>        this.offset = Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum226">requireNonNull</a>(<a class="variable" href="#linenum172">offset</a>, <span class='string'>&quot;offset&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
-<td><pre>        this.zone = Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum288">requireNonNull</a>(<a class="variable" href="#linenum187">zone</a>, <span class='string'>&quot;zone&quot;</span>);</pre></td>
+<td><pre>        this.zone = Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum226">requireNonNull</a>(<a class="variable" href="#linenum187">zone</a>, <span class='string'>&quot;zone&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum222" class="linenum-cell" data-linenum="222" href="#linenum222"></a></td>
@@ -936,15 +936,15 @@
 </tr>
 <tr>
 <td><a id="linenum233" class="linenum-cell" data-linenum="233" href="#linenum233"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum232">trans</a> != null &amp;&amp; <a class="variable" href="#linenum232">trans</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneOffsetTransition.html#linenum354">isOverlap</a>()) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum232">trans</a> != null &amp;&amp; <a class="variable" href="#linenum232">trans</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneOffsetTransition.html#linenum356">isOverlap</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum234" class="linenum-cell" data-linenum="234" href="#linenum234"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a> earlierOffset = <a class="variable" href="#linenum232">trans</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneOffsetTransition.html#linenum295">getOffsetBefore</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a> earlierOffset = <a class="variable" href="#linenum232">trans</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneOffsetTransition.html#linenum297">getOffsetBefore</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum235" class="linenum-cell" data-linenum="235" href="#linenum235"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum234">earlierOffset</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum717">equals</a>(<a class="variable" href="#linenum218">offset</a>) == false) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum234">earlierOffset</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum718">equals</a>(<a class="variable" href="#linenum218">offset</a>) == false) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum236" class="linenum-cell" data-linenum="236" href="#linenum236"></a></td>
@@ -988,11 +988,11 @@
 </tr>
 <tr>
 <td><a id="linenum246" class="linenum-cell" data-linenum="246" href="#linenum246"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a> offset = <a class="variable" href="#linenum244">trans</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneOffsetTransition.html#linenum306">getOffsetAfter</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a> offset = <a class="variable" href="#linenum244">trans</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/zone/ZoneOffsetTransition.html#linenum308">getOffsetAfter</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum247" class="linenum-cell" data-linenum="247" href="#linenum247"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum246">offset</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum717">equals</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum225">getOffset</a>()) == false) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum246">offset</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum718">equals</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum225">getOffset</a>()) == false) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum248" class="linenum-cell" data-linenum="248" href="#linenum248"></a></td>
@@ -1376,187 +1376,187 @@
 </tr>
 <tr>
 <td><a id="linenum343" class="linenum-cell" data-linenum="343" href="#linenum343"></a></td>
-<td><pre><span class='comment'>     * @throws InvalidObjectException always<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param s the stream to read<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum344" class="linenum-cell" data-linenum="344" href="#linenum344"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * @throws InvalidObjectException always<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum345" class="linenum-cell" data-linenum="345" href="#linenum345"></a></td>
-<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum206">ObjectInputStream</a> s) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a> {</pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum346" class="linenum-cell" data-linenum="346" href="#linenum346"></a></td>
-<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a>(<span class='string'>&quot;Deserialization via serialization delegate&quot;</span>);</pre></td>
+<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum217">ObjectInputStream</a> s) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum347" class="linenum-cell" data-linenum="347" href="#linenum347"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a>(<span class='string'>&quot;Deserialization via serialization delegate&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum348" class="linenum-cell" data-linenum="348" href="#linenum348"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum349" class="linenum-cell" data-linenum="349" href="#linenum349"></a></td>
-<td><pre>    void writeExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectOutput.html#linenum39">ObjectOutput</a> out) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum350" class="linenum-cell" data-linenum="350" href="#linenum350"></a></td>
-<td><pre>        <a class="variable" href="#linenum349">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectOutput.html#linenum48">writeObject</a>(<a class="variable" href="#linenum218">dateTime</a>);</pre></td>
+<td><pre>    void writeExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectOutput.html#linenum39">ObjectOutput</a> out) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum351" class="linenum-cell" data-linenum="351" href="#linenum351"></a></td>
-<td><pre>        <a class="variable" href="#linenum349">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectOutput.html#linenum48">writeObject</a>(<a class="variable" href="#linenum290">offset</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum350">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectOutput.html#linenum48">writeObject</a>(<a class="variable" href="#linenum218">dateTime</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum352" class="linenum-cell" data-linenum="352" href="#linenum352"></a></td>
-<td><pre>        <a class="variable" href="#linenum349">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectOutput.html#linenum48">writeObject</a>(<a class="variable" href="#linenum271">zone</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum350">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectOutput.html#linenum48">writeObject</a>(<a class="variable" href="#linenum290">offset</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum353" class="linenum-cell" data-linenum="353" href="#linenum353"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        <a class="variable" href="#linenum350">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectOutput.html#linenum48">writeObject</a>(<a class="variable" href="#linenum271">zone</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum354" class="linenum-cell" data-linenum="354" href="#linenum354"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum355" class="linenum-cell" data-linenum="355" href="#linenum355"></a></td>
-<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTime.html#linenum121">ChronoZonedDateTime</a>&lt;?&gt; readExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInput.html#linenum39">ObjectInput</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ClassNotFoundException.html#linenum53">ClassNotFoundException</a> {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum356" class="linenum-cell" data-linenum="356" href="#linenum356"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateTime.html#linenum120">ChronoLocalDateTime</a>&lt;?&gt; dateTime = (<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateTime.html#linenum120">ChronoLocalDateTime</a>&lt;?&gt;) <a class="variable" href="#linenum355">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInput.html#linenum50">readObject</a>();</pre></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTime.html#linenum121">ChronoZonedDateTime</a>&lt;?&gt; readExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInput.html#linenum39">ObjectInput</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ClassNotFoundException.html#linenum53">ClassNotFoundException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum357" class="linenum-cell" data-linenum="357" href="#linenum357"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a> offset = (<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a>) <a class="variable" href="#linenum355">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInput.html#linenum50">readObject</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateTime.html#linenum120">ChronoLocalDateTime</a>&lt;?&gt; dateTime = (<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateTime.html#linenum120">ChronoLocalDateTime</a>&lt;?&gt;) <a class="variable" href="#linenum356">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInput.html#linenum50">readObject</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum358" class="linenum-cell" data-linenum="358" href="#linenum358"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum177">ZoneId</a> zone = (<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum177">ZoneId</a>) <a class="variable" href="#linenum355">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInput.html#linenum50">readObject</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a> offset = (<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum130">ZoneOffset</a>) <a class="variable" href="#linenum356">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInput.html#linenum50">readObject</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum359" class="linenum-cell" data-linenum="359" href="#linenum359"></a></td>
-<td><pre>        return <a class="variable" href="#linenum356">dateTime</a>.atZone(<a class="variable" href="#linenum357">offset</a>).withZoneSameLocal(<a class="variable" href="#linenum358">zone</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum177">ZoneId</a> zone = (<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum177">ZoneId</a>) <a class="variable" href="#linenum356">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInput.html#linenum50">readObject</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum360" class="linenum-cell" data-linenum="360" href="#linenum360"></a></td>
-<td><pre>        // TODO: ZDT uses ofLenient()</pre></td>
+<td><pre>        return <a class="variable" href="#linenum357">dateTime</a>.atZone(<a class="variable" href="#linenum358">offset</a>).withZoneSameLocal(<a class="variable" href="#linenum359">zone</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum361" class="linenum-cell" data-linenum="361" href="#linenum361"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        // TODO: ZDT uses ofLenient()</pre></td>
 </tr>
 <tr>
 <td><a id="linenum362" class="linenum-cell" data-linenum="362" href="#linenum362"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum363" class="linenum-cell" data-linenum="363" href="#linenum363"></a></td>
-<td><pre>    <span class='comment'>//-------------------------------------------------------------------------</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum364" class="linenum-cell" data-linenum="364" href="#linenum364"></a></td>
-<td><pre>    @Override</pre></td>
+<td><pre>    <span class='comment'>//-------------------------------------------------------------------------</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum365" class="linenum-cell" data-linenum="365" href="#linenum365"></a></td>
-<td><pre>    public boolean equals(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> obj) {</pre></td>
+<td><pre>    @Override</pre></td>
 </tr>
 <tr>
 <td><a id="linenum366" class="linenum-cell" data-linenum="366" href="#linenum366"></a></td>
-<td><pre>        if (this == <a class="variable" href="#linenum365">obj</a>) {</pre></td>
+<td><pre>    public boolean equals(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> obj) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum367" class="linenum-cell" data-linenum="367" href="#linenum367"></a></td>
-<td><pre>            return true;</pre></td>
+<td><pre>        if (this == <a class="variable" href="#linenum366">obj</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum368" class="linenum-cell" data-linenum="368" href="#linenum368"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            return true;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum369" class="linenum-cell" data-linenum="369" href="#linenum369"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum365">obj</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTime.html#linenum121">ChronoZonedDateTime</a>) {</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum370" class="linenum-cell" data-linenum="370" href="#linenum370"></a></td>
-<td><pre>            return compareTo((<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTime.html#linenum121">ChronoZonedDateTime</a>&lt;?&gt;) <a class="variable" href="#linenum365">obj</a>) == 0;</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum366">obj</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTime.html#linenum121">ChronoZonedDateTime</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum371" class="linenum-cell" data-linenum="371" href="#linenum371"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            return compareTo((<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTime.html#linenum121">ChronoZonedDateTime</a>&lt;?&gt;) <a class="variable" href="#linenum366">obj</a>) == 0;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum372" class="linenum-cell" data-linenum="372" href="#linenum372"></a></td>
-<td><pre>        return false;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum373" class="linenum-cell" data-linenum="373" href="#linenum373"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum374" class="linenum-cell" data-linenum="374" href="#linenum374"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum375" class="linenum-cell" data-linenum="375" href="#linenum375"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum376" class="linenum-cell" data-linenum="376" href="#linenum376"></a></td>
-<td><pre>    public int hashCode() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum377" class="linenum-cell" data-linenum="377" href="#linenum377"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum255">toLocalDateTime</a>().hashCode() ^ <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum225">getOffset</a>().hashCode() ^ Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum1474">rotateLeft</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum260">getZone</a>().hashCode(), 3);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum378" class="linenum-cell" data-linenum="378" href="#linenum378"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum379" class="linenum-cell" data-linenum="379" href="#linenum379"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum380" class="linenum-cell" data-linenum="380" href="#linenum380"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum381" class="linenum-cell" data-linenum="381" href="#linenum381"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> toString() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum382" class="linenum-cell" data-linenum="382" href="#linenum382"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> str = <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum255">toLocalDateTime</a>().toString() + <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum225">getOffset</a>().toString();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum383" class="linenum-cell" data-linenum="383" href="#linenum383"></a></td>
-<td><pre>        if (<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum225">getOffset</a>() != <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum260">getZone</a>()) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum384" class="linenum-cell" data-linenum="384" href="#linenum384"></a></td>
-<td><pre>            <a class="variable" href="#linenum382">str</a> += '[' + <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum260">getZone</a>().toString() + ']';</pre></td>
-</tr>
-<tr>
-<td><a id="linenum385" class="linenum-cell" data-linenum="385" href="#linenum385"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum386" class="linenum-cell" data-linenum="386" href="#linenum386"></a></td>
-<td><pre>        return <a class="variable" href="#linenum382">str</a>;</pre></td>
+<td><a id="linenum373" class="linenum-cell" data-linenum="373" href="#linenum373"></a></td>
+<td><pre>        return false;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum387" class="linenum-cell" data-linenum="387" href="#linenum387"></a></td>
+<td><a id="linenum374" class="linenum-cell" data-linenum="374" href="#linenum374"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum388" class="linenum-cell" data-linenum="388" href="#linenum388"></a></td>
+<td><a id="linenum375" class="linenum-cell" data-linenum="375" href="#linenum375"></a></td>
 <td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum376" class="linenum-cell" data-linenum="376" href="#linenum376"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum377" class="linenum-cell" data-linenum="377" href="#linenum377"></a></td>
+<td><pre>    public int hashCode() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum378" class="linenum-cell" data-linenum="378" href="#linenum378"></a></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum255">toLocalDateTime</a>().hashCode() ^ <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum225">getOffset</a>().hashCode() ^ Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum1474">rotateLeft</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum260">getZone</a>().hashCode(), 3);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum379" class="linenum-cell" data-linenum="379" href="#linenum379"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum380" class="linenum-cell" data-linenum="380" href="#linenum380"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum381" class="linenum-cell" data-linenum="381" href="#linenum381"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum382" class="linenum-cell" data-linenum="382" href="#linenum382"></a></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> toString() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum383" class="linenum-cell" data-linenum="383" href="#linenum383"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> str = <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum255">toLocalDateTime</a>().toString() + <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum225">getOffset</a>().toString();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum384" class="linenum-cell" data-linenum="384" href="#linenum384"></a></td>
+<td><pre>        if (<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum225">getOffset</a>() != <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum260">getZone</a>()) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum385" class="linenum-cell" data-linenum="385" href="#linenum385"></a></td>
+<td><pre>            <a class="variable" href="#linenum383">str</a> += '[' + <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoZonedDateTimeImpl.html#linenum260">getZone</a>().toString() + ']';</pre></td>
+</tr>
+<tr>
+<td><a id="linenum386" class="linenum-cell" data-linenum="386" href="#linenum386"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum387" class="linenum-cell" data-linenum="387" href="#linenum387"></a></td>
+<td><pre>        return <a class="variable" href="#linenum383">str</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum388" class="linenum-cell" data-linenum="388" href="#linenum388"></a></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum389" class="linenum-cell" data-linenum="389" href="#linenum389"></a></td>
@@ -1564,6 +1564,10 @@
 </tr>
 <tr>
 <td><a id="linenum390" class="linenum-cell" data-linenum="390" href="#linenum390"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum391" class="linenum-cell" data-linenum="391" href="#linenum391"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

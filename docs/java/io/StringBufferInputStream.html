@@ -372,7 +372,7 @@
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>        return (<a class="variable" href="#linenum58">pos</a> &lt; <a class="variable" href="#linenum65">count</a>) ? (<a class="variable" href="#linenum51">buffer</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum644">charAt</a>(<a class="variable" href="#linenum58">pos</a>++) &amp; 0xFF) : -1;</pre></td>
+<td><pre>        return (<a class="variable" href="#linenum58">pos</a> &lt; <a class="variable" href="#linenum65">count</a>) ? (<a class="variable" href="#linenum51">buffer</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum656">charAt</a>(<a class="variable" href="#linenum58">pos</a>++) &amp; 0xFF) : -1;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
@@ -488,210 +488,218 @@
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum58">pos</a> + <a class="variable" href="#linenum111">len</a> &gt; <a class="variable" href="#linenum65">count</a>) {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>            <a class="variable" href="#linenum111">len</a> = <a class="variable" href="#linenum65">count</a> - <a class="variable" href="#linenum58">pos</a>;</pre></td>
+<td><pre>        int avail = <a class="variable" href="#linenum65">count</a> - <a class="variable" href="#linenum58">pos</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum111">len</a> &gt; <a class="variable" href="#linenum122">avail</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum111">len</a> &lt;= 0) {</pre></td>
+<td><pre>            <a class="variable" href="#linenum111">len</a> = <a class="variable" href="#linenum122">avail</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>            return 0;</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum111">len</a> &lt;= 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>  s = <a class="variable" href="#linenum51">buffer</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>        int cnt = <a class="variable" href="#linenum111">len</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
-<td><pre>        while (--<a class="variable" href="#linenum128">cnt</a> &gt;= 0) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
-<td><pre>            <a class="variable" href="#linenum111">b</a>[<a class="variable" href="#linenum111">off</a>++] = (byte)<a class="variable" href="#linenum127">s</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum644">charAt</a>(<a class="variable" href="#linenum58">pos</a>++);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>        return <a class="variable" href="#linenum111">len</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
-<td><pre><span class='comment'>     * Skips &lt;code&gt;n&lt;/code&gt; bytes of input from this input stream. Fewer<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre><span class='comment'>     * bytes might be skipped if the end of the input stream is reached.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre><span class='comment'>     * @param      n   the number of bytes to be skipped.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
-<td><pre><span class='comment'>     * @return     the actual number of bytes skipped.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre>    public synchronized long skip(long n) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum143">n</a> &lt; 0) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
 <td><pre>            return 0;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
+<td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum143">n</a> &gt; <a class="variable" href="#linenum65">count</a> - <a class="variable" href="#linenum58">pos</a>) {</pre></td>
+<td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>  s = <a class="variable" href="#linenum51">buffer</a>;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>            <a class="variable" href="#linenum143">n</a> = <a class="variable" href="#linenum65">count</a> - <a class="variable" href="#linenum58">pos</a>;</pre></td>
+<td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
+<td><pre>        int cnt = <a class="variable" href="#linenum111">len</a>;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
+<td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
+<td><pre>        while (--<a class="variable" href="#linenum130">cnt</a> &gt;= 0) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
+<td><pre>            <a class="variable" href="#linenum111">b</a>[<a class="variable" href="#linenum111">off</a>++] = (byte)<a class="variable" href="#linenum129">s</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum656">charAt</a>(<a class="variable" href="#linenum58">pos</a>++);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre>        <a class="variable" href="#linenum58">pos</a> += <a class="variable" href="#linenum143">n</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre>        return <a class="variable" href="#linenum143">n</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
+<td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
+<td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
+<td><pre>        return <a class="variable" href="#linenum111">len</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre><span class='comment'>     * Returns the number of bytes that can be read from the input<span class='comment'></pre></td>
+<td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
+<td><pre><span class='comment'>     * Skips &lt;code&gt;n&lt;/code&gt; bytes of input from this input stream. Fewer<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre><span class='comment'>     * stream without blocking.<span class='comment'></pre></td>
+<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
+<td><pre><span class='comment'>     * bytes might be skipped if the end of the input stream is reached.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
+<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
-<td><pre><span class='comment'>     * @return     the value of &lt;code&gt;count&amp;nbsp;-&amp;nbsp;pos&lt;/code&gt;, which is the<span class='comment'></pre></td>
+<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
+<td><pre><span class='comment'>     * @param      n   the number of bytes to be skipped.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
-<td><pre><span class='comment'>     *             number of bytes remaining to be read from the input buffer.<span class='comment'></pre></td>
+<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
+<td><pre><span class='comment'>     * @return     the actual number of bytes skipped.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
+<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre>    public synchronized int available() {</pre></td>
+<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
+<td><pre>    public synchronized long skip(long n) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
-<td><pre>        return <a class="variable" href="#linenum65">count</a> - <a class="variable" href="#linenum58">pos</a>;</pre></td>
+<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum145">n</a> &lt; 0) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
+<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
+<td><pre>            return 0;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum145">n</a> &gt; <a class="variable" href="#linenum65">count</a> - <a class="variable" href="#linenum58">pos</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
+<td><pre>            <a class="variable" href="#linenum145">n</a> = <a class="variable" href="#linenum65">count</a> - <a class="variable" href="#linenum58">pos</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
+<td><pre>        <a class="variable" href="#linenum58">pos</a> += <a class="variable" href="#linenum145">n</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
+<td><pre>        return <a class="variable" href="#linenum145">n</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
+<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
+<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
-<td><pre><span class='comment'>     * Resets the input stream to begin reading from the first character<span class='comment'></pre></td>
+<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
+<td><pre><span class='comment'>     * Returns the number of bytes that can be read from the input<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre><span class='comment'>     * of this input stream's underlying buffer.<span class='comment'></pre></td>
+<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
+<td><pre><span class='comment'>     * stream without blocking.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
+<td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
+<td><pre><span class='comment'>     * @return     the value of &lt;code&gt;count&amp;nbsp;-&amp;nbsp;pos&lt;/code&gt;, which is the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
+<td><pre><span class='comment'>     *             number of bytes remaining to be read from the input buffer.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre>    public synchronized void reset() {</pre></td>
+<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
+<td><pre>    public synchronized int available() {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>        <a class="variable" href="#linenum58">pos</a> = 0;</pre></td>
+<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
+<td><pre>        return <a class="variable" href="#linenum65">count</a> - <a class="variable" href="#linenum58">pos</a>;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
+<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
+<td><pre><span class='comment'>     * Resets the input stream to begin reading from the first character<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
+<td><pre><span class='comment'>     * of this input stream's underlying buffer.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
+<td><pre>    public synchronized void reset() {</pre></td>
+</tr>
+<tr>
 <td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
+<td><pre>        <a class="variable" href="#linenum58">pos</a> = 0;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

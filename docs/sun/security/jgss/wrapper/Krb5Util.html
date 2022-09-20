@@ -160,7 +160,7 @@
 </tr>
 <tr>
 <td><a id="linenum39" class="linenum-cell" data-linenum="39" href="#linenum39"></a></td>
-<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getTGSName(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a> name)</pre></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getTGSName(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a> name)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum40" class="linenum-cell" data-linenum="40" href="#linenum40"></a></td>
@@ -168,15 +168,15 @@
 </tr>
 <tr>
 <td><a id="linenum41" class="linenum-cell" data-linenum="41" href="#linenum41"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> krbPrinc = <a class="variable" href="#linenum39">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum170">getKrbName</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> krbPrinc = <a class="variable" href="#linenum39">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum195">getKrbName</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
-<td><pre>        int atIndex = <a class="variable" href="#linenum41">krbPrinc</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1740">indexOf</a>(<span class='string'>&quot;@&quot;</span>);</pre></td>
+<td><pre>        int atIndex = <a class="variable" href="#linenum41">krbPrinc</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1502">indexOf</a>(<span class='string'>&quot;@&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> realm = <a class="variable" href="#linenum41">krbPrinc</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(<a class="variable" href="#linenum42">atIndex</a> + 1);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> realm = <a class="variable" href="#linenum41">krbPrinc</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1925">substring</a>(<a class="variable" href="#linenum42">atIndex</a> + 1);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
@@ -184,11 +184,11 @@
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
-<td><pre>        <a class="variable" href="#linenum44">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<a class="variable" href="#linenum43">realm</a>).append('@').append(<a class="variable" href="#linenum43">realm</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum44">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum416">append</a>(<a class="variable" href="#linenum43">realm</a>).append('@').append(<a class="variable" href="#linenum43">realm</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
-<td><pre>        return <a class="variable" href="#linenum44">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum668">toString</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum44">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum666">toString</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
@@ -212,7 +212,7 @@
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/SecurityManager.html#linenum226">SecurityManager</a> sm = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum333">getSecurityManager</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/SecurityManager.html#linenum226">SecurityManager</a> sm = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum335">getSecurityManager</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>

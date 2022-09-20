@@ -348,7 +348,7 @@
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
-<td><pre>                        Thread.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum325">sleep</a>(this.pause);</pre></td>
+<td><pre>                        Thread.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum301">sleep</a>(this.pause);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
@@ -512,7 +512,7 @@
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
-<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum188">InetAddress</a> getInetAddress(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> val, <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum188">InetAddress</a> dflt, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> msg) throws <a class="type" href="/OdinCodeBrowserJdk8/sun/management/jdp/JdpException.html#linenum30">JdpException</a> {</pre></td>
+<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum189">InetAddress</a> getInetAddress(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> val, <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum189">InetAddress</a> dflt, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> msg) throws <a class="type" href="/OdinCodeBrowserJdk8/sun/management/jdp/JdpException.html#linenum30">JdpException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
@@ -520,7 +520,7 @@
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
-<td><pre>            return (<a class="variable" href="#linenum127">val</a> == null) ? <a class="variable" href="#linenum127">dflt</a> : InetAddress.<a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum1059">getByName</a>(<a class="variable" href="#linenum127">val</a>);</pre></td>
+<td><pre>            return (<a class="variable" href="#linenum127">val</a> == null) ? <a class="variable" href="#linenum127">dflt</a> : InetAddress.<a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum1081">getByName</a>(<a class="variable" href="#linenum127">val</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
@@ -560,7 +560,7 @@
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/management/RuntimeMXBean.html#linenum62">RuntimeMXBean</a> runtime = ManagementFactory.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/management/ManagementFactory.html#linenum348">getRuntimeMXBean</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/management/RuntimeMXBean.html#linenum62">RuntimeMXBean</a> runtime = ManagementFactory.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/management/ManagementFactory.html#linenum349">getRuntimeMXBean</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
@@ -576,7 +576,7 @@
 </tr>
 <tr>
 <td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/management/VMManagement.html#linenum34">VMManagement</a> mgmt = (sun.management.<a class="type" href="/OdinCodeBrowserJdk8/sun/management/VMManagement.html#linenum34">VMManagement</a>) <a class="variable" href="#linenum140">jvm</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Field.html#linenum377">get</a>(<a class="variable" href="#linenum139">runtime</a>);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/management/VMManagement.html#linenum34">VMManagement</a> mgmt = (sun.management.<a class="type" href="/OdinCodeBrowserJdk8/sun/management/VMManagement.html#linenum34">VMManagement</a>) <a class="variable" href="#linenum140">jvm</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Field.html#linenum383">get</a>(<a class="variable" href="#linenum139">runtime</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
@@ -588,7 +588,7 @@
 </tr>
 <tr>
 <td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a> pid = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>) <a class="variable" href="#linenum144">pid_method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum468">invoke</a>(<a class="variable" href="#linenum143">mgmt</a>);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a> pid = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>) <a class="variable" href="#linenum144">pid_method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum483">invoke</a>(<a class="variable" href="#linenum143">mgmt</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
@@ -656,7 +656,7 @@
 </tr>
 <tr>
 <td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre>    public static synchronized void startDiscoveryService(<a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum188">InetAddress</a> address, int port, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> instanceName, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> url)</pre></td>
+<td><pre>    public static synchronized void startDiscoveryService(<a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum189">InetAddress</a> address, int port, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> instanceName, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> url)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
@@ -676,7 +676,7 @@
 </tr>
 <tr>
 <td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum746">getProperty</a>(<span class='string'>&quot;com.sun.management.jdp.ttl&quot;</span>), 1,</pre></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum715">getProperty</a>(<span class='string'>&quot;com.sun.management.jdp.ttl&quot;</span>), 1,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
@@ -696,7 +696,7 @@
 </tr>
 <tr>
 <td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum746">getProperty</a>(<span class='string'>&quot;com.sun.management.jdp.pause&quot;</span>), 5,</pre></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum715">getProperty</a>(<span class='string'>&quot;com.sun.management.jdp.pause&quot;</span>), 5,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
@@ -724,11 +724,11 @@
 </tr>
 <tr>
 <td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum188">InetAddress</a> sourceAddress = <a class="type" href="/OdinCodeBrowserJdk8/sun/management/jdp/JdpController.html#linenum127">getInetAddress</a>(</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum189">InetAddress</a> sourceAddress = <a class="type" href="/OdinCodeBrowserJdk8/sun/management/jdp/JdpController.html#linenum127">getInetAddress</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum746">getProperty</a>(<span class='string'>&quot;com.sun.management.jdp.source_addr&quot;</span>), null,</pre></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum715">getProperty</a>(<span class='string'>&quot;com.sun.management.jdp.source_addr&quot;</span>), null,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
@@ -768,7 +768,7 @@
 </tr>
 <tr>
 <td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> javaCommand = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum746">getProperty</a>(<span class='string'>&quot;sun.java.command&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> javaCommand = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum715">getProperty</a>(<span class='string'>&quot;sun.java.command&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
@@ -776,7 +776,7 @@
 </tr>
 <tr>
 <td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>[] arr = <a class="variable" href="#linenum191">javaCommand</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2408">split</a>(<span class='string'>&quot; &quot;</span>, 2);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>[] arr = <a class="variable" href="#linenum191">javaCommand</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2329">split</a>(<span class='string'>&quot; &quot;</span>, 2);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
@@ -816,7 +816,7 @@
 </tr>
 <tr>
 <td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> rmiHostname = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum746">getProperty</a>(<span class='string'>&quot;java.rmi.server.hostname&quot;</span>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> rmiHostname = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum715">getProperty</a>(<span class='string'>&quot;java.rmi.server.hostname&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
@@ -896,11 +896,11 @@
 </tr>
 <tr>
 <td><a id="linenum223" class="linenum-cell" data-linenum="223" href="#linenum223"></a></td>
-<td><pre>        <a class="variable" href="#linenum222">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum1348">setDaemon</a>(true);</pre></td>
+<td><pre>        <a class="variable" href="#linenum222">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum1356">setDaemon</a>(true);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum224" class="linenum-cell" data-linenum="224" href="#linenum224"></a></td>
-<td><pre>        <a class="variable" href="#linenum222">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum695">start</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum222">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum699">start</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum225" class="linenum-cell" data-linenum="225" href="#linenum225"></a></td>

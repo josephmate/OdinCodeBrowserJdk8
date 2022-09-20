@@ -168,7 +168,7 @@
 </tr>
 <tr>
 <td><a id="linenum41" class="linenum-cell" data-linenum="41" href="#linenum41"></a></td>
-<td><pre>public class IndexedPropertyDescriptor extends <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum36">PropertyDescriptor</a> {</pre></td>
+<td><pre>public class IndexedPropertyDescriptor extends <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum37">PropertyDescriptor</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
@@ -176,7 +176,7 @@
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/Reference.html#linenum40">Reference</a>&lt;? extends <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;&gt; indexedPropertyTypeRef;</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/Reference.html#linenum42">Reference</a>&lt;? extends <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt;&gt; indexedPropertyTypeRef;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
@@ -740,7 +740,7 @@
 </tr>
 <tr>
 <td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> nextMethodName = Introspector.GET_PREFIX + <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum700">getBaseName</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> nextMethodName = Introspector.GET_PREFIX + <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum702">getBaseName</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
@@ -756,7 +756,7 @@
 </tr>
 <tr>
 <td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
-<td><pre>                    <a class="variable" href="#linenum98">indexedReadMethodName</a> = Introspector.IS_PREFIX + <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum700">getBaseName</a>();</pre></td>
+<td><pre>                    <a class="variable" href="#linenum98">indexedReadMethodName</a> = Introspector.IS_PREFIX + <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum702">getBaseName</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
@@ -784,11 +784,11 @@
 </tr>
 <tr>
 <td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
-<td><pre>            <a class="variable" href="#linenum176">indexedReadMethod</a> = Introspector.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/Introspector.html#linenum1403">findMethod</a>(<a class="variable" href="#linenum178">cls</a>, <a class="variable" href="#linenum98">indexedReadMethodName</a>, 1, <a class="variable" href="#linenum194">args</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum176">indexedReadMethod</a> = Introspector.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/Introspector.html#linenum1445">findMethod</a>(<a class="variable" href="#linenum178">cls</a>, <a class="variable" href="#linenum98">indexedReadMethodName</a>, 1, <a class="variable" href="#linenum194">args</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
-<td><pre>            if ((<a class="variable" href="#linenum176">indexedReadMethod</a> == null) &amp;&amp; !<a class="variable" href="#linenum98">indexedReadMethodName</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum964">equals</a>(<a class="variable" href="#linenum184">nextMethodName</a>)) {</pre></td>
+<td><pre>            if ((<a class="variable" href="#linenum176">indexedReadMethod</a> == null) &amp;&amp; !<a class="variable" href="#linenum98">indexedReadMethodName</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum976">equals</a>(<a class="variable" href="#linenum184">nextMethodName</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
@@ -800,7 +800,7 @@
 </tr>
 <tr>
 <td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
-<td><pre>                <a class="variable" href="#linenum176">indexedReadMethod</a> = Introspector.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/Introspector.html#linenum1403">findMethod</a>(<a class="variable" href="#linenum178">cls</a>, <a class="variable" href="#linenum98">indexedReadMethodName</a>, 1, <a class="variable" href="#linenum194">args</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum176">indexedReadMethod</a> = Introspector.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/Introspector.html#linenum1445">findMethod</a>(<a class="variable" href="#linenum178">cls</a>, <a class="variable" href="#linenum98">indexedReadMethodName</a>, 1, <a class="variable" href="#linenum194">args</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
@@ -916,7 +916,7 @@
 </tr>
 <tr>
 <td><a id="linenum228" class="linenum-cell" data-linenum="228" href="#linenum228"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum336">setClass0</a>(<a class="variable" href="#linenum222">readMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum169">getDeclaringClass</a>());</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum337">setClass0</a>(<a class="variable" href="#linenum222">readMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum183">getDeclaringClass</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum229" class="linenum-cell" data-linenum="229" href="#linenum229"></a></td>
@@ -924,11 +924,11 @@
 </tr>
 <tr>
 <td><a id="linenum230" class="linenum-cell" data-linenum="230" href="#linenum230"></a></td>
-<td><pre>        <a class="variable" href="#linenum98">indexedReadMethodName</a> = <a class="variable" href="#linenum222">readMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum178">getName</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum98">indexedReadMethodName</a> = <a class="variable" href="#linenum222">readMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum192">getName</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum231" class="linenum-cell" data-linenum="231" href="#linenum231"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/FeatureDescriptor.html#linenum299">setTransient</a>(<a class="variable" href="#linenum222">readMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum606">getAnnotation</a>(Transient.class));</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/FeatureDescriptor.html#linenum299">setTransient</a>(<a class="variable" href="#linenum222">readMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum621">getAnnotation</a>(Transient.class));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum232" class="linenum-cell" data-linenum="232" href="#linenum232"></a></td>
@@ -1052,7 +1052,7 @@
 </tr>
 <tr>
 <td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; propType = <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum176">getPropertyType</a>();</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; propType = <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum177">getPropertyType</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum263" class="linenum-cell" data-linenum="263" href="#linenum263"></a></td>
@@ -1084,7 +1084,7 @@
 </tr>
 <tr>
 <td><a id="linenum270" class="linenum-cell" data-linenum="270" href="#linenum270"></a></td>
-<td><pre>                <a class="variable" href="#linenum98">indexedWriteMethodName</a> = Introspector.SET_PREFIX + <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum700">getBaseName</a>();</pre></td>
+<td><pre>                <a class="variable" href="#linenum98">indexedWriteMethodName</a> = Introspector.SET_PREFIX + <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum702">getBaseName</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum271" class="linenum-cell" data-linenum="271" href="#linenum271"></a></td>
@@ -1100,7 +1100,7 @@
 </tr>
 <tr>
 <td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
-<td><pre>            <a class="variable" href="#linenum243">indexedWriteMethod</a> = Introspector.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/Introspector.html#linenum1403">findMethod</a>(<a class="variable" href="#linenum245">cls</a>, <a class="variable" href="#linenum98">indexedWriteMethodName</a>, 2, <a class="variable" href="#linenum273">args</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum243">indexedWriteMethod</a> = Introspector.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/Introspector.html#linenum1445">findMethod</a>(<a class="variable" href="#linenum245">cls</a>, <a class="variable" href="#linenum98">indexedWriteMethodName</a>, 2, <a class="variable" href="#linenum273">args</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
@@ -1108,7 +1108,7 @@
 </tr>
 <tr>
 <td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
-<td><pre>                if (!<a class="variable" href="#linenum243">indexedWriteMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum211">getReturnType</a>().equals(void.class)) {</pre></td>
+<td><pre>                if (!<a class="variable" href="#linenum243">indexedWriteMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum225">getReturnType</a>().equals(void.class)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
@@ -1236,7 +1236,7 @@
 </tr>
 <tr>
 <td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum336">setClass0</a>(<a class="variable" href="#linenum302">writeMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum169">getDeclaringClass</a>());</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum337">setClass0</a>(<a class="variable" href="#linenum302">writeMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum183">getDeclaringClass</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
@@ -1244,11 +1244,11 @@
 </tr>
 <tr>
 <td><a id="linenum310" class="linenum-cell" data-linenum="310" href="#linenum310"></a></td>
-<td><pre>        <a class="variable" href="#linenum98">indexedWriteMethodName</a> = <a class="variable" href="#linenum302">writeMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum178">getName</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum98">indexedWriteMethodName</a> = <a class="variable" href="#linenum302">writeMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum192">getName</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum311" class="linenum-cell" data-linenum="311" href="#linenum311"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/FeatureDescriptor.html#linenum299">setTransient</a>(<a class="variable" href="#linenum302">writeMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum606">getAnnotation</a>(Transient.class));</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/FeatureDescriptor.html#linenum299">setTransient</a>(<a class="variable" href="#linenum302">writeMethod</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum621">getAnnotation</a>(Transient.class));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum312" class="linenum-cell" data-linenum="312" href="#linenum312"></a></td>
@@ -1540,7 +1540,7 @@
 </tr>
 <tr>
 <td><a id="linenum384" class="linenum-cell" data-linenum="384" href="#linenum384"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; propertyType = <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum176">getPropertyType</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; propertyType = <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum177">getPropertyType</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum385" class="linenum-cell" data-linenum="385" href="#linenum385"></a></td>
@@ -1656,7 +1656,7 @@
 </tr>
 <tr>
 <td><a id="linenum413" class="linenum-cell" data-linenum="413" href="#linenum413"></a></td>
-<td><pre>            if (!<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum496">compareMethods</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum175">getIndexedReadMethod</a>(), <a class="variable" href="#linenum410">otherIndexedReadMethod</a>)) {</pre></td>
+<td><pre>            if (!<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum498">compareMethods</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum175">getIndexedReadMethod</a>(), <a class="variable" href="#linenum410">otherIndexedReadMethod</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum414" class="linenum-cell" data-linenum="414" href="#linenum414"></a></td>
@@ -1672,7 +1672,7 @@
 </tr>
 <tr>
 <td><a id="linenum417" class="linenum-cell" data-linenum="417" href="#linenum417"></a></td>
-<td><pre>            if (!<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum496">compareMethods</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum242">getIndexedWriteMethod</a>(), <a class="variable" href="#linenum411">otherIndexedWriteMethod</a>)) {</pre></td>
+<td><pre>            if (!<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum498">compareMethods</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum242">getIndexedWriteMethod</a>(), <a class="variable" href="#linenum411">otherIndexedWriteMethod</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum418" class="linenum-cell" data-linenum="418" href="#linenum418"></a></td>
@@ -1700,7 +1700,7 @@
 </tr>
 <tr>
 <td><a id="linenum424" class="linenum-cell" data-linenum="424" href="#linenum424"></a></td>
-<td><pre>            return super.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum461">equals</a>(<a class="variable" href="#linenum401">obj</a>);</pre></td>
+<td><pre>            return super.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum463">equals</a>(<a class="variable" href="#linenum401">obj</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum425" class="linenum-cell" data-linenum="425" href="#linenum425"></a></td>
@@ -1732,7 +1732,7 @@
 </tr>
 <tr>
 <td><a id="linenum432" class="linenum-cell" data-linenum="432" href="#linenum432"></a></td>
-<td><pre>     * second argument (y) priority over the first argumnnt (x).</pre></td>
+<td><pre>     * second argument (y) priority over the first argument (x).</pre></td>
 </tr>
 <tr>
 <td><a id="linenum433" class="linenum-cell" data-linenum="433" href="#linenum433"></a></td>
@@ -1756,7 +1756,7 @@
 </tr>
 <tr>
 <td><a id="linenum438" class="linenum-cell" data-linenum="438" href="#linenum438"></a></td>
-<td><pre>    IndexedPropertyDescriptor(<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum36">PropertyDescriptor</a> x, <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum36">PropertyDescriptor</a> y) {</pre></td>
+<td><pre>    IndexedPropertyDescriptor(<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum37">PropertyDescriptor</a> x, <a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum37">PropertyDescriptor</a> y) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum439" class="linenum-cell" data-linenum="439" href="#linenum439"></a></td>
@@ -1764,346 +1764,338 @@
 </tr>
 <tr>
 <td><a id="linenum440" class="linenum-cell" data-linenum="440" href="#linenum440"></a></td>
-<td><pre>        if (x instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a>) {</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> tr = null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum441" class="linenum-cell" data-linenum="441" href="#linenum441"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a> ix = (<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a>)x;</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> tw = null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum442" class="linenum-cell" data-linenum="442" href="#linenum442"></a></td>
-<td><pre>            try {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum443" class="linenum-cell" data-linenum="443" href="#linenum443"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> xr = <a class="variable" href="#linenum441">ix</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum175">getIndexedReadMethod</a>();</pre></td>
+<td><pre>        if (x instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum444" class="linenum-cell" data-linenum="444" href="#linenum444"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum443">xr</a> != null) {</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a> ix = (<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a>) x;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum445" class="linenum-cell" data-linenum="445" href="#linenum445"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum213">setIndexedReadMethod</a>(<a class="variable" href="#linenum443">xr</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum440">tr</a> = <a class="variable" href="#linenum444">ix</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum175">getIndexedReadMethod</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum446" class="linenum-cell" data-linenum="446" href="#linenum446"></a></td>
-<td><pre>                }</pre></td>
+<td><pre>            <a class="variable" href="#linenum441">tw</a> = <a class="variable" href="#linenum444">ix</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum242">getIndexedWriteMethod</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum447" class="linenum-cell" data-linenum="447" href="#linenum447"></a></td>
-<td><pre></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum448" class="linenum-cell" data-linenum="448" href="#linenum448"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> xw = <a class="variable" href="#linenum441">ix</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum242">getIndexedWriteMethod</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum449" class="linenum-cell" data-linenum="449" href="#linenum449"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum448">xw</a> != null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum450" class="linenum-cell" data-linenum="450" href="#linenum450"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum292">setIndexedWriteMethod</a>(<a class="variable" href="#linenum448">xw</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum451" class="linenum-cell" data-linenum="451" href="#linenum451"></a></td>
-<td><pre>                }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum452" class="linenum-cell" data-linenum="452" href="#linenum452"></a></td>
-<td><pre>            } catch (<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IntrospectionException.html#linenum37">IntrospectionException</a> ex) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum453" class="linenum-cell" data-linenum="453" href="#linenum453"></a></td>
-<td><pre>                <span class='comment'>// Should not happen</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum454" class="linenum-cell" data-linenum="454" href="#linenum454"></a></td>
-<td><pre>                throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/AssertionError.html#linenum43">AssertionError</a>(<a class="variable" href="#linenum331">ex</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum455" class="linenum-cell" data-linenum="455" href="#linenum455"></a></td>
-<td><pre>            }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum456" class="linenum-cell" data-linenum="456" href="#linenum456"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum457" class="linenum-cell" data-linenum="457" href="#linenum457"></a></td>
 <td><pre>        if (y instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a>) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum458" class="linenum-cell" data-linenum="458" href="#linenum458"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a> iy = (<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a>)y;</pre></td>
+<td><a id="linenum449" class="linenum-cell" data-linenum="449" href="#linenum449"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a> iy = (<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a>) y;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum459" class="linenum-cell" data-linenum="459" href="#linenum459"></a></td>
-<td><pre>            try {</pre></td>
+<td><a id="linenum450" class="linenum-cell" data-linenum="450" href="#linenum450"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> yr = <a class="variable" href="#linenum449">iy</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum175">getIndexedReadMethod</a>();</pre></td>
 </tr>
 <tr>
-<td><a id="linenum460" class="linenum-cell" data-linenum="460" href="#linenum460"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> yr = <a class="variable" href="#linenum458">iy</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum175">getIndexedReadMethod</a>();</pre></td>
+<td><a id="linenum451" class="linenum-cell" data-linenum="451" href="#linenum451"></a></td>
+<td><pre>            if (<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum718">isAssignable</a>(<a class="variable" href="#linenum440">tr</a>, <a class="variable" href="#linenum450">yr</a>)) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum461" class="linenum-cell" data-linenum="461" href="#linenum461"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum460">yr</a> != null &amp;&amp; <a class="variable" href="#linenum460">yr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum169">getDeclaringClass</a>() == <a class="type" href="/OdinCodeBrowserJdk8/java/beans/FeatureDescriptor.html#linenum324">getClass0</a>()) {</pre></td>
+<td><a id="linenum452" class="linenum-cell" data-linenum="452" href="#linenum452"></a></td>
+<td><pre>                <a class="variable" href="#linenum440">tr</a> = <a class="variable" href="#linenum450">yr</a>;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum462" class="linenum-cell" data-linenum="462" href="#linenum462"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum213">setIndexedReadMethod</a>(<a class="variable" href="#linenum460">yr</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum463" class="linenum-cell" data-linenum="463" href="#linenum463"></a></td>
-<td><pre>                }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum464" class="linenum-cell" data-linenum="464" href="#linenum464"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum465" class="linenum-cell" data-linenum="465" href="#linenum465"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> yw = <a class="variable" href="#linenum458">iy</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum242">getIndexedWriteMethod</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum466" class="linenum-cell" data-linenum="466" href="#linenum466"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum465">yw</a> != null &amp;&amp; <a class="variable" href="#linenum465">yw</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum169">getDeclaringClass</a>() == <a class="type" href="/OdinCodeBrowserJdk8/java/beans/FeatureDescriptor.html#linenum324">getClass0</a>()) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum467" class="linenum-cell" data-linenum="467" href="#linenum467"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum292">setIndexedWriteMethod</a>(<a class="variable" href="#linenum465">yw</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum468" class="linenum-cell" data-linenum="468" href="#linenum468"></a></td>
-<td><pre>                }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum469" class="linenum-cell" data-linenum="469" href="#linenum469"></a></td>
-<td><pre>            } catch (<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IntrospectionException.html#linenum37">IntrospectionException</a> ex) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum470" class="linenum-cell" data-linenum="470" href="#linenum470"></a></td>
-<td><pre>                <span class='comment'>// Should not happen</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum471" class="linenum-cell" data-linenum="471" href="#linenum471"></a></td>
-<td><pre>                throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/AssertionError.html#linenum43">AssertionError</a>(<a class="variable" href="#linenum452">ex</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum472" class="linenum-cell" data-linenum="472" href="#linenum472"></a></td>
+<td><a id="linenum453" class="linenum-cell" data-linenum="453" href="#linenum453"></a></td>
 <td><pre>            }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum473" class="linenum-cell" data-linenum="473" href="#linenum473"></a></td>
+<td><a id="linenum454" class="linenum-cell" data-linenum="454" href="#linenum454"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum455" class="linenum-cell" data-linenum="455" href="#linenum455"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> yw = <a class="variable" href="#linenum449">iy</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum242">getIndexedWriteMethod</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum456" class="linenum-cell" data-linenum="456" href="#linenum456"></a></td>
+<td><pre>            if (<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum718">isAssignable</a>(<a class="variable" href="#linenum441">tw</a>, <a class="variable" href="#linenum455">yw</a>)) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum457" class="linenum-cell" data-linenum="457" href="#linenum457"></a></td>
+<td><pre>                <a class="variable" href="#linenum441">tw</a> = <a class="variable" href="#linenum455">yw</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum458" class="linenum-cell" data-linenum="458" href="#linenum458"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum459" class="linenum-cell" data-linenum="459" href="#linenum459"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum474" class="linenum-cell" data-linenum="474" href="#linenum474"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum475" class="linenum-cell" data-linenum="475" href="#linenum475"></a></td>
+<td><a id="linenum460" class="linenum-cell" data-linenum="460" href="#linenum460"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum476" class="linenum-cell" data-linenum="476" href="#linenum476"></a></td>
-<td><pre>    <span class='comment'>/*</pre></td>
-</tr>
-<tr>
-<td><a id="linenum477" class="linenum-cell" data-linenum="477" href="#linenum477"></a></td>
-<td><pre><span class='comment'>     * Package-private dup constructor<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum478" class="linenum-cell" data-linenum="478" href="#linenum478"></a></td>
-<td><pre><span class='comment'>     * This must isolate the new object from any changes to the old object.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum479" class="linenum-cell" data-linenum="479" href="#linenum479"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum480" class="linenum-cell" data-linenum="480" href="#linenum480"></a></td>
-<td><pre>    IndexedPropertyDescriptor(<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a> old) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum481" class="linenum-cell" data-linenum="481" href="#linenum481"></a></td>
-<td><pre>        super(old);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum482" class="linenum-cell" data-linenum="482" href="#linenum482"></a></td>
-<td><pre>        this.indexedReadMethodRef.set(old.indexedReadMethodRef.get());</pre></td>
-</tr>
-<tr>
-<td><a id="linenum483" class="linenum-cell" data-linenum="483" href="#linenum483"></a></td>
-<td><pre>        this.indexedWriteMethodRef.set(old.indexedWriteMethodRef.get());</pre></td>
-</tr>
-<tr>
-<td><a id="linenum484" class="linenum-cell" data-linenum="484" href="#linenum484"></a></td>
-<td><pre>        <a class="variable" href="#linenum43">indexedPropertyTypeRef</a> = old.indexedPropertyTypeRef;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum485" class="linenum-cell" data-linenum="485" href="#linenum485"></a></td>
-<td><pre>        <a class="variable" href="#linenum98">indexedWriteMethodName</a> = old.indexedWriteMethodName;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum486" class="linenum-cell" data-linenum="486" href="#linenum486"></a></td>
-<td><pre>        <a class="variable" href="#linenum98">indexedReadMethodName</a> = old.indexedReadMethodName;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum487" class="linenum-cell" data-linenum="487" href="#linenum487"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum488" class="linenum-cell" data-linenum="488" href="#linenum488"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum489" class="linenum-cell" data-linenum="489" href="#linenum489"></a></td>
-<td><pre>    void updateGenericsFor(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; type) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum490" class="linenum-cell" data-linenum="490" href="#linenum490"></a></td>
-<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum618">updateGenericsFor</a>(<a class="variable" href="#linenum489">type</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum491" class="linenum-cell" data-linenum="491" href="#linenum491"></a></td>
+<td><a id="linenum461" class="linenum-cell" data-linenum="461" href="#linenum461"></a></td>
 <td><pre>        try {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum492" class="linenum-cell" data-linenum="492" href="#linenum492"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum340">setIndexedPropertyType</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum350">findIndexedPropertyType</a>(this.indexedReadMethodRef.get(), this.indexedWriteMethodRef.get()));</pre></td>
+<td><a id="linenum462" class="linenum-cell" data-linenum="462" href="#linenum462"></a></td>
+<td><pre>            if(<a class="variable" href="#linenum440">tr</a> != null) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum493" class="linenum-cell" data-linenum="493" href="#linenum493"></a></td>
+<td><a id="linenum463" class="linenum-cell" data-linenum="463" href="#linenum463"></a></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum213">setIndexedReadMethod</a>(<a class="variable" href="#linenum440">tr</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum464" class="linenum-cell" data-linenum="464" href="#linenum464"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum465" class="linenum-cell" data-linenum="465" href="#linenum465"></a></td>
+<td><pre>            if(<a class="variable" href="#linenum441">tw</a> != null) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum466" class="linenum-cell" data-linenum="466" href="#linenum466"></a></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum292">setIndexedWriteMethod</a>(<a class="variable" href="#linenum441">tw</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum467" class="linenum-cell" data-linenum="467" href="#linenum467"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum468" class="linenum-cell" data-linenum="468" href="#linenum468"></a></td>
+<td><pre>        } catch(<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IntrospectionException.html#linenum37">IntrospectionException</a> ex) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum469" class="linenum-cell" data-linenum="469" href="#linenum469"></a></td>
+<td><pre>            <span class='comment'>// Should not happen</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum470" class="linenum-cell" data-linenum="470" href="#linenum470"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/AssertionError.html#linenum43">AssertionError</a>(<a class="variable" href="#linenum331">ex</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum471" class="linenum-cell" data-linenum="471" href="#linenum471"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum494" class="linenum-cell" data-linenum="494" href="#linenum494"></a></td>
-<td><pre>        catch (<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IntrospectionException.html#linenum37">IntrospectionException</a> exception) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum495" class="linenum-cell" data-linenum="495" href="#linenum495"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum340">setIndexedPropertyType</a>(null);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum496" class="linenum-cell" data-linenum="496" href="#linenum496"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum497" class="linenum-cell" data-linenum="497" href="#linenum497"></a></td>
+<td><a id="linenum472" class="linenum-cell" data-linenum="472" href="#linenum472"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum498" class="linenum-cell" data-linenum="498" href="#linenum498"></a></td>
+<td><a id="linenum473" class="linenum-cell" data-linenum="473" href="#linenum473"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum499" class="linenum-cell" data-linenum="499" href="#linenum499"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><a id="linenum474" class="linenum-cell" data-linenum="474" href="#linenum474"></a></td>
+<td><pre>    <span class='comment'>/*</pre></td>
 </tr>
 <tr>
-<td><a id="linenum500" class="linenum-cell" data-linenum="500" href="#linenum500"></a></td>
-<td><pre><span class='comment'>     * Returns a hash code value for the object.<span class='comment'></pre></td>
+<td><a id="linenum475" class="linenum-cell" data-linenum="475" href="#linenum475"></a></td>
+<td><pre><span class='comment'>     * Package-private dup constructor<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum501" class="linenum-cell" data-linenum="501" href="#linenum501"></a></td>
-<td><pre><span class='comment'>     * See {@link java.lang.Object#hashCode} for a complete description.<span class='comment'></pre></td>
+<td><a id="linenum476" class="linenum-cell" data-linenum="476" href="#linenum476"></a></td>
+<td><pre><span class='comment'>     * This must isolate the new object from any changes to the old object.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum502" class="linenum-cell" data-linenum="502" href="#linenum502"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum503" class="linenum-cell" data-linenum="503" href="#linenum503"></a></td>
-<td><pre><span class='comment'>     * @return a hash code value for this object.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum504" class="linenum-cell" data-linenum="504" href="#linenum504"></a></td>
-<td><pre><span class='comment'>     * @since 1.5<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum505" class="linenum-cell" data-linenum="505" href="#linenum505"></a></td>
+<td><a id="linenum477" class="linenum-cell" data-linenum="477" href="#linenum477"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum506" class="linenum-cell" data-linenum="506" href="#linenum506"></a></td>
+<td><a id="linenum478" class="linenum-cell" data-linenum="478" href="#linenum478"></a></td>
+<td><pre>    IndexedPropertyDescriptor(<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum41">IndexedPropertyDescriptor</a> old) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum479" class="linenum-cell" data-linenum="479" href="#linenum479"></a></td>
+<td><pre>        super(old);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum480" class="linenum-cell" data-linenum="480" href="#linenum480"></a></td>
+<td><pre>        this.indexedReadMethodRef.set(old.indexedReadMethodRef.get());</pre></td>
+</tr>
+<tr>
+<td><a id="linenum481" class="linenum-cell" data-linenum="481" href="#linenum481"></a></td>
+<td><pre>        this.indexedWriteMethodRef.set(old.indexedWriteMethodRef.get());</pre></td>
+</tr>
+<tr>
+<td><a id="linenum482" class="linenum-cell" data-linenum="482" href="#linenum482"></a></td>
+<td><pre>        <a class="variable" href="#linenum43">indexedPropertyTypeRef</a> = old.indexedPropertyTypeRef;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum483" class="linenum-cell" data-linenum="483" href="#linenum483"></a></td>
+<td><pre>        <a class="variable" href="#linenum98">indexedWriteMethodName</a> = old.indexedWriteMethodName;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum484" class="linenum-cell" data-linenum="484" href="#linenum484"></a></td>
+<td><pre>        <a class="variable" href="#linenum98">indexedReadMethodName</a> = old.indexedReadMethodName;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum485" class="linenum-cell" data-linenum="485" href="#linenum485"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum486" class="linenum-cell" data-linenum="486" href="#linenum486"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum487" class="linenum-cell" data-linenum="487" href="#linenum487"></a></td>
+<td><pre>    void updateGenericsFor(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; type) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum488" class="linenum-cell" data-linenum="488" href="#linenum488"></a></td>
+<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum620">updateGenericsFor</a>(<a class="variable" href="#linenum487">type</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum489" class="linenum-cell" data-linenum="489" href="#linenum489"></a></td>
+<td><pre>        try {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum490" class="linenum-cell" data-linenum="490" href="#linenum490"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum340">setIndexedPropertyType</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum350">findIndexedPropertyType</a>(this.indexedReadMethodRef.get(), this.indexedWriteMethodRef.get()));</pre></td>
+</tr>
+<tr>
+<td><a id="linenum491" class="linenum-cell" data-linenum="491" href="#linenum491"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum492" class="linenum-cell" data-linenum="492" href="#linenum492"></a></td>
+<td><pre>        catch (<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IntrospectionException.html#linenum37">IntrospectionException</a> exception) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum493" class="linenum-cell" data-linenum="493" href="#linenum493"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum340">setIndexedPropertyType</a>(null);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum494" class="linenum-cell" data-linenum="494" href="#linenum494"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum495" class="linenum-cell" data-linenum="495" href="#linenum495"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum496" class="linenum-cell" data-linenum="496" href="#linenum496"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum497" class="linenum-cell" data-linenum="497" href="#linenum497"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum498" class="linenum-cell" data-linenum="498" href="#linenum498"></a></td>
+<td><pre><span class='comment'>     * Returns a hash code value for the object.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum499" class="linenum-cell" data-linenum="499" href="#linenum499"></a></td>
+<td><pre><span class='comment'>     * See {@link java.lang.Object#hashCode} for a complete description.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum500" class="linenum-cell" data-linenum="500" href="#linenum500"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum501" class="linenum-cell" data-linenum="501" href="#linenum501"></a></td>
+<td><pre><span class='comment'>     * @return a hash code value for this object.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum502" class="linenum-cell" data-linenum="502" href="#linenum502"></a></td>
+<td><pre><span class='comment'>     * @since 1.5<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum503" class="linenum-cell" data-linenum="503" href="#linenum503"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum504" class="linenum-cell" data-linenum="504" href="#linenum504"></a></td>
 <td><pre>    public int hashCode() {</pre></td>
 </tr>
 <tr>
+<td><a id="linenum505" class="linenum-cell" data-linenum="505" href="#linenum505"></a></td>
+<td><pre>        int result = super.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum679">hashCode</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum506" class="linenum-cell" data-linenum="506" href="#linenum506"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
 <td><a id="linenum507" class="linenum-cell" data-linenum="507" href="#linenum507"></a></td>
-<td><pre>        int result = super.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum677">hashCode</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum505">result</a> = 37 * <a class="variable" href="#linenum505">result</a> + ((<a class="variable" href="#linenum98">indexedWriteMethodName</a> == null) ? 0 :</pre></td>
 </tr>
 <tr>
 <td><a id="linenum508" class="linenum-cell" data-linenum="508" href="#linenum508"></a></td>
-<td><pre></pre></td>
+<td><pre>                                <a class="variable" href="#linenum98">indexedWriteMethodName</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1465">hashCode</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum509" class="linenum-cell" data-linenum="509" href="#linenum509"></a></td>
-<td><pre>        <a class="variable" href="#linenum507">result</a> = 37 * <a class="variable" href="#linenum507">result</a> + ((<a class="variable" href="#linenum98">indexedWriteMethodName</a> == null) ? 0 :</pre></td>
+<td><pre>        <a class="variable" href="#linenum505">result</a> = 37 * <a class="variable" href="#linenum505">result</a> + ((<a class="variable" href="#linenum98">indexedReadMethodName</a> == null) ? 0 :</pre></td>
 </tr>
 <tr>
 <td><a id="linenum510" class="linenum-cell" data-linenum="510" href="#linenum510"></a></td>
-<td><pre>                                <a class="variable" href="#linenum98">indexedWriteMethodName</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1452">hashCode</a>());</pre></td>
+<td><pre>                                <a class="variable" href="#linenum98">indexedReadMethodName</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1465">hashCode</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum511" class="linenum-cell" data-linenum="511" href="#linenum511"></a></td>
-<td><pre>        <a class="variable" href="#linenum507">result</a> = 37 * <a class="variable" href="#linenum507">result</a> + ((<a class="variable" href="#linenum98">indexedReadMethodName</a> == null) ? 0 :</pre></td>
+<td><pre>        <a class="variable" href="#linenum505">result</a> = 37 * <a class="variable" href="#linenum505">result</a> + ((<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum324">getIndexedPropertyType</a>() == null) ? 0 :</pre></td>
 </tr>
 <tr>
 <td><a id="linenum512" class="linenum-cell" data-linenum="512" href="#linenum512"></a></td>
-<td><pre>                                <a class="variable" href="#linenum98">indexedReadMethodName</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1452">hashCode</a>());</pre></td>
-</tr>
-<tr>
-<td><a id="linenum513" class="linenum-cell" data-linenum="513" href="#linenum513"></a></td>
-<td><pre>        <a class="variable" href="#linenum507">result</a> = 37 * <a class="variable" href="#linenum507">result</a> + ((<a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum324">getIndexedPropertyType</a>() == null) ? 0 :</pre></td>
-</tr>
-<tr>
-<td><a id="linenum514" class="linenum-cell" data-linenum="514" href="#linenum514"></a></td>
 <td><pre>                                <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum324">getIndexedPropertyType</a>().hashCode());</pre></td>
 </tr>
 <tr>
-<td><a id="linenum515" class="linenum-cell" data-linenum="515" href="#linenum515"></a></td>
+<td><a id="linenum513" class="linenum-cell" data-linenum="513" href="#linenum513"></a></td>
 <td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum514" class="linenum-cell" data-linenum="514" href="#linenum514"></a></td>
+<td><pre>        return <a class="variable" href="#linenum505">result</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum515" class="linenum-cell" data-linenum="515" href="#linenum515"></a></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum516" class="linenum-cell" data-linenum="516" href="#linenum516"></a></td>
-<td><pre>        return <a class="variable" href="#linenum507">result</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum517" class="linenum-cell" data-linenum="517" href="#linenum517"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum518" class="linenum-cell" data-linenum="518" href="#linenum518"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum519" class="linenum-cell" data-linenum="519" href="#linenum519"></a></td>
+<td><a id="linenum517" class="linenum-cell" data-linenum="517" href="#linenum517"></a></td>
 <td><pre>    void appendTo(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum76">StringBuilder</a> sb) {</pre></td>
 </tr>
 <tr>
+<td><a id="linenum518" class="linenum-cell" data-linenum="518" href="#linenum518"></a></td>
+<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum709">appendTo</a>(<a class="variable" href="#linenum517">sb</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum519" class="linenum-cell" data-linenum="519" href="#linenum519"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum517">appendTo</a>(<a class="variable" href="#linenum517">sb</a>, <span class='string'>&quot;indexedPropertyType&quot;</span>, this.indexedPropertyTypeRef);</pre></td>
+</tr>
+<tr>
 <td><a id="linenum520" class="linenum-cell" data-linenum="520" href="#linenum520"></a></td>
-<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/java/beans/PropertyDescriptor.html#linenum707">appendTo</a>(<a class="variable" href="#linenum519">sb</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum517">appendTo</a>(<a class="variable" href="#linenum517">sb</a>, <span class='string'>&quot;indexedReadMethod&quot;</span>, this.indexedReadMethodRef.get());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum521" class="linenum-cell" data-linenum="521" href="#linenum521"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum519">appendTo</a>(<a class="variable" href="#linenum519">sb</a>, <span class='string'>&quot;indexedPropertyType&quot;</span>, this.indexedPropertyTypeRef);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum517">appendTo</a>(<a class="variable" href="#linenum517">sb</a>, <span class='string'>&quot;indexedWriteMethod&quot;</span>, this.indexedWriteMethodRef.get());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum522" class="linenum-cell" data-linenum="522" href="#linenum522"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum519">appendTo</a>(<a class="variable" href="#linenum519">sb</a>, <span class='string'>&quot;indexedReadMethod&quot;</span>, this.indexedReadMethodRef.get());</pre></td>
-</tr>
-<tr>
-<td><a id="linenum523" class="linenum-cell" data-linenum="523" href="#linenum523"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/beans/IndexedPropertyDescriptor.html#linenum519">appendTo</a>(<a class="variable" href="#linenum519">sb</a>, <span class='string'>&quot;indexedWriteMethod&quot;</span>, this.indexedWriteMethodRef.get());</pre></td>
-</tr>
-<tr>
-<td><a id="linenum524" class="linenum-cell" data-linenum="524" href="#linenum524"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum525" class="linenum-cell" data-linenum="525" href="#linenum525"></a></td>
+<td><a id="linenum523" class="linenum-cell" data-linenum="523" href="#linenum523"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

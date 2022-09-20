@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2005, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2005, 2014, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -208,302 +208,306 @@
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre><span class='comment'>     * @param library name to dlopen<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param lib library name to dlopen<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
-<td><pre><span class='comment'>     * @return true if succeeded, false otherwise.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param debug set to true for reporting native debugging info<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * @return true if succeeded, false otherwise.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre>    static native boolean init(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> lib);</pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
-<td><pre>    private static native long getMechPtr(byte[] oidDerEncoding);</pre></td>
+<td><pre>    static native boolean init(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> lib, boolean debug);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
-<td><pre></pre></td>
+<td><pre>    private static native long getMechPtr(byte[] oidDerEncoding);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
-<td><pre>    <span class='comment'>// Miscellaneous routines</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre>    static native <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a>[] indicateMechs();</pre></td>
+<td><pre>    <span class='comment'>// Miscellaneous routines</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
-<td><pre>    native <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a>[] inquireNamesForMech() throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a>;</pre></td>
+<td><pre>    static native <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a>[] indicateMechs();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
-<td><pre></pre></td>
+<td><pre>    native <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a>[] inquireNamesForMech() throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum61" class="linenum-cell" data-linenum="61" href="#linenum61"></a></td>
-<td><pre>    <span class='comment'>// Name related routines</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
-<td><pre>    native void releaseName(long pName);</pre></td>
+<td><pre>    <span class='comment'>// Name related routines</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum63" class="linenum-cell" data-linenum="63" href="#linenum63"></a></td>
-<td><pre>    native long importName(byte[] name, <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> type);</pre></td>
+<td><pre>    native void releaseName(long pName);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum64" class="linenum-cell" data-linenum="64" href="#linenum64"></a></td>
-<td><pre>    native boolean compareName(long pName1, long pName2);</pre></td>
+<td><pre>    native long importName(byte[] name, <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> type);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
-<td><pre>    native long canonicalizeName(long pName);</pre></td>
+<td><pre>    native boolean compareName(long pName1, long pName2);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
-<td><pre>    native byte[] exportName(long pName) throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a>;</pre></td>
+<td><pre>    native long canonicalizeName(long pName);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre>    native <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] displayName(long pName) throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a>;</pre></td>
+<td><pre>    native byte[] exportName(long pName) throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre></pre></td>
+<td><pre>    native <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] displayName(long pName) throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
-<td><pre>    <span class='comment'>// Credential related routines</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum70" class="linenum-cell" data-linenum="70" href="#linenum70"></a></td>
-<td><pre>    native long acquireCred(long pName, int lifetime, int usage)</pre></td>
+<td><pre>    <span class='comment'>// Credential related routines</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
-<td><pre>                                        throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a>;</pre></td>
+<td><pre>    native long acquireCred(long pName, int lifetime, int usage)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
-<td><pre>    native long releaseCred(long pCred);</pre></td>
+<td><pre>                                        throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
-<td><pre>    native long getCredName(long pCred);</pre></td>
+<td><pre>    native long releaseCred(long pCred);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
-<td><pre>    native int getCredTime(long pCred);</pre></td>
+<td><pre>    native long getCredName(long pCred);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
-<td><pre>    native int getCredUsage(long pCred);</pre></td>
+<td><pre>    native int getCredTime(long pCred);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
-<td><pre></pre></td>
+<td><pre>    native int getCredUsage(long pCred);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
-<td><pre>    <span class='comment'>// Context related routines</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>    native <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/NativeGSSContext.html#linenum49">NativeGSSContext</a> importContext(byte[] interProcToken);</pre></td>
+<td><pre>    <span class='comment'>// Context related routines</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
-<td><pre>    native byte[] initContext(long pCred, long targetName, <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/ChannelBinding.html#linenum80">ChannelBinding</a> cb,</pre></td>
+<td><pre>    native <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/NativeGSSContext.html#linenum49">NativeGSSContext</a> importContext(byte[] interProcToken);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre>                              byte[] inToken, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/NativeGSSContext.html#linenum49">NativeGSSContext</a> context);</pre></td>
+<td><pre>    native byte[] initContext(long pCred, long targetName, <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/ChannelBinding.html#linenum80">ChannelBinding</a> cb,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
-<td><pre>    native byte[] acceptContext(long pCred, <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/ChannelBinding.html#linenum80">ChannelBinding</a> cb,</pre></td>
+<td><pre>                              byte[] inToken, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/NativeGSSContext.html#linenum49">NativeGSSContext</a> context);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre>                                byte[] inToken, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/NativeGSSContext.html#linenum49">NativeGSSContext</a> context);</pre></td>
+<td><pre>    native byte[] acceptContext(long pCred, <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/ChannelBinding.html#linenum80">ChannelBinding</a> cb,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
-<td><pre>    native long[] inquireContext(long pContext);</pre></td>
+<td><pre>                                byte[] inToken, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/NativeGSSContext.html#linenum49">NativeGSSContext</a> context);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre>    native <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> getContextMech(long pContext);</pre></td>
+<td><pre>    native long[] inquireContext(long pContext);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre>    native long getContextName(long pContext, boolean isSrc);</pre></td>
+<td><pre>    native <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> getContextMech(long pContext);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
-<td><pre>    native int getContextTime(long pContext);</pre></td>
+<td><pre>    native long getContextName(long pContext, boolean isSrc);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre>    native long deleteContext(long pContext);</pre></td>
+<td><pre>    native int getContextTime(long pContext);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
-<td><pre>    native int wrapSizeLimit(long pContext, int flags, int qop, int outSize);</pre></td>
+<td><pre>    native long deleteContext(long pContext);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre>    native byte[] exportContext(long pContext);</pre></td>
+<td><pre>    native int wrapSizeLimit(long pContext, int flags, int qop, int outSize);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>    native byte[] getMic(long pContext, int qop, byte[] msg);</pre></td>
+<td><pre>    native byte[] exportContext(long pContext);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>    native void verifyMic(long pContext, byte[] token, byte[] msg,</pre></td>
+<td><pre>    native byte[] getMic(long pContext, int qop, byte[] msg);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>                          <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/MessageProp.html#linenum55">MessageProp</a> prop) ;</pre></td>
+<td><pre>    native void verifyMic(long pContext, byte[] token, byte[] msg,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
-<td><pre>    native byte[] wrap(long pContext, byte[] msg, <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/MessageProp.html#linenum55">MessageProp</a> prop);</pre></td>
+<td><pre>                          <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/MessageProp.html#linenum55">MessageProp</a> prop) ;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
-<td><pre>    native byte[] unwrap(long pContext, byte[] msgToken, <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/MessageProp.html#linenum55">MessageProp</a> prop);</pre></td>
+<td><pre>    native byte[] wrap(long pContext, byte[] msg, <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/MessageProp.html#linenum55">MessageProp</a> prop);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
-<td><pre></pre></td>
+<td><pre>    native byte[] unwrap(long pContext, byte[] msgToken, <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/MessageProp.html#linenum55">MessageProp</a> prop);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
-<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a>, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a>&gt;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
-<td><pre>        table = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a>, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a>&gt;(5);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
+<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a>, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a>&gt;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
+<td><pre>        table = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a>, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a>&gt;(5);</pre></td>
+</tr>
+<tr>
 <td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
-<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a> getInstance(<a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> mech) throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a> {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a> s = <a class="variable" href="#linenum97">table</a>.get(<a class="variable" href="#linenum99">mech</a>);</pre></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a> getInstance(<a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> mech) throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum100">s</a> == null) {</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a> s = <a class="variable" href="#linenum98">table</a>.get(<a class="variable" href="#linenum100">mech</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>            <a class="variable" href="#linenum100">s</a> = new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a>(<a class="variable" href="#linenum99">mech</a>);</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum101">s</a> == null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre>            <a class="variable" href="#linenum97">table</a>.put(<a class="variable" href="#linenum99">mech</a>, <a class="variable" href="#linenum100">s</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum101">s</a> = new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a>(<a class="variable" href="#linenum100">mech</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            <a class="variable" href="#linenum98">table</a>.put(<a class="variable" href="#linenum100">mech</a>, <a class="variable" href="#linenum101">s</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
-<td><pre>        return <a class="variable" href="#linenum100">s</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
-<td><pre>    private GSSLibStub(<a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> mech) throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
-<td><pre>        SunNativeProvider.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/SunNativeProvider.html#linenum58">debug</a>(<span class='string'>&quot;Created GSSLibStub for mech &quot;</span> + <a class="variable" href="#linenum99">mech</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>        this.mech = <a class="variable" href="#linenum99">mech</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
-<td><pre>        this.pMech = <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum55">getMechPtr</a>(<a class="variable" href="#linenum99">mech</a>.getDER());</pre></td>
-</tr>
-<tr>
-<td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre>    public boolean equals(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> obj) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum112">obj</a> == this) return true;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre>        if (!(<a class="variable" href="#linenum112">obj</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a>)) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
-<td><pre>            return false;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
+<td><pre>        return <a class="variable" href="#linenum101">s</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
+<td><pre>    private GSSLibStub(<a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> mech) throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
+<td><pre>        SunNativeProvider.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/SunNativeProvider.html#linenum58">debug</a>(<span class='string'>&quot;Created GSSLibStub for mech &quot;</span> + <a class="variable" href="#linenum100">mech</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
+<td><pre>        this.mech = <a class="variable" href="#linenum100">mech</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
+<td><pre>        this.pMech = <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum56">getMechPtr</a>(<a class="variable" href="#linenum100">mech</a>.getDER());</pre></td>
+</tr>
+<tr>
+<td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
+<td><pre>    public boolean equals(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> obj) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum113">obj</a> == this) return true;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
+<td><pre>        if (!(<a class="variable" href="#linenum113">obj</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a>)) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
+<td><pre>            return false;</pre></td>
+</tr>
+<tr>
 <td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
-<td><pre>        return (<a class="variable" href="#linenum107">mech</a>.<a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum153">equals</a>(((<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a>) <a class="variable" href="#linenum112">obj</a>).getMech()));</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        return (<a class="variable" href="#linenum108">mech</a>.<a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum153">equals</a>(((<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum43">GSSLibStub</a>) <a class="variable" href="#linenum113">obj</a>).getMech()));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre>    public int hashCode() {</pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
-<td><pre>        return <a class="variable" href="#linenum107">mech</a>.<a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum213">hashCode</a>();</pre></td>
+<td><pre>    public int hashCode() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        return <a class="variable" href="#linenum108">mech</a>.<a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum213">hashCode</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> getMech() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>        return <a class="variable" href="#linenum107">mech</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> getMech() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
+<td><pre>        return <a class="variable" href="#linenum108">mech</a>;</pre></td>
+</tr>
+<tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

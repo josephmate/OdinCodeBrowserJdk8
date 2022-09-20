@@ -264,7 +264,7 @@
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
-<td><pre>                (<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicReferenceArray.html#linenum52">AtomicReferenceArray</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum2051">getDeclaredField</a>(<span class='string'>&quot;array&quot;</span>));</pre></td>
+<td><pre>                (<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicReferenceArray.html#linenum52">AtomicReferenceArray</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum2064">getDeclaredField</a>(<span class='string'>&quot;array&quot;</span>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
@@ -428,7 +428,7 @@
 </tr>
 <tr>
 <td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre>        this.array = Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3397">copyOf</a>(<a class="variable" href="#linenum59">array</a>, <a class="variable" href="#linenum59">array</a>.length, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[].class);</pre></td>
+<td><pre>        this.array = Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3208">copyOf</a>(<a class="variable" href="#linenum59">array</a>, <a class="variable" href="#linenum59">array</a>.length, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[].class);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
@@ -524,7 +524,7 @@
 </tr>
 <tr>
 <td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
-<td><pre>        return (E) <a class="variable" href="#linenum55">unsafe</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/Unsafe.html#linenum899">getObjectVolatile</a>(<a class="variable" href="#linenum104">array</a>, <a class="variable" href="#linenum129">offset</a>);</pre></td>
+<td><pre>        return (E) <a class="variable" href="#linenum55">unsafe</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/Unsafe.html#linenum902">getObjectVolatile</a>(<a class="variable" href="#linenum104">array</a>, <a class="variable" href="#linenum129">offset</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
@@ -564,7 +564,7 @@
 </tr>
 <tr>
 <td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre>        <a class="variable" href="#linenum55">unsafe</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/Unsafe.html#linenum905">putObjectVolatile</a>(<a class="variable" href="#linenum104">array</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicReferenceArray.html#linenum76">checkedByteOffset</a>(<a class="variable" href="#linenum139">i</a>), <a class="variable" href="#linenum139">newValue</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum55">unsafe</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/Unsafe.html#linenum908">putObjectVolatile</a>(<a class="variable" href="#linenum104">array</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicReferenceArray.html#linenum76">checkedByteOffset</a>(<a class="variable" href="#linenum139">i</a>), <a class="variable" href="#linenum139">newValue</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
@@ -608,7 +608,7 @@
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre>        <a class="variable" href="#linenum55">unsafe</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/Unsafe.html#linenum962">putOrderedObject</a>(<a class="variable" href="#linenum104">array</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicReferenceArray.html#linenum76">checkedByteOffset</a>(<a class="variable" href="#linenum150">i</a>), <a class="variable" href="#linenum150">newValue</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum55">unsafe</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/Unsafe.html#linenum965">putOrderedObject</a>(<a class="variable" href="#linenum104">array</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicReferenceArray.html#linenum76">checkedByteOffset</a>(<a class="variable" href="#linenum150">i</a>), <a class="variable" href="#linenum150">newValue</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
@@ -660,7 +660,7 @@
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre>        return (E)<a class="variable" href="#linenum55">unsafe</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/Unsafe.html#linenum1104">getAndSetObject</a>(<a class="variable" href="#linenum104">array</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicReferenceArray.html#linenum76">checkedByteOffset</a>(<a class="variable" href="#linenum163">i</a>), <a class="variable" href="#linenum163">newValue</a>);</pre></td>
+<td><pre>        return (E)<a class="variable" href="#linenum55">unsafe</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/Unsafe.html#linenum1107">getAndSetObject</a>(<a class="variable" href="#linenum104">array</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicReferenceArray.html#linenum76">checkedByteOffset</a>(<a class="variable" href="#linenum163">i</a>), <a class="variable" href="#linenum163">newValue</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
@@ -732,7 +732,7 @@
 </tr>
 <tr>
 <td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
-<td><pre>        return <a class="variable" href="#linenum55">unsafe</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/Unsafe.html#linenum873">compareAndSwapObject</a>(<a class="variable" href="#linenum104">array</a>, <a class="variable" href="#linenum181">offset</a>, <a class="variable" href="#linenum181">expect</a>, <a class="variable" href="#linenum181">update</a>);</pre></td>
+<td><pre>        return <a class="variable" href="#linenum55">unsafe</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/Unsafe.html#linenum876">compareAndSwapObject</a>(<a class="variable" href="#linenum104">array</a>, <a class="variable" href="#linenum181">offset</a>, <a class="variable" href="#linenum181">expect</a>, <a class="variable" href="#linenum181">update</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
@@ -1228,7 +1228,7 @@
 </tr>
 <tr>
 <td><a id="linenum306" class="linenum-cell" data-linenum="306" href="#linenum306"></a></td>
-<td><pre>        <a class="variable" href="#linenum305">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>('[');</pre></td>
+<td><pre>        <a class="variable" href="#linenum305">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>('[');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum307" class="linenum-cell" data-linenum="307" href="#linenum307"></a></td>
@@ -1236,7 +1236,7 @@
 </tr>
 <tr>
 <td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
-<td><pre>            <a class="variable" href="#linenum305">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicReferenceArray.html#linenum128">getRaw</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicReferenceArray.html#linenum83">byteOffset</a>(<a class="variable" href="#linenum307">i</a>)));</pre></td>
+<td><pre>            <a class="variable" href="#linenum305">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicReferenceArray.html#linenum128">getRaw</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicReferenceArray.html#linenum83">byteOffset</a>(<a class="variable" href="#linenum307">i</a>)));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
@@ -1244,11 +1244,11 @@
 </tr>
 <tr>
 <td><a id="linenum310" class="linenum-cell" data-linenum="310" href="#linenum310"></a></td>
-<td><pre>                return <a class="variable" href="#linenum305">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(']').toString();</pre></td>
+<td><pre>                return <a class="variable" href="#linenum305">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(']').toString();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum311" class="linenum-cell" data-linenum="311" href="#linenum311"></a></td>
-<td><pre>            <a class="variable" href="#linenum305">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(',').append(' ');</pre></td>
+<td><pre>            <a class="variable" href="#linenum305">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(',').append(' ');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum312" class="linenum-cell" data-linenum="312" href="#linenum312"></a></td>
@@ -1308,11 +1308,11 @@
 </tr>
 <tr>
 <td><a id="linenum326" class="linenum-cell" data-linenum="326" href="#linenum326"></a></td>
-<td><pre>            <a class="variable" href="#linenum322">a</a> = Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3397">copyOf</a>((<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[])<a class="variable" href="#linenum322">a</a>, Array.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Array.html#linenum122">getLength</a>(<a class="variable" href="#linenum322">a</a>), <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[].class);</pre></td>
+<td><pre>            <a class="variable" href="#linenum322">a</a> = Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3208">copyOf</a>((<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[])<a class="variable" href="#linenum322">a</a>, Array.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Array.html#linenum122">getLength</a>(<a class="variable" href="#linenum322">a</a>), <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[].class);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum327" class="linenum-cell" data-linenum="327" href="#linenum327"></a></td>
-<td><pre>        <a class="variable" href="#linenum55">unsafe</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/Unsafe.html#linenum905">putObjectVolatile</a>(this, <a class="variable" href="#linenum58">arrayFieldOffset</a>, <a class="variable" href="#linenum322">a</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum55">unsafe</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/misc/Unsafe.html#linenum908">putObjectVolatile</a>(this, <a class="variable" href="#linenum58">arrayFieldOffset</a>, <a class="variable" href="#linenum322">a</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum328" class="linenum-cell" data-linenum="328" href="#linenum328"></a></td>

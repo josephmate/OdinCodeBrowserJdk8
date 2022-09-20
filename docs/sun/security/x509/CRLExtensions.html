@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 1997, 2012, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 1997, 2019, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -268,7 +268,7 @@
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/Extension.html#linenum61">Extension</a>&gt; map = Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2607">synchronizedMap</a>(</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/Extension.html#linenum61">Extension</a>&gt; map = Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2549">synchronizedMap</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
@@ -368,7 +368,7 @@
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>            byte nextByte = (byte)<a class="variable" href="#linenum87">derStrm</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum518">peekByte</a>();</pre></td>
+<td><pre>            byte nextByte = (byte)<a class="variable" href="#linenum87">derStrm</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum558">peekByte</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
@@ -384,7 +384,7 @@
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a> val = <a class="variable" href="#linenum89">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum416">getDerValue</a>();</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a> val = <a class="variable" href="#linenum89">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum456">getDerValue</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
@@ -400,7 +400,7 @@
 </tr>
 <tr>
 <td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a>[] exts = <a class="variable" href="#linenum89">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum294">getSequence</a>(5);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a>[] exts = <a class="variable" href="#linenum89">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum333">getSequence</a>(5);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
@@ -460,7 +460,7 @@
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; extClass = OIDMap.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/OIDMap.html#linenum289">getClass</a>(<a class="variable" href="#linenum112">ext</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/Extension.html#linenum195">getExtensionId</a>());</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; extClass = OIDMap.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/OIDMap.html#linenum278">getClass</a>(<a class="variable" href="#linenum112">ext</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/Extension.html#linenum195">getExtensionId</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
@@ -496,7 +496,7 @@
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] passed = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] {Boolean.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Boolean.html#linenum162">valueOf</a>(<a class="variable" href="#linenum112">ext</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/Extension.html#linenum188">isCritical</a>()),</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] passed = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[] {Boolean.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Boolean.html#linenum149">valueOf</a>(<a class="variable" href="#linenum112">ext</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/Extension.html#linenum188">isCritical</a>()),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
@@ -664,7 +664,7 @@
 </tr>
 <tr>
 <td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
-<td><pre>                <a class="variable" href="#linenum163">tmp</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum92">write</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum908">createTag</a>(DerValue.TAG_CONTEXT,</pre></td>
+<td><pre>                <a class="variable" href="#linenum163">tmp</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum92">write</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum935">createTag</a>(DerValue.TAG_CONTEXT,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
@@ -684,7 +684,7 @@
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>            <a class="variable" href="#linenum144">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum106">write</a>(<a class="variable" href="#linenum163">tmp</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum177">toByteArray</a>());</pre></td>
+<td><pre>            <a class="variable" href="#linenum144">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum62">write</a>(<a class="variable" href="#linenum163">tmp</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum190">toByteArray</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
@@ -700,7 +700,7 @@
 </tr>
 <tr>
 <td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/cert/CRLException.html#linenum35">CRLException</a>(<span class='string'>&quot;Encoding error: &quot;</span> + <a class="variable" href="#linenum171">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum478">toString</a>());</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/cert/CRLException.html#linenum35">CRLException</a>(<span class='string'>&quot;Encoding error: &quot;</span> + <a class="variable" href="#linenum171">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum479">toString</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
@@ -752,15 +752,15 @@
 </tr>
 <tr>
 <td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum186">id</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a>(X509CertImpl.NAME)) { <span class='comment'>// fully qualified</span></pre></td>
+<td><pre>        if (<a class="variable" href="#linenum186">id</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a>(X509CertImpl.NAME)) { <span class='comment'>// fully qualified</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
-<td><pre>            int index = <a class="variable" href="#linenum183">alias</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1849">lastIndexOf</a>(<span class='string'>&quot;.&quot;</span>);</pre></td>
+<td><pre>            int index = <a class="variable" href="#linenum183">alias</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1610">lastIndexOf</a>(<span class='string'>&quot;.&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
-<td><pre>            <a class="variable" href="#linenum185">name</a> = <a class="variable" href="#linenum183">alias</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(<a class="variable" href="#linenum188">index</a> + 1);</pre></td>
+<td><pre>            <a class="variable" href="#linenum185">name</a> = <a class="variable" href="#linenum183">alias</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1925">substring</a>(<a class="variable" href="#linenum188">index</a> + 1);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
@@ -884,7 +884,7 @@
 </tr>
 <tr>
 <td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
-<td><pre>        return Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum5266">enumeration</a>(<a class="variable" href="#linenum66">map</a>.values());</pre></td>
+<td><pre>        return Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum5261">enumeration</a>(<a class="variable" href="#linenum66">map</a>.values());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
@@ -968,11 +968,11 @@
 </tr>
 <tr>
 <td><a id="linenum241" class="linenum-cell" data-linenum="241" href="#linenum241"></a></td>
-<td><pre><span class='comment'>     * object. If the &lt;code&gt;other&lt;/code&gt; object is an<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * object. If the {@code other} object is an<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum242" class="linenum-cell" data-linenum="242" href="#linenum242"></a></td>
-<td><pre><span class='comment'>     * &lt;code&gt;instanceof&lt;/code&gt; &lt;code&gt;CRLExtensions&lt;/code&gt;, then<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * {@code instanceof} {@code CRLExtensions}, then<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum243" class="linenum-cell" data-linenum="243" href="#linenum243"></a></td>
@@ -1160,7 +1160,7 @@
 </tr>
 <tr>
 <td><a id="linenum289" class="linenum-cell" data-linenum="289" href="#linenum289"></a></td>
-<td><pre><span class='comment'>     * Returns a string representation of this &lt;tt&gt;CRLExtensions&lt;/tt&gt; object<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a string representation of this {@code CRLExtensions} object<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum290" class="linenum-cell" data-linenum="290" href="#linenum290"></a></td>
@@ -1168,11 +1168,11 @@
 </tr>
 <tr>
 <td><a id="linenum291" class="linenum-cell" data-linenum="291" href="#linenum291"></a></td>
-<td><pre><span class='comment'>     * by the ASCII characters &quot;&lt;tt&gt;,&amp;nbsp;&lt;/tt&gt;&quot; (comma and space).<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * by the ASCII characters &quot;{@code ,&amp;nbsp;}&quot; (comma and space).<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum292" class="linenum-cell" data-linenum="292" href="#linenum292"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;Overrides to &lt;tt&gt;toString&lt;/tt&gt; method of &lt;tt&gt;Object&lt;/tt&gt;.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * &lt;p&gt;Overrides to {@code toString} method of {@code Object}.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum293" class="linenum-cell" data-linenum="293" href="#linenum293"></a></td>

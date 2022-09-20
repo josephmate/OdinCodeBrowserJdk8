@@ -196,7 +196,7 @@
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre>abstract class AbstractDOMSignatureMethod extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMStructure.html#linenum41">DOMStructure</a></pre></td>
+<td><pre>abstract class AbstractDOMSignatureMethod extends <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMStructure.html#linenum40">DOMStructure</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
@@ -252,19 +252,19 @@
 </tr>
 <tr>
 <td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
-<td><pre><span class='comment'>     * @return &lt;code&gt;true&lt;/code&gt; if the signature verified successfully,<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @return {@code true} if the signature verified successfully,<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum63" class="linenum-cell" data-linenum="63" href="#linenum63"></a></td>
-<td><pre><span class='comment'>     *    &lt;code&gt;false&lt;/code&gt; if not<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *    {@code false} if not<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum64" class="linenum-cell" data-linenum="64" href="#linenum64"></a></td>
-<td><pre><span class='comment'>     * @throws NullPointerException if &lt;code&gt;key&lt;/code&gt;, &lt;code&gt;si&lt;/code&gt; or<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @throws NullPointerException if {@code key}, {@code si} or<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
-<td><pre><span class='comment'>     *    &lt;code&gt;sig&lt;/code&gt; are &lt;code&gt;null&lt;/code&gt;<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *    {@code sig} are {@code null}<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
@@ -340,11 +340,11 @@
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre><span class='comment'>     * @throws NullPointerException if &lt;code&gt;key&lt;/code&gt; or<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @throws NullPointerException if {@code key} or<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre><span class='comment'>     *    &lt;code&gt;si&lt;/code&gt; are &lt;code&gt;null&lt;/code&gt;<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *    {@code si} are {@code null}<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
@@ -436,446 +436,450 @@
 </tr>
 <tr>
 <td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
-<td><pre>    public void marshal(Node parent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> dsPrefix, <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dom/DOMCryptoContext.html#linenum48">DOMCryptoContext</a> context)</pre></td>
+<td><pre>    @Override</pre></td>
 </tr>
 <tr>
 <td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a></pre></td>
+<td><pre>    public void marshal(Node parent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> dsPrefix, <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dom/DOMCryptoContext.html#linenum48">DOMCryptoContext</a> context)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
-<td><pre>    {</pre></td>
+<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
-<td><pre>        Document ownerDoc = DOMUtils.<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMUtils.html#linenum58">getOwnerDocument</a>(<a class="variable" href="#linenum108">parent</a>);</pre></td>
+<td><pre>    {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre></pre></td>
+<td><pre>        Document ownerDoc = DOMUtils.<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMUtils.html#linenum59">getOwnerDocument</a>(<a class="variable" href="#linenum109">parent</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
-<td><pre>        Element smElem = DOMUtils.<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMUtils.html#linenum76">createElement</a>(<a class="variable" href="#linenum111">ownerDoc</a>, <span class='string'>&quot;SignatureMethod&quot;</span>,</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre>                                                XMLSignature.XMLNS, <a class="variable" href="#linenum108">dsPrefix</a>);</pre></td>
+<td><pre>        Element smElem = DOMUtils.<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMUtils.html#linenum92">createElement</a>(<a class="variable" href="#linenum112">ownerDoc</a>, <span class='string'>&quot;SignatureMethod&quot;</span>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
-<td><pre>        DOMUtils.<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMUtils.html#linenum92">setAttribute</a>(<a class="variable" href="#linenum113">smElem</a>, <span class='string'>&quot;Algorithm&quot;</span>, getAlgorithm());</pre></td>
+<td><pre>                                                XMLSignature.XMLNS, <a class="variable" href="#linenum109">dsPrefix</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
-<td><pre></pre></td>
+<td><pre>        DOMUtils.<a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/DOMUtils.html#linenum108">setAttribute</a>(<a class="variable" href="#linenum114">smElem</a>, <span class='string'>&quot;Algorithm&quot;</span>, getAlgorithm());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
-<td><pre>        if (getParameterSpec() != null) {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/AbstractDOMSignatureMethod.html#linenum134">marshalParams</a>(<a class="variable" href="#linenum113">smElem</a>, <a class="variable" href="#linenum108">dsPrefix</a>);</pre></td>
+<td><pre>        if (getParameterSpec() != null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/AbstractDOMSignatureMethod.html#linenum135">marshalParams</a>(<a class="variable" href="#linenum114">smElem</a>, <a class="variable" href="#linenum109">dsPrefix</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
-<td><pre></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>        <a class="variable" href="#linenum108">parent</a>.appendChild(<a class="variable" href="#linenum113">smElem</a>);</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        <a class="variable" href="#linenum109">parent</a>.appendChild(<a class="variable" href="#linenum114">smElem</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre><span class='comment'>     * Marshals the algorithm-specific parameters to an Element and<span class='comment'></pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre><span class='comment'>     * appends it to the specified parent element. By default, this method<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Marshals the algorithm-specific parameters to an Element and<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
-<td><pre><span class='comment'>     * throws an exception since most SignatureMethod algorithms do not have<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * appends it to the specified parent element. By default, this method<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre><span class='comment'>     * parameters. Subclasses should override it if they have parameters.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * throws an exception since most SignatureMethod algorithms do not have<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * parameters. Subclasses should override it if they have parameters.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
-<td><pre><span class='comment'>     * @param parent the parent element to append the parameters to<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
-<td><pre><span class='comment'>     * @param paramsPrefix the algorithm parameters prefix to use<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param parent the parent element to append the parameters to<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
-<td><pre><span class='comment'>     * @throws MarshalException if the parameters cannot be marshalled<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param paramsPrefix the algorithm parameters prefix to use<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * @throws MarshalException if the parameters cannot be marshalled<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>    void marshalParams(Element parent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> paramsPrefix)</pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
-<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a></pre></td>
+<td><pre>    void marshalParams(Element parent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> paramsPrefix)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>    {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
-<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a>(<span class='string'>&quot;no parameters should &quot;</span> +</pre></td>
-</tr>
-<tr>
-<td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre>                                   <span class='string'>&quot;be specified for the &quot;</span> + getAlgorithm() +</pre></td>
-</tr>
-<tr>
-<td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre>                                   <span class='string'>&quot; SignatureMethod algorithm&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre><span class='comment'>     * Unmarshals &lt;code&gt;SignatureMethodParameterSpec&lt;/code&gt; from the specified<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre><span class='comment'>     * &lt;code&gt;Element&lt;/code&gt;. By default, this method throws an exception since<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
-<td><pre><span class='comment'>     * most SignatureMethod algorithms do not have parameters. Subclasses should<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
-<td><pre><span class='comment'>     * override it if they have parameters.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre><span class='comment'>     * @param paramsElem the &lt;code&gt;Element&lt;/code&gt; holding the input params<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre><span class='comment'>     * @return the algorithm-specific &lt;code&gt;SignatureMethodParameterSpec&lt;/code&gt;<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre><span class='comment'>     * @throws MarshalException if the parameters cannot be unmarshalled<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
-<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a> unmarshalParams(Element paramsElem)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
 <td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a></pre></td>
 </tr>
 <tr>
-<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
+<td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
 <td><pre>    {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
+<td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
 <td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a>(<span class='string'>&quot;no parameters should &quot;</span> +</pre></td>
 </tr>
 <tr>
-<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
+<td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
 <td><pre>                                   <span class='string'>&quot;be specified for the &quot;</span> + getAlgorithm() +</pre></td>
 </tr>
 <tr>
-<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
+<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
 <td><pre>                                   <span class='string'>&quot; SignatureMethod algorithm&quot;</span>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
+<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
 <td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
+<td><pre><span class='comment'>     * Unmarshals {@code SignatureMethodParameterSpec} from the specified<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
+<td><pre><span class='comment'>     * {@code Element}. By default, this method throws an exception since<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
+<td><pre><span class='comment'>     * most SignatureMethod algorithms do not have parameters. Subclasses should<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
+<td><pre><span class='comment'>     * override it if they have parameters.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
+<td><pre><span class='comment'>     * @param paramsElem the {@code Element} holding the input params<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
+<td><pre><span class='comment'>     * @return the algorithm-specific {@code SignatureMethodParameterSpec}<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
+<td><pre><span class='comment'>     * @throws MarshalException if the parameters cannot be unmarshalled<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a> unmarshalParams(Element paramsElem)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
+<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
+<td><pre>    {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
+<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/MarshalException.html#linenum51">MarshalException</a>(<span class='string'>&quot;no parameters should &quot;</span> +</pre></td>
+</tr>
+<tr>
+<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
+<td><pre>                                   <span class='string'>&quot;be specified for the &quot;</span> + getAlgorithm() +</pre></td>
+</tr>
+<tr>
+<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
+<td><pre>                                   <span class='string'>&quot; SignatureMethod algorithm&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre><span class='comment'>     * Checks if the specified parameters are valid for this algorithm. By<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
-<td><pre><span class='comment'>     * default, this method throws an exception if parameters are specified<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre><span class='comment'>     * since most SignatureMethod algorithms do not have parameters. Subclasses<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre><span class='comment'>     * should override it if they have parameters.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
-<td><pre><span class='comment'>     * @param params the algorithm-specific params (may be &lt;code&gt;null&lt;/code&gt;)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre><span class='comment'>     * @throws InvalidAlgorithmParameterException if the parameters are not<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
-<td><pre><span class='comment'>     *    appropriate for this signature method<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>    void checkParams(<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a> params)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a></pre></td>
-</tr>
-<tr>
-<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
-<td><pre>    {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum170">params</a> != null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a>(<span class='string'>&quot;no parameters &quot;</span> +</pre></td>
-</tr>
-<tr>
-<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
-<td><pre>                <span class='string'>&quot;should be specified for the &quot;</span> + getAlgorithm() +</pre></td>
-</tr>
-<tr>
-<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
-<td><pre>                <span class='string'>&quot; SignatureMethod algorithm&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
-<td><pre>    public boolean equals(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> o)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
-<td><pre>    {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
-<td><pre>        if (this == <a class="variable" href="#linenum181">o</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
-<td><pre>            return true;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
-<td><pre>        if (!(<a class="variable" href="#linenum181">o</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/SignatureMethod.html#linenum62">SignatureMethod</a>)) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
-<td><pre>            return false;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/SignatureMethod.html#linenum62">SignatureMethod</a> osm = (<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/SignatureMethod.html#linenum62">SignatureMethod</a>)<a class="variable" href="#linenum181">o</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
-<td><pre>        return (getAlgorithm().equals(<a class="variable" href="#linenum190">osm</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/AlgorithmMethod.html#linenum48">getAlgorithm</a>()) &amp;&amp;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/AbstractDOMSignatureMethod.html#linenum214">paramsEqual</a>(<a class="variable" href="#linenum190">osm</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/SignatureMethod.html#linenum96">getParameterSpec</a>()));</pre></td>
-</tr>
-<tr>
-<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
-<td><pre>    public int hashCode() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
-<td><pre>        int result = 17;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
-<td><pre>        <a class="variable" href="#linenum198">result</a> = 31 * <a class="variable" href="#linenum198">result</a> + getAlgorithm().hashCode();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> spec = getParameterSpec();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum200">spec</a> != null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
-<td><pre>            <a class="variable" href="#linenum198">result</a> = 31 * <a class="variable" href="#linenum198">result</a> + <a class="variable" href="#linenum200">spec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum100">hashCode</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
-<td><pre>        return <a class="variable" href="#linenum198">result</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
-<td><pre><span class='comment'>     * Returns true if parameters are equal; false otherwise.<span class='comment'></pre></td>
+<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
+<td><pre><span class='comment'>     * Checks if the specified parameters are valid for this algorithm. By<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
+<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
+<td><pre><span class='comment'>     * default, this method throws an exception if parameters are specified<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
+<td><pre><span class='comment'>     * since most SignatureMethod algorithms do not have parameters. Subclasses<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
+<td><pre><span class='comment'>     * should override it if they have parameters.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
-<td><pre><span class='comment'>     * Subclasses should override this method to compare algorithm-specific<span class='comment'></pre></td>
+<td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
+<td><pre><span class='comment'>     * @param params the algorithm-specific params (may be {@code null})<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
-<td><pre><span class='comment'>     * parameters.<span class='comment'></pre></td>
+<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
+<td><pre><span class='comment'>     * @throws InvalidAlgorithmParameterException if the parameters are not<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
+<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
+<td><pre><span class='comment'>     *    appropriate for this signature method<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
-<td><pre>    boolean paramsEqual(<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> spec)</pre></td>
+<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
+<td><pre>    void checkParams(<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html#linenum44">SignatureMethodParameterSpec</a> params)</pre></td>
 </tr>
 <tr>
-<td><a id="linenum215" class="linenum-cell" data-linenum="215" href="#linenum215"></a></td>
+<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
+<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
 <td><pre>    {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum216" class="linenum-cell" data-linenum="216" href="#linenum216"></a></td>
-<td><pre>        return (getParameterSpec() == <a class="variable" href="#linenum214">spec</a>);</pre></td>
+<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum171">params</a> != null) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum217" class="linenum-cell" data-linenum="217" href="#linenum217"></a></td>
+<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a>(<span class='string'>&quot;no parameters &quot;</span> +</pre></td>
+</tr>
+<tr>
+<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
+<td><pre>                <span class='string'>&quot;should be specified for the &quot;</span> + getAlgorithm() +</pre></td>
+</tr>
+<tr>
+<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
+<td><pre>                <span class='string'>&quot; SignatureMethod algorithm&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
+<td><pre>    public boolean equals(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> o)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
+<td><pre>    {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
+<td><pre>        if (this == <a class="variable" href="#linenum182">o</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
+<td><pre>            return true;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
+<td><pre>        if (!(<a class="variable" href="#linenum182">o</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/SignatureMethod.html#linenum62">SignatureMethod</a>)) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
+<td><pre>            return false;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/SignatureMethod.html#linenum62">SignatureMethod</a> osm = (<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/SignatureMethod.html#linenum62">SignatureMethod</a>)<a class="variable" href="#linenum182">o</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
+<td><pre>        return getAlgorithm().equals(<a class="variable" href="#linenum191">osm</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/AlgorithmMethod.html#linenum48">getAlgorithm</a>()) &amp;&amp;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/org/jcp/xml/dsig/internal/dom/AbstractDOMSignatureMethod.html#linenum215">paramsEqual</a>(<a class="variable" href="#linenum191">osm</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/xml/crypto/dsig/SignatureMethod.html#linenum98">getParameterSpec</a>());</pre></td>
+</tr>
+<tr>
+<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
+<td><pre>    public int hashCode() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
+<td><pre>        int result = 17;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
+<td><pre>        <a class="variable" href="#linenum199">result</a> = 31 * <a class="variable" href="#linenum199">result</a> + getAlgorithm().hashCode();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> spec = getParameterSpec();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum201">spec</a> != null) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
+<td><pre>            <a class="variable" href="#linenum199">result</a> = 31 * <a class="variable" href="#linenum199">result</a> + <a class="variable" href="#linenum201">spec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum100">hashCode</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
+<td><pre>        return <a class="variable" href="#linenum199">result</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
+<td><pre><span class='comment'>     * Returns true if parameters are equal; false otherwise.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
+<td><pre><span class='comment'>     * Subclasses should override this method to compare algorithm-specific<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
+<td><pre><span class='comment'>     * parameters.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum215" class="linenum-cell" data-linenum="215" href="#linenum215"></a></td>
+<td><pre>    boolean paramsEqual(<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> spec)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum216" class="linenum-cell" data-linenum="216" href="#linenum216"></a></td>
+<td><pre>    {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum217" class="linenum-cell" data-linenum="217" href="#linenum217"></a></td>
+<td><pre>        return getParameterSpec() == <a class="variable" href="#linenum215">spec</a>;</pre></td>
+</tr>
+<tr>
 <td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

@@ -860,7 +860,7 @@
 </tr>
 <tr>
 <td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
-<td><pre>                    System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum162">pixels</a>, <a class="variable" href="#linenum162">off</a>, <a class="variable" href="#linenum51">bytePixels</a>, <a class="variable" href="#linenum204">dstPtr</a>, <a class="variable" href="#linenum161">w</a>);</pre></td>
+<td><pre>                    System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum162">pixels</a>, <a class="variable" href="#linenum162">off</a>, <a class="variable" href="#linenum51">bytePixels</a>, <a class="variable" href="#linenum204">dstPtr</a>, <a class="variable" href="#linenum161">w</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum215" class="linenum-cell" data-linenum="215" href="#linenum215"></a></td>
@@ -904,7 +904,7 @@
 </tr>
 <tr>
 <td><a id="linenum225" class="linenum-cell" data-linenum="225" href="#linenum225"></a></td>
-<td><pre>                    <a class="variable" href="#linenum52">intPixels</a>[<a class="variable" href="#linenum204">dstPtr</a>++] = <a class="variable" href="#linenum162">model</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/ColorModel.html#linenum882">getRGB</a>(<a class="variable" href="#linenum162">pixels</a>[<a class="variable" href="#linenum162">off</a>++]&amp;0xff);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum52">intPixels</a>[<a class="variable" href="#linenum204">dstPtr</a>++] = <a class="variable" href="#linenum162">model</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/ColorModel.html#linenum594">getRGB</a>(<a class="variable" href="#linenum162">pixels</a>[<a class="variable" href="#linenum162">off</a>++]&amp;0xff);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum226" class="linenum-cell" data-linenum="226" href="#linenum226"></a></td>
@@ -1216,7 +1216,7 @@
 </tr>
 <tr>
 <td><a id="linenum303" class="linenum-cell" data-linenum="303" href="#linenum303"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum249">pixels</a>, <a class="variable" href="#linenum249">off</a>, <a class="variable" href="#linenum52">intPixels</a>, <a class="variable" href="#linenum300">dstPtr</a>, <a class="variable" href="#linenum248">w</a>);</pre></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum249">pixels</a>, <a class="variable" href="#linenum249">off</a>, <a class="variable" href="#linenum52">intPixels</a>, <a class="variable" href="#linenum300">dstPtr</a>, <a class="variable" href="#linenum248">w</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
@@ -1264,7 +1264,7 @@
 </tr>
 <tr>
 <td><a id="linenum315" class="linenum-cell" data-linenum="315" href="#linenum315"></a></td>
-<td><pre>                    <a class="variable" href="#linenum52">intPixels</a>[<a class="variable" href="#linenum300">dstPtr</a>++] = <a class="variable" href="#linenum249">model</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/ColorModel.html#linenum882">getRGB</a>(<a class="variable" href="#linenum249">pixels</a>[<a class="variable" href="#linenum249">off</a>++]);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum52">intPixels</a>[<a class="variable" href="#linenum300">dstPtr</a>++] = <a class="variable" href="#linenum249">model</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/ColorModel.html#linenum594">getRGB</a>(<a class="variable" href="#linenum249">pixels</a>[<a class="variable" href="#linenum249">off</a>++]);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
@@ -1492,7 +1492,7 @@
 </tr>
 <tr>
 <td><a id="linenum372" class="linenum-cell" data-linenum="372" href="#linenum372"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum72">BufferedImage</a> bi = new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum72">BufferedImage</a>(<a class="variable" href="#linenum249">model</a>, <a class="variable" href="#linenum340">wr</a>,</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum68">BufferedImage</a> bi = new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum68">BufferedImage</a>(<a class="variable" href="#linenum249">model</a>, <a class="variable" href="#linenum340">wr</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum373" class="linenum-cell" data-linenum="373" href="#linenum373"></a></td>
@@ -1508,11 +1508,11 @@
 </tr>
 <tr>
 <td><a id="linenum376" class="linenum-cell" data-linenum="376" href="#linenum376"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/WritableRaster.html#linenum49">WritableRaster</a> r = <a class="variable" href="#linenum372">bi</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum862">getRaster</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/WritableRaster.html#linenum49">WritableRaster</a> r = <a class="variable" href="#linenum372">bi</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum861">getRaster</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum377" class="linenum-cell" data-linenum="377" href="#linenum377"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/ColorModel.html#linenum156">ColorModel</a> cm = <a class="variable" href="#linenum372">bi</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum853">getColorModel</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/ColorModel.html#linenum156">ColorModel</a> cm = <a class="variable" href="#linenum372">bi</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/BufferedImage.html#linenum852">getColorModel</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum378" class="linenum-cell" data-linenum="378" href="#linenum378"></a></td>
@@ -1544,7 +1544,7 @@
 </tr>
 <tr>
 <td><a id="linenum385" class="linenum-cell" data-linenum="385" href="#linenum385"></a></td>
-<td><pre>                                   <a class="variable" href="#linenum377">cm</a>, <a class="variable" href="#linenum383">db</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/DataBufferInt.html#linenum212">getData</a>(), 0, <a class="variable" href="#linenum378">w</a>);</pre></td>
+<td><pre>                                   <a class="variable" href="#linenum377">cm</a>, <a class="variable" href="#linenum383">db</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/DataBufferInt.html#linenum196">getData</a>(), 0, <a class="variable" href="#linenum378">w</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum386" class="linenum-cell" data-linenum="386" href="#linenum386"></a></td>
@@ -1564,7 +1564,7 @@
 </tr>
 <tr>
 <td><a id="linenum390" class="linenum-cell" data-linenum="390" href="#linenum390"></a></td>
-<td><pre>                                   <a class="variable" href="#linenum377">cm</a>, <a class="variable" href="#linenum388">db</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/DataBufferByte.html#linenum214">getData</a>(), 0, <a class="variable" href="#linenum378">w</a>);</pre></td>
+<td><pre>                                   <a class="variable" href="#linenum377">cm</a>, <a class="variable" href="#linenum388">db</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/DataBufferByte.html#linenum198">getData</a>(), 0, <a class="variable" href="#linenum378">w</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum391" class="linenum-cell" data-linenum="391" href="#linenum391"></a></td>

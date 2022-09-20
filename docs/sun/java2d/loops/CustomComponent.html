@@ -312,11 +312,11 @@
 </tr>
 <tr>
 <td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
-<td><pre>    public static <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> getRegionOfInterest(<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/SurfaceData.html#linenum101">SurfaceData</a> src, <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/SurfaceData.html#linenum101">SurfaceData</a> dst,</pre></td>
+<td><pre>    public static <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> getRegionOfInterest(<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/SurfaceData.html#linenum101">SurfaceData</a> src, <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/SurfaceData.html#linenum101">SurfaceData</a> dst,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>                                             <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> clip,</pre></td>
+<td><pre>                                             <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> clip,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
@@ -372,11 +372,11 @@
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> ret = Region.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum276">getInstanceXYWH</a>(<a class="variable" href="#linenum80">dstx</a>, <a class="variable" href="#linenum80">dsty</a>, <a class="variable" href="#linenum81">w</a>, <a class="variable" href="#linenum81">h</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> ret = Region.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum325">getInstanceXYWH</a>(<a class="variable" href="#linenum80">dstx</a>, <a class="variable" href="#linenum80">dsty</a>, <a class="variable" href="#linenum81">w</a>, <a class="variable" href="#linenum81">h</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
-<td><pre>        <a class="variable" href="#linenum92">ret</a> = <a class="variable" href="#linenum92">ret</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum598">getIntersection</a>(<a class="variable" href="#linenum77">dst</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/SurfaceData.html#linenum1000">getBounds</a>());</pre></td>
+<td><pre>        <a class="variable" href="#linenum92">ret</a> = <a class="variable" href="#linenum92">ret</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum603">getIntersection</a>(<a class="variable" href="#linenum77">dst</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/SurfaceData.html#linenum1000">getBounds</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
@@ -392,7 +392,7 @@
 </tr>
 <tr>
 <td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
-<td><pre>        <a class="variable" href="#linenum92">ret</a> = <a class="variable" href="#linenum92">ret</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum598">getIntersection</a>(<a class="variable" href="#linenum94">r</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum92">ret</a> = <a class="variable" href="#linenum92">ret</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum647">getIntersection</a>(<a class="variable" href="#linenum94">r</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
@@ -404,7 +404,7 @@
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre>            <a class="variable" href="#linenum92">ret</a> = <a class="variable" href="#linenum92">ret</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum598">getIntersection</a>(<a class="variable" href="#linenum78">clip</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum92">ret</a> = <a class="variable" href="#linenum92">ret</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum647">getIntersection</a>(<a class="variable" href="#linenum78">clip</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
@@ -472,7 +472,7 @@
 </tr>
 <tr>
 <td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
-<td><pre>                     <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Composite.html#linenum68">Composite</a> comp, <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> clip,</pre></td>
+<td><pre>                     <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Composite.html#linenum68">Composite</a> comp, <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> clip,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
@@ -512,7 +512,7 @@
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> roi = CustomComponent.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/loops/CustomComponent.html#linenum77">getRegionOfInterest</a>(<a class="variable" href="#linenum116">src</a>, <a class="variable" href="#linenum116">dst</a>, <a class="variable" href="#linenum117">clip</a>,</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> roi = CustomComponent.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/loops/CustomComponent.html#linenum77">getRegionOfInterest</a>(<a class="variable" href="#linenum116">src</a>, <a class="variable" href="#linenum116">dst</a>, <a class="variable" href="#linenum117">clip</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
@@ -524,7 +524,7 @@
 </tr>
 <tr>
 <td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/SpanIterator.html#linenum41">SpanIterator</a> si = <a class="variable" href="#linenum127">roi</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum1260">getSpanIterator</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/SpanIterator.html#linenum41">SpanIterator</a> si = <a class="variable" href="#linenum127">roi</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum1301">getSpanIterator</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
@@ -692,7 +692,7 @@
 </tr>
 <tr>
 <td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
-<td><pre>                     <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Composite.html#linenum68">Composite</a> comp, <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> clip,</pre></td>
+<td><pre>                     <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Composite.html#linenum68">Composite</a> comp, <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> clip,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
@@ -736,7 +736,7 @@
 </tr>
 <tr>
 <td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> roi = CustomComponent.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/loops/CustomComponent.html#linenum77">getRegionOfInterest</a>(<a class="variable" href="#linenum171">src</a>, <a class="variable" href="#linenum171">dst</a>, <a class="variable" href="#linenum172">clip</a>,</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> roi = CustomComponent.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/loops/CustomComponent.html#linenum77">getRegionOfInterest</a>(<a class="variable" href="#linenum171">src</a>, <a class="variable" href="#linenum171">dst</a>, <a class="variable" href="#linenum172">clip</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
@@ -748,7 +748,7 @@
 </tr>
 <tr>
 <td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/SpanIterator.html#linenum41">SpanIterator</a> si = <a class="variable" href="#linenum183">roi</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum1260">getSpanIterator</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/SpanIterator.html#linenum41">SpanIterator</a> si = <a class="variable" href="#linenum183">roi</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum1301">getSpanIterator</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
@@ -912,7 +912,7 @@
 </tr>
 <tr>
 <td><a id="linenum227" class="linenum-cell" data-linenum="227" href="#linenum227"></a></td>
-<td><pre>                     <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Composite.html#linenum68">Composite</a> comp, <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> clip,</pre></td>
+<td><pre>                     <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Composite.html#linenum68">Composite</a> comp, <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> clip,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum228" class="linenum-cell" data-linenum="228" href="#linenum228"></a></td>
@@ -956,7 +956,7 @@
 </tr>
 <tr>
 <td><a id="linenum238" class="linenum-cell" data-linenum="238" href="#linenum238"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> roi = CustomComponent.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/loops/CustomComponent.html#linenum77">getRegionOfInterest</a>(<a class="variable" href="#linenum226">src</a>, <a class="variable" href="#linenum226">dst</a>, <a class="variable" href="#linenum227">clip</a>,</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> roi = CustomComponent.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/loops/CustomComponent.html#linenum77">getRegionOfInterest</a>(<a class="variable" href="#linenum226">src</a>, <a class="variable" href="#linenum226">dst</a>, <a class="variable" href="#linenum227">clip</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum239" class="linenum-cell" data-linenum="239" href="#linenum239"></a></td>
@@ -968,7 +968,7 @@
 </tr>
 <tr>
 <td><a id="linenum241" class="linenum-cell" data-linenum="241" href="#linenum241"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/SpanIterator.html#linenum41">SpanIterator</a> si = <a class="variable" href="#linenum238">roi</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum1260">getSpanIterator</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/SpanIterator.html#linenum41">SpanIterator</a> si = <a class="variable" href="#linenum238">roi</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum1301">getSpanIterator</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum242" class="linenum-cell" data-linenum="242" href="#linenum242"></a></td>
@@ -980,7 +980,7 @@
 </tr>
 <tr>
 <td><a id="linenum244" class="linenum-cell" data-linenum="244" href="#linenum244"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> xorPixel = <a class="variable" href="#linenum236">dstCM</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/ColorModel.html#linenum1375">getDataElements</a>(<a class="variable" href="#linenum243">xorrgb</a>, null);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> xorPixel = <a class="variable" href="#linenum236">dstCM</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/ColorModel.html#linenum926">getDataElements</a>(<a class="variable" href="#linenum243">xorrgb</a>, null);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum245" class="linenum-cell" data-linenum="245" href="#linenum245"></a></td>

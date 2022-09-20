@@ -232,7 +232,7 @@
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
-<td><pre>        this.mapper = (<a class="type" href="/OdinCodeBrowserJdk8/sun/font/CompositeGlyphMapper.html#linenum45">CompositeGlyphMapper</a>)<a class="variable" href="#linenum47">font</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/CompositeFont.html#linenum389">getMapper</a>();</pre></td>
+<td><pre>        this.mapper = (<a class="type" href="/OdinCodeBrowserJdk8/sun/font/CompositeGlyphMapper.html#linenum45">CompositeGlyphMapper</a>)<a class="variable" href="#linenum47">font</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/CompositeFont.html#linenum431">getMapper</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
@@ -488,7 +488,7 @@
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>        int sl = <a class="variable" href="#linenum42">mapper</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/CompositeGlyphMapper.html#linenum178">charToGlyph</a>(<a class="variable" href="#linenum120">ch</a>) &amp; CompositeGlyphMapper.SLOTMASK;</pre></td>
+<td><pre>        int sl = <a class="variable" href="#linenum42">mapper</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/CompositeGlyphMapper.html#linenum158">charToGlyph</a>(<a class="variable" href="#linenum120">ch</a>) &amp; CompositeGlyphMapper.SLOTMASK;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
@@ -496,7 +496,7 @@
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>        while ((<a class="variable" href="#linenum120">ch</a> = <a class="type" href="/OdinCodeBrowserJdk8/sun/font/FontRunIterator.html#linenum147">nextCodePoint</a>(<a class="variable" href="#linenum115">lim</a>)) != DONE &amp;&amp; (<a class="variable" href="#linenum42">mapper</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/CompositeGlyphMapper.html#linenum178">charToGlyph</a>(<a class="variable" href="#linenum120">ch</a>) &amp; CompositeGlyphMapper.SLOTMASK) == <a class="variable" href="#linenum121">sl</a>);</pre></td>
+<td><pre>        while ((<a class="variable" href="#linenum120">ch</a> = <a class="type" href="/OdinCodeBrowserJdk8/sun/font/FontRunIterator.html#linenum147">nextCodePoint</a>(<a class="variable" href="#linenum115">lim</a>)) != DONE &amp;&amp; (<a class="variable" href="#linenum42">mapper</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/font/CompositeGlyphMapper.html#linenum158">charToGlyph</a>(<a class="variable" href="#linenum120">ch</a>) &amp; CompositeGlyphMapper.SLOTMASK) == <a class="variable" href="#linenum121">sl</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
@@ -524,7 +524,7 @@
 </tr>
 <tr>
 <td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/sun/font/FontRunIterator.html#linenum129">next</a>(Script.COMMON, <a class="variable" href="#linenum47">limit</a>);</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/sun/font/FontRunIterator.html#linenum115">next</a>(Script.COMMON, <a class="variable" href="#linenum47">limit</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>

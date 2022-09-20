@@ -172,7 +172,7 @@
 </tr>
 <tr>
 <td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum58">AlgorithmId</a> algId;</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum63">AlgorithmId</a> algId;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
@@ -272,7 +272,7 @@
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre>    public CertificateAlgorithmId(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum58">AlgorithmId</a> algId) {</pre></td>
+<td><pre>    public CertificateAlgorithmId(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum63">AlgorithmId</a> algId) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
@@ -320,7 +320,7 @@
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
-<td><pre>        <a class="variable" href="#linenum67">algId</a> = AlgorithmId.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum344">parse</a>(<a class="variable" href="#linenum78">val</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum67">algId</a> = AlgorithmId.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum385">parse</a>(<a class="variable" href="#linenum78">val</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
@@ -364,7 +364,7 @@
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>        <a class="variable" href="#linenum67">algId</a> = AlgorithmId.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum344">parse</a>(<a class="variable" href="#linenum89">val</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum67">algId</a> = AlgorithmId.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum385">parse</a>(<a class="variable" href="#linenum89">val</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
@@ -396,11 +396,11 @@
 </tr>
 <tr>
 <td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
-<td><pre>        return (<a class="variable" href="#linenum67">algId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum327">toString</a>() +</pre></td>
+<td><pre>        return (<a class="variable" href="#linenum67">algId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum367">toString</a>() +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
-<td><pre>                <span class='string'>&quot;, OID = &quot;</span> + (<a class="variable" href="#linenum67">algId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum216">getOID</a>()).toString() + <span class='string'>&quot;\n&quot;</span>);</pre></td>
+<td><pre>                <span class='string'>&quot;, OID = &quot;</span> + (<a class="variable" href="#linenum67">algId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum243">getOID</a>()).toString() + <span class='string'>&quot;\n&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
@@ -444,7 +444,7 @@
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
-<td><pre>        <a class="variable" href="#linenum67">algId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum203">encode</a>(<a class="variable" href="#linenum109">tmp</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum67">algId</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum230">encode</a>(<a class="variable" href="#linenum109">tmp</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
@@ -452,7 +452,7 @@
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre>        <a class="variable" href="#linenum108">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum106">write</a>(<a class="variable" href="#linenum109">tmp</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum177">toByteArray</a>());</pre></td>
+<td><pre>        <a class="variable" href="#linenum108">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum62">write</a>(<a class="variable" href="#linenum109">tmp</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum190">toByteArray</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
@@ -480,7 +480,7 @@
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre>        if (!(<a class="variable" href="#linenum118">obj</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum58">AlgorithmId</a>)) {</pre></td>
+<td><pre>        if (!(<a class="variable" href="#linenum118">obj</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum63">AlgorithmId</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
@@ -492,11 +492,11 @@
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum118">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a>(<a class="variable" href="#linenum60">ALGORITHM</a>)) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum118">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a>(<a class="variable" href="#linenum60">ALGORITHM</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>            <a class="variable" href="#linenum67">algId</a> = (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum58">AlgorithmId</a>)<a class="variable" href="#linenum118">obj</a>;</pre></td>
+<td><pre>            <a class="variable" href="#linenum67">algId</a> = (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum63">AlgorithmId</a>)<a class="variable" href="#linenum118">obj</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
@@ -536,11 +536,11 @@
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum58">AlgorithmId</a> get(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/sun/security/x509/AlgorithmId.html#linenum63">AlgorithmId</a> get(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum133">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a>(<a class="variable" href="#linenum60">ALGORITHM</a>)) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum133">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a>(<a class="variable" href="#linenum60">ALGORITHM</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
@@ -588,7 +588,7 @@
 </tr>
 <tr>
 <td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum145">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a>(<a class="variable" href="#linenum60">ALGORITHM</a>)) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum145">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a>(<a class="variable" href="#linenum60">ALGORITHM</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
@@ -644,11 +644,11 @@
 </tr>
 <tr>
 <td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre>        <a class="variable" href="#linenum159">elements</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum618">addElement</a>(<a class="variable" href="#linenum60">ALGORITHM</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum159">elements</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum623">addElement</a>(<a class="variable" href="#linenum60">ALGORITHM</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre>        return (<a class="variable" href="#linenum159">elements</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum338">elements</a>());</pre></td>
+<td><pre>        return (<a class="variable" href="#linenum159">elements</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum343">elements</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>

@@ -964,406 +964,410 @@
 </tr>
 <tr>
 <td><a id="linenum240" class="linenum-cell" data-linenum="240" href="#linenum240"></a></td>
-<td><pre>        case ClassWriter.UTF8:</pre></td>
+<td><pre>        case ClassWriter.CLASS:</pre></td>
 </tr>
 <tr>
 <td><a id="linenum241" class="linenum-cell" data-linenum="241" href="#linenum241"></a></td>
-<td><pre>        case ClassWriter.STR:</pre></td>
+<td><pre>            this.intVal = 0;     <span class='comment'>// intVal of a class must be zero, see visitInnerClass</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum242" class="linenum-cell" data-linenum="242" href="#linenum242"></a></td>
-<td><pre>        case ClassWriter.CLASS:</pre></td>
-</tr>
-<tr>
-<td><a id="linenum243" class="linenum-cell" data-linenum="243" href="#linenum243"></a></td>
-<td><pre>        case ClassWriter.MTYPE:</pre></td>
-</tr>
-<tr>
-<td><a id="linenum244" class="linenum-cell" data-linenum="244" href="#linenum244"></a></td>
-<td><pre>        case ClassWriter.TYPE_NORMAL:</pre></td>
-</tr>
-<tr>
-<td><a id="linenum245" class="linenum-cell" data-linenum="245" href="#linenum245"></a></td>
-<td><pre>            <a class="variable" href="#linenum129">hashCode</a> = 0x7FFFFFFF &amp; (<a class="variable" href="#linenum233">type</a> + <a class="variable" href="#linenum233">strVal1</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1452">hashCode</a>());</pre></td>
-</tr>
-<tr>
-<td><a id="linenum246" class="linenum-cell" data-linenum="246" href="#linenum246"></a></td>
-<td><pre>            return;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum247" class="linenum-cell" data-linenum="247" href="#linenum247"></a></td>
-<td><pre>        case ClassWriter.NAME_TYPE: {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum248" class="linenum-cell" data-linenum="248" href="#linenum248"></a></td>
-<td><pre>            <a class="variable" href="#linenum129">hashCode</a> = 0x7FFFFFFF &amp; (<a class="variable" href="#linenum233">type</a> + <a class="variable" href="#linenum233">strVal1</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1452">hashCode</a>()</pre></td>
-</tr>
-<tr>
-<td><a id="linenum249" class="linenum-cell" data-linenum="249" href="#linenum249"></a></td>
-<td><pre>                    * <a class="variable" href="#linenum233">strVal2</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1452">hashCode</a>());</pre></td>
-</tr>
-<tr>
-<td><a id="linenum250" class="linenum-cell" data-linenum="250" href="#linenum250"></a></td>
-<td><pre>            return;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum251" class="linenum-cell" data-linenum="251" href="#linenum251"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum252" class="linenum-cell" data-linenum="252" href="#linenum252"></a></td>
-<td><pre>        // ClassWriter.FIELD:</pre></td>
-</tr>
-<tr>
-<td><a id="linenum253" class="linenum-cell" data-linenum="253" href="#linenum253"></a></td>
-<td><pre>        // ClassWriter.METH:</pre></td>
-</tr>
-<tr>
-<td><a id="linenum254" class="linenum-cell" data-linenum="254" href="#linenum254"></a></td>
-<td><pre>        // ClassWriter.IMETH:</pre></td>
-</tr>
-<tr>
-<td><a id="linenum255" class="linenum-cell" data-linenum="255" href="#linenum255"></a></td>
-<td><pre>        <span class='comment'>// ClassWriter.HANDLE_BASE + 1..9</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum256" class="linenum-cell" data-linenum="256" href="#linenum256"></a></td>
-<td><pre>        default:</pre></td>
-</tr>
-<tr>
-<td><a id="linenum257" class="linenum-cell" data-linenum="257" href="#linenum257"></a></td>
-<td><pre>            <a class="variable" href="#linenum129">hashCode</a> = 0x7FFFFFFF &amp; (<a class="variable" href="#linenum233">type</a> + <a class="variable" href="#linenum233">strVal1</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1452">hashCode</a>()</pre></td>
-</tr>
-<tr>
-<td><a id="linenum258" class="linenum-cell" data-linenum="258" href="#linenum258"></a></td>
-<td><pre>                    * <a class="variable" href="#linenum233">strVal2</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1452">hashCode</a>() * <a class="variable" href="#linenum234">strVal3</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1452">hashCode</a>());</pre></td>
-</tr>
-<tr>
-<td><a id="linenum259" class="linenum-cell" data-linenum="259" href="#linenum259"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum260" class="linenum-cell" data-linenum="260" href="#linenum260"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum261" class="linenum-cell" data-linenum="261" href="#linenum261"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum263" class="linenum-cell" data-linenum="263" href="#linenum263"></a></td>
-<td><pre><span class='comment'>     * Sets the item to an InvokeDynamic item.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum264" class="linenum-cell" data-linenum="264" href="#linenum264"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum265" class="linenum-cell" data-linenum="265" href="#linenum265"></a></td>
-<td><pre><span class='comment'>     * @param name<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum266" class="linenum-cell" data-linenum="266" href="#linenum266"></a></td>
-<td><pre><span class='comment'>     *            invokedynamic's name.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum267" class="linenum-cell" data-linenum="267" href="#linenum267"></a></td>
-<td><pre><span class='comment'>     * @param desc<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum268" class="linenum-cell" data-linenum="268" href="#linenum268"></a></td>
-<td><pre><span class='comment'>     *            invokedynamic's desc.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum269" class="linenum-cell" data-linenum="269" href="#linenum269"></a></td>
-<td><pre><span class='comment'>     * @param bsmIndex<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum270" class="linenum-cell" data-linenum="270" href="#linenum270"></a></td>
-<td><pre><span class='comment'>     *            zero based index into the class attribute BootrapMethods.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum271" class="linenum-cell" data-linenum="271" href="#linenum271"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum272" class="linenum-cell" data-linenum="272" href="#linenum272"></a></td>
-<td><pre>    void set(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> desc, int bsmIndex) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum273" class="linenum-cell" data-linenum="273" href="#linenum273"></a></td>
-<td><pre>        this.type = ClassWriter.INDY;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
-<td><pre>        this.longVal = <a class="variable" href="#linenum272">bsmIndex</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
-<td><pre>        this.strVal1 = <a class="variable" href="#linenum272">name</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
-<td><pre>        this.strVal2 = <a class="variable" href="#linenum272">desc</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
-<td><pre>        this.hashCode = 0x7FFFFFFF &amp; (ClassWriter.INDY + <a class="variable" href="#linenum272">bsmIndex</a></pre></td>
-</tr>
-<tr>
-<td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
-<td><pre>                * <a class="variable" href="#linenum233">strVal1</a>.hashCode() * <a class="variable" href="#linenum233">strVal2</a>.hashCode());</pre></td>
-</tr>
-<tr>
-<td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum282" class="linenum-cell" data-linenum="282" href="#linenum282"></a></td>
-<td><pre><span class='comment'>     * Sets the item to a BootstrapMethod item.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
-<td><pre><span class='comment'>     * @param position<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum285" class="linenum-cell" data-linenum="285" href="#linenum285"></a></td>
-<td><pre><span class='comment'>     *            position in byte in the class attribute BootrapMethods.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum286" class="linenum-cell" data-linenum="286" href="#linenum286"></a></td>
-<td><pre><span class='comment'>     * @param hashCode<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum287" class="linenum-cell" data-linenum="287" href="#linenum287"></a></td>
-<td><pre><span class='comment'>     *            hashcode of the item. This hashcode is processed from the<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum288" class="linenum-cell" data-linenum="288" href="#linenum288"></a></td>
-<td><pre><span class='comment'>     *            hashcode of the bootstrap method and the hashcode of all<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum289" class="linenum-cell" data-linenum="289" href="#linenum289"></a></td>
-<td><pre><span class='comment'>     *            bootstrap arguments.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum290" class="linenum-cell" data-linenum="290" href="#linenum290"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum291" class="linenum-cell" data-linenum="291" href="#linenum291"></a></td>
-<td><pre>    void set(int position, int hashCode) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum292" class="linenum-cell" data-linenum="292" href="#linenum292"></a></td>
-<td><pre>        this.type = ClassWriter.BSM;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum293" class="linenum-cell" data-linenum="293" href="#linenum293"></a></td>
-<td><pre>        this.intVal = <a class="variable" href="#linenum291">position</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum294" class="linenum-cell" data-linenum="294" href="#linenum294"></a></td>
-<td><pre>        this.hashCode = <a class="variable" href="#linenum291">hashCode</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum295" class="linenum-cell" data-linenum="295" href="#linenum295"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum296" class="linenum-cell" data-linenum="296" href="#linenum296"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum297" class="linenum-cell" data-linenum="297" href="#linenum297"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum298" class="linenum-cell" data-linenum="298" href="#linenum298"></a></td>
-<td><pre><span class='comment'>     * Indicates if the given item is equal to this one. &lt;i&gt;This method assumes<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum299" class="linenum-cell" data-linenum="299" href="#linenum299"></a></td>
-<td><pre><span class='comment'>     * that the two items have the same {@link #type}&lt;/i&gt;.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum300" class="linenum-cell" data-linenum="300" href="#linenum300"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum301" class="linenum-cell" data-linenum="301" href="#linenum301"></a></td>
-<td><pre><span class='comment'>     * @param i<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum302" class="linenum-cell" data-linenum="302" href="#linenum302"></a></td>
-<td><pre><span class='comment'>     *            the item to be compared to this one. Both items must have the<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum303" class="linenum-cell" data-linenum="303" href="#linenum303"></a></td>
-<td><pre><span class='comment'>     *            same {@link #type}.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
-<td><pre><span class='comment'>     * @return &lt;tt&gt;true&lt;/tt&gt; if the given item if equal to this one,<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum305" class="linenum-cell" data-linenum="305" href="#linenum305"></a></td>
-<td><pre><span class='comment'>     *         &lt;tt&gt;false&lt;/tt&gt; otherwise.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum306" class="linenum-cell" data-linenum="306" href="#linenum306"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum307" class="linenum-cell" data-linenum="307" href="#linenum307"></a></td>
-<td><pre>    boolean isEqualTo(final <a class="type" href="/OdinCodeBrowserJdk8/jdk/internal/org/objectweb/asm/Item.html#linenum67">Item</a> i) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
-<td><pre>        switch (<a class="variable" href="#linenum233">type</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
 <td><pre>        case ClassWriter.UTF8:</pre></td>
 </tr>
 <tr>
-<td><a id="linenum310" class="linenum-cell" data-linenum="310" href="#linenum310"></a></td>
+<td><a id="linenum243" class="linenum-cell" data-linenum="243" href="#linenum243"></a></td>
 <td><pre>        case ClassWriter.STR:</pre></td>
 </tr>
 <tr>
-<td><a id="linenum311" class="linenum-cell" data-linenum="311" href="#linenum311"></a></td>
-<td><pre>        case ClassWriter.CLASS:</pre></td>
-</tr>
-<tr>
-<td><a id="linenum312" class="linenum-cell" data-linenum="312" href="#linenum312"></a></td>
+<td><a id="linenum244" class="linenum-cell" data-linenum="244" href="#linenum244"></a></td>
 <td><pre>        case ClassWriter.MTYPE:</pre></td>
 </tr>
 <tr>
-<td><a id="linenum313" class="linenum-cell" data-linenum="313" href="#linenum313"></a></td>
+<td><a id="linenum245" class="linenum-cell" data-linenum="245" href="#linenum245"></a></td>
 <td><pre>        case ClassWriter.TYPE_NORMAL:</pre></td>
 </tr>
 <tr>
-<td><a id="linenum314" class="linenum-cell" data-linenum="314" href="#linenum314"></a></td>
-<td><pre>            return <a class="variable" href="#linenum307">i</a>.strVal1.equals(<a class="variable" href="#linenum233">strVal1</a>);</pre></td>
+<td><a id="linenum246" class="linenum-cell" data-linenum="246" href="#linenum246"></a></td>
+<td><pre>            <a class="variable" href="#linenum129">hashCode</a> = 0x7FFFFFFF &amp; (<a class="variable" href="#linenum233">type</a> + <a class="variable" href="#linenum233">strVal1</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1465">hashCode</a>());</pre></td>
 </tr>
 <tr>
-<td><a id="linenum315" class="linenum-cell" data-linenum="315" href="#linenum315"></a></td>
-<td><pre>        case ClassWriter.TYPE_MERGED:</pre></td>
+<td><a id="linenum247" class="linenum-cell" data-linenum="247" href="#linenum247"></a></td>
+<td><pre>            return;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
-<td><pre>        case ClassWriter.LONG:</pre></td>
+<td><a id="linenum248" class="linenum-cell" data-linenum="248" href="#linenum248"></a></td>
+<td><pre>        case ClassWriter.NAME_TYPE: {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
-<td><pre>        case ClassWriter.DOUBLE:</pre></td>
+<td><a id="linenum249" class="linenum-cell" data-linenum="249" href="#linenum249"></a></td>
+<td><pre>            <a class="variable" href="#linenum129">hashCode</a> = 0x7FFFFFFF &amp; (<a class="variable" href="#linenum233">type</a> + <a class="variable" href="#linenum233">strVal1</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1465">hashCode</a>()</pre></td>
 </tr>
 <tr>
-<td><a id="linenum318" class="linenum-cell" data-linenum="318" href="#linenum318"></a></td>
-<td><pre>            return <a class="variable" href="#linenum307">i</a>.longVal == <a class="variable" href="#linenum191">longVal</a>;</pre></td>
+<td><a id="linenum250" class="linenum-cell" data-linenum="250" href="#linenum250"></a></td>
+<td><pre>                    * <a class="variable" href="#linenum233">strVal2</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1465">hashCode</a>());</pre></td>
 </tr>
 <tr>
-<td><a id="linenum319" class="linenum-cell" data-linenum="319" href="#linenum319"></a></td>
-<td><pre>        case ClassWriter.INT:</pre></td>
+<td><a id="linenum251" class="linenum-cell" data-linenum="251" href="#linenum251"></a></td>
+<td><pre>            return;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum320" class="linenum-cell" data-linenum="320" href="#linenum320"></a></td>
-<td><pre>        case ClassWriter.FLOAT:</pre></td>
-</tr>
-<tr>
-<td><a id="linenum321" class="linenum-cell" data-linenum="321" href="#linenum321"></a></td>
-<td><pre>            return <a class="variable" href="#linenum307">i</a>.intVal == <a class="variable" href="#linenum179">intVal</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum322" class="linenum-cell" data-linenum="322" href="#linenum322"></a></td>
-<td><pre>        case ClassWriter.TYPE_UNINIT:</pre></td>
-</tr>
-<tr>
-<td><a id="linenum323" class="linenum-cell" data-linenum="323" href="#linenum323"></a></td>
-<td><pre>            return <a class="variable" href="#linenum307">i</a>.intVal == <a class="variable" href="#linenum179">intVal</a> &amp;&amp; <a class="variable" href="#linenum307">i</a>.strVal1.equals(<a class="variable" href="#linenum233">strVal1</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum324" class="linenum-cell" data-linenum="324" href="#linenum324"></a></td>
-<td><pre>        case ClassWriter.NAME_TYPE:</pre></td>
-</tr>
-<tr>
-<td><a id="linenum325" class="linenum-cell" data-linenum="325" href="#linenum325"></a></td>
-<td><pre>            return <a class="variable" href="#linenum307">i</a>.strVal1.equals(<a class="variable" href="#linenum233">strVal1</a>) &amp;&amp; <a class="variable" href="#linenum307">i</a>.strVal2.equals(<a class="variable" href="#linenum233">strVal2</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum326" class="linenum-cell" data-linenum="326" href="#linenum326"></a></td>
-<td><pre>        case ClassWriter.INDY: {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum327" class="linenum-cell" data-linenum="327" href="#linenum327"></a></td>
-<td><pre>            return <a class="variable" href="#linenum307">i</a>.longVal == <a class="variable" href="#linenum191">longVal</a> &amp;&amp; <a class="variable" href="#linenum307">i</a>.strVal1.equals(<a class="variable" href="#linenum233">strVal1</a>)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum328" class="linenum-cell" data-linenum="328" href="#linenum328"></a></td>
-<td><pre>                    &amp;&amp; <a class="variable" href="#linenum307">i</a>.strVal2.equals(<a class="variable" href="#linenum233">strVal2</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum329" class="linenum-cell" data-linenum="329" href="#linenum329"></a></td>
+<td><a id="linenum252" class="linenum-cell" data-linenum="252" href="#linenum252"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum330" class="linenum-cell" data-linenum="330" href="#linenum330"></a></td>
-<td><pre>        // case ClassWriter.FIELD:</pre></td>
+<td><a id="linenum253" class="linenum-cell" data-linenum="253" href="#linenum253"></a></td>
+<td><pre>        // ClassWriter.FIELD:</pre></td>
 </tr>
 <tr>
-<td><a id="linenum331" class="linenum-cell" data-linenum="331" href="#linenum331"></a></td>
-<td><pre>        // case ClassWriter.METH:</pre></td>
+<td><a id="linenum254" class="linenum-cell" data-linenum="254" href="#linenum254"></a></td>
+<td><pre>        // ClassWriter.METH:</pre></td>
 </tr>
 <tr>
-<td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
-<td><pre>        // case ClassWriter.IMETH:</pre></td>
+<td><a id="linenum255" class="linenum-cell" data-linenum="255" href="#linenum255"></a></td>
+<td><pre>        // ClassWriter.IMETH:</pre></td>
 </tr>
 <tr>
-<td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
-<td><pre>        <span class='comment'>// case ClassWriter.HANDLE_BASE + 1..9</span></pre></td>
+<td><a id="linenum256" class="linenum-cell" data-linenum="256" href="#linenum256"></a></td>
+<td><pre>        <span class='comment'>// ClassWriter.HANDLE_BASE + 1..9</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
+<td><a id="linenum257" class="linenum-cell" data-linenum="257" href="#linenum257"></a></td>
 <td><pre>        default:</pre></td>
 </tr>
 <tr>
-<td><a id="linenum335" class="linenum-cell" data-linenum="335" href="#linenum335"></a></td>
-<td><pre>            return <a class="variable" href="#linenum307">i</a>.strVal1.equals(<a class="variable" href="#linenum233">strVal1</a>) &amp;&amp; <a class="variable" href="#linenum307">i</a>.strVal2.equals(<a class="variable" href="#linenum233">strVal2</a>)</pre></td>
+<td><a id="linenum258" class="linenum-cell" data-linenum="258" href="#linenum258"></a></td>
+<td><pre>            <a class="variable" href="#linenum129">hashCode</a> = 0x7FFFFFFF &amp; (<a class="variable" href="#linenum233">type</a> + <a class="variable" href="#linenum233">strVal1</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1465">hashCode</a>()</pre></td>
 </tr>
 <tr>
-<td><a id="linenum336" class="linenum-cell" data-linenum="336" href="#linenum336"></a></td>
-<td><pre>                    &amp;&amp; <a class="variable" href="#linenum307">i</a>.strVal3.equals(<a class="variable" href="#linenum234">strVal3</a>);</pre></td>
+<td><a id="linenum259" class="linenum-cell" data-linenum="259" href="#linenum259"></a></td>
+<td><pre>                    * <a class="variable" href="#linenum233">strVal2</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1465">hashCode</a>() * <a class="variable" href="#linenum234">strVal3</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1465">hashCode</a>());</pre></td>
 </tr>
 <tr>
-<td><a id="linenum337" class="linenum-cell" data-linenum="337" href="#linenum337"></a></td>
+<td><a id="linenum260" class="linenum-cell" data-linenum="260" href="#linenum260"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum338" class="linenum-cell" data-linenum="338" href="#linenum338"></a></td>
+<td><a id="linenum261" class="linenum-cell" data-linenum="261" href="#linenum261"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum339" class="linenum-cell" data-linenum="339" href="#linenum339"></a></td>
+<td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum263" class="linenum-cell" data-linenum="263" href="#linenum263"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum264" class="linenum-cell" data-linenum="264" href="#linenum264"></a></td>
+<td><pre><span class='comment'>     * Sets the item to an InvokeDynamic item.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum265" class="linenum-cell" data-linenum="265" href="#linenum265"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum266" class="linenum-cell" data-linenum="266" href="#linenum266"></a></td>
+<td><pre><span class='comment'>     * @param name<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum267" class="linenum-cell" data-linenum="267" href="#linenum267"></a></td>
+<td><pre><span class='comment'>     *            invokedynamic's name.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum268" class="linenum-cell" data-linenum="268" href="#linenum268"></a></td>
+<td><pre><span class='comment'>     * @param desc<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum269" class="linenum-cell" data-linenum="269" href="#linenum269"></a></td>
+<td><pre><span class='comment'>     *            invokedynamic's desc.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum270" class="linenum-cell" data-linenum="270" href="#linenum270"></a></td>
+<td><pre><span class='comment'>     * @param bsmIndex<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum271" class="linenum-cell" data-linenum="271" href="#linenum271"></a></td>
+<td><pre><span class='comment'>     *            zero based index into the class attribute BootrapMethods.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum272" class="linenum-cell" data-linenum="272" href="#linenum272"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum273" class="linenum-cell" data-linenum="273" href="#linenum273"></a></td>
+<td><pre>    void set(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> desc, int bsmIndex) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
+<td><pre>        this.type = ClassWriter.INDY;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
+<td><pre>        this.longVal = <a class="variable" href="#linenum273">bsmIndex</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
+<td><pre>        this.strVal1 = <a class="variable" href="#linenum273">name</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
+<td><pre>        this.strVal2 = <a class="variable" href="#linenum273">desc</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
+<td><pre>        this.hashCode = 0x7FFFFFFF &amp; (ClassWriter.INDY + <a class="variable" href="#linenum273">bsmIndex</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
+<td><pre>                * <a class="variable" href="#linenum233">strVal1</a>.hashCode() * <a class="variable" href="#linenum233">strVal2</a>.hashCode());</pre></td>
+</tr>
+<tr>
+<td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum282" class="linenum-cell" data-linenum="282" href="#linenum282"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
+<td><pre><span class='comment'>     * Sets the item to a BootstrapMethod item.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum285" class="linenum-cell" data-linenum="285" href="#linenum285"></a></td>
+<td><pre><span class='comment'>     * @param position<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum286" class="linenum-cell" data-linenum="286" href="#linenum286"></a></td>
+<td><pre><span class='comment'>     *            position in byte in the class attribute BootrapMethods.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum287" class="linenum-cell" data-linenum="287" href="#linenum287"></a></td>
+<td><pre><span class='comment'>     * @param hashCode<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum288" class="linenum-cell" data-linenum="288" href="#linenum288"></a></td>
+<td><pre><span class='comment'>     *            hashcode of the item. This hashcode is processed from the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum289" class="linenum-cell" data-linenum="289" href="#linenum289"></a></td>
+<td><pre><span class='comment'>     *            hashcode of the bootstrap method and the hashcode of all<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum290" class="linenum-cell" data-linenum="290" href="#linenum290"></a></td>
+<td><pre><span class='comment'>     *            bootstrap arguments.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum291" class="linenum-cell" data-linenum="291" href="#linenum291"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum292" class="linenum-cell" data-linenum="292" href="#linenum292"></a></td>
+<td><pre>    void set(int position, int hashCode) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum293" class="linenum-cell" data-linenum="293" href="#linenum293"></a></td>
+<td><pre>        this.type = ClassWriter.BSM;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum294" class="linenum-cell" data-linenum="294" href="#linenum294"></a></td>
+<td><pre>        this.intVal = <a class="variable" href="#linenum292">position</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum295" class="linenum-cell" data-linenum="295" href="#linenum295"></a></td>
+<td><pre>        this.hashCode = <a class="variable" href="#linenum292">hashCode</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum296" class="linenum-cell" data-linenum="296" href="#linenum296"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum297" class="linenum-cell" data-linenum="297" href="#linenum297"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum298" class="linenum-cell" data-linenum="298" href="#linenum298"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum299" class="linenum-cell" data-linenum="299" href="#linenum299"></a></td>
+<td><pre><span class='comment'>     * Indicates if the given item is equal to this one. &lt;i&gt;This method assumes<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum300" class="linenum-cell" data-linenum="300" href="#linenum300"></a></td>
+<td><pre><span class='comment'>     * that the two items have the same {@link #type}&lt;/i&gt;.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum301" class="linenum-cell" data-linenum="301" href="#linenum301"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum302" class="linenum-cell" data-linenum="302" href="#linenum302"></a></td>
+<td><pre><span class='comment'>     * @param i<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum303" class="linenum-cell" data-linenum="303" href="#linenum303"></a></td>
+<td><pre><span class='comment'>     *            the item to be compared to this one. Both items must have the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
+<td><pre><span class='comment'>     *            same {@link #type}.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum305" class="linenum-cell" data-linenum="305" href="#linenum305"></a></td>
+<td><pre><span class='comment'>     * @return &lt;tt&gt;true&lt;/tt&gt; if the given item if equal to this one,<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum306" class="linenum-cell" data-linenum="306" href="#linenum306"></a></td>
+<td><pre><span class='comment'>     *         &lt;tt&gt;false&lt;/tt&gt; otherwise.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum307" class="linenum-cell" data-linenum="307" href="#linenum307"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
+<td><pre>    boolean isEqualTo(final <a class="type" href="/OdinCodeBrowserJdk8/jdk/internal/org/objectweb/asm/Item.html#linenum67">Item</a> i) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
+<td><pre>        switch (<a class="variable" href="#linenum233">type</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum310" class="linenum-cell" data-linenum="310" href="#linenum310"></a></td>
+<td><pre>        case ClassWriter.UTF8:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum311" class="linenum-cell" data-linenum="311" href="#linenum311"></a></td>
+<td><pre>        case ClassWriter.STR:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum312" class="linenum-cell" data-linenum="312" href="#linenum312"></a></td>
+<td><pre>        case ClassWriter.CLASS:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum313" class="linenum-cell" data-linenum="313" href="#linenum313"></a></td>
+<td><pre>        case ClassWriter.MTYPE:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum314" class="linenum-cell" data-linenum="314" href="#linenum314"></a></td>
+<td><pre>        case ClassWriter.TYPE_NORMAL:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum315" class="linenum-cell" data-linenum="315" href="#linenum315"></a></td>
+<td><pre>            return <a class="variable" href="#linenum308">i</a>.strVal1.equals(<a class="variable" href="#linenum233">strVal1</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
+<td><pre>        case ClassWriter.TYPE_MERGED:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
+<td><pre>        case ClassWriter.LONG:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum318" class="linenum-cell" data-linenum="318" href="#linenum318"></a></td>
+<td><pre>        case ClassWriter.DOUBLE:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum319" class="linenum-cell" data-linenum="319" href="#linenum319"></a></td>
+<td><pre>            return <a class="variable" href="#linenum308">i</a>.longVal == <a class="variable" href="#linenum191">longVal</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum320" class="linenum-cell" data-linenum="320" href="#linenum320"></a></td>
+<td><pre>        case ClassWriter.INT:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum321" class="linenum-cell" data-linenum="321" href="#linenum321"></a></td>
+<td><pre>        case ClassWriter.FLOAT:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum322" class="linenum-cell" data-linenum="322" href="#linenum322"></a></td>
+<td><pre>            return <a class="variable" href="#linenum308">i</a>.intVal == <a class="variable" href="#linenum179">intVal</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum323" class="linenum-cell" data-linenum="323" href="#linenum323"></a></td>
+<td><pre>        case ClassWriter.TYPE_UNINIT:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum324" class="linenum-cell" data-linenum="324" href="#linenum324"></a></td>
+<td><pre>            return <a class="variable" href="#linenum308">i</a>.intVal == <a class="variable" href="#linenum179">intVal</a> &amp;&amp; <a class="variable" href="#linenum308">i</a>.strVal1.equals(<a class="variable" href="#linenum233">strVal1</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum325" class="linenum-cell" data-linenum="325" href="#linenum325"></a></td>
+<td><pre>        case ClassWriter.NAME_TYPE:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum326" class="linenum-cell" data-linenum="326" href="#linenum326"></a></td>
+<td><pre>            return <a class="variable" href="#linenum308">i</a>.strVal1.equals(<a class="variable" href="#linenum233">strVal1</a>) &amp;&amp; <a class="variable" href="#linenum308">i</a>.strVal2.equals(<a class="variable" href="#linenum233">strVal2</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum327" class="linenum-cell" data-linenum="327" href="#linenum327"></a></td>
+<td><pre>        case ClassWriter.INDY: {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum328" class="linenum-cell" data-linenum="328" href="#linenum328"></a></td>
+<td><pre>            return <a class="variable" href="#linenum308">i</a>.longVal == <a class="variable" href="#linenum191">longVal</a> &amp;&amp; <a class="variable" href="#linenum308">i</a>.strVal1.equals(<a class="variable" href="#linenum233">strVal1</a>)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum329" class="linenum-cell" data-linenum="329" href="#linenum329"></a></td>
+<td><pre>                    &amp;&amp; <a class="variable" href="#linenum308">i</a>.strVal2.equals(<a class="variable" href="#linenum233">strVal2</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum330" class="linenum-cell" data-linenum="330" href="#linenum330"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum331" class="linenum-cell" data-linenum="331" href="#linenum331"></a></td>
+<td><pre>        // case ClassWriter.FIELD:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
+<td><pre>        // case ClassWriter.METH:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
+<td><pre>        // case ClassWriter.IMETH:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
+<td><pre>        <span class='comment'>// case ClassWriter.HANDLE_BASE + 1..9</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum335" class="linenum-cell" data-linenum="335" href="#linenum335"></a></td>
+<td><pre>        default:</pre></td>
+</tr>
+<tr>
+<td><a id="linenum336" class="linenum-cell" data-linenum="336" href="#linenum336"></a></td>
+<td><pre>            return <a class="variable" href="#linenum308">i</a>.strVal1.equals(<a class="variable" href="#linenum233">strVal1</a>) &amp;&amp; <a class="variable" href="#linenum308">i</a>.strVal2.equals(<a class="variable" href="#linenum233">strVal2</a>)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum337" class="linenum-cell" data-linenum="337" href="#linenum337"></a></td>
+<td><pre>                    &amp;&amp; <a class="variable" href="#linenum308">i</a>.strVal3.equals(<a class="variable" href="#linenum234">strVal3</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum338" class="linenum-cell" data-linenum="338" href="#linenum338"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum339" class="linenum-cell" data-linenum="339" href="#linenum339"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
 <td><a id="linenum340" class="linenum-cell" data-linenum="340" href="#linenum340"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum341" class="linenum-cell" data-linenum="341" href="#linenum341"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

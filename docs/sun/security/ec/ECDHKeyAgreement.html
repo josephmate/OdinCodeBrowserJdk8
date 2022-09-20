@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2009, 2013, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2009, 2018, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -116,35 +116,35 @@
 </tr>
 <tr>
 <td><a id="linenum28" class="linenum-cell" data-linenum="28" href="#linenum28"></a></td>
-<td><pre>import java.security.*;</pre></td>
+<td><pre>import java.math.*;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum29" class="linenum-cell" data-linenum="29" href="#linenum29"></a></td>
-<td><pre>import java.security.interfaces.*;</pre></td>
+<td><pre>import java.security.*;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum30" class="linenum-cell" data-linenum="30" href="#linenum30"></a></td>
-<td><pre>import java.security.spec.*;</pre></td>
+<td><pre>import java.security.interfaces.*;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum31" class="linenum-cell" data-linenum="31" href="#linenum31"></a></td>
-<td><pre></pre></td>
+<td><pre>import java.security.spec.*;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum32" class="linenum-cell" data-linenum="32" href="#linenum32"></a></td>
-<td><pre>import javax.crypto.*;</pre></td>
+<td><pre>import java.util.Optional;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum33" class="linenum-cell" data-linenum="33" href="#linenum33"></a></td>
-<td><pre>import javax.crypto.spec.*;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum34" class="linenum-cell" data-linenum="34" href="#linenum34"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum34" class="linenum-cell" data-linenum="34" href="#linenum34"></a></td>
+<td><pre>import javax.crypto.*;</pre></td>
+</tr>
+<tr>
 <td><a id="linenum35" class="linenum-cell" data-linenum="35" href="#linenum35"></a></td>
-<td><pre>import sun.security.util.ECUtil;</pre></td>
+<td><pre>import javax.crypto.spec.*;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum36" class="linenum-cell" data-linenum="36" href="#linenum36"></a></td>
@@ -152,379 +152,379 @@
 </tr>
 <tr>
 <td><a id="linenum37" class="linenum-cell" data-linenum="37" href="#linenum37"></a></td>
-<td><pre><span class='comment'>/**</pre></td>
+<td><pre>import sun.security.util.ArrayUtil;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum38" class="linenum-cell" data-linenum="38" href="#linenum38"></a></td>
-<td><pre><span class='comment'> * KeyAgreement implementation for ECDH.<span class='comment'></pre></td>
+<td><pre>import sun.security.util.ECUtil;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum39" class="linenum-cell" data-linenum="39" href="#linenum39"></a></td>
-<td><pre><span class='comment'> *<span class='comment'></pre></td>
+<td><pre>import sun.security.util.math.*;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum40" class="linenum-cell" data-linenum="40" href="#linenum40"></a></td>
-<td><pre><span class='comment'> * @since   1.7<span class='comment'></pre></td>
+<td><pre>import sun.security.ec.point.*;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum41" class="linenum-cell" data-linenum="41" href="#linenum41"></a></td>
-<td><pre> */</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
-<td><pre>public final class ECDHKeyAgreement extends <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/KeyAgreementSpi.html#linenum63">KeyAgreementSpi</a> {</pre></td>
+<td><pre><span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'> * KeyAgreement implementation for ECDH.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
-<td><pre>    <span class='comment'>// private key, if initialized</span></pre></td>
+<td><pre><span class='comment'> *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPrivateKey.html#linenum41">ECPrivateKey</a> privateKey;</pre></td>
+<td><pre><span class='comment'> * @since   1.7<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
-<td><pre></pre></td>
+<td><pre> */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
-<td><pre>    <span class='comment'>// encoded public point, non-null between doPhase() &amp; generateSecret() only</span></pre></td>
+<td><pre>public final class ECDHKeyAgreement extends <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/KeyAgreementSpi.html#linenum63">KeyAgreementSpi</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre>    private byte[] publicValue;</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
-<td><pre></pre></td>
+<td><pre>    <span class='comment'>// private key, if initialized</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
-<td><pre>    <span class='comment'>// length of the secret to be derived</span></pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPrivateKey.html#linenum41">ECPrivateKey</a> privateKey;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre>    private int secretLen;</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
-<td><pre></pre></td>
+<td><pre>    <span class='comment'>// public key, non-null between doPhase() &amp; generateSecret() only</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum42">ECPublicKey</a> publicKey;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre><span class='comment'>     * Constructs a new ECDHKeyAgreement.<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre>    <span class='comment'>// length of the secret to be derived</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
-<td><pre>    public ECDHKeyAgreement() {</pre></td>
+<td><pre>    private int secretLen;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
-<td><pre>    }</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre></pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
-<td><pre>    <span class='comment'>// see JCE spec</span></pre></td>
+<td><pre><span class='comment'>     * Constructs a new ECDHKeyAgreement.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
-<td><pre>    @Override</pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum61" class="linenum-cell" data-linenum="61" href="#linenum61"></a></td>
-<td><pre>    protected void engineInit(<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a> key, <a class="type" href="/OdinCodeBrowserJdk8/java/security/SecureRandom.html#linenum93">SecureRandom</a> random)</pre></td>
+<td><pre>    public ECDHKeyAgreement() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
-<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidKeyException.html#linenum36">InvalidKeyException</a> {</pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum63" class="linenum-cell" data-linenum="63" href="#linenum63"></a></td>
-<td><pre>        if (!(<a class="variable" href="#linenum61">key</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivateKey.html#linenum59">PrivateKey</a>)) {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum64" class="linenum-cell" data-linenum="64" href="#linenum64"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidKeyException.html#linenum36">InvalidKeyException</a></pre></td>
+<td><pre>    <span class='comment'>// see JCE spec</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
-<td><pre>                        (<span class='string'>&quot;Key must be instance of PrivateKey&quot;</span>);</pre></td>
+<td><pre>    @Override</pre></td>
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>    protected void engineInit(<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a> key, <a class="type" href="/OdinCodeBrowserJdk8/java/security/SecureRandom.html#linenum94">SecureRandom</a> random)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre>        <a class="variable" href="#linenum45">privateKey</a> = (<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPrivateKey.html#linenum41">ECPrivateKey</a>) ECKeyFactory.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECKeyFactory.html#linenum87">toECKey</a>(<a class="variable" href="#linenum61">key</a>);</pre></td>
+<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidKeyException.html#linenum36">InvalidKeyException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre>        <a class="variable" href="#linenum48">publicValue</a> = null;</pre></td>
+<td><pre>        if (!(<a class="variable" href="#linenum66">key</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivateKey.html#linenum59">PrivateKey</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum70" class="linenum-cell" data-linenum="70" href="#linenum70"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
-<td><pre>    <span class='comment'>// see JCE spec</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
-<td><pre>    protected void engineInit(<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a> key, <a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> params,</pre></td>
-</tr>
-<tr>
-<td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/security/SecureRandom.html#linenum93">SecureRandom</a> random) throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidKeyException.html#linenum36">InvalidKeyException</a>,</pre></td>
-</tr>
-<tr>
-<td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum73">params</a> != null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a></pre></td>
-</tr>
-<tr>
-<td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>                        (<span class='string'>&quot;Parameters not supported&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum72">engineInit</a>(<a class="variable" href="#linenum73">key</a>, <a class="variable" href="#linenum74">random</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
-<td><pre>    <span class='comment'>// see JCE spec</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a> engineDoPhase(<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a> key, boolean lastPhase)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
-<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidKeyException.html#linenum36">InvalidKeyException</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum45">privateKey</a> == null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a>(<span class='string'>&quot;Not initialized&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum48">publicValue</a> != null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a>(<span class='string'>&quot;Phase already executed&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
-<td><pre>        if (!<a class="variable" href="#linenum85">lastPhase</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a></pre></td>
-</tr>
-<tr>
-<td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
-<td><pre>                (<span class='string'>&quot;Only two party agreement supported, lastPhase must be true&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
-<td><pre>        if (!(<a class="variable" href="#linenum85">key</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum42">ECPublicKey</a>)) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
 <td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidKeyException.html#linenum36">InvalidKeyException</a></pre></td>
 </tr>
 <tr>
-<td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
-<td><pre>                (<span class='string'>&quot;Key must be a PublicKey with algorithm EC&quot;</span>);</pre></td>
+<td><a id="linenum70" class="linenum-cell" data-linenum="70" href="#linenum70"></a></td>
+<td><pre>                        (<span class='string'>&quot;Key must be instance of PrivateKey&quot;</span>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
+<td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
-<td><pre></pre></td>
+<td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
+<td><pre>        <a class="variable" href="#linenum50">privateKey</a> = (<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPrivateKey.html#linenum41">ECPrivateKey</a>) ECKeyFactory.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECKeyFactory.html#linenum87">toECKey</a>(<a class="variable" href="#linenum66">key</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum42">ECPublicKey</a> ecKey = (<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum42">ECPublicKey</a>)<a class="variable" href="#linenum85">key</a>;</pre></td>
+<td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
+<td><pre>        <a class="variable" href="#linenum53">publicKey</a> = null;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/ECParameterSpec.html#linenum39">ECParameterSpec</a> params = <a class="variable" href="#linenum102">ecKey</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECKey.html#linenum44">getParams</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum102">ecKey</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECPublicKeyImpl.html#linenum43">ECPublicKeyImpl</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre>            <a class="variable" href="#linenum48">publicValue</a> = ((<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECPublicKeyImpl.html#linenum43">ECPublicKeyImpl</a>)<a class="variable" href="#linenum102">ecKey</a>).getEncodedPublicValue();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
-<td><pre>        } else { <span class='comment'>// instanceof ECPublicKey</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
-<td><pre>            <a class="variable" href="#linenum48">publicValue</a> =</pre></td>
-</tr>
-<tr>
-<td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>                ECUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/ECUtil.html#linenum64">encodePoint</a>(<a class="variable" href="#linenum102">ecKey</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum54">getW</a>(), <a class="variable" href="#linenum103">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/ECParameterSpec.html#linenum86">getCurve</a>());</pre></td>
-</tr>
-<tr>
-<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
-<td><pre>        int keyLenBits = <a class="variable" href="#linenum103">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/ECParameterSpec.html#linenum86">getCurve</a>().getField().getFieldSize();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre>        <a class="variable" href="#linenum51">secretLen</a> = (<a class="variable" href="#linenum111">keyLenBits</a> + 7) &gt;&gt; 3;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre>        return null;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
+<td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
+<td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
+<td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
 <td><pre>    <span class='comment'>// see JCE spec</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
+<td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
 <td><pre>    @Override</pre></td>
 </tr>
 <tr>
-<td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre>    protected byte[] engineGenerateSecret() throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a> {</pre></td>
+<td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
+<td><pre>    protected void engineInit(<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a> key, <a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/AlgorithmParameterSpec.html#linenum44">AlgorithmParameterSpec</a> params,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
-<td><pre>        if ((<a class="variable" href="#linenum45">privateKey</a> == null) || (<a class="variable" href="#linenum48">publicValue</a> == null)) {</pre></td>
+<td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/security/SecureRandom.html#linenum94">SecureRandom</a> random) throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidKeyException.html#linenum36">InvalidKeyException</a>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a>(<span class='string'>&quot;Not initialized correctly&quot;</span>);</pre></td>
+<td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a> {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
+<td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum78">params</a> != null) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidAlgorithmParameterException.html#linenum40">InvalidAlgorithmParameterException</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
+<td><pre>                        (<span class='string'>&quot;Parameters not supported&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
+<td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum77">engineInit</a>(<a class="variable" href="#linenum78">key</a>, <a class="variable" href="#linenum79">random</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
 <td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
+<td><pre>    <span class='comment'>// see JCE spec</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
+<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a> engineDoPhase(<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a> key, boolean lastPhase)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
+<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidKeyException.html#linenum36">InvalidKeyException</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum50">privateKey</a> == null) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a>(<span class='string'>&quot;Not initialized&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum53">publicKey</a> != null) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a>(<span class='string'>&quot;Phase already executed&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
+<td><pre>        if (!<a class="variable" href="#linenum90">lastPhase</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
+<td><pre>                (<span class='string'>&quot;Only two party agreement supported, lastPhase must be true&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
+<td><pre>        if (!(<a class="variable" href="#linenum90">key</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum42">ECPublicKey</a>)) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidKeyException.html#linenum36">InvalidKeyException</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
+<td><pre>                (<span class='string'>&quot;Key must be a PublicKey with algorithm EC&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
+<td><pre>        this.publicKey = (<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum42">ECPublicKey</a>) <a class="variable" href="#linenum90">key</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/ECParameterSpec.html#linenum39">ECParameterSpec</a> params = <a class="variable" href="#linenum53">publicKey</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECKey.html#linenum44">getParams</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
+<td><pre>        int keyLenBits = <a class="variable" href="#linenum109">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/ECParameterSpec.html#linenum86">getCurve</a>().getField().getFieldSize();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
+<td><pre>        <a class="variable" href="#linenum56">secretLen</a> = (<a class="variable" href="#linenum110">keyLenBits</a> + 7) &gt;&gt; 3;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
+<td><pre>        return null;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
+<td><pre>    private static void validateCoordinate(<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum123">BigInteger</a> c, <a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum123">BigInteger</a> mod) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum116">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum3619">compareTo</a>(BigInteger.ZERO) &lt; 0) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/ProviderException.html#linenum36">ProviderException</a>(<span class='string'>&quot;invalid coordinate&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum116">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum3619">compareTo</a>(<a class="variable" href="#linenum116">mod</a>) &gt;= 0) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/ProviderException.html#linenum36">ProviderException</a>(<span class='string'>&quot;invalid coordinate&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>        byte[] s = <a class="variable" href="#linenum45">privateKey</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPrivateKey.html#linenum52">getS</a>().toByteArray();</pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>        byte[] encodedParams =                   <span class='comment'><span class='comment'>// DER OID</span></span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre>            ECUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/ECUtil.html#linenum145">encodeECParameterSpec</a>(null, <a class="variable" href="#linenum45">privateKey</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECKey.html#linenum44">getParams</a>());</pre></td>
+<td><pre>    <span class='comment'>/*</pre></td>
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * Check whether a public key is valid. Throw ProviderException<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>        try {</pre></td>
+<td><pre><span class='comment'>     * if it is not valid or could not be validated.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
-<td><pre></pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
-<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum175">deriveKey</a>(<a class="variable" href="#linenum124">s</a>, <a class="variable" href="#linenum48">publicValue</a>, <a class="variable" href="#linenum125">encodedParams</a>);</pre></td>
+<td><pre>    private static void validate(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECOperations.html#linenum48">ECOperations</a> ops, <a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum42">ECPublicKey</a> key) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
@@ -532,15 +532,15 @@
 </tr>
 <tr>
 <td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
-<td><pre>        } catch (<a class="type" href="/OdinCodeBrowserJdk8/java/security/GeneralSecurityException.html#linenum36">GeneralSecurityException</a> e) {</pre></td>
+<td><pre>        <span class='comment'>// ensure that integers are in proper range</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/ProviderException.html#linenum36">ProviderException</a>(<span class='string'>&quot;Could not derive key&quot;</span>, e);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum123">BigInteger</a> x = <a class="variable" href="#linenum130">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum54">getW</a>().getAffineX();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum123">BigInteger</a> y = <a class="variable" href="#linenum130">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum54">getW</a>().getAffineY();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
@@ -548,91 +548,91 @@
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum123">BigInteger</a> p = <a class="variable" href="#linenum130">ops</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECOperations.html#linenum126">getField</a>().getSize();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
-<td><pre></pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum116">validateCoordinate</a>(<a class="variable" href="#linenum133">x</a>, <a class="variable" href="#linenum136">p</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre>    <span class='comment'>// see JCE spec</span></pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum116">validateCoordinate</a>(<a class="variable" href="#linenum134">y</a>, <a class="variable" href="#linenum136">p</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre>    protected int engineGenerateSecret(byte[] sharedSecret, int</pre></td>
-</tr>
-<tr>
-<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
-<td><pre>            offset) throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a>, <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/ShortBufferException.html#linenum39">ShortBufferException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum140">offset</a> + <a class="variable" href="#linenum51">secretLen</a> &gt; <a class="variable" href="#linenum140">sharedSecret</a>.length) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/ShortBufferException.html#linenum39">ShortBufferException</a>(<span class='string'>&quot;Need &quot;</span> + <a class="variable" href="#linenum51">secretLen</a></pre></td>
-</tr>
-<tr>
-<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre>                + <span class='string'>&quot; bytes, only &quot;</span> + (<a class="variable" href="#linenum140">sharedSecret</a>.length - <a class="variable" href="#linenum140">offset</a>) + <span class='string'>&quot; available&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
-<td><pre>        byte[] secret = <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum152">engineGenerateSecret</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum146">secret</a>, 0, <a class="variable" href="#linenum140">sharedSecret</a>, <a class="variable" href="#linenum140">offset</a>, <a class="variable" href="#linenum146">secret</a>.length);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>        return <a class="variable" href="#linenum146">secret</a>.length;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
+<td><pre>        <span class='comment'>// ensure the point is on the curve</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/EllipticCurve.html#linenum43">EllipticCurve</a> curve = <a class="variable" href="#linenum130">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECKey.html#linenum44">getParams</a>().getCurve();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum123">BigInteger</a> rhs = <a class="variable" href="#linenum133">x</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum2578">modPow</a>(BigInteger.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum1098">valueOf</a>(3), <a class="variable" href="#linenum136">p</a>).add(<a class="variable" href="#linenum141">curve</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/EllipticCurve.html#linenum139">getA</a>()</pre></td>
+</tr>
+<tr>
+<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
+<td><pre>            .multiply(<a class="variable" href="#linenum133">x</a>)).add(<a class="variable" href="#linenum141">curve</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/EllipticCurve.html#linenum148">getB</a>()).mod(<a class="variable" href="#linenum136">p</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum123">BigInteger</a> lhs = <a class="variable" href="#linenum134">y</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum2578">modPow</a>(BigInteger.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum1098">valueOf</a>(2), <a class="variable" href="#linenum136">p</a>).mod(<a class="variable" href="#linenum136">p</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
+<td><pre>        if (!<a class="variable" href="#linenum142">rhs</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum3709">equals</a>(<a class="variable" href="#linenum144">lhs</a>)) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/ProviderException.html#linenum36">ProviderException</a>(<span class='string'>&quot;point is not on curve&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
+<td><pre>        <span class='comment'>// check the order of the point</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/ImmutableIntegerModuloP.html#linenum32">ImmutableIntegerModuloP</a> xElem = <a class="variable" href="#linenum130">ops</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECOperations.html#linenum126">getField</a>().getElement(<a class="variable" href="#linenum133">x</a>);</pre></td>
+</tr>
+<tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre>    <span class='comment'>// see JCE spec</span></pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/ImmutableIntegerModuloP.html#linenum32">ImmutableIntegerModuloP</a> yElem = <a class="variable" href="#linenum130">ops</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECOperations.html#linenum126">getField</a>().getElement(<a class="variable" href="#linenum134">y</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
-<td><pre>    @Override</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/point/AffinePoint.html#linenum37">AffinePoint</a> affP = new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/point/AffinePoint.html#linenum37">AffinePoint</a>(<a class="variable" href="#linenum150">xElem</a>, <a class="variable" href="#linenum151">yElem</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
-<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/SecretKey.html#linenum60">SecretKey</a> engineGenerateSecret(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> algorithm)</pre></td>
+<td><pre>        byte[] order = <a class="variable" href="#linenum130">key</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECKey.html#linenum44">getParams</a>().getOrder().toByteArray();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
-<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/security/NoSuchAlgorithmException.html#linenum35">NoSuchAlgorithmException</a>,</pre></td>
+<td><pre>        ArrayUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/ArrayUtil.html#linenum40">reverse</a>(<a class="variable" href="#linenum153">order</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidKeyException.html#linenum36">InvalidKeyException</a> {</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/point/Point.html#linenum37">Point</a> product = <a class="variable" href="#linenum130">ops</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECOperations.html#linenum238">multiply</a>(<a class="variable" href="#linenum152">affP</a>, <a class="variable" href="#linenum153">order</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum153">algorithm</a> == null) {</pre></td>
+<td><pre>        if (!<a class="variable" href="#linenum130">ops</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECOperations.html#linenum137">isNeutral</a>(<a class="variable" href="#linenum155">product</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/NoSuchAlgorithmException.html#linenum35">NoSuchAlgorithmException</a>(<span class='string'>&quot;Algorithm must not be null&quot;</span>);</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/ProviderException.html#linenum36">ProviderException</a>(<span class='string'>&quot;point has incorrect order&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
@@ -640,78 +640,518 @@
 </tr>
 <tr>
 <td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
-<td><pre>        if (!(<a class="variable" href="#linenum153">algorithm</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum964">equals</a>(<span class='string'>&quot;TlsPremasterSecret&quot;</span>))) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/NoSuchAlgorithmException.html#linenum35">NoSuchAlgorithmException</a></pre></td>
-</tr>
-<tr>
-<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre>                (<span class='string'>&quot;Only supported for algorithm TlsPremasterSecret&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum48">SecretKeySpec</a>(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum152">engineGenerateSecret</a>(), <span class='string'>&quot;TlsPremasterSecret&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
+<td><pre>    <span class='comment'>// see JCE spec</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
+<td><pre>    protected byte[] engineGenerateSecret() throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
+<td><pre>        if ((<a class="variable" href="#linenum50">privateKey</a> == null) || (<a class="variable" href="#linenum53">publicKey</a> == null)) {</pre></td>
+</tr>
+<tr>
 <td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a>(<span class='string'>&quot;Not initialized correctly&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre><span class='comment'>     * Generates a secret key using the public and private keys.<span class='comment'></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre><span class='comment'>     * @param s the private key's S value.<span class='comment'></pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Optional.html#linenum50">Optional</a>&lt;byte[]&gt; resultOpt = <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum204">deriveKeyImpl</a>(<a class="variable" href="#linenum50">privateKey</a>, <a class="variable" href="#linenum53">publicKey</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre><span class='comment'>     * @param w the public key's W point (in uncompressed form).<span class='comment'></pre></td>
+<td><pre>        return <a class="variable" href="#linenum169">resultOpt</a>.orElseGet(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre><span class='comment'>     * @param encodedParams the curve's DER encoded object identifier.<span class='comment'></pre></td>
+<td><pre>            () -&gt; <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum250">deriveKeyNative</a>(<a class="variable" href="#linenum50">privateKey</a>, <a class="variable" href="#linenum53">publicKey</a>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre>        );</pre></td>
 </tr>
 <tr>
 <td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
-<td><pre><span class='comment'>     * @return byte[] the secret key.<span class='comment'></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
-<td><pre>    private static native byte[] deriveKey(byte[] s, byte[] w,</pre></td>
+<td><pre>    <span class='comment'>// see JCE spec</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
-<td><pre>        byte[] encodedParams) throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/GeneralSecurityException.html#linenum36">GeneralSecurityException</a>;</pre></td>
+<td><pre>    @Override</pre></td>
 </tr>
 <tr>
 <td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
+<td><pre>    protected int engineGenerateSecret(byte[] sharedSecret, int</pre></td>
+</tr>
+<tr>
+<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
+<td><pre>            offset) throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a>, <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/ShortBufferException.html#linenum39">ShortBufferException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum177">offset</a> + <a class="variable" href="#linenum56">secretLen</a> &gt; <a class="variable" href="#linenum177">sharedSecret</a>.length) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/ShortBufferException.html#linenum39">ShortBufferException</a>(<span class='string'>&quot;Need &quot;</span> + <a class="variable" href="#linenum56">secretLen</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
+<td><pre>                + <span class='string'>&quot; bytes, only &quot;</span> + (<a class="variable" href="#linenum177">sharedSecret</a>.length - <a class="variable" href="#linenum177">offset</a>)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
+<td><pre>                + <span class='string'>&quot; available&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
+<td><pre>        byte[] secret = <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum163">engineGenerateSecret</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum184">secret</a>, 0, <a class="variable" href="#linenum177">sharedSecret</a>, <a class="variable" href="#linenum177">offset</a>, <a class="variable" href="#linenum184">secret</a>.length);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
+<td><pre>        return <a class="variable" href="#linenum184">secret</a>.length;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
+<td><pre>    <span class='comment'>// see JCE spec</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
+<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/SecretKey.html#linenum60">SecretKey</a> engineGenerateSecret(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> algorithm)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
+<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalStateException.html#linenum37">IllegalStateException</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/security/NoSuchAlgorithmException.html#linenum35">NoSuchAlgorithmException</a>,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/security/InvalidKeyException.html#linenum36">InvalidKeyException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum191">algorithm</a> == null) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/NoSuchAlgorithmException.html#linenum35">NoSuchAlgorithmException</a>(<span class='string'>&quot;Algorithm must not be null&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
+<td><pre>        if (!(<a class="variable" href="#linenum191">algorithm</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum976">equals</a>(<span class='string'>&quot;TlsPremasterSecret&quot;</span>))) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/NoSuchAlgorithmException.html#linenum35">NoSuchAlgorithmException</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
+<td><pre>                (<span class='string'>&quot;Only supported for algorithm TlsPremasterSecret&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/javax/crypto/spec/SecretKeySpec.html#linenum50">SecretKeySpec</a>(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum163">engineGenerateSecret</a>(), <span class='string'>&quot;TlsPremasterSecret&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
+<td><pre>    private static</pre></td>
+</tr>
+<tr>
+<td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/java/util/Optional.html#linenum50">Optional</a>&lt;byte[]&gt; deriveKeyImpl(<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPrivateKey.html#linenum41">ECPrivateKey</a> priv, <a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum42">ECPublicKey</a> pubKey) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/ECParameterSpec.html#linenum39">ECParameterSpec</a> ecSpec = <a class="variable" href="#linenum205">priv</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECKey.html#linenum44">getParams</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/EllipticCurve.html#linenum43">EllipticCurve</a> curve = <a class="variable" href="#linenum207">ecSpec</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/ECParameterSpec.html#linenum86">getCurve</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Optional.html#linenum50">Optional</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECOperations.html#linenum48">ECOperations</a>&gt; opsOpt = ECOperations.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECOperations.html#linenum77">forParameters</a>(<a class="variable" href="#linenum207">ecSpec</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
+<td><pre>        if (!<a class="variable" href="#linenum209">opsOpt</a>.isPresent()) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
+<td><pre>            return Optional.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Optional.html#linenum83">empty</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECOperations.html#linenum48">ECOperations</a> ops = <a class="variable" href="#linenum209">opsOpt</a>.get();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
+<td><pre>        if (! (<a class="variable" href="#linenum205">priv</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECPrivateKeyImpl.html#linenum67">ECPrivateKeyImpl</a>)) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum215" class="linenum-cell" data-linenum="215" href="#linenum215"></a></td>
+<td><pre>            return Optional.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Optional.html#linenum83">empty</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum216" class="linenum-cell" data-linenum="216" href="#linenum216"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum217" class="linenum-cell" data-linenum="217" href="#linenum217"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECPrivateKeyImpl.html#linenum67">ECPrivateKeyImpl</a> privImpl = (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECPrivateKeyImpl.html#linenum67">ECPrivateKeyImpl</a>) <a class="variable" href="#linenum205">priv</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>
+<td><pre>        byte[] sArr = <a class="variable" href="#linenum217">privImpl</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECPrivateKeyImpl.html#linenum159">getArrayS</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
+<td><pre>        // to match the native implementation, validate the public key here</pre></td>
+</tr>
+<tr>
+<td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
+<td><pre>        <span class='comment'>// and throw ProviderException if it is invalid</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum222" class="linenum-cell" data-linenum="222" href="#linenum222"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum130">validate</a>(<a class="variable" href="#linenum213">ops</a>, <a class="variable" href="#linenum205">pubKey</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum223" class="linenum-cell" data-linenum="223" href="#linenum223"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum224" class="linenum-cell" data-linenum="224" href="#linenum224"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/IntegerFieldModuloP.html#linenum37">IntegerFieldModuloP</a> field = <a class="variable" href="#linenum213">ops</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECOperations.html#linenum126">getField</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum225" class="linenum-cell" data-linenum="225" href="#linenum225"></a></td>
+<td><pre>        <span class='comment'>// convert s array into field element and multiply by the cofactor</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum226" class="linenum-cell" data-linenum="226" href="#linenum226"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/MutableIntegerModuloP.html#linenum41">MutableIntegerModuloP</a> scalar = <a class="variable" href="#linenum224">field</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/IntegerFieldModuloP.html#linenum69">getElement</a>(<a class="variable" href="#linenum218">sArr</a>).mutable();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum227" class="linenum-cell" data-linenum="227" href="#linenum227"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/SmallValue.html#linenum35">SmallValue</a> cofactor =</pre></td>
+</tr>
+<tr>
+<td><a id="linenum228" class="linenum-cell" data-linenum="228" href="#linenum228"></a></td>
+<td><pre>            <a class="variable" href="#linenum224">field</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/IntegerFieldModuloP.html#linenum83">getSmallValue</a>(<a class="variable" href="#linenum205">priv</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECKey.html#linenum44">getParams</a>().getCofactor());</pre></td>
+</tr>
+<tr>
+<td><a id="linenum229" class="linenum-cell" data-linenum="229" href="#linenum229"></a></td>
+<td><pre>        <a class="variable" href="#linenum226">scalar</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/MutableIntegerModuloP.html#linenum145">setProduct</a>(<a class="variable" href="#linenum227">cofactor</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum230" class="linenum-cell" data-linenum="230" href="#linenum230"></a></td>
+<td><pre>        int keySize = (<a class="variable" href="#linenum208">curve</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/EllipticCurve.html#linenum130">getField</a>().getFieldSize() + 7) / 8;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum231" class="linenum-cell" data-linenum="231" href="#linenum231"></a></td>
+<td><pre>        byte[] privArr = <a class="variable" href="#linenum226">scalar</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/IntegerModuloP.html#linenum138">asByteArray</a>(<a class="variable" href="#linenum230">keySize</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum232" class="linenum-cell" data-linenum="232" href="#linenum232"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum233" class="linenum-cell" data-linenum="233" href="#linenum233"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/ImmutableIntegerModuloP.html#linenum32">ImmutableIntegerModuloP</a> x =</pre></td>
+</tr>
+<tr>
+<td><a id="linenum234" class="linenum-cell" data-linenum="234" href="#linenum234"></a></td>
+<td><pre>            <a class="variable" href="#linenum224">field</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/IntegerFieldModuloP.html#linenum69">getElement</a>(<a class="variable" href="#linenum205">pubKey</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum54">getW</a>().getAffineX());</pre></td>
+</tr>
+<tr>
+<td><a id="linenum235" class="linenum-cell" data-linenum="235" href="#linenum235"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/ImmutableIntegerModuloP.html#linenum32">ImmutableIntegerModuloP</a> y =</pre></td>
+</tr>
+<tr>
+<td><a id="linenum236" class="linenum-cell" data-linenum="236" href="#linenum236"></a></td>
+<td><pre>            <a class="variable" href="#linenum224">field</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/math/IntegerFieldModuloP.html#linenum69">getElement</a>(<a class="variable" href="#linenum205">pubKey</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum54">getW</a>().getAffineY());</pre></td>
+</tr>
+<tr>
+<td><a id="linenum237" class="linenum-cell" data-linenum="237" href="#linenum237"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/point/AffinePoint.html#linenum37">AffinePoint</a> affPub = new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/point/AffinePoint.html#linenum37">AffinePoint</a>(<a class="variable" href="#linenum233">x</a>, <a class="variable" href="#linenum235">y</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum238" class="linenum-cell" data-linenum="238" href="#linenum238"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/point/Point.html#linenum37">Point</a> product = <a class="variable" href="#linenum213">ops</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECOperations.html#linenum238">multiply</a>(<a class="variable" href="#linenum237">affPub</a>, <a class="variable" href="#linenum231">privArr</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum239" class="linenum-cell" data-linenum="239" href="#linenum239"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum213">ops</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECOperations.html#linenum137">isNeutral</a>(<a class="variable" href="#linenum238">product</a>)) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum240" class="linenum-cell" data-linenum="240" href="#linenum240"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/ProviderException.html#linenum36">ProviderException</a>(<span class='string'>&quot;Product is zero&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum241" class="linenum-cell" data-linenum="241" href="#linenum241"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum242" class="linenum-cell" data-linenum="242" href="#linenum242"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/point/AffinePoint.html#linenum37">AffinePoint</a> affProduct = <a class="variable" href="#linenum238">product</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/point/Point.html#linenum40">asAffine</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum243" class="linenum-cell" data-linenum="243" href="#linenum243"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum244" class="linenum-cell" data-linenum="244" href="#linenum244"></a></td>
+<td><pre>        byte[] result = <a class="variable" href="#linenum242">affProduct</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/point/AffinePoint.html#linenum47">getX</a>().asByteArray(<a class="variable" href="#linenum230">keySize</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum245" class="linenum-cell" data-linenum="245" href="#linenum245"></a></td>
+<td><pre>        ArrayUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/ArrayUtil.html#linenum40">reverse</a>(<a class="variable" href="#linenum244">result</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum246" class="linenum-cell" data-linenum="246" href="#linenum246"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum247" class="linenum-cell" data-linenum="247" href="#linenum247"></a></td>
+<td><pre>        return Optional.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Optional.html#linenum107">of</a>(<a class="variable" href="#linenum244">result</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum248" class="linenum-cell" data-linenum="248" href="#linenum248"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum249" class="linenum-cell" data-linenum="249" href="#linenum249"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum250" class="linenum-cell" data-linenum="250" href="#linenum250"></a></td>
+<td><pre>    private static</pre></td>
+</tr>
+<tr>
+<td><a id="linenum251" class="linenum-cell" data-linenum="251" href="#linenum251"></a></td>
+<td><pre>    byte[] deriveKeyNative(<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPrivateKey.html#linenum41">ECPrivateKey</a> privateKey, <a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum42">ECPublicKey</a> publicKey) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum252" class="linenum-cell" data-linenum="252" href="#linenum252"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum253" class="linenum-cell" data-linenum="253" href="#linenum253"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/ECParameterSpec.html#linenum39">ECParameterSpec</a> params = <a class="variable" href="#linenum251">privateKey</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECKey.html#linenum44">getParams</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum254" class="linenum-cell" data-linenum="254" href="#linenum254"></a></td>
+<td><pre>        byte[] s = <a class="variable" href="#linenum251">privateKey</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPrivateKey.html#linenum52">getS</a>().toByteArray();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum255" class="linenum-cell" data-linenum="255" href="#linenum255"></a></td>
+<td><pre>        byte[] encodedParams =                   <span class='comment'><span class='comment'>// DER OID</span></span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum256" class="linenum-cell" data-linenum="256" href="#linenum256"></a></td>
+<td><pre>            ECUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/ECUtil.html#linenum104">encodeECParameterSpec</a>(null, <a class="variable" href="#linenum253">params</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum257" class="linenum-cell" data-linenum="257" href="#linenum257"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum258" class="linenum-cell" data-linenum="258" href="#linenum258"></a></td>
+<td><pre>        byte[] publicValue;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum259" class="linenum-cell" data-linenum="259" href="#linenum259"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum251">publicKey</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECPublicKeyImpl.html#linenum45">ECPublicKeyImpl</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum260" class="linenum-cell" data-linenum="260" href="#linenum260"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECPublicKeyImpl.html#linenum45">ECPublicKeyImpl</a> ecPub = (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECPublicKeyImpl.html#linenum45">ECPublicKeyImpl</a>) <a class="variable" href="#linenum251">publicKey</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum261" class="linenum-cell" data-linenum="261" href="#linenum261"></a></td>
+<td><pre>            <a class="variable" href="#linenum258">publicValue</a> = <a class="variable" href="#linenum260">ecPub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECPublicKeyImpl.html#linenum91">getEncodedPublicValue</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
+<td><pre>        } else { <span class='comment'>// instanceof ECPublicKey</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum263" class="linenum-cell" data-linenum="263" href="#linenum263"></a></td>
+<td><pre>            <a class="variable" href="#linenum258">publicValue</a> =</pre></td>
+</tr>
+<tr>
+<td><a id="linenum264" class="linenum-cell" data-linenum="264" href="#linenum264"></a></td>
+<td><pre>                ECUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/ECUtil.html#linenum64">encodePoint</a>(<a class="variable" href="#linenum251">publicKey</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/interfaces/ECPublicKey.html#linenum54">getW</a>(), <a class="variable" href="#linenum253">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/security/spec/ECParameterSpec.html#linenum86">getCurve</a>());</pre></td>
+</tr>
+<tr>
+<td><a id="linenum265" class="linenum-cell" data-linenum="265" href="#linenum265"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum266" class="linenum-cell" data-linenum="266" href="#linenum266"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum267" class="linenum-cell" data-linenum="267" href="#linenum267"></a></td>
+<td><pre>        try {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum268" class="linenum-cell" data-linenum="268" href="#linenum268"></a></td>
+<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/sun/security/ec/ECDHKeyAgreement.html#linenum285">deriveKey</a>(<a class="variable" href="#linenum254">s</a>, <a class="variable" href="#linenum258">publicValue</a>, <a class="variable" href="#linenum255">encodedParams</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum269" class="linenum-cell" data-linenum="269" href="#linenum269"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum270" class="linenum-cell" data-linenum="270" href="#linenum270"></a></td>
+<td><pre>        } catch (<a class="type" href="/OdinCodeBrowserJdk8/java/security/GeneralSecurityException.html#linenum36">GeneralSecurityException</a> e) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum271" class="linenum-cell" data-linenum="271" href="#linenum271"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/security/ProviderException.html#linenum36">ProviderException</a>(<span class='string'>&quot;Could not derive key&quot;</span>, e);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum272" class="linenum-cell" data-linenum="272" href="#linenum272"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum273" class="linenum-cell" data-linenum="273" href="#linenum273"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
+<td><pre><span class='comment'>     * Generates a secret key using the public and private keys.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
+<td><pre><span class='comment'>     * @param s the private key's S value.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
+<td><pre><span class='comment'>     * @param w the public key's W point (in uncompressed form).<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
+<td><pre><span class='comment'>     * @param encodedParams the curve's DER encoded object identifier.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum282" class="linenum-cell" data-linenum="282" href="#linenum282"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
+<td><pre><span class='comment'>     * @return byte[] the secret key.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum285" class="linenum-cell" data-linenum="285" href="#linenum285"></a></td>
+<td><pre>    private static native byte[] deriveKey(byte[] s, byte[] w,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum286" class="linenum-cell" data-linenum="286" href="#linenum286"></a></td>
+<td><pre>        byte[] encodedParams) throws <a class="type" href="/OdinCodeBrowserJdk8/java/security/GeneralSecurityException.html#linenum36">GeneralSecurityException</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum287" class="linenum-cell" data-linenum="287" href="#linenum287"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

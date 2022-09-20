@@ -260,7 +260,7 @@
 </tr>
 <tr>
 <td><a id="linenum64" class="linenum-cell" data-linenum="64" href="#linenum64"></a></td>
-<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/WeakReference.html#linenum48">WeakReference</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a>&gt;&gt; components = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/WeakReference.html#linenum48">WeakReference</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a>&gt;&gt;();</pre></td>
+<td><pre>    private static <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/WeakReference.html#linenum48">WeakReference</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a>&gt;&gt; components = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/WeakReference.html#linenum48">WeakReference</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a>&gt;&gt;();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
@@ -372,7 +372,7 @@
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>    synchronized static void register(<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a> c) {</pre></td>
+<td><pre>    synchronized static void register(<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a> c) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
@@ -396,7 +396,7 @@
 </tr>
 <tr>
 <td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
-<td><pre>        <a class="variable" href="#linenum64">components</a>.add(new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/WeakReference.html#linenum48">WeakReference</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a>&gt;(<a class="variable" href="#linenum92">c</a>));</pre></td>
+<td><pre>        <a class="variable" href="#linenum64">components</a>.add(new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/WeakReference.html#linenum48">WeakReference</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a>&gt;(<a class="variable" href="#linenum92">c</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
@@ -420,7 +420,7 @@
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre>    synchronized static void unregister(<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a> c) {</pre></td>
+<td><pre>    synchronized static void unregister(<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a> c) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
@@ -436,7 +436,7 @@
 </tr>
 <tr>
 <td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a> target = <a class="variable" href="#linenum64">components</a>.get(<a class="variable" href="#linenum105">counter</a>).get();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a> target = <a class="variable" href="#linenum64">components</a>.get(<a class="variable" href="#linenum105">counter</a>).get();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
@@ -484,7 +484,7 @@
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
-<td><pre>    synchronized static <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> findRegisteredComponentOfType(<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a> from,</pre></td>
+<td><pre>    synchronized static <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> findRegisteredComponentOfType(<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a> from,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
@@ -492,7 +492,7 @@
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JRootPane.html#linenum202">JRootPane</a> rp = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum1507">getRootPane</a>(<a class="variable" href="#linenum120">from</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JRootPane.html#linenum202">JRootPane</a> rp = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum1512">getRootPane</a>(<a class="variable" href="#linenum120">from</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
@@ -532,11 +532,11 @@
 </tr>
 <tr>
 <td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
-<td><pre>                else if (<a class="variable" href="#linenum121">target</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum474">isInstance</a>(<a class="variable" href="#linenum125">component</a>) &amp;&amp; SwingUtilities.</pre></td>
+<td><pre>                else if (<a class="variable" href="#linenum121">target</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum483">isInstance</a>(<a class="variable" href="#linenum125">component</a>) &amp;&amp; SwingUtilities.</pre></td>
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>                         <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum1507">getRootPane</a>((<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a>)<a class="variable" href="#linenum125">component</a>) == <a class="variable" href="#linenum122">rp</a>) {</pre></td>
+<td><pre>                         <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum1512">getRootPane</a>((<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a>)<a class="variable" href="#linenum125">component</a>) == <a class="variable" href="#linenum122">rp</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
@@ -600,7 +600,7 @@
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JRootPane.html#linenum202">JRootPane</a> rp = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum1507">getRootPane</a>(<a class="variable" href="#linenum145">c</a>);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JRootPane.html#linenum202">JRootPane</a> rp = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum1512">getRootPane</a>(<a class="variable" href="#linenum145">c</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
@@ -608,7 +608,7 @@
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre>            <a class="variable" href="#linenum150">point</a> = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum200">convertPoint</a>(<a class="variable" href="#linenum145">c</a>, <a class="variable" href="#linenum150">point</a>, <a class="variable" href="#linenum149">rp</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum150">point</a> = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum202">convertPoint</a>(<a class="variable" href="#linenum145">c</a>, <a class="variable" href="#linenum150">point</a>, <a class="variable" href="#linenum149">rp</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
@@ -624,7 +624,7 @@
 </tr>
 <tr>
 <td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre>            <a class="variable" href="#linenum150">point</a> = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum200">convertPoint</a>(<a class="variable" href="#linenum146">tb</a>, <a class="variable" href="#linenum150">point</a>, <a class="variable" href="#linenum149">rp</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum150">point</a> = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum202">convertPoint</a>(<a class="variable" href="#linenum146">tb</a>, <a class="variable" href="#linenum150">point</a>, <a class="variable" href="#linenum149">rp</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
@@ -652,7 +652,7 @@
 </tr>
 <tr>
 <td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
-<td><pre>    public static <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/plaf/ComponentUI.html#linenum54">ComponentUI</a> createUI( <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a> c )</pre></td>
+<td><pre>    public static <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/plaf/ComponentUI.html#linenum54">ComponentUI</a> createUI( <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a> c )</pre></td>
 </tr>
 <tr>
 <td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
@@ -672,7 +672,7 @@
 </tr>
 <tr>
 <td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre>    public void installUI( <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a> c )</pre></td>
+<td><pre>    public void installUI( <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a> c )</pre></td>
 </tr>
 <tr>
 <td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
@@ -696,7 +696,7 @@
 </tr>
 <tr>
 <td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
-<td><pre>    public void uninstallUI( <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a> c )</pre></td>
+<td><pre>    public void uninstallUI( <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a> c )</pre></td>
 </tr>
 <tr>
 <td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
@@ -888,7 +888,7 @@
 </tr>
 <tr>
 <td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
-<td><pre>    protected void setBorderToNonRollover(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c) {</pre></td>
+<td><pre>    protected void setBorderToNonRollover(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum222" class="linenum-cell" data-linenum="222" href="#linenum222"></a></td>
@@ -932,7 +932,7 @@
 </tr>
 <tr>
 <td><a id="linenum232" class="linenum-cell" data-linenum="232" href="#linenum232"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/border/Border.html#linenum64">Border</a> border = <a class="variable" href="#linenum231">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum1810">getBorder</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/border/Border.html#linenum64">Border</a> border = <a class="variable" href="#linenum231">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum1813">getBorder</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum233" class="linenum-cell" data-linenum="233" href="#linenum233"></a></td>
@@ -956,7 +956,7 @@
 </tr>
 <tr>
 <td><a id="linenum238" class="linenum-cell" data-linenum="238" href="#linenum238"></a></td>
-<td><pre>                <a class="variable" href="#linenum231">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum1789">setBorder</a>(<a class="variable" href="#linenum82">nonRolloverBorder</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum231">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum1792">setBorder</a>(<a class="variable" href="#linenum82">nonRolloverBorder</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum239" class="linenum-cell" data-linenum="239" href="#linenum239"></a></td>
@@ -1100,7 +1100,7 @@
 </tr>
 <tr>
 <td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
-<td><pre>        if (!GraphicsEnvironment.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/GraphicsEnvironment.html#linenum139">isHeadless</a>()) {</pre></td>
+<td><pre>        if (!GraphicsEnvironment.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/GraphicsEnvironment.html#linenum140">isHeadless</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
@@ -1180,7 +1180,7 @@
 </tr>
 <tr>
 <td><a id="linenum294" class="linenum-cell" data-linenum="294" href="#linenum294"></a></td>
-<td><pre>    public void update(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Graphics.html#linenum104">Graphics</a> g, <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a> c) {</pre></td>
+<td><pre>    public void update(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Graphics.html#linenum104">Graphics</a> g, <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a> c) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum295" class="linenum-cell" data-linenum="295" href="#linenum295"></a></td>
@@ -1196,7 +1196,7 @@
 </tr>
 <tr>
 <td><a id="linenum298" class="linenum-cell" data-linenum="298" href="#linenum298"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum294">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum4341">isOpaque</a>() &amp;&amp; (<a class="variable" href="#linenum294">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1792">getBackground</a>() instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/plaf/UIResource.html#linenum66">UIResource</a>) &amp;&amp;</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum294">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum4341">isOpaque</a>() &amp;&amp; (<a class="variable" href="#linenum294">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1798">getBackground</a>() instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/plaf/UIResource.html#linenum66">UIResource</a>) &amp;&amp;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum299" class="linenum-cell" data-linenum="299" href="#linenum299"></a></td>
@@ -1204,7 +1204,7 @@
 </tr>
 <tr>
 <td><a id="linenum300" class="linenum-cell" data-linenum="300" href="#linenum300"></a></td>
-<td><pre>                      JToolBar.HORIZONTAL &amp;&amp; UIManager.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/UIManager.html#linenum970">get</a>(</pre></td>
+<td><pre>                      JToolBar.HORIZONTAL &amp;&amp; UIManager.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/UIManager.html#linenum954">get</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum301" class="linenum-cell" data-linenum="301" href="#linenum301"></a></td>
@@ -1212,7 +1212,7 @@
 </tr>
 <tr>
 <td><a id="linenum302" class="linenum-cell" data-linenum="302" href="#linenum302"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JRootPane.html#linenum202">JRootPane</a> rp = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum1507">getRootPane</a>(<a class="variable" href="#linenum294">c</a>);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JRootPane.html#linenum202">JRootPane</a> rp = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum1512">getRootPane</a>(<a class="variable" href="#linenum294">c</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum303" class="linenum-cell" data-linenum="303" href="#linenum303"></a></td>
@@ -1228,7 +1228,7 @@
 </tr>
 <tr>
 <td><a id="linenum306" class="linenum-cell" data-linenum="306" href="#linenum306"></a></td>
-<td><pre>                              (<a class="variable" href="#linenum303">mb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1792">getBackground</a>() instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/plaf/UIResource.html#linenum66">UIResource</a>)) {</pre></td>
+<td><pre>                              (<a class="variable" href="#linenum303">mb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1798">getBackground</a>() instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/plaf/UIResource.html#linenum66">UIResource</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum307" class="linenum-cell" data-linenum="307" href="#linenum307"></a></td>
@@ -1236,7 +1236,7 @@
 </tr>
 <tr>
 <td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
-<td><pre>                <a class="variable" href="#linenum307">point</a> = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum200">convertPoint</a>(<a class="variable" href="#linenum294">c</a>, <a class="variable" href="#linenum307">point</a>, <a class="variable" href="#linenum302">rp</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum307">point</a> = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum202">convertPoint</a>(<a class="variable" href="#linenum294">c</a>, <a class="variable" href="#linenum307">point</a>, <a class="variable" href="#linenum302">rp</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
@@ -1252,7 +1252,7 @@
 </tr>
 <tr>
 <td><a id="linenum312" class="linenum-cell" data-linenum="312" href="#linenum312"></a></td>
-<td><pre>                <a class="variable" href="#linenum307">point</a> = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum200">convertPoint</a>(<a class="variable" href="#linenum303">mb</a>, <a class="variable" href="#linenum307">point</a>, <a class="variable" href="#linenum302">rp</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum307">point</a> = SwingUtilities.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/SwingUtilities.html#linenum202">convertPoint</a>(<a class="variable" href="#linenum303">mb</a>, <a class="variable" href="#linenum307">point</a>, <a class="variable" href="#linenum302">rp</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum313" class="linenum-cell" data-linenum="313" href="#linenum313"></a></td>
@@ -1344,7 +1344,7 @@
 </tr>
 <tr>
 <td><a id="linenum335" class="linenum-cell" data-linenum="335" href="#linenum335"></a></td>
-<td><pre>        if (MetalLookAndFeel.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/plaf/metal/MetalLookAndFeel.html#linenum170">usingOcean</a>()) {</pre></td>
+<td><pre>        if (MetalLookAndFeel.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/plaf/metal/MetalLookAndFeel.html#linenum168">usingOcean</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum336" class="linenum-cell" data-linenum="336" href="#linenum336"></a></td>
@@ -1376,7 +1376,7 @@
 </tr>
 <tr>
 <td><a id="linenum343" class="linenum-cell" data-linenum="343" href="#linenum343"></a></td>
-<td><pre>                    <a class="variable" href="#linenum334">lastMenuBar</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum4806">repaint</a>();</pre></td>
+<td><pre>                    <a class="variable" href="#linenum334">lastMenuBar</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum4807">repaint</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum344" class="linenum-cell" data-linenum="344" href="#linenum344"></a></td>
@@ -1464,7 +1464,7 @@
 </tr>
 <tr>
 <td><a id="linenum365" class="linenum-cell" data-linenum="365" href="#linenum365"></a></td>
-<td><pre>        public void mousePressed(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/MouseEvent.html#linenum190">MouseEvent</a> e) {</pre></td>
+<td><pre>        public void mousePressed(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/MouseEvent.html#linenum192">MouseEvent</a> e) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum366" class="linenum-cell" data-linenum="366" href="#linenum366"></a></td>
@@ -1520,7 +1520,7 @@
 </tr>
 <tr>
 <td><a id="linenum379" class="linenum-cell" data-linenum="379" href="#linenum379"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum371">bumpRect</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Rectangle.html#linenum702">contains</a>(<a class="variable" href="#linenum365">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/MouseEvent.html#linenum810">getPoint</a>())) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum371">bumpRect</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Rectangle.html#linenum653">contains</a>(<a class="variable" href="#linenum365">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/MouseEvent.html#linenum828">getPoint</a>())) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum380" class="linenum-cell" data-linenum="380" href="#linenum380"></a></td>
@@ -1528,7 +1528,7 @@
 </tr>
 <tr>
 <td><a id="linenum381" class="linenum-cell" data-linenum="381" href="#linenum381"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Point.html#linenum38">Point</a> dragOffset = <a class="variable" href="#linenum365">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/MouseEvent.html#linenum810">getPoint</a>();</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Point.html#linenum38">Point</a> dragOffset = <a class="variable" href="#linenum365">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/MouseEvent.html#linenum828">getPoint</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum382" class="linenum-cell" data-linenum="382" href="#linenum382"></a></td>
@@ -1564,7 +1564,7 @@
 </tr>
 <tr>
 <td><a id="linenum390" class="linenum-cell" data-linenum="390" href="#linenum390"></a></td>
-<td><pre>        public void mouseDragged(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/MouseEvent.html#linenum190">MouseEvent</a> e) {</pre></td>
+<td><pre>        public void mouseDragged(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/MouseEvent.html#linenum192">MouseEvent</a> e) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum391" class="linenum-cell" data-linenum="391" href="#linenum391"></a></td>

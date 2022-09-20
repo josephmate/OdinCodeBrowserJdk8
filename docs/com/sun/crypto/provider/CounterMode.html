@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2002, 201313, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2002, 2018, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -172,7 +172,7 @@
 </tr>
 <tr>
 <td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
-<td><pre>final class CounterMode extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/crypto/provider/FeedbackCipher.html#linenum43">FeedbackCipher</a> {</pre></td>
+<td><pre>final class CounterMode extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/crypto/provider/FeedbackCipher.html#linenum44">FeedbackCipher</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
@@ -320,7 +320,7 @@
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(iv, 0, <a class="variable" href="#linenum45">counter</a>, 0, blockSize);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(iv, 0, <a class="variable" href="#linenum45">counter</a>, 0, blockSize);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
@@ -368,11 +368,11 @@
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum45">counter</a>, 0, <a class="variable" href="#linenum54">counterSave</a>, 0, blockSize);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum45">counter</a>, 0, <a class="variable" href="#linenum54">counterSave</a>, 0, blockSize);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum48">encryptedCounter</a>, 0, <a class="variable" href="#linenum55">encryptedCounterSave</a>, 0,</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum48">encryptedCounter</a>, 0, <a class="variable" href="#linenum55">encryptedCounterSave</a>, 0,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
@@ -408,11 +408,11 @@
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum54">counterSave</a>, 0, <a class="variable" href="#linenum45">counter</a>, 0, blockSize);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum54">counterSave</a>, 0, <a class="variable" href="#linenum45">counter</a>, 0, blockSize);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum55">encryptedCounterSave</a>, 0, <a class="variable" href="#linenum48">encryptedCounter</a>, 0,</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum55">encryptedCounterSave</a>, 0, <a class="variable" href="#linenum48">encryptedCounter</a>, 0,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
@@ -560,306 +560,210 @@
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;It is the application's responsibility to make sure that<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre><span class='comment'>     * &lt;code&gt;plainLen&lt;/code&gt; is a multiple of the embedded cipher's block size,<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
-<td><pre><span class='comment'>     * as any excess bytes are ignored.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;It is also the application's responsibility to make sure that<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre><span class='comment'>     * &lt;code&gt;init&lt;/code&gt; has been called before this method is called.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
-<td><pre><span class='comment'>     * (This check is omitted here, to avoid double checking.)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
 <td><pre><span class='comment'>     * @param in the buffer with the input data to be encrypted<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
+<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
 <td><pre><span class='comment'>     * @param inOffset the offset in &lt;code&gt;plain&lt;/code&gt;<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
+<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
 <td><pre><span class='comment'>     * @param len the length of the input data<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
+<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
 <td><pre><span class='comment'>     * @param out the buffer for the result<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
+<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
 <td><pre><span class='comment'>     * @param outOff the offset in &lt;code&gt;cipher&lt;/code&gt;<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
+<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
 <td><pre><span class='comment'>     * @return the length of the encrypted data<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
+<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
+<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
 <td><pre>    int encrypt(byte[] in, int inOff, int len, byte[] out, int outOff) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/crypto/provider/CounterMode.html#linenum202">crypt</a>(<a class="variable" href="#linenum154">in</a>, <a class="variable" href="#linenum154">inOff</a>, <a class="variable" href="#linenum154">len</a>, <a class="variable" href="#linenum154">out</a>, <a class="variable" href="#linenum154">outOff</a>);</pre></td>
+<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/crypto/provider/CounterMode.html#linenum171">crypt</a>(<a class="variable" href="#linenum146">in</a>, <a class="variable" href="#linenum146">inOff</a>, <a class="variable" href="#linenum146">len</a>, <a class="variable" href="#linenum146">out</a>, <a class="variable" href="#linenum146">outOff</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
+<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
+<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
+<td><pre>    <span class='comment'>// CTR encrypt and decrypt are identical</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
-<td><pre><span class='comment'>     * Performs decryption operation.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;The input cipher text &lt;code&gt;cipher&lt;/code&gt;, starting at<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
-<td><pre><span class='comment'>     * &lt;code&gt;cipherOffset&lt;/code&gt; and ending at<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre><span class='comment'>     * &lt;code&gt;(cipherOffset + len - 1)&lt;/code&gt;, is decrypted.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre><span class='comment'>     * The result is stored in &lt;code&gt;plain&lt;/code&gt;, starting at<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
-<td><pre><span class='comment'>     * &lt;code&gt;plainOffset&lt;/code&gt;.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;It is the application's responsibility to make sure that<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
-<td><pre><span class='comment'>     * &lt;code&gt;cipherLen&lt;/code&gt; is a multiple of the embedded cipher's block<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre><span class='comment'>     * size, as any excess bytes are ignored.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;It is also the application's responsibility to make sure that<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
-<td><pre><span class='comment'>     * &lt;code&gt;init&lt;/code&gt; has been called before this method is called.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
-<td><pre><span class='comment'>     * (This check is omitted here, to avoid double checking.)<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
-<td><pre><span class='comment'>     * @param in the buffer with the input data to be decrypted<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
-<td><pre><span class='comment'>     * @param inOff the offset in &lt;code&gt;cipherOffset&lt;/code&gt;<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
-<td><pre><span class='comment'>     * @param len the length of the input data<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
-<td><pre><span class='comment'>     * @param out the buffer for the result<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
-<td><pre><span class='comment'>     * @param outOff the offset in &lt;code&gt;plain&lt;/code&gt;<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
-<td><pre><span class='comment'>     * @return the length of the decrypted data<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
+<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
 <td><pre>    int decrypt(byte[] in, int inOff, int len, byte[] out, int outOff) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/crypto/provider/CounterMode.html#linenum202">crypt</a>(<a class="variable" href="#linenum182">in</a>, <a class="variable" href="#linenum182">inOff</a>, <a class="variable" href="#linenum182">len</a>, <a class="variable" href="#linenum182">out</a>, <a class="variable" href="#linenum182">outOff</a>);</pre></td>
+<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/crypto/provider/CounterMode.html#linenum171">crypt</a>(<a class="variable" href="#linenum151">in</a>, <a class="variable" href="#linenum151">inOff</a>, <a class="variable" href="#linenum151">len</a>, <a class="variable" href="#linenum151">out</a>, <a class="variable" href="#linenum151">outOff</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
+<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
+<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
+<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
+<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
 <td><pre><span class='comment'>     * Increment the counter value.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
+<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
+<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
 <td><pre>    private static void increment(byte[] b) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
-<td><pre>        int n = <a class="variable" href="#linenum189">b</a>.length - 1;</pre></td>
+<td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
+<td><pre>        int n = <a class="variable" href="#linenum158">b</a>.length - 1;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
-<td><pre>        while ((<a class="variable" href="#linenum190">n</a> &gt;= 0) &amp;&amp; (++<a class="variable" href="#linenum189">b</a>[<a class="variable" href="#linenum190">n</a>] == 0)) {</pre></td>
+<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
+<td><pre>        while ((<a class="variable" href="#linenum159">n</a> &gt;= 0) &amp;&amp; (++<a class="variable" href="#linenum158">b</a>[<a class="variable" href="#linenum159">n</a>] == 0)) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
-<td><pre>            <a class="variable" href="#linenum190">n</a>--;</pre></td>
+<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
+<td><pre>            <a class="variable" href="#linenum159">n</a>--;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
+<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
+<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
+<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
+<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
+<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
 <td><pre><span class='comment'>     * Do the actual encryption/decryption operation.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
+<td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
 <td><pre><span class='comment'>     * Essentially we XOR the input plaintext/ciphertext stream with a<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
+<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
 <td><pre><span class='comment'>     * keystream generated by encrypting the counter values. Counter values<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
+<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
 <td><pre><span class='comment'>     * are encrypted on demand.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
+<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
+<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
 <td><pre>    private int crypt(byte[] in, int inOff, int len, byte[] out, int outOff) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>        int result = <a class="variable" href="#linenum202">len</a>;</pre></td>
+<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum171">len</a> == 0) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
-<td><pre>        while (<a class="variable" href="#linenum202">len</a>-- &gt; 0) {</pre></td>
+<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
+<td><pre>            return 0;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum51">used</a> &gt;= blockSize) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
-<td><pre>                <a class="variable" href="#linenum58">embeddedCipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/crypto/provider/SymmetricCipher.html#linenum84">encryptBlock</a>(<a class="variable" href="#linenum45">counter</a>, 0, <a class="variable" href="#linenum48">encryptedCounter</a>, 0);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/com/sun/crypto/provider/CounterMode.html#linenum189">increment</a>(<a class="variable" href="#linenum45">counter</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
-<td><pre>                <a class="variable" href="#linenum51">used</a> = 0;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
-<td><pre>            }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
-<td><pre>            <a class="variable" href="#linenum202">out</a>[<a class="variable" href="#linenum202">outOff</a>++] = (byte)(<a class="variable" href="#linenum202">in</a>[<a class="variable" href="#linenum202">inOff</a>++] ^ <a class="variable" href="#linenum48">encryptedCounter</a>[<a class="variable" href="#linenum51">used</a>++]);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
+<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
-<td><pre>        return <a class="variable" href="#linenum203">result</a>;</pre></td>
+<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
+<td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
+<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
+<td><pre>        RangeUtil.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/crypto/provider/RangeUtil.html#linenum49">nullAndBoundsCheck</a>(<a class="variable" href="#linenum171">in</a>, <a class="variable" href="#linenum171">inOff</a>, <a class="variable" href="#linenum171">len</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
+<td><pre>        RangeUtil.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/crypto/provider/RangeUtil.html#linenum49">nullAndBoundsCheck</a>(<a class="variable" href="#linenum171">out</a>, <a class="variable" href="#linenum171">outOff</a>, <a class="variable" href="#linenum171">len</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
+<td><pre>        int result = <a class="variable" href="#linenum171">len</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
+<td><pre>        while (<a class="variable" href="#linenum171">len</a>-- &gt; 0) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
+<td><pre>            if (<a class="variable" href="#linenum51">used</a> &gt;= blockSize) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
+<td><pre>                <a class="variable" href="#linenum58">embeddedCipher</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/crypto/provider/SymmetricCipher.html#linenum84">encryptBlock</a>(<a class="variable" href="#linenum45">counter</a>, 0, <a class="variable" href="#linenum48">encryptedCounter</a>, 0);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/com/sun/crypto/provider/CounterMode.html#linenum158">increment</a>(<a class="variable" href="#linenum45">counter</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
+<td><pre>                <a class="variable" href="#linenum51">used</a> = 0;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
+<td><pre>            <a class="variable" href="#linenum171">out</a>[<a class="variable" href="#linenum171">outOff</a>++] = (byte)(<a class="variable" href="#linenum171">in</a>[<a class="variable" href="#linenum171">inOff</a>++] ^ <a class="variable" href="#linenum48">encryptedCounter</a>[<a class="variable" href="#linenum51">used</a>++]);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
+<td><pre>        return <a class="variable" href="#linenum179">result</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
+<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

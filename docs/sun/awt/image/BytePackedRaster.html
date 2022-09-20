@@ -2556,7 +2556,7 @@
 </tr>
 <tr>
 <td><a id="linenum638" class="linenum-cell" data-linenum="638" href="#linenum638"></a></td>
-<td><pre>                    System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum583">inData</a>, <a class="variable" href="#linenum634">inbyte</a>,</pre></td>
+<td><pre>                    System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum583">inData</a>, <a class="variable" href="#linenum634">inbyte</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum639" class="linenum-cell" data-linenum="639" href="#linenum639"></a></td>
@@ -2576,7 +2576,7 @@
 </tr>
 <tr>
 <td><a id="linenum643" class="linenum-cell" data-linenum="643" href="#linenum643"></a></td>
-<td><pre>                        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum583">inData</a>, <a class="variable" href="#linenum634">inbyte</a>,</pre></td>
+<td><pre>                        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum583">inData</a>, <a class="variable" href="#linenum634">inbyte</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum644" class="linenum-cell" data-linenum="644" href="#linenum644"></a></td>
@@ -5412,7 +5412,7 @@
 </tr>
 <tr>
 <td><a id="linenum1352" class="linenum-cell" data-linenum="1352" href="#linenum1352"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/image/BytePackedRaster.html#linenum1351">createCompatibleWritableRaster</a>(<a class="variable" href="#linenum1296">width</a>,<a class="variable" href="#linenum1296">height</a>);</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/image/BytePackedRaster.html#linenum1336">createCompatibleWritableRaster</a>(<a class="variable" href="#linenum1296">width</a>,<a class="variable" href="#linenum1296">height</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1353" class="linenum-cell" data-linenum="1353" href="#linenum1353"></a></td>
@@ -5560,134 +5560,194 @@
 </tr>
 <tr>
 <td><a id="linenum1389" class="linenum-cell" data-linenum="1389" href="#linenum1389"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum51">scanlineStride</a> &lt; 0 ||</pre></td>
+<td><pre>        if ((long)minX - sampleModelTranslateX &lt; 0 ||</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1390" class="linenum-cell" data-linenum="1390" href="#linenum1390"></a></td>
-<td><pre>            <a class="variable" href="#linenum51">scanlineStride</a> &gt; (Integer.MAX_VALUE / <a class="variable" href="#linenum1296">height</a>) ||</pre></td>
+<td><pre>            (long)minY - sampleModelTranslateY &lt; 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1391" class="linenum-cell" data-linenum="1391" href="#linenum1391"></a></td>
-<td><pre>            <a class="variable" href="#linenum51">scanlineStride</a> &gt; <a class="variable" href="#linenum1154">data</a>.length)</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1392" class="linenum-cell" data-linenum="1392" href="#linenum1392"></a></td>
-<td><pre>        {</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Incorrect origin/translate: (&quot;</span> +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1393" class="linenum-cell" data-linenum="1393" href="#linenum1393"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Invalid scanline stride&quot;</span>);</pre></td>
+<td><pre>                    minX + <span class='string'>&quot;, &quot;</span> + minY + <span class='string'>&quot;) / (&quot;</span> +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1394" class="linenum-cell" data-linenum="1394" href="#linenum1394"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>                    sampleModelTranslateX + <span class='string'>&quot;, &quot;</span> + sampleModelTranslateY + <span class='string'>&quot;)&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1395" class="linenum-cell" data-linenum="1395" href="#linenum1395"></a></td>
-<td><pre></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1396" class="linenum-cell" data-linenum="1396" href="#linenum1396"></a></td>
-<td><pre>        int lastbit = (<a class="variable" href="#linenum48">dataBitOffset</a></pre></td>
-</tr>
-<tr>
-<td><a id="linenum1397" class="linenum-cell" data-linenum="1397" href="#linenum1397"></a></td>
-<td><pre>                       + (<a class="variable" href="#linenum1296">height</a>-1) * <a class="variable" href="#linenum51">scanlineStride</a> * 8</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1398" class="linenum-cell" data-linenum="1398" href="#linenum1398"></a></td>
-<td><pre>                       + (<a class="variable" href="#linenum1296">width</a>-1) * <a class="variable" href="#linenum57">pixelBitStride</a></pre></td>
-</tr>
-<tr>
-<td><a id="linenum1399" class="linenum-cell" data-linenum="1399" href="#linenum1399"></a></td>
-<td><pre>                       + <a class="variable" href="#linenum57">pixelBitStride</a> - 1);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1400" class="linenum-cell" data-linenum="1400" href="#linenum1400"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum1396">lastbit</a> &lt; 0 || <a class="variable" href="#linenum1396">lastbit</a> / 8 &gt;= <a class="variable" href="#linenum1154">data</a>.length) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1401" class="linenum-cell" data-linenum="1401" href="#linenum1401"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;raster dimensions overflow &quot;</span> +</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1402" class="linenum-cell" data-linenum="1402" href="#linenum1402"></a></td>
-<td><pre>                                            <span class='string'>&quot;array bounds&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1403" class="linenum-cell" data-linenum="1403" href="#linenum1403"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1404" class="linenum-cell" data-linenum="1404" href="#linenum1404"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum1365">strictCheck</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1405" class="linenum-cell" data-linenum="1405" href="#linenum1405"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum1296">height</a> &gt; 1) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1406" class="linenum-cell" data-linenum="1406" href="#linenum1406"></a></td>
-<td><pre>                <a class="variable" href="#linenum1396">lastbit</a> = <a class="variable" href="#linenum1296">width</a> * <a class="variable" href="#linenum57">pixelBitStride</a> - 1;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1407" class="linenum-cell" data-linenum="1407" href="#linenum1407"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum1396">lastbit</a> / 8 &gt;= <a class="variable" href="#linenum51">scanlineStride</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1408" class="linenum-cell" data-linenum="1408" href="#linenum1408"></a></td>
-<td><pre>                    throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;data for adjacent&quot;</span> +</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1409" class="linenum-cell" data-linenum="1409" href="#linenum1409"></a></td>
-<td><pre>                                                    <span class='string'>&quot; scanlines overlaps&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1410" class="linenum-cell" data-linenum="1410" href="#linenum1410"></a></td>
-<td><pre>                }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1411" class="linenum-cell" data-linenum="1411" href="#linenum1411"></a></td>
-<td><pre>            }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1412" class="linenum-cell" data-linenum="1412" href="#linenum1412"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1413" class="linenum-cell" data-linenum="1413" href="#linenum1413"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1414" class="linenum-cell" data-linenum="1414" href="#linenum1414"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum1397" class="linenum-cell" data-linenum="1397" href="#linenum1397"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum51">scanlineStride</a> &lt; 0 ||</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1398" class="linenum-cell" data-linenum="1398" href="#linenum1398"></a></td>
+<td><pre>            <a class="variable" href="#linenum51">scanlineStride</a> &gt; (Integer.MAX_VALUE / <a class="variable" href="#linenum1296">height</a>))</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1399" class="linenum-cell" data-linenum="1399" href="#linenum1399"></a></td>
+<td><pre>        {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1400" class="linenum-cell" data-linenum="1400" href="#linenum1400"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Invalid scanline stride&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1401" class="linenum-cell" data-linenum="1401" href="#linenum1401"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1402" class="linenum-cell" data-linenum="1402" href="#linenum1402"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum1403" class="linenum-cell" data-linenum="1403" href="#linenum1403"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum1296">height</a> &gt; 1 || minY - sampleModelTranslateY &gt; 0) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1404" class="linenum-cell" data-linenum="1404" href="#linenum1404"></a></td>
+<td><pre>            <span class='comment'>// buffer should contain at least one scanline</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum1405" class="linenum-cell" data-linenum="1405" href="#linenum1405"></a></td>
+<td><pre>            if (<a class="variable" href="#linenum51">scanlineStride</a> &gt; <a class="variable" href="#linenum1154">data</a>.length) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1406" class="linenum-cell" data-linenum="1406" href="#linenum1406"></a></td>
+<td><pre>                throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Incorrect scanline stride: &quot;</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum1407" class="linenum-cell" data-linenum="1407" href="#linenum1407"></a></td>
+<td><pre>                        + <a class="variable" href="#linenum51">scanlineStride</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1408" class="linenum-cell" data-linenum="1408" href="#linenum1408"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1409" class="linenum-cell" data-linenum="1409" href="#linenum1409"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1410" class="linenum-cell" data-linenum="1410" href="#linenum1410"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum1411" class="linenum-cell" data-linenum="1411" href="#linenum1411"></a></td>
+<td><pre>        long lastbit = (long) <a class="variable" href="#linenum48">dataBitOffset</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum1412" class="linenum-cell" data-linenum="1412" href="#linenum1412"></a></td>
+<td><pre>                       + (long) (<a class="variable" href="#linenum1296">height</a> - 1) * (long) <a class="variable" href="#linenum51">scanlineStride</a> * 8</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1413" class="linenum-cell" data-linenum="1413" href="#linenum1413"></a></td>
+<td><pre>                       + (long) (<a class="variable" href="#linenum1296">width</a> - 1) * (long) <a class="variable" href="#linenum57">pixelBitStride</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum1414" class="linenum-cell" data-linenum="1414" href="#linenum1414"></a></td>
+<td><pre>                       + (long) <a class="variable" href="#linenum57">pixelBitStride</a> - 1;</pre></td>
+</tr>
+<tr>
 <td><a id="linenum1415" class="linenum-cell" data-linenum="1415" href="#linenum1415"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> toString() {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum1411">lastbit</a> &lt; 0 || <a class="variable" href="#linenum1411">lastbit</a> / 8 &gt;= <a class="variable" href="#linenum1154">data</a>.length) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1416" class="linenum-cell" data-linenum="1416" href="#linenum1416"></a></td>
-<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> (<span class='string'>&quot;BytePackedRaster: width = &quot;</span>+<a class="variable" href="#linenum1296">width</a>+<span class='string'>&quot; height = &quot;</span>+<a class="variable" href="#linenum1296">height</a></pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;raster dimensions overflow &quot;</span> +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1417" class="linenum-cell" data-linenum="1417" href="#linenum1417"></a></td>
-<td><pre>                           +<span class='string'>&quot; #channels &quot;</span>+numBands</pre></td>
+<td><pre>                                            <span class='string'>&quot;array bounds&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1418" class="linenum-cell" data-linenum="1418" href="#linenum1418"></a></td>
-<td><pre>                           +<span class='string'>&quot; xOff = &quot;</span>+sampleModelTranslateX</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1419" class="linenum-cell" data-linenum="1419" href="#linenum1419"></a></td>
-<td><pre>                           +<span class='string'>&quot; yOff = &quot;</span>+sampleModelTranslateY);</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum1365">strictCheck</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1420" class="linenum-cell" data-linenum="1420" href="#linenum1420"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum1296">height</a> &gt; 1) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1421" class="linenum-cell" data-linenum="1421" href="#linenum1421"></a></td>
+<td><pre>                <a class="variable" href="#linenum1411">lastbit</a> = <a class="variable" href="#linenum1296">width</a> * <a class="variable" href="#linenum57">pixelBitStride</a> - 1;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1422" class="linenum-cell" data-linenum="1422" href="#linenum1422"></a></td>
+<td><pre>                if (<a class="variable" href="#linenum1411">lastbit</a> / 8 &gt;= <a class="variable" href="#linenum51">scanlineStride</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1423" class="linenum-cell" data-linenum="1423" href="#linenum1423"></a></td>
+<td><pre>                    throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;data for adjacent&quot;</span> +</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1424" class="linenum-cell" data-linenum="1424" href="#linenum1424"></a></td>
+<td><pre>                                                    <span class='string'>&quot; scanlines overlaps&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1425" class="linenum-cell" data-linenum="1425" href="#linenum1425"></a></td>
+<td><pre>                }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1426" class="linenum-cell" data-linenum="1426" href="#linenum1426"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1427" class="linenum-cell" data-linenum="1427" href="#linenum1427"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1428" class="linenum-cell" data-linenum="1428" href="#linenum1428"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1429" class="linenum-cell" data-linenum="1429" href="#linenum1429"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum1430" class="linenum-cell" data-linenum="1430" href="#linenum1430"></a></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> toString() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1431" class="linenum-cell" data-linenum="1431" href="#linenum1431"></a></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> (<span class='string'>&quot;BytePackedRaster: width = &quot;</span>+<a class="variable" href="#linenum1296">width</a>+<span class='string'>&quot; height = &quot;</span>+<a class="variable" href="#linenum1296">height</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum1432" class="linenum-cell" data-linenum="1432" href="#linenum1432"></a></td>
+<td><pre>                           +<span class='string'>&quot; #channels &quot;</span>+numBands</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1433" class="linenum-cell" data-linenum="1433" href="#linenum1433"></a></td>
+<td><pre>                           +<span class='string'>&quot; xOff = &quot;</span>+sampleModelTranslateX</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1434" class="linenum-cell" data-linenum="1434" href="#linenum1434"></a></td>
+<td><pre>                           +<span class='string'>&quot; yOff = &quot;</span>+sampleModelTranslateY);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1435" class="linenum-cell" data-linenum="1435" href="#linenum1435"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1436" class="linenum-cell" data-linenum="1436" href="#linenum1436"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

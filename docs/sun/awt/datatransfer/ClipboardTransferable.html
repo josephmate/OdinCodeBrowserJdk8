@@ -236,11 +236,11 @@
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a> flavorsToData = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>();</pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a> flavorsToData = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum104">DataFlavor</a>[] flavors = new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum104">DataFlavor</a>[0];</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum119">DataFlavor</a>[] flavors = new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum119">DataFlavor</a>[0];</pre></td>
 </tr>
 <tr>
 <td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
@@ -280,11 +280,11 @@
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
-<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> getTransferData(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum104">DataFlavor</a> flavor) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> getTransferData(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum119">DataFlavor</a> flavor) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum70" class="linenum-cell" data-linenum="70" href="#linenum70"></a></td>
-<td><pre>            return DataTransferer.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/datatransfer/DataTransferer.html#linenum293">getInstance</a>().</pre></td>
+<td><pre>            return DataTransferer.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/datatransfer/DataTransferer.html#linenum276">getInstance</a>().</pre></td>
 </tr>
 <tr>
 <td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
@@ -352,7 +352,7 @@
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a> cached_data = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>(<a class="variable" href="#linenum81">formats</a>.length, 1.0f);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a> cached_data = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>(<a class="variable" href="#linenum81">formats</a>.length, 1.0f);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
@@ -360,11 +360,11 @@
 </tr>
 <tr>
 <td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a> flavorsForFormats = DataTransferer.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/datatransfer/DataTransferer.html#linenum293">getInstance</a>().</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a> flavorsForFormats = DataTransferer.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/datatransfer/DataTransferer.html#linenum276">getInstance</a>().</pre></td>
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>                    getFlavorsForFormats(<a class="variable" href="#linenum81">formats</a>, SunClipboard.flavorMap);</pre></td>
+<td><pre>                    getFlavorsForFormats(<a class="variable" href="#linenum81">formats</a>, SunClipboard.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/datatransfer/SunClipboard.html#linenum465">getDefaultFlavorTable</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
@@ -380,7 +380,7 @@
 </tr>
 <tr>
 <td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum104">DataFlavor</a> flavor = (<a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum104">DataFlavor</a>)<a class="variable" href="#linenum91">iter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Iterator.html#linenum70">next</a>();</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum119">DataFlavor</a> flavor = (<a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum119">DataFlavor</a>)<a class="variable" href="#linenum91">iter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Iterator.html#linenum70">next</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
@@ -404,11 +404,11 @@
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre>                <a class="variable" href="#linenum59">flavors</a> = DataTransferer.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/datatransfer/DataTransferer.html#linenum293">getInstance</a>().</pre></td>
+<td><pre>                <a class="variable" href="#linenum59">flavors</a> = DataTransferer.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/datatransfer/DataTransferer.html#linenum276">getInstance</a>().</pre></td>
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
-<td><pre>                    setToSortedDataFlavorArray(<a class="variable" href="#linenum58">flavorsToData</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum904">keySet</a>());</pre></td>
+<td><pre>                    setToSortedDataFlavorArray(<a class="variable" href="#linenum58">flavorsToData</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum905">keySet</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
@@ -436,11 +436,11 @@
 </tr>
 <tr>
 <td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
-<td><pre>    private boolean fetchOneFlavor(<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/datatransfer/SunClipboard.html#linenum64">SunClipboard</a> clipboard, <a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum104">DataFlavor</a> flavor,</pre></td>
+<td><pre>    private boolean fetchOneFlavor(<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/datatransfer/SunClipboard.html#linenum64">SunClipboard</a> clipboard, <a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum119">DataFlavor</a> flavor,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>                                   <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Long.html#linenum54">Long</a> lFormat, <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a> cached_data)</pre></td>
+<td><pre>                                   <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Long.html#linenum54">Long</a> lFormat, <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a> cached_data)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
@@ -448,7 +448,7 @@
 </tr>
 <tr>
 <td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
-<td><pre>        if (!<a class="variable" href="#linenum58">flavorsToData</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum594">containsKey</a>(<a class="variable" href="#linenum108">flavor</a>)) {</pre></td>
+<td><pre>        if (!<a class="variable" href="#linenum58">flavorsToData</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum595">containsKey</a>(<a class="variable" href="#linenum108">flavor</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
@@ -464,7 +464,7 @@
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
-<td><pre>            if (!<a class="variable" href="#linenum109">cached_data</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum594">containsKey</a>(<a class="variable" href="#linenum109">lFormat</a>)) {</pre></td>
+<td><pre>            if (!<a class="variable" href="#linenum109">cached_data</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum595">containsKey</a>(<a class="variable" href="#linenum109">lFormat</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
@@ -472,7 +472,7 @@
 </tr>
 <tr>
 <td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
-<td><pre>                    <a class="variable" href="#linenum113">data</a> = <a class="variable" href="#linenum108">clipboard</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/datatransfer/SunClipboard.html#linenum346">getClipboardData</a>(<a class="variable" href="#linenum112">format</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum113">data</a> = <a class="variable" href="#linenum108">clipboard</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/datatransfer/SunClipboard.html#linenum341">getClipboardData</a>(<a class="variable" href="#linenum112">format</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
@@ -484,11 +484,11 @@
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
-<td><pre>                } catch (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> e) {</pre></td>
+<td><pre>                } catch (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> e) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>                    <a class="variable" href="#linenum118">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum646">printStackTrace</a>();</pre></td>
+<td><pre>                    <a class="variable" href="#linenum118">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum634">printStackTrace</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
@@ -508,7 +508,7 @@
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre>                <a class="variable" href="#linenum109">cached_data</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum610">put</a>(<a class="variable" href="#linenum109">lFormat</a>, <a class="variable" href="#linenum113">data</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum109">cached_data</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum611">put</a>(<a class="variable" href="#linenum109">lFormat</a>, <a class="variable" href="#linenum113">data</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
@@ -516,7 +516,7 @@
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>                <a class="variable" href="#linenum113">data</a> = <a class="variable" href="#linenum109">cached_data</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum554">get</a>(<a class="variable" href="#linenum109">lFormat</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum113">data</a> = <a class="variable" href="#linenum109">cached_data</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum555">get</a>(<a class="variable" href="#linenum109">lFormat</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
@@ -544,7 +544,7 @@
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
-<td><pre>                <a class="variable" href="#linenum58">flavorsToData</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum610">put</a>(<a class="variable" href="#linenum108">flavor</a>, <a class="variable" href="#linenum113">data</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum58">flavorsToData</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum611">put</a>(<a class="variable" href="#linenum108">flavor</a>, <a class="variable" href="#linenum113">data</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
@@ -556,7 +556,7 @@
 </tr>
 <tr>
 <td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre>                <a class="variable" href="#linenum58">flavorsToData</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum610">put</a>(<a class="variable" href="#linenum108">flavor</a>, new DataFactory(<a class="variable" href="#linenum112">format</a>,</pre></td>
+<td><pre>                <a class="variable" href="#linenum58">flavorsToData</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum611">put</a>(<a class="variable" href="#linenum108">flavor</a>, new DataFactory(<a class="variable" href="#linenum112">format</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
@@ -592,11 +592,11 @@
 </tr>
 <tr>
 <td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum104">DataFlavor</a>[] getTransferDataFlavors() {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum119">DataFlavor</a>[] getTransferDataFlavors() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>        return (<a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum104">DataFlavor</a>[])<a class="variable" href="#linenum59">flavors</a>.clone();</pre></td>
+<td><pre>        return (<a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum119">DataFlavor</a>[])<a class="variable" href="#linenum59">flavors</a>.clone();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
@@ -608,11 +608,11 @@
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre>    public boolean isDataFlavorSupported(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum104">DataFlavor</a> flavor) {</pre></td>
+<td><pre>    public boolean isDataFlavorSupported(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum119">DataFlavor</a> flavor) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
-<td><pre>        return <a class="variable" href="#linenum58">flavorsToData</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum594">containsKey</a>(<a class="variable" href="#linenum151">flavor</a>);</pre></td>
+<td><pre>        return <a class="variable" href="#linenum58">flavorsToData</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum595">containsKey</a>(<a class="variable" href="#linenum151">flavor</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
@@ -624,7 +624,7 @@
 </tr>
 <tr>
 <td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> getTransferData(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum104">DataFlavor</a> flavor)</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> getTransferData(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/datatransfer/DataFlavor.html#linenum119">DataFlavor</a> flavor)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
@@ -648,7 +648,7 @@
 </tr>
 <tr>
 <td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> ret = <a class="variable" href="#linenum58">flavorsToData</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum554">get</a>(<a class="variable" href="#linenum155">flavor</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> ret = <a class="variable" href="#linenum58">flavorsToData</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum555">get</a>(<a class="variable" href="#linenum155">flavor</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>

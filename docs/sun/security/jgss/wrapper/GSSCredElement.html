@@ -176,7 +176,7 @@
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a> name = null;</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a> name = null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
@@ -196,11 +196,11 @@
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre>        if (GSSUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSUtil.html#linenum102">isKerberosMech</a>(<a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum122">getMech</a>())) {</pre></td>
+<td><pre>        if (GSSUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSUtil.html#linenum104">isKerberosMech</a>(<a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum123">getMech</a>())) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
-<td><pre>            if (System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum333">getSecurityManager</a>() != null) {</pre></td>
+<td><pre>            if (System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum335">getSecurityManager</a>() != null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
@@ -228,7 +228,7 @@
 </tr>
 <tr>
 <td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> krbName = <a class="variable" href="#linenum43">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum170">getKrbName</a>();</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> krbName = <a class="variable" href="#linenum43">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum195">getKrbName</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
@@ -260,7 +260,7 @@
 </tr>
 <tr>
 <td><a id="linenum64" class="linenum-cell" data-linenum="64" href="#linenum64"></a></td>
-<td><pre>    GSSCredElement(long pCredentials, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a> srcName, <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> mech)</pre></td>
+<td><pre>    GSSCredElement(long pCredentials, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a> srcName, <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> mech)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
@@ -272,7 +272,7 @@
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre>        <a class="variable" href="#linenum44">cStub</a> = GSSLibStub.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum99">getInstance</a>(mech);</pre></td>
+<td><pre>        <a class="variable" href="#linenum44">cStub</a> = GSSLibStub.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum100">getInstance</a>(mech);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
@@ -292,7 +292,7 @@
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
-<td><pre>    GSSCredElement(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a> name, int lifetime, int usage,</pre></td>
+<td><pre>    GSSCredElement(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a> name, int lifetime, int usage,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
@@ -324,7 +324,7 @@
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre>            <a class="variable" href="#linenum42">pCred</a> = <a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum70">acquireCred</a>(this.name.pName, lifetime, <a class="variable" href="#linenum41">usage</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum42">pCred</a> = <a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum71">acquireCred</a>(this.name.pName, lifetime, <a class="variable" href="#linenum41">usage</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
@@ -332,11 +332,11 @@
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre>            <a class="variable" href="#linenum42">pCred</a> = <a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum70">acquireCred</a>(0, lifetime, <a class="variable" href="#linenum41">usage</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum42">pCred</a> = <a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum71">acquireCred</a>(0, lifetime, <a class="variable" href="#linenum41">usage</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
-<td><pre>            this.name = new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a>(<a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum73">getCredName</a>(<a class="variable" href="#linenum42">pCred</a>), <a class="variable" href="#linenum44">cStub</a>);</pre></td>
+<td><pre>            this.name = new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a>(<a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum74">getCredName</a>(<a class="variable" href="#linenum42">pCred</a>), <a class="variable" href="#linenum44">cStub</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
@@ -384,7 +384,7 @@
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
-<td><pre>            <a class="variable" href="#linenum42">pCred</a> = <a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum72">releaseCred</a>(<a class="variable" href="#linenum42">pCred</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum42">pCred</a> = <a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum73">releaseCred</a>(<a class="variable" href="#linenum42">pCred</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
@@ -400,7 +400,7 @@
 </tr>
 <tr>
 <td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a> getName() throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a> {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a> getName() throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
@@ -428,7 +428,7 @@
 </tr>
 <tr>
 <td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre>            return <a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum74">getCredTime</a>(<a class="variable" href="#linenum42">pCred</a>);</pre></td>
+<td><pre>            return <a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum75">getCredTime</a>(<a class="variable" href="#linenum42">pCred</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
@@ -452,7 +452,7 @@
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre>            return <a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum74">getCredTime</a>(<a class="variable" href="#linenum42">pCred</a>);</pre></td>
+<td><pre>            return <a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum75">getCredTime</a>(<a class="variable" href="#linenum42">pCred</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
@@ -504,7 +504,7 @@
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>        return <a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum122">getMech</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum44">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum123">getMech</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
@@ -536,7 +536,7 @@
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>    protected void finalize() throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> {</pre></td>
+<td><pre>    protected void finalize() throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>

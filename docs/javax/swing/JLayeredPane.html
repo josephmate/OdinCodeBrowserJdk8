@@ -180,7 +180,7 @@
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
-<td><pre><span class='comment'> * &lt;a href=&quot;http://docs.oracle.com/javase/tutorial/uiswing/components/layeredpane.html&quot;&gt;How to Use a Layered Pane&lt;/a&gt;,<span class='comment'></pre></td>
+<td><pre><span class='comment'> * &lt;a href=&quot;https://docs.oracle.com/javase/tutorial/uiswing/components/layeredpane.html&quot;&gt;How to Use a Layered Pane&lt;/a&gt;,<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
@@ -636,7 +636,7 @@
 </tr>
 <tr>
 <td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
-<td><pre>public class JLayeredPane extends <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a> implements <a class="type" href="/OdinCodeBrowserJdk8/javax/accessibility/Accessible.html#linenum39">Accessible</a> {</pre></td>
+<td><pre>public class JLayeredPane extends <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a> implements <a class="type" href="/OdinCodeBrowserJdk8/javax/accessibility/Accessible.html#linenum39">Accessible</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
@@ -728,7 +728,7 @@
 </tr>
 <tr>
 <td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>&gt; componentToLayer;</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>&gt; componentToLayer;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
@@ -764,7 +764,7 @@
 </tr>
 <tr>
 <td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum1482">setLayout</a>(null);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum1487">setLayout</a>(null);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
@@ -784,7 +784,7 @@
 </tr>
 <tr>
 <td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
-<td><pre>        synchronized(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1199">getTreeLock</a>()) {</pre></td>
+<td><pre>        synchronized(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1195">getTreeLock</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
@@ -796,7 +796,7 @@
 </tr>
 <tr>
 <td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
-<td><pre>            for (<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c : <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum344">getComponents</a>()) {</pre></td>
+<td><pre>            for (<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c : <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum348">getComponents</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
@@ -808,15 +808,15 @@
 </tr>
 <tr>
 <td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
-<td><pre>                if(SunToolkit.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/SunToolkit.html#linenum1975">isInstanceOf</a>(c, <span class='string'>&quot;javax.swing.JInternalFrame&quot;</span>) ||</pre></td>
+<td><pre>                if(SunToolkit.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/SunToolkit.html#linenum2054">isInstanceOf</a>(c, <span class='string'>&quot;javax.swing.JInternalFrame&quot;</span>) ||</pre></td>
 </tr>
 <tr>
 <td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
-<td><pre>                       (c instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a> &amp;&amp;</pre></td>
+<td><pre>                       (c instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a> &amp;&amp;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>                        (<a class="variable" href="#linenum196">layer</a> = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>)((<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a>)c).</pre></td>
+<td><pre>                        (<a class="variable" href="#linenum196">layer</a> = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>)((<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a>)c).</pre></td>
 </tr>
 <tr>
 <td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
@@ -884,7 +884,7 @@
 </tr>
 <tr>
 <td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
-<td><pre>    protected void addImpl(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> comp, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> constraints, int index) {</pre></td>
+<td><pre>    protected void addImpl(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> comp, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> constraints, int index) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
@@ -924,19 +924,19 @@
 </tr>
 <tr>
 <td><a id="linenum230" class="linenum-cell" data-linenum="230" href="#linenum230"></a></td>
-<td><pre>        <a class="variable" href="#linenum222">pos</a> = <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum661">insertIndexForLayer</a>(<a class="variable" href="#linenum221">layer</a>, <a class="variable" href="#linenum220">index</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum222">pos</a> = <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum644">insertIndexForLayer</a>(<a class="variable" href="#linenum221">layer</a>, <a class="variable" href="#linenum220">index</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum231" class="linenum-cell" data-linenum="231" href="#linenum231"></a></td>
-<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum1073">addImpl</a>(<a class="variable" href="#linenum220">comp</a>, <a class="variable" href="#linenum220">constraints</a>, <a class="variable" href="#linenum222">pos</a>);</pre></td>
+<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum1077">addImpl</a>(<a class="variable" href="#linenum220">comp</a>, <a class="variable" href="#linenum220">constraints</a>, <a class="variable" href="#linenum222">pos</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum232" class="linenum-cell" data-linenum="232" href="#linenum232"></a></td>
-<td><pre>        <a class="variable" href="#linenum220">comp</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum2879">validate</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum220">comp</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum2885">validate</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum233" class="linenum-cell" data-linenum="233" href="#linenum233"></a></td>
-<td><pre>        <a class="variable" href="#linenum220">comp</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum3373">repaint</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum220">comp</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum3310">repaint</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum234" class="linenum-cell" data-linenum="234" href="#linenum234"></a></td>
@@ -984,15 +984,15 @@
 </tr>
 <tr>
 <td><a id="linenum245" class="linenum-cell" data-linenum="245" href="#linenum245"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum325">getComponent</a>(<a class="variable" href="#linenum244">index</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum329">getComponent</a>(<a class="variable" href="#linenum244">index</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum246" class="linenum-cell" data-linenum="246" href="#linenum246"></a></td>
-<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum1257">remove</a>(<a class="variable" href="#linenum244">index</a>);</pre></td>
+<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum1202">remove</a>(<a class="variable" href="#linenum244">index</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum247" class="linenum-cell" data-linenum="247" href="#linenum247"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum245">c</a> != null &amp;&amp; !(<a class="variable" href="#linenum245">c</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a>)) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum245">c</a> != null &amp;&amp; !(<a class="variable" href="#linenum245">c</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum248" class="linenum-cell" data-linenum="248" href="#linenum248"></a></td>
@@ -1040,11 +1040,11 @@
 </tr>
 <tr>
 <td><a id="linenum259" class="linenum-cell" data-linenum="259" href="#linenum259"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a>[] children = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum344">getComponents</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a>[] children = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum348">getComponents</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum260" class="linenum-cell" data-linenum="260" href="#linenum260"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>&gt; cToL = <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum598">getComponentToLayer</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>&gt; cToL = <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum598">getComponentToLayer</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum261" class="linenum-cell" data-linenum="261" href="#linenum261"></a></td>
@@ -1052,11 +1052,11 @@
 </tr>
 <tr>
 <td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c = <a class="variable" href="#linenum259">children</a>[<a class="variable" href="#linenum261">counter</a>];</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c = <a class="variable" href="#linenum259">children</a>[<a class="variable" href="#linenum261">counter</a>];</pre></td>
 </tr>
 <tr>
 <td><a id="linenum263" class="linenum-cell" data-linenum="263" href="#linenum263"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum262">c</a> != null &amp;&amp; !(<a class="variable" href="#linenum262">c</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a>)) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum262">c</a> != null &amp;&amp; !(<a class="variable" href="#linenum262">c</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum264" class="linenum-cell" data-linenum="264" href="#linenum264"></a></td>
@@ -1072,7 +1072,7 @@
 </tr>
 <tr>
 <td><a id="linenum267" class="linenum-cell" data-linenum="267" href="#linenum267"></a></td>
-<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum1283">removeAll</a>();</pre></td>
+<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum1288">removeAll</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum268" class="linenum-cell" data-linenum="268" href="#linenum268"></a></td>
@@ -1180,7 +1180,7 @@
 </tr>
 <tr>
 <td><a id="linenum294" class="linenum-cell" data-linenum="294" href="#linenum294"></a></td>
-<td><pre>    public static void putLayer(<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a> c, int layer) {</pre></td>
+<td><pre>    public static void putLayer(<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a> c, int layer) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum295" class="linenum-cell" data-linenum="295" href="#linenum295"></a></td>
@@ -1240,7 +1240,7 @@
 </tr>
 <tr>
 <td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
-<td><pre>    public static int getLayer(<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a> c) {</pre></td>
+<td><pre>    public static int getLayer(<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a> c) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum310" class="linenum-cell" data-linenum="310" href="#linenum310"></a></td>
@@ -1316,7 +1316,7 @@
 </tr>
 <tr>
 <td><a id="linenum328" class="linenum-cell" data-linenum="328" href="#linenum328"></a></td>
-<td><pre>    public static <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum157">JLayeredPane</a> getLayeredPaneAbove(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c) {</pre></td>
+<td><pre>    public static <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum157">JLayeredPane</a> getLayeredPaneAbove(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum329" class="linenum-cell" data-linenum="329" href="#linenum329"></a></td>
@@ -1328,7 +1328,7 @@
 </tr>
 <tr>
 <td><a id="linenum331" class="linenum-cell" data-linenum="331" href="#linenum331"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> parent = <a class="variable" href="#linenum328">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1046">getParent</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> parent = <a class="variable" href="#linenum328">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1044">getParent</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
@@ -1336,7 +1336,7 @@
 </tr>
 <tr>
 <td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
-<td><pre>            <a class="variable" href="#linenum331">parent</a> = <a class="variable" href="#linenum331">parent</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1046">getParent</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum331">parent</a> = <a class="variable" href="#linenum331">parent</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1044">getParent</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
@@ -1384,7 +1384,7 @@
 </tr>
 <tr>
 <td><a id="linenum345" class="linenum-cell" data-linenum="345" href="#linenum345"></a></td>
-<td><pre>    public void setLayer(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c, int layer)  {</pre></td>
+<td><pre>    public void setLayer(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c, int layer)  {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum346" class="linenum-cell" data-linenum="346" href="#linenum346"></a></td>
@@ -1440,7 +1440,7 @@
 </tr>
 <tr>
 <td><a id="linenum359" class="linenum-cell" data-linenum="359" href="#linenum359"></a></td>
-<td><pre>    public void setLayer(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c, int layer, int position)  {</pre></td>
+<td><pre>    public void setLayer(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c, int layer, int position)  {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum360" class="linenum-cell" data-linenum="360" href="#linenum360"></a></td>
@@ -1460,7 +1460,7 @@
 </tr>
 <tr>
 <td><a id="linenum364" class="linenum-cell" data-linenum="364" href="#linenum364"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum4806">repaint</a>(<a class="variable" href="#linenum359">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum2473">getBounds</a>());</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum4807">repaint</a>(<a class="variable" href="#linenum359">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum2226">getBounds</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum365" class="linenum-cell" data-linenum="365" href="#linenum365"></a></td>
@@ -1480,11 +1480,11 @@
 </tr>
 <tr>
 <td><a id="linenum369" class="linenum-cell" data-linenum="369" href="#linenum369"></a></td>
-<td><pre>        if(<a class="variable" href="#linenum359">c</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a>)</pre></td>
+<td><pre>        if(<a class="variable" href="#linenum359">c</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum370" class="linenum-cell" data-linenum="370" href="#linenum370"></a></td>
-<td><pre>            ((<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a>)<a class="variable" href="#linenum359">c</a>).putClientProperty(<a class="variable" href="#linenum179">LAYER_PROPERTY</a>, <a class="variable" href="#linenum360">layerObj</a>);</pre></td>
+<td><pre>            ((<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a>)<a class="variable" href="#linenum359">c</a>).putClientProperty(<a class="variable" href="#linenum179">LAYER_PROPERTY</a>, <a class="variable" href="#linenum360">layerObj</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum371" class="linenum-cell" data-linenum="371" href="#linenum371"></a></td>
@@ -1500,11 +1500,11 @@
 </tr>
 <tr>
 <td><a id="linenum374" class="linenum-cell" data-linenum="374" href="#linenum374"></a></td>
-<td><pre>        if(<a class="variable" href="#linenum359">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1046">getParent</a>() == null || <a class="variable" href="#linenum359">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1046">getParent</a>() != this) {</pre></td>
+<td><pre>        if(<a class="variable" href="#linenum359">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1044">getParent</a>() == null || <a class="variable" href="#linenum359">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1044">getParent</a>() != this) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum375" class="linenum-cell" data-linenum="375" href="#linenum375"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum4806">repaint</a>(<a class="variable" href="#linenum359">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum2473">getBounds</a>());</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum4807">repaint</a>(<a class="variable" href="#linenum359">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum2226">getBounds</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum376" class="linenum-cell" data-linenum="376" href="#linenum376"></a></td>
@@ -1528,11 +1528,11 @@
 </tr>
 <tr>
 <td><a id="linenum381" class="linenum-cell" data-linenum="381" href="#linenum381"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum755">setComponentZOrder</a>(<a class="variable" href="#linenum359">c</a>, <a class="variable" href="#linenum379">index</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum759">setComponentZOrder</a>(<a class="variable" href="#linenum359">c</a>, <a class="variable" href="#linenum379">index</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum382" class="linenum-cell" data-linenum="382" href="#linenum382"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum4806">repaint</a>(<a class="variable" href="#linenum359">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum2473">getBounds</a>());</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum4807">repaint</a>(<a class="variable" href="#linenum359">c</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum2226">getBounds</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum383" class="linenum-cell" data-linenum="383" href="#linenum383"></a></td>
@@ -1568,7 +1568,7 @@
 </tr>
 <tr>
 <td><a id="linenum391" class="linenum-cell" data-linenum="391" href="#linenum391"></a></td>
-<td><pre>    public int getLayer(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c) {</pre></td>
+<td><pre>    public int getLayer(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum392" class="linenum-cell" data-linenum="392" href="#linenum392"></a></td>
@@ -1576,11 +1576,11 @@
 </tr>
 <tr>
 <td><a id="linenum393" class="linenum-cell" data-linenum="393" href="#linenum393"></a></td>
-<td><pre>        if(<a class="variable" href="#linenum391">c</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a>)</pre></td>
+<td><pre>        if(<a class="variable" href="#linenum391">c</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum394" class="linenum-cell" data-linenum="394" href="#linenum394"></a></td>
-<td><pre>            <a class="variable" href="#linenum392">i</a> = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>)((<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum182">JComponent</a>)<a class="variable" href="#linenum391">c</a>).getClientProperty(<a class="variable" href="#linenum179">LAYER_PROPERTY</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum392">i</a> = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>)((<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum184">JComponent</a>)<a class="variable" href="#linenum391">c</a>).getClientProperty(<a class="variable" href="#linenum179">LAYER_PROPERTY</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum395" class="linenum-cell" data-linenum="395" href="#linenum395"></a></td>
@@ -1652,7 +1652,7 @@
 </tr>
 <tr>
 <td><a id="linenum412" class="linenum-cell" data-linenum="412" href="#linenum412"></a></td>
-<td><pre>    public int getIndexOf(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c) {</pre></td>
+<td><pre>    public int getIndexOf(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum413" class="linenum-cell" data-linenum="413" href="#linenum413"></a></td>
@@ -1664,7 +1664,7 @@
 </tr>
 <tr>
 <td><a id="linenum415" class="linenum-cell" data-linenum="415" href="#linenum415"></a></td>
-<td><pre>        <a class="variable" href="#linenum413">count</a> = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum298">getComponentCount</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum413">count</a> = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum302">getComponentCount</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum416" class="linenum-cell" data-linenum="416" href="#linenum416"></a></td>
@@ -1672,7 +1672,7 @@
 </tr>
 <tr>
 <td><a id="linenum417" class="linenum-cell" data-linenum="417" href="#linenum417"></a></td>
-<td><pre>            if(<a class="variable" href="#linenum412">c</a> == <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum325">getComponent</a>(<a class="variable" href="#linenum413">i</a>))</pre></td>
+<td><pre>            if(<a class="variable" href="#linenum412">c</a> == <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum329">getComponent</a>(<a class="variable" href="#linenum413">i</a>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum418" class="linenum-cell" data-linenum="418" href="#linenum418"></a></td>
@@ -1720,7 +1720,7 @@
 </tr>
 <tr>
 <td><a id="linenum429" class="linenum-cell" data-linenum="429" href="#linenum429"></a></td>
-<td><pre>    public void moveToFront(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c) {</pre></td>
+<td><pre>    public void moveToFront(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum430" class="linenum-cell" data-linenum="430" href="#linenum430"></a></td>
@@ -1764,7 +1764,7 @@
 </tr>
 <tr>
 <td><a id="linenum440" class="linenum-cell" data-linenum="440" href="#linenum440"></a></td>
-<td><pre>    public void moveToBack(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c) {</pre></td>
+<td><pre>    public void moveToBack(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum441" class="linenum-cell" data-linenum="441" href="#linenum441"></a></td>
@@ -1836,7 +1836,7 @@
 </tr>
 <tr>
 <td><a id="linenum458" class="linenum-cell" data-linenum="458" href="#linenum458"></a></td>
-<td><pre>    public void setPosition(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c, int position) {</pre></td>
+<td><pre>    public void setPosition(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c, int position) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum459" class="linenum-cell" data-linenum="459" href="#linenum459"></a></td>
@@ -1892,7 +1892,7 @@
 </tr>
 <tr>
 <td><a id="linenum472" class="linenum-cell" data-linenum="472" href="#linenum472"></a></td>
-<td><pre>    public int getPosition(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> c) {</pre></td>
+<td><pre>    public int getPosition(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> c) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum473" class="linenum-cell" data-linenum="473" href="#linenum473"></a></td>
@@ -1904,7 +1904,7 @@
 </tr>
 <tr>
 <td><a id="linenum475" class="linenum-cell" data-linenum="475" href="#linenum475"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum298">getComponentCount</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum302">getComponentCount</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum476" class="linenum-cell" data-linenum="476" href="#linenum476"></a></td>
@@ -1936,7 +1936,7 @@
 </tr>
 <tr>
 <td><a id="linenum483" class="linenum-cell" data-linenum="483" href="#linenum483"></a></td>
-<td><pre>            <a class="variable" href="#linenum473">curLayer</a> = <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum391">getLayer</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum325">getComponent</a>(<a class="variable" href="#linenum473">i</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum473">curLayer</a> = <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum309">getLayer</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum329">getComponent</a>(<a class="variable" href="#linenum473">i</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum484" class="linenum-cell" data-linenum="484" href="#linenum484"></a></td>
@@ -2000,11 +2000,11 @@
 </tr>
 <tr>
 <td><a id="linenum499" class="linenum-cell" data-linenum="499" href="#linenum499"></a></td>
-<td><pre>        if(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum298">getComponentCount</a>() &gt; 0)</pre></td>
+<td><pre>        if(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum302">getComponentCount</a>() &gt; 0)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum500" class="linenum-cell" data-linenum="500" href="#linenum500"></a></td>
-<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum391">getLayer</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum325">getComponent</a>(0));</pre></td>
+<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum309">getLayer</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum329">getComponent</a>(0));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum501" class="linenum-cell" data-linenum="501" href="#linenum501"></a></td>
@@ -2048,7 +2048,7 @@
 </tr>
 <tr>
 <td><a id="linenum511" class="linenum-cell" data-linenum="511" href="#linenum511"></a></td>
-<td><pre>        int count = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum298">getComponentCount</a>();</pre></td>
+<td><pre>        int count = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum302">getComponentCount</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum512" class="linenum-cell" data-linenum="512" href="#linenum512"></a></td>
@@ -2056,7 +2056,7 @@
 </tr>
 <tr>
 <td><a id="linenum513" class="linenum-cell" data-linenum="513" href="#linenum513"></a></td>
-<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum391">getLayer</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum325">getComponent</a>(<a class="variable" href="#linenum511">count</a>-1));</pre></td>
+<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum309">getLayer</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum329">getComponent</a>(<a class="variable" href="#linenum511">count</a>-1));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum514" class="linenum-cell" data-linenum="514" href="#linenum514"></a></td>
@@ -2112,7 +2112,7 @@
 </tr>
 <tr>
 <td><a id="linenum527" class="linenum-cell" data-linenum="527" href="#linenum527"></a></td>
-<td><pre>        <a class="variable" href="#linenum524">count</a> = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum298">getComponentCount</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum524">count</a> = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum302">getComponentCount</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum528" class="linenum-cell" data-linenum="528" href="#linenum528"></a></td>
@@ -2120,7 +2120,7 @@
 </tr>
 <tr>
 <td><a id="linenum529" class="linenum-cell" data-linenum="529" href="#linenum529"></a></td>
-<td><pre>            <a class="variable" href="#linenum524">curLayer</a> = <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum391">getLayer</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum325">getComponent</a>(<a class="variable" href="#linenum524">i</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum524">curLayer</a> = <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum309">getLayer</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum329">getComponent</a>(<a class="variable" href="#linenum524">i</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum530" class="linenum-cell" data-linenum="530" href="#linenum530"></a></td>
@@ -2192,7 +2192,7 @@
 </tr>
 <tr>
 <td><a id="linenum547" class="linenum-cell" data-linenum="547" href="#linenum547"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a>[] getComponentsInLayer(int layer) {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a>[] getComponentsInLayer(int layer) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum548" class="linenum-cell" data-linenum="548" href="#linenum548"></a></td>
@@ -2204,7 +2204,7 @@
 </tr>
 <tr>
 <td><a id="linenum550" class="linenum-cell" data-linenum="550" href="#linenum550"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a>[] results;</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a>[] results;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum551" class="linenum-cell" data-linenum="551" href="#linenum551"></a></td>
@@ -2212,11 +2212,11 @@
 </tr>
 <tr>
 <td><a id="linenum552" class="linenum-cell" data-linenum="552" href="#linenum552"></a></td>
-<td><pre>        <a class="variable" href="#linenum550">results</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a>[<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum523">getComponentCountInLayer</a>(<a class="variable" href="#linenum547">layer</a>)];</pre></td>
+<td><pre>        <a class="variable" href="#linenum550">results</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a>[<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum523">getComponentCountInLayer</a>(<a class="variable" href="#linenum547">layer</a>)];</pre></td>
 </tr>
 <tr>
 <td><a id="linenum553" class="linenum-cell" data-linenum="553" href="#linenum553"></a></td>
-<td><pre>        <a class="variable" href="#linenum548">count</a> = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum298">getComponentCount</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum548">count</a> = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum302">getComponentCount</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum554" class="linenum-cell" data-linenum="554" href="#linenum554"></a></td>
@@ -2224,7 +2224,7 @@
 </tr>
 <tr>
 <td><a id="linenum555" class="linenum-cell" data-linenum="555" href="#linenum555"></a></td>
-<td><pre>            <a class="variable" href="#linenum548">curLayer</a> = <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum391">getLayer</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum325">getComponent</a>(<a class="variable" href="#linenum548">i</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum548">curLayer</a> = <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum309">getLayer</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum329">getComponent</a>(<a class="variable" href="#linenum548">i</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum556" class="linenum-cell" data-linenum="556" href="#linenum556"></a></td>
@@ -2232,7 +2232,7 @@
 </tr>
 <tr>
 <td><a id="linenum557" class="linenum-cell" data-linenum="557" href="#linenum557"></a></td>
-<td><pre>                <a class="variable" href="#linenum550">results</a>[<a class="variable" href="#linenum549">layerCount</a>++] = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum325">getComponent</a>(<a class="variable" href="#linenum548">i</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum550">results</a>[<a class="variable" href="#linenum549">layerCount</a>++] = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum329">getComponent</a>(<a class="variable" href="#linenum548">i</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum558" class="linenum-cell" data-linenum="558" href="#linenum558"></a></td>
@@ -2300,11 +2300,11 @@
 </tr>
 <tr>
 <td><a id="linenum574" class="linenum-cell" data-linenum="574" href="#linenum574"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Rectangle.html#linenum119">Rectangle</a> r = <a class="variable" href="#linenum572">g</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Graphics.html#linenum1241">getClipBounds</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Rectangle.html#linenum119">Rectangle</a> r = <a class="variable" href="#linenum572">g</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Graphics.html#linenum288">getClipBounds</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum575" class="linenum-cell" data-linenum="575" href="#linenum575"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Color.html#linenum60">Color</a> c = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1792">getBackground</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Color.html#linenum60">Color</a> c = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum1798">getBackground</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum576" class="linenum-cell" data-linenum="576" href="#linenum576"></a></td>
@@ -2348,7 +2348,7 @@
 </tr>
 <tr>
 <td><a id="linenum586" class="linenum-cell" data-linenum="586" href="#linenum586"></a></td>
-<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum991">paint</a>(<a class="variable" href="#linenum572">g</a>);</pre></td>
+<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum994">paint</a>(<a class="variable" href="#linenum572">g</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum587" class="linenum-cell" data-linenum="587" href="#linenum587"></a></td>
@@ -2396,7 +2396,7 @@
 </tr>
 <tr>
 <td><a id="linenum598" class="linenum-cell" data-linenum="598" href="#linenum598"></a></td>
-<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>&gt; getComponentToLayer() {</pre></td>
+<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>&gt; getComponentToLayer() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum599" class="linenum-cell" data-linenum="599" href="#linenum599"></a></td>
@@ -2404,7 +2404,7 @@
 </tr>
 <tr>
 <td><a id="linenum600" class="linenum-cell" data-linenum="600" href="#linenum600"></a></td>
-<td><pre>            <a class="variable" href="#linenum181">componentToLayer</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>&gt;(4);</pre></td>
+<td><pre>            <a class="variable" href="#linenum181">componentToLayer</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a>,<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum52">Integer</a>&gt;(4);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum601" class="linenum-cell" data-linenum="601" href="#linenum601"></a></td>
@@ -2648,7 +2648,7 @@
 </tr>
 <tr>
 <td><a id="linenum661" class="linenum-cell" data-linenum="661" href="#linenum661"></a></td>
-<td><pre>    private int insertIndexForLayer(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> comp, int layer, int position) {</pre></td>
+<td><pre>    private int insertIndexForLayer(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> comp, int layer, int position) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum662" class="linenum-cell" data-linenum="662" href="#linenum662"></a></td>
@@ -2664,7 +2664,7 @@
 </tr>
 <tr>
 <td><a id="linenum665" class="linenum-cell" data-linenum="665" href="#linenum665"></a></td>
-<td><pre>        int componentCount = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum298">getComponentCount</a>();</pre></td>
+<td><pre>        int componentCount = <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum302">getComponentCount</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum666" class="linenum-cell" data-linenum="666" href="#linenum666"></a></td>
@@ -2672,11 +2672,11 @@
 </tr>
 <tr>
 <td><a id="linenum667" class="linenum-cell" data-linenum="667" href="#linenum667"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a>&gt; compList =</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a>&gt; compList =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum668" class="linenum-cell" data-linenum="668" href="#linenum668"></a></td>
-<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a>&gt;(<a class="variable" href="#linenum665">componentCount</a>);</pre></td>
+<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a>&gt;(<a class="variable" href="#linenum665">componentCount</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum669" class="linenum-cell" data-linenum="669" href="#linenum669"></a></td>
@@ -2684,11 +2684,11 @@
 </tr>
 <tr>
 <td><a id="linenum670" class="linenum-cell" data-linenum="670" href="#linenum670"></a></td>
-<td><pre>            if (<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum325">getComponent</a>(<a class="variable" href="#linenum669">index</a>) != <a class="variable" href="#linenum661">comp</a>) {</pre></td>
+<td><pre>            if (<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum329">getComponent</a>(<a class="variable" href="#linenum669">index</a>) != <a class="variable" href="#linenum661">comp</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum671" class="linenum-cell" data-linenum="671" href="#linenum671"></a></td>
-<td><pre>                <a class="variable" href="#linenum667">compList</a>.add(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum325">getComponent</a>(<a class="variable" href="#linenum669">index</a>));</pre></td>
+<td><pre>                <a class="variable" href="#linenum667">compList</a>.add(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Container.html#linenum329">getComponent</a>(<a class="variable" href="#linenum669">index</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum672" class="linenum-cell" data-linenum="672" href="#linenum672"></a></td>
@@ -2712,7 +2712,7 @@
 </tr>
 <tr>
 <td><a id="linenum677" class="linenum-cell" data-linenum="677" href="#linenum677"></a></td>
-<td><pre>            <a class="variable" href="#linenum662">curLayer</a> = <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum391">getLayer</a>(<a class="variable" href="#linenum667">compList</a>.get(<a class="variable" href="#linenum662">i</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum662">curLayer</a> = <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JLayeredPane.html#linenum309">getLayer</a>(<a class="variable" href="#linenum667">compList</a>.get(<a class="variable" href="#linenum662">i</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum678" class="linenum-cell" data-linenum="678" href="#linenum678"></a></td>
@@ -2936,7 +2936,7 @@
 </tr>
 <tr>
 <td><a id="linenum733" class="linenum-cell" data-linenum="733" href="#linenum733"></a></td>
-<td><pre>        return super.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum5543">paramString</a>() +</pre></td>
+<td><pre>        return super.<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JComponent.html#linenum5537">paramString</a>() +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum734" class="linenum-cell" data-linenum="734" href="#linenum734"></a></td>
@@ -3004,7 +3004,7 @@
 </tr>
 <tr>
 <td><a id="linenum750" class="linenum-cell" data-linenum="750" href="#linenum750"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/accessibility/AccessibleContext.html#linenum80">AccessibleContext</a> getAccessibleContext() {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/accessibility/AccessibleContext.html#linenum83">AccessibleContext</a> getAccessibleContext() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum751" class="linenum-cell" data-linenum="751" href="#linenum751"></a></td>

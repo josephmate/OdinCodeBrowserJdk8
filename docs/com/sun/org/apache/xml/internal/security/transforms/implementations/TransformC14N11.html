@@ -144,7 +144,7 @@
 </tr>
 <tr>
 <td><a id="linenum35" class="linenum-cell" data-linenum="35" href="#linenum35"></a></td>
-<td><pre><span class='comment'> * Implements the &lt;CODE&gt;http://www.w3.org/2006/12/xml-c14n11&lt;/CODE&gt;<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Implements the {@code http://www.w3.org/2006/12/xml-c14n11}<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum36" class="linenum-cell" data-linenum="36" href="#linenum36"></a></td>
@@ -156,59 +156,59 @@
 </tr>
 <tr>
 <td><a id="linenum38" class="linenum-cell" data-linenum="38" href="#linenum38"></a></td>
-<td><pre><span class='comment'> * @author Sean Mullan<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum39" class="linenum-cell" data-linenum="39" href="#linenum39"></a></td>
 <td><pre> */</span></pre></td>
 </tr>
 <tr>
+<td><a id="linenum39" class="linenum-cell" data-linenum="39" href="#linenum39"></a></td>
+<td><pre>public class TransformC14N11 extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/transforms/TransformSpi.html#linenum40">TransformSpi</a> {</pre></td>
+</tr>
+<tr>
 <td><a id="linenum40" class="linenum-cell" data-linenum="40" href="#linenum40"></a></td>
-<td><pre>public class TransformC14N11 extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/transforms/TransformSpi.html#linenum41">TransformSpi</a> {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum41" class="linenum-cell" data-linenum="41" href="#linenum41"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
 <td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> engineGetURI() {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
+<td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
 <td><pre>        return Transforms.TRANSFORM_C14N11_OMIT_COMMENTS;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
+<td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
+<td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
+<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/signature/XMLSignatureInput.html#linenum55">XMLSignatureInput</a> enginePerformTransform(</pre></td>
+</tr>
+<tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
-<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/signature/XMLSignatureInput.html#linenum57">XMLSignatureInput</a> enginePerformTransform(</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/signature/XMLSignatureInput.html#linenum55">XMLSignatureInput</a> input, <a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum46">OutputStream</a> os, <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/transforms/Transform.html#linenum69">Transform</a> transform</pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/signature/XMLSignatureInput.html#linenum57">XMLSignatureInput</a> input, <a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum46">OutputStream</a> os, <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/transforms/Transform.html#linenum69">Transform</a> transform</pre></td>
+<td><pre>    ) throws <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/c14n/CanonicalizationException.html#linenum31">CanonicalizationException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre>    ) throws <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/c14n/CanonicalizationException.html#linenum32">CanonicalizationException</a> {</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/c14n/implementations/Canonicalizer11_OmitComments.html#linenum29">Canonicalizer11_OmitComments</a> c14n = new <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/c14n/implementations/Canonicalizer11_OmitComments.html#linenum29">Canonicalizer11_OmitComments</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/c14n/implementations/Canonicalizer11_OmitComments.html#linenum30">Canonicalizer11_OmitComments</a> c14n = new <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/c14n/implementations/Canonicalizer11_OmitComments.html#linenum30">Canonicalizer11_OmitComments</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum48">c14n</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/c14n/CanonicalizerSpi.html#linenum181">setSecureValidation</a>(secureValidation);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum47">os</a> != null) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum46">os</a> != null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre>            <a class="variable" href="#linenum49">c14n</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/c14n/implementations/CanonicalizerBase.html#linenum178">setWriter</a>(<a class="variable" href="#linenum47">os</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum48">c14n</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/c14n/implementations/CanonicalizerBase.html#linenum179">setWriter</a>(<a class="variable" href="#linenum46">os</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
@@ -220,34 +220,38 @@
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre>        <a class="variable" href="#linenum53">result</a> = <a class="variable" href="#linenum49">c14n</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/c14n/implementations/CanonicalizerBase.html#linenum142">engineCanonicalize</a>(<a class="variable" href="#linenum47">input</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum53">result</a> = <a class="variable" href="#linenum48">c14n</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/c14n/implementations/CanonicalizerBase.html#linenum145">engineCanonicalize</a>(<a class="variable" href="#linenum46">input</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/signature/XMLSignatureInput.html#linenum57">XMLSignatureInput</a> output = new <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/signature/XMLSignatureInput.html#linenum57">XMLSignatureInput</a>(<a class="variable" href="#linenum53">result</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/signature/XMLSignatureInput.html#linenum55">XMLSignatureInput</a> output = new <a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/signature/XMLSignatureInput.html#linenum55">XMLSignatureInput</a>(<a class="variable" href="#linenum53">result</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum47">os</a> != null) {</pre></td>
+<td><pre>        <a class="variable" href="#linenum55">output</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/signature/XMLSignatureInput.html#linenum612">setSecureValidation</a>(secureValidation);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
-<td><pre>            <a class="variable" href="#linenum55">output</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/signature/XMLSignatureInput.html#linenum508">setOutputStream</a>(<a class="variable" href="#linenum47">os</a>);</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum46">os</a> != null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            <a class="variable" href="#linenum55">output</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/org/apache/xml/internal/security/signature/XMLSignatureInput.html#linenum526">setOutputStream</a>(<a class="variable" href="#linenum46">os</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
-<td><pre>        return <a class="variable" href="#linenum55">output</a>;</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        return <a class="variable" href="#linenum55">output</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum61" class="linenum-cell" data-linenum="61" href="#linenum61"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

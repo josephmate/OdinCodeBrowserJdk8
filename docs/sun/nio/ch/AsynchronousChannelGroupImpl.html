@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2008, 2009, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2008, 2017, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -208,7 +208,7 @@
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre>    private static final int internalThreadCount = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a>(</pre></td>
+<td><pre>    private static final int internalThreadCount = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum297">doPrivileged</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
@@ -224,7 +224,7 @@
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum37">ThreadPool</a> pool;</pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum38">ThreadPool</a> pool;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
@@ -296,7 +296,7 @@
 </tr>
 <tr>
 <td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
-<td><pre>                                 <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum37">ThreadPool</a> pool)</pre></td>
+<td><pre>                                 <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum38">ThreadPool</a> pool)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
@@ -316,7 +316,7 @@
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum55">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum73">isFixedThreadPool</a>()) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum55">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum66">isFixedThreadPool</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
@@ -352,7 +352,7 @@
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre>            Executors.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Executors.html#linenum299">newScheduledThreadPool</a>(1, ThreadPool.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum81">defaultThreadFactory</a>());</pre></td>
+<td><pre>            Executors.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Executors.html#linenum299">newScheduledThreadPool</a>(1, ThreadPool.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum74">defaultThreadFactory</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
@@ -372,7 +372,7 @@
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>        return <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum69">executor</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum62">executor</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
@@ -388,7 +388,7 @@
 </tr>
 <tr>
 <td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
-<td><pre>        return <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum73">isFixedThreadPool</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum66">isFixedThreadPool</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
@@ -408,7 +408,7 @@
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
-<td><pre>            return <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum77">poolSize</a>();</pre></td>
+<td><pre>            return <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum70">poolSize</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
@@ -416,7 +416,7 @@
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre>            return <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum77">poolSize</a>() + <a class="variable" href="#linenum51">internalThreadCount</a>;</pre></td>
+<td><pre>            return <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum70">poolSize</a>() + <a class="variable" href="#linenum51">internalThreadCount</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
@@ -476,7 +476,7 @@
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
-<td><pre>        AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Void.html#linenum36">Void</a>&gt;() {</pre></td>
+<td><pre>        AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum297">doPrivileged</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Void.html#linenum36">Void</a>&gt;() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
@@ -496,7 +496,7 @@
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>                ThreadPool.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum81">defaultThreadFactory</a>().newThread(<a class="variable" href="#linenum117">task</a>).start();</pre></td>
+<td><pre>                ThreadPool.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum74">defaultThreadFactory</a>().newThread(<a class="variable" href="#linenum117">task</a>).start();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
@@ -548,7 +548,7 @@
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum77">poolSize</a>() &gt; 0) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum70">poolSize</a>() &gt; 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
@@ -560,11 +560,11 @@
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre>                for (int i=0; <a class="variable" href="#linenum139">i</a>&lt;<a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum77">poolSize</a>(); <a class="variable" href="#linenum139">i</a>++) {</pre></td>
+<td><pre>                for (int i=0; <a class="variable" href="#linenum139">i</a>&lt;<a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum70">poolSize</a>(); <a class="variable" href="#linenum139">i</a>++) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre>                    <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum69">executor</a>().execute(<a class="variable" href="#linenum129">task</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum62">executor</a>().execute(<a class="variable" href="#linenum129">task</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
@@ -648,7 +648,7 @@
 </tr>
 <tr>
 <td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre>                    <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum69">executor</a>().execute(<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum107">bindToGroup</a>(<a class="variable" href="#linenum156">task</a>));</pre></td>
+<td><pre>                    <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum62">executor</a>().execute(<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum107">bindToGroup</a>(<a class="variable" href="#linenum156">task</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
@@ -756,7 +756,7 @@
 </tr>
 <tr>
 <td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
-<td><pre>            <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum69">executor</a>().execute(<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum107">bindToGroup</a>(<a class="variable" href="#linenum184">task</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum62">executor</a>().execute(<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum107">bindToGroup</a>(<a class="variable" href="#linenum184">task</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
@@ -880,7 +880,7 @@
 </tr>
 <tr>
 <td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>
-<td><pre>        return <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum69">executor</a>().isTerminated();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum62">executor</a>().isTerminated();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
@@ -1000,362 +1000,374 @@
 </tr>
 <tr>
 <td><a id="linenum249" class="linenum-cell" data-linenum="249" href="#linenum249"></a></td>
-<td><pre>        AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Void.html#linenum36">Void</a>&gt;() {</pre></td>
+<td><pre>        AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum419">doPrivileged</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum250" class="linenum-cell" data-linenum="250" href="#linenum250"></a></td>
-<td><pre>            public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Void.html#linenum36">Void</a> run() {</pre></td>
+<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Void.html#linenum36">Void</a>&gt;() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum251" class="linenum-cell" data-linenum="251" href="#linenum251"></a></td>
-<td><pre>                <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum69">executor</a>().shutdown();</pre></td>
+<td><pre>                public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Void.html#linenum36">Void</a> run() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum252" class="linenum-cell" data-linenum="252" href="#linenum252"></a></td>
-<td><pre>                <a class="variable" href="#linenum61">timeoutExecutor</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledThreadPoolExecutor.html#linenum760">shutdown</a>();</pre></td>
+<td><pre>                    <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum62">executor</a>().shutdown();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum253" class="linenum-cell" data-linenum="253" href="#linenum253"></a></td>
-<td><pre>                return null;</pre></td>
+<td><pre>                    <a class="variable" href="#linenum61">timeoutExecutor</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledThreadPoolExecutor.html#linenum760">shutdown</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum254" class="linenum-cell" data-linenum="254" href="#linenum254"></a></td>
-<td><pre>            }</pre></td>
+<td><pre>                    return null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum255" class="linenum-cell" data-linenum="255" href="#linenum255"></a></td>
-<td><pre>        });</pre></td>
-</tr>
-<tr>
-<td><a id="linenum256" class="linenum-cell" data-linenum="256" href="#linenum256"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum257" class="linenum-cell" data-linenum="257" href="#linenum257"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum258" class="linenum-cell" data-linenum="258" href="#linenum258"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum259" class="linenum-cell" data-linenum="259" href="#linenum259"></a></td>
-<td><pre>    public final void shutdown() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum260" class="linenum-cell" data-linenum="260" href="#linenum260"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum68">shutdown</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicBoolean.html#linenum148">getAndSet</a>(true)) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum261" class="linenum-cell" data-linenum="261" href="#linenum261"></a></td>
-<td><pre>            <span class='comment'>// already shutdown</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
-<td><pre>            return;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum263" class="linenum-cell" data-linenum="263" href="#linenum263"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum264" class="linenum-cell" data-linenum="264" href="#linenum264"></a></td>
-<td><pre>        // if there are channels in the group then shutdown will continue</pre></td>
-</tr>
-<tr>
-<td><a id="linenum265" class="linenum-cell" data-linenum="265" href="#linenum265"></a></td>
-<td><pre>        <span class='comment'>// when the last channel is closed</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum266" class="linenum-cell" data-linenum="266" href="#linenum266"></a></td>
-<td><pre>        if (!<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum225">isEmpty</a>()) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum267" class="linenum-cell" data-linenum="267" href="#linenum267"></a></td>
-<td><pre>            return;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum268" class="linenum-cell" data-linenum="268" href="#linenum268"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum269" class="linenum-cell" data-linenum="269" href="#linenum269"></a></td>
-<td><pre>        // initiate termination (acquire shutdownNowLock to ensure that other</pre></td>
-</tr>
-<tr>
-<td><a id="linenum270" class="linenum-cell" data-linenum="270" href="#linenum270"></a></td>
-<td><pre>        <span class='comment'>// threads invoking shutdownNow will block).</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum271" class="linenum-cell" data-linenum="271" href="#linenum271"></a></td>
-<td><pre>        synchronized (<a class="variable" href="#linenum69">shutdownNowLock</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum272" class="linenum-cell" data-linenum="272" href="#linenum272"></a></td>
-<td><pre>            if (!<a class="variable" href="#linenum70">terminateInitiated</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum273" class="linenum-cell" data-linenum="273" href="#linenum273"></a></td>
-<td><pre>                <a class="variable" href="#linenum70">terminateInitiated</a> = true;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum246">shutdownHandlerTasks</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum248">shutdownExecutors</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
-<td><pre>            }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
-<td><pre>    public final void shutdownNow() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum282" class="linenum-cell" data-linenum="282" href="#linenum282"></a></td>
-<td><pre>        <a class="variable" href="#linenum68">shutdown</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicBoolean.html#linenum127">set</a>(true);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
-<td><pre>        synchronized (<a class="variable" href="#linenum69">shutdownNowLock</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
-<td><pre>            if (!<a class="variable" href="#linenum70">terminateInitiated</a>) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum285" class="linenum-cell" data-linenum="285" href="#linenum285"></a></td>
-<td><pre>                <a class="variable" href="#linenum70">terminateInitiated</a> = true;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum286" class="linenum-cell" data-linenum="286" href="#linenum286"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum241">closeAllChannels</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum287" class="linenum-cell" data-linenum="287" href="#linenum287"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum246">shutdownHandlerTasks</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum288" class="linenum-cell" data-linenum="288" href="#linenum288"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum248">shutdownExecutors</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum289" class="linenum-cell" data-linenum="289" href="#linenum289"></a></td>
-<td><pre>            }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum290" class="linenum-cell" data-linenum="290" href="#linenum290"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum291" class="linenum-cell" data-linenum="291" href="#linenum291"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum292" class="linenum-cell" data-linenum="292" href="#linenum292"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum293" class="linenum-cell" data-linenum="293" href="#linenum293"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum294" class="linenum-cell" data-linenum="294" href="#linenum294"></a></td>
-<td><pre><span class='comment'>     * For use by AsynchronousFileChannel to release resources without shutting<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum295" class="linenum-cell" data-linenum="295" href="#linenum295"></a></td>
-<td><pre><span class='comment'>     * down the thread pool.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum296" class="linenum-cell" data-linenum="296" href="#linenum296"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum297" class="linenum-cell" data-linenum="297" href="#linenum297"></a></td>
-<td><pre>    final void detachFromThreadPool() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum298" class="linenum-cell" data-linenum="298" href="#linenum298"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum68">shutdown</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicBoolean.html#linenum148">getAndSet</a>(true))</pre></td>
-</tr>
-<tr>
-<td><a id="linenum299" class="linenum-cell" data-linenum="299" href="#linenum299"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/AssertionError.html#linenum43">AssertionError</a>(<span class='string'>&quot;Already shutdown&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum300" class="linenum-cell" data-linenum="300" href="#linenum300"></a></td>
-<td><pre>        if (!<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum225">isEmpty</a>())</pre></td>
-</tr>
-<tr>
-<td><a id="linenum301" class="linenum-cell" data-linenum="301" href="#linenum301"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/AssertionError.html#linenum43">AssertionError</a>(<span class='string'>&quot;Group not empty&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum302" class="linenum-cell" data-linenum="302" href="#linenum302"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum246">shutdownHandlerTasks</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum303" class="linenum-cell" data-linenum="303" href="#linenum303"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum305" class="linenum-cell" data-linenum="305" href="#linenum305"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum306" class="linenum-cell" data-linenum="306" href="#linenum306"></a></td>
-<td><pre>    public final boolean awaitTermination(long timeout, <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/TimeUnit.html#linenum71">TimeUnit</a> unit)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum307" class="linenum-cell" data-linenum="307" href="#linenum307"></a></td>
-<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/InterruptedException.html#linenum49">InterruptedException</a></pre></td>
-</tr>
-<tr>
-<td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
-<td><pre>    {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
-<td><pre>        return <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum69">executor</a>().awaitTermination(<a class="variable" href="#linenum306">timeout</a>, <a class="variable" href="#linenum306">unit</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum310" class="linenum-cell" data-linenum="310" href="#linenum310"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum311" class="linenum-cell" data-linenum="311" href="#linenum311"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum312" class="linenum-cell" data-linenum="312" href="#linenum312"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum313" class="linenum-cell" data-linenum="313" href="#linenum313"></a></td>
-<td><pre><span class='comment'>     * Executes the given command on one of the channel group's pooled threads.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum314" class="linenum-cell" data-linenum="314" href="#linenum314"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum315" class="linenum-cell" data-linenum="315" href="#linenum315"></a></td>
-<td><pre>    @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
-<td><pre>    public final void execute(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum55">Runnable</a> task) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/SecurityManager.html#linenum226">SecurityManager</a> sm = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum333">getSecurityManager</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum318" class="linenum-cell" data-linenum="318" href="#linenum318"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum317">sm</a> != null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum319" class="linenum-cell" data-linenum="319" href="#linenum319"></a></td>
-<td><pre>            // when a security manager is installed then the user's task</pre></td>
-</tr>
-<tr>
-<td><a id="linenum320" class="linenum-cell" data-linenum="320" href="#linenum320"></a></td>
-<td><pre>            <span class='comment'>// must be run with the current calling context</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum321" class="linenum-cell" data-linenum="321" href="#linenum321"></a></td>
-<td><pre>            final <a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessControlContext.html#linenum77">AccessControlContext</a> acc = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum818">getContext</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum322" class="linenum-cell" data-linenum="322" href="#linenum322"></a></td>
-<td><pre>            final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum55">Runnable</a> delegate = <a class="variable" href="#linenum316">task</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum323" class="linenum-cell" data-linenum="323" href="#linenum323"></a></td>
-<td><pre>            <a class="variable" href="#linenum316">task</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum55">Runnable</a>() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum324" class="linenum-cell" data-linenum="324" href="#linenum324"></a></td>
-<td><pre>                @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum325" class="linenum-cell" data-linenum="325" href="#linenum325"></a></td>
-<td><pre>                public void run() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum326" class="linenum-cell" data-linenum="326" href="#linenum326"></a></td>
-<td><pre>                    AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Void.html#linenum36">Void</a>&gt;() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum327" class="linenum-cell" data-linenum="327" href="#linenum327"></a></td>
-<td><pre>                        @Override</pre></td>
-</tr>
-<tr>
-<td><a id="linenum328" class="linenum-cell" data-linenum="328" href="#linenum328"></a></td>
-<td><pre>                        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Void.html#linenum36">Void</a> run() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum329" class="linenum-cell" data-linenum="329" href="#linenum329"></a></td>
-<td><pre>                            <a class="variable" href="#linenum322">delegate</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum68">run</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum330" class="linenum-cell" data-linenum="330" href="#linenum330"></a></td>
-<td><pre>                            return null;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum331" class="linenum-cell" data-linenum="331" href="#linenum331"></a></td>
-<td><pre>                        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
-<td><pre>                    }, <a class="variable" href="#linenum321">acc</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
 <td><pre>                }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
-<td><pre>            };</pre></td>
+<td><a id="linenum256" class="linenum-cell" data-linenum="256" href="#linenum256"></a></td>
+<td><pre>            },</pre></td>
 </tr>
 <tr>
-<td><a id="linenum335" class="linenum-cell" data-linenum="335" href="#linenum335"></a></td>
-<td><pre>        }</pre></td>
+<td><a id="linenum257" class="linenum-cell" data-linenum="257" href="#linenum257"></a></td>
+<td><pre>            null,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum336" class="linenum-cell" data-linenum="336" href="#linenum336"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum184">executeOnPooledThread</a>(<a class="variable" href="#linenum316">task</a>);</pre></td>
+<td><a id="linenum258" class="linenum-cell" data-linenum="258" href="#linenum258"></a></td>
+<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/RuntimePermission.html#linenum349">RuntimePermission</a>(<span class='string'>&quot;modifyThread&quot;</span>));</pre></td>
 </tr>
 <tr>
-<td><a id="linenum337" class="linenum-cell" data-linenum="337" href="#linenum337"></a></td>
+<td><a id="linenum259" class="linenum-cell" data-linenum="259" href="#linenum259"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum260" class="linenum-cell" data-linenum="260" href="#linenum260"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum261" class="linenum-cell" data-linenum="261" href="#linenum261"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
+<td><pre>    public final void shutdown() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum263" class="linenum-cell" data-linenum="263" href="#linenum263"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum68">shutdown</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicBoolean.html#linenum148">getAndSet</a>(true)) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum264" class="linenum-cell" data-linenum="264" href="#linenum264"></a></td>
+<td><pre>            <span class='comment'>// already shutdown</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum265" class="linenum-cell" data-linenum="265" href="#linenum265"></a></td>
+<td><pre>            return;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum266" class="linenum-cell" data-linenum="266" href="#linenum266"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum267" class="linenum-cell" data-linenum="267" href="#linenum267"></a></td>
+<td><pre>        // if there are channels in the group then shutdown will continue</pre></td>
+</tr>
+<tr>
+<td><a id="linenum268" class="linenum-cell" data-linenum="268" href="#linenum268"></a></td>
+<td><pre>        <span class='comment'>// when the last channel is closed</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum269" class="linenum-cell" data-linenum="269" href="#linenum269"></a></td>
+<td><pre>        if (!<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum225">isEmpty</a>()) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum270" class="linenum-cell" data-linenum="270" href="#linenum270"></a></td>
+<td><pre>            return;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum271" class="linenum-cell" data-linenum="271" href="#linenum271"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum272" class="linenum-cell" data-linenum="272" href="#linenum272"></a></td>
+<td><pre>        // initiate termination (acquire shutdownNowLock to ensure that other</pre></td>
+</tr>
+<tr>
+<td><a id="linenum273" class="linenum-cell" data-linenum="273" href="#linenum273"></a></td>
+<td><pre>        <span class='comment'>// threads invoking shutdownNow will block).</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
+<td><pre>        synchronized (<a class="variable" href="#linenum69">shutdownNowLock</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
+<td><pre>            if (!<a class="variable" href="#linenum70">terminateInitiated</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
+<td><pre>                <a class="variable" href="#linenum70">terminateInitiated</a> = true;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum246">shutdownHandlerTasks</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum248">shutdownExecutors</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum282" class="linenum-cell" data-linenum="282" href="#linenum282"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
+<td><pre>    public final void shutdownNow() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum285" class="linenum-cell" data-linenum="285" href="#linenum285"></a></td>
+<td><pre>        <a class="variable" href="#linenum68">shutdown</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicBoolean.html#linenum127">set</a>(true);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum286" class="linenum-cell" data-linenum="286" href="#linenum286"></a></td>
+<td><pre>        synchronized (<a class="variable" href="#linenum69">shutdownNowLock</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum287" class="linenum-cell" data-linenum="287" href="#linenum287"></a></td>
+<td><pre>            if (!<a class="variable" href="#linenum70">terminateInitiated</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum288" class="linenum-cell" data-linenum="288" href="#linenum288"></a></td>
+<td><pre>                <a class="variable" href="#linenum70">terminateInitiated</a> = true;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum289" class="linenum-cell" data-linenum="289" href="#linenum289"></a></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum241">closeAllChannels</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum290" class="linenum-cell" data-linenum="290" href="#linenum290"></a></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum246">shutdownHandlerTasks</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum291" class="linenum-cell" data-linenum="291" href="#linenum291"></a></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum248">shutdownExecutors</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum292" class="linenum-cell" data-linenum="292" href="#linenum292"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum293" class="linenum-cell" data-linenum="293" href="#linenum293"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum294" class="linenum-cell" data-linenum="294" href="#linenum294"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum295" class="linenum-cell" data-linenum="295" href="#linenum295"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum296" class="linenum-cell" data-linenum="296" href="#linenum296"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum297" class="linenum-cell" data-linenum="297" href="#linenum297"></a></td>
+<td><pre><span class='comment'>     * For use by AsynchronousFileChannel to release resources without shutting<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum298" class="linenum-cell" data-linenum="298" href="#linenum298"></a></td>
+<td><pre><span class='comment'>     * down the thread pool.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum299" class="linenum-cell" data-linenum="299" href="#linenum299"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum300" class="linenum-cell" data-linenum="300" href="#linenum300"></a></td>
+<td><pre>    final void detachFromThreadPool() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum301" class="linenum-cell" data-linenum="301" href="#linenum301"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum68">shutdown</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/atomic/AtomicBoolean.html#linenum148">getAndSet</a>(true))</pre></td>
+</tr>
+<tr>
+<td><a id="linenum302" class="linenum-cell" data-linenum="302" href="#linenum302"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/AssertionError.html#linenum43">AssertionError</a>(<span class='string'>&quot;Already shutdown&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum303" class="linenum-cell" data-linenum="303" href="#linenum303"></a></td>
+<td><pre>        if (!<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum225">isEmpty</a>())</pre></td>
+</tr>
+<tr>
+<td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/AssertionError.html#linenum43">AssertionError</a>(<span class='string'>&quot;Group not empty&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum305" class="linenum-cell" data-linenum="305" href="#linenum305"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum246">shutdownHandlerTasks</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum306" class="linenum-cell" data-linenum="306" href="#linenum306"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum307" class="linenum-cell" data-linenum="307" href="#linenum307"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
+<td><pre>    public final boolean awaitTermination(long timeout, <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/TimeUnit.html#linenum71">TimeUnit</a> unit)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum310" class="linenum-cell" data-linenum="310" href="#linenum310"></a></td>
+<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/InterruptedException.html#linenum49">InterruptedException</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum311" class="linenum-cell" data-linenum="311" href="#linenum311"></a></td>
+<td><pre>    {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum312" class="linenum-cell" data-linenum="312" href="#linenum312"></a></td>
+<td><pre>        return <a class="variable" href="#linenum73">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/ThreadPool.html#linenum62">executor</a>().awaitTermination(<a class="variable" href="#linenum309">timeout</a>, <a class="variable" href="#linenum309">unit</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum313" class="linenum-cell" data-linenum="313" href="#linenum313"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum314" class="linenum-cell" data-linenum="314" href="#linenum314"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum315" class="linenum-cell" data-linenum="315" href="#linenum315"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
+<td><pre><span class='comment'>     * Executes the given command on one of the channel group's pooled threads.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum318" class="linenum-cell" data-linenum="318" href="#linenum318"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum319" class="linenum-cell" data-linenum="319" href="#linenum319"></a></td>
+<td><pre>    public final void execute(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum55">Runnable</a> task) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum320" class="linenum-cell" data-linenum="320" href="#linenum320"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/SecurityManager.html#linenum226">SecurityManager</a> sm = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum335">getSecurityManager</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum321" class="linenum-cell" data-linenum="321" href="#linenum321"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum320">sm</a> != null) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum322" class="linenum-cell" data-linenum="322" href="#linenum322"></a></td>
+<td><pre>            // when a security manager is installed then the user's task</pre></td>
+</tr>
+<tr>
+<td><a id="linenum323" class="linenum-cell" data-linenum="323" href="#linenum323"></a></td>
+<td><pre>            <span class='comment'>// must be run with the current calling context</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum324" class="linenum-cell" data-linenum="324" href="#linenum324"></a></td>
+<td><pre>            final <a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessControlContext.html#linenum77">AccessControlContext</a> acc = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum820">getContext</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum325" class="linenum-cell" data-linenum="325" href="#linenum325"></a></td>
+<td><pre>            final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum55">Runnable</a> delegate = <a class="variable" href="#linenum319">task</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum326" class="linenum-cell" data-linenum="326" href="#linenum326"></a></td>
+<td><pre>            <a class="variable" href="#linenum319">task</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum55">Runnable</a>() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum327" class="linenum-cell" data-linenum="327" href="#linenum327"></a></td>
+<td><pre>                @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum328" class="linenum-cell" data-linenum="328" href="#linenum328"></a></td>
+<td><pre>                public void run() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum329" class="linenum-cell" data-linenum="329" href="#linenum329"></a></td>
+<td><pre>                    AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum704">doPrivileged</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Void.html#linenum36">Void</a>&gt;() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum330" class="linenum-cell" data-linenum="330" href="#linenum330"></a></td>
+<td><pre>                        @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum331" class="linenum-cell" data-linenum="331" href="#linenum331"></a></td>
+<td><pre>                        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Void.html#linenum36">Void</a> run() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
+<td><pre>                            <a class="variable" href="#linenum325">delegate</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum68">run</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
+<td><pre>                            return null;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
+<td><pre>                        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum335" class="linenum-cell" data-linenum="335" href="#linenum335"></a></td>
+<td><pre>                    }, <a class="variable" href="#linenum324">acc</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum336" class="linenum-cell" data-linenum="336" href="#linenum336"></a></td>
+<td><pre>                }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum337" class="linenum-cell" data-linenum="337" href="#linenum337"></a></td>
+<td><pre>            };</pre></td>
+</tr>
+<tr>
 <td><a id="linenum338" class="linenum-cell" data-linenum="338" href="#linenum338"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum339" class="linenum-cell" data-linenum="339" href="#linenum339"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/nio/ch/AsynchronousChannelGroupImpl.html#linenum184">executeOnPooledThread</a>(<a class="variable" href="#linenum319">task</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum340" class="linenum-cell" data-linenum="340" href="#linenum340"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum341" class="linenum-cell" data-linenum="341" href="#linenum341"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

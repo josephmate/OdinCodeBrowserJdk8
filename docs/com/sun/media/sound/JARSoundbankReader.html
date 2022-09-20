@@ -188,7 +188,7 @@
 </tr>
 <tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
-<td><pre>public final class JARSoundbankReader extends <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/spi/SoundbankReader.html#linenum47">SoundbankReader</a> {</pre></td>
+<td><pre>public final class JARSoundbankReader extends <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/spi/SoundbankReader.html#linenum45">SoundbankReader</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
@@ -196,7 +196,7 @@
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre>    private static boolean isZIP(<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum136">URL</a> url) {</pre></td>
+<td><pre>    private static boolean isZIP(<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum142">URL</a> url) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
@@ -208,7 +208,7 @@
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum45">InputStream</a> stream = <a class="variable" href="#linenum48">url</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum1037">openStream</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum45">InputStream</a> stream = <a class="variable" href="#linenum48">url</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum1067">openStream</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
@@ -220,7 +220,7 @@
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre>                <a class="variable" href="#linenum49">ok</a> = <a class="variable" href="#linenum51">stream</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum161">read</a>(<a class="variable" href="#linenum53">buff</a>) == 4;</pre></td>
+<td><pre>                <a class="variable" href="#linenum49">ok</a> = <a class="variable" href="#linenum51">stream</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum100">read</a>(<a class="variable" href="#linenum53">buff</a>) == 4;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
@@ -280,7 +280,7 @@
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Soundbank.html#linenum72">Soundbank</a> getSoundbank(<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum136">URL</a> url)</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Soundbank.html#linenum72">Soundbank</a> getSoundbank(<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum142">URL</a> url)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum70" class="linenum-cell" data-linenum="70" href="#linenum70"></a></td>
@@ -296,15 +296,15 @@
 </tr>
 <tr>
 <td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Soundbank.html#linenum72">Soundbank</a>&gt; soundbanks = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Soundbank.html#linenum72">Soundbank</a>&gt;();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Soundbank.html#linenum72">Soundbank</a>&gt; soundbanks = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Soundbank.html#linenum72">Soundbank</a>&gt;();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/net/URLClassLoader.html#linenum73">URLClassLoader</a> ucl = URLClassLoader.<a class="type" href="/OdinCodeBrowserJdk8/java/net/URLClassLoader.html#linenum746">newInstance</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum136">URL</a>[]{<a class="variable" href="#linenum69">url</a>});</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/net/URLClassLoader.html#linenum74">URLClassLoader</a> ucl = URLClassLoader.<a class="type" href="/OdinCodeBrowserJdk8/java/net/URLClassLoader.html#linenum761">newInstance</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum142">URL</a>[]{<a class="variable" href="#linenum69">url</a>});</pre></td>
 </tr>
 <tr>
 <td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum45">InputStream</a> stream = <a class="variable" href="#linenum74">ucl</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/URLClassLoader.html#linenum231">getResourceAsStream</a>(</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum45">InputStream</a> stream = <a class="variable" href="#linenum74">ucl</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/URLClassLoader.html#linenum232">getResourceAsStream</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
@@ -340,7 +340,7 @@
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre>                if (!<a class="variable" href="#linenum82">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1420">startsWith</a>(<span class='string'>&quot;#&quot;</span>)) {</pre></td>
+<td><pre>                if (!<a class="variable" href="#linenum82">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1433">startsWith</a>(<span class='string'>&quot;#&quot;</span>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
@@ -348,11 +348,11 @@
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
-<td><pre>                        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; c = Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum325">forName</a>(<a class="variable" href="#linenum82">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2852">trim</a>(), false, <a class="variable" href="#linenum74">ucl</a>);</pre></td>
+<td><pre>                        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; c = Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum329">forName</a>(<a class="variable" href="#linenum82">line</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2867">trim</a>(), false, <a class="variable" href="#linenum74">ucl</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre>                        if (<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Soundbank.html#linenum72">Soundbank</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum501">isAssignableFrom</a>(<a class="variable" href="#linenum86">c</a>)) {</pre></td>
+<td><pre>                        if (<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Soundbank.html#linenum72">Soundbank</a>.class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum510">isAssignableFrom</a>(<a class="variable" href="#linenum86">c</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
@@ -484,7 +484,7 @@
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/JARSoundbankReader.html#linenum118">getSoundbank</a>(<a class="variable" href="#linenum118">file</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/File.html#linenum729">toURI</a>().toURL());</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/JARSoundbankReader.html#linenum69">getSoundbank</a>(<a class="variable" href="#linenum118">file</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/File.html#linenum740">toURI</a>().toURL());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>

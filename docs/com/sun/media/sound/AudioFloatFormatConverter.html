@@ -312,7 +312,7 @@
 </tr>
 <tr>
 <td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
-<td><pre>            int ret = <a class="variable" href="#linenum58">stream</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/AudioFloatInputStream.html#linenum262">read</a>(<a class="variable" href="#linenum53">readfloatbuffer</a>, 0, <a class="variable" href="#linenum74">flen</a>);</pre></td>
+<td><pre>            int ret = <a class="variable" href="#linenum58">stream</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/AudioFloatInputStream.html#linenum256">read</a>(<a class="variable" href="#linenum53">readfloatbuffer</a>, 0, <a class="variable" href="#linenum74">flen</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
@@ -324,7 +324,7 @@
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre>            <a class="variable" href="#linenum49">converter</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/AudioFloatConverter.html#linenum1054">toByteArray</a>(<a class="variable" href="#linenum53">readfloatbuffer</a>, 0, <a class="variable" href="#linenum77">ret</a>, <a class="variable" href="#linenum72">b</a>, <a class="variable" href="#linenum72">off</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum49">converter</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/AudioFloatConverter.html#linenum1036">toByteArray</a>(<a class="variable" href="#linenum53">readfloatbuffer</a>, 0, <a class="variable" href="#linenum77">ret</a>, <a class="variable" href="#linenum72">b</a>, <a class="variable" href="#linenum72">off</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
@@ -684,7 +684,7 @@
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>            int ret = <a class="variable" href="#linenum129">ais</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/AudioFloatInputStream.html#linenum262">read</a>(<a class="variable" href="#linenum127">conversion_buffer</a>, 0, <a class="variable" href="#linenum167">len2</a>);</pre></td>
+<td><pre>            int ret = <a class="variable" href="#linenum129">ais</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/AudioFloatInputStream.html#linenum256">read</a>(<a class="variable" href="#linenum127">conversion_buffer</a>, 0, <a class="variable" href="#linenum167">len2</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
@@ -784,7 +784,7 @@
 </tr>
 <tr>
 <td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
-<td><pre>                int minChannels = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1393">min</a>(<a class="variable" href="#linenum121">sourceChannels</a>, <a class="variable" href="#linenum130">targetChannels</a>);</pre></td>
+<td><pre>                int minChannels = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1335">min</a>(<a class="variable" href="#linenum121">sourceChannels</a>, <a class="variable" href="#linenum130">targetChannels</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
@@ -1120,7 +1120,7 @@
 </tr>
 <tr>
 <td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a>(<span class='string'>&quot;point&quot;</span>))</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a>(<span class='string'>&quot;point&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
@@ -1128,7 +1128,7 @@
 </tr>
 <tr>
 <td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a>(<span class='string'>&quot;linear&quot;</span>))</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a>(<span class='string'>&quot;linear&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum282" class="linenum-cell" data-linenum="282" href="#linenum282"></a></td>
@@ -1136,7 +1136,7 @@
 </tr>
 <tr>
 <td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a>(<span class='string'>&quot;linear1&quot;</span>))</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a>(<span class='string'>&quot;linear1&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
@@ -1144,7 +1144,7 @@
 </tr>
 <tr>
 <td><a id="linenum285" class="linenum-cell" data-linenum="285" href="#linenum285"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a>(<span class='string'>&quot;linear2&quot;</span>))</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a>(<span class='string'>&quot;linear2&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum286" class="linenum-cell" data-linenum="286" href="#linenum286"></a></td>
@@ -1152,7 +1152,7 @@
 </tr>
 <tr>
 <td><a id="linenum287" class="linenum-cell" data-linenum="287" href="#linenum287"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a>(<span class='string'>&quot;cubic&quot;</span>))</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a>(<span class='string'>&quot;cubic&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum288" class="linenum-cell" data-linenum="288" href="#linenum288"></a></td>
@@ -1160,7 +1160,7 @@
 </tr>
 <tr>
 <td><a id="linenum289" class="linenum-cell" data-linenum="289" href="#linenum289"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a>(<span class='string'>&quot;lanczos&quot;</span>))</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a>(<span class='string'>&quot;lanczos&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum290" class="linenum-cell" data-linenum="290" href="#linenum290"></a></td>
@@ -1168,7 +1168,7 @@
 </tr>
 <tr>
 <td><a id="linenum291" class="linenum-cell" data-linenum="291" href="#linenum291"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a>(<span class='string'>&quot;sinc&quot;</span>))</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum278">resamplerType</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a>(<span class='string'>&quot;sinc&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum292" class="linenum-cell" data-linenum="292" href="#linenum292"></a></td>
@@ -1432,7 +1432,7 @@
 </tr>
 <tr>
 <td><a id="linenum357" class="linenum-cell" data-linenum="357" href="#linenum357"></a></td>
-<td><pre>            <a class="variable" href="#linenum245">ibuffer_len</a> = <a class="variable" href="#linenum267">ais</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/AudioFloatInputStream.html#linenum262">read</a>(<a class="variable" href="#linenum239">ibuffer2</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum245">ibuffer_len</a> = <a class="variable" href="#linenum267">ais</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/AudioFloatInputStream.html#linenum258">read</a>(<a class="variable" href="#linenum239">ibuffer2</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum358" class="linenum-cell" data-linenum="358" href="#linenum358"></a></td>
@@ -1444,7 +1444,7 @@
 </tr>
 <tr>
 <td><a id="linenum360" class="linenum-cell" data-linenum="360" href="#linenum360"></a></td>
-<td><pre>                    int ret = <a class="variable" href="#linenum267">ais</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/AudioFloatInputStream.html#linenum262">read</a>(<a class="variable" href="#linenum239">ibuffer2</a>, <a class="variable" href="#linenum245">ibuffer_len</a>, <a class="variable" href="#linenum239">ibuffer2</a>.length</pre></td>
+<td><pre>                    int ret = <a class="variable" href="#linenum267">ais</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/AudioFloatInputStream.html#linenum256">read</a>(<a class="variable" href="#linenum239">ibuffer2</a>, <a class="variable" href="#linenum245">ibuffer_len</a>, <a class="variable" href="#linenum239">ibuffer2</a>.length</pre></td>
 </tr>
 <tr>
 <td><a id="linenum361" class="linenum-cell" data-linenum="361" href="#linenum361"></a></td>
@@ -1468,7 +1468,7 @@
 </tr>
 <tr>
 <td><a id="linenum366" class="linenum-cell" data-linenum="366" href="#linenum366"></a></td>
-<td><pre>                Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3146">fill</a>(<a class="variable" href="#linenum239">ibuffer2</a>, <a class="variable" href="#linenum245">ibuffer_len</a>, <a class="variable" href="#linenum239">ibuffer2</a>.length, 0);</pre></td>
+<td><pre>                Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2867">fill</a>(<a class="variable" href="#linenum239">ibuffer2</a>, <a class="variable" href="#linenum245">ibuffer_len</a>, <a class="variable" href="#linenum239">ibuffer2</a>.length, 0);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum367" class="linenum-cell" data-linenum="367" href="#linenum367"></a></td>
@@ -1480,7 +1480,7 @@
 </tr>
 <tr>
 <td><a id="linenum369" class="linenum-cell" data-linenum="369" href="#linenum369"></a></td>
-<td><pre>                Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3146">fill</a>(<a class="variable" href="#linenum239">ibuffer2</a>, 0, <a class="variable" href="#linenum239">ibuffer2</a>.length, 0);</pre></td>
+<td><pre>                Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2867">fill</a>(<a class="variable" href="#linenum239">ibuffer2</a>, 0, <a class="variable" href="#linenum239">ibuffer2</a>.length, 0);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum370" class="linenum-cell" data-linenum="370" href="#linenum370"></a></td>
@@ -1828,7 +1828,7 @@
 </tr>
 <tr>
 <td><a id="linenum456" class="linenum-cell" data-linenum="456" href="#linenum456"></a></td>
-<td><pre>                int ret = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/AudioFloatFormatConverter.html#linenum382">read</a>(<a class="variable" href="#linenum453">l_skipbuffer</a>, 0, (int) Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1393">min</a>(<a class="variable" href="#linenum454">remain</a>,</pre></td>
+<td><pre>                int ret = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/AudioFloatFormatConverter.html#linenum382">read</a>(<a class="variable" href="#linenum453">l_skipbuffer</a>, 0, (int) Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1335">min</a>(<a class="variable" href="#linenum454">remain</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum457" class="linenum-cell" data-linenum="457" href="#linenum457"></a></td>
@@ -2056,7 +2056,7 @@
 </tr>
 <tr>
 <td><a id="linenum513" class="linenum-cell" data-linenum="513" href="#linenum513"></a></td>
-<td><pre>        if (Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1237">abs</a>(<a class="variable" href="#linenum502">targetFormat</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFormat.html#linenum288">getSampleRate</a>()</pre></td>
+<td><pre>        if (Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1182">abs</a>(<a class="variable" href="#linenum502">targetFormat</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFormat.html#linenum288">getSampleRate</a>()</pre></td>
 </tr>
 <tr>
 <td><a id="linenum514" class="linenum-cell" data-linenum="514" href="#linenum514"></a></td>
@@ -2184,7 +2184,7 @@
 </tr>
 <tr>
 <td><a id="linenum545" class="linenum-cell" data-linenum="545" href="#linenum545"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFormat.html#linenum125">AudioFormat</a>&gt; formats = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFormat.html#linenum125">AudioFormat</a>&gt;();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFormat.html#linenum125">AudioFormat</a>&gt; formats = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFormat.html#linenum125">AudioFormat</a>&gt;();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum546" class="linenum-cell" data-linenum="546" href="#linenum546"></a></td>

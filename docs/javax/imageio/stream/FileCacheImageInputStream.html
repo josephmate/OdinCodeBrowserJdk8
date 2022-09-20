@@ -412,7 +412,7 @@
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>            this.cacheFile = Files.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/file/Files.html#linenum889">createTempFile</a>(<span class='string'>&quot;imageio&quot;</span>, <span class='string'>&quot;.tmp&quot;</span>).toFile();</pre></td>
+<td><pre>            this.cacheFile = Files.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/file/Files.html#linenum892">createTempFile</a>(<span class='string'>&quot;imageio&quot;</span>, <span class='string'>&quot;.tmp&quot;</span>).toFile();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
@@ -420,7 +420,7 @@
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre>            this.cacheFile = Files.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/file/Files.html#linenum889">createTempFile</a>(cacheDir.toPath(), <span class='string'>&quot;imageio&quot;</span>, <span class='string'>&quot;.tmp&quot;</span>)</pre></td>
+<td><pre>            this.cacheFile = Files.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/file/Files.html#linenum892">createTempFile</a>(cacheDir.toPath(), <span class='string'>&quot;imageio&quot;</span>, <span class='string'>&quot;.tmp&quot;</span>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
@@ -460,7 +460,7 @@
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre>            Disposer.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/Disposer.html#linenum122">addRecord</a>(<a class="variable" href="#linenum61">disposerReferent</a>, <a class="variable" href="#linenum64">disposerRecord</a>);</pre></td>
+<td><pre>            Disposer.<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/Disposer.html#linenum120">addRecord</a>(<a class="variable" href="#linenum61">disposerReferent</a>, <a class="variable" href="#linenum64">disposerRecord</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
@@ -552,7 +552,7 @@
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
-<td><pre>        <a class="variable" href="#linenum50">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum521">seek</a>(<a class="variable" href="#linenum56">length</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum50">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum553">seek</a>(<a class="variable" href="#linenum56">length</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
@@ -572,7 +572,7 @@
 </tr>
 <tr>
 <td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre>                <a class="variable" href="#linenum92">stream</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum161">read</a>(<a class="variable" href="#linenum54">buf</a>, 0, (int)Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1393">min</a>(<a class="variable" href="#linenum136">len</a>, (long)<a class="variable" href="#linenum52">BUFFER_LENGTH</a>));</pre></td>
+<td><pre>                <a class="variable" href="#linenum92">stream</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum161">read</a>(<a class="variable" href="#linenum54">buf</a>, 0, (int)Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1335">min</a>(<a class="variable" href="#linenum136">len</a>, (long)<a class="variable" href="#linenum52">BUFFER_LENGTH</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
@@ -596,7 +596,7 @@
 </tr>
 <tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>            <a class="variable" href="#linenum50">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum492">write</a>(<a class="variable" href="#linenum54">buf</a>, 0, <a class="variable" href="#linenum141">nbytes</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum50">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum524">write</a>(<a class="variable" href="#linenum54">buf</a>, 0, <a class="variable" href="#linenum141">nbytes</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
@@ -652,11 +652,11 @@
 </tr>
 <tr>
 <td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
-<td><pre>            <a class="variable" href="#linenum50">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum521">seek</a>(streamPos++);</pre></td>
+<td><pre>            <a class="variable" href="#linenum50">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum553">seek</a>(streamPos++);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre>            return <a class="variable" href="#linenum50">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum371">read</a>();</pre></td>
+<td><pre>            return <a class="variable" href="#linenum50">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum336">read</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
@@ -764,7 +764,7 @@
 </tr>
 <tr>
 <td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
-<td><pre>        <a class="variable" href="#linenum169">len</a> = (int)Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1393">min</a>((long)<a class="variable" href="#linenum169">len</a>, <a class="variable" href="#linenum187">pos</a> - streamPos);</pre></td>
+<td><pre>        <a class="variable" href="#linenum169">len</a> = (int)Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1335">min</a>((long)<a class="variable" href="#linenum169">len</a>, <a class="variable" href="#linenum187">pos</a> - streamPos);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
@@ -772,11 +772,11 @@
 </tr>
 <tr>
 <td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
-<td><pre>            <a class="variable" href="#linenum50">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum521">seek</a>(streamPos);</pre></td>
+<td><pre>            <a class="variable" href="#linenum50">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum553">seek</a>(streamPos);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
-<td><pre>            <a class="variable" href="#linenum50">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum405">readFully</a>(<a class="variable" href="#linenum169">b</a>, <a class="variable" href="#linenum169">off</a>, <a class="variable" href="#linenum169">len</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum50">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum433">readFully</a>(<a class="variable" href="#linenum169">b</a>, <a class="variable" href="#linenum169">off</a>, <a class="variable" href="#linenum169">len</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
@@ -1048,7 +1048,7 @@
 </tr>
 <tr>
 <td><a id="linenum261" class="linenum-cell" data-linenum="261" href="#linenum261"></a></td>
-<td><pre>    protected void finalize() throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> {</pre></td>
+<td><pre>    protected void finalize() throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
@@ -1120,7 +1120,7 @@
 </tr>
 <tr>
 <td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
-<td><pre>                    <a class="variable" href="#linenum271">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum574">close</a>();</pre></td>
+<td><pre>                    <a class="variable" href="#linenum271">cache</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum606">close</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
@@ -1148,7 +1148,7 @@
 </tr>
 <tr>
 <td><a id="linenum286" class="linenum-cell" data-linenum="286" href="#linenum286"></a></td>
-<td><pre>                <a class="variable" href="#linenum271">cacheFile</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/File.html#linenum1033">delete</a>();</pre></td>
+<td><pre>                <a class="variable" href="#linenum271">cacheFile</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/File.html#linenum1044">delete</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum287" class="linenum-cell" data-linenum="287" href="#linenum287"></a></td>

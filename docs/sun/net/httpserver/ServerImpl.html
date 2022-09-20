@@ -372,7 +372,7 @@
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>        this.logger = Logger.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum547">getLogger</a> (<span class='string'>&quot;com.sun.net.httpserver&quot;</span>);</pre></td>
+<td><pre>        this.logger = Logger.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum490">getLogger</a> (<span class='string'>&quot;com.sun.net.httpserver&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
@@ -380,7 +380,7 @@
 </tr>
 <tr>
 <td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
-<td><pre>        <a class="variable" href="#linenum47">https</a> = <a class="variable" href="#linenum46">protocol</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a> (<span class='string'>&quot;https&quot;</span>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum47">https</a> = <a class="variable" href="#linenum46">protocol</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a> (<span class='string'>&quot;https&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
@@ -400,11 +400,11 @@
 </tr>
 <tr>
 <td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/net/ServerSocket.html#linenum51">ServerSocket</a> socket = <a class="variable" href="#linenum53">schan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/ServerSocketChannel.html#linenum220">socket</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/net/ServerSocket.html#linenum53">ServerSocket</a> socket = <a class="variable" href="#linenum53">schan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/ServerSocketChannel.html#linenum220">socket</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre>            <a class="variable" href="#linenum99">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/ServerSocket.html#linenum357">bind</a> (addr, backlog);</pre></td>
+<td><pre>            <a class="variable" href="#linenum99">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/ServerSocket.html#linenum372">bind</a> (addr, backlog);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
@@ -420,11 +420,11 @@
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre>        <a class="variable" href="#linenum53">schan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum284">configureBlocking</a> (false);</pre></td>
+<td><pre>        <a class="variable" href="#linenum53">schan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum289">configureBlocking</a> (false);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
-<td><pre>        <a class="variable" href="#linenum55">listenerKey</a> = <a class="variable" href="#linenum53">schan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum191">register</a> (<a class="variable" href="#linenum54">selector</a>, SelectionKey.OP_ACCEPT);</pre></td>
+<td><pre>        <a class="variable" href="#linenum55">listenerKey</a> = <a class="variable" href="#linenum53">schan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum198">register</a> (<a class="variable" href="#linenum54">selector</a>, SelectionKey.OP_ACCEPT);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
@@ -432,23 +432,23 @@
 </tr>
 <tr>
 <td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
-<td><pre>        <a class="variable" href="#linenum56">idleConnections</a> = Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2175">synchronizedSet</a> (new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum89">HashSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/net/httpserver/HttpConnection.html#linenum40">HttpConnection</a>&gt;());</pre></td>
+<td><pre>        <a class="variable" href="#linenum56">idleConnections</a> = Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2113">synchronizedSet</a> (new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum90">HashSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/net/httpserver/HttpConnection.html#linenum40">HttpConnection</a>&gt;());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
-<td><pre>        <a class="variable" href="#linenum57">allConnections</a> = Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2175">synchronizedSet</a> (new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum89">HashSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/net/httpserver/HttpConnection.html#linenum40">HttpConnection</a>&gt;());</pre></td>
+<td><pre>        <a class="variable" href="#linenum57">allConnections</a> = Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2113">synchronizedSet</a> (new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum90">HashSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/net/httpserver/HttpConnection.html#linenum40">HttpConnection</a>&gt;());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>        <a class="variable" href="#linenum62">reqConnections</a> = Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2175">synchronizedSet</a> (new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum89">HashSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/net/httpserver/HttpConnection.html#linenum40">HttpConnection</a>&gt;());</pre></td>
+<td><pre>        <a class="variable" href="#linenum62">reqConnections</a> = Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2113">synchronizedSet</a> (new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum90">HashSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/net/httpserver/HttpConnection.html#linenum40">HttpConnection</a>&gt;());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
-<td><pre>        <a class="variable" href="#linenum63">rspConnections</a> = Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2175">synchronizedSet</a> (new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum89">HashSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/net/httpserver/HttpConnection.html#linenum40">HttpConnection</a>&gt;());</pre></td>
+<td><pre>        <a class="variable" href="#linenum63">rspConnections</a> = Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2113">synchronizedSet</a> (new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashSet.html#linenum90">HashSet</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/net/httpserver/HttpConnection.html#linenum40">HttpConnection</a>&gt;());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
-<td><pre>        <a class="variable" href="#linenum70">time</a> = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum70">time</a> = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
@@ -456,7 +456,7 @@
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
-<td><pre>        <a class="variable" href="#linenum83">timer</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Timer.html#linenum284">schedule</a> (new ServerTimerTask(), <a class="variable" href="#linenum75">CLOCK_TICK</a>, <a class="variable" href="#linenum75">CLOCK_TICK</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum83">timer</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Timer.html#linenum243">schedule</a> (new ServerTimerTask(), <a class="variable" href="#linenum75">CLOCK_TICK</a>, <a class="variable" href="#linenum75">CLOCK_TICK</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
@@ -468,19 +468,19 @@
 </tr>
 <tr>
 <td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
-<td><pre>            <a class="variable" href="#linenum83">timer1</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Timer.html#linenum284">schedule</a> (new ServerTimerTask1(),<a class="variable" href="#linenum78">TIMER_MILLIS</a>,<a class="variable" href="#linenum78">TIMER_MILLIS</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum83">timer1</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Timer.html#linenum243">schedule</a> (new ServerTimerTask1(),<a class="variable" href="#linenum78">TIMER_MILLIS</a>,<a class="variable" href="#linenum78">TIMER_MILLIS</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
-<td><pre>            <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1602">config</a> (<span class='string'>&quot;HttpServer timer1 enabled period in ms:  &quot;</span>+<a class="variable" href="#linenum78">TIMER_MILLIS</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1502">config</a> (<span class='string'>&quot;HttpServer timer1 enabled period in ms:  &quot;</span>+<a class="variable" href="#linenum78">TIMER_MILLIS</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
-<td><pre>            <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1602">config</a> (<span class='string'>&quot;MAX_REQ_TIME:  &quot;</span>+<a class="variable" href="#linenum79">MAX_REQ_TIME</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1502">config</a> (<span class='string'>&quot;MAX_REQ_TIME:  &quot;</span>+<a class="variable" href="#linenum79">MAX_REQ_TIME</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre>            <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1602">config</a> (<span class='string'>&quot;MAX_RSP_TIME:  &quot;</span>+<a class="variable" href="#linenum80">MAX_RSP_TIME</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1502">config</a> (<span class='string'>&quot;MAX_RSP_TIME:  &quot;</span>+<a class="variable" href="#linenum80">MAX_RSP_TIME</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
@@ -492,7 +492,7 @@
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1602">config</a> (<span class='string'>&quot;HttpServer created &quot;</span>+<a class="variable" href="#linenum46">protocol</a>+<span class='string'>&quot; &quot;</span>+ addr);</pre></td>
+<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1502">config</a> (<span class='string'>&quot;HttpServer created &quot;</span>+<a class="variable" href="#linenum46">protocol</a>+<span class='string'>&quot; &quot;</span>+ addr);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
@@ -532,11 +532,11 @@
 </tr>
 <tr>
 <td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/net/ServerSocket.html#linenum51">ServerSocket</a> socket = <a class="variable" href="#linenum53">schan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/ServerSocketChannel.html#linenum220">socket</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/net/ServerSocket.html#linenum53">ServerSocket</a> socket = <a class="variable" href="#linenum53">schan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/ServerSocketChannel.html#linenum220">socket</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>        <a class="variable" href="#linenum132">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/ServerSocket.html#linenum357">bind</a> (<a class="variable" href="#linenum125">addr</a>, <a class="variable" href="#linenum125">backlog</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum132">socket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/ServerSocket.html#linenum372">bind</a> (<a class="variable" href="#linenum125">addr</a>, <a class="variable" href="#linenum125">backlog</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
@@ -588,7 +588,7 @@
 </tr>
 <tr>
 <td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
-<td><pre>        <a class="variable" href="#linenum144">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum695">start</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum144">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum699">start</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
@@ -756,11 +756,11 @@
 </tr>
 <tr>
 <td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
-<td><pre>        long latest = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>() + <a class="variable" href="#linenum181">delay</a> * 1000;</pre></td>
+<td><pre>        long latest = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>() + <a class="variable" href="#linenum181">delay</a> * 1000;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
-<td><pre>        while (System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>() &lt; <a class="variable" href="#linenum188">latest</a>) {</pre></td>
+<td><pre>        while (System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>() &lt; <a class="variable" href="#linenum188">latest</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
@@ -876,7 +876,7 @@
 </tr>
 <tr>
 <td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>
-<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1602">config</a> (<span class='string'>&quot;context created: &quot;</span> + <a class="variable" href="#linenum212">path</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1502">config</a> (<span class='string'>&quot;context created: &quot;</span> + <a class="variable" href="#linenum212">path</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>
@@ -916,7 +916,7 @@
 </tr>
 <tr>
 <td><a id="linenum228" class="linenum-cell" data-linenum="228" href="#linenum228"></a></td>
-<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1602">config</a> (<span class='string'>&quot;context created: &quot;</span> + <a class="variable" href="#linenum222">path</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1502">config</a> (<span class='string'>&quot;context created: &quot;</span> + <a class="variable" href="#linenum222">path</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum229" class="linenum-cell" data-linenum="229" href="#linenum229"></a></td>
@@ -952,7 +952,7 @@
 </tr>
 <tr>
 <td><a id="linenum237" class="linenum-cell" data-linenum="237" href="#linenum237"></a></td>
-<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1602">config</a> (<span class='string'>&quot;context removed: &quot;</span> + <a class="variable" href="#linenum232">path</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1502">config</a> (<span class='string'>&quot;context removed: &quot;</span> + <a class="variable" href="#linenum232">path</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum238" class="linenum-cell" data-linenum="238" href="#linenum238"></a></td>
@@ -984,7 +984,7 @@
 </tr>
 <tr>
 <td><a id="linenum245" class="linenum-cell" data-linenum="245" href="#linenum245"></a></td>
-<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1602">config</a> (<span class='string'>&quot;context removed: &quot;</span> + <a class="variable" href="#linenum240">context</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/HttpContext.html#linenum67">getPath</a>());</pre></td>
+<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1502">config</a> (<span class='string'>&quot;context removed: &quot;</span> + <a class="variable" href="#linenum240">context</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/HttpContext.html#linenum67">getPath</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum246" class="linenum-cell" data-linenum="246" href="#linenum246"></a></td>
@@ -1000,7 +1000,7 @@
 </tr>
 <tr>
 <td><a id="linenum249" class="linenum-cell" data-linenum="249" href="#linenum249"></a></td>
-<td><pre>        return AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a>(</pre></td>
+<td><pre>        return AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum297">doPrivileged</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum250" class="linenum-cell" data-linenum="250" href="#linenum250"></a></td>
@@ -1216,7 +1216,7 @@
 </tr>
 <tr>
 <td><a id="linenum303" class="linenum-cell" data-linenum="303" href="#linenum303"></a></td>
-<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum886">log</a> (</pre></td>
+<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum824">log</a> (</pre></td>
 </tr>
 <tr>
 <td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
@@ -1272,11 +1272,11 @@
 </tr>
 <tr>
 <td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
-<td><pre>                <a class="variable" href="#linenum316">chan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum284">configureBlocking</a> (false);</pre></td>
+<td><pre>                <a class="variable" href="#linenum316">chan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum289">configureBlocking</a> (false);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum318" class="linenum-cell" data-linenum="318" href="#linenum318"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/SelectionKey.html#linenum110">SelectionKey</a> key = <a class="variable" href="#linenum316">chan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum191">register</a> (<a class="variable" href="#linenum54">selector</a>, SelectionKey.OP_READ);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/SelectionKey.html#linenum110">SelectionKey</a> key = <a class="variable" href="#linenum316">chan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum198">register</a> (<a class="variable" href="#linenum54">selector</a>, SelectionKey.OP_READ);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum319" class="linenum-cell" data-linenum="319" href="#linenum319"></a></td>
@@ -1304,7 +1304,7 @@
 </tr>
 <tr>
 <td><a id="linenum325" class="linenum-cell" data-linenum="325" href="#linenum325"></a></td>
-<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum886">log</a>(Level.FINER, <span class='string'>&quot;Dispatcher(8)&quot;</span>, <a class="variable" href="#linenum302">e</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum824">log</a>(Level.FINER, <span class='string'>&quot;Dispatcher(8)&quot;</span>, <a class="variable" href="#linenum302">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum326" class="linenum-cell" data-linenum="326" href="#linenum326"></a></td>
@@ -1412,7 +1412,7 @@
 </tr>
 <tr>
 <td><a id="linenum352" class="linenum-cell" data-linenum="352" href="#linenum352"></a></td>
-<td><pre>                    <a class="variable" href="#linenum54">selector</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/Selector.html#linenum350">select</a>(1000);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum54">selector</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/Selector.html#linenum329">select</a>(1000);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum353" class="linenum-cell" data-linenum="353" href="#linenum353"></a></td>
@@ -1500,11 +1500,11 @@
 </tr>
 <tr>
 <td><a id="linenum374" class="linenum-cell" data-linenum="374" href="#linenum374"></a></td>
-<td><pre>                            <a class="variable" href="#linenum364">chan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum284">configureBlocking</a> (false);</pre></td>
+<td><pre>                            <a class="variable" href="#linenum364">chan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum289">configureBlocking</a> (false);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum375" class="linenum-cell" data-linenum="375" href="#linenum375"></a></td>
-<td><pre>                            <a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/SelectionKey.html#linenum110">SelectionKey</a> newkey = <a class="variable" href="#linenum364">chan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum191">register</a> (<a class="variable" href="#linenum54">selector</a>, SelectionKey.OP_READ);</pre></td>
+<td><pre>                            <a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/SelectionKey.html#linenum110">SelectionKey</a> newkey = <a class="variable" href="#linenum364">chan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum198">register</a> (<a class="variable" href="#linenum54">selector</a>, SelectionKey.OP_READ);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum376" class="linenum-cell" data-linenum="376" href="#linenum376"></a></td>
@@ -1564,7 +1564,7 @@
 </tr>
 <tr>
 <td><a id="linenum390" class="linenum-cell" data-linenum="390" href="#linenum390"></a></td>
-<td><pre>                                    <a class="variable" href="#linenum386">chan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum284">configureBlocking</a> (true);</pre></td>
+<td><pre>                                    <a class="variable" href="#linenum386">chan</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/nio/channels/spi/AbstractSelectableChannel.html#linenum289">configureBlocking</a> (true);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum391" class="linenum-cell" data-linenum="391" href="#linenum391"></a></td>
@@ -1644,7 +1644,7 @@
 </tr>
 <tr>
 <td><a id="linenum410" class="linenum-cell" data-linenum="410" href="#linenum410"></a></td>
-<td><pre>                    <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum886">log</a> (Level.FINER, <span class='string'>&quot;Dispatcher (4)&quot;</span>, <a class="variable" href="#linenum323">e</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum824">log</a> (Level.FINER, <span class='string'>&quot;Dispatcher (4)&quot;</span>, <a class="variable" href="#linenum323">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum411" class="linenum-cell" data-linenum="411" href="#linenum411"></a></td>
@@ -1652,7 +1652,7 @@
 </tr>
 <tr>
 <td><a id="linenum412" class="linenum-cell" data-linenum="412" href="#linenum412"></a></td>
-<td><pre>                    <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum886">log</a> (Level.FINER, <span class='string'>&quot;Dispatcher (7)&quot;</span>, <a class="variable" href="#linenum409">e</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum898">log</a> (Level.FINER, <span class='string'>&quot;Dispatcher (7)&quot;</span>, <a class="variable" href="#linenum409">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum413" class="linenum-cell" data-linenum="413" href="#linenum413"></a></td>
@@ -1688,7 +1688,7 @@
 </tr>
 <tr>
 <td><a id="linenum421" class="linenum-cell" data-linenum="421" href="#linenum421"></a></td>
-<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum886">log</a> (Level.FINER, <span class='string'>&quot;Dispatcher (2)&quot;</span>, <a class="variable" href="#linenum418">e</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum898">log</a> (Level.FINER, <span class='string'>&quot;Dispatcher (2)&quot;</span>, <a class="variable" href="#linenum418">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum422" class="linenum-cell" data-linenum="422" href="#linenum422"></a></td>
@@ -1736,7 +1736,7 @@
 </tr>
 <tr>
 <td><a id="linenum433" class="linenum-cell" data-linenum="433" href="#linenum433"></a></td>
-<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum886">log</a> (Level.FINER, <span class='string'>&quot;Dispatcher (4)&quot;</span>, e1);</pre></td>
+<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum824">log</a> (Level.FINER, <span class='string'>&quot;Dispatcher (4)&quot;</span>, e1);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum434" class="linenum-cell" data-linenum="434" href="#linenum434"></a></td>
@@ -1748,7 +1748,7 @@
 </tr>
 <tr>
 <td><a id="linenum436" class="linenum-cell" data-linenum="436" href="#linenum436"></a></td>
-<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum886">log</a> (Level.FINER, <span class='string'>&quot;Dispatcher (5)&quot;</span>, <a class="variable" href="#linenum418">e</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum824">log</a> (Level.FINER, <span class='string'>&quot;Dispatcher (5)&quot;</span>, <a class="variable" href="#linenum418">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum437" class="linenum-cell" data-linenum="437" href="#linenum437"></a></td>
@@ -1816,7 +1816,7 @@
 </tr>
 <tr>
 <td><a id="linenum453" class="linenum-cell" data-linenum="453" href="#linenum453"></a></td>
-<td><pre>            <a class="variable" href="#linenum450">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum646">printStackTrace</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum450">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum634">printStackTrace</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum454" class="linenum-cell" data-linenum="454" href="#linenum454"></a></td>
@@ -2016,7 +2016,7 @@
 </tr>
 <tr>
 <td><a id="linenum503" class="linenum-cell" data-linenum="503" href="#linenum503"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLEngine.html#linenum371">SSLEngine</a> engine = null;</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLEngine.html#linenum373">SSLEngine</a> engine = null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum504" class="linenum-cell" data-linenum="504" href="#linenum504"></a></td>
@@ -2068,7 +2068,7 @@
 </tr>
 <tr>
 <td><a id="linenum516" class="linenum-cell" data-linenum="516" href="#linenum516"></a></td>
-<td><pre>                            <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1568">warning</a> (<span class='string'>&quot;SSL connection received. No https contxt created&quot;</span>);</pre></td>
+<td><pre>                            <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1476">warning</a> (<span class='string'>&quot;SSL connection received. No https contxt created&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum517" class="linenum-cell" data-linenum="517" href="#linenum517"></a></td>
@@ -2176,7 +2176,7 @@
 </tr>
 <tr>
 <td><a id="linenum543" class="linenum-cell" data-linenum="543" href="#linenum543"></a></td>
-<td><pre>                int space = <a class="variable" href="#linenum504">requestLine</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1740">indexOf</a> (' ');</pre></td>
+<td><pre>                int space = <a class="variable" href="#linenum504">requestLine</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1502">indexOf</a> (' ');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum544" class="linenum-cell" data-linenum="544" href="#linenum544"></a></td>
@@ -2200,7 +2200,7 @@
 </tr>
 <tr>
 <td><a id="linenum549" class="linenum-cell" data-linenum="549" href="#linenum549"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> method = <a class="variable" href="#linenum504">requestLine</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a> (0, <a class="variable" href="#linenum543">space</a>);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> method = <a class="variable" href="#linenum504">requestLine</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a> (0, <a class="variable" href="#linenum543">space</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum550" class="linenum-cell" data-linenum="550" href="#linenum550"></a></td>
@@ -2208,7 +2208,7 @@
 </tr>
 <tr>
 <td><a id="linenum551" class="linenum-cell" data-linenum="551" href="#linenum551"></a></td>
-<td><pre>                <a class="variable" href="#linenum543">space</a> = <a class="variable" href="#linenum504">requestLine</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1740">indexOf</a>(' ', <a class="variable" href="#linenum550">start</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum543">space</a> = <a class="variable" href="#linenum504">requestLine</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1545">indexOf</a>(' ', <a class="variable" href="#linenum550">start</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum552" class="linenum-cell" data-linenum="552" href="#linenum552"></a></td>
@@ -2232,7 +2232,7 @@
 </tr>
 <tr>
 <td><a id="linenum557" class="linenum-cell" data-linenum="557" href="#linenum557"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> uriStr = <a class="variable" href="#linenum504">requestLine</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a> (<a class="variable" href="#linenum550">start</a>, <a class="variable" href="#linenum543">space</a>);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> uriStr = <a class="variable" href="#linenum504">requestLine</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a> (<a class="variable" href="#linenum550">start</a>, <a class="variable" href="#linenum543">space</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum558" class="linenum-cell" data-linenum="558" href="#linenum558"></a></td>
@@ -2244,7 +2244,7 @@
 </tr>
 <tr>
 <td><a id="linenum560" class="linenum-cell" data-linenum="560" href="#linenum560"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> version = <a class="variable" href="#linenum504">requestLine</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a> (<a class="variable" href="#linenum550">start</a>);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> version = <a class="variable" href="#linenum504">requestLine</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1925">substring</a> (<a class="variable" href="#linenum550">start</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum561" class="linenum-cell" data-linenum="561" href="#linenum561"></a></td>
@@ -2252,7 +2252,7 @@
 </tr>
 <tr>
 <td><a id="linenum562" class="linenum-cell" data-linenum="562" href="#linenum562"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> s = <a class="variable" href="#linenum561">headers</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum120">getFirst</a> (<span class='string'>&quot;Transfer-encoding&quot;</span>);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> s = <a class="variable" href="#linenum561">headers</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum123">getFirst</a> (<span class='string'>&quot;Transfer-encoding&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum563" class="linenum-cell" data-linenum="563" href="#linenum563"></a></td>
@@ -2260,7 +2260,7 @@
 </tr>
 <tr>
 <td><a id="linenum564" class="linenum-cell" data-linenum="564" href="#linenum564"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum562">s</a> !=null &amp;&amp; <a class="variable" href="#linenum562">s</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a> (<span class='string'>&quot;chunked&quot;</span>)) {</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum562">s</a> !=null &amp;&amp; <a class="variable" href="#linenum562">s</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a> (<span class='string'>&quot;chunked&quot;</span>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum565" class="linenum-cell" data-linenum="565" href="#linenum565"></a></td>
@@ -2272,7 +2272,7 @@
 </tr>
 <tr>
 <td><a id="linenum567" class="linenum-cell" data-linenum="567" href="#linenum567"></a></td>
-<td><pre>                    <a class="variable" href="#linenum562">s</a> = <a class="variable" href="#linenum561">headers</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum120">getFirst</a> (<span class='string'>&quot;Content-Length&quot;</span>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum562">s</a> = <a class="variable" href="#linenum561">headers</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum123">getFirst</a> (<span class='string'>&quot;Content-Length&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum568" class="linenum-cell" data-linenum="568" href="#linenum568"></a></td>
@@ -2364,7 +2364,7 @@
 </tr>
 <tr>
 <td><a id="linenum590" class="linenum-cell" data-linenum="590" href="#linenum590"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> chdr = <a class="variable" href="#linenum561">headers</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum120">getFirst</a>(<span class='string'>&quot;Connection&quot;</span>);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> chdr = <a class="variable" href="#linenum561">headers</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum123">getFirst</a>(<span class='string'>&quot;Connection&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum591" class="linenum-cell" data-linenum="591" href="#linenum591"></a></td>
@@ -2376,7 +2376,7 @@
 </tr>
 <tr>
 <td><a id="linenum593" class="linenum-cell" data-linenum="593" href="#linenum593"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum590">chdr</a> != null &amp;&amp; <a class="variable" href="#linenum590">chdr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a> (<span class='string'>&quot;close&quot;</span>)) {</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum590">chdr</a> != null &amp;&amp; <a class="variable" href="#linenum590">chdr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a> (<span class='string'>&quot;close&quot;</span>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum594" class="linenum-cell" data-linenum="594" href="#linenum594"></a></td>
@@ -2388,7 +2388,7 @@
 </tr>
 <tr>
 <td><a id="linenum596" class="linenum-cell" data-linenum="596" href="#linenum596"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum560">version</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a> (<span class='string'>&quot;http/1.0&quot;</span>)) {</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum560">version</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a> (<span class='string'>&quot;http/1.0&quot;</span>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum597" class="linenum-cell" data-linenum="597" href="#linenum597"></a></td>
@@ -2404,15 +2404,15 @@
 </tr>
 <tr>
 <td><a id="linenum600" class="linenum-cell" data-linenum="600" href="#linenum600"></a></td>
-<td><pre>                        <a class="variable" href="#linenum591">rheaders</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum156">set</a> (<span class='string'>&quot;Connection&quot;</span>, <span class='string'>&quot;close&quot;</span>);</pre></td>
+<td><pre>                        <a class="variable" href="#linenum591">rheaders</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum186">set</a> (<span class='string'>&quot;Connection&quot;</span>, <span class='string'>&quot;close&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum601" class="linenum-cell" data-linenum="601" href="#linenum601"></a></td>
-<td><pre>                    } else if (<a class="variable" href="#linenum590">chdr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a> (<span class='string'>&quot;keep-alive&quot;</span>)) {</pre></td>
+<td><pre>                    } else if (<a class="variable" href="#linenum590">chdr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a> (<span class='string'>&quot;keep-alive&quot;</span>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum602" class="linenum-cell" data-linenum="602" href="#linenum602"></a></td>
-<td><pre>                        <a class="variable" href="#linenum591">rheaders</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum156">set</a> (<span class='string'>&quot;Connection&quot;</span>, <span class='string'>&quot;keep-alive&quot;</span>);</pre></td>
+<td><pre>                        <a class="variable" href="#linenum591">rheaders</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum186">set</a> (<span class='string'>&quot;Connection&quot;</span>, <span class='string'>&quot;keep-alive&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum603" class="linenum-cell" data-linenum="603" href="#linenum603"></a></td>
@@ -2428,7 +2428,7 @@
 </tr>
 <tr>
 <td><a id="linenum606" class="linenum-cell" data-linenum="606" href="#linenum606"></a></td>
-<td><pre>                        <a class="variable" href="#linenum591">rheaders</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum156">set</a> (<span class='string'>&quot;Keep-Alive&quot;</span>, <a class="variable" href="#linenum605">val</a>);</pre></td>
+<td><pre>                        <a class="variable" href="#linenum591">rheaders</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum186">set</a> (<span class='string'>&quot;Keep-Alive&quot;</span>, <a class="variable" href="#linenum605">val</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum607" class="linenum-cell" data-linenum="607" href="#linenum607"></a></td>
@@ -2488,11 +2488,11 @@
 </tr>
 <tr>
 <td><a id="linenum621" class="linenum-cell" data-linenum="621" href="#linenum621"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> exp = <a class="variable" href="#linenum561">headers</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum120">getFirst</a>(<span class='string'>&quot;Expect&quot;</span>);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> exp = <a class="variable" href="#linenum561">headers</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/net/httpserver/Headers.html#linenum123">getFirst</a>(<span class='string'>&quot;Expect&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum622" class="linenum-cell" data-linenum="622" href="#linenum622"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum621">exp</a> != null &amp;&amp; <a class="variable" href="#linenum621">exp</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1092">equalsIgnoreCase</a> (<span class='string'>&quot;100-continue&quot;</span>)) {</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum621">exp</a> != null &amp;&amp; <a class="variable" href="#linenum621">exp</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1105">equalsIgnoreCase</a> (<span class='string'>&quot;100-continue&quot;</span>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum623" class="linenum-cell" data-linenum="623" href="#linenum623"></a></td>
@@ -2608,7 +2608,7 @@
 </tr>
 <tr>
 <td><a id="linenum651" class="linenum-cell" data-linenum="651" href="#linenum651"></a></td>
-<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum886">log</a> (Level.FINER, <span class='string'>&quot;ServerImpl.Exchange (1)&quot;</span>, <a class="variable" href="#linenum432">e1</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum824">log</a> (Level.FINER, <span class='string'>&quot;ServerImpl.Exchange (1)&quot;</span>, <a class="variable" href="#linenum432">e1</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum652" class="linenum-cell" data-linenum="652" href="#linenum652"></a></td>
@@ -2644,7 +2644,7 @@
 </tr>
 <tr>
 <td><a id="linenum660" class="linenum-cell" data-linenum="660" href="#linenum660"></a></td>
-<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum886">log</a> (Level.FINER, <span class='string'>&quot;ServerImpl.Exchange (2)&quot;</span>, e4);</pre></td>
+<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum824">log</a> (Level.FINER, <span class='string'>&quot;ServerImpl.Exchange (2)&quot;</span>, e4);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum661" class="linenum-cell" data-linenum="661" href="#linenum661"></a></td>
@@ -2776,7 +2776,7 @@
 </tr>
 <tr>
 <td><a id="linenum693" class="linenum-cell" data-linenum="693" href="#linenum693"></a></td>
-<td><pre>                <a class="variable" href="#linenum692">builder</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a> (<span class='string'>&quot;HTTP/1.1 &quot;</span>)</pre></td>
+<td><pre>                <a class="variable" href="#linenum692">builder</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a> (<span class='string'>&quot;HTTP/1.1 &quot;</span>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum694" class="linenum-cell" data-linenum="694" href="#linenum694"></a></td>
@@ -2788,15 +2788,15 @@
 </tr>
 <tr>
 <td><a id="linenum696" class="linenum-cell" data-linenum="696" href="#linenum696"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum689">text</a> != null &amp;&amp; <a class="variable" href="#linenum689">text</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() != 0) {</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum689">text</a> != null &amp;&amp; <a class="variable" href="#linenum689">text</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() != 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum697" class="linenum-cell" data-linenum="697" href="#linenum697"></a></td>
-<td><pre>                    <a class="variable" href="#linenum692">builder</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a> (<span class='string'>&quot;Content-Length: &quot;</span>)</pre></td>
+<td><pre>                    <a class="variable" href="#linenum692">builder</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a> (<span class='string'>&quot;Content-Length: &quot;</span>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum698" class="linenum-cell" data-linenum="698" href="#linenum698"></a></td>
-<td><pre>                        .append (<a class="variable" href="#linenum689">text</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>()).append (<span class='string'>&quot;\r\n&quot;</span>)</pre></td>
+<td><pre>                        .append (<a class="variable" href="#linenum689">text</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>()).append (<span class='string'>&quot;\r\n&quot;</span>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum699" class="linenum-cell" data-linenum="699" href="#linenum699"></a></td>
@@ -2808,7 +2808,7 @@
 </tr>
 <tr>
 <td><a id="linenum701" class="linenum-cell" data-linenum="701" href="#linenum701"></a></td>
-<td><pre>                    <a class="variable" href="#linenum692">builder</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a> (<span class='string'>&quot;Content-Length: 0\r\n&quot;</span>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum692">builder</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a> (<span class='string'>&quot;Content-Length: 0\r\n&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum702" class="linenum-cell" data-linenum="702" href="#linenum702"></a></td>
@@ -2824,7 +2824,7 @@
 </tr>
 <tr>
 <td><a id="linenum705" class="linenum-cell" data-linenum="705" href="#linenum705"></a></td>
-<td><pre>                    <a class="variable" href="#linenum692">builder</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a> (<span class='string'>&quot;Connection: close\r\n&quot;</span>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum692">builder</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a> (<span class='string'>&quot;Connection: close\r\n&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum706" class="linenum-cell" data-linenum="706" href="#linenum706"></a></td>
@@ -2832,7 +2832,7 @@
 </tr>
 <tr>
 <td><a id="linenum707" class="linenum-cell" data-linenum="707" href="#linenum707"></a></td>
-<td><pre>                <a class="variable" href="#linenum692">builder</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a> (<span class='string'>&quot;\r\n&quot;</span>).append (<a class="variable" href="#linenum689">text</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum692">builder</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a> (<span class='string'>&quot;\r\n&quot;</span>).append (<a class="variable" href="#linenum689">text</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum708" class="linenum-cell" data-linenum="708" href="#linenum708"></a></td>
@@ -2840,11 +2840,11 @@
 </tr>
 <tr>
 <td><a id="linenum709" class="linenum-cell" data-linenum="709" href="#linenum709"></a></td>
-<td><pre>                byte[] b = <a class="variable" href="#linenum708">s</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum945">getBytes</a>(<span class='string'>&quot;ISO8859_1&quot;</span>);</pre></td>
+<td><pre>                byte[] b = <a class="variable" href="#linenum708">s</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum915">getBytes</a>(<span class='string'>&quot;ISO8859_1&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum710" class="linenum-cell" data-linenum="710" href="#linenum710"></a></td>
-<td><pre>                <a class="variable" href="#linenum487">rawout</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum106">write</a> (<a class="variable" href="#linenum709">b</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum487">rawout</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum62">write</a> (<a class="variable" href="#linenum709">b</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum711" class="linenum-cell" data-linenum="711" href="#linenum711"></a></td>
@@ -2868,7 +2868,7 @@
 </tr>
 <tr>
 <td><a id="linenum716" class="linenum-cell" data-linenum="716" href="#linenum716"></a></td>
-<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum886">log</a> (Level.FINER, <span class='string'>&quot;ServerImpl.sendReply&quot;</span>, <a class="variable" href="#linenum656">e</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum824">log</a> (Level.FINER, <span class='string'>&quot;ServerImpl.sendReply&quot;</span>, <a class="variable" href="#linenum656">e</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum717" class="linenum-cell" data-linenum="717" href="#linenum717"></a></td>
@@ -2900,7 +2900,7 @@
 </tr>
 <tr>
 <td><a id="linenum724" class="linenum-cell" data-linenum="724" href="#linenum724"></a></td>
-<td><pre>        if (!<a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1707">isLoggable</a>(Level.FINE)) {</pre></td>
+<td><pre>        if (!<a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1719">isLoggable</a>(Level.FINE)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum725" class="linenum-cell" data-linenum="725" href="#linenum725"></a></td>
@@ -2928,11 +2928,11 @@
 </tr>
 <tr>
 <td><a id="linenum731" class="linenum-cell" data-linenum="731" href="#linenum731"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum723">requestStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() &gt; 80) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum723">requestStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() &gt; 80) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum732" class="linenum-cell" data-linenum="732" href="#linenum732"></a></td>
-<td><pre>           <a class="variable" href="#linenum730">r</a> = <a class="variable" href="#linenum723">requestStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a> (0, 80) + <span class='string'>&quot;&lt;TRUNCATED&gt;&quot;</span>;</pre></td>
+<td><pre>           <a class="variable" href="#linenum730">r</a> = <a class="variable" href="#linenum723">requestStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a> (0, 80) + <span class='string'>&quot;&lt;TRUNCATED&gt;&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum733" class="linenum-cell" data-linenum="733" href="#linenum733"></a></td>
@@ -2956,7 +2956,7 @@
 </tr>
 <tr>
 <td><a id="linenum738" class="linenum-cell" data-linenum="738" href="#linenum738"></a></td>
-<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1619">fine</a> (<a class="variable" href="#linenum736">message</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1631">fine</a> (<a class="variable" href="#linenum736">message</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum739" class="linenum-cell" data-linenum="739" href="#linenum739"></a></td>
@@ -3012,7 +3012,7 @@
 </tr>
 <tr>
 <td><a id="linenum752" class="linenum-cell" data-linenum="752" href="#linenum752"></a></td>
-<td><pre>            Thread.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum325">sleep</a> (200);</pre></td>
+<td><pre>            Thread.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Thread.html#linenum301">sleep</a> (200);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum753" class="linenum-cell" data-linenum="753" href="#linenum753"></a></td>
@@ -3228,7 +3228,7 @@
 </tr>
 <tr>
 <td><a id="linenum806" class="linenum-cell" data-linenum="806" href="#linenum806"></a></td>
-<td><pre>            <a class="variable" href="#linenum70">time</a> = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum70">time</a> = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum807" class="linenum-cell" data-linenum="807" href="#linenum807"></a></td>
@@ -3316,7 +3316,7 @@
 </tr>
 <tr>
 <td><a id="linenum828" class="linenum-cell" data-linenum="828" href="#linenum828"></a></td>
-<td><pre>            <a class="variable" href="#linenum70">time</a> = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum70">time</a> = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum829" class="linenum-cell" data-linenum="829" href="#linenum829"></a></td>
@@ -3352,7 +3352,7 @@
 </tr>
 <tr>
 <td><a id="linenum837" class="linenum-cell" data-linenum="837" href="#linenum837"></a></td>
-<td><pre>                        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum886">log</a> (Level.FINE, <span class='string'>&quot;closing: no request: &quot;</span> + <a class="variable" href="#linenum831">c</a>);</pre></td>
+<td><pre>                        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum783">log</a> (Level.FINE, <span class='string'>&quot;closing: no request: &quot;</span> + <a class="variable" href="#linenum831">c</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum838" class="linenum-cell" data-linenum="838" href="#linenum838"></a></td>
@@ -3416,7 +3416,7 @@
 </tr>
 <tr>
 <td><a id="linenum853" class="linenum-cell" data-linenum="853" href="#linenum853"></a></td>
-<td><pre>                        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum886">log</a> (Level.FINE, <span class='string'>&quot;closing: no response: &quot;</span> + <a class="variable" href="#linenum847">c</a>);</pre></td>
+<td><pre>                        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum783">log</a> (Level.FINE, <span class='string'>&quot;closing: no response: &quot;</span> + <a class="variable" href="#linenum847">c</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum854" class="linenum-cell" data-linenum="854" href="#linenum854"></a></td>
@@ -3460,7 +3460,7 @@
 </tr>
 <tr>
 <td><a id="linenum864" class="linenum-cell" data-linenum="864" href="#linenum864"></a></td>
-<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1653">finest</a> (<a class="variable" href="#linenum863">s</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1665">finest</a> (<a class="variable" href="#linenum863">s</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum865" class="linenum-cell" data-linenum="865" href="#linenum865"></a></td>
@@ -3476,7 +3476,7 @@
 </tr>
 <tr>
 <td><a id="linenum868" class="linenum-cell" data-linenum="868" href="#linenum868"></a></td>
-<td><pre>            <a class="variable" href="#linenum865">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a> (<a class="variable" href="#linenum866">e</a>[<a class="variable" href="#linenum867">i</a>].toString()).append(<span class='string'>&quot;\n&quot;</span>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum865">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a> (<a class="variable" href="#linenum866">e</a>[<a class="variable" href="#linenum867">i</a>].toString()).append(<span class='string'>&quot;\n&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum869" class="linenum-cell" data-linenum="869" href="#linenum869"></a></td>
@@ -3484,7 +3484,7 @@
 </tr>
 <tr>
 <td><a id="linenum870" class="linenum-cell" data-linenum="870" href="#linenum870"></a></td>
-<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1653">finest</a> (<a class="variable" href="#linenum865">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum404">toString</a>());</pre></td>
+<td><pre>        <a class="variable" href="#linenum84">logger</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/logging/Logger.html#linenum1541">finest</a> (<a class="variable" href="#linenum865">b</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum404">toString</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum871" class="linenum-cell" data-linenum="871" href="#linenum871"></a></td>

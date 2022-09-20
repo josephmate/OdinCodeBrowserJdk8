@@ -268,11 +268,11 @@
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> value = <a class="variable" href="#linenum58">p</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Properties.html#linenum987">getProperty</a>(key);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> value = <a class="variable" href="#linenum58">p</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Properties.html#linenum968">getProperty</a>(key);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre>            <a class="variable" href="#linenum61">props</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum456">put</a>(key, <a class="variable" href="#linenum66">value</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum61">props</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum457">put</a>(key, <a class="variable" href="#linenum66">value</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
@@ -288,7 +288,7 @@
 </tr>
 <tr>
 <td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
-<td><pre>        return <a class="variable" href="#linenum59">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum177">toByteArray</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum59">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum190">toByteArray</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
@@ -304,7 +304,7 @@
 </tr>
 <tr>
 <td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/sun/misc/VMSupport.html#linenum58">serializePropertiesToByteArray</a>(System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum624">getProperties</a>());</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/sun/misc/VMSupport.html#linenum58">serializePropertiesToByteArray</a>(System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum629">getProperties</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
@@ -368,7 +368,7 @@
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum89">man</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/jar/Manifest.html#linenum86">getMainAttributes</a>().getValue(Attributes.Name.CLASS_PATH) != null) {</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum89">man</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/jar/Manifest.html#linenum100">getMainAttributes</a>().getValue(Attributes.Name.CLASS_PATH) != null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
@@ -404,6 +404,46 @@
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
+<td><pre>    <span class='comment'>/*</pre></td>
+</tr>
+<tr>
+<td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
+<td><pre><span class='comment'>     * Return the temporary directory that the VM uses for the attach<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
+<td><pre><span class='comment'>     * and perf data files.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
+<td><pre><span class='comment'>     * It is important that this directory is well-known and the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
+<td><pre><span class='comment'>     * same for all VM instances. It cannot be affected by configuration<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
+<td><pre><span class='comment'>     * variables such as java.io.tmpdir.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
+<td><pre>    public static native <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getVMTemporaryDirectory();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

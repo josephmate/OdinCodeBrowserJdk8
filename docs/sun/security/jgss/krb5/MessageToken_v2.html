@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2004, 2011, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2004, 2018, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -592,7 +592,7 @@
 </tr>
 <tr>
 <td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
-<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/CipherHelper.html#linenum48">CipherHelper</a> cipherHelper = null;</pre></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/CipherHelper.html#linenum49">CipherHelper</a> cipherHelper = null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
@@ -836,7 +836,7 @@
 </tr>
 <tr>
 <td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
-<td><pre>                        <a class="variable" href="#linenum100">TOKEN_HEADER_SIZE</a> + <a class="variable" href="#linenum147">cipherHelper</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/CipherHelper.html#linenum508">getChecksumLength</a>();</pre></td>
+<td><pre>                        <a class="variable" href="#linenum100">TOKEN_HEADER_SIZE</a> + <a class="variable" href="#linenum147">cipherHelper</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/CipherHelper.html#linenum506">getChecksumLength</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
@@ -844,7 +844,7 @@
 </tr>
 <tr>
 <td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
-<td><pre>                <a class="variable" href="#linenum205">minSize</a> = <a class="variable" href="#linenum147">cipherHelper</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/CipherHelper.html#linenum508">getChecksumLength</a>();</pre></td>
+<td><pre>                <a class="variable" href="#linenum205">minSize</a> = <a class="variable" href="#linenum147">cipherHelper</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/CipherHelper.html#linenum506">getChecksumLength</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
@@ -876,7 +876,7 @@
 </tr>
 <tr>
 <td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSToken.html#linenum191">readFully</a>(is, <a class="variable" href="#linenum128">tokenData</a>);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSToken.html#linenum174">readFully</a>(is, <a class="variable" href="#linenum128">tokenData</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>
@@ -896,7 +896,7 @@
 </tr>
 <tr>
 <td><a id="linenum223" class="linenum-cell" data-linenum="223" href="#linenum223"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSToken.html#linenum191">readFully</a>(is, <a class="variable" href="#linenum128">tokenData</a>);</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSToken.html#linenum174">readFully</a>(is, <a class="variable" href="#linenum128">tokenData</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum224" class="linenum-cell" data-linenum="224" href="#linenum224"></a></td>
@@ -908,7 +908,7 @@
 </tr>
 <tr>
 <td><a id="linenum226" class="linenum-cell" data-linenum="226" href="#linenum226"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSToken.html#linenum191">readFully</a>(is, <a class="variable" href="#linenum225">tmp</a>);</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSToken.html#linenum174">readFully</a>(is, <a class="variable" href="#linenum225">tmp</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum227" class="linenum-cell" data-linenum="227" href="#linenum227"></a></td>
@@ -928,7 +928,7 @@
 </tr>
 <tr>
 <td><a id="linenum231" class="linenum-cell" data-linenum="231" href="#linenum231"></a></td>
-<td><pre>                    <a class="variable" href="#linenum128">tokenData</a> = Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3397">copyOf</a>(<a class="variable" href="#linenum225">tmp</a>, <a class="variable" href="#linenum129">tokenDataLen</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum128">tokenData</a> = Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3179">copyOf</a>(<a class="variable" href="#linenum225">tmp</a>, <a class="variable" href="#linenum129">tokenDataLen</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum232" class="linenum-cell" data-linenum="232" href="#linenum232"></a></td>
@@ -976,7 +976,7 @@
 </tr>
 <tr>
 <td><a id="linenum243" class="linenum-cell" data-linenum="243" href="#linenum243"></a></td>
-<td><pre>                int chkLen = <a class="variable" href="#linenum147">cipherHelper</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/CipherHelper.html#linenum508">getChecksumLength</a>();</pre></td>
+<td><pre>                int chkLen = <a class="variable" href="#linenum147">cipherHelper</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/CipherHelper.html#linenum506">getChecksumLength</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum244" class="linenum-cell" data-linenum="244" href="#linenum244"></a></td>
@@ -984,7 +984,7 @@
 </tr>
 <tr>
 <td><a id="linenum245" class="linenum-cell" data-linenum="245" href="#linenum245"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum128">tokenData</a>, <a class="variable" href="#linenum129">tokenDataLen</a>-<a class="variable" href="#linenum243">chkLen</a>,</pre></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum128">tokenData</a>, <a class="variable" href="#linenum129">tokenDataLen</a>-<a class="variable" href="#linenum243">chkLen</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum246" class="linenum-cell" data-linenum="246" href="#linenum246"></a></td>
@@ -1460,7 +1460,7 @@
 </tr>
 <tr>
 <td><a id="linenum364" class="linenum-cell" data-linenum="364" href="#linenum364"></a></td>
-<td><pre>        if (MessageDigest.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum430">isEqual</a>(<a class="variable" href="#linenum139">checksum</a>, <a class="variable" href="#linenum361">myChecksum</a>)) {</pre></td>
+<td><pre>        if (MessageDigest.<a class="type" href="/OdinCodeBrowserJdk8/java/security/MessageDigest.html#linenum451">isEqual</a>(<a class="variable" href="#linenum139">checksum</a>, <a class="variable" href="#linenum361">myChecksum</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum365" class="linenum-cell" data-linenum="365" href="#linenum365"></a></td>
@@ -1528,11 +1528,11 @@
 </tr>
 <tr>
 <td><a id="linenum381" class="linenum-cell" data-linenum="381" href="#linenum381"></a></td>
-<td><pre>           System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum128">tokenData</a>, <a class="variable" href="#linenum136">rrc</a>, <a class="variable" href="#linenum379">newBytes</a>, 0, <a class="variable" href="#linenum129">tokenDataLen</a>-<a class="variable" href="#linenum136">rrc</a>);</pre></td>
+<td><pre>           System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum128">tokenData</a>, <a class="variable" href="#linenum136">rrc</a>, <a class="variable" href="#linenum379">newBytes</a>, 0, <a class="variable" href="#linenum129">tokenDataLen</a>-<a class="variable" href="#linenum136">rrc</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum382" class="linenum-cell" data-linenum="382" href="#linenum382"></a></td>
-<td><pre>           System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum128">tokenData</a>, 0, <a class="variable" href="#linenum379">newBytes</a>, <a class="variable" href="#linenum129">tokenDataLen</a>-<a class="variable" href="#linenum136">rrc</a>, <a class="variable" href="#linenum136">rrc</a>);</pre></td>
+<td><pre>           System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum128">tokenData</a>, 0, <a class="variable" href="#linenum379">newBytes</a>, <a class="variable" href="#linenum129">tokenDataLen</a>-<a class="variable" href="#linenum136">rrc</a>, <a class="variable" href="#linenum136">rrc</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum383" class="linenum-cell" data-linenum="383" href="#linenum383"></a></td>
@@ -1724,7 +1724,7 @@
 </tr>
 <tr>
 <td><a id="linenum430" class="linenum-cell" data-linenum="430" href="#linenum430"></a></td>
-<td><pre>        return <a class="variable" href="#linenum147">cipherHelper</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/CipherHelper.html#linenum320">calculateChecksum</a>(<a class="variable" href="#linenum417">tokenHeaderBytes</a>, <a class="variable" href="#linenum402">data</a>,</pre></td>
+<td><pre>        return <a class="variable" href="#linenum147">cipherHelper</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/CipherHelper.html#linenum318">calculateChecksum</a>(<a class="variable" href="#linenum417">tokenHeaderBytes</a>, <a class="variable" href="#linenum402">data</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum431" class="linenum-cell" data-linenum="431" href="#linenum431"></a></td>
@@ -1820,7 +1820,7 @@
 </tr>
 <tr>
 <td><a id="linenum454" class="linenum-cell" data-linenum="454" href="#linenum454"></a></td>
-<td><pre>        this.seqNumber = <a class="variable" href="#linenum186">context</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5Context.html#linenum370">incrementMySequenceNumber</a>();</pre></td>
+<td><pre>        this.seqNumber = <a class="variable" href="#linenum186">context</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5Context.html#linenum373">incrementMySequenceNumber</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum455" class="linenum-cell" data-linenum="455" href="#linenum455"></a></td>
@@ -1852,7 +1852,7 @@
 </tr>
 <tr>
 <td><a id="linenum462" class="linenum-cell" data-linenum="462" href="#linenum462"></a></td>
-<td><pre>        this.initiator = <a class="variable" href="#linenum457">context</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5Context.html#linenum560">isInitiator</a>();</pre></td>
+<td><pre>        this.initiator = <a class="variable" href="#linenum457">context</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5Context.html#linenum563">isInitiator</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum463" class="linenum-cell" data-linenum="463" href="#linenum463"></a></td>
@@ -1860,7 +1860,7 @@
 </tr>
 <tr>
 <td><a id="linenum464" class="linenum-cell" data-linenum="464" href="#linenum464"></a></td>
-<td><pre>        this.have_acceptor_subkey = <a class="variable" href="#linenum457">context</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5Context.html#linenum407">getKeySrc</a>() == Krb5Context.ACCEPTOR_SUBKEY;</pre></td>
+<td><pre>        this.have_acceptor_subkey = <a class="variable" href="#linenum457">context</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5Context.html#linenum410">getKeySrc</a>() == Krb5Context.ACCEPTOR_SUBKEY;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum465" class="linenum-cell" data-linenum="465" href="#linenum465"></a></td>
@@ -1868,7 +1868,7 @@
 </tr>
 <tr>
 <td><a id="linenum466" class="linenum-cell" data-linenum="466" href="#linenum466"></a></td>
-<td><pre>        this.cipherHelper = <a class="variable" href="#linenum457">context</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5Context.html#linenum361">getCipherHelper</a>(null);</pre></td>
+<td><pre>        this.cipherHelper = <a class="variable" href="#linenum457">context</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/krb5/Krb5Context.html#linenum364">getCipherHelper</a>(null);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum467" class="linenum-cell" data-linenum="467" href="#linenum467"></a></td>
@@ -2012,11 +2012,11 @@
 </tr>
 <tr>
 <td><a id="linenum502" class="linenum-cell" data-linenum="502" href="#linenum502"></a></td>
-<td><pre>         private int tokenId;</pre></td>
+<td><pre>        private int tokenId;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum503" class="linenum-cell" data-linenum="503" href="#linenum503"></a></td>
-<td><pre>         private byte[] bytes = new byte[<a class="variable" href="#linenum100">TOKEN_HEADER_SIZE</a>];</pre></td>
+<td><pre>        private byte[] bytes = new byte[<a class="variable" href="#linenum100">TOKEN_HEADER_SIZE</a>];</pre></td>
 </tr>
 <tr>
 <td><a id="linenum504" class="linenum-cell" data-linenum="504" href="#linenum504"></a></td>
@@ -2024,11 +2024,11 @@
 </tr>
 <tr>
 <td><a id="linenum505" class="linenum-cell" data-linenum="505" href="#linenum505"></a></td>
-<td><pre>         <span class='comment'>// Writes a new token header</span></pre></td>
+<td><pre>        <span class='comment'>// Writes a new token header</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum506" class="linenum-cell" data-linenum="506" href="#linenum506"></a></td>
-<td><pre>         public MessageTokenHeader(int tokenId, boolean conf) throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a> {</pre></td>
+<td><pre>        public MessageTokenHeader(int tokenId, boolean conf) throws <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/GSSException.html#linenum42">GSSException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum507" class="linenum-cell" data-linenum="507" href="#linenum507"></a></td>
@@ -2452,7 +2452,7 @@
 </tr>
 <tr>
 <td><a id="linenum612" class="linenum-cell" data-linenum="612" href="#linenum612"></a></td>
-<td><pre>            <a class="variable" href="#linenum127">seqNumber</a> = readBigEndian(<a class="variable" href="#linenum503">bytes</a>, 0, 8);</pre></td>
+<td><pre>            <a class="variable" href="#linenum127">seqNumber</a> = readBigEndian(<a class="variable" href="#linenum503">bytes</a>, 12, 4);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum613" class="linenum-cell" data-linenum="613" href="#linenum613"></a></td>
@@ -2488,7 +2488,7 @@
 </tr>
 <tr>
 <td><a id="linenum621" class="linenum-cell" data-linenum="621" href="#linenum621"></a></td>
-<td><pre>            <a class="variable" href="#linenum620">os</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum106">write</a>(<a class="variable" href="#linenum503">bytes</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum620">os</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum62">write</a>(<a class="variable" href="#linenum503">bytes</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum622" class="linenum-cell" data-linenum="622" href="#linenum622"></a></td>

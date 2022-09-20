@@ -184,11 +184,11 @@
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
-<td><pre>    private final Kind keyKind; <span class='comment'>// a reference kind for the cache keys</span></pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/LambdaFormEditor.html#linenum69">Kind</a> keyKind; <span class='comment'>// a reference kind for the cache keys</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
-<td><pre>    private final Kind valueKind; <span class='comment'>// a reference kind for the cache values</span></pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/LambdaFormEditor.html#linenum69">Kind</a> valueKind; <span class='comment'>// a reference kind for the cache values</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
@@ -196,7 +196,7 @@
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>&gt; queue = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a>&lt;&gt;(); <span class='comment'>// queue for references to remove</span></pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>&gt; queue = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a>&lt;&gt;(); <span class='comment'>// queue for references to remove</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
@@ -292,7 +292,7 @@
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
-<td><pre>    public Cache(Kind keyKind, Kind valueKind) {</pre></td>
+<td><pre>    public Cache(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/LambdaFormEditor.html#linenum69">Kind</a> keyKind, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/LambdaFormEditor.html#linenum69">Kind</a> valueKind) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
@@ -360,7 +360,7 @@
 </tr>
 <tr>
 <td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre>    public Cache(Kind keyKind, Kind valueKind, boolean identity) {</pre></td>
+<td><pre>    public Cache(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/LambdaFormEditor.html#linenum69">Kind</a> keyKind, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/LambdaFormEditor.html#linenum69">Kind</a> valueKind, boolean identity) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
@@ -440,7 +440,7 @@
 </tr>
 <tr>
 <td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>        Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum288">requireNonNull</a>(<a class="variable" href="#linenum108">key</a>, <span class='string'>&quot;key&quot;</span>);</pre></td>
+<td><pre>        Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum226">requireNonNull</a>(<a class="variable" href="#linenum108">key</a>, <span class='string'>&quot;key&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
@@ -492,35 +492,35 @@
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>            int index = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/util/Cache.html#linenum237">index</a>(<a class="variable" href="#linenum111">hash</a>, this.table);</pre></td>
+<td><pre>            <a class="variable" href="#linenum115">current</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/util/Cache.html#linenum252">getEntryValue</a>(<a class="variable" href="#linenum108">key</a>, <a class="variable" href="#linenum111">hash</a>, this.table[<a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/util/Cache.html#linenum237">index</a>(<a class="variable" href="#linenum111">hash</a>, this.table)]);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>            <a class="variable" href="#linenum115">current</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/util/Cache.html#linenum252">getEntryValue</a>(<a class="variable" href="#linenum108">key</a>, <a class="variable" href="#linenum111">hash</a>, this.table[<a class="variable" href="#linenum122">index</a>]);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
 <td><pre>            if (<a class="variable" href="#linenum115">current</a> != null) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
+<td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
 <td><pre>                return <a class="variable" href="#linenum115">current</a>;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
+<td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
 <td><pre>            }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
+<td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
 <td><pre>            V value = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/util/Cache.html#linenum60">create</a>(<a class="variable" href="#linenum108">key</a>);</pre></td>
 </tr>
 <tr>
+<td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
+<td><pre>            Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum226">requireNonNull</a>(<a class="variable" href="#linenum126">value</a>, <span class='string'>&quot;value&quot;</span>);</pre></td>
+</tr>
+<tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>            Objects.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Objects.html#linenum288">requireNonNull</a>(<a class="variable" href="#linenum127">value</a>, <span class='string'>&quot;value&quot;</span>);</pre></td>
+<td><pre>            int index = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/beans/util/Cache.html#linenum237">index</a>(<a class="variable" href="#linenum111">hash</a>, this.table);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
-<td><pre>            this.table[<a class="variable" href="#linenum122">index</a>] = new CacheEntry&lt;&gt;(<a class="variable" href="#linenum111">hash</a>, <a class="variable" href="#linenum108">key</a>, <a class="variable" href="#linenum127">value</a>, this.table[<a class="variable" href="#linenum122">index</a>]);</pre></td>
+<td><pre>            this.table[<a class="variable" href="#linenum128">index</a>] = new CacheEntry&lt;&gt;(<a class="variable" href="#linenum111">hash</a>, <a class="variable" href="#linenum108">key</a>, <a class="variable" href="#linenum126">value</a>, this.table[<a class="variable" href="#linenum128">index</a>]);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
@@ -600,7 +600,7 @@
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre>            return <a class="variable" href="#linenum127">value</a>;</pre></td>
+<td><pre>            return <a class="variable" href="#linenum126">value</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
@@ -876,7 +876,7 @@
 </tr>
 <tr>
 <td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>
-<td><pre>            int hash = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum508">identityHashCode</a>(<a class="variable" href="#linenum216">key</a>);</pre></td>
+<td><pre>            int hash = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum510">identityHashCode</a>(<a class="variable" href="#linenum216">key</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>
@@ -1552,7 +1552,7 @@
 </tr>
 <tr>
 <td><a id="linenum387" class="linenum-cell" data-linenum="387" href="#linenum387"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> getReferent();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> getReferent();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum388" class="linenum-cell" data-linenum="388" href="#linenum388"></a></td>
@@ -1632,7 +1632,7 @@
 </tr>
 <tr>
 <td><a id="linenum407" class="linenum-cell" data-linenum="407" href="#linenum407"></a></td>
-<td><pre>            &lt;T&gt; Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; create(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> value, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a>&lt;? super <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; queue) {</pre></td>
+<td><pre>            &lt;T&gt; Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; create(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> value, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a>&lt;? super <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; queue) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum408" class="linenum-cell" data-linenum="408" href="#linenum408"></a></td>
@@ -1652,7 +1652,7 @@
 </tr>
 <tr>
 <td><a id="linenum412" class="linenum-cell" data-linenum="412" href="#linenum412"></a></td>
-<td><pre>            &lt;T&gt; Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; create(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> referent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a>&lt;? super <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; queue) {</pre></td>
+<td><pre>            &lt;T&gt; Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; create(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> referent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a>&lt;? super <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; queue) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum413" class="linenum-cell" data-linenum="413" href="#linenum413"></a></td>
@@ -1680,7 +1680,7 @@
 </tr>
 <tr>
 <td><a id="linenum419" class="linenum-cell" data-linenum="419" href="#linenum419"></a></td>
-<td><pre>            &lt;T&gt; Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; create(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> referent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a>&lt;? super <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; queue) {</pre></td>
+<td><pre>            &lt;T&gt; Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; create(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> referent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a>&lt;? super <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; queue) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum420" class="linenum-cell" data-linenum="420" href="#linenum420"></a></td>
@@ -1748,7 +1748,7 @@
 </tr>
 <tr>
 <td><a id="linenum436" class="linenum-cell" data-linenum="436" href="#linenum436"></a></td>
-<td><pre>        abstract &lt;T&gt; Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; create(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> referent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a>&lt;? super <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; queue);</pre></td>
+<td><pre>        abstract &lt;T&gt; Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; create(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> referent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a>&lt;? super <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; queue);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum437" class="linenum-cell" data-linenum="437" href="#linenum437"></a></td>
@@ -1784,7 +1784,7 @@
 </tr>
 <tr>
 <td><a id="linenum445" class="linenum-cell" data-linenum="445" href="#linenum445"></a></td>
-<td><pre>        private static final class Strong&lt;T&gt; implements Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; {</pre></td>
+<td><pre>        private static final class Strong&lt;T&gt; implements Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum446" class="linenum-cell" data-linenum="446" href="#linenum446"></a></td>
@@ -1792,7 +1792,7 @@
 </tr>
 <tr>
 <td><a id="linenum447" class="linenum-cell" data-linenum="447" href="#linenum447"></a></td>
-<td><pre>            private final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> referent;</pre></td>
+<td><pre>            private final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> referent;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum448" class="linenum-cell" data-linenum="448" href="#linenum448"></a></td>
@@ -1824,7 +1824,7 @@
 </tr>
 <tr>
 <td><a id="linenum455" class="linenum-cell" data-linenum="455" href="#linenum455"></a></td>
-<td><pre>            private Strong(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> referent) {</pre></td>
+<td><pre>            private Strong(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> referent) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum456" class="linenum-cell" data-linenum="456" href="#linenum456"></a></td>
@@ -1900,7 +1900,7 @@
 </tr>
 <tr>
 <td><a id="linenum474" class="linenum-cell" data-linenum="474" href="#linenum474"></a></td>
-<td><pre>            public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> getReferent() {</pre></td>
+<td><pre>            public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> getReferent() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum475" class="linenum-cell" data-linenum="475" href="#linenum475"></a></td>
@@ -2016,7 +2016,7 @@
 </tr>
 <tr>
 <td><a id="linenum503" class="linenum-cell" data-linenum="503" href="#linenum503"></a></td>
-<td><pre>        private static final class Soft&lt;T&gt; extends <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/SoftReference.html#linenum64">SoftReference</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; implements Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; {</pre></td>
+<td><pre>        private static final class Soft&lt;T&gt; extends <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/SoftReference.html#linenum64">SoftReference</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; implements Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum504" class="linenum-cell" data-linenum="504" href="#linenum504"></a></td>
@@ -2060,7 +2060,7 @@
 </tr>
 <tr>
 <td><a id="linenum514" class="linenum-cell" data-linenum="514" href="#linenum514"></a></td>
-<td><pre>            private Soft(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> referent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a>&lt;? super <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; queue) {</pre></td>
+<td><pre>            private Soft(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> referent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a>&lt;? super <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; queue) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum515" class="linenum-cell" data-linenum="515" href="#linenum515"></a></td>
@@ -2136,7 +2136,7 @@
 </tr>
 <tr>
 <td><a id="linenum533" class="linenum-cell" data-linenum="533" href="#linenum533"></a></td>
-<td><pre>            public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> getReferent() {</pre></td>
+<td><pre>            public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> getReferent() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum534" class="linenum-cell" data-linenum="534" href="#linenum534"></a></td>
@@ -2252,7 +2252,7 @@
 </tr>
 <tr>
 <td><a id="linenum562" class="linenum-cell" data-linenum="562" href="#linenum562"></a></td>
-<td><pre>        private static final class Weak&lt;T&gt; extends <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/WeakReference.html#linenum48">WeakReference</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; implements Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; {</pre></td>
+<td><pre>        private static final class Weak&lt;T&gt; extends <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/WeakReference.html#linenum48">WeakReference</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; implements Ref&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum563" class="linenum-cell" data-linenum="563" href="#linenum563"></a></td>
@@ -2296,7 +2296,7 @@
 </tr>
 <tr>
 <td><a id="linenum573" class="linenum-cell" data-linenum="573" href="#linenum573"></a></td>
-<td><pre>            private Weak(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> referent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum36">ReferenceQueue</a>&lt;? super <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; queue) {</pre></td>
+<td><pre>            private Weak(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> owner, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> referent, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/ReferenceQueue.html#linenum38">ReferenceQueue</a>&lt;? super <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; queue) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum574" class="linenum-cell" data-linenum="574" href="#linenum574"></a></td>
@@ -2372,11 +2372,11 @@
 </tr>
 <tr>
 <td><a id="linenum592" class="linenum-cell" data-linenum="592" href="#linenum592"></a></td>
-<td><pre>            public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> getReferent() {</pre></td>
+<td><pre>            public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> getReferent() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum593" class="linenum-cell" data-linenum="593" href="#linenum593"></a></td>
-<td><pre>                return <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/Reference.html#linenum201">get</a>();</pre></td>
+<td><pre>                return <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/Reference.html#linenum253">get</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum594" class="linenum-cell" data-linenum="594" href="#linenum594"></a></td>
@@ -2412,7 +2412,7 @@
 </tr>
 <tr>
 <td><a id="linenum602" class="linenum-cell" data-linenum="602" href="#linenum602"></a></td>
-<td><pre>                return null == <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/Reference.html#linenum201">get</a>();</pre></td>
+<td><pre>                return null == <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/Reference.html#linenum253">get</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum603" class="linenum-cell" data-linenum="603" href="#linenum603"></a></td>

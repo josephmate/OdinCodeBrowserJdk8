@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 1996, 2011, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 1996, 2019, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -508,7 +508,7 @@
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre>            int c = super.<a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedReader.html#linenum276">read</a>();</pre></td>
+<td><pre>            int c = super.<a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedReader.html#linenum177">read</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
@@ -520,7 +520,7 @@
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
-<td><pre>                    <a class="variable" href="#linenum126">c</a> = super.<a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedReader.html#linenum276">read</a>();</pre></td>
+<td><pre>                    <a class="variable" href="#linenum126">c</a> = super.<a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedReader.html#linenum177">read</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
@@ -808,7 +808,7 @@
 </tr>
 <tr>
 <td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> l = super.<a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedReader.html#linenum388">readLine</a>(<a class="variable" href="#linenum59">skipLF</a>);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> l = super.<a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedReader.html#linenum312">readLine</a>(<a class="variable" href="#linenum59">skipLF</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
@@ -932,7 +932,7 @@
 </tr>
 <tr>
 <td><a id="linenum232" class="linenum-cell" data-linenum="232" href="#linenum232"></a></td>
-<td><pre>        int nn = (int) Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1393">min</a>(<a class="variable" href="#linenum229">n</a>, <a class="variable" href="#linenum210">maxSkipBufferSize</a>);</pre></td>
+<td><pre>        int nn = (int) Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1335">min</a>(<a class="variable" href="#linenum229">n</a>, <a class="variable" href="#linenum210">maxSkipBufferSize</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum233" class="linenum-cell" data-linenum="233" href="#linenum233"></a></td>
@@ -956,7 +956,7 @@
 </tr>
 <tr>
 <td><a id="linenum238" class="linenum-cell" data-linenum="238" href="#linenum238"></a></td>
-<td><pre>                int nc = <a class="type" href="/OdinCodeBrowserJdk8/java/io/LineNumberReader.html#linenum163">read</a>(<a class="variable" href="#linenum213">skipBuffer</a>, 0, (int) Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1393">min</a>(<a class="variable" href="#linenum236">r</a>, <a class="variable" href="#linenum232">nn</a>));</pre></td>
+<td><pre>                int nc = <a class="type" href="/OdinCodeBrowserJdk8/java/io/LineNumberReader.html#linenum163">read</a>(<a class="variable" href="#linenum213">skipBuffer</a>, 0, (int) Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1335">min</a>(<a class="variable" href="#linenum236">r</a>, <a class="variable" href="#linenum232">nn</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum239" class="linenum-cell" data-linenum="239" href="#linenum239"></a></td>
@@ -1052,90 +1052,110 @@
 </tr>
 <tr>
 <td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
-<td><pre>            super.<a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedReader.html#linenum490">mark</a>(<a class="variable" href="#linenum260">readAheadLimit</a>);</pre></td>
+<td><pre>            // If the most recently read character is '\r', then increment the</pre></td>
 </tr>
 <tr>
 <td><a id="linenum263" class="linenum-cell" data-linenum="263" href="#linenum263"></a></td>
-<td><pre>            <a class="variable" href="#linenum56">markedLineNumber</a> = <a class="variable" href="#linenum97">lineNumber</a>;</pre></td>
+<td><pre>            // read ahead limit as in this case if the next character is '\n',</pre></td>
 </tr>
 <tr>
 <td><a id="linenum264" class="linenum-cell" data-linenum="264" href="#linenum264"></a></td>
-<td><pre>            <a class="variable" href="#linenum62">markedSkipLF</a>     = <a class="variable" href="#linenum59">skipLF</a>;</pre></td>
+<td><pre>            <span class='comment'>// two characters would actually be read by the next read().</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum265" class="linenum-cell" data-linenum="265" href="#linenum265"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum59">skipLF</a>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum266" class="linenum-cell" data-linenum="266" href="#linenum266"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>                <a class="variable" href="#linenum260">readAheadLimit</a>++;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum267" class="linenum-cell" data-linenum="267" href="#linenum267"></a></td>
-<td><pre></pre></td>
+<td><pre>            super.<a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedReader.html#linenum490">mark</a>(<a class="variable" href="#linenum260">readAheadLimit</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum268" class="linenum-cell" data-linenum="268" href="#linenum268"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>            <a class="variable" href="#linenum56">markedLineNumber</a> = <a class="variable" href="#linenum97">lineNumber</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum269" class="linenum-cell" data-linenum="269" href="#linenum269"></a></td>
-<td><pre><span class='comment'>     * Reset the stream to the most recent mark.<span class='comment'></pre></td>
+<td><pre>            <a class="variable" href="#linenum62">markedSkipLF</a>     = <a class="variable" href="#linenum59">skipLF</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum270" class="linenum-cell" data-linenum="270" href="#linenum270"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum271" class="linenum-cell" data-linenum="271" href="#linenum271"></a></td>
-<td><pre><span class='comment'>     * @throws  IOException<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum272" class="linenum-cell" data-linenum="272" href="#linenum272"></a></td>
-<td><pre><span class='comment'>     *          If the stream has not been marked, or if the mark has been<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum273" class="linenum-cell" data-linenum="273" href="#linenum273"></a></td>
-<td><pre><span class='comment'>     *          invalidated<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
-<td><pre>    public void reset() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
-<td><pre>        synchronized (lock) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
-<td><pre>            super.<a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedReader.html#linenum508">reset</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
-<td><pre>            <a class="variable" href="#linenum97">lineNumber</a> = <a class="variable" href="#linenum56">markedLineNumber</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
-<td><pre>            <a class="variable" href="#linenum59">skipLF</a>     = <a class="variable" href="#linenum62">markedSkipLF</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
+<td><a id="linenum271" class="linenum-cell" data-linenum="271" href="#linenum271"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum282" class="linenum-cell" data-linenum="282" href="#linenum282"></a></td>
+<td><a id="linenum272" class="linenum-cell" data-linenum="272" href="#linenum272"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum273" class="linenum-cell" data-linenum="273" href="#linenum273"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
+<td><pre><span class='comment'>     * Reset the stream to the most recent mark.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
+<td><pre><span class='comment'>     * @throws  IOException<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
+<td><pre><span class='comment'>     *          If the stream has not been marked, or if the mark has been<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
+<td><pre><span class='comment'>     *          invalidated<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
+<td><pre>    public void reset() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
+<td><pre>        synchronized (lock) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum282" class="linenum-cell" data-linenum="282" href="#linenum282"></a></td>
+<td><pre>            super.<a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedReader.html#linenum508">reset</a>();</pre></td>
+</tr>
+<tr>
 <td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
+<td><pre>            <a class="variable" href="#linenum97">lineNumber</a> = <a class="variable" href="#linenum56">markedLineNumber</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
+<td><pre>            <a class="variable" href="#linenum59">skipLF</a>     = <a class="variable" href="#linenum62">markedSkipLF</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum285" class="linenum-cell" data-linenum="285" href="#linenum285"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum286" class="linenum-cell" data-linenum="286" href="#linenum286"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum287" class="linenum-cell" data-linenum="287" href="#linenum287"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum288" class="linenum-cell" data-linenum="288" href="#linenum288"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

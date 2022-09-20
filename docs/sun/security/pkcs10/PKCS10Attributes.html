@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 1997, 2011, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 1997, 2019, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -212,11 +212,11 @@
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs10/PKCS10Attribute.html#linenum57">PKCS10Attribute</a>&gt; map =</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs10/PKCS10Attribute.html#linenum57">PKCS10Attribute</a>&gt; map =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
-<td><pre>                        new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum130">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs10/PKCS10Attribute.html#linenum57">PKCS10Attribute</a>&gt;(3);</pre></td>
+<td><pre>                        new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Hashtable.html#linenum131">Hashtable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs10/PKCS10Attribute.html#linenum57">PKCS10Attribute</a>&gt;(3);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
@@ -408,7 +408,7 @@
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
-<td><pre><span class='comment'>     * Implements the &lt;code&gt;DerEncoder&lt;/code&gt; interface.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Implements the {@code DerEncoder} interface.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
@@ -456,7 +456,7 @@
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
-<td><pre>        <a class="variable" href="#linenum112">attrOut</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum337">putOrderedSetOf</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum908">createTag</a>(DerValue.TAG_CONTEXT,</pre></td>
+<td><pre>        <a class="variable" href="#linenum112">attrOut</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum337">putOrderedSetOf</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum935">createTag</a>(DerValue.TAG_CONTEXT,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
@@ -468,7 +468,7 @@
 </tr>
 <tr>
 <td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
-<td><pre>        <a class="variable" href="#linenum106">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum106">write</a>(<a class="variable" href="#linenum112">attrOut</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum177">toByteArray</a>());</pre></td>
+<td><pre>        <a class="variable" href="#linenum106">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/OutputStream.html#linenum62">write</a>(<a class="variable" href="#linenum112">attrOut</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum190">toByteArray</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
@@ -624,7 +624,7 @@
 </tr>
 <tr>
 <td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre>        return (Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum1072">unmodifiableCollection</a>(<a class="variable" href="#linenum52">map</a>.values()));</pre></td>
+<td><pre>        return (Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum1014">unmodifiableCollection</a>(<a class="variable" href="#linenum52">map</a>.values()));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
@@ -644,11 +644,11 @@
 </tr>
 <tr>
 <td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre><span class='comment'>     * object. If the &lt;code&gt;other&lt;/code&gt; object is an<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * object. If the {@code other} object is an<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre><span class='comment'>     * &lt;code&gt;instanceof&lt;/code&gt; &lt;code&gt;PKCS10Attributes&lt;/code&gt;, then<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * {@code instanceof} {@code PKCS10Attributes}, then<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
@@ -836,7 +836,7 @@
 </tr>
 <tr>
 <td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
-<td><pre><span class='comment'>     * Returns a string representation of this &lt;tt&gt;PKCS10Attributes&lt;/tt&gt; object<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a string representation of this {@code PKCS10Attributes} object<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
@@ -844,11 +844,11 @@
 </tr>
 <tr>
 <td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
-<td><pre><span class='comment'>     * by the ASCII characters &quot;&lt;tt&gt;,&amp;nbsp;&lt;/tt&gt;&quot; (comma and space).<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * by the ASCII characters &quot;{@code ,&amp;nbsp;}&quot; (comma and space).<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;Overrides the &lt;tt&gt;toString&lt;/tt&gt; method of &lt;tt&gt;Object&lt;/tt&gt;.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * &lt;p&gt;Overrides the {@code toString} method of {@code Object}.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>

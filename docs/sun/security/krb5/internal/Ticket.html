@@ -184,7 +184,7 @@
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
-<td><pre> * &lt;xmp&gt;</pre></td>
+<td><pre> * &lt;pre&gt;{@code</pre></td>
 </tr>
 <tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
@@ -212,7 +212,7 @@
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
-<td><pre> * &lt;/xmp&gt;</pre></td>
+<td><pre> * }&lt;/pre&gt;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
@@ -288,7 +288,7 @@
 </tr>
 <tr>
 <td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
-<td><pre>        <a class="variable" href="#linenum70">new_ticket</a>.sname = (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum59">PrincipalName</a>)<a class="variable" href="#linenum63">sname</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum176">clone</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum70">new_ticket</a>.sname = (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum59">PrincipalName</a>)<a class="variable" href="#linenum63">sname</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum184">clone</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
@@ -440,7 +440,7 @@
 </tr>
 <tr>
 <td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>        if (((<a class="variable" href="#linenum105">encoding</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum417">getTag</a>() &amp; (byte)0x1F) != Krb5.KRB_TKT)</pre></td>
+<td><pre>        if (((<a class="variable" href="#linenum105">encoding</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum443">getTag</a>() &amp; (byte)0x1F) != Krb5.KRB_TKT)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
@@ -448,7 +448,7 @@
 </tr>
 <tr>
 <td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
-<td><pre>            || (<a class="variable" href="#linenum105">encoding</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum198">isConstructed</a>() != true))</pre></td>
+<td><pre>            || (<a class="variable" href="#linenum105">encoding</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum193">isConstructed</a>() != true))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
@@ -456,11 +456,11 @@
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
-<td><pre>        <a class="variable" href="#linenum107">der</a> = <a class="variable" href="#linenum105">encoding</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum413">getData</a>().getDerValue();</pre></td>
+<td><pre>        <a class="variable" href="#linenum107">der</a> = <a class="variable" href="#linenum105">encoding</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum439">getData</a>().getDerValue();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum107">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum417">getTag</a>() != DerValue.tag_Sequence)</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum107">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum443">getTag</a>() != DerValue.tag_Sequence)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
@@ -468,11 +468,11 @@
 </tr>
 <tr>
 <td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
-<td><pre>        <a class="variable" href="#linenum108">subDer</a> = <a class="variable" href="#linenum107">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum413">getData</a>().getDerValue();</pre></td>
+<td><pre>        <a class="variable" href="#linenum108">subDer</a> = <a class="variable" href="#linenum107">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum439">getData</a>().getDerValue();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
-<td><pre>        if ((<a class="variable" href="#linenum108">subDer</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum417">getTag</a>() &amp; (byte)0x1F) != (byte)0x00)</pre></td>
+<td><pre>        if ((<a class="variable" href="#linenum108">subDer</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum443">getTag</a>() &amp; (byte)0x1F) != (byte)0x00)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
@@ -480,7 +480,7 @@
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre>        <a class="variable" href="#linenum62">tkt_vno</a> = <a class="variable" href="#linenum108">subDer</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum413">getData</a>().getBigInteger().intValue();</pre></td>
+<td><pre>        <a class="variable" href="#linenum62">tkt_vno</a> = <a class="variable" href="#linenum108">subDer</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum439">getData</a>().getBigInteger().intValue();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
@@ -492,19 +492,19 @@
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/Realm.html#linenum49">Realm</a> srealm = Realm.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/Realm.html#linenum219">parse</a>(<a class="variable" href="#linenum107">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum413">getData</a>(), (byte)0x01, false);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/Realm.html#linenum48">Realm</a> srealm = Realm.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/Realm.html#linenum223">parse</a>(<a class="variable" href="#linenum107">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum439">getData</a>(), (byte)0x01, false);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>        <a class="variable" href="#linenum63">sname</a> = PrincipalName.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum294">parse</a>(<a class="variable" href="#linenum107">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum413">getData</a>(), (byte)0x02, false, <a class="variable" href="#linenum122">srealm</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum63">sname</a> = PrincipalName.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum303">parse</a>(<a class="variable" href="#linenum107">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum439">getData</a>(), (byte)0x02, false, <a class="variable" href="#linenum122">srealm</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>        <a class="variable" href="#linenum64">encPart</a> = EncryptedData.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/EncryptedData.html#linenum322">parse</a>(<a class="variable" href="#linenum107">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum413">getData</a>(), (byte)0x03, false);</pre></td>
+<td><pre>        <a class="variable" href="#linenum64">encPart</a> = EncryptedData.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/EncryptedData.html#linenum322">parse</a>(<a class="variable" href="#linenum107">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum439">getData</a>(), (byte)0x03, false);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum107">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum413">getData</a>().available() &gt; 0)</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum107">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum439">getData</a>().available() &gt; 0)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
@@ -560,23 +560,23 @@
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre>        <a class="variable" href="#linenum137">temp</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum182">putInteger</a>(BigInteger.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum1120">valueOf</a>(<a class="variable" href="#linenum62">tkt_vno</a>));</pre></td>
+<td><pre>        <a class="variable" href="#linenum137">temp</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum163">putInteger</a>(BigInteger.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum1098">valueOf</a>(<a class="variable" href="#linenum62">tkt_vno</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre>        <a class="variable" href="#linenum136">bytes</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum92">write</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum908">createTag</a>(DerValue.TAG_CONTEXT, true, (byte)0x00), <a class="variable" href="#linenum137">temp</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum136">bytes</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum92">write</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum935">createTag</a>(DerValue.TAG_CONTEXT, true, (byte)0x00), <a class="variable" href="#linenum137">temp</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
-<td><pre>        <a class="variable" href="#linenum136">bytes</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum92">write</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum908">createTag</a>(DerValue.TAG_CONTEXT, true, (byte)0x01), <a class="variable" href="#linenum63">sname</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum518">getRealm</a>().asn1Encode());</pre></td>
+<td><pre>        <a class="variable" href="#linenum136">bytes</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum77">write</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum935">createTag</a>(DerValue.TAG_CONTEXT, true, (byte)0x01), <a class="variable" href="#linenum63">sname</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum535">getRealm</a>().asn1Encode());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre>        <a class="variable" href="#linenum136">bytes</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum92">write</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum908">createTag</a>(DerValue.TAG_CONTEXT, true, (byte)0x02), <a class="variable" href="#linenum63">sname</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum564">asn1Encode</a>());</pre></td>
+<td><pre>        <a class="variable" href="#linenum136">bytes</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum77">write</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum935">createTag</a>(DerValue.TAG_CONTEXT, true, (byte)0x02), <a class="variable" href="#linenum63">sname</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum583">asn1Encode</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre>        <a class="variable" href="#linenum136">bytes</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum92">write</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum908">createTag</a>(DerValue.TAG_CONTEXT, true, (byte)0x03), <a class="variable" href="#linenum64">encPart</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/EncryptedData.html#linenum283">asn1Encode</a>());</pre></td>
+<td><pre>        <a class="variable" href="#linenum136">bytes</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum77">write</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum935">createTag</a>(DerValue.TAG_CONTEXT, true, (byte)0x03), <a class="variable" href="#linenum64">encPart</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/EncryptedData.html#linenum283">asn1Encode</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
@@ -592,11 +592,11 @@
 </tr>
 <tr>
 <td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
-<td><pre>        <a class="variable" href="#linenum146">ticket</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum92">write</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum908">createTag</a>(DerValue.TAG_APPLICATION, true, (byte)0x01), <a class="variable" href="#linenum137">temp</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum146">ticket</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerOutputStream.html#linenum92">write</a>(DerValue.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum935">createTag</a>(DerValue.TAG_APPLICATION, true, (byte)0x01), <a class="variable" href="#linenum137">temp</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>        return <a class="variable" href="#linenum146">ticket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum177">toByteArray</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum146">ticket</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum190">toByteArray</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
@@ -656,7 +656,7 @@
 </tr>
 <tr>
 <td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre>        if ((<a class="variable" href="#linenum162">optional</a>) &amp;&amp; (((byte)<a class="variable" href="#linenum162">data</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum518">peekByte</a>() &amp; (byte)0x1F)!= <a class="variable" href="#linenum162">explicitTag</a>))</pre></td>
+<td><pre>        if ((<a class="variable" href="#linenum162">optional</a>) &amp;&amp; (((byte)<a class="variable" href="#linenum162">data</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum558">peekByte</a>() &amp; (byte)0x1F)!= <a class="variable" href="#linenum162">explicitTag</a>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
@@ -664,11 +664,11 @@
 </tr>
 <tr>
 <td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a> der = <a class="variable" href="#linenum162">data</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum416">getDerValue</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a> der = <a class="variable" href="#linenum162">data</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum456">getDerValue</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum162">explicitTag</a> != (<a class="variable" href="#linenum165">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum417">getTag</a>() &amp; (byte)0x1F))  {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum162">explicitTag</a> != (<a class="variable" href="#linenum165">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum443">getTag</a>() &amp; (byte)0x1F))  {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
@@ -684,7 +684,7 @@
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a> subDer = <a class="variable" href="#linenum165">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum413">getData</a>().getDerValue();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a> subDer = <a class="variable" href="#linenum165">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum439">getData</a>().getDerValue();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>

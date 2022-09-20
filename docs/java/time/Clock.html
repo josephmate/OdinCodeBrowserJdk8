@@ -432,7 +432,7 @@
 </tr>
 <tr>
 <td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
-<td><pre><span class='comment'> * This abstract class must be implemented with care to ensure other operate correctly.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * This abstract class must be implemented with care to ensure other classes operate correctly.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
@@ -1260,7 +1260,7 @@
 </tr>
 <tr>
 <td><a id="linenum314" class="linenum-cell" data-linenum="314" href="#linenum314"></a></td>
-<td><pre>    public static <a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum134">Clock</a> fixed(<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum212">Instant</a> fixedInstant, <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum177">ZoneId</a> zone) {</pre></td>
+<td><pre>    public static <a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum134">Clock</a> fixed(<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum207">Instant</a> fixedInstant, <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum177">ZoneId</a> zone) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum315" class="linenum-cell" data-linenum="315" href="#linenum315"></a></td>
@@ -1644,7 +1644,7 @@
 </tr>
 <tr>
 <td><a id="linenum410" class="linenum-cell" data-linenum="410" href="#linenum410"></a></td>
-<td><pre>    public abstract <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum212">Instant</a> instant();</pre></td>
+<td><pre>    public abstract <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum207">Instant</a> instant();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum411" class="linenum-cell" data-linenum="411" href="#linenum411"></a></td>
@@ -1872,7 +1872,7 @@
 </tr>
 <tr>
 <td><a id="linenum467" class="linenum-cell" data-linenum="467" href="#linenum467"></a></td>
-<td><pre>            return System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>();</pre></td>
+<td><pre>            return System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum468" class="linenum-cell" data-linenum="468" href="#linenum468"></a></td>
@@ -1884,11 +1884,11 @@
 </tr>
 <tr>
 <td><a id="linenum470" class="linenum-cell" data-linenum="470" href="#linenum470"></a></td>
-<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum212">Instant</a> instant() {</pre></td>
+<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum207">Instant</a> instant() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum471" class="linenum-cell" data-linenum="471" href="#linenum471"></a></td>
-<td><pre>            return Instant.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum348">ofEpochMilli</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum465">millis</a>());</pre></td>
+<td><pre>            return Instant.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum343">ofEpochMilli</a>(<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum465">millis</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum472" class="linenum-cell" data-linenum="472" href="#linenum472"></a></td>
@@ -1992,7 +1992,7 @@
 </tr>
 <tr>
 <td><a id="linenum497" class="linenum-cell" data-linenum="497" href="#linenum497"></a></td>
-<td><pre>        private final <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum212">Instant</a> instant;</pre></td>
+<td><pre>        private final <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum207">Instant</a> instant;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum498" class="linenum-cell" data-linenum="498" href="#linenum498"></a></td>
@@ -2004,7 +2004,7 @@
 </tr>
 <tr>
 <td><a id="linenum500" class="linenum-cell" data-linenum="500" href="#linenum500"></a></td>
-<td><pre>        FixedClock(<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum212">Instant</a> fixedInstant, <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum177">ZoneId</a> zone) {</pre></td>
+<td><pre>        FixedClock(<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum207">Instant</a> fixedInstant, <a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum177">ZoneId</a> zone) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum501" class="linenum-cell" data-linenum="501" href="#linenum501"></a></td>
@@ -2072,7 +2072,7 @@
 </tr>
 <tr>
 <td><a id="linenum517" class="linenum-cell" data-linenum="517" href="#linenum517"></a></td>
-<td><pre>            return <a class="variable" href="#linenum497">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum1235">toEpochMilli</a>();</pre></td>
+<td><pre>            return <a class="variable" href="#linenum497">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum1231">toEpochMilli</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum518" class="linenum-cell" data-linenum="518" href="#linenum518"></a></td>
@@ -2084,7 +2084,7 @@
 </tr>
 <tr>
 <td><a id="linenum520" class="linenum-cell" data-linenum="520" href="#linenum520"></a></td>
-<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum212">Instant</a> instant() {</pre></td>
+<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum207">Instant</a> instant() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum521" class="linenum-cell" data-linenum="521" href="#linenum521"></a></td>
@@ -2112,7 +2112,7 @@
 </tr>
 <tr>
 <td><a id="linenum527" class="linenum-cell" data-linenum="527" href="#linenum527"></a></td>
-<td><pre>                return <a class="variable" href="#linenum497">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum1295">equals</a>(<a class="variable" href="#linenum526">other</a>.instant) &amp;&amp; <a class="variable" href="#linenum509">zone</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum601">equals</a>(<a class="variable" href="#linenum526">other</a>.zone);</pre></td>
+<td><pre>                return <a class="variable" href="#linenum497">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum1297">equals</a>(<a class="variable" href="#linenum526">other</a>.instant) &amp;&amp; <a class="variable" href="#linenum509">zone</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum601">equals</a>(<a class="variable" href="#linenum526">other</a>.zone);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum528" class="linenum-cell" data-linenum="528" href="#linenum528"></a></td>
@@ -2136,7 +2136,7 @@
 </tr>
 <tr>
 <td><a id="linenum533" class="linenum-cell" data-linenum="533" href="#linenum533"></a></td>
-<td><pre>            return <a class="variable" href="#linenum497">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum1313">hashCode</a>() ^ <a class="variable" href="#linenum509">zone</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum618">hashCode</a>();</pre></td>
+<td><pre>            return <a class="variable" href="#linenum497">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum1315">hashCode</a>() ^ <a class="variable" href="#linenum509">zone</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneId.html#linenum618">hashCode</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum534" class="linenum-cell" data-linenum="534" href="#linenum534"></a></td>
@@ -2272,7 +2272,7 @@
 </tr>
 <tr>
 <td><a id="linenum567" class="linenum-cell" data-linenum="567" href="#linenum567"></a></td>
-<td><pre>            return Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum805">addExact</a>(<a class="variable" href="#linenum550">baseClock</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum397">millis</a>(), <a class="variable" href="#linenum550">offset</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Duration.html#linenum1170">toMillis</a>());</pre></td>
+<td><pre>            return Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum786">addExact</a>(<a class="variable" href="#linenum550">baseClock</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum397">millis</a>(), <a class="variable" href="#linenum550">offset</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Duration.html#linenum1170">toMillis</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum568" class="linenum-cell" data-linenum="568" href="#linenum568"></a></td>
@@ -2284,7 +2284,7 @@
 </tr>
 <tr>
 <td><a id="linenum570" class="linenum-cell" data-linenum="570" href="#linenum570"></a></td>
-<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum212">Instant</a> instant() {</pre></td>
+<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum207">Instant</a> instant() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum571" class="linenum-cell" data-linenum="571" href="#linenum571"></a></td>
@@ -2476,7 +2476,7 @@
 </tr>
 <tr>
 <td><a id="linenum618" class="linenum-cell" data-linenum="618" href="#linenum618"></a></td>
-<td><pre>            return <a class="variable" href="#linenum617">millis</a> - Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1165">floorMod</a>(<a class="variable" href="#linenum617">millis</a>, <a class="variable" href="#linenum600">tickNanos</a> / 1000_000L);</pre></td>
+<td><pre>            return <a class="variable" href="#linenum617">millis</a> - Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1138">floorMod</a>(<a class="variable" href="#linenum617">millis</a>, <a class="variable" href="#linenum600">tickNanos</a> / 1000_000L);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum619" class="linenum-cell" data-linenum="619" href="#linenum619"></a></td>
@@ -2488,7 +2488,7 @@
 </tr>
 <tr>
 <td><a id="linenum621" class="linenum-cell" data-linenum="621" href="#linenum621"></a></td>
-<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum212">Instant</a> instant() {</pre></td>
+<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum207">Instant</a> instant() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum622" class="linenum-cell" data-linenum="622" href="#linenum622"></a></td>
@@ -2500,7 +2500,7 @@
 </tr>
 <tr>
 <td><a id="linenum624" class="linenum-cell" data-linenum="624" href="#linenum624"></a></td>
-<td><pre>                return Instant.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum348">ofEpochMilli</a>(<a class="variable" href="#linenum623">millis</a> - Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1165">floorMod</a>(<a class="variable" href="#linenum623">millis</a>, <a class="variable" href="#linenum600">tickNanos</a> / 1000_000L));</pre></td>
+<td><pre>                return Instant.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum343">ofEpochMilli</a>(<a class="variable" href="#linenum623">millis</a> - Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1138">floorMod</a>(<a class="variable" href="#linenum623">millis</a>, <a class="variable" href="#linenum600">tickNanos</a> / 1000_000L));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum625" class="linenum-cell" data-linenum="625" href="#linenum625"></a></td>
@@ -2508,19 +2508,19 @@
 </tr>
 <tr>
 <td><a id="linenum626" class="linenum-cell" data-linenum="626" href="#linenum626"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum212">Instant</a> instant = <a class="variable" href="#linenum600">baseClock</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum410">instant</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum207">Instant</a> instant = <a class="variable" href="#linenum600">baseClock</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum410">instant</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum627" class="linenum-cell" data-linenum="627" href="#linenum627"></a></td>
-<td><pre>            long nanos = <a class="variable" href="#linenum626">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum636">getNano</a>();</pre></td>
+<td><pre>            long nanos = <a class="variable" href="#linenum626">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum631">getNano</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum628" class="linenum-cell" data-linenum="628" href="#linenum628"></a></td>
-<td><pre>            long adjust = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1165">floorMod</a>(<a class="variable" href="#linenum627">nanos</a>, <a class="variable" href="#linenum600">tickNanos</a>);</pre></td>
+<td><pre>            long adjust = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1138">floorMod</a>(<a class="variable" href="#linenum627">nanos</a>, <a class="variable" href="#linenum600">tickNanos</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum629" class="linenum-cell" data-linenum="629" href="#linenum629"></a></td>
-<td><pre>            return <a class="variable" href="#linenum626">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum1032">minusNanos</a>(<a class="variable" href="#linenum628">adjust</a>);</pre></td>
+<td><pre>            return <a class="variable" href="#linenum626">instant</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum1027">minusNanos</a>(<a class="variable" href="#linenum628">adjust</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum630" class="linenum-cell" data-linenum="630" href="#linenum630"></a></td>

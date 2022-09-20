@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 1996, 2012, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 1996, 2016, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -276,7 +276,7 @@
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre>        AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a>(</pre></td>
+<td><pre>        AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum297">doPrivileged</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
@@ -296,7 +296,7 @@
 </tr>
 <tr>
 <td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
-<td><pre>        AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a>(</pre></td>
+<td><pre>        AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum297">doPrivileged</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
@@ -316,7 +316,7 @@
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>        Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2607">synchronizedMap</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/UID.html#linenum71">UID</a>,<a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/transport/DGCAckHandler.html#linenum64">DGCAckHandler</a>&gt;());</pre></td>
+<td><pre>        Collections.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum2549">synchronizedMap</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/UID.html#linenum71">UID</a>,<a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/transport/DGCAckHandler.html#linenum64">DGCAckHandler</a>&gt;());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
@@ -328,7 +328,7 @@
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>&gt; objList = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>&lt;&gt;(); <span class='comment'>// null if released</span></pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>&gt; objList = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;&gt;(); <span class='comment'>// null if released</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
@@ -480,7 +480,7 @@
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre>            <a class="variable" href="#linenum82">task</a> = <a class="variable" href="#linenum72">scheduler</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledExecutorService.html#linenum126">schedule</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum55">Runnable</a>() {</pre></td>
+<td><pre>            <a class="variable" href="#linenum82">task</a> = <a class="variable" href="#linenum72">scheduler</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledExecutorService.html#linenum110">schedule</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum55">Runnable</a>() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
@@ -488,114 +488,126 @@
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/transport/DGCAckHandler.html#linenum130">release</a>();</pre></td>
+<td><pre>                    if (<a class="variable" href="#linenum95">id</a> != null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>                }</pre></td>
+<td><pre>                        <a class="variable" href="#linenum77">idTable</a>.remove(<a class="variable" href="#linenum95">id</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>            }, <a class="variable" href="#linenum67">dgcAckTimeout</a>, TimeUnit.MILLISECONDS);</pre></td>
+<td><pre>                    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/transport/DGCAckHandler.html#linenum133">release</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>                }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre></pre></td>
+<td><pre>            }, <a class="variable" href="#linenum67">dgcAckTimeout</a>, TimeUnit.MILLISECONDS);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre><span class='comment'>     * Releases the references held by this DGCAckHandler.<span class='comment'></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
-<td><pre>     **/</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
-<td><pre>    synchronized void release() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum82">task</a> != null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
-<td><pre>            <a class="variable" href="#linenum82">task</a>.cancel(false);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>            <a class="variable" href="#linenum82">task</a> = null;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
-<td><pre>        <a class="variable" href="#linenum81">objList</a> = null;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
+<td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre><span class='comment'>     * Causes the DGCAckHandler associated with the specified UID to<span class='comment'></pre></td>
+<td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
+<td><pre><span class='comment'>     * Releases the references held by this DGCAckHandler.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre><span class='comment'>     * release its references.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
+<td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
 <td><pre>     **/</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre>    public static void received(<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/UID.html#linenum71">UID</a> id) {</pre></td>
+<td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
+<td><pre>    synchronized void release() {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/transport/DGCAckHandler.html#linenum64">DGCAckHandler</a> h = <a class="variable" href="#linenum77">idTable</a>.remove(<a class="variable" href="#linenum142">id</a>);</pre></td>
+<td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum82">task</a> != null) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum143">h</a> != null) {</pre></td>
+<td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
+<td><pre>            <a class="variable" href="#linenum82">task</a>.cancel(false);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
-<td><pre>            <a class="variable" href="#linenum143">h</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/transport/DGCAckHandler.html#linenum130">release</a>();</pre></td>
+<td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
+<td><pre>            <a class="variable" href="#linenum82">task</a> = null;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
+<td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
+<td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
+<td><pre>        <a class="variable" href="#linenum81">objList</a> = null;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
+<td><pre><span class='comment'>     * Causes the DGCAckHandler associated with the specified UID to<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
+<td><pre><span class='comment'>     * release its references.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
+<td><pre>     **/</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
+<td><pre>    public static void received(<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/UID.html#linenum71">UID</a> id) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/transport/DGCAckHandler.html#linenum64">DGCAckHandler</a> h = <a class="variable" href="#linenum77">idTable</a>.remove(<a class="variable" href="#linenum145">id</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum146">h</a> != null) {</pre></td>
+</tr>
+<tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
+<td><pre>            <a class="variable" href="#linenum146">h</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/transport/DGCAckHandler.html#linenum133">release</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

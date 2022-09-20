@@ -240,7 +240,7 @@
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
-<td><pre>public abstract class SSLServerSocket extends <a class="type" href="/OdinCodeBrowserJdk8/java/net/ServerSocket.html#linenum51">ServerSocket</a> {</pre></td>
+<td><pre>public abstract class SSLServerSocket extends <a class="type" href="/OdinCodeBrowserJdk8/java/net/ServerSocket.html#linenum53">ServerSocket</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
@@ -720,7 +720,7 @@
 </tr>
 <tr>
 <td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
-<td><pre>    protected SSLServerSocket(int port, int backlog, <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum188">InetAddress</a> address)</pre></td>
+<td><pre>    protected SSLServerSocket(int port, int backlog, <a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum189">InetAddress</a> address)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
@@ -1876,11 +1876,11 @@
 </tr>
 <tr>
 <td><a id="linenum468" class="linenum-cell" data-linenum="468" href="#linenum468"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum66">SSLParameters</a> getSSLParameters() {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum77">SSLParameters</a> getSSLParameters() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum469" class="linenum-cell" data-linenum="469" href="#linenum469"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum66">SSLParameters</a> parameters = new <a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum66">SSLParameters</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum77">SSLParameters</a> parameters = new <a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum77">SSLParameters</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum470" class="linenum-cell" data-linenum="470" href="#linenum470"></a></td>
@@ -1888,11 +1888,11 @@
 </tr>
 <tr>
 <td><a id="linenum471" class="linenum-cell" data-linenum="471" href="#linenum471"></a></td>
-<td><pre>        <a class="variable" href="#linenum469">parameters</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum139">setCipherSuites</a>(<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLServerSocket.html#linenum204">getEnabledCipherSuites</a>());</pre></td>
+<td><pre>        <a class="variable" href="#linenum469">parameters</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum151">setCipherSuites</a>(<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLServerSocket.html#linenum204">getEnabledCipherSuites</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum472" class="linenum-cell" data-linenum="472" href="#linenum472"></a></td>
-<td><pre>        <a class="variable" href="#linenum469">parameters</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum159">setProtocols</a>(<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLServerSocket.html#linenum266">getEnabledProtocols</a>());</pre></td>
+<td><pre>        <a class="variable" href="#linenum469">parameters</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum171">setProtocols</a>(<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLServerSocket.html#linenum266">getEnabledProtocols</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum473" class="linenum-cell" data-linenum="473" href="#linenum473"></a></td>
@@ -1900,7 +1900,7 @@
 </tr>
 <tr>
 <td><a id="linenum474" class="linenum-cell" data-linenum="474" href="#linenum474"></a></td>
-<td><pre>            <a class="variable" href="#linenum469">parameters</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum198">setNeedClientAuth</a>(true);</pre></td>
+<td><pre>            <a class="variable" href="#linenum469">parameters</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum210">setNeedClientAuth</a>(true);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum475" class="linenum-cell" data-linenum="475" href="#linenum475"></a></td>
@@ -1908,7 +1908,7 @@
 </tr>
 <tr>
 <td><a id="linenum476" class="linenum-cell" data-linenum="476" href="#linenum476"></a></td>
-<td><pre>            <a class="variable" href="#linenum469">parameters</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum178">setWantClientAuth</a>(true);</pre></td>
+<td><pre>            <a class="variable" href="#linenum469">parameters</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum190">setWantClientAuth</a>(true);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum477" class="linenum-cell" data-linenum="477" href="#linenum477"></a></td>
@@ -2044,7 +2044,7 @@
 </tr>
 <tr>
 <td><a id="linenum510" class="linenum-cell" data-linenum="510" href="#linenum510"></a></td>
-<td><pre>    public void setSSLParameters(<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum66">SSLParameters</a> params) {</pre></td>
+<td><pre>    public void setSSLParameters(<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum77">SSLParameters</a> params) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum511" class="linenum-cell" data-linenum="511" href="#linenum511"></a></td>
@@ -2052,7 +2052,7 @@
 </tr>
 <tr>
 <td><a id="linenum512" class="linenum-cell" data-linenum="512" href="#linenum512"></a></td>
-<td><pre>        <a class="variable" href="#linenum511">s</a> = <a class="variable" href="#linenum510">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum130">getCipherSuites</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum511">s</a> = <a class="variable" href="#linenum510">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum142">getCipherSuites</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum513" class="linenum-cell" data-linenum="513" href="#linenum513"></a></td>
@@ -2072,7 +2072,7 @@
 </tr>
 <tr>
 <td><a id="linenum517" class="linenum-cell" data-linenum="517" href="#linenum517"></a></td>
-<td><pre>        <a class="variable" href="#linenum511">s</a> = <a class="variable" href="#linenum510">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum150">getProtocols</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum511">s</a> = <a class="variable" href="#linenum510">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum162">getProtocols</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum518" class="linenum-cell" data-linenum="518" href="#linenum518"></a></td>
@@ -2092,7 +2092,7 @@
 </tr>
 <tr>
 <td><a id="linenum522" class="linenum-cell" data-linenum="522" href="#linenum522"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum510">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum188">getNeedClientAuth</a>()) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum510">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum200">getNeedClientAuth</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum523" class="linenum-cell" data-linenum="523" href="#linenum523"></a></td>
@@ -2100,7 +2100,7 @@
 </tr>
 <tr>
 <td><a id="linenum524" class="linenum-cell" data-linenum="524" href="#linenum524"></a></td>
-<td><pre>        } else if (<a class="variable" href="#linenum510">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum168">getWantClientAuth</a>()) {</pre></td>
+<td><pre>        } else if (<a class="variable" href="#linenum510">params</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/net/ssl/SSLParameters.html#linenum180">getWantClientAuth</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum525" class="linenum-cell" data-linenum="525" href="#linenum525"></a></td>

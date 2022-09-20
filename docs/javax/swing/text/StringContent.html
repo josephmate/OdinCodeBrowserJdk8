@@ -404,7 +404,7 @@
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre>        char[] chars = <a class="variable" href="#linenum96">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2882">toCharArray</a>();</pre></td>
+<td><pre>        char[] chars = <a class="variable" href="#linenum96">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2897">toCharArray</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
@@ -416,7 +416,7 @@
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/text/StringContent.html#linenum221">updateMarksForInsert</a>(<a class="variable" href="#linenum96">where</a>, <a class="variable" href="#linenum96">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>());</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/text/StringContent.html#linenum221">updateMarksForInsert</a>(<a class="variable" href="#linenum96">where</a>, <a class="variable" href="#linenum96">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
@@ -424,7 +424,7 @@
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
-<td><pre>        return new InsertUndo(<a class="variable" href="#linenum96">where</a>, <a class="variable" href="#linenum96">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>());</pre></td>
+<td><pre>        return new InsertUndo(<a class="variable" href="#linenum96">where</a>, <a class="variable" href="#linenum96">str</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
@@ -712,7 +712,7 @@
 </tr>
 <tr>
 <td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
-<td><pre>            marks = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>&lt;PosRec&gt;();</pre></td>
+<td><pre>            marks = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>&lt;PosRec&gt;();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
@@ -808,7 +808,7 @@
 </tr>
 <tr>
 <td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
-<td><pre>            int newLength = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1313">max</a>(2*data.length, count + <a class="variable" href="#linenum195">delta</a>);</pre></td>
+<td><pre>            int newLength = Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1251">max</a>(2*data.length, count + <a class="variable" href="#linenum195">delta</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
@@ -816,15 +816,15 @@
 </tr>
 <tr>
 <td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(data, 0, <a class="variable" href="#linenum202">newData</a>, 0, <a class="variable" href="#linenum193">offset</a>);</pre></td>
+<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(data, 0, <a class="variable" href="#linenum202">newData</a>, 0, <a class="variable" href="#linenum193">offset</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
-<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum194">replArray</a>, <a class="variable" href="#linenum194">replOffset</a>, <a class="variable" href="#linenum202">newData</a>, <a class="variable" href="#linenum193">offset</a>, <a class="variable" href="#linenum194">replLength</a>);</pre></td>
+<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum194">replArray</a>, <a class="variable" href="#linenum194">replOffset</a>, <a class="variable" href="#linenum202">newData</a>, <a class="variable" href="#linenum193">offset</a>, <a class="variable" href="#linenum194">replLength</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
-<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(data, <a class="variable" href="#linenum196">src</a>, <a class="variable" href="#linenum202">newData</a>, <a class="variable" href="#linenum198">dest</a>, <a class="variable" href="#linenum197">nmove</a>);</pre></td>
+<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(data, <a class="variable" href="#linenum196">src</a>, <a class="variable" href="#linenum202">newData</a>, <a class="variable" href="#linenum198">dest</a>, <a class="variable" href="#linenum197">nmove</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
@@ -840,11 +840,11 @@
 </tr>
 <tr>
 <td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
-<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(data, <a class="variable" href="#linenum196">src</a>, data, <a class="variable" href="#linenum198">dest</a>, <a class="variable" href="#linenum197">nmove</a>);</pre></td>
+<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(data, <a class="variable" href="#linenum196">src</a>, data, <a class="variable" href="#linenum198">dest</a>, <a class="variable" href="#linenum197">nmove</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
-<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum194">replArray</a>, <a class="variable" href="#linenum194">replOffset</a>, data, <a class="variable" href="#linenum193">offset</a>, <a class="variable" href="#linenum194">replLength</a>);</pre></td>
+<td><pre>            System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum194">replArray</a>, <a class="variable" href="#linenum194">replOffset</a>, data, <a class="variable" href="#linenum193">offset</a>, <a class="variable" href="#linenum194">replLength</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
@@ -872,7 +872,7 @@
 </tr>
 <tr>
 <td><a id="linenum217" class="linenum-cell" data-linenum="217" href="#linenum217"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(data, 0, <a class="variable" href="#linenum216">ndata</a>, 0, Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1393">min</a>(<a class="variable" href="#linenum215">ncount</a>, count));</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(data, 0, <a class="variable" href="#linenum216">ndata</a>, 0, Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1335">min</a>(<a class="variable" href="#linenum215">ncount</a>, count));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>
@@ -1096,7 +1096,7 @@
 </tr>
 <tr>
 <td><a id="linenum273" class="linenum-cell" data-linenum="273" href="#linenum273"></a></td>
-<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> getPositionsInRange(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> v, int offset,</pre></td>
+<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> getPositionsInRange(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> v, int offset,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
@@ -1112,7 +1112,7 @@
 </tr>
 <tr>
 <td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> placeIn = (<a class="variable" href="#linenum273">v</a> == null) ? new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>() : <a class="variable" href="#linenum273">v</a>;</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> placeIn = (<a class="variable" href="#linenum273">v</a> == null) ? new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>() : <a class="variable" href="#linenum273">v</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
@@ -1148,7 +1148,7 @@
 </tr>
 <tr>
 <td><a id="linenum286" class="linenum-cell" data-linenum="286" href="#linenum286"></a></td>
-<td><pre>                <a class="variable" href="#linenum277">placeIn</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum618">addElement</a>(new UndoPosRef(<a class="variable" href="#linenum279">mark</a>));</pre></td>
+<td><pre>                <a class="variable" href="#linenum277">placeIn</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum623">addElement</a>(new UndoPosRef(<a class="variable" href="#linenum279">mark</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum287" class="linenum-cell" data-linenum="287" href="#linenum287"></a></td>
@@ -1204,15 +1204,15 @@
 </tr>
 <tr>
 <td><a id="linenum300" class="linenum-cell" data-linenum="300" href="#linenum300"></a></td>
-<td><pre>    protected void updateUndoPositions(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> positions) {</pre></td>
+<td><pre>    protected void updateUndoPositions(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> positions) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum301" class="linenum-cell" data-linenum="301" href="#linenum301"></a></td>
-<td><pre>        for(int counter = <a class="variable" href="#linenum300">positions</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum314">size</a>() - 1; <a class="variable" href="#linenum301">counter</a> &gt;= 0; <a class="variable" href="#linenum301">counter</a>--) {</pre></td>
+<td><pre>        for(int counter = <a class="variable" href="#linenum300">positions</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum319">size</a>() - 1; <a class="variable" href="#linenum301">counter</a> &gt;= 0; <a class="variable" href="#linenum301">counter</a>--) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum302" class="linenum-cell" data-linenum="302" href="#linenum302"></a></td>
-<td><pre>            UndoPosRef ref = (UndoPosRef)<a class="variable" href="#linenum300">positions</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum472">elementAt</a>(<a class="variable" href="#linenum301">counter</a>);</pre></td>
+<td><pre>            UndoPosRef ref = (UndoPosRef)<a class="variable" href="#linenum300">positions</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum477">elementAt</a>(<a class="variable" href="#linenum301">counter</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum303" class="linenum-cell" data-linenum="303" href="#linenum303"></a></td>
@@ -1224,7 +1224,7 @@
 </tr>
 <tr>
 <td><a id="linenum305" class="linenum-cell" data-linenum="305" href="#linenum305"></a></td>
-<td><pre>                <a class="variable" href="#linenum300">positions</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum555">removeElementAt</a>(<a class="variable" href="#linenum301">counter</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum300">positions</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum560">removeElementAt</a>(<a class="variable" href="#linenum301">counter</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum306" class="linenum-cell" data-linenum="306" href="#linenum306"></a></td>
@@ -1264,7 +1264,7 @@
 </tr>
 <tr>
 <td><a id="linenum315" class="linenum-cell" data-linenum="315" href="#linenum315"></a></td>
-<td><pre>    transient <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>&lt;PosRec&gt; marks;</pre></td>
+<td><pre>    transient <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>&lt;PosRec&gt; marks;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
@@ -1408,7 +1408,7 @@
 </tr>
 <tr>
 <td><a id="linenum351" class="linenum-cell" data-linenum="351" href="#linenum351"></a></td>
-<td><pre>        protected void finalize() throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum114">Throwable</a> {</pre></td>
+<td><pre>        protected void finalize() throws <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Throwable.html#linenum115">Throwable</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum352" class="linenum-cell" data-linenum="352" href="#linenum352"></a></td>
@@ -1436,7 +1436,7 @@
 </tr>
 <tr>
 <td><a id="linenum358" class="linenum-cell" data-linenum="358" href="#linenum358"></a></td>
-<td><pre>            return Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum934">toString</a>(<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/text/StringContent.html#linenum347">getOffset</a>());</pre></td>
+<td><pre>            return Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum397">toString</a>(<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/text/StringContent.html#linenum347">getOffset</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum359" class="linenum-cell" data-linenum="359" href="#linenum359"></a></td>
@@ -1760,7 +1760,7 @@
 </tr>
 <tr>
 <td><a id="linenum439" class="linenum-cell" data-linenum="439" href="#linenum439"></a></td>
-<td><pre>        protected <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> posRefs;</pre></td>
+<td><pre>        protected <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> posRefs;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum440" class="linenum-cell" data-linenum="440" href="#linenum440"></a></td>
@@ -1988,7 +1988,7 @@
 </tr>
 <tr>
 <td><a id="linenum496" class="linenum-cell" data-linenum="496" href="#linenum496"></a></td>
-<td><pre>        protected <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> posRefs;</pre></td>
+<td><pre>        protected <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> posRefs;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum497" class="linenum-cell" data-linenum="497" href="#linenum497"></a></td>

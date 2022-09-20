@@ -208,7 +208,7 @@
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/Cache.html#linenum72">Cache</a>&lt;IdentityWrapper, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum66">P11Key</a>&gt; strongCache;</pre></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/Cache.html#linenum72">Cache</a>&lt;IdentityWrapper, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum70">P11Key</a>&gt; strongCache;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
@@ -216,7 +216,7 @@
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/WeakReference.html#linenum48">WeakReference</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a>,<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum66">P11Key</a>&gt;&gt; cacheReference;</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ref/WeakReference.html#linenum48">WeakReference</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a>,<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum70">P11Key</a>&gt;&gt; cacheReference;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
@@ -228,7 +228,7 @@
 </tr>
 <tr>
 <td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
-<td><pre>        <a class="variable" href="#linenum51">strongCache</a> = Cache.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/Cache.html#linenum156">newHardMemoryCache</a>(16);</pre></td>
+<td><pre>        <a class="variable" href="#linenum51">strongCache</a> = Cache.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/Cache.html#linenum139">newHardMemoryCache</a>(16);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
@@ -304,7 +304,7 @@
 </tr>
 <tr>
 <td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
-<td><pre>            return System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum508">identityHashCode</a>(<a class="variable" href="#linenum61">obj</a>);</pre></td>
+<td><pre>            return System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum510">identityHashCode</a>(<a class="variable" href="#linenum61">obj</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
@@ -320,11 +320,11 @@
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
-<td><pre>    synchronized <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum66">P11Key</a> get(<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a> key) {</pre></td>
+<td><pre>    synchronized <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum70">P11Key</a> get(<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a> key) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum66">P11Key</a> p11Key = <a class="variable" href="#linenum51">strongCache</a>.get(new IdentityWrapper(<a class="variable" href="#linenum79">key</a>));</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum70">P11Key</a> p11Key = <a class="variable" href="#linenum51">strongCache</a>.get(new IdentityWrapper(<a class="variable" href="#linenum79">key</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
@@ -340,7 +340,7 @@
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a>,<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum66">P11Key</a>&gt; map =</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a>,<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum70">P11Key</a>&gt; map =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
@@ -372,7 +372,7 @@
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>    synchronized void put(<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a> key, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum66">P11Key</a> p11Key) {</pre></td>
+<td><pre>    synchronized void put(<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a> key, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum70">P11Key</a> p11Key) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
@@ -380,7 +380,7 @@
 </tr>
 <tr>
 <td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a>,<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum66">P11Key</a>&gt; map =</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/security/Key.html#linenum102">Key</a>,<a class="type" href="/OdinCodeBrowserJdk8/sun/security/pkcs11/P11Key.html#linenum70">P11Key</a>&gt; map =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>

@@ -492,7 +492,7 @@
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>        extends <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum319">ThreadPoolExecutor</a></pre></td>
+<td><pre>        extends <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum323">ThreadPoolExecutor</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
@@ -712,7 +712,7 @@
 </tr>
 <tr>
 <td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
-<td><pre>        return System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum399">nanoTime</a>();</pre></td>
+<td><pre>        return System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum401">nanoTime</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
@@ -1236,7 +1236,7 @@
 </tr>
 <tr>
 <td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum840">isRunningOrShutdown</a>(<a class="variable" href="#linenum307">periodic</a> ?</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum847">isRunningOrShutdown</a>(<a class="variable" href="#linenum307">periodic</a> ?</pre></td>
 </tr>
 <tr>
 <td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
@@ -1304,11 +1304,11 @@
 </tr>
 <tr>
 <td><a id="linenum325" class="linenum-cell" data-linenum="325" href="#linenum325"></a></td>
-<td><pre>        if (<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1430">isShutdown</a>())</pre></td>
+<td><pre>        if (<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1440">isShutdown</a>())</pre></td>
 </tr>
 <tr>
 <td><a id="linenum326" class="linenum-cell" data-linenum="326" href="#linenum326"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum822">reject</a>(<a class="variable" href="#linenum324">task</a>);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum829">reject</a>(<a class="variable" href="#linenum324">task</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum327" class="linenum-cell" data-linenum="327" href="#linenum327"></a></td>
@@ -1316,11 +1316,11 @@
 </tr>
 <tr>
 <td><a id="linenum328" class="linenum-cell" data-linenum="328" href="#linenum328"></a></td>
-<td><pre>            super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1729">getQueue</a>().add(<a class="variable" href="#linenum324">task</a>);</pre></td>
+<td><pre>            super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1745">getQueue</a>().add(<a class="variable" href="#linenum324">task</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum329" class="linenum-cell" data-linenum="329" href="#linenum329"></a></td>
-<td><pre>            if (<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1430">isShutdown</a>() &amp;&amp;</pre></td>
+<td><pre>            if (<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1440">isShutdown</a>() &amp;&amp;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum330" class="linenum-cell" data-linenum="330" href="#linenum330"></a></td>
@@ -1328,7 +1328,7 @@
 </tr>
 <tr>
 <td><a id="linenum331" class="linenum-cell" data-linenum="331" href="#linenum331"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1749">remove</a>(<a class="variable" href="#linenum324">task</a>))</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1765">remove</a>(<a class="variable" href="#linenum324">task</a>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
@@ -1340,7 +1340,7 @@
 </tr>
 <tr>
 <td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1584">ensurePrestart</a>();</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1600">ensurePrestart</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum335" class="linenum-cell" data-linenum="335" href="#linenum335"></a></td>
@@ -1388,11 +1388,11 @@
 </tr>
 <tr>
 <td><a id="linenum346" class="linenum-cell" data-linenum="346" href="#linenum346"></a></td>
-<td><pre>            super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1729">getQueue</a>().add(<a class="variable" href="#linenum344">task</a>);</pre></td>
+<td><pre>            super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1745">getQueue</a>().add(<a class="variable" href="#linenum344">task</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum347" class="linenum-cell" data-linenum="347" href="#linenum347"></a></td>
-<td><pre>            if (!<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledThreadPoolExecutor.html#linenum307">canRunInCurrentRunState</a>(true) &amp;&amp; <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1749">remove</a>(<a class="variable" href="#linenum344">task</a>))</pre></td>
+<td><pre>            if (!<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledThreadPoolExecutor.html#linenum307">canRunInCurrentRunState</a>(true) &amp;&amp; <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1765">remove</a>(<a class="variable" href="#linenum344">task</a>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum348" class="linenum-cell" data-linenum="348" href="#linenum348"></a></td>
@@ -1404,7 +1404,7 @@
 </tr>
 <tr>
 <td><a id="linenum350" class="linenum-cell" data-linenum="350" href="#linenum350"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1584">ensurePrestart</a>();</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1600">ensurePrestart</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum351" class="linenum-cell" data-linenum="351" href="#linenum351"></a></td>
@@ -1440,7 +1440,7 @@
 </tr>
 <tr>
 <td><a id="linenum359" class="linenum-cell" data-linenum="359" href="#linenum359"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/BlockingQueue.html#linenum180">BlockingQueue</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum55">Runnable</a>&gt; q = super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1729">getQueue</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/BlockingQueue.html#linenum180">BlockingQueue</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum55">Runnable</a>&gt; q = super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1745">getQueue</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum360" class="linenum-cell" data-linenum="360" href="#linenum360"></a></td>
@@ -1540,7 +1540,7 @@
 </tr>
 <tr>
 <td><a id="linenum384" class="linenum-cell" data-linenum="384" href="#linenum384"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum689">tryTerminate</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum696">tryTerminate</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum385" class="linenum-cell" data-linenum="385" href="#linenum385"></a></td>
@@ -1976,7 +1976,7 @@
 </tr>
 <tr>
 <td><a id="linenum493" class="linenum-cell" data-linenum="493" href="#linenum493"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledThreadPoolExecutor.html#linenum492">triggerTime</a>(<a class="variable" href="#linenum492">unit</a>.toNanos((<a class="variable" href="#linenum492">delay</a> &lt; 0) ? 0 : <a class="variable" href="#linenum492">delay</a>));</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledThreadPoolExecutor.html#linenum499">triggerTime</a>(<a class="variable" href="#linenum492">unit</a>.toNanos((<a class="variable" href="#linenum492">delay</a> &lt; 0) ? 0 : <a class="variable" href="#linenum492">delay</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum494" class="linenum-cell" data-linenum="494" href="#linenum494"></a></td>
@@ -2052,7 +2052,7 @@
 </tr>
 <tr>
 <td><a id="linenum512" class="linenum-cell" data-linenum="512" href="#linenum512"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Delayed.html#linenum49">Delayed</a> head = (<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Delayed.html#linenum49">Delayed</a>) super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1729">getQueue</a>().peek();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Delayed.html#linenum49">Delayed</a> head = (<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Delayed.html#linenum49">Delayed</a>) super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1745">getQueue</a>().peek();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum513" class="linenum-cell" data-linenum="513" href="#linenum513"></a></td>
@@ -2188,7 +2188,7 @@
 </tr>
 <tr>
 <td><a id="linenum546" class="linenum-cell" data-linenum="546" href="#linenum546"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/RunnableScheduledFuture.html#linenum48">RunnableScheduledFuture</a>&lt;V&gt; t = <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledThreadPoolExecutor.html#linenum416">decorateTask</a>(<a class="variable" href="#linenum541">callable</a>,</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/RunnableScheduledFuture.html#linenum48">RunnableScheduledFuture</a>&lt;V&gt; t = <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledThreadPoolExecutor.html#linenum399">decorateTask</a>(<a class="variable" href="#linenum541">callable</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum547" class="linenum-cell" data-linenum="547" href="#linenum547"></a></td>
@@ -2560,11 +2560,11 @@
 </tr>
 <tr>
 <td><a id="linenum639" class="linenum-cell" data-linenum="639" href="#linenum639"></a></td>
-<td><pre>    public &lt;T&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Future.html#linenum96">Future</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; submit(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum55">Runnable</a> task, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> result) {</pre></td>
+<td><pre>    public &lt;T&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Future.html#linenum96">Future</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; submit(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Runnable.html#linenum55">Runnable</a> task, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> result) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum640" class="linenum-cell" data-linenum="640" href="#linenum640"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledThreadPoolExecutor.html#linenum541">schedule</a>(Executors.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Executors.html#linenum445">callable</a>(<a class="variable" href="#linenum639">task</a>, <a class="variable" href="#linenum639">result</a>), 0, NANOSECONDS);</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledThreadPoolExecutor.html#linenum525">schedule</a>(Executors.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Executors.html#linenum445">callable</a>(<a class="variable" href="#linenum639">task</a>, <a class="variable" href="#linenum639">result</a>), 0, NANOSECONDS);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum641" class="linenum-cell" data-linenum="641" href="#linenum641"></a></td>
@@ -2592,11 +2592,11 @@
 </tr>
 <tr>
 <td><a id="linenum647" class="linenum-cell" data-linenum="647" href="#linenum647"></a></td>
-<td><pre>    public &lt;T&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Future.html#linenum96">Future</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; submit(<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Callable.html#linenum57">Callable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; task) {</pre></td>
+<td><pre>    public &lt;T&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Future.html#linenum96">Future</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; submit(<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/Callable.html#linenum57">Callable</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; task) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum648" class="linenum-cell" data-linenum="648" href="#linenum648"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledThreadPoolExecutor.html#linenum541">schedule</a>(<a class="variable" href="#linenum647">task</a>, 0, NANOSECONDS);</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ScheduledThreadPoolExecutor.html#linenum525">schedule</a>(<a class="variable" href="#linenum647">task</a>, 0, NANOSECONDS);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum649" class="linenum-cell" data-linenum="649" href="#linenum649"></a></td>
@@ -2660,7 +2660,7 @@
 </tr>
 <tr>
 <td><a id="linenum664" class="linenum-cell" data-linenum="664" href="#linenum664"></a></td>
-<td><pre>        if (!<a class="variable" href="#linenum662">value</a> &amp;&amp; <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1430">isShutdown</a>())</pre></td>
+<td><pre>        if (!<a class="variable" href="#linenum662">value</a> &amp;&amp; <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1440">isShutdown</a>())</pre></td>
 </tr>
 <tr>
 <td><a id="linenum665" class="linenum-cell" data-linenum="665" href="#linenum665"></a></td>
@@ -2788,7 +2788,7 @@
 </tr>
 <tr>
 <td><a id="linenum696" class="linenum-cell" data-linenum="696" href="#linenum696"></a></td>
-<td><pre>        if (!<a class="variable" href="#linenum694">value</a> &amp;&amp; <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1430">isShutdown</a>())</pre></td>
+<td><pre>        if (!<a class="variable" href="#linenum694">value</a> &amp;&amp; <a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1440">isShutdown</a>())</pre></td>
 </tr>
 <tr>
 <td><a id="linenum697" class="linenum-cell" data-linenum="697" href="#linenum697"></a></td>
@@ -3048,7 +3048,7 @@
 </tr>
 <tr>
 <td><a id="linenum761" class="linenum-cell" data-linenum="761" href="#linenum761"></a></td>
-<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1383">shutdown</a>();</pre></td>
+<td><pre>        super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1393">shutdown</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum762" class="linenum-cell" data-linenum="762" href="#linenum762"></a></td>
@@ -3148,7 +3148,7 @@
 </tr>
 <tr>
 <td><a id="linenum786" class="linenum-cell" data-linenum="786" href="#linenum786"></a></td>
-<td><pre>        return super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1414">shutdownNow</a>();</pre></td>
+<td><pre>        return super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1424">shutdownNow</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum787" class="linenum-cell" data-linenum="787" href="#linenum787"></a></td>
@@ -3208,7 +3208,7 @@
 </tr>
 <tr>
 <td><a id="linenum801" class="linenum-cell" data-linenum="801" href="#linenum801"></a></td>
-<td><pre>        return super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1729">getQueue</a>();</pre></td>
+<td><pre>        return super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/ThreadPoolExecutor.html#linenum1745">getQueue</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum802" class="linenum-cell" data-linenum="802" href="#linenum802"></a></td>
@@ -3688,7 +3688,7 @@
 </tr>
 <tr>
 <td><a id="linenum921" class="linenum-cell" data-linenum="921" href="#linenum921"></a></td>
-<td><pre>            <a class="variable" href="#linenum836">queue</a> = Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3397">copyOf</a>(<a class="variable" href="#linenum836">queue</a>, <a class="variable" href="#linenum918">newCapacity</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum836">queue</a> = Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3179">copyOf</a>(<a class="variable" href="#linenum836">queue</a>, <a class="variable" href="#linenum918">newCapacity</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum922" class="linenum-cell" data-linenum="922" href="#linenum922"></a></td>
@@ -4328,7 +4328,7 @@
 </tr>
 <tr>
 <td><a id="linenum1081" class="linenum-cell" data-linenum="1081" href="#linenum1081"></a></td>
-<td><pre>                        <a class="variable" href="#linenum863">available</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/locks/Condition.html#linenum373">await</a>();</pre></td>
+<td><pre>                        <a class="variable" href="#linenum863">available</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/locks/Condition.html#linenum231">await</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1082" class="linenum-cell" data-linenum="1082" href="#linenum1082"></a></td>
@@ -4356,7 +4356,7 @@
 </tr>
 <tr>
 <td><a id="linenum1088" class="linenum-cell" data-linenum="1088" href="#linenum1088"></a></td>
-<td><pre>                            <a class="variable" href="#linenum863">available</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/locks/Condition.html#linenum373">await</a>();</pre></td>
+<td><pre>                            <a class="variable" href="#linenum863">available</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/concurrent/locks/Condition.html#linenum231">await</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1089" class="linenum-cell" data-linenum="1089" href="#linenum1089"></a></td>
@@ -4908,7 +4908,7 @@
 </tr>
 <tr>
 <td><a id="linenum1226" class="linenum-cell" data-linenum="1226" href="#linenum1226"></a></td>
-<td><pre>                return Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3397">copyOf</a>(<a class="variable" href="#linenum836">queue</a>, <a class="variable" href="#linenum839">size</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[].class);</pre></td>
+<td><pre>                return Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3208">copyOf</a>(<a class="variable" href="#linenum836">queue</a>, <a class="variable" href="#linenum839">size</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[].class);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1227" class="linenum-cell" data-linenum="1227" href="#linenum1227"></a></td>
@@ -4936,7 +4936,7 @@
 </tr>
 <tr>
 <td><a id="linenum1233" class="linenum-cell" data-linenum="1233" href="#linenum1233"></a></td>
-<td><pre>        public &lt;T&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>[] toArray(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>[] a) {</pre></td>
+<td><pre>        public &lt;T&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>[] toArray(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>[] a) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1234" class="linenum-cell" data-linenum="1234" href="#linenum1234"></a></td>
@@ -4956,11 +4956,11 @@
 </tr>
 <tr>
 <td><a id="linenum1238" class="linenum-cell" data-linenum="1238" href="#linenum1238"></a></td>
-<td><pre>                    return (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>[]) Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3397">copyOf</a>(<a class="variable" href="#linenum836">queue</a>, <a class="variable" href="#linenum839">size</a>, <a class="variable" href="#linenum1233">a</a>.getClass());</pre></td>
+<td><pre>                    return (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>[]) Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3208">copyOf</a>(<a class="variable" href="#linenum836">queue</a>, <a class="variable" href="#linenum839">size</a>, <a class="variable" href="#linenum1233">a</a>.getClass());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1239" class="linenum-cell" data-linenum="1239" href="#linenum1239"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum836">queue</a>, 0, <a class="variable" href="#linenum1233">a</a>, 0, <a class="variable" href="#linenum839">size</a>);</pre></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum836">queue</a>, 0, <a class="variable" href="#linenum1233">a</a>, 0, <a class="variable" href="#linenum839">size</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1240" class="linenum-cell" data-linenum="1240" href="#linenum1240"></a></td>
@@ -5000,7 +5000,7 @@
 </tr>
 <tr>
 <td><a id="linenum1249" class="linenum-cell" data-linenum="1249" href="#linenum1249"></a></td>
-<td><pre>            return new Itr(Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3397">copyOf</a>(<a class="variable" href="#linenum836">queue</a>, <a class="variable" href="#linenum839">size</a>));</pre></td>
+<td><pre>            return new Itr(Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3179">copyOf</a>(<a class="variable" href="#linenum836">queue</a>, <a class="variable" href="#linenum839">size</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1250" class="linenum-cell" data-linenum="1250" href="#linenum1250"></a></td>

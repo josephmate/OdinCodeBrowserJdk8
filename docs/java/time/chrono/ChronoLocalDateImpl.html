@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2012, 2013, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2012, 2015, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -576,11 +576,11 @@
 </tr>
 <tr>
 <td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre>abstract class ChronoLocalDateImpl&lt;D extends <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a>&gt;</pre></td>
+<td><pre>abstract class ChronoLocalDateImpl&lt;D extends <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a>&gt;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre>        implements <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum129">Temporal</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/TemporalAdjuster.html#linenum105">TemporalAdjuster</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/io/Serializable.html#linenum169">Serializable</a> {</pre></td>
+<td><pre>        implements <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum129">Temporal</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/TemporalAdjuster.html#linenum105">TemporalAdjuster</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/io/Serializable.html#linenum169">Serializable</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
@@ -644,7 +644,7 @@
 </tr>
 <tr>
 <td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre>    static &lt;D extends <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a>&gt; D ensureValid(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum157">Chronology</a> chrono, <a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum129">Temporal</a> temporal) {</pre></td>
+<td><pre>    static &lt;D extends <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a>&gt; D ensureValid(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum158">Chronology</a> chrono, <a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum129">Temporal</a> temporal) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
@@ -656,11 +656,11 @@
 </tr>
 <tr>
 <td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum160">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum729">equals</a>(<a class="variable" href="#linenum162">other</a>.getChronology()) == false) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum160">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum730">equals</a>(<a class="variable" href="#linenum162">other</a>.getChronology()) == false) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ClassCastException.html#linenum40">ClassCastException</a>(<span class='string'>&quot;Chronology mismatch, expected: &quot;</span> + <a class="variable" href="#linenum160">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum276">getId</a>() + <span class='string'>&quot;, actual: &quot;</span> + <a class="variable" href="#linenum162">other</a>.getChronology().getId());</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ClassCastException.html#linenum40">ClassCastException</a>(<span class='string'>&quot;Chronology mismatch, expected: &quot;</span> + <a class="variable" href="#linenum160">chrono</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/Chronology.html#linenum277">getId</a>() + <span class='string'>&quot;, actual: &quot;</span> + <a class="variable" href="#linenum162">other</a>.getChronology().getId());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
@@ -816,7 +816,7 @@
 </tr>
 <tr>
 <td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>                case WEEKS: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateImpl.html#linenum291">plusDays</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum882">multiplyExact</a>(<a class="variable" href="#linenum198">amountToAdd</a>, 7));</pre></td>
+<td><pre>                case WEEKS: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateImpl.html#linenum291">plusDays</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum864">multiplyExact</a>(<a class="variable" href="#linenum198">amountToAdd</a>, 7));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
@@ -828,19 +828,19 @@
 </tr>
 <tr>
 <td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
-<td><pre>                case DECADES: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateImpl.html#linenum243">plusYears</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum882">multiplyExact</a>(<a class="variable" href="#linenum198">amountToAdd</a>, 10));</pre></td>
+<td><pre>                case DECADES: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateImpl.html#linenum243">plusYears</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum864">multiplyExact</a>(<a class="variable" href="#linenum198">amountToAdd</a>, 10));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
-<td><pre>                case CENTURIES: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateImpl.html#linenum243">plusYears</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum882">multiplyExact</a>(<a class="variable" href="#linenum198">amountToAdd</a>, 100));</pre></td>
+<td><pre>                case CENTURIES: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateImpl.html#linenum243">plusYears</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum864">multiplyExact</a>(<a class="variable" href="#linenum198">amountToAdd</a>, 100));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
-<td><pre>                case MILLENNIA: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateImpl.html#linenum243">plusYears</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum882">multiplyExact</a>(<a class="variable" href="#linenum198">amountToAdd</a>, 1000));</pre></td>
+<td><pre>                case MILLENNIA: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateImpl.html#linenum243">plusYears</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum864">multiplyExact</a>(<a class="variable" href="#linenum198">amountToAdd</a>, 1000));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
-<td><pre>                case ERAS: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateImpl.html#linenum182">with</a>(ERA, Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum805">addExact</a>(getLong(ERA), <a class="variable" href="#linenum198">amountToAdd</a>));</pre></td>
+<td><pre>                case ERAS: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateImpl.html#linenum182">with</a>(ERA, Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum786">addExact</a>(getLong(ERA), <a class="variable" href="#linenum198">amountToAdd</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
@@ -924,7 +924,7 @@
 </tr>
 <tr>
 <td><a id="linenum230" class="linenum-cell" data-linenum="230" href="#linenum230"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this date with the specified period in years added.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this date with the specified number of years added.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum231" class="linenum-cell" data-linenum="231" href="#linenum231"></a></td>
@@ -988,7 +988,7 @@
 </tr>
 <tr>
 <td><a id="linenum246" class="linenum-cell" data-linenum="246" href="#linenum246"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this date with the specified period in months added.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this date with the specified number of months added.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum247" class="linenum-cell" data-linenum="247" href="#linenum247"></a></td>
@@ -1052,7 +1052,7 @@
 </tr>
 <tr>
 <td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this date with the specified period in weeks added.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this date with the specified number of weeks added.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum263" class="linenum-cell" data-linenum="263" href="#linenum263"></a></td>
@@ -1112,7 +1112,7 @@
 </tr>
 <tr>
 <td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateImpl.html#linenum291">plusDays</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum882">multiplyExact</a>(<a class="variable" href="#linenum276">weeksToAdd</a>, 7));</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDateImpl.html#linenum291">plusDays</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum864">multiplyExact</a>(<a class="variable" href="#linenum276">weeksToAdd</a>, 7));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
@@ -1184,7 +1184,7 @@
 </tr>
 <tr>
 <td><a id="linenum295" class="linenum-cell" data-linenum="295" href="#linenum295"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this date with the specified period in years subtracted.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this date with the specified number of years subtracted.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum296" class="linenum-cell" data-linenum="296" href="#linenum296"></a></td>
@@ -1268,7 +1268,7 @@
 </tr>
 <tr>
 <td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this date with the specified period in months subtracted.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this date with the specified number of months subtracted.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
@@ -1352,7 +1352,7 @@
 </tr>
 <tr>
 <td><a id="linenum337" class="linenum-cell" data-linenum="337" href="#linenum337"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this date with the specified period in weeks subtracted.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this date with the specified number of weeks subtracted.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum338" class="linenum-cell" data-linenum="338" href="#linenum338"></a></td>
@@ -1516,7 +1516,7 @@
 </tr>
 <tr>
 <td><a id="linenum378" class="linenum-cell" data-linenum="378" href="#linenum378"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a> end = getChronology().date(<a class="variable" href="#linenum376">endExclusive</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a> end = getChronology().date(<a class="variable" href="#linenum376">endExclusive</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum379" class="linenum-cell" data-linenum="379" href="#linenum379"></a></td>
@@ -1588,11 +1588,11 @@
 </tr>
 <tr>
 <td><a id="linenum396" class="linenum-cell" data-linenum="396" href="#linenum396"></a></td>
-<td><pre>    private long daysUntil(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a> end) {</pre></td>
+<td><pre>    private long daysUntil(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a> end) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum397" class="linenum-cell" data-linenum="397" href="#linenum397"></a></td>
-<td><pre>        return <a class="variable" href="#linenum396">end</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum676">toEpochDay</a>() - toEpochDay();  <span class='comment'>// no overflow</span></pre></td>
+<td><pre>        return <a class="variable" href="#linenum396">end</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum669">toEpochDay</a>() - toEpochDay();  <span class='comment'>// no overflow</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum398" class="linenum-cell" data-linenum="398" href="#linenum398"></a></td>
@@ -1604,7 +1604,7 @@
 </tr>
 <tr>
 <td><a id="linenum400" class="linenum-cell" data-linenum="400" href="#linenum400"></a></td>
-<td><pre>    private long monthsUntil(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a> end) {</pre></td>
+<td><pre>    private long monthsUntil(<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a> end) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum401" class="linenum-cell" data-linenum="401" href="#linenum401"></a></td>
@@ -1664,11 +1664,11 @@
 </tr>
 <tr>
 <td><a id="linenum415" class="linenum-cell" data-linenum="415" href="#linenum415"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum411">obj</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a>) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum411">obj</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum416" class="linenum-cell" data-linenum="416" href="#linenum416"></a></td>
-<td><pre>            return compareTo((<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum247">ChronoLocalDate</a>) <a class="variable" href="#linenum411">obj</a>) == 0;</pre></td>
+<td><pre>            return compareTo((<a class="type" href="/OdinCodeBrowserJdk8/java/time/chrono/ChronoLocalDate.html#linenum240">ChronoLocalDate</a>) <a class="variable" href="#linenum411">obj</a>) == 0;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum417" class="linenum-cell" data-linenum="417" href="#linenum417"></a></td>
@@ -1740,7 +1740,7 @@
 </tr>
 <tr>
 <td><a id="linenum434" class="linenum-cell" data-linenum="434" href="#linenum434"></a></td>
-<td><pre>        <a class="variable" href="#linenum433">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(getChronology().toString())</pre></td>
+<td><pre>        <a class="variable" href="#linenum433">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(getChronology().toString())</pre></td>
 </tr>
 <tr>
 <td><a id="linenum435" class="linenum-cell" data-linenum="435" href="#linenum435"></a></td>

@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2012, 2013, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2012, 2015, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -388,7 +388,7 @@
 </tr>
 <tr>
 <td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
-<td><pre><span class='comment'> * A time without time-zone in the ISO-8601 calendar system,<span class='comment'></pre></td>
+<td><pre><span class='comment'> * A time without a time-zone in the ISO-8601 calendar system,<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
@@ -420,7 +420,7 @@
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre><span class='comment'> * It does not store or represent a date or time-zone.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * This class does not store or represent a date or time-zone.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
@@ -980,7 +980,7 @@
 </tr>
 <tr>
 <td><a id="linenum244" class="linenum-cell" data-linenum="244" href="#linenum244"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum273">now</a>(Clock.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum177">systemDefaultZone</a>());</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum259">now</a>(Clock.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum177">systemDefaultZone</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum245" class="linenum-cell" data-linenum="245" href="#linenum245"></a></td>
@@ -1044,7 +1044,7 @@
 </tr>
 <tr>
 <td><a id="linenum260" class="linenum-cell" data-linenum="260" href="#linenum260"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum273">now</a>(Clock.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum196">system</a>(<a class="variable" href="#linenum259">zone</a>));</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum259">now</a>(Clock.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum196">system</a>(<a class="variable" href="#linenum259">zone</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum261" class="linenum-cell" data-linenum="261" href="#linenum261"></a></td>
@@ -1108,7 +1108,7 @@
 </tr>
 <tr>
 <td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
-<td><pre>        final <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum212">Instant</a> now = <a class="variable" href="#linenum273">clock</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum410">instant</a>();  <span class='comment'>// called once</span></pre></td>
+<td><pre>        final <a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum207">Instant</a> now = <a class="variable" href="#linenum273">clock</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Clock.html#linenum410">instant</a>();  <span class='comment'>// called once</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
@@ -1116,15 +1116,15 @@
 </tr>
 <tr>
 <td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
-<td><pre>        long localSecond = <a class="variable" href="#linenum276">now</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum623">getEpochSecond</a>() + <a class="variable" href="#linenum277">offset</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum473">getTotalSeconds</a>();  <span class='comment'>// overflow caught later</span></pre></td>
+<td><pre>        long localSecond = <a class="variable" href="#linenum276">now</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum618">getEpochSecond</a>() + <a class="variable" href="#linenum277">offset</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/ZoneOffset.html#linenum473">getTotalSeconds</a>();  <span class='comment'>// overflow caught later</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
-<td><pre>        int secsOfDay = (int) Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1165">floorMod</a>(<a class="variable" href="#linenum278">localSecond</a>, <a class="variable" href="#linenum183">SECONDS_PER_DAY</a>);</pre></td>
+<td><pre>        int secsOfDay = (int) Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1138">floorMod</a>(<a class="variable" href="#linenum278">localSecond</a>, <a class="variable" href="#linenum183">SECONDS_PER_DAY</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum375">ofNanoOfDay</a>(<a class="variable" href="#linenum279">secsOfDay</a> * <a class="variable" href="#linenum195">NANOS_PER_SECOND</a> + <a class="variable" href="#linenum276">now</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum636">getNano</a>());</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum375">ofNanoOfDay</a>(<a class="variable" href="#linenum279">secsOfDay</a> * <a class="variable" href="#linenum195">NANOS_PER_SECOND</a> + <a class="variable" href="#linenum276">now</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/Instant.html#linenum631">getNano</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
@@ -1136,7 +1136,7 @@
 </tr>
 <tr>
 <td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
-<td><pre>    //------------------------get-----------------------------------------------</pre></td>
+<td><pre>    //-----------------------------------------------------------------------</pre></td>
 </tr>
 <tr>
 <td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
@@ -1596,7 +1596,7 @@
 </tr>
 <tr>
 <td><a id="linenum398" class="linenum-cell" data-linenum="398" href="#linenum398"></a></td>
-<td><pre><span class='comment'>     * allowing it to be used in queries via method reference, {@code LocalTime::from}.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * allowing it to be used as a query via method reference, {@code LocalTime::from}.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum399" class="linenum-cell" data-linenum="399" href="#linenum399"></a></td>
@@ -1688,7 +1688,7 @@
 </tr>
 <tr>
 <td><a id="linenum421" class="linenum-cell" data-linenum="421" href="#linenum421"></a></td>
-<td><pre><span class='comment'>     * @param text the text to parse such as &quot;10:15:30&quot;, not null<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param text  the text to parse such as &quot;10:15:30&quot;, not null<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum422" class="linenum-cell" data-linenum="422" href="#linenum422"></a></td>
@@ -1760,7 +1760,7 @@
 </tr>
 <tr>
 <td><a id="linenum439" class="linenum-cell" data-linenum="439" href="#linenum439"></a></td>
-<td><pre>    public static <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum125">LocalTime</a> parse(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/CharSequence.html#linenum59">CharSequence</a> text, <a class="type" href="/OdinCodeBrowserJdk8/java/time/format/DateTimeFormatter.html#linenum484">DateTimeFormatter</a> formatter) {</pre></td>
+<td><pre>    public static <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum125">LocalTime</a> parse(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/CharSequence.html#linenum59">CharSequence</a> text, <a class="type" href="/OdinCodeBrowserJdk8/java/time/format/DateTimeFormatter.html#linenum483">DateTimeFormatter</a> formatter) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum440" class="linenum-cell" data-linenum="440" href="#linenum440"></a></td>
@@ -1768,7 +1768,7 @@
 </tr>
 <tr>
 <td><a id="linenum441" class="linenum-cell" data-linenum="441" href="#linenum441"></a></td>
-<td><pre>        return <a class="variable" href="#linenum439">formatter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/format/DateTimeFormatter.html#linenum1846">parse</a>(<a class="variable" href="#linenum439">text</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum125">LocalTime</a>::from);</pre></td>
+<td><pre>        return <a class="variable" href="#linenum439">formatter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/format/DateTimeFormatter.html#linenum1847">parse</a>(<a class="variable" href="#linenum439">text</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum125">LocalTime</a>::from);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum442" class="linenum-cell" data-linenum="442" href="#linenum442"></a></td>
@@ -2112,7 +2112,7 @@
 </tr>
 <tr>
 <td><a id="linenum527" class="linenum-cell" data-linenum="527" href="#linenum527"></a></td>
-<td><pre><span class='comment'>     * This checks if the specified unit can be added to, or subtracted from, this date-time.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * This checks if the specified unit can be added to, or subtracted from, this time.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum528" class="linenum-cell" data-linenum="528" href="#linenum528"></a></td>
@@ -2372,7 +2372,7 @@
 </tr>
 <tr>
 <td><a id="linenum592" class="linenum-cell" data-linenum="592" href="#linenum592"></a></td>
-<td><pre><span class='comment'>     * This queries this time for the value for the specified field.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * This queries this time for the value of the specified field.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum593" class="linenum-cell" data-linenum="593" href="#linenum593"></a></td>
@@ -2512,7 +2512,7 @@
 </tr>
 <tr>
 <td><a id="linenum627" class="linenum-cell" data-linenum="627" href="#linenum627"></a></td>
-<td><pre><span class='comment'>     * This queries this time for the value for the specified field.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * This queries this time for the value of the specified field.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum628" class="linenum-cell" data-linenum="628" href="#linenum628"></a></td>
@@ -3368,7 +3368,7 @@
 </tr>
 <tr>
 <td><a id="linenum841" class="linenum-cell" data-linenum="841" href="#linenum841"></a></td>
-<td><pre>                case MICRO_OF_DAY: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum1143">plusNanos</a>((<a class="variable" href="#linenum833">newValue</a> - <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum1463">toNanoOfDay</a>() / 1000) * 1000);</pre></td>
+<td><pre>                case MICRO_OF_DAY: return LocalTime.<a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum375">ofNanoOfDay</a>(<a class="variable" href="#linenum833">newValue</a> * 1000);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum842" class="linenum-cell" data-linenum="842" href="#linenum842"></a></td>
@@ -3376,7 +3376,7 @@
 </tr>
 <tr>
 <td><a id="linenum843" class="linenum-cell" data-linenum="843" href="#linenum843"></a></td>
-<td><pre>                case MILLI_OF_DAY: return <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum1143">plusNanos</a>((<a class="variable" href="#linenum833">newValue</a> - <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum1463">toNanoOfDay</a>() / 1000_000) * 1000_000);</pre></td>
+<td><pre>                case MILLI_OF_DAY: return LocalTime.<a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum375">ofNanoOfDay</a>(<a class="variable" href="#linenum833">newValue</a> * 1000_000);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum844" class="linenum-cell" data-linenum="844" href="#linenum844"></a></td>
@@ -3448,7 +3448,7 @@
 </tr>
 <tr>
 <td><a id="linenum861" class="linenum-cell" data-linenum="861" href="#linenum861"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the hour-of-day value altered.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the hour-of-day altered.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum862" class="linenum-cell" data-linenum="862" href="#linenum862"></a></td>
@@ -3516,7 +3516,7 @@
 </tr>
 <tr>
 <td><a id="linenum878" class="linenum-cell" data-linenum="878" href="#linenum878"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the minute-of-hour value altered.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the minute-of-hour altered.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum879" class="linenum-cell" data-linenum="879" href="#linenum879"></a></td>
@@ -3584,7 +3584,7 @@
 </tr>
 <tr>
 <td><a id="linenum895" class="linenum-cell" data-linenum="895" href="#linenum895"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the second-of-minute value altered.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the second-of-minute altered.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum896" class="linenum-cell" data-linenum="896" href="#linenum896"></a></td>
@@ -3652,7 +3652,7 @@
 </tr>
 <tr>
 <td><a id="linenum912" class="linenum-cell" data-linenum="912" href="#linenum912"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the nano-of-second value altered.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the nano-of-second altered.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum913" class="linenum-cell" data-linenum="913" href="#linenum913"></a></td>
@@ -3732,7 +3732,7 @@
 </tr>
 <tr>
 <td><a id="linenum932" class="linenum-cell" data-linenum="932" href="#linenum932"></a></td>
-<td><pre><span class='comment'>     * Truncating the time returns a copy of the original time with fields<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Truncation returns a copy of the original time with fields<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum933" class="linenum-cell" data-linenum="933" href="#linenum933"></a></td>
@@ -4252,7 +4252,7 @@
 </tr>
 <tr>
 <td><a id="linenum1062" class="linenum-cell" data-linenum="1062" href="#linenum1062"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified period in hours added.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified number of hours added.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1063" class="linenum-cell" data-linenum="1063" href="#linenum1063"></a></td>
@@ -4328,7 +4328,7 @@
 </tr>
 <tr>
 <td><a id="linenum1081" class="linenum-cell" data-linenum="1081" href="#linenum1081"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified period in minutes added.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified number of minutes added.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1082" class="linenum-cell" data-linenum="1082" href="#linenum1082"></a></td>
@@ -4428,7 +4428,7 @@
 </tr>
 <tr>
 <td><a id="linenum1106" class="linenum-cell" data-linenum="1106" href="#linenum1106"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified period in seconds added.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified number of seconds added.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1107" class="linenum-cell" data-linenum="1107" href="#linenum1107"></a></td>
@@ -4536,7 +4536,7 @@
 </tr>
 <tr>
 <td><a id="linenum1133" class="linenum-cell" data-linenum="1133" href="#linenum1133"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified period in nanoseconds added.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified number of nanoseconds added.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1134" class="linenum-cell" data-linenum="1134" href="#linenum1134"></a></td>
@@ -4848,7 +4848,7 @@
 </tr>
 <tr>
 <td><a id="linenum1211" class="linenum-cell" data-linenum="1211" href="#linenum1211"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified period in hours subtracted.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified number of hours subtracted.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1212" class="linenum-cell" data-linenum="1212" href="#linenum1212"></a></td>
@@ -4908,7 +4908,7 @@
 </tr>
 <tr>
 <td><a id="linenum1226" class="linenum-cell" data-linenum="1226" href="#linenum1226"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified period in minutes subtracted.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified number of minutes subtracted.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1227" class="linenum-cell" data-linenum="1227" href="#linenum1227"></a></td>
@@ -4968,7 +4968,7 @@
 </tr>
 <tr>
 <td><a id="linenum1241" class="linenum-cell" data-linenum="1241" href="#linenum1241"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified period in seconds subtracted.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified number of seconds subtracted.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1242" class="linenum-cell" data-linenum="1242" href="#linenum1242"></a></td>
@@ -5028,7 +5028,7 @@
 </tr>
 <tr>
 <td><a id="linenum1256" class="linenum-cell" data-linenum="1256" href="#linenum1256"></a></td>
-<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified period in nanoseconds subtracted.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Returns a copy of this {@code LocalTime} with the specified number of nanoseconds subtracted.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1257" class="linenum-cell" data-linenum="1257" href="#linenum1257"></a></td>
@@ -5336,7 +5336,7 @@
 </tr>
 <tr>
 <td><a id="linenum1333" class="linenum-cell" data-linenum="1333" href="#linenum1333"></a></td>
-<td><pre>        return <a class="variable" href="#linenum1332">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum224">with</a>(NANO_OF_DAY, <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum1463">toNanoOfDay</a>());</pre></td>
+<td><pre>        return <a class="variable" href="#linenum1332">temporal</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/temporal/Temporal.html#linenum225">with</a>(NANO_OF_DAY, <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum1463">toNanoOfDay</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1334" class="linenum-cell" data-linenum="1334" href="#linenum1334"></a></td>
@@ -5648,7 +5648,7 @@
 </tr>
 <tr>
 <td><a id="linenum1411" class="linenum-cell" data-linenum="1411" href="#linenum1411"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> format(<a class="type" href="/OdinCodeBrowserJdk8/java/time/format/DateTimeFormatter.html#linenum484">DateTimeFormatter</a> formatter) {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> format(<a class="type" href="/OdinCodeBrowserJdk8/java/time/format/DateTimeFormatter.html#linenum483">DateTimeFormatter</a> formatter) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1412" class="linenum-cell" data-linenum="1412" href="#linenum1412"></a></td>
@@ -5656,7 +5656,7 @@
 </tr>
 <tr>
 <td><a id="linenum1413" class="linenum-cell" data-linenum="1413" href="#linenum1413"></a></td>
-<td><pre>        return <a class="variable" href="#linenum1411">formatter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/format/DateTimeFormatter.html#linenum1717">format</a>(this);</pre></td>
+<td><pre>        return <a class="variable" href="#linenum1411">formatter</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/time/format/DateTimeFormatter.html#linenum1718">format</a>(this);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1414" class="linenum-cell" data-linenum="1414" href="#linenum1414"></a></td>
@@ -5896,7 +5896,7 @@
 </tr>
 <tr>
 <td><a id="linenum1473" class="linenum-cell" data-linenum="1473" href="#linenum1473"></a></td>
-<td><pre><span class='comment'>     * Compares this {@code LocalTime} to another time.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Compares this time to another time.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1474" class="linenum-cell" data-linenum="1474" href="#linenum1474"></a></td>
@@ -5996,7 +5996,7 @@
 </tr>
 <tr>
 <td><a id="linenum1498" class="linenum-cell" data-linenum="1498" href="#linenum1498"></a></td>
-<td><pre><span class='comment'>     * Checks if this {@code LocalTime} is after the specified time.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Checks if this time is after the specified time.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1499" class="linenum-cell" data-linenum="1499" href="#linenum1499"></a></td>
@@ -6048,7 +6048,7 @@
 </tr>
 <tr>
 <td><a id="linenum1511" class="linenum-cell" data-linenum="1511" href="#linenum1511"></a></td>
-<td><pre><span class='comment'>     * Checks if this {@code LocalTime} is before the specified time.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * Checks if this time is before the specified time.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1512" class="linenum-cell" data-linenum="1512" href="#linenum1512"></a></td>
@@ -6340,7 +6340,7 @@
 </tr>
 <tr>
 <td><a id="linenum1584" class="linenum-cell" data-linenum="1584" href="#linenum1584"></a></td>
-<td><pre>        <a class="variable" href="#linenum1579">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="variable" href="#linenum1580">hourValue</a> &lt; 10 ? <span class='string'>&quot;0&quot;</span> : <span class='string'>&quot;&quot;</span>).append(<a class="variable" href="#linenum1580">hourValue</a>)</pre></td>
+<td><pre>        <a class="variable" href="#linenum1579">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<a class="variable" href="#linenum1580">hourValue</a> &lt; 10 ? <span class='string'>&quot;0&quot;</span> : <span class='string'>&quot;&quot;</span>).append(<a class="variable" href="#linenum1580">hourValue</a>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1585" class="linenum-cell" data-linenum="1585" href="#linenum1585"></a></td>
@@ -6352,7 +6352,7 @@
 </tr>
 <tr>
 <td><a id="linenum1587" class="linenum-cell" data-linenum="1587" href="#linenum1587"></a></td>
-<td><pre>            <a class="variable" href="#linenum1579">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="variable" href="#linenum1582">secondValue</a> &lt; 10 ? <span class='string'>&quot;:0&quot;</span> : <span class='string'>&quot;:&quot;</span>).append(<a class="variable" href="#linenum1582">secondValue</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum1579">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<a class="variable" href="#linenum1582">secondValue</a> &lt; 10 ? <span class='string'>&quot;:0&quot;</span> : <span class='string'>&quot;:&quot;</span>).append(<a class="variable" href="#linenum1582">secondValue</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1588" class="linenum-cell" data-linenum="1588" href="#linenum1588"></a></td>
@@ -6360,7 +6360,7 @@
 </tr>
 <tr>
 <td><a id="linenum1589" class="linenum-cell" data-linenum="1589" href="#linenum1589"></a></td>
-<td><pre>                <a class="variable" href="#linenum1579">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>('.');</pre></td>
+<td><pre>                <a class="variable" href="#linenum1579">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>('.');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1590" class="linenum-cell" data-linenum="1590" href="#linenum1590"></a></td>
@@ -6368,7 +6368,7 @@
 </tr>
 <tr>
 <td><a id="linenum1591" class="linenum-cell" data-linenum="1591" href="#linenum1591"></a></td>
-<td><pre>                    <a class="variable" href="#linenum1579">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum934">toString</a>((<a class="variable" href="#linenum1583">nanoValue</a> / 1000_000) + 1000).substring(1));</pre></td>
+<td><pre>                    <a class="variable" href="#linenum1579">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum397">toString</a>((<a class="variable" href="#linenum1583">nanoValue</a> / 1000_000) + 1000).substring(1));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1592" class="linenum-cell" data-linenum="1592" href="#linenum1592"></a></td>
@@ -6376,7 +6376,7 @@
 </tr>
 <tr>
 <td><a id="linenum1593" class="linenum-cell" data-linenum="1593" href="#linenum1593"></a></td>
-<td><pre>                    <a class="variable" href="#linenum1579">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum934">toString</a>((<a class="variable" href="#linenum1583">nanoValue</a> / 1000) + 1000_000).substring(1));</pre></td>
+<td><pre>                    <a class="variable" href="#linenum1579">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum397">toString</a>((<a class="variable" href="#linenum1583">nanoValue</a> / 1000) + 1000_000).substring(1));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1594" class="linenum-cell" data-linenum="1594" href="#linenum1594"></a></td>
@@ -6384,7 +6384,7 @@
 </tr>
 <tr>
 <td><a id="linenum1595" class="linenum-cell" data-linenum="1595" href="#linenum1595"></a></td>
-<td><pre>                    <a class="variable" href="#linenum1579">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum934">toString</a>((<a class="variable" href="#linenum1583">nanoValue</a>) + 1000_000_000).substring(1));</pre></td>
+<td><pre>                    <a class="variable" href="#linenum1579">buf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum397">toString</a>((<a class="variable" href="#linenum1583">nanoValue</a>) + 1000_000_000).substring(1));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1596" class="linenum-cell" data-linenum="1596" href="#linenum1596"></a></td>
@@ -6568,210 +6568,214 @@
 </tr>
 <tr>
 <td><a id="linenum1641" class="linenum-cell" data-linenum="1641" href="#linenum1641"></a></td>
-<td><pre><span class='comment'>     * @throws InvalidObjectException always<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param s the stream to read<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1642" class="linenum-cell" data-linenum="1642" href="#linenum1642"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * @throws InvalidObjectException always<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1643" class="linenum-cell" data-linenum="1643" href="#linenum1643"></a></td>
-<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum206">ObjectInputStream</a> s) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a> {</pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1644" class="linenum-cell" data-linenum="1644" href="#linenum1644"></a></td>
-<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a>(<span class='string'>&quot;Deserialization via serialization delegate&quot;</span>);</pre></td>
+<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum217">ObjectInputStream</a> s) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1645" class="linenum-cell" data-linenum="1645" href="#linenum1645"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        throw new <a class="type" href="/OdinCodeBrowserJdk8/java/io/InvalidObjectException.html#linenum38">InvalidObjectException</a>(<span class='string'>&quot;Deserialization via serialization delegate&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1646" class="linenum-cell" data-linenum="1646" href="#linenum1646"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1647" class="linenum-cell" data-linenum="1647" href="#linenum1647"></a></td>
-<td><pre>    void writeExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum49">DataOutput</a> out) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum1648" class="linenum-cell" data-linenum="1648" href="#linenum1648"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum229">nano</a> == 0) {</pre></td>
+<td><pre>    void writeExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum49">DataOutput</a> out) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1649" class="linenum-cell" data-linenum="1649" href="#linenum1649"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum903">second</a> == 0) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum229">nano</a> == 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1650" class="linenum-cell" data-linenum="1650" href="#linenum1650"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum886">minute</a> == 0) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum903">second</a> == 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1651" class="linenum-cell" data-linenum="1651" href="#linenum1651"></a></td>
-<td><pre>                    <a class="variable" href="#linenum1647">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(~<a class="variable" href="#linenum869">hour</a>);</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum886">minute</a> == 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1652" class="linenum-cell" data-linenum="1652" href="#linenum1652"></a></td>
-<td><pre>                } else {</pre></td>
+<td><pre>                    <a class="variable" href="#linenum1648">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(~<a class="variable" href="#linenum869">hour</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum1653" class="linenum-cell" data-linenum="1653" href="#linenum1653"></a></td>
-<td><pre>                    <a class="variable" href="#linenum1647">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum869">hour</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1654" class="linenum-cell" data-linenum="1654" href="#linenum1654"></a></td>
-<td><pre>                    <a class="variable" href="#linenum1647">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(~<a class="variable" href="#linenum886">minute</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1655" class="linenum-cell" data-linenum="1655" href="#linenum1655"></a></td>
-<td><pre>                }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1656" class="linenum-cell" data-linenum="1656" href="#linenum1656"></a></td>
-<td><pre>            } else {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1657" class="linenum-cell" data-linenum="1657" href="#linenum1657"></a></td>
-<td><pre>                <a class="variable" href="#linenum1647">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum869">hour</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1658" class="linenum-cell" data-linenum="1658" href="#linenum1658"></a></td>
-<td><pre>                <a class="variable" href="#linenum1647">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum886">minute</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1659" class="linenum-cell" data-linenum="1659" href="#linenum1659"></a></td>
-<td><pre>                <a class="variable" href="#linenum1647">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(~<a class="variable" href="#linenum903">second</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1660" class="linenum-cell" data-linenum="1660" href="#linenum1660"></a></td>
-<td><pre>            }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1661" class="linenum-cell" data-linenum="1661" href="#linenum1661"></a></td>
-<td><pre>        } else {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1662" class="linenum-cell" data-linenum="1662" href="#linenum1662"></a></td>
-<td><pre>            <a class="variable" href="#linenum1647">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum869">hour</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1663" class="linenum-cell" data-linenum="1663" href="#linenum1663"></a></td>
-<td><pre>            <a class="variable" href="#linenum1647">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum886">minute</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1664" class="linenum-cell" data-linenum="1664" href="#linenum1664"></a></td>
-<td><pre>            <a class="variable" href="#linenum1647">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum903">second</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1665" class="linenum-cell" data-linenum="1665" href="#linenum1665"></a></td>
-<td><pre>            <a class="variable" href="#linenum1647">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum193">writeInt</a>(<a class="variable" href="#linenum229">nano</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1666" class="linenum-cell" data-linenum="1666" href="#linenum1666"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1667" class="linenum-cell" data-linenum="1667" href="#linenum1667"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1668" class="linenum-cell" data-linenum="1668" href="#linenum1668"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum1669" class="linenum-cell" data-linenum="1669" href="#linenum1669"></a></td>
-<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum125">LocalTime</a> readExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum148">DataInput</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1670" class="linenum-cell" data-linenum="1670" href="#linenum1670"></a></td>
-<td><pre>        int hour = <a class="variable" href="#linenum1669">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum290">readByte</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1671" class="linenum-cell" data-linenum="1671" href="#linenum1671"></a></td>
-<td><pre>        int minute = 0;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1672" class="linenum-cell" data-linenum="1672" href="#linenum1672"></a></td>
-<td><pre>        int second = 0;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1673" class="linenum-cell" data-linenum="1673" href="#linenum1673"></a></td>
-<td><pre>        int nano = 0;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1674" class="linenum-cell" data-linenum="1674" href="#linenum1674"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum1670">hour</a> &lt; 0) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1675" class="linenum-cell" data-linenum="1675" href="#linenum1675"></a></td>
-<td><pre>            <a class="variable" href="#linenum1670">hour</a> = ~<a class="variable" href="#linenum1670">hour</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1676" class="linenum-cell" data-linenum="1676" href="#linenum1676"></a></td>
-<td><pre>        } else {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1677" class="linenum-cell" data-linenum="1677" href="#linenum1677"></a></td>
-<td><pre>            <a class="variable" href="#linenum1671">minute</a> = <a class="variable" href="#linenum1669">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum290">readByte</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1678" class="linenum-cell" data-linenum="1678" href="#linenum1678"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum1671">minute</a> &lt; 0) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1679" class="linenum-cell" data-linenum="1679" href="#linenum1679"></a></td>
-<td><pre>                <a class="variable" href="#linenum1671">minute</a> = ~<a class="variable" href="#linenum1671">minute</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1680" class="linenum-cell" data-linenum="1680" href="#linenum1680"></a></td>
-<td><pre>            } else {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1681" class="linenum-cell" data-linenum="1681" href="#linenum1681"></a></td>
-<td><pre>                <a class="variable" href="#linenum1672">second</a> = <a class="variable" href="#linenum1669">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum290">readByte</a>();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1682" class="linenum-cell" data-linenum="1682" href="#linenum1682"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum1672">second</a> &lt; 0) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1683" class="linenum-cell" data-linenum="1683" href="#linenum1683"></a></td>
-<td><pre>                    <a class="variable" href="#linenum1672">second</a> = ~<a class="variable" href="#linenum1672">second</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1684" class="linenum-cell" data-linenum="1684" href="#linenum1684"></a></td>
 <td><pre>                } else {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum1685" class="linenum-cell" data-linenum="1685" href="#linenum1685"></a></td>
-<td><pre>                    <a class="variable" href="#linenum1673">nano</a> = <a class="variable" href="#linenum1669">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum393">readInt</a>();</pre></td>
+<td><a id="linenum1654" class="linenum-cell" data-linenum="1654" href="#linenum1654"></a></td>
+<td><pre>                    <a class="variable" href="#linenum1648">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum869">hour</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum1686" class="linenum-cell" data-linenum="1686" href="#linenum1686"></a></td>
+<td><a id="linenum1655" class="linenum-cell" data-linenum="1655" href="#linenum1655"></a></td>
+<td><pre>                    <a class="variable" href="#linenum1648">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(~<a class="variable" href="#linenum886">minute</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1656" class="linenum-cell" data-linenum="1656" href="#linenum1656"></a></td>
 <td><pre>                }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum1687" class="linenum-cell" data-linenum="1687" href="#linenum1687"></a></td>
+<td><a id="linenum1657" class="linenum-cell" data-linenum="1657" href="#linenum1657"></a></td>
+<td><pre>            } else {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1658" class="linenum-cell" data-linenum="1658" href="#linenum1658"></a></td>
+<td><pre>                <a class="variable" href="#linenum1648">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum869">hour</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1659" class="linenum-cell" data-linenum="1659" href="#linenum1659"></a></td>
+<td><pre>                <a class="variable" href="#linenum1648">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum886">minute</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1660" class="linenum-cell" data-linenum="1660" href="#linenum1660"></a></td>
+<td><pre>                <a class="variable" href="#linenum1648">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(~<a class="variable" href="#linenum903">second</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1661" class="linenum-cell" data-linenum="1661" href="#linenum1661"></a></td>
 <td><pre>            }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum1688" class="linenum-cell" data-linenum="1688" href="#linenum1688"></a></td>
+<td><a id="linenum1662" class="linenum-cell" data-linenum="1662" href="#linenum1662"></a></td>
+<td><pre>        } else {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1663" class="linenum-cell" data-linenum="1663" href="#linenum1663"></a></td>
+<td><pre>            <a class="variable" href="#linenum1648">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum869">hour</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1664" class="linenum-cell" data-linenum="1664" href="#linenum1664"></a></td>
+<td><pre>            <a class="variable" href="#linenum1648">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum886">minute</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1665" class="linenum-cell" data-linenum="1665" href="#linenum1665"></a></td>
+<td><pre>            <a class="variable" href="#linenum1648">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum131">writeByte</a>(<a class="variable" href="#linenum903">second</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1666" class="linenum-cell" data-linenum="1666" href="#linenum1666"></a></td>
+<td><pre>            <a class="variable" href="#linenum1648">out</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataOutput.html#linenum193">writeInt</a>(<a class="variable" href="#linenum229">nano</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1667" class="linenum-cell" data-linenum="1667" href="#linenum1667"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum1689" class="linenum-cell" data-linenum="1689" href="#linenum1689"></a></td>
-<td><pre>        return LocalTime.<a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum338">of</a>(<a class="variable" href="#linenum1670">hour</a>, <a class="variable" href="#linenum1671">minute</a>, <a class="variable" href="#linenum1672">second</a>, <a class="variable" href="#linenum1673">nano</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum1690" class="linenum-cell" data-linenum="1690" href="#linenum1690"></a></td>
+<td><a id="linenum1668" class="linenum-cell" data-linenum="1668" href="#linenum1668"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum1691" class="linenum-cell" data-linenum="1691" href="#linenum1691"></a></td>
+<td><a id="linenum1669" class="linenum-cell" data-linenum="1669" href="#linenum1669"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum1670" class="linenum-cell" data-linenum="1670" href="#linenum1670"></a></td>
+<td><pre>    static <a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum125">LocalTime</a> readExternal(<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum148">DataInput</a> in) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1671" class="linenum-cell" data-linenum="1671" href="#linenum1671"></a></td>
+<td><pre>        int hour = <a class="variable" href="#linenum1670">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum290">readByte</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1672" class="linenum-cell" data-linenum="1672" href="#linenum1672"></a></td>
+<td><pre>        int minute = 0;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1673" class="linenum-cell" data-linenum="1673" href="#linenum1673"></a></td>
+<td><pre>        int second = 0;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1674" class="linenum-cell" data-linenum="1674" href="#linenum1674"></a></td>
+<td><pre>        int nano = 0;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1675" class="linenum-cell" data-linenum="1675" href="#linenum1675"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum1671">hour</a> &lt; 0) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1676" class="linenum-cell" data-linenum="1676" href="#linenum1676"></a></td>
+<td><pre>            <a class="variable" href="#linenum1671">hour</a> = ~<a class="variable" href="#linenum1671">hour</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1677" class="linenum-cell" data-linenum="1677" href="#linenum1677"></a></td>
+<td><pre>        } else {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1678" class="linenum-cell" data-linenum="1678" href="#linenum1678"></a></td>
+<td><pre>            <a class="variable" href="#linenum1672">minute</a> = <a class="variable" href="#linenum1670">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum290">readByte</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1679" class="linenum-cell" data-linenum="1679" href="#linenum1679"></a></td>
+<td><pre>            if (<a class="variable" href="#linenum1672">minute</a> &lt; 0) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1680" class="linenum-cell" data-linenum="1680" href="#linenum1680"></a></td>
+<td><pre>                <a class="variable" href="#linenum1672">minute</a> = ~<a class="variable" href="#linenum1672">minute</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1681" class="linenum-cell" data-linenum="1681" href="#linenum1681"></a></td>
+<td><pre>            } else {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1682" class="linenum-cell" data-linenum="1682" href="#linenum1682"></a></td>
+<td><pre>                <a class="variable" href="#linenum1673">second</a> = <a class="variable" href="#linenum1670">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum290">readByte</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1683" class="linenum-cell" data-linenum="1683" href="#linenum1683"></a></td>
+<td><pre>                if (<a class="variable" href="#linenum1673">second</a> &lt; 0) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1684" class="linenum-cell" data-linenum="1684" href="#linenum1684"></a></td>
+<td><pre>                    <a class="variable" href="#linenum1673">second</a> = ~<a class="variable" href="#linenum1673">second</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1685" class="linenum-cell" data-linenum="1685" href="#linenum1685"></a></td>
+<td><pre>                } else {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1686" class="linenum-cell" data-linenum="1686" href="#linenum1686"></a></td>
+<td><pre>                    <a class="variable" href="#linenum1674">nano</a> = <a class="variable" href="#linenum1670">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/DataInput.html#linenum393">readInt</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1687" class="linenum-cell" data-linenum="1687" href="#linenum1687"></a></td>
+<td><pre>                }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1688" class="linenum-cell" data-linenum="1688" href="#linenum1688"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1689" class="linenum-cell" data-linenum="1689" href="#linenum1689"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1690" class="linenum-cell" data-linenum="1690" href="#linenum1690"></a></td>
+<td><pre>        return LocalTime.<a class="type" href="/OdinCodeBrowserJdk8/java/time/LocalTime.html#linenum338">of</a>(<a class="variable" href="#linenum1671">hour</a>, <a class="variable" href="#linenum1672">minute</a>, <a class="variable" href="#linenum1673">second</a>, <a class="variable" href="#linenum1674">nano</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum1691" class="linenum-cell" data-linenum="1691" href="#linenum1691"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
 <td><a id="linenum1692" class="linenum-cell" data-linenum="1692" href="#linenum1692"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum1693" class="linenum-cell" data-linenum="1693" href="#linenum1693"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

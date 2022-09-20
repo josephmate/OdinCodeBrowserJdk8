@@ -1528,7 +1528,7 @@
 </tr>
 <tr>
 <td><a id="linenum381" class="linenum-cell" data-linenum="381" href="#linenum381"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum69">data</a>, <a class="variable" href="#linenum372">yoff</a>, <a class="variable" href="#linenum362">outData</a>, 0, <a class="variable" href="#linenum361">w</a>*<a class="variable" href="#linenum361">h</a>);</pre></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum69">data</a>, <a class="variable" href="#linenum372">yoff</a>, <a class="variable" href="#linenum362">outData</a>, 0, <a class="variable" href="#linenum361">w</a>*<a class="variable" href="#linenum361">h</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum382" class="linenum-cell" data-linenum="382" href="#linenum382"></a></td>
@@ -1544,7 +1544,7 @@
 </tr>
 <tr>
 <td><a id="linenum385" class="linenum-cell" data-linenum="385" href="#linenum385"></a></td>
-<td><pre>                    System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum69">data</a>, <a class="variable" href="#linenum372">yoff</a>, <a class="variable" href="#linenum362">outData</a>, <a class="variable" href="#linenum375">off</a>, <a class="variable" href="#linenum361">w</a>);</pre></td>
+<td><pre>                    System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum69">data</a>, <a class="variable" href="#linenum372">yoff</a>, <a class="variable" href="#linenum362">outData</a>, <a class="variable" href="#linenum375">off</a>, <a class="variable" href="#linenum361">w</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum386" class="linenum-cell" data-linenum="386" href="#linenum386"></a></td>
@@ -2492,7 +2492,7 @@
 </tr>
 <tr>
 <td><a id="linenum622" class="linenum-cell" data-linenum="622" href="#linenum622"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum606">inData</a>, 0, <a class="variable" href="#linenum69">data</a>, <a class="variable" href="#linenum613">yoff</a>, <a class="variable" href="#linenum605">w</a>*<a class="variable" href="#linenum605">h</a>);</pre></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum606">inData</a>, 0, <a class="variable" href="#linenum69">data</a>, <a class="variable" href="#linenum613">yoff</a>, <a class="variable" href="#linenum605">w</a>*<a class="variable" href="#linenum605">h</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum623" class="linenum-cell" data-linenum="623" href="#linenum623"></a></td>
@@ -2508,7 +2508,7 @@
 </tr>
 <tr>
 <td><a id="linenum626" class="linenum-cell" data-linenum="626" href="#linenum626"></a></td>
-<td><pre>                    System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum606">inData</a>, <a class="variable" href="#linenum616">off</a>, <a class="variable" href="#linenum69">data</a>, <a class="variable" href="#linenum613">yoff</a>, <a class="variable" href="#linenum605">w</a>);</pre></td>
+<td><pre>                    System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum606">inData</a>, <a class="variable" href="#linenum616">off</a>, <a class="variable" href="#linenum69">data</a>, <a class="variable" href="#linenum613">yoff</a>, <a class="variable" href="#linenum605">w</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum627" class="linenum-cell" data-linenum="627" href="#linenum627"></a></td>
@@ -3164,7 +3164,7 @@
 </tr>
 <tr>
 <td><a id="linenum790" class="linenum-cell" data-linenum="790" href="#linenum790"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/image/ShortComponentRaster.html#linenum789">createCompatibleWritableRaster</a>(<a class="variable" href="#linenum734">width</a>,<a class="variable" href="#linenum734">height</a>);</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/image/ShortComponentRaster.html#linenum772">createCompatibleWritableRaster</a>(<a class="variable" href="#linenum734">width</a>,<a class="variable" href="#linenum734">height</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum791" class="linenum-cell" data-linenum="791" href="#linenum791"></a></td>
@@ -3292,107 +3292,107 @@
 </tr>
 <tr>
 <td><a id="linenum822" class="linenum-cell" data-linenum="822" href="#linenum822"></a></td>
-<td><pre>        <span class='comment'>// we can be sure that width and height are greater than 0</span></pre></td>
+<td><pre>        if ((long)minX - sampleModelTranslateX &lt; 0 ||</pre></td>
 </tr>
 <tr>
 <td><a id="linenum823" class="linenum-cell" data-linenum="823" href="#linenum823"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum63">scanlineStride</a> &lt; 0 ||</pre></td>
+<td><pre>            (long)minY - sampleModelTranslateY &lt; 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum824" class="linenum-cell" data-linenum="824" href="#linenum824"></a></td>
-<td><pre>            <a class="variable" href="#linenum63">scanlineStride</a> &gt; (Integer.MAX_VALUE / <a class="variable" href="#linenum734">height</a>) ||</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum825" class="linenum-cell" data-linenum="825" href="#linenum825"></a></td>
-<td><pre>            <a class="variable" href="#linenum63">scanlineStride</a> &gt; <a class="variable" href="#linenum69">data</a>.length)</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Incorrect origin/translate: (&quot;</span> +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum826" class="linenum-cell" data-linenum="826" href="#linenum826"></a></td>
-<td><pre>        {</pre></td>
+<td><pre>                    minX + <span class='string'>&quot;, &quot;</span> + minY + <span class='string'>&quot;) / (&quot;</span> +</pre></td>
 </tr>
 <tr>
 <td><a id="linenum827" class="linenum-cell" data-linenum="827" href="#linenum827"></a></td>
-<td><pre>            <span class='comment'>// integer overflow</span></pre></td>
+<td><pre>                    sampleModelTranslateX + <span class='string'>&quot;, &quot;</span> + sampleModelTranslateY + <span class='string'>&quot;)&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum828" class="linenum-cell" data-linenum="828" href="#linenum828"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Incorrect scanline stride: &quot;</span></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum829" class="linenum-cell" data-linenum="829" href="#linenum829"></a></td>
-<td><pre>                    + <a class="variable" href="#linenum63">scanlineStride</a>);</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum830" class="linenum-cell" data-linenum="830" href="#linenum830"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>        <span class='comment'>// we can be sure that width and height are greater than 0</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum831" class="linenum-cell" data-linenum="831" href="#linenum831"></a></td>
-<td><pre>        int lastScanOffset = (<a class="variable" href="#linenum734">height</a> - 1) * <a class="variable" href="#linenum63">scanlineStride</a>;</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum63">scanlineStride</a> &lt; 0 ||</pre></td>
 </tr>
 <tr>
 <td><a id="linenum832" class="linenum-cell" data-linenum="832" href="#linenum832"></a></td>
-<td><pre></pre></td>
+<td><pre>            <a class="variable" href="#linenum63">scanlineStride</a> &gt; (Integer.MAX_VALUE / <a class="variable" href="#linenum734">height</a>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum833" class="linenum-cell" data-linenum="833" href="#linenum833"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum66">pixelStride</a> &lt; 0 ||</pre></td>
-</tr>
-<tr>
-<td><a id="linenum834" class="linenum-cell" data-linenum="834" href="#linenum834"></a></td>
-<td><pre>            <a class="variable" href="#linenum66">pixelStride</a> &gt; (Integer.MAX_VALUE / <a class="variable" href="#linenum734">width</a>) ||</pre></td>
-</tr>
-<tr>
-<td><a id="linenum835" class="linenum-cell" data-linenum="835" href="#linenum835"></a></td>
-<td><pre>            <a class="variable" href="#linenum66">pixelStride</a> &gt; <a class="variable" href="#linenum69">data</a>.length)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum836" class="linenum-cell" data-linenum="836" href="#linenum836"></a></td>
 <td><pre>        {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum837" class="linenum-cell" data-linenum="837" href="#linenum837"></a></td>
+<td><a id="linenum834" class="linenum-cell" data-linenum="834" href="#linenum834"></a></td>
 <td><pre>            <span class='comment'>// integer overflow</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum835" class="linenum-cell" data-linenum="835" href="#linenum835"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Incorrect scanline stride: &quot;</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum836" class="linenum-cell" data-linenum="836" href="#linenum836"></a></td>
+<td><pre>                    + <a class="variable" href="#linenum63">scanlineStride</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum837" class="linenum-cell" data-linenum="837" href="#linenum837"></a></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum838" class="linenum-cell" data-linenum="838" href="#linenum838"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Incorrect pixel stride: &quot;</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum839" class="linenum-cell" data-linenum="839" href="#linenum839"></a></td>
-<td><pre>                    + <a class="variable" href="#linenum66">pixelStride</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum840" class="linenum-cell" data-linenum="840" href="#linenum840"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum841" class="linenum-cell" data-linenum="841" href="#linenum841"></a></td>
-<td><pre>        int lastPixelOffset = (<a class="variable" href="#linenum734">width</a> - 1) * <a class="variable" href="#linenum66">pixelStride</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum842" class="linenum-cell" data-linenum="842" href="#linenum842"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum839" class="linenum-cell" data-linenum="839" href="#linenum839"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum734">height</a> &gt; 1 || minY - sampleModelTranslateY &gt; 0) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum840" class="linenum-cell" data-linenum="840" href="#linenum840"></a></td>
+<td><pre>            <span class='comment'>// buffer should contain at least one scanline</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum841" class="linenum-cell" data-linenum="841" href="#linenum841"></a></td>
+<td><pre>            if (<a class="variable" href="#linenum63">scanlineStride</a> &gt; <a class="variable" href="#linenum69">data</a>.length) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum842" class="linenum-cell" data-linenum="842" href="#linenum842"></a></td>
+<td><pre>                throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Incorrect scanline stride: &quot;</span></pre></td>
+</tr>
+<tr>
 <td><a id="linenum843" class="linenum-cell" data-linenum="843" href="#linenum843"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum841">lastPixelOffset</a> &gt; (Integer.MAX_VALUE - <a class="variable" href="#linenum831">lastScanOffset</a>)) {</pre></td>
+<td><pre>                        + <a class="variable" href="#linenum63">scanlineStride</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum844" class="linenum-cell" data-linenum="844" href="#linenum844"></a></td>
-<td><pre>            <span class='comment'>// integer overflow</span></pre></td>
+<td><pre>            }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum845" class="linenum-cell" data-linenum="845" href="#linenum845"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Incorrect raster attributes&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum846" class="linenum-cell" data-linenum="846" href="#linenum846"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum846" class="linenum-cell" data-linenum="846" href="#linenum846"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
 <td><a id="linenum847" class="linenum-cell" data-linenum="847" href="#linenum847"></a></td>
-<td><pre>        <a class="variable" href="#linenum841">lastPixelOffset</a> += <a class="variable" href="#linenum831">lastScanOffset</a>;</pre></td>
+<td><pre>        int lastScanOffset = (<a class="variable" href="#linenum734">height</a> - 1) * <a class="variable" href="#linenum63">scanlineStride</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum848" class="linenum-cell" data-linenum="848" href="#linenum848"></a></td>
@@ -3400,39 +3400,39 @@
 </tr>
 <tr>
 <td><a id="linenum849" class="linenum-cell" data-linenum="849" href="#linenum849"></a></td>
-<td><pre>        int index;</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum66">pixelStride</a> &lt; 0 ||</pre></td>
 </tr>
 <tr>
 <td><a id="linenum850" class="linenum-cell" data-linenum="850" href="#linenum850"></a></td>
-<td><pre>        int maxIndex = 0;</pre></td>
+<td><pre>            <a class="variable" href="#linenum66">pixelStride</a> &gt; (Integer.MAX_VALUE / <a class="variable" href="#linenum734">width</a>) ||</pre></td>
 </tr>
 <tr>
 <td><a id="linenum851" class="linenum-cell" data-linenum="851" href="#linenum851"></a></td>
-<td><pre>        for (int i = 0; <a class="variable" href="#linenum851">i</a> &lt; numDataElements; <a class="variable" href="#linenum851">i</a>++) {</pre></td>
+<td><pre>            <a class="variable" href="#linenum66">pixelStride</a> &gt; <a class="variable" href="#linenum69">data</a>.length)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum852" class="linenum-cell" data-linenum="852" href="#linenum852"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum60">dataOffsets</a>[<a class="variable" href="#linenum851">i</a>] &gt; (Integer.MAX_VALUE - <a class="variable" href="#linenum841">lastPixelOffset</a>)) {</pre></td>
+<td><pre>        {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum853" class="linenum-cell" data-linenum="853" href="#linenum853"></a></td>
-<td><pre>                throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Incorrect band offset: &quot;</span></pre></td>
+<td><pre>            <span class='comment'>// integer overflow</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum854" class="linenum-cell" data-linenum="854" href="#linenum854"></a></td>
-<td><pre>                            + <a class="variable" href="#linenum60">dataOffsets</a>[<a class="variable" href="#linenum851">i</a>]);</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Incorrect pixel stride: &quot;</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum855" class="linenum-cell" data-linenum="855" href="#linenum855"></a></td>
-<td><pre>            }</pre></td>
+<td><pre>                    + <a class="variable" href="#linenum66">pixelStride</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum856" class="linenum-cell" data-linenum="856" href="#linenum856"></a></td>
-<td><pre></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum857" class="linenum-cell" data-linenum="857" href="#linenum857"></a></td>
-<td><pre>            <a class="variable" href="#linenum849">index</a> = <a class="variable" href="#linenum841">lastPixelOffset</a> + <a class="variable" href="#linenum60">dataOffsets</a>[<a class="variable" href="#linenum851">i</a>];</pre></td>
+<td><pre>        int lastPixelOffset = (<a class="variable" href="#linenum734">width</a> - 1) * <a class="variable" href="#linenum66">pixelStride</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum858" class="linenum-cell" data-linenum="858" href="#linenum858"></a></td>
@@ -3440,15 +3440,15 @@
 </tr>
 <tr>
 <td><a id="linenum859" class="linenum-cell" data-linenum="859" href="#linenum859"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum849">index</a> &gt; <a class="variable" href="#linenum850">maxIndex</a>) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum857">lastPixelOffset</a> &gt; (Integer.MAX_VALUE - <a class="variable" href="#linenum847">lastScanOffset</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum860" class="linenum-cell" data-linenum="860" href="#linenum860"></a></td>
-<td><pre>                <a class="variable" href="#linenum850">maxIndex</a> = <a class="variable" href="#linenum849">index</a>;</pre></td>
+<td><pre>            <span class='comment'>// integer overflow</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum861" class="linenum-cell" data-linenum="861" href="#linenum861"></a></td>
-<td><pre>            }</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Incorrect raster attributes&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum862" class="linenum-cell" data-linenum="862" href="#linenum862"></a></td>
@@ -3456,58 +3456,122 @@
 </tr>
 <tr>
 <td><a id="linenum863" class="linenum-cell" data-linenum="863" href="#linenum863"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum69">data</a>.length &lt;= <a class="variable" href="#linenum850">maxIndex</a>) {</pre></td>
+<td><pre>        <a class="variable" href="#linenum857">lastPixelOffset</a> += <a class="variable" href="#linenum847">lastScanOffset</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum864" class="linenum-cell" data-linenum="864" href="#linenum864"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Data array too small (should be &gt; &quot;</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum865" class="linenum-cell" data-linenum="865" href="#linenum865"></a></td>
-<td><pre>                    + <a class="variable" href="#linenum850">maxIndex</a> + <span class='string'>&quot; )&quot;</span>);</pre></td>
+<td><pre>        int index;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum866" class="linenum-cell" data-linenum="866" href="#linenum866"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>        int maxIndex = 0;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum867" class="linenum-cell" data-linenum="867" href="#linenum867"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        for (int i = 0; <a class="variable" href="#linenum867">i</a> &lt; numDataElements; <a class="variable" href="#linenum867">i</a>++) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum868" class="linenum-cell" data-linenum="868" href="#linenum868"></a></td>
-<td><pre></pre></td>
+<td><pre>            if (<a class="variable" href="#linenum60">dataOffsets</a>[<a class="variable" href="#linenum867">i</a>] &gt; (Integer.MAX_VALUE - <a class="variable" href="#linenum857">lastPixelOffset</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum869" class="linenum-cell" data-linenum="869" href="#linenum869"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> toString() {</pre></td>
+<td><pre>                throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Incorrect band offset: &quot;</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum870" class="linenum-cell" data-linenum="870" href="#linenum870"></a></td>
-<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> (<span class='string'>&quot;ShortComponentRaster: width = &quot;</span>+<a class="variable" href="#linenum734">width</a></pre></td>
+<td><pre>                            + <a class="variable" href="#linenum60">dataOffsets</a>[<a class="variable" href="#linenum867">i</a>]);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum871" class="linenum-cell" data-linenum="871" href="#linenum871"></a></td>
-<td><pre>                           +<span class='string'>&quot; height = &quot;</span> + <a class="variable" href="#linenum734">height</a></pre></td>
+<td><pre>            }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum872" class="linenum-cell" data-linenum="872" href="#linenum872"></a></td>
-<td><pre>                           +<span class='string'>&quot; #numDataElements &quot;</span>+numDataElements);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum873" class="linenum-cell" data-linenum="873" href="#linenum873"></a></td>
-<td><pre>                           // +&quot; xOff = &quot;+xOffset+&quot; yOff = &quot;+yOffset);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum874" class="linenum-cell" data-linenum="874" href="#linenum874"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum875" class="linenum-cell" data-linenum="875" href="#linenum875"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
+<td><a id="linenum873" class="linenum-cell" data-linenum="873" href="#linenum873"></a></td>
+<td><pre>            <a class="variable" href="#linenum865">index</a> = <a class="variable" href="#linenum857">lastPixelOffset</a> + <a class="variable" href="#linenum60">dataOffsets</a>[<a class="variable" href="#linenum867">i</a>];</pre></td>
+</tr>
+<tr>
+<td><a id="linenum874" class="linenum-cell" data-linenum="874" href="#linenum874"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum875" class="linenum-cell" data-linenum="875" href="#linenum875"></a></td>
+<td><pre>            if (<a class="variable" href="#linenum865">index</a> &gt; <a class="variable" href="#linenum866">maxIndex</a>) {</pre></td>
+</tr>
+<tr>
 <td><a id="linenum876" class="linenum-cell" data-linenum="876" href="#linenum876"></a></td>
+<td><pre>                <a class="variable" href="#linenum866">maxIndex</a> = <a class="variable" href="#linenum865">index</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum877" class="linenum-cell" data-linenum="877" href="#linenum877"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum878" class="linenum-cell" data-linenum="878" href="#linenum878"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum879" class="linenum-cell" data-linenum="879" href="#linenum879"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum69">data</a>.length &lt;= <a class="variable" href="#linenum866">maxIndex</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum880" class="linenum-cell" data-linenum="880" href="#linenum880"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/image/RasterFormatException.html#linenum33">RasterFormatException</a>(<span class='string'>&quot;Data array too small (should be &gt; &quot;</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum881" class="linenum-cell" data-linenum="881" href="#linenum881"></a></td>
+<td><pre>                    + <a class="variable" href="#linenum866">maxIndex</a> + <span class='string'>&quot; )&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum882" class="linenum-cell" data-linenum="882" href="#linenum882"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum883" class="linenum-cell" data-linenum="883" href="#linenum883"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum884" class="linenum-cell" data-linenum="884" href="#linenum884"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum885" class="linenum-cell" data-linenum="885" href="#linenum885"></a></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> toString() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum886" class="linenum-cell" data-linenum="886" href="#linenum886"></a></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> (<span class='string'>&quot;ShortComponentRaster: width = &quot;</span>+<a class="variable" href="#linenum734">width</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum887" class="linenum-cell" data-linenum="887" href="#linenum887"></a></td>
+<td><pre>                           +<span class='string'>&quot; height = &quot;</span> + <a class="variable" href="#linenum734">height</a></pre></td>
+</tr>
+<tr>
+<td><a id="linenum888" class="linenum-cell" data-linenum="888" href="#linenum888"></a></td>
+<td><pre>                           +<span class='string'>&quot; #numDataElements &quot;</span>+numDataElements);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum889" class="linenum-cell" data-linenum="889" href="#linenum889"></a></td>
+<td><pre>                           // +&quot; xOff = &quot;+xOffset+&quot; yOff = &quot;+yOffset);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum890" class="linenum-cell" data-linenum="890" href="#linenum890"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum891" class="linenum-cell" data-linenum="891" href="#linenum891"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum892" class="linenum-cell" data-linenum="892" href="#linenum892"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

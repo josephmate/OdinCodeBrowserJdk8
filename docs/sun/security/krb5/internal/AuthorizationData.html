@@ -412,7 +412,7 @@
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/AuthorizationDataEntry.html#linenum37">AuthorizationDataEntry</a>&gt; v = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>&lt;&gt;();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/AuthorizationDataEntry.html#linenum37">AuthorizationDataEntry</a>&gt; v = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>&lt;&gt;();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
@@ -516,7 +516,7 @@
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>        return <a class="variable" href="#linenum122">bytes</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum177">toByteArray</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum122">bytes</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum190">toByteArray</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
@@ -584,7 +584,7 @@
 </tr>
 <tr>
 <td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
-<td><pre>        if ((<a class="variable" href="#linenum144">optional</a>) &amp;&amp; (((byte) <a class="variable" href="#linenum144">data</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum518">peekByte</a>() &amp; (byte) 0x1F) != <a class="variable" href="#linenum144">explicitTag</a>)) {</pre></td>
+<td><pre>        if ((<a class="variable" href="#linenum144">optional</a>) &amp;&amp; (((byte) <a class="variable" href="#linenum144">data</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum558">peekByte</a>() &amp; (byte) 0x1F) != <a class="variable" href="#linenum144">explicitTag</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
@@ -596,11 +596,11 @@
 </tr>
 <tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a> der = <a class="variable" href="#linenum144">data</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum416">getDerValue</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a> der = <a class="variable" href="#linenum144">data</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerInputStream.html#linenum456">getDerValue</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum144">explicitTag</a> != (<a class="variable" href="#linenum148">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum417">getTag</a>() &amp; (byte) 0x1F)) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum144">explicitTag</a> != (<a class="variable" href="#linenum148">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum443">getTag</a>() &amp; (byte) 0x1F)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
@@ -612,7 +612,7 @@
 </tr>
 <tr>
 <td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a> subDer = <a class="variable" href="#linenum148">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum413">getData</a>().getDerValue();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum56">DerValue</a> subDer = <a class="variable" href="#linenum148">der</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/util/DerValue.html#linenum439">getData</a>().getDerValue();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
@@ -656,7 +656,7 @@
 </tr>
 <tr>
 <td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre>    public void writeAuth(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/ccache/CCacheOutputStream.html#linenum46">CCacheOutputStream</a> cos) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre>    public void writeAuth(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/ccache/CCacheOutputStream.html#linenum45">CCacheOutputStream</a> cos) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>

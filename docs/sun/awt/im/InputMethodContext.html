@@ -304,11 +304,11 @@
 </tr>
 <tr>
 <td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> inputStyle = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a></pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> inputStyle = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum297">doPrivileged</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
-<td><pre>                (new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/action/GetPropertyAction.html#linenum49">GetPropertyAction</a>(<span class='string'>&quot;java.awt.im.style&quot;</span>, null));</pre></td>
+<td><pre>                (new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/action/GetPropertyAction.html#linenum52">GetPropertyAction</a>(<span class='string'>&quot;java.awt.im.style&quot;</span>, null));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
@@ -320,7 +320,7 @@
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
-<td><pre>            <a class="variable" href="#linenum75">inputStyle</a> = Toolkit.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Toolkit.html#linenum1694">getProperty</a>(<span class='string'>&quot;java.awt.im.style&quot;</span>, null);</pre></td>
+<td><pre>            <a class="variable" href="#linenum75">inputStyle</a> = Toolkit.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Toolkit.html#linenum1681">getProperty</a>(<span class='string'>&quot;java.awt.im.style&quot;</span>, null);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
@@ -328,7 +328,7 @@
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
-<td><pre>        <a class="variable" href="#linenum69">belowTheSpotInputRequested</a> = <span class='string'>&quot;below-the-spot&quot;</span>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum964">equals</a>(<a class="variable" href="#linenum75">inputStyle</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum69">belowTheSpotInputRequested</a> = <span class='string'>&quot;below-the-spot&quot;</span>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum976">equals</a>(<a class="variable" href="#linenum75">inputStyle</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
@@ -404,7 +404,7 @@
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> client = <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/im/InputContext.html#linenum604">getClientComponent</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> client = <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/im/InputContext.html#linenum604">getClientComponent</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
@@ -412,7 +412,7 @@
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>               &amp;&amp; <a class="variable" href="#linenum100">client</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum6027">getInputMethodRequests</a>() != null;</pre></td>
+<td><pre>               &amp;&amp; <a class="variable" href="#linenum100">client</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum6039">getInputMethodRequests</a>() != null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
@@ -452,7 +452,7 @@
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> source;</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> source;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
@@ -468,7 +468,7 @@
 </tr>
 <tr>
 <td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/InputMethodEvent.html#linenum59">InputMethodEvent</a> event = new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/InputMethodEvent.html#linenum59">InputMethodEvent</a>(<a class="variable" href="#linenum112">source</a>,</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/InputMethodEvent.html#linenum63">InputMethodEvent</a> event = new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/InputMethodEvent.html#linenum63">InputMethodEvent</a>(<a class="variable" href="#linenum112">source</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
@@ -484,7 +484,7 @@
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
-<td><pre>                <a class="variable" href="#linenum112">source</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum4704">dispatchEvent</a>(<a class="variable" href="#linenum116">event</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum112">source</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum4710">dispatchEvent</a>(<a class="variable" href="#linenum116">event</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
@@ -548,7 +548,7 @@
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>    synchronized void dispatchCommittedText(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a> client,</pre></td>
+<td><pre>    synchronized void dispatchCommittedText(<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a> client,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
@@ -592,7 +592,7 @@
 </tr>
 <tr>
 <td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
-<td><pre>        long time = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>();</pre></td>
+<td><pre>        long time = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
@@ -604,7 +604,7 @@
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/im/InputMethodRequests.html#linenum64">InputMethodRequests</a> req = <a class="variable" href="#linenum136">client</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum6027">getInputMethodRequests</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/im/InputMethodRequests.html#linenum64">InputMethodRequests</a> req = <a class="variable" href="#linenum136">client</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum6039">getInputMethodRequests</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
@@ -632,7 +632,7 @@
 </tr>
 <tr>
 <td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/InputMethodEvent.html#linenum59">InputMethodEvent</a> inputEvent = new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/InputMethodEvent.html#linenum59">InputMethodEvent</a>(</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/InputMethodEvent.html#linenum63">InputMethodEvent</a> inputEvent = new <a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/InputMethodEvent.html#linenum63">InputMethodEvent</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
@@ -660,7 +660,7 @@
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre>                <a class="variable" href="#linenum136">client</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum4704">dispatchEvent</a>(<a class="variable" href="#linenum157">inputEvent</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum136">client</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum4710">dispatchEvent</a>(<a class="variable" href="#linenum157">inputEvent</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
@@ -688,7 +688,7 @@
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre>                    <a class="variable" href="#linenum136">client</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum4704">dispatchEvent</a>(<a class="variable" href="#linenum169">keyEvent</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum136">client</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum4710">dispatchEvent</a>(<a class="variable" href="#linenum169">keyEvent</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
@@ -756,11 +756,11 @@
 </tr>
 <tr>
 <td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum180">event</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/InputMethodEvent.html#linenum59">InputMethodEvent</a>) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum180">event</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/InputMethodEvent.html#linenum63">InputMethodEvent</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
-<td><pre>            if (((<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum188">Component</a>) <a class="variable" href="#linenum180">event</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/EventObject.html#linenum66">getSource</a>()).getInputMethodRequests() == null</pre></td>
+<td><pre>            if (((<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Component.html#linenum186">Component</a>) <a class="variable" href="#linenum180">event</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/EventObject.html#linenum66">getSource</a>()).getInputMethodRequests() == null</pre></td>
 </tr>
 <tr>
 <td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
@@ -768,7 +768,7 @@
 </tr>
 <tr>
 <td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/im/InputMethodContext.html#linenum206">getCompositionAreaHandler</a>(true).processInputMethodEvent((<a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/InputMethodEvent.html#linenum59">InputMethodEvent</a>) <a class="variable" href="#linenum180">event</a>);</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/im/InputMethodContext.html#linenum206">getCompositionAreaHandler</a>(true).processInputMethodEvent((<a class="type" href="/OdinCodeBrowserJdk8/java/awt/event/InputMethodEvent.html#linenum63">InputMethodEvent</a>) <a class="variable" href="#linenum180">event</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
@@ -1368,7 +1368,7 @@
 </tr>
 <tr>
 <td><a id="linenum341" class="linenum-cell" data-linenum="341" href="#linenum341"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JFrame.html#linenum115">JFrame</a> createInputMethodJFrame(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> title, boolean attachToInputContext) {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JFrame.html#linenum123">JFrame</a> createInputMethodJFrame(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> title, boolean attachToInputContext) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum342" class="linenum-cell" data-linenum="342" href="#linenum342"></a></td>
@@ -1376,7 +1376,7 @@
 </tr>
 <tr>
 <td><a id="linenum343" class="linenum-cell" data-linenum="343" href="#linenum343"></a></td>
-<td><pre>        return (<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JFrame.html#linenum115">JFrame</a>)<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/im/InputMethodContext.html#linenum346">createInputMethodWindow</a>(<a class="variable" href="#linenum341">title</a>, <a class="variable" href="#linenum342">context</a>, true);</pre></td>
+<td><pre>        return (<a class="type" href="/OdinCodeBrowserJdk8/javax/swing/JFrame.html#linenum123">JFrame</a>)<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/im/InputMethodContext.html#linenum346">createInputMethodWindow</a>(<a class="variable" href="#linenum341">title</a>, <a class="variable" href="#linenum342">context</a>, true);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum344" class="linenum-cell" data-linenum="344" href="#linenum344"></a></td>
@@ -1392,7 +1392,7 @@
 </tr>
 <tr>
 <td><a id="linenum347" class="linenum-cell" data-linenum="347" href="#linenum347"></a></td>
-<td><pre>        if (GraphicsEnvironment.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/GraphicsEnvironment.html#linenum139">isHeadless</a>()) {</pre></td>
+<td><pre>        if (GraphicsEnvironment.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/GraphicsEnvironment.html#linenum140">isHeadless</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum348" class="linenum-cell" data-linenum="348" href="#linenum348"></a></td>
@@ -1416,7 +1416,7 @@
 </tr>
 <tr>
 <td><a id="linenum353" class="linenum-cell" data-linenum="353" href="#linenum353"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Toolkit.html#linenum117">Toolkit</a> toolkit = Toolkit.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Toolkit.html#linenum856">getDefaultToolkit</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/awt/Toolkit.html#linenum113">Toolkit</a> toolkit = Toolkit.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/Toolkit.html#linenum852">getDefaultToolkit</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum354" class="linenum-cell" data-linenum="354" href="#linenum354"></a></td>

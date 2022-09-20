@@ -488,7 +488,7 @@
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>            AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/RenderingEngine.html#linenum86">RenderingEngine</a>&gt;() {</pre></td>
+<td><pre>            AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum297">doPrivileged</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/RenderingEngine.html#linenum86">RenderingEngine</a>&gt;() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
@@ -504,11 +504,11 @@
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>                        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum746">getProperty</a>(<span class='string'>&quot;sun.java2d.renderer&quot;</span>, <a class="variable" href="#linenum123">ductusREClass</a>);</pre></td>
+<td><pre>                        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum751">getProperty</a>(<span class='string'>&quot;sun.java2d.renderer&quot;</span>, <a class="variable" href="#linenum123">ductusREClass</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre>                    if (<a class="variable" href="#linenum124">reClass</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum964">equals</a>(<a class="variable" href="#linenum123">ductusREClass</a>)) {</pre></td>
+<td><pre>                    if (<a class="variable" href="#linenum124">reClass</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum976">equals</a>(<a class="variable" href="#linenum123">ductusREClass</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
@@ -516,7 +516,7 @@
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>                            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; cls = Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum325">forName</a>(<a class="variable" href="#linenum123">ductusREClass</a>);</pre></td>
+<td><pre>                            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;?&gt; cls = Class.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum329">forName</a>(<a class="variable" href="#linenum123">ductusREClass</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
@@ -620,15 +620,15 @@
 </tr>
 <tr>
 <td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/action/GetPropertyAction.html#linenum49">GetPropertyAction</a> gpa =</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/action/GetPropertyAction.html#linenum52">GetPropertyAction</a> gpa =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/action/GetPropertyAction.html#linenum49">GetPropertyAction</a>(<span class='string'>&quot;sun.java2d.renderer.trace&quot;</span>);</pre></td>
+<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/action/GetPropertyAction.html#linenum52">GetPropertyAction</a>(<span class='string'>&quot;sun.java2d.renderer.trace&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> reTrace = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a>(<a class="variable" href="#linenum154">gpa</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> reTrace = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum704">doPrivileged</a>(<a class="variable" href="#linenum154">gpa</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
@@ -1096,7 +1096,7 @@
 </tr>
 <tr>
 <td><a id="linenum273" class="linenum-cell" data-linenum="273" href="#linenum273"></a></td>
-<td><pre>                                                       <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> clip,</pre></td>
+<td><pre>                                                       <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> clip,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
@@ -1372,7 +1372,7 @@
 </tr>
 <tr>
 <td><a id="linenum342" class="linenum-cell" data-linenum="342" href="#linenum342"></a></td>
-<td><pre>                                                       <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> clip,</pre></td>
+<td><pre>                                                       <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> clip,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum343" class="linenum-cell" data-linenum="343" href="#linenum343"></a></td>
@@ -1448,7 +1448,7 @@
 </tr>
 <tr>
 <td><a id="linenum361" class="linenum-cell" data-linenum="361" href="#linenum361"></a></td>
-<td><pre>            switch (<a class="variable" href="#linenum358">pi</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/geom/PathIterator.html#linenum216">currentSegment</a>(<a class="variable" href="#linenum359">coords</a>)) {</pre></td>
+<td><pre>            switch (<a class="variable" href="#linenum358">pi</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/awt/geom/PathIterator.html#linenum193">currentSegment</a>(<a class="variable" href="#linenum359">coords</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum362" class="linenum-cell" data-linenum="362" href="#linenum362"></a></td>
@@ -1768,7 +1768,7 @@
 </tr>
 <tr>
 <td><a id="linenum441" class="linenum-cell" data-linenum="441" href="#linenum441"></a></td>
-<td><pre>                                                  <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> clip,</pre></td>
+<td><pre>                                                  <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> clip,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum442" class="linenum-cell" data-linenum="442" href="#linenum442"></a></td>
@@ -1852,7 +1852,7 @@
 </tr>
 <tr>
 <td><a id="linenum462" class="linenum-cell" data-linenum="462" href="#linenum462"></a></td>
-<td><pre>                                                  <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum63">Region</a> clip,</pre></td>
+<td><pre>                                                  <a class="type" href="/OdinCodeBrowserJdk8/sun/java2d/pipe/Region.html#linenum65">Region</a> clip,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum463" class="linenum-cell" data-linenum="463" href="#linenum463"></a></td>

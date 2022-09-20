@@ -272,7 +272,7 @@
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(types, 0, <a class="variable" href="#linenum66">filetypes</a>, 0, types.length);</pre></td>
+<td><pre>        System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(types, 0, <a class="variable" href="#linenum66">filetypes</a>, 0, types.length);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
@@ -488,7 +488,7 @@
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum120">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum537">length</a>()&lt;=0x7FFFFFFFl) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum120">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum569">length</a>()&lt;=0x7FFFFFFFl) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
@@ -496,11 +496,11 @@
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>                <a class="variable" href="#linenum120">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum431">skipBytes</a>(8);</pre></td>
+<td><pre>                <a class="variable" href="#linenum120">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum459">skipBytes</a>(8);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>                <a class="variable" href="#linenum120">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum997">writeInt</a>(<a class="variable" href="#linenum110">bytesWritten</a>-AuFileFormat.AU_HEADERSIZE);</pre></td>
+<td><pre>                <a class="variable" href="#linenum120">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum1029">writeInt</a>(<a class="variable" href="#linenum110">bytesWritten</a>-AuFileFormat.AU_HEADERSIZE);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
@@ -512,7 +512,7 @@
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
-<td><pre>            <a class="variable" href="#linenum120">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum574">close</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum120">raf</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/RandomAccessFile.html#linenum606">close</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
@@ -1020,7 +1020,7 @@
 </tr>
 <tr>
 <td><a id="linenum254" class="linenum-cell" data-linenum="254" href="#linenum254"></a></td>
-<td><pre>                <a class="variable" href="#linenum233">codedAudioStream</a> = AudioSystem.<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioSystem.html#linenum1172">getAudioInputStream</a>( new <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFormat.html#linenum125">AudioFormat</a> (</pre></td>
+<td><pre>                <a class="variable" href="#linenum233">codedAudioStream</a> = AudioSystem.<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioSystem.html#linenum866">getAudioInputStream</a>( new <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFormat.html#linenum125">AudioFormat</a> (</pre></td>
 </tr>
 <tr>
 <td><a id="linenum255" class="linenum-cell" data-linenum="255" href="#linenum255"></a></td>
@@ -1172,7 +1172,7 @@
 </tr>
 <tr>
 <td><a id="linenum292" class="linenum-cell" data-linenum="292" href="#linenum292"></a></td>
-<td><pre>        <a class="variable" href="#linenum225">header</a> = <a class="variable" href="#linenum227">baos</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum177">toByteArray</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum225">header</a> = <a class="variable" href="#linenum227">baos</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ByteArrayOutputStream.html#linenum190">toByteArray</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum293" class="linenum-cell" data-linenum="293" href="#linenum293"></a></td>
@@ -1236,7 +1236,7 @@
 </tr>
 <tr>
 <td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
-<td><pre>        while( (<a class="variable" href="#linenum302">bytesRead</a> = <a class="variable" href="#linenum304">fileStream</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum161">read</a>( <a class="variable" href="#linenum305">buffer</a> )) &gt;= 0 ) {</pre></td>
+<td><pre>        while( (<a class="variable" href="#linenum302">bytesRead</a> = <a class="variable" href="#linenum304">fileStream</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum100">read</a>( <a class="variable" href="#linenum305">buffer</a> )) &gt;= 0 ) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>

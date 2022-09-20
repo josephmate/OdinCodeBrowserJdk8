@@ -624,11 +624,11 @@
 </tr>
 <tr>
 <td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> calculate(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> left, <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> right) {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> calculate(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> left, <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> right) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> edges = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> edges = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
@@ -652,11 +652,11 @@
 </tr>
 <tr>
 <td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
-<td><pre>            int numcurves = <a class="variable" href="#linenum156">edges</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum314">size</a>();</pre></td>
+<td><pre>            int numcurves = <a class="variable" href="#linenum156">edges</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum319">size</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Curve.html#linenum35">Curve</a>[] curvelist = (<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Curve.html#linenum35">Curve</a>[]) <a class="variable" href="#linenum156">edges</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum717">toArray</a>(new <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Curve.html#linenum35">Curve</a>[<a class="variable" href="#linenum162">numcurves</a>]);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Curve.html#linenum35">Curve</a>[] curvelist = (<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Curve.html#linenum35">Curve</a>[]) <a class="variable" href="#linenum156">edges</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum722">toArray</a>(new <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Curve.html#linenum35">Curve</a>[<a class="variable" href="#linenum162">numcurves</a>]);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
@@ -688,11 +688,11 @@
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre>    private static void addEdges(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> edges, <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> curves, int curvetag) {</pre></td>
+<td><pre>    private static void addEdges(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> edges, <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> curves, int curvetag) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Enumeration.html#linenum61">Enumeration</a> enum_ = <a class="variable" href="#linenum171">curves</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum338">elements</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Enumeration.html#linenum61">Enumeration</a> enum_ = <a class="variable" href="#linenum171">curves</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum343">elements</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
@@ -708,7 +708,7 @@
 </tr>
 <tr>
 <td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
-<td><pre>                <a class="variable" href="#linenum171">edges</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum813">add</a>(new <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Edge.html#linenum28">Edge</a>(<a class="variable" href="#linenum174">c</a>, <a class="variable" href="#linenum171">curvetag</a>));</pre></td>
+<td><pre>                <a class="variable" href="#linenum171">edges</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum785">add</a>(new <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Edge.html#linenum28">Edge</a>(<a class="variable" href="#linenum174">c</a>, <a class="variable" href="#linenum171">curvetag</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
@@ -796,11 +796,11 @@
 </tr>
 <tr>
 <td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> pruneEdges(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> edges) {</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> pruneEdges(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> edges) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
-<td><pre>        int numedges = <a class="variable" href="#linenum198">edges</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum314">size</a>();</pre></td>
+<td><pre>        int numedges = <a class="variable" href="#linenum198">edges</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum319">size</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
@@ -816,11 +816,11 @@
 </tr>
 <tr>
 <td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Edge.html#linenum28">Edge</a>[] edgelist = (<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Edge.html#linenum28">Edge</a>[]) <a class="variable" href="#linenum198">edges</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum717">toArray</a>(new <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Edge.html#linenum28">Edge</a>[<a class="variable" href="#linenum199">numedges</a>]);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Edge.html#linenum28">Edge</a>[] edgelist = (<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Edge.html#linenum28">Edge</a>[]) <a class="variable" href="#linenum198">edges</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum722">toArray</a>(new <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Edge.html#linenum28">Edge</a>[<a class="variable" href="#linenum199">numedges</a>]);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
-<td><pre>        Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum1499">sort</a>(<a class="variable" href="#linenum203">edgelist</a>, <a class="variable" href="#linenum181">YXTopComparator</a>);</pre></td>
+<td><pre>        Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum1503">sort</a>(<a class="variable" href="#linenum203">edgelist</a>, <a class="variable" href="#linenum181">YXTopComparator</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
@@ -872,15 +872,15 @@
 </tr>
 <tr>
 <td><a id="linenum217" class="linenum-cell" data-linenum="217" href="#linenum217"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> subcurves = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> subcurves = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> chains = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> chains = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> links = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> links = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
@@ -1448,7 +1448,7 @@
 </tr>
 <tr>
 <td><a id="linenum361" class="linenum-cell" data-linenum="361" href="#linenum361"></a></td>
-<td><pre>                    <a class="variable" href="#linenum219">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum813">add</a>(new <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/CurveLink.html#linenum28">CurveLink</a>(<a class="variable" href="#linenum211">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Edge.html#linenum48">getCurve</a>(), <a class="variable" href="#linenum315">ystart</a>, <a class="variable" href="#linenum316">yend</a>, <a class="variable" href="#linenum319">etag</a>));</pre></td>
+<td><pre>                    <a class="variable" href="#linenum219">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum785">add</a>(new <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/CurveLink.html#linenum28">CurveLink</a>(<a class="variable" href="#linenum211">e</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/Edge.html#linenum48">getCurve</a>(), <a class="variable" href="#linenum315">ystart</a>, <a class="variable" href="#linenum316">yend</a>, <a class="variable" href="#linenum319">etag</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum362" class="linenum-cell" data-linenum="362" href="#linenum362"></a></td>
@@ -1476,7 +1476,7 @@
 </tr>
 <tr>
 <td><a id="linenum368" class="linenum-cell" data-linenum="368" href="#linenum368"></a></td>
-<td><pre>                System.out.println(<span class='string'>&quot;num links = &quot;</span>+<a class="variable" href="#linenum219">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum314">size</a>());</pre></td>
+<td><pre>                System.out.println(<span class='string'>&quot;num links = &quot;</span>+<a class="variable" href="#linenum219">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum319">size</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum369" class="linenum-cell" data-linenum="369" href="#linenum369"></a></td>
@@ -1552,11 +1552,11 @@
 </tr>
 <tr>
 <td><a id="linenum387" class="linenum-cell" data-linenum="387" href="#linenum387"></a></td>
-<td><pre>                for (int i = 0; <a class="variable" href="#linenum387">i</a> &lt; <a class="variable" href="#linenum219">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum314">size</a>(); <a class="variable" href="#linenum387">i</a>++) {</pre></td>
+<td><pre>                for (int i = 0; <a class="variable" href="#linenum387">i</a> &lt; <a class="variable" href="#linenum219">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum319">size</a>(); <a class="variable" href="#linenum387">i</a>++) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum388" class="linenum-cell" data-linenum="388" href="#linenum388"></a></td>
-<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/CurveLink.html#linenum28">CurveLink</a> link = (<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/CurveLink.html#linenum28">CurveLink</a>) <a class="variable" href="#linenum219">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum472">elementAt</a>(<a class="variable" href="#linenum387">i</a>);</pre></td>
+<td><pre>                    <a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/CurveLink.html#linenum28">CurveLink</a> link = (<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/CurveLink.html#linenum28">CurveLink</a>) <a class="variable" href="#linenum219">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum477">elementAt</a>(<a class="variable" href="#linenum387">i</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum389" class="linenum-cell" data-linenum="389" href="#linenum389"></a></td>
@@ -1576,7 +1576,7 @@
 </tr>
 <tr>
 <td><a id="linenum393" class="linenum-cell" data-linenum="393" href="#linenum393"></a></td>
-<td><pre>            <a class="variable" href="#linenum219">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum849">clear</a>();</pre></td>
+<td><pre>            <a class="variable" href="#linenum219">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum854">clear</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum394" class="linenum-cell" data-linenum="394" href="#linenum394"></a></td>
@@ -1600,11 +1600,11 @@
 </tr>
 <tr>
 <td><a id="linenum399" class="linenum-cell" data-linenum="399" href="#linenum399"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> ret = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> ret = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum400" class="linenum-cell" data-linenum="400" href="#linenum400"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Enumeration.html#linenum61">Enumeration</a> enum_ = <a class="variable" href="#linenum217">subcurves</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum338">elements</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Enumeration.html#linenum61">Enumeration</a> enum_ = <a class="variable" href="#linenum217">subcurves</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum343">elements</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum401" class="linenum-cell" data-linenum="401" href="#linenum401"></a></td>
@@ -1616,7 +1616,7 @@
 </tr>
 <tr>
 <td><a id="linenum403" class="linenum-cell" data-linenum="403" href="#linenum403"></a></td>
-<td><pre>            <a class="variable" href="#linenum399">ret</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum813">add</a>(<a class="variable" href="#linenum402">link</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/CurveLink.html#linenum79">getMoveto</a>());</pre></td>
+<td><pre>            <a class="variable" href="#linenum399">ret</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum785">add</a>(<a class="variable" href="#linenum402">link</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/CurveLink.html#linenum79">getMoveto</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum404" class="linenum-cell" data-linenum="404" href="#linenum404"></a></td>
@@ -1632,7 +1632,7 @@
 </tr>
 <tr>
 <td><a id="linenum407" class="linenum-cell" data-linenum="407" href="#linenum407"></a></td>
-<td><pre>                    <a class="variable" href="#linenum399">ret</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum813">add</a>(<a class="variable" href="#linenum402">link</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/CurveLink.html#linenum72">getSubCurve</a>());</pre></td>
+<td><pre>                    <a class="variable" href="#linenum399">ret</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum785">add</a>(<a class="variable" href="#linenum402">link</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/CurveLink.html#linenum72">getSubCurve</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum408" class="linenum-cell" data-linenum="408" href="#linenum408"></a></td>
@@ -1648,7 +1648,7 @@
 </tr>
 <tr>
 <td><a id="linenum411" class="linenum-cell" data-linenum="411" href="#linenum411"></a></td>
-<td><pre>            <a class="variable" href="#linenum399">ret</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum813">add</a>(<a class="variable" href="#linenum402">link</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/CurveLink.html#linenum72">getSubCurve</a>());</pre></td>
+<td><pre>            <a class="variable" href="#linenum399">ret</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum785">add</a>(<a class="variable" href="#linenum402">link</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/awt/geom/CurveLink.html#linenum72">getSubCurve</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum412" class="linenum-cell" data-linenum="412" href="#linenum412"></a></td>
@@ -1668,11 +1668,11 @@
 </tr>
 <tr>
 <td><a id="linenum416" class="linenum-cell" data-linenum="416" href="#linenum416"></a></td>
-<td><pre>    public static void finalizeSubCurves(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> subcurves, <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> chains) {</pre></td>
+<td><pre>    public static void finalizeSubCurves(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> subcurves, <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> chains) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum417" class="linenum-cell" data-linenum="417" href="#linenum417"></a></td>
-<td><pre>        int numchains = <a class="variable" href="#linenum416">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum314">size</a>();</pre></td>
+<td><pre>        int numchains = <a class="variable" href="#linenum416">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum319">size</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum418" class="linenum-cell" data-linenum="418" href="#linenum418"></a></td>
@@ -1704,7 +1704,7 @@
 </tr>
 <tr>
 <td><a id="linenum425" class="linenum-cell" data-linenum="425" href="#linenum425"></a></td>
-<td><pre>        <a class="variable" href="#linenum416">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum717">toArray</a>(<a class="variable" href="#linenum424">endlist</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum416">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum722">toArray</a>(<a class="variable" href="#linenum424">endlist</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum426" class="linenum-cell" data-linenum="426" href="#linenum426"></a></td>
@@ -1728,7 +1728,7 @@
 </tr>
 <tr>
 <td><a id="linenum431" class="linenum-cell" data-linenum="431" href="#linenum431"></a></td>
-<td><pre>                <a class="variable" href="#linenum416">subcurves</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum813">add</a>(<a class="variable" href="#linenum429">subcurve</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum416">subcurves</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum818">add</a>(<a class="variable" href="#linenum429">subcurve</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum432" class="linenum-cell" data-linenum="432" href="#linenum432"></a></td>
@@ -1740,7 +1740,7 @@
 </tr>
 <tr>
 <td><a id="linenum434" class="linenum-cell" data-linenum="434" href="#linenum434"></a></td>
-<td><pre>        <a class="variable" href="#linenum416">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum849">clear</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum416">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum854">clear</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum435" class="linenum-cell" data-linenum="435" href="#linenum435"></a></td>
@@ -1764,15 +1764,15 @@
 </tr>
 <tr>
 <td><a id="linenum440" class="linenum-cell" data-linenum="440" href="#linenum440"></a></td>
-<td><pre>    public static void resolveLinks(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> subcurves,</pre></td>
+<td><pre>    public static void resolveLinks(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> subcurves,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum441" class="linenum-cell" data-linenum="441" href="#linenum441"></a></td>
-<td><pre>                                    <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> chains,</pre></td>
+<td><pre>                                    <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> chains,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum442" class="linenum-cell" data-linenum="442" href="#linenum442"></a></td>
-<td><pre>                                    <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a> links)</pre></td>
+<td><pre>                                    <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a> links)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum443" class="linenum-cell" data-linenum="443" href="#linenum443"></a></td>
@@ -1780,7 +1780,7 @@
 </tr>
 <tr>
 <td><a id="linenum444" class="linenum-cell" data-linenum="444" href="#linenum444"></a></td>
-<td><pre>        int numlinks = <a class="variable" href="#linenum442">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum314">size</a>();</pre></td>
+<td><pre>        int numlinks = <a class="variable" href="#linenum442">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum319">size</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum445" class="linenum-cell" data-linenum="445" href="#linenum445"></a></td>
@@ -1816,7 +1816,7 @@
 </tr>
 <tr>
 <td><a id="linenum453" class="linenum-cell" data-linenum="453" href="#linenum453"></a></td>
-<td><pre>            <a class="variable" href="#linenum442">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum717">toArray</a>(<a class="variable" href="#linenum445">linklist</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum442">links</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum722">toArray</a>(<a class="variable" href="#linenum445">linklist</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum454" class="linenum-cell" data-linenum="454" href="#linenum454"></a></td>
@@ -1824,7 +1824,7 @@
 </tr>
 <tr>
 <td><a id="linenum455" class="linenum-cell" data-linenum="455" href="#linenum455"></a></td>
-<td><pre>        int numchains = <a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum314">size</a>();</pre></td>
+<td><pre>        int numchains = <a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum319">size</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum456" class="linenum-cell" data-linenum="456" href="#linenum456"></a></td>
@@ -1860,7 +1860,7 @@
 </tr>
 <tr>
 <td><a id="linenum464" class="linenum-cell" data-linenum="464" href="#linenum464"></a></td>
-<td><pre>            <a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum717">toArray</a>(<a class="variable" href="#linenum456">endlist</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum722">toArray</a>(<a class="variable" href="#linenum456">endlist</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum465" class="linenum-cell" data-linenum="465" href="#linenum465"></a></td>
@@ -1876,7 +1876,7 @@
 </tr>
 <tr>
 <td><a id="linenum468" class="linenum-cell" data-linenum="468" href="#linenum468"></a></td>
-<td><pre>        <a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum849">clear</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum854">clear</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum469" class="linenum-cell" data-linenum="469" href="#linenum469"></a></td>
@@ -2048,7 +2048,7 @@
 </tr>
 <tr>
 <td><a id="linenum511" class="linenum-cell" data-linenum="511" href="#linenum511"></a></td>
-<td><pre>                    <a class="variable" href="#linenum440">subcurves</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum813">add</a>(<a class="variable" href="#linenum509">subcurve</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum440">subcurves</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum818">add</a>(<a class="variable" href="#linenum509">subcurve</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum512" class="linenum-cell" data-linenum="512" href="#linenum512"></a></td>
@@ -2088,11 +2088,11 @@
 </tr>
 <tr>
 <td><a id="linenum521" class="linenum-cell" data-linenum="521" href="#linenum521"></a></td>
-<td><pre>                <a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum813">add</a>(<a class="variable" href="#linenum518">openend</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum818">add</a>(<a class="variable" href="#linenum518">openend</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum522" class="linenum-cell" data-linenum="522" href="#linenum522"></a></td>
-<td><pre>                <a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum813">add</a>(<a class="variable" href="#linenum519">closeend</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum818">add</a>(<a class="variable" href="#linenum519">closeend</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum523" class="linenum-cell" data-linenum="523" href="#linenum523"></a></td>
@@ -2132,7 +2132,7 @@
 </tr>
 <tr>
 <td><a id="linenum532" class="linenum-cell" data-linenum="532" href="#linenum532"></a></td>
-<td><pre>                <a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum813">add</a>(<a class="variable" href="#linenum469">chain</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum818">add</a>(<a class="variable" href="#linenum469">chain</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum533" class="linenum-cell" data-linenum="533" href="#linenum533"></a></td>
@@ -2168,7 +2168,7 @@
 </tr>
 <tr>
 <td><a id="linenum541" class="linenum-cell" data-linenum="541" href="#linenum541"></a></td>
-<td><pre>        if ((<a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum314">size</a>() &amp; 1) != 0) {</pre></td>
+<td><pre>        if ((<a class="variable" href="#linenum441">chains</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum319">size</a>() &amp; 1) != 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum542" class="linenum-cell" data-linenum="542" href="#linenum542"></a></td>

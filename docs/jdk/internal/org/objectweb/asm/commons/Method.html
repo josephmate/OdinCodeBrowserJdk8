@@ -368,7 +368,7 @@
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>        <a class="variable" href="#linenum88">DESCRIPTORS</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>&gt;();</pre></td>
+<td><pre>        <a class="variable" href="#linenum88">DESCRIPTORS</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>&gt;();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
@@ -516,7 +516,7 @@
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>        this(<a class="variable" href="#linenum111">name</a>, Type.<a class="type" href="/OdinCodeBrowserJdk8/jdk/internal/org/objectweb/asm/Type.html#linenum761">getMethodDescriptor</a>(returnType, argumentTypes));</pre></td>
+<td><pre>        this(<a class="variable" href="#linenum111">name</a>, Type.<a class="type" href="/OdinCodeBrowserJdk8/jdk/internal/org/objectweb/asm/Type.html#linenum673">getMethodDescriptor</a>(returnType, argumentTypes));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
@@ -804,15 +804,15 @@
 </tr>
 <tr>
 <td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
-<td><pre>        int space = <a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1740">indexOf</a>(' ');</pre></td>
+<td><pre>        int space = <a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1502">indexOf</a>(' ');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
-<td><pre>        int start = <a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1740">indexOf</a>('(', <a class="variable" href="#linenum200">space</a>) + 1;</pre></td>
+<td><pre>        int start = <a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1545">indexOf</a>('(', <a class="variable" href="#linenum200">space</a>) + 1;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
-<td><pre>        int end = <a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1740">indexOf</a>(')', <a class="variable" href="#linenum201">start</a>);</pre></td>
+<td><pre>        int end = <a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1545">indexOf</a>(')', <a class="variable" href="#linenum201">start</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
@@ -828,19 +828,19 @@
 </tr>
 <tr>
 <td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> returnType = <a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(0, <a class="variable" href="#linenum200">space</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> returnType = <a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a>(0, <a class="variable" href="#linenum200">space</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> methodName = <a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(<a class="variable" href="#linenum200">space</a> + 1, <a class="variable" href="#linenum201">start</a> - 1).trim();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> methodName = <a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a>(<a class="variable" href="#linenum200">space</a> + 1, <a class="variable" href="#linenum201">start</a> - 1).trim();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum97">StringBuffer</a> sb = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum97">StringBuffer</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum76">StringBuilder</a> sb = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum76">StringBuilder</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
-<td><pre>        <a class="variable" href="#linenum208">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>('(');</pre></td>
+<td><pre>        <a class="variable" href="#linenum208">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>('(');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
@@ -856,7 +856,7 @@
 </tr>
 <tr>
 <td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
-<td><pre>            <a class="variable" href="#linenum210">p</a> = <a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1740">indexOf</a>(',', <a class="variable" href="#linenum201">start</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum210">p</a> = <a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1545">indexOf</a>(',', <a class="variable" href="#linenum201">start</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
@@ -864,7 +864,7 @@
 </tr>
 <tr>
 <td><a id="linenum215" class="linenum-cell" data-linenum="215" href="#linenum215"></a></td>
-<td><pre>                <a class="variable" href="#linenum212">s</a> = <a class="type" href="/OdinCodeBrowserJdk8/jdk/internal/org/objectweb/asm/commons/Method.html#linenum227">map</a>(<a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(<a class="variable" href="#linenum201">start</a>, <a class="variable" href="#linenum202">end</a>).trim(), <a class="variable" href="#linenum199">defaultPackage</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum212">s</a> = <a class="type" href="/OdinCodeBrowserJdk8/jdk/internal/org/objectweb/asm/commons/Method.html#linenum227">map</a>(<a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a>(<a class="variable" href="#linenum201">start</a>, <a class="variable" href="#linenum202">end</a>).trim(), <a class="variable" href="#linenum199">defaultPackage</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum216" class="linenum-cell" data-linenum="216" href="#linenum216"></a></td>
@@ -872,7 +872,7 @@
 </tr>
 <tr>
 <td><a id="linenum217" class="linenum-cell" data-linenum="217" href="#linenum217"></a></td>
-<td><pre>                <a class="variable" href="#linenum212">s</a> = <a class="type" href="/OdinCodeBrowserJdk8/jdk/internal/org/objectweb/asm/commons/Method.html#linenum227">map</a>(<a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(<a class="variable" href="#linenum201">start</a>, <a class="variable" href="#linenum210">p</a>).trim(), <a class="variable" href="#linenum199">defaultPackage</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum212">s</a> = <a class="type" href="/OdinCodeBrowserJdk8/jdk/internal/org/objectweb/asm/commons/Method.html#linenum227">map</a>(<a class="variable" href="#linenum198">method</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a>(<a class="variable" href="#linenum201">start</a>, <a class="variable" href="#linenum210">p</a>).trim(), <a class="variable" href="#linenum199">defaultPackage</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>
@@ -884,7 +884,7 @@
 </tr>
 <tr>
 <td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
-<td><pre>            <a class="variable" href="#linenum208">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<a class="variable" href="#linenum212">s</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum208">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="variable" href="#linenum212">s</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
@@ -892,15 +892,15 @@
 </tr>
 <tr>
 <td><a id="linenum222" class="linenum-cell" data-linenum="222" href="#linenum222"></a></td>
-<td><pre>        <a class="variable" href="#linenum208">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(')');</pre></td>
+<td><pre>        <a class="variable" href="#linenum208">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(')');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum223" class="linenum-cell" data-linenum="223" href="#linenum223"></a></td>
-<td><pre>        <a class="variable" href="#linenum208">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<a class="type" href="/OdinCodeBrowserJdk8/jdk/internal/org/objectweb/asm/commons/Method.html#linenum227">map</a>(<a class="variable" href="#linenum206">returnType</a>, <a class="variable" href="#linenum199">defaultPackage</a>));</pre></td>
+<td><pre>        <a class="variable" href="#linenum208">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<a class="type" href="/OdinCodeBrowserJdk8/jdk/internal/org/objectweb/asm/commons/Method.html#linenum227">map</a>(<a class="variable" href="#linenum206">returnType</a>, <a class="variable" href="#linenum199">defaultPackage</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum224" class="linenum-cell" data-linenum="224" href="#linenum224"></a></td>
-<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/jdk/internal/org/objectweb/asm/commons/Method.html#linenum73">Method</a>(<a class="variable" href="#linenum207">methodName</a>, <a class="variable" href="#linenum208">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum668">toString</a>());</pre></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/jdk/internal/org/objectweb/asm/commons/Method.html#linenum73">Method</a>(<a class="variable" href="#linenum207">methodName</a>, <a class="variable" href="#linenum208">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum404">toString</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum225" class="linenum-cell" data-linenum="225" href="#linenum225"></a></td>
@@ -916,7 +916,7 @@
 </tr>
 <tr>
 <td><a id="linenum228" class="linenum-cell" data-linenum="228" href="#linenum228"></a></td>
-<td><pre>        if (<span class='string'>&quot;&quot;</span>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum964">equals</a>(<a class="variable" href="#linenum227">type</a>)) {</pre></td>
+<td><pre>        if (<span class='string'>&quot;&quot;</span>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum976">equals</a>(<a class="variable" href="#linenum227">type</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum229" class="linenum-cell" data-linenum="229" href="#linenum229"></a></td>
@@ -932,7 +932,7 @@
 </tr>
 <tr>
 <td><a id="linenum232" class="linenum-cell" data-linenum="232" href="#linenum232"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum97">StringBuffer</a> sb = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum97">StringBuffer</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum76">StringBuilder</a> sb = new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum76">StringBuilder</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum233" class="linenum-cell" data-linenum="233" href="#linenum233"></a></td>
@@ -940,11 +940,11 @@
 </tr>
 <tr>
 <td><a id="linenum234" class="linenum-cell" data-linenum="234" href="#linenum234"></a></td>
-<td><pre>        while ((<a class="variable" href="#linenum233">index</a> = <a class="variable" href="#linenum227">type</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1740">indexOf</a>(<span class='string'>&quot;[]&quot;</span>, <a class="variable" href="#linenum233">index</a>) + 1) &gt; 0) {</pre></td>
+<td><pre>        while ((<a class="variable" href="#linenum233">index</a> = <a class="variable" href="#linenum227">type</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1545">indexOf</a>(<span class='string'>&quot;[]&quot;</span>, <a class="variable" href="#linenum233">index</a>) + 1) &gt; 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum235" class="linenum-cell" data-linenum="235" href="#linenum235"></a></td>
-<td><pre>            <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>('[');</pre></td>
+<td><pre>            <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>('[');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum236" class="linenum-cell" data-linenum="236" href="#linenum236"></a></td>
@@ -956,7 +956,7 @@
 </tr>
 <tr>
 <td><a id="linenum238" class="linenum-cell" data-linenum="238" href="#linenum238"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> t = <a class="variable" href="#linenum227">type</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1945">substring</a>(0, <a class="variable" href="#linenum227">type</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() - <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum161">length</a>() * 2);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> t = <a class="variable" href="#linenum227">type</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1958">substring</a>(0, <a class="variable" href="#linenum227">type</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() - <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/AbstractStringBuilder.html#linenum77">length</a>() * 2);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum239" class="linenum-cell" data-linenum="239" href="#linenum239"></a></td>
@@ -968,7 +968,7 @@
 </tr>
 <tr>
 <td><a id="linenum241" class="linenum-cell" data-linenum="241" href="#linenum241"></a></td>
-<td><pre>            <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<a class="variable" href="#linenum239">desc</a>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="variable" href="#linenum239">desc</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum242" class="linenum-cell" data-linenum="242" href="#linenum242"></a></td>
@@ -976,11 +976,11 @@
 </tr>
 <tr>
 <td><a id="linenum243" class="linenum-cell" data-linenum="243" href="#linenum243"></a></td>
-<td><pre>            <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>('L');</pre></td>
+<td><pre>            <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>('L');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum244" class="linenum-cell" data-linenum="244" href="#linenum244"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum238">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1740">indexOf</a>('.') &lt; 0) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum238">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1502">indexOf</a>('.') &lt; 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum245" class="linenum-cell" data-linenum="245" href="#linenum245"></a></td>
@@ -988,7 +988,7 @@
 </tr>
 <tr>
 <td><a id="linenum246" class="linenum-cell" data-linenum="246" href="#linenum246"></a></td>
-<td><pre>                    <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<span class='string'>&quot;java/lang/&quot;</span>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<span class='string'>&quot;java/lang/&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum247" class="linenum-cell" data-linenum="247" href="#linenum247"></a></td>
@@ -996,7 +996,7 @@
 </tr>
 <tr>
 <td><a id="linenum248" class="linenum-cell" data-linenum="248" href="#linenum248"></a></td>
-<td><pre>                <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<a class="variable" href="#linenum238">t</a>);</pre></td>
+<td><pre>                <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum224">append</a>(<a class="variable" href="#linenum238">t</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum249" class="linenum-cell" data-linenum="249" href="#linenum249"></a></td>
@@ -1004,7 +1004,7 @@
 </tr>
 <tr>
 <td><a id="linenum250" class="linenum-cell" data-linenum="250" href="#linenum250"></a></td>
-<td><pre>                <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(<a class="variable" href="#linenum238">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2225">replace</a>('.', '/'));</pre></td>
+<td><pre>                <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(<a class="variable" href="#linenum238">t</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2066">replace</a>('.', '/'));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum251" class="linenum-cell" data-linenum="251" href="#linenum251"></a></td>
@@ -1012,7 +1012,7 @@
 </tr>
 <tr>
 <td><a id="linenum252" class="linenum-cell" data-linenum="252" href="#linenum252"></a></td>
-<td><pre>            <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(';');</pre></td>
+<td><pre>            <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum129">append</a>(';');</pre></td>
 </tr>
 <tr>
 <td><a id="linenum253" class="linenum-cell" data-linenum="253" href="#linenum253"></a></td>
@@ -1020,7 +1020,7 @@
 </tr>
 <tr>
 <td><a id="linenum254" class="linenum-cell" data-linenum="254" href="#linenum254"></a></td>
-<td><pre>        return <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum668">toString</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum232">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuilder.html#linenum404">toString</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum255" class="linenum-cell" data-linenum="255" href="#linenum255"></a></td>
@@ -1220,7 +1220,7 @@
 </tr>
 <tr>
 <td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
-<td><pre>        return <a class="variable" href="#linenum126">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum964">equals</a>(<a class="variable" href="#linenum303">other</a>.name) &amp;&amp; <a class="variable" href="#linenum239">desc</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum964">equals</a>(<a class="variable" href="#linenum303">other</a>.desc);</pre></td>
+<td><pre>        return <a class="variable" href="#linenum126">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum976">equals</a>(<a class="variable" href="#linenum303">other</a>.name) &amp;&amp; <a class="variable" href="#linenum239">desc</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum976">equals</a>(<a class="variable" href="#linenum303">other</a>.desc);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum305" class="linenum-cell" data-linenum="305" href="#linenum305"></a></td>
@@ -1240,7 +1240,7 @@
 </tr>
 <tr>
 <td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
-<td><pre>        return <a class="variable" href="#linenum126">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1452">hashCode</a>() ^ <a class="variable" href="#linenum239">desc</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1452">hashCode</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum126">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1465">hashCode</a>() ^ <a class="variable" href="#linenum239">desc</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum1465">hashCode</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum310" class="linenum-cell" data-linenum="310" href="#linenum310"></a></td>

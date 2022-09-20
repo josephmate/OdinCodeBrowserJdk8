@@ -356,7 +356,7 @@
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum45">InputStream</a>&gt; v = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>&lt;&gt;(2);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum45">InputStream</a>&gt; v = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>&lt;&gt;(2);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
@@ -556,7 +556,7 @@
 </tr>
 <tr>
 <td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre>        if(<a class="variable" href="#linenum48">in</a> == null) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum48">in</a> == null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
@@ -656,23 +656,23 @@
 </tr>
 <tr>
 <td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum48">in</a> == null) {</pre></td>
+<td><pre>        while (<a class="variable" href="#linenum48">in</a> != null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre>            return -1;</pre></td>
+<td><pre>            int c = <a class="variable" href="#linenum48">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum65">read</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum164">c</a> != -1) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
-<td><pre>        int c = <a class="variable" href="#linenum48">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum161">read</a>();</pre></td>
+<td><pre>                return <a class="variable" href="#linenum164">c</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum166">c</a> == -1) {</pre></td>
+<td><pre>            }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
@@ -680,183 +680,183 @@
 </tr>
 <tr>
 <td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/java/io/SequenceInputStream.html#linenum197">read</a>();</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>        return -1;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre>        return <a class="variable" href="#linenum166">c</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
+<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
+<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
+<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
 <td><pre><span class='comment'>     * Reads up to &lt;code&gt;len&lt;/code&gt; bytes of data from this input stream<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
+<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
 <td><pre><span class='comment'>     * into an array of bytes.  If &lt;code&gt;len&lt;/code&gt; is not zero, the method<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
+<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
 <td><pre><span class='comment'>     * blocks until at least 1 byte of input is available; otherwise, no<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
+<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
 <td><pre><span class='comment'>     * bytes are read and &lt;code&gt;0&lt;/code&gt; is returned.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
+<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
 <td><pre><span class='comment'>     * &lt;p&gt;<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
+<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
 <td><pre><span class='comment'>     * The &lt;code&gt;read&lt;/code&gt; method of &lt;code&gt;SequenceInputStream&lt;/code&gt;<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
+<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
 <td><pre><span class='comment'>     * tries to read the data from the current substream. If it fails to<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
+<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
 <td><pre><span class='comment'>     * read any characters because the substream has reached the end of<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
+<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
 <td><pre><span class='comment'>     * the stream, it calls the &lt;code&gt;close&lt;/code&gt; method of the current<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
+<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
 <td><pre><span class='comment'>     * substream and begins reading from the next substream.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
+<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
+<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
 <td><pre><span class='comment'>     * @param      b     the buffer into which the data is read.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
+<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
 <td><pre><span class='comment'>     * @param      off   the start offset in array &lt;code&gt;b&lt;/code&gt;<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
+<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
 <td><pre><span class='comment'>     *                   at which the data is written.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
+<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
 <td><pre><span class='comment'>     * @param      len   the maximum number of bytes read.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
+<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
 <td><pre><span class='comment'>     * @return     int   the number of bytes read.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
+<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
 <td><pre><span class='comment'>     * @exception  NullPointerException If &lt;code&gt;b&lt;/code&gt; is &lt;code&gt;null&lt;/code&gt;.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
+<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
 <td><pre><span class='comment'>     * @exception  IndexOutOfBoundsException If &lt;code&gt;off&lt;/code&gt; is negative,<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
+<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
 <td><pre><span class='comment'>     * &lt;code&gt;len&lt;/code&gt; is negative, or &lt;code&gt;len&lt;/code&gt; is greater than<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
+<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
 <td><pre><span class='comment'>     * &lt;code&gt;b.length - off&lt;/code&gt;<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
+<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
 <td><pre><span class='comment'>     * @exception  IOException  if an I/O error occurs.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
+<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
+<td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
 <td><pre>    public int read(byte b[], int off, int len) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
+<td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
 <td><pre>        if (<a class="variable" href="#linenum48">in</a> == null) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
+<td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
 <td><pre>            return -1;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
-<td><pre>        } else if (<a class="variable" href="#linenum197">b</a> == null) {</pre></td>
+<td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
+<td><pre>        } else if (<a class="variable" href="#linenum196">b</a> == null) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
+<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
 <td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/NullPointerException.html#linenum52">NullPointerException</a>();</pre></td>
 </tr>
 <tr>
-<td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
-<td><pre>        } else if (<a class="variable" href="#linenum197">off</a> &lt; 0 || <a class="variable" href="#linenum197">len</a> &lt; 0 || <a class="variable" href="#linenum197">len</a> &gt; <a class="variable" href="#linenum197">b</a>.length - <a class="variable" href="#linenum197">off</a>) {</pre></td>
+<td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
+<td><pre>        } else if (<a class="variable" href="#linenum196">off</a> &lt; 0 || <a class="variable" href="#linenum196">len</a> &lt; 0 || <a class="variable" href="#linenum196">len</a> &gt; <a class="variable" href="#linenum196">b</a>.length - <a class="variable" href="#linenum196">off</a>) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
+<td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
 <td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IndexOutOfBoundsException.html#linenum37">IndexOutOfBoundsException</a>();</pre></td>
 </tr>
 <tr>
-<td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
-<td><pre>        } else if (<a class="variable" href="#linenum197">len</a> == 0) {</pre></td>
+<td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
+<td><pre>        } else if (<a class="variable" href="#linenum196">len</a> == 0) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
+<td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
 <td><pre>            return 0;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
+<td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
 <td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
+<td><pre>        do {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
-<td><pre></pre></td>
+<td><pre>            int n = <a class="variable" href="#linenum48">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum161">read</a>(<a class="variable" href="#linenum196">b</a>, <a class="variable" href="#linenum196">off</a>, <a class="variable" href="#linenum196">len</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
-<td><pre>        int n = <a class="variable" href="#linenum48">in</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum161">read</a>(<a class="variable" href="#linenum197">b</a>, <a class="variable" href="#linenum197">off</a>, <a class="variable" href="#linenum197">len</a>);</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum207">n</a> &gt; 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum208">n</a> &lt;= 0) {</pre></td>
+<td><pre>                return <a class="variable" href="#linenum207">n</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/io/SequenceInputStream.html#linenum104">nextStream</a>();</pre></td>
+<td><pre>            }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
-<td><pre>            return <a class="type" href="/OdinCodeBrowserJdk8/java/io/SequenceInputStream.html#linenum197">read</a>(<a class="variable" href="#linenum197">b</a>, <a class="variable" href="#linenum197">off</a>, <a class="variable" href="#linenum197">len</a>);</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/io/SequenceInputStream.html#linenum104">nextStream</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>        } while (<a class="variable" href="#linenum48">in</a> != null);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
-<td><pre>        return <a class="variable" href="#linenum208">n</a>;</pre></td>
+<td><pre>        return -1;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>

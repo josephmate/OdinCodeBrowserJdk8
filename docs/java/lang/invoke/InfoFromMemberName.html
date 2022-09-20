@@ -176,11 +176,11 @@
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
-<td><pre>    InfoFromMemberName(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandles.html#linenum508">Lookup</a> lookup, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MemberName.html#linenum72">MemberName</a> member, byte referenceKind) {</pre></td>
+<td><pre>    InfoFromMemberName(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandles.html#linenum512">Lookup</a> lookup, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MemberName.html#linenum72">MemberName</a> member, byte referenceKind) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
-<td><pre>        assert(<a class="variable" href="#linenum40">member</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MemberName.html#linenum778">isResolved</a>() || <a class="variable" href="#linenum40">member</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MemberName.html#linenum348">isMethodHandleInvoke</a>());</pre></td>
+<td><pre>        assert(<a class="variable" href="#linenum40">member</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MemberName.html#linenum773">isResolved</a>() || <a class="variable" href="#linenum40">member</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MemberName.html#linenum345">isMethodHandleInvoke</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
@@ -232,7 +232,7 @@
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
-<td><pre>        return <a class="variable" href="#linenum43">member</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MemberName.html#linenum846">getName</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum43">member</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MemberName.html#linenum98">getName</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
@@ -328,11 +328,11 @@
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
-<td><pre>    public &lt;T extends <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Member.html#linenum39">Member</a>&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a> reflectAs(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum957">T</a>&gt; expected, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandles.html#linenum508">Lookup</a> lookup) {</pre></td>
+<td><pre>    public &lt;T extends <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Member.html#linenum39">Member</a>&gt; <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a> reflectAs(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Class.html#linenum119">Class</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandleImpl.html#linenum1255">T</a>&gt; expected, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandles.html#linenum512">Lookup</a> lookup) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum43">member</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MemberName.html#linenum348">isMethodHandleInvoke</a>() &amp;&amp; !<a class="variable" href="#linenum43">member</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MemberName.html#linenum411">isVarargs</a>()) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum43">member</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MemberName.html#linenum345">isMethodHandleInvoke</a>() &amp;&amp; !<a class="variable" href="#linenum43">member</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MemberName.html#linenum414">isVarargs</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
@@ -364,7 +364,7 @@
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Member.html#linenum39">Member</a> mem = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum703">doPrivileged</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Member.html#linenum39">Member</a>&gt;() {</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Member.html#linenum39">Member</a> mem = AccessController.<a class="type" href="/OdinCodeBrowserJdk8/java/security/AccessController.html#linenum297">doPrivileged</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/security/PrivilegedAction.html#linenum42">PrivilegedAction</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Member.html#linenum39">Member</a>&gt;() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
@@ -412,7 +412,7 @@
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>            <a class="variable" href="#linenum81">lookup</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandles.html#linenum1480">checkAccess</a>(<a class="variable" href="#linenum101">refKind</a>, <a class="variable" href="#linenum100">defc</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/InfoFromMemberName.html#linenum133">convertToMemberName</a>(<a class="variable" href="#linenum101">refKind</a>, <a class="variable" href="#linenum90">mem</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum81">lookup</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/MethodHandles.html#linenum1489">checkAccess</a>(<a class="variable" href="#linenum101">refKind</a>, <a class="variable" href="#linenum100">defc</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/invoke/InfoFromMemberName.html#linenum133">convertToMemberName</a>(<a class="variable" href="#linenum101">refKind</a>, <a class="variable" href="#linenum90">mem</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>

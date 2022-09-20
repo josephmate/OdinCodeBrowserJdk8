@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 1998, 2013, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 1998, 2018, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -132,139 +132,139 @@
 </tr>
 <tr>
 <td><a id="linenum32" class="linenum-cell" data-linenum="32" href="#linenum32"></a></td>
-<td><pre></pre></td>
+<td><pre>import com.sun.jdi.connect.spi.TransportService;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum33" class="linenum-cell" data-linenum="33" href="#linenum33"></a></td>
-<td><pre><span class='comment'>/*</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum34" class="linenum-cell" data-linenum="34" href="#linenum34"></a></td>
-<td><pre><span class='comment'> * An ListeningConnector that uses the SocketTransportService<span class='comment'></pre></td>
+<td><pre><span class='comment'>/*</pre></td>
 </tr>
 <tr>
 <td><a id="linenum35" class="linenum-cell" data-linenum="35" href="#linenum35"></a></td>
-<td><pre> */</span></pre></td>
+<td><pre><span class='comment'> * An ListeningConnector that uses the SocketTransportService<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum36" class="linenum-cell" data-linenum="36" href="#linenum36"></a></td>
-<td><pre>public class SocketListeningConnector extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/GenericListeningConnector.html#linenum42">GenericListeningConnector</a> {</pre></td>
+<td><pre> */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum37" class="linenum-cell" data-linenum="37" href="#linenum37"></a></td>
-<td><pre></pre></td>
+<td><pre>public class SocketListeningConnector extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/GenericListeningConnector.html#linenum42">GenericListeningConnector</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum38" class="linenum-cell" data-linenum="38" href="#linenum38"></a></td>
-<td><pre>    static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> ARG_PORT = <span class='string'>&quot;port&quot;</span>;</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum39" class="linenum-cell" data-linenum="39" href="#linenum39"></a></td>
-<td><pre>    static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> ARG_LOCALADDR = <span class='string'>&quot;localAddress&quot;</span>;</pre></td>
+<td><pre>    static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> ARG_PORT = <span class='string'>&quot;port&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum40" class="linenum-cell" data-linenum="40" href="#linenum40"></a></td>
-<td><pre></pre></td>
+<td><pre>    static final <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> ARG_LOCALADDR = <span class='string'>&quot;localAddress&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum41" class="linenum-cell" data-linenum="41" href="#linenum41"></a></td>
-<td><pre>    public SocketListeningConnector() {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
-<td><pre>        super(new <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/SocketTransportService.html#linenum41">SocketTransportService</a>());</pre></td>
+<td><pre>    public SocketListeningConnector() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
-<td><pre></pre></td>
+<td><pre>        super(new <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/SocketTransportService.html#linenum41">SocketTransportService</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum78">addIntegerArgument</a>(</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
-<td><pre>            <a class="variable" href="#linenum38">ARG_PORT</a>,</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum78">addIntegerArgument</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum124">getString</a>(<span class='string'>&quot;socket_listening.port.label&quot;</span>),</pre></td>
+<td><pre>            <a class="variable" href="#linenum39">ARG_PORT</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum124">getString</a>(<span class='string'>&quot;socket_listening.port&quot;</span>),</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum124">getString</a>(<span class='string'>&quot;socket_listening.port.label&quot;</span>),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre>            <span class='string'>&quot;&quot;</span>,</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum124">getString</a>(<span class='string'>&quot;socket_listening.port&quot;</span>),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
-<td><pre>            false,</pre></td>
+<td><pre>            <span class='string'>&quot;&quot;</span>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
-<td><pre>            0, Integer.MAX_VALUE);</pre></td>
+<td><pre>            false,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre></pre></td>
+<td><pre>            0, Integer.MAX_VALUE);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum60">addStringArgument</a>(</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
-<td><pre>            <a class="variable" href="#linenum39">ARG_LOCALADDR</a>,</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum60">addStringArgument</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum124">getString</a>(<span class='string'>&quot;socket_listening.localaddr.label&quot;</span>),</pre></td>
+<td><pre>            <a class="variable" href="#linenum40">ARG_LOCALADDR</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum124">getString</a>(<span class='string'>&quot;socket_listening.localaddr&quot;</span>),</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum124">getString</a>(<span class='string'>&quot;socket_listening.localaddr.label&quot;</span>),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
-<td><pre>            <span class='string'>&quot;&quot;</span>,                                         <span class='comment'>// default is wildcard</span></pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum124">getString</a>(<span class='string'>&quot;socket_listening.localaddr&quot;</span>),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
-<td><pre>            false);</pre></td>
+<td><pre>            <span class='string'>&quot;&quot;</span>,                                         <span class='comment'>// default is wildcard</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre></pre></td>
+<td><pre>            false);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
-<td><pre>        transport = new <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/Transport.html#linenum45">Transport</a>() {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
-<td><pre>            public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name() {</pre></td>
+<td><pre>        transport = new <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/Transport.html#linenum45">Transport</a>() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum61" class="linenum-cell" data-linenum="61" href="#linenum61"></a></td>
-<td><pre>                return <span class='string'>&quot;dt_socket&quot;</span>;     <span class='comment'>// for compatibility reasons</span></pre></td>
+<td><pre>            public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
-<td><pre>            }</pre></td>
+<td><pre>                return <span class='string'>&quot;dt_socket&quot;</span>;     <span class='comment'>// for compatibility reasons</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum63" class="linenum-cell" data-linenum="63" href="#linenum63"></a></td>
-<td><pre>        };</pre></td>
+<td><pre>            }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum64" class="linenum-cell" data-linenum="64" href="#linenum64"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        };</pre></td>
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
@@ -272,118 +272,190 @@
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre>        startListening(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,? extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/Connector.html#linenum48">Connector</a>.Argument&gt; args)</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
-<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a>, <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/IllegalConnectorArgumentsException.html#linenum39">IllegalConnectorArgumentsException</a></pre></td>
+<td><pre>        startListening(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,? extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/Connector.html#linenum48">Connector</a>.Argument&gt; args)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum70" class="linenum-cell" data-linenum="70" href="#linenum70"></a></td>
-<td><pre>    {</pre></td>
+<td><pre>        throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a>, <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/IllegalConnectorArgumentsException.html#linenum39">IllegalConnectorArgumentsException</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> port = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum99">argument</a>(<a class="variable" href="#linenum38">ARG_PORT</a>, <a class="variable" href="#linenum68">args</a>).value();</pre></td>
+<td><pre>    {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> localaddr = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum99">argument</a>(<a class="variable" href="#linenum39">ARG_LOCALADDR</a>, <a class="variable" href="#linenum68">args</a>).value();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> port = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum99">argument</a>(<a class="variable" href="#linenum39">ARG_PORT</a>, <a class="variable" href="#linenum69">args</a>).value();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
-<td><pre></pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> localaddr = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum99">argument</a>(<a class="variable" href="#linenum40">ARG_LOCALADDR</a>, <a class="variable" href="#linenum69">args</a>).value();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
-<td><pre>        <span class='comment'>// default to system chosen port</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum71">port</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() == 0) {</pre></td>
+<td><pre>        <span class='comment'>// default to system chosen port</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
-<td><pre>            <a class="variable" href="#linenum71">port</a> = <span class='string'>&quot;0&quot;</span>;</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum72">port</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() == 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            <a class="variable" href="#linenum72">port</a> = <span class='string'>&quot;0&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum72">localaddr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() &gt; 0) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre>           <a class="variable" href="#linenum72">localaddr</a> = <a class="variable" href="#linenum72">localaddr</a> + <span class='string'>&quot;:&quot;</span> + <a class="variable" href="#linenum71">port</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
-<td><pre>        } else {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre>           <a class="variable" href="#linenum72">localaddr</a> = <a class="variable" href="#linenum71">port</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
+<td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
 <td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum73">localaddr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() &gt; 0) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
+<td><pre>           <a class="variable" href="#linenum73">localaddr</a> = <a class="variable" href="#linenum73">localaddr</a> + <span class='string'>&quot;:&quot;</span> + <a class="variable" href="#linenum72">port</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
+<td><pre>        } else {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
+<td><pre>           <a class="variable" href="#linenum73">localaddr</a> = <a class="variable" href="#linenum72">port</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre>        return super.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/GenericListeningConnector.html#linenum118">startListening</a>(<a class="variable" href="#linenum72">localaddr</a>, <a class="variable" href="#linenum68">args</a>);</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        return super.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/GenericListeningConnector.html#linenum118">startListening</a>(<a class="variable" href="#linenum73">localaddr</a>, <a class="variable" href="#linenum69">args</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre>        return <span class='string'>&quot;com.sun.jdi.SocketListen&quot;</span>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> description() {</pre></td>
+<td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name() {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum124">getString</a>(<span class='string'>&quot;socket_listening.description&quot;</span>);</pre></td>
+<td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
+<td><pre>        return <span class='string'>&quot;com.sun.jdi.SocketListen&quot;</span>;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
+<td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> description() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/ConnectorImpl.html#linenum124">getString</a>(<span class='string'>&quot;socket_listening.description&quot;</span>);</pre></td>
+</tr>
+<tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
+<td><pre>    <span class='comment'>// If the port is auto detected update the argument map with the bound port number.</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
+<td><pre>    protected void updateArgumentMapIfRequired(</pre></td>
+</tr>
+<tr>
+<td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, ? extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/Connector.html#linenum48">Connector</a>.Argument&gt; args, <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/spi/TransportService.html#linenum80">TransportService</a>.ListenKey listener) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
+<td><pre>        if (<a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/SocketListeningConnector.html#linenum109">isWildcardPort</a>(<a class="variable" href="#linenum100">args</a>)) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>[] address = <a class="variable" href="#linenum100">listener</a>.address().split(<span class='string'>&quot;:&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
+<td><pre>            if (<a class="variable" href="#linenum102">address</a>.length &gt; 1) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
+<td><pre>                <a class="variable" href="#linenum100">args</a>.get(<a class="variable" href="#linenum39">ARG_PORT</a>).setValue(<a class="variable" href="#linenum102">address</a>[1]);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
+<td><pre>    private boolean isWildcardPort(<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, ? extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/Connector.html#linenum48">Connector</a>.Argument&gt; args) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> port = <a class="variable" href="#linenum109">args</a>.get(<a class="variable" href="#linenum39">ARG_PORT</a>).value();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
+<td><pre>        return <a class="variable" href="#linenum110">port</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum634">isEmpty</a>() || Integer.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Integer.html#linenum829">valueOf</a>(<a class="variable" href="#linenum110">port</a>) == 0;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

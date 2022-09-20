@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2002, 2007, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2002, 2016, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -172,207 +172,207 @@
 </tr>
 <tr>
 <td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
-<td><pre>import sun.rmi.server.UnicastServerRef;</pre></td>
+<td><pre>import java.io.ObjectStreamClass;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum43" class="linenum-cell" data-linenum="43" href="#linenum43"></a></td>
-<td><pre>import sun.rmi.server.UnicastServerRef2;</pre></td>
+<td><pre>import java.lang.reflect.Method;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum44" class="linenum-cell" data-linenum="44" href="#linenum44"></a></td>
-<td><pre></pre></td>
+<td><pre>import java.util.ArrayList;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
-<td><pre><span class='comment'>/**</pre></td>
+<td><pre>import java.util.List;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
-<td><pre><span class='comment'> * &lt;p&gt;An {@link RMIServer} object that is exported through JRMP and that<span class='comment'></pre></td>
+<td><pre>import sun.reflect.misc.ReflectUtil;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
-<td><pre><span class='comment'> * creates client connections as RMI objects exported through JRMP.<span class='comment'></pre></td>
+<td><pre>import sun.rmi.server.DeserializationChecker;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre><span class='comment'> * User code does not usually reference this class directly.&lt;/p&gt;<span class='comment'></pre></td>
+<td><pre>import sun.rmi.server.UnicastServerRef;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
-<td><pre><span class='comment'> *<span class='comment'></pre></td>
+<td><pre>import sun.rmi.server.UnicastServerRef2;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
-<td><pre><span class='comment'> * @see RMIServerImpl<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre><span class='comment'> *<span class='comment'></pre></td>
+<td><pre><span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
-<td><pre><span class='comment'> * @since 1.5<span class='comment'></pre></td>
+<td><pre><span class='comment'> * &lt;p&gt;An {@link RMIServer} object that is exported through JRMP and that<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
-<td><pre> */</span></pre></td>
+<td><pre><span class='comment'> * creates client connections as RMI objects exported through JRMP.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum54" class="linenum-cell" data-linenum="54" href="#linenum54"></a></td>
-<td><pre>public class RMIJRMPServerImpl extends <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIServerImpl.html#linenum69">RMIServerImpl</a> {</pre></td>
+<td><pre><span class='comment'> * User code does not usually reference this class directly.&lt;/p&gt;<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum55" class="linenum-cell" data-linenum="55" href="#linenum55"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre><span class='comment'> *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum56" class="linenum-cell" data-linenum="56" href="#linenum56"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;Creates a new {@link RMIServer} object that will be exported<span class='comment'></pre></td>
+<td><pre><span class='comment'> * @see RMIServerImpl<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
-<td><pre><span class='comment'>     * on the given port using the given socket factories.&lt;/p&gt;<span class='comment'></pre></td>
+<td><pre><span class='comment'> *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'> * @since 1.5<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
-<td><pre><span class='comment'>     * @param port the port on which this object and the {@link<span class='comment'></pre></td>
+<td><pre> */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum60" class="linenum-cell" data-linenum="60" href="#linenum60"></a></td>
-<td><pre><span class='comment'>     * RMIConnectionImpl} objects it creates will be exported.  Can be<span class='comment'></pre></td>
+<td><pre>public class RMIJRMPServerImpl extends <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIServerImpl.html#linenum69">RMIServerImpl</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum61" class="linenum-cell" data-linenum="61" href="#linenum61"></a></td>
-<td><pre><span class='comment'>     * zero, to indicate any available port.<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum62" class="linenum-cell" data-linenum="62" href="#linenum62"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre>    private final ExportedWrapper exportedWrapper;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum63" class="linenum-cell" data-linenum="63" href="#linenum63"></a></td>
-<td><pre><span class='comment'>     * @param csf the client socket factory for the created RMI<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum64" class="linenum-cell" data-linenum="64" href="#linenum64"></a></td>
-<td><pre><span class='comment'>     * objects.  Can be null.<span class='comment'></pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum65" class="linenum-cell" data-linenum="65" href="#linenum65"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * &lt;p&gt;Creates a new {@link RMIServer} object that will be exported<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
-<td><pre><span class='comment'>     * @param ssf the server socket factory for the created RMI<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * on the given port using the given socket factories.&lt;/p&gt;<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
-<td><pre><span class='comment'>     * objects.  Can be null.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param port the port on which this object and the {@link<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
-<td><pre><span class='comment'>     * @param env the environment map.  Can be null.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * RMIConnectionImpl} objects it creates will be exported.  Can be<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum70" class="linenum-cell" data-linenum="70" href="#linenum70"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * zero, to indicate any available port.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum71" class="linenum-cell" data-linenum="71" href="#linenum71"></a></td>
-<td><pre><span class='comment'>     * @exception IOException if the {@link RMIServer} object<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
-<td><pre><span class='comment'>     * cannot be created.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
+<td><a id="linenum72" class="linenum-cell" data-linenum="72" href="#linenum72"></a></td>
+<td><pre><span class='comment'>     * @param csf the client socket factory for the created RMI<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum73" class="linenum-cell" data-linenum="73" href="#linenum73"></a></td>
+<td><pre><span class='comment'>     * objects.  Can be null.<span class='comment'></pre></td>
+</tr>
+<tr>
 <td><a id="linenum74" class="linenum-cell" data-linenum="74" href="#linenum74"></a></td>
-<td><pre><span class='comment'>     * @exception IllegalArgumentException if &lt;code&gt;port&lt;/code&gt; is<span class='comment'></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum75" class="linenum-cell" data-linenum="75" href="#linenum75"></a></td>
-<td><pre><span class='comment'>     * negative.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param ssf the server socket factory for the created RMI<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum76" class="linenum-cell" data-linenum="76" href="#linenum76"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * objects.  Can be null.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum77" class="linenum-cell" data-linenum="77" href="#linenum77"></a></td>
-<td><pre>    public RMIJRMPServerImpl(int port,</pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>                             <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/RMIClientSocketFactory.html#linenum62">RMIClientSocketFactory</a> csf,</pre></td>
+<td><pre><span class='comment'>     * @param env the environment map.  Can be null.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
-<td><pre>                             <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/RMIServerSocketFactory.html#linenum61">RMIServerSocketFactory</a> ssf,</pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre>                             <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,?&gt; env)</pre></td>
+<td><pre><span class='comment'>     * @exception IOException if the {@link RMIServer} object<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
-<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre><span class='comment'>     * cannot be created.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
-<td><pre>        super(env);</pre></td>
+<td><pre><span class='comment'>     * @exception IllegalArgumentException if &lt;code&gt;port&lt;/code&gt; is<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     * negative.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre>        if (port &lt; 0)</pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalArgumentException.html#linenum35">IllegalArgumentException</a>(<span class='string'>&quot;Negative port: &quot;</span> + port);</pre></td>
+<td><pre>    public RMIJRMPServerImpl(int port,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
-<td><pre></pre></td>
+<td><pre>                             <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/RMIClientSocketFactory.html#linenum62">RMIClientSocketFactory</a> csf,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
-<td><pre>        this.port = port;</pre></td>
+<td><pre>                             <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/RMIServerSocketFactory.html#linenum61">RMIServerSocketFactory</a> ssf,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre>        this.csf = csf;</pre></td>
+<td><pre>                             <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,?&gt; env)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>        this.ssf = ssf;</pre></td>
+<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>        this.env = (env == null) ? Collections.&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>&gt;<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum4577">emptyMap</a>() : env;</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        super(env);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
@@ -380,375 +380,375 @@
 </tr>
 <tr>
 <td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
-<td><pre>    protected void export() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre>        if (port &lt; 0)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIJRMPServerImpl.html#linenum98">export</a>(this);</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalArgumentException.html#linenum35">IllegalArgumentException</a>(<span class='string'>&quot;Negative port: &quot;</span> + port);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
-<td><pre>    }</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum97" class="linenum-cell" data-linenum="97" href="#linenum97"></a></td>
-<td><pre></pre></td>
+<td><pre>        this.port = port;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
-<td><pre>    private void export(<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/Remote.html#linenum50">Remote</a> obj) throws <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/RemoteException.html#linenum49">RemoteException</a> {</pre></td>
+<td><pre>        this.csf = csf;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
-<td><pre>        final <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/internal/RMIExporter.html#linenum47">RMIExporter</a> exporter =</pre></td>
+<td><pre>        this.ssf = ssf;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre>            (<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/internal/RMIExporter.html#linenum47">RMIExporter</a>) <a class="variable" href="#linenum80">env</a>.get(RMIExporter.EXPORTER_ATTRIBUTE);</pre></td>
+<td><pre>        this.env = (env == null) ? Collections.&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>&gt;<a class="type" href="/OdinCodeBrowserJdk8/java/util/Collections.html#linenum4520">emptyMap</a>() : env;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
-<td><pre>        final boolean daemon = EnvHelp.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/util/EnvHelp.html#linenum756">isServerDaemon</a>(<a class="variable" href="#linenum80">env</a>);</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre></pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>[] credentialsTypes</pre></td>
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum101">daemon</a> &amp;&amp; <a class="variable" href="#linenum99">exporter</a> != null) {</pre></td>
+<td><pre>                = (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>[]) this.env.get(EnvHelp.CREDENTIAL_TYPES);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalArgumentException.html#linenum35">IllegalArgumentException</a>(<span class='string'>&quot;If &quot;</span>+EnvHelp.JMX_SERVER_DAEMON+</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>&gt; types = null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
-<td><pre>                    <span class='string'>&quot; is specified as true, &quot;</span>+RMIExporter.EXPORTER_ATTRIBUTE+</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum102">credentialsTypes</a> != null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre>                    <span class='string'>&quot; cannot be used to specify an exporter!&quot;</span>);</pre></td>
+<td><pre>            <a class="variable" href="#linenum104">types</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;&gt;();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>            for (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> type : <a class="variable" href="#linenum102">credentialsTypes</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
-<td><pre></pre></td>
+<td><pre>                if (type == null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum101">daemon</a>) {</pre></td>
+<td><pre>                    throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalArgumentException.html#linenum35">IllegalArgumentException</a>(<span class='string'>&quot;A credential type is null.&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum78">csf</a> == null &amp;&amp; <a class="variable" href="#linenum79">ssf</a> == null) {</pre></td>
+<td><pre>                }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
-<td><pre>                new <a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/server/UnicastServerRef.html#linenum70">UnicastServerRef</a>(<a class="variable" href="#linenum77">port</a>).exportObject(<a class="variable" href="#linenum98">obj</a>, null, true);</pre></td>
+<td><pre>                ReflectUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/reflect/misc/ReflectUtil.html#linenum163">checkPackageAccess</a>(type);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre>            } else {</pre></td>
+<td><pre>                <a class="variable" href="#linenum104">types</a>.add(type);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
-<td><pre>                new <a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/server/UnicastServerRef2.html#linenum41">UnicastServerRef2</a>(<a class="variable" href="#linenum77">port</a>, <a class="variable" href="#linenum78">csf</a>, <a class="variable" href="#linenum79">ssf</a>).exportObject(<a class="variable" href="#linenum98">obj</a>, null, true);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
 <td><pre>            }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
-<td><pre>        } else if (<a class="variable" href="#linenum99">exporter</a> != null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
-<td><pre>            <a class="variable" href="#linenum99">exporter</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/internal/RMIExporter.html#linenum51">exportObject</a>(<a class="variable" href="#linenum98">obj</a>, <a class="variable" href="#linenum77">port</a>, <a class="variable" href="#linenum78">csf</a>, <a class="variable" href="#linenum79">ssf</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
-<td><pre>        } else {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
-<td><pre>            UnicastRemoteObject.<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/UnicastRemoteObject.html#linenum376">exportObject</a>(<a class="variable" href="#linenum98">obj</a>, <a class="variable" href="#linenum77">port</a>, <a class="variable" href="#linenum78">csf</a>, <a class="variable" href="#linenum79">ssf</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
+<td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
+<td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
+<td><pre>        <a class="variable" href="#linenum62">exportedWrapper</a> = <a class="variable" href="#linenum104">types</a> != null ?</pre></td>
+</tr>
+<tr>
+<td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
+<td><pre>                new ExportedWrapper(this, <a class="variable" href="#linenum104">types</a>) :</pre></td>
+</tr>
+<tr>
+<td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
+<td><pre>                null;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
 <td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
+<td><pre>    protected void export() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre></pre></td>
+<td><pre>        if (<a class="variable" href="#linenum62">exportedWrapper</a> != null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
-<td><pre>    private void unexport(<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/Remote.html#linenum50">Remote</a> obj, boolean force)</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIJRMPServerImpl.html#linenum128">export</a>(<a class="variable" href="#linenum62">exportedWrapper</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/NoSuchObjectException.html#linenum47">NoSuchObjectException</a> {</pre></td>
+<td><pre>        } else {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/internal/RMIExporter.html#linenum47">RMIExporter</a> exporter =</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIJRMPServerImpl.html#linenum128">export</a>(this);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>            (<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/internal/RMIExporter.html#linenum47">RMIExporter</a>) <a class="variable" href="#linenum80">env</a>.get(RMIExporter.EXPORTER_ATTRIBUTE);</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum124">exporter</a> == null)</pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
-<td><pre>            UnicastRemoteObject.<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/UnicastRemoteObject.html#linenum367">unexportObject</a>(<a class="variable" href="#linenum122">obj</a>, <a class="variable" href="#linenum122">force</a>);</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
-<td><pre>        else</pre></td>
+<td><pre>    private void export(<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/Remote.html#linenum50">Remote</a> obj) throws <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/RemoteException.html#linenum49">RemoteException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
-<td><pre>            <a class="variable" href="#linenum124">exporter</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/internal/RMIExporter.html#linenum57">unexportObject</a>(<a class="variable" href="#linenum122">obj</a>, <a class="variable" href="#linenum122">force</a>);</pre></td>
+<td><pre>        final <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/internal/RMIExporter.html#linenum47">RMIExporter</a> exporter =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>            (<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/internal/RMIExporter.html#linenum47">RMIExporter</a>) <a class="variable" href="#linenum89">env</a>.get(RMIExporter.EXPORTER_ATTRIBUTE);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
-<td><pre></pre></td>
+<td><pre>        final boolean daemon = EnvHelp.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/util/EnvHelp.html#linenum771">isServerDaemon</a>(<a class="variable" href="#linenum89">env</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
-<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getProtocol() {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>        return <span class='string'>&quot;rmi&quot;</span>;</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum131">daemon</a> &amp;&amp; <a class="variable" href="#linenum129">exporter</a> != null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/IllegalArgumentException.html#linenum35">IllegalArgumentException</a>(<span class='string'>&quot;If &quot;</span>+EnvHelp.JMX_SERVER_DAEMON+</pre></td>
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
-<td><pre></pre></td>
+<td><pre>                    <span class='string'>&quot; is specified as true, &quot;</span>+RMIExporter.EXPORTER_ATTRIBUTE+</pre></td>
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>                    <span class='string'>&quot; cannot be used to specify an exporter!&quot;</span>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;Returns a serializable stub for this {@link RMIServer} object.&lt;/p&gt;<span class='comment'></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre><span class='comment'>     * @return a serializable stub.<span class='comment'></pre></td>
+<td><pre>        if (<a class="variable" href="#linenum131">daemon</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre>            if (<a class="variable" href="#linenum87">csf</a> == null &amp;&amp; <a class="variable" href="#linenum88">ssf</a> == null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
-<td><pre><span class='comment'>     * @exception IOException if the stub cannot be obtained - e.g the<span class='comment'></pre></td>
+<td><pre>                new <a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/server/UnicastServerRef.html#linenum80">UnicastServerRef</a>(<a class="variable" href="#linenum86">port</a>).exportObject(<a class="variable" href="#linenum128">obj</a>, null, true);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre><span class='comment'>     *            RMIJRMPServerImpl has not been exported yet.<span class='comment'></pre></td>
+<td><pre>            } else {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre>                new <a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/server/UnicastServerRef2.html#linenum44">UnicastServerRef2</a>(<a class="variable" href="#linenum86">port</a>, <a class="variable" href="#linenum87">csf</a>, <a class="variable" href="#linenum88">ssf</a>).exportObject(<a class="variable" href="#linenum128">obj</a>, null, true);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/Remote.html#linenum50">Remote</a> toStub() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre>            }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
-<td><pre>        return RemoteObject.<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/RemoteObject.html#linenum97">toStub</a>(this);</pre></td>
+<td><pre>        } else if (<a class="variable" href="#linenum129">exporter</a> != null) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>            <a class="variable" href="#linenum129">exporter</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/internal/RMIExporter.html#linenum51">exportObject</a>(<a class="variable" href="#linenum128">obj</a>, <a class="variable" href="#linenum86">port</a>, <a class="variable" href="#linenum87">csf</a>, <a class="variable" href="#linenum88">ssf</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
-<td><pre></pre></td>
+<td><pre>        } else {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>            UnicastRemoteObject.<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/UnicastRemoteObject.html#linenum376">exportObject</a>(<a class="variable" href="#linenum128">obj</a>, <a class="variable" href="#linenum86">port</a>, <a class="variable" href="#linenum87">csf</a>, <a class="variable" href="#linenum88">ssf</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;Creates a new client connection as an RMI object exported<span class='comment'></pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre><span class='comment'>     * through JRMP. The port and socket factories for the new<span class='comment'></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
-<td><pre><span class='comment'>     * {@link RMIConnection} object are the ones supplied<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
-<td><pre><span class='comment'>     * to the &lt;code&gt;RMIJRMPServerImpl&lt;/code&gt; constructor.&lt;/p&gt;<span class='comment'></pre></td>
+<td><pre>    private void unexport(<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/Remote.html#linenum50">Remote</a> obj, boolean force)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/NoSuchObjectException.html#linenum47">NoSuchObjectException</a> {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
-<td><pre><span class='comment'>     * @param connectionId the ID of the new connection. Every<span class='comment'></pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/internal/RMIExporter.html#linenum47">RMIExporter</a> exporter =</pre></td>
 </tr>
 <tr>
 <td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre><span class='comment'>     * connection opened by this connector server will have a<span class='comment'></pre></td>
+<td><pre>            (<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/internal/RMIExporter.html#linenum47">RMIExporter</a>) <a class="variable" href="#linenum89">env</a>.get(RMIExporter.EXPORTER_ATTRIBUTE);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre><span class='comment'>     * different id.  The behavior is unspecified if this parameter is<span class='comment'></pre></td>
+<td><pre>        if (<a class="variable" href="#linenum154">exporter</a> == null)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
-<td><pre><span class='comment'>     * null.<span class='comment'></pre></td>
+<td><pre>            UnicastRemoteObject.<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/UnicastRemoteObject.html#linenum367">unexportObject</a>(<a class="variable" href="#linenum152">obj</a>, <a class="variable" href="#linenum152">force</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre>        else</pre></td>
 </tr>
 <tr>
 <td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
-<td><pre><span class='comment'>     * @param subject the authenticated subject.  Can be null.<span class='comment'></pre></td>
+<td><pre>            <a class="variable" href="#linenum154">exporter</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jmx/remote/internal/RMIExporter.html#linenum57">unexportObject</a>(<a class="variable" href="#linenum152">obj</a>, <a class="variable" href="#linenum152">force</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
-<td><pre><span class='comment'>     * @return the newly-created &lt;code&gt;RMIConnection&lt;/code&gt;.<span class='comment'></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getProtocol() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre><span class='comment'>     * @exception IOException if the new {@link RMIConnection}<span class='comment'></pre></td>
+<td><pre>        return <span class='string'>&quot;rmi&quot;</span>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre><span class='comment'>     * object cannot be created or exported.<span class='comment'></pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
-<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIConnection.html#linenum93">RMIConnection</a> makeClient(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> connectionId, <a class="type" href="/OdinCodeBrowserJdk8/javax/security/auth/Subject.html#linenum100">Subject</a> subject)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum166">connectionId</a> == null)</pre></td>
-</tr>
-<tr>
-<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/NullPointerException.html#linenum52">NullPointerException</a>(<span class='string'>&quot;Null connectionId&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIConnection.html#linenum93">RMIConnection</a> client =</pre></td>
-</tr>
-<tr>
-<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
-<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIConnectionImpl.html#linenum76">RMIConnectionImpl</a>(this, <a class="variable" href="#linenum166">connectionId</a>, <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIServerImpl.html#linenum124">getDefaultClassLoader</a>(),</pre></td>
-</tr>
-<tr>
-<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
-<td><pre>                                  <a class="variable" href="#linenum166">subject</a>, <a class="variable" href="#linenum80">env</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIJRMPServerImpl.html#linenum98">export</a>(<a class="variable" href="#linenum172">client</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
-<td><pre>        return <a class="variable" href="#linenum172">client</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
-<td><pre>    protected void closeClient(<a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIConnection.html#linenum93">RMIConnection</a> client) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIJRMPServerImpl.html#linenum122">unexport</a>(<a class="variable" href="#linenum179">client</a>, true);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
+<td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;Returns a serializable stub for this {@link RMIServer} object.&lt;/p&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
+<td><pre><span class='comment'>     * @return a serializable stub.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
+<td><pre><span class='comment'>     * @exception IOException if the stub cannot be obtained - e.g the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
+<td><pre><span class='comment'>     *            RMIJRMPServerImpl has not been exported yet.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/Remote.html#linenum50">Remote</a> toStub() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum62">exportedWrapper</a> != null) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
+<td><pre>            return RemoteObject.<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/RemoteObject.html#linenum97">toStub</a>(<a class="variable" href="#linenum62">exportedWrapper</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
+<td><pre>        } else {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
+<td><pre>            return RemoteObject.<a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/RemoteObject.html#linenum97">toStub</a>(this);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;Creates a new client connection as an RMI object exported<span class='comment'></pre></td>
+</tr>
+<tr>
 <td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;Called by {@link #close()} to close the connector server by<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * through JRMP. The port and socket factories for the new<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
-<td><pre><span class='comment'>     * unexporting this object.  After returning from this method, the<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * {@link RMIConnection} object are the ones supplied<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
-<td><pre><span class='comment'>     * connector server must not accept any new connections.&lt;/p&gt;<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * to the &lt;code&gt;RMIJRMPServerImpl&lt;/code&gt; constructor.&lt;/p&gt;<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
@@ -756,50 +756,366 @@
 </tr>
 <tr>
 <td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
-<td><pre><span class='comment'>     * @exception IOException if the attempt to close the connector<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * @param connectionId the ID of the new connection. Every<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
-<td><pre><span class='comment'>     * server failed.<span class='comment'></pre></td>
+<td><pre><span class='comment'>     * connection opened by this connector server will have a<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * different id.  The behavior is unspecified if this parameter is<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
-<td><pre>    protected void closeServer() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+<td><pre><span class='comment'>     * null.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIJRMPServerImpl.html#linenum122">unexport</a>(this, true);</pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
-<td><pre>    }</pre></td>
+<td><pre><span class='comment'>     * @param subject the authenticated subject.  Can be null.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
-<td><pre></pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
-<td><pre>    private final int port;</pre></td>
+<td><pre><span class='comment'>     * @return the newly-created &lt;code&gt;RMIConnection&lt;/code&gt;.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/RMIClientSocketFactory.html#linenum62">RMIClientSocketFactory</a> csf;</pre></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/RMIServerSocketFactory.html#linenum61">RMIServerSocketFactory</a> ssf;</pre></td>
+<td><pre><span class='comment'>     * @exception IOException if the new {@link RMIConnection}<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
-<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, ?&gt; env;</pre></td>
+<td><pre><span class='comment'>     * object cannot be created or exported.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
+<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIConnection.html#linenum93">RMIConnection</a> makeClient(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> connectionId, <a class="type" href="/OdinCodeBrowserJdk8/javax/security/auth/Subject.html#linenum100">Subject</a> subject)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
+<td><pre>            throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum200">connectionId</a> == null)</pre></td>
+</tr>
+<tr>
+<td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
+<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/NullPointerException.html#linenum52">NullPointerException</a>(<span class='string'>&quot;Null connectionId&quot;</span>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIConnection.html#linenum93">RMIConnection</a> client =</pre></td>
+</tr>
+<tr>
+<td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
+<td><pre>            new <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIConnectionImpl.html#linenum76">RMIConnectionImpl</a>(this, <a class="variable" href="#linenum200">connectionId</a>, <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIServerImpl.html#linenum124">getDefaultClassLoader</a>(),</pre></td>
+</tr>
+<tr>
+<td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
+<td><pre>                                  <a class="variable" href="#linenum200">subject</a>, <a class="variable" href="#linenum89">env</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIJRMPServerImpl.html#linenum128">export</a>(<a class="variable" href="#linenum206">client</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
+<td><pre>        return <a class="variable" href="#linenum206">client</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
+<td><pre>    protected void closeClient(<a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIConnection.html#linenum93">RMIConnection</a> client) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIJRMPServerImpl.html#linenum152">unexport</a>(<a class="variable" href="#linenum213">client</a>, true);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum215" class="linenum-cell" data-linenum="215" href="#linenum215"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum216" class="linenum-cell" data-linenum="216" href="#linenum216"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum217" class="linenum-cell" data-linenum="217" href="#linenum217"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;Called by {@link #close()} to close the connector server by<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum219" class="linenum-cell" data-linenum="219" href="#linenum219"></a></td>
+<td><pre><span class='comment'>     * unexporting this object.  After returning from this method, the<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum220" class="linenum-cell" data-linenum="220" href="#linenum220"></a></td>
+<td><pre><span class='comment'>     * connector server must not accept any new connections.&lt;/p&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum221" class="linenum-cell" data-linenum="221" href="#linenum221"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum222" class="linenum-cell" data-linenum="222" href="#linenum222"></a></td>
+<td><pre><span class='comment'>     * @exception IOException if the attempt to close the connector<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum223" class="linenum-cell" data-linenum="223" href="#linenum223"></a></td>
+<td><pre><span class='comment'>     * server failed.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum224" class="linenum-cell" data-linenum="224" href="#linenum224"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum225" class="linenum-cell" data-linenum="225" href="#linenum225"></a></td>
+<td><pre>    protected void closeServer() throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum226" class="linenum-cell" data-linenum="226" href="#linenum226"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum62">exportedWrapper</a> != null) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum227" class="linenum-cell" data-linenum="227" href="#linenum227"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIJRMPServerImpl.html#linenum152">unexport</a>(<a class="variable" href="#linenum62">exportedWrapper</a>, true);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum228" class="linenum-cell" data-linenum="228" href="#linenum228"></a></td>
+<td><pre>        } else {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum229" class="linenum-cell" data-linenum="229" href="#linenum229"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIJRMPServerImpl.html#linenum152">unexport</a>(this, true);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum230" class="linenum-cell" data-linenum="230" href="#linenum230"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum231" class="linenum-cell" data-linenum="231" href="#linenum231"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum232" class="linenum-cell" data-linenum="232" href="#linenum232"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum233" class="linenum-cell" data-linenum="233" href="#linenum233"></a></td>
+<td><pre>    private final int port;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum234" class="linenum-cell" data-linenum="234" href="#linenum234"></a></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/RMIClientSocketFactory.html#linenum62">RMIClientSocketFactory</a> csf;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum235" class="linenum-cell" data-linenum="235" href="#linenum235"></a></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/server/RMIServerSocketFactory.html#linenum61">RMIServerSocketFactory</a> ssf;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum236" class="linenum-cell" data-linenum="236" href="#linenum236"></a></td>
+<td><pre>    private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, ?&gt; env;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum237" class="linenum-cell" data-linenum="237" href="#linenum237"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum238" class="linenum-cell" data-linenum="238" href="#linenum238"></a></td>
+<td><pre>    private static class ExportedWrapper implements <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIServer.html#linenum43">RMIServer</a>, <a class="type" href="/OdinCodeBrowserJdk8/sun/rmi/server/DeserializationChecker.html#linenum39">DeserializationChecker</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum239" class="linenum-cell" data-linenum="239" href="#linenum239"></a></td>
+<td><pre>        private final <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIServer.html#linenum43">RMIServer</a> impl;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum240" class="linenum-cell" data-linenum="240" href="#linenum240"></a></td>
+<td><pre>        private final <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>&gt; allowedTypes;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum241" class="linenum-cell" data-linenum="241" href="#linenum241"></a></td>
+<td><pre>        private ExportedWrapper(<a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIServer.html#linenum43">RMIServer</a> impl, <a class="type" href="/OdinCodeBrowserJdk8/java/util/List.html#linenum111">List</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>&gt; credentialsTypes) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum242" class="linenum-cell" data-linenum="242" href="#linenum242"></a></td>
+<td><pre>            this.impl = <a class="variable" href="#linenum239">impl</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum243" class="linenum-cell" data-linenum="243" href="#linenum243"></a></td>
+<td><pre>            <a class="variable" href="#linenum240">allowedTypes</a> = <a class="variable" href="#linenum102">credentialsTypes</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum244" class="linenum-cell" data-linenum="244" href="#linenum244"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum245" class="linenum-cell" data-linenum="245" href="#linenum245"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum246" class="linenum-cell" data-linenum="246" href="#linenum246"></a></td>
+<td><pre>        @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum247" class="linenum-cell" data-linenum="247" href="#linenum247"></a></td>
+<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getVersion() throws <a class="type" href="/OdinCodeBrowserJdk8/java/rmi/RemoteException.html#linenum49">RemoteException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum248" class="linenum-cell" data-linenum="248" href="#linenum248"></a></td>
+<td><pre>            return <a class="variable" href="#linenum241">impl</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIServer.html#linenum70">getVersion</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum249" class="linenum-cell" data-linenum="249" href="#linenum249"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum250" class="linenum-cell" data-linenum="250" href="#linenum250"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum251" class="linenum-cell" data-linenum="251" href="#linenum251"></a></td>
+<td><pre>        @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum252" class="linenum-cell" data-linenum="252" href="#linenum252"></a></td>
+<td><pre>        public <a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIConnection.html#linenum93">RMIConnection</a> newClient(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a> credentials) throws <a class="type" href="/OdinCodeBrowserJdk8/java/io/IOException.html#linenum38">IOException</a> {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum253" class="linenum-cell" data-linenum="253" href="#linenum253"></a></td>
+<td><pre>            return <a class="variable" href="#linenum241">impl</a>.<a class="type" href="/OdinCodeBrowserJdk8/javax/management/remote/rmi/RMIServer.html#linenum90">newClient</a>(<a class="variable" href="#linenum252">credentials</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum254" class="linenum-cell" data-linenum="254" href="#linenum254"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum255" class="linenum-cell" data-linenum="255" href="#linenum255"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum256" class="linenum-cell" data-linenum="256" href="#linenum256"></a></td>
+<td><pre>        @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum257" class="linenum-cell" data-linenum="257" href="#linenum257"></a></td>
+<td><pre>        public void check(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> method, <a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectStreamClass.html#linenum79">ObjectStreamClass</a> descriptor,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum258" class="linenum-cell" data-linenum="258" href="#linenum258"></a></td>
+<td><pre>                int paramIndex, int callID) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum259" class="linenum-cell" data-linenum="259" href="#linenum259"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum260" class="linenum-cell" data-linenum="260" href="#linenum260"></a></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> type = <a class="variable" href="#linenum257">descriptor</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectStreamClass.html#linenum257">getName</a>();</pre></td>
+</tr>
+<tr>
+<td><a id="linenum261" class="linenum-cell" data-linenum="261" href="#linenum261"></a></td>
+<td><pre>            if (!<a class="variable" href="#linenum240">allowedTypes</a>.contains(<a class="variable" href="#linenum260">type</a>)) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum262" class="linenum-cell" data-linenum="262" href="#linenum262"></a></td>
+<td><pre>                throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ClassCastException.html#linenum40">ClassCastException</a>(<span class='string'>&quot;Unsupported type: &quot;</span> + <a class="variable" href="#linenum260">type</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum263" class="linenum-cell" data-linenum="263" href="#linenum263"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum264" class="linenum-cell" data-linenum="264" href="#linenum264"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum265" class="linenum-cell" data-linenum="265" href="#linenum265"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum266" class="linenum-cell" data-linenum="266" href="#linenum266"></a></td>
+<td><pre>        @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum267" class="linenum-cell" data-linenum="267" href="#linenum267"></a></td>
+<td><pre>        public void checkProxyClass(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/reflect/Method.html#linenum61">Method</a> method, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>[] ifaces,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum268" class="linenum-cell" data-linenum="268" href="#linenum268"></a></td>
+<td><pre>                int paramIndex, int callID) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum269" class="linenum-cell" data-linenum="269" href="#linenum269"></a></td>
+<td><pre>            if (<a class="variable" href="#linenum267">ifaces</a> != null &amp;&amp; <a class="variable" href="#linenum267">ifaces</a>.length &gt; 0) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum270" class="linenum-cell" data-linenum="270" href="#linenum270"></a></td>
+<td><pre>                for (<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> iface : <a class="variable" href="#linenum267">ifaces</a>) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum271" class="linenum-cell" data-linenum="271" href="#linenum271"></a></td>
+<td><pre>                    if (!<a class="variable" href="#linenum240">allowedTypes</a>.contains(iface)) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum272" class="linenum-cell" data-linenum="272" href="#linenum272"></a></td>
+<td><pre>                        throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/ClassCastException.html#linenum40">ClassCastException</a>(<span class='string'>&quot;Unsupported type: &quot;</span> + iface);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum273" class="linenum-cell" data-linenum="273" href="#linenum273"></a></td>
+<td><pre>                    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
+<td><pre>                }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
+<td><pre>            }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

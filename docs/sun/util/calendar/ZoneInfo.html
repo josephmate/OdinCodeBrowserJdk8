@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2000, 2021, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -1148,7 +1148,7 @@
 </tr>
 <tr>
 <td><a id="linenum286" class="linenum-cell" data-linenum="286" href="#linenum286"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum150">SimpleTimeZone</a> tz = <a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum599">getLastRule</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum151">SimpleTimeZone</a> tz = <a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum599">getLastRule</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum287" class="linenum-cell" data-linenum="287" href="#linenum287"></a></td>
@@ -1156,7 +1156,7 @@
 </tr>
 <tr>
 <td><a id="linenum288" class="linenum-cell" data-linenum="288" href="#linenum288"></a></td>
-<td><pre>            int rawoffset = <a class="variable" href="#linenum286">tz</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum781">getRawOffset</a>();</pre></td>
+<td><pre>            int rawoffset = <a class="variable" href="#linenum286">tz</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum782">getRawOffset</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum289" class="linenum-cell" data-linenum="289" href="#linenum289"></a></td>
@@ -1176,7 +1176,7 @@
 </tr>
 <tr>
 <td><a id="linenum293" class="linenum-cell" data-linenum="293" href="#linenum293"></a></td>
-<td><pre>            int dstoffset = <a class="variable" href="#linenum286">tz</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum672">getOffset</a>(<a class="variable" href="#linenum289">msec</a>) - <a class="variable" href="#linenum206">rawOffset</a>;</pre></td>
+<td><pre>            int dstoffset = <a class="variable" href="#linenum286">tz</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum539">getOffset</a>(<a class="variable" href="#linenum289">msec</a>) - <a class="variable" href="#linenum206">rawOffset</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum294" class="linenum-cell" data-linenum="294" href="#linenum294"></a></td>
@@ -1188,7 +1188,7 @@
 </tr>
 <tr>
 <td><a id="linenum296" class="linenum-cell" data-linenum="296" href="#linenum296"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum293">dstoffset</a> &gt; 0 &amp;&amp; <a class="variable" href="#linenum286">tz</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum672">getOffset</a>(<a class="variable" href="#linenum289">msec</a> - <a class="variable" href="#linenum293">dstoffset</a>) == <a class="variable" href="#linenum288">rawoffset</a>) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum293">dstoffset</a> &gt; 0 &amp;&amp; <a class="variable" href="#linenum286">tz</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum539">getOffset</a>(<a class="variable" href="#linenum289">msec</a> - <a class="variable" href="#linenum293">dstoffset</a>) == <a class="variable" href="#linenum288">rawoffset</a> &amp;&amp; <a class="variable" href="#linenum247">type</a> == <a class="variable" href="#linenum74">WALL_TIME</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum297" class="linenum-cell" data-linenum="297" href="#linenum297"></a></td>
@@ -1744,7 +1744,7 @@
 </tr>
 <tr>
 <td><a id="linenum435" class="linenum-cell" data-linenum="435" href="#linenum435"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum247">getOffsets</a>(System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>(), <a class="variable" href="#linenum434">offsets</a>, <a class="variable" href="#linenum72">UTC_TIME</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum247">getOffsets</a>(System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>(), <a class="variable" href="#linenum434">offsets</a>, <a class="variable" href="#linenum72">UTC_TIME</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum436" class="linenum-cell" data-linenum="436" href="#linenum436"></a></td>
@@ -1868,7 +1868,7 @@
 </tr>
 <tr>
 <td><a id="linenum466" class="linenum-cell" data-linenum="466" href="#linenum466"></a></td>
-<td><pre>        long utc = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum353">currentTimeMillis</a>() - <a class="variable" href="#linenum99">rawOffsetDiff</a>;</pre></td>
+<td><pre>        long utc = System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum355">currentTimeMillis</a>() - <a class="variable" href="#linenum99">rawOffsetDiff</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum467" class="linenum-cell" data-linenum="467" href="#linenum467"></a></td>
@@ -2044,7 +2044,7 @@
 </tr>
 <tr>
 <td><a id="linenum510" class="linenum-cell" data-linenum="510" href="#linenum510"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum150">SimpleTimeZone</a> tz = <a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum599">getLastRule</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum151">SimpleTimeZone</a> tz = <a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum599">getLastRule</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum511" class="linenum-cell" data-linenum="511" href="#linenum511"></a></td>
@@ -2052,7 +2052,7 @@
 </tr>
 <tr>
 <td><a id="linenum512" class="linenum-cell" data-linenum="512" href="#linenum512"></a></td>
-<td><pre>            return <a class="variable" href="#linenum510">tz</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum860">inDaylightTime</a>(<a class="variable" href="#linenum487">date</a>);</pre></td>
+<td><pre>            return <a class="variable" href="#linenum510">tz</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum861">inDaylightTime</a>(<a class="variable" href="#linenum487">date</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum513" class="linenum-cell" data-linenum="513" href="#linenum513"></a></td>
@@ -2260,7 +2260,7 @@
 </tr>
 <tr>
 <td><a id="linenum564" class="linenum-cell" data-linenum="564" href="#linenum564"></a></td>
-<td><pre>        return ZoneInfoFile.<a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfoFile.html#linenum94">getZoneIds</a>();</pre></td>
+<td><pre>        return ZoneInfoFile.<a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfoFile.html#linenum68">getZoneIds</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum565" class="linenum-cell" data-linenum="565" href="#linenum565"></a></td>
@@ -2372,7 +2372,7 @@
 </tr>
 <tr>
 <td><a id="linenum592" class="linenum-cell" data-linenum="592" href="#linenum592"></a></td>
-<td><pre>    private transient <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum150">SimpleTimeZone</a> lastRule;</pre></td>
+<td><pre>    private transient <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum151">SimpleTimeZone</a> lastRule;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum593" class="linenum-cell" data-linenum="593" href="#linenum593"></a></td>
@@ -2400,7 +2400,7 @@
 </tr>
 <tr>
 <td><a id="linenum599" class="linenum-cell" data-linenum="599" href="#linenum599"></a></td>
-<td><pre>    private synchronized <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum150">SimpleTimeZone</a> getLastRule() {</pre></td>
+<td><pre>    private synchronized <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum151">SimpleTimeZone</a> getLastRule() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum600" class="linenum-cell" data-linenum="600" href="#linenum600"></a></td>
@@ -2456,7 +2456,7 @@
 </tr>
 <tr>
 <td><a id="linenum613" class="linenum-cell" data-linenum="613" href="#linenum613"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum150">SimpleTimeZone</a> getLastRuleInstance() {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum151">SimpleTimeZone</a> getLastRuleInstance() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum614" class="linenum-cell" data-linenum="614" href="#linenum614"></a></td>
@@ -2476,7 +2476,7 @@
 </tr>
 <tr>
 <td><a id="linenum618" class="linenum-cell" data-linenum="618" href="#linenum618"></a></td>
-<td><pre>            return new <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum150">SimpleTimeZone</a>(<a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum443">getLastRawOffset</a>(), <a class="type" href="/OdinCodeBrowserJdk8/java/util/TimeZone.html#linenum280">getID</a>(),</pre></td>
+<td><pre>            return new <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum151">SimpleTimeZone</a>(<a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum443">getLastRawOffset</a>(), <a class="type" href="/OdinCodeBrowserJdk8/java/util/TimeZone.html#linenum280">getID</a>(),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum619" class="linenum-cell" data-linenum="619" href="#linenum619"></a></td>
@@ -2528,7 +2528,7 @@
 </tr>
 <tr>
 <td><a id="linenum631" class="linenum-cell" data-linenum="631" href="#linenum631"></a></td>
-<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum150">SimpleTimeZone</a>(<a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum443">getLastRawOffset</a>(), <a class="type" href="/OdinCodeBrowserJdk8/java/util/TimeZone.html#linenum280">getID</a>(),</pre></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/java/util/SimpleTimeZone.html#linenum151">SimpleTimeZone</a>(<a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum443">getLastRawOffset</a>(), <a class="type" href="/OdinCodeBrowserJdk8/java/util/TimeZone.html#linenum280">getID</a>(),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum632" class="linenum-cell" data-linenum="632" href="#linenum632"></a></td>
@@ -2592,7 +2592,7 @@
 </tr>
 <tr>
 <td><a id="linenum647" class="linenum-cell" data-linenum="647" href="#linenum647"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum70">ZoneInfo</a> zi = (<a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum70">ZoneInfo</a>) super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/TimeZone.html#linenum738">clone</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum70">ZoneInfo</a> zi = (<a class="type" href="/OdinCodeBrowserJdk8/sun/util/calendar/ZoneInfo.html#linenum70">ZoneInfo</a>) super.<a class="type" href="/OdinCodeBrowserJdk8/java/util/TimeZone.html#linenum735">clone</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum648" class="linenum-cell" data-linenum="648" href="#linenum648"></a></td>
@@ -2924,7 +2924,7 @@
 </tr>
 <tr>
 <td><a id="linenum730" class="linenum-cell" data-linenum="730" href="#linenum730"></a></td>
-<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum206">ObjectInputStream</a> stream)</pre></td>
+<td><pre>    private void readObject(<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum217">ObjectInputStream</a> stream)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum731" class="linenum-cell" data-linenum="731" href="#linenum731"></a></td>
@@ -2932,7 +2932,7 @@
 </tr>
 <tr>
 <td><a id="linenum732" class="linenum-cell" data-linenum="732" href="#linenum732"></a></td>
-<td><pre>        <a class="variable" href="#linenum730">stream</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum491">defaultReadObject</a>();</pre></td>
+<td><pre>        <a class="variable" href="#linenum730">stream</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/io/ObjectInputStream.html#linenum623">defaultReadObject</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum733" class="linenum-cell" data-linenum="733" href="#linenum733"></a></td>

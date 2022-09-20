@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2003, 2008, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2003, 2017, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -1208,7 +1208,7 @@
 </tr>
 <tr>
 <td><a id="linenum301" class="linenum-cell" data-linenum="301" href="#linenum301"></a></td>
-<td><pre>            MemoryImpl.<a class="type" href="/OdinCodeBrowserJdk8/sun/management/MemoryImpl.html#linenum145">createNotification</a>(MEMORY_THRESHOLD_EXCEEDED,</pre></td>
+<td><pre>            MemoryImpl.<a class="type" href="/OdinCodeBrowserJdk8/sun/management/MemoryImpl.html#linenum138">createNotification</a>(MEMORY_THRESHOLD_EXCEEDED,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum302" class="linenum-cell" data-linenum="302" href="#linenum302"></a></td>
@@ -1232,166 +1232,158 @@
 </tr>
 <tr>
 <td><a id="linenum307" class="linenum-cell" data-linenum="307" href="#linenum307"></a></td>
-<td><pre>            <span class='comment'>// Should not reach here</span></pre></td>
+<td><pre>            // do nothing</pre></td>
 </tr>
 <tr>
 <td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/AssertionError.html#linenum43">AssertionError</a>(<span class='string'>&quot;Should not reach here&quot;</span>);</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>        void clearAction() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum310" class="linenum-cell" data-linenum="310" href="#linenum310"></a></td>
-<td><pre>        void clearAction() {</pre></td>
+<td><pre>            // do nothing</pre></td>
 </tr>
 <tr>
 <td><a id="linenum311" class="linenum-cell" data-linenum="311" href="#linenum311"></a></td>
-<td><pre>            // do nothing</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum312" class="linenum-cell" data-linenum="312" href="#linenum312"></a></td>
-<td><pre>        }</pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum313" class="linenum-cell" data-linenum="313" href="#linenum313"></a></td>
-<td><pre>    }</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum314" class="linenum-cell" data-linenum="314" href="#linenum314"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum315" class="linenum-cell" data-linenum="315" href="#linenum315"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
+<td><a id="linenum315" class="linenum-cell" data-linenum="315" href="#linenum315"></a></td>
 <td><pre><span class='comment'>     * CollectionSensor will be triggered and cleared by the VM<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
+<td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
 <td><pre><span class='comment'>     * when the memory usage of a memory pool after GC is crossing<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum318" class="linenum-cell" data-linenum="318" href="#linenum318"></a></td>
+<td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
 <td><pre><span class='comment'>     * the collection threshold.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum319" class="linenum-cell" data-linenum="319" href="#linenum319"></a></td>
+<td><a id="linenum318" class="linenum-cell" data-linenum="318" href="#linenum318"></a></td>
 <td><pre><span class='comment'>     * The VM will trigger this sensor in subsequent crossing<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum320" class="linenum-cell" data-linenum="320" href="#linenum320"></a></td>
+<td><a id="linenum319" class="linenum-cell" data-linenum="319" href="#linenum319"></a></td>
 <td><pre><span class='comment'>     * regardless if the memory usage has changed siince the previous GC.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum321" class="linenum-cell" data-linenum="321" href="#linenum321"></a></td>
+<td><a id="linenum320" class="linenum-cell" data-linenum="320" href="#linenum320"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum322" class="linenum-cell" data-linenum="322" href="#linenum322"></a></td>
+<td><a id="linenum321" class="linenum-cell" data-linenum="321" href="#linenum321"></a></td>
 <td><pre>    class CollectionSensor extends <a class="type" href="/OdinCodeBrowserJdk8/sun/management/Sensor.html#linenum50">Sensor</a> {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum323" class="linenum-cell" data-linenum="323" href="#linenum323"></a></td>
+<td><a id="linenum322" class="linenum-cell" data-linenum="322" href="#linenum322"></a></td>
 <td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/management/MemoryPoolImpl.html#linenum45">MemoryPoolImpl</a> pool;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum324" class="linenum-cell" data-linenum="324" href="#linenum324"></a></td>
+<td><a id="linenum323" class="linenum-cell" data-linenum="323" href="#linenum323"></a></td>
 <td><pre>        CollectionSensor(<a class="type" href="/OdinCodeBrowserJdk8/sun/management/MemoryPoolImpl.html#linenum45">MemoryPoolImpl</a> pool, <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> name) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum325" class="linenum-cell" data-linenum="325" href="#linenum325"></a></td>
+<td><a id="linenum324" class="linenum-cell" data-linenum="324" href="#linenum324"></a></td>
 <td><pre>            super(<a class="variable" href="#linenum295">name</a>);</pre></td>
 </tr>
 <tr>
+<td><a id="linenum325" class="linenum-cell" data-linenum="325" href="#linenum325"></a></td>
+<td><pre>            this.pool = <a class="variable" href="#linenum322">pool</a>;</pre></td>
+</tr>
+<tr>
 <td><a id="linenum326" class="linenum-cell" data-linenum="326" href="#linenum326"></a></td>
-<td><pre>            this.pool = <a class="variable" href="#linenum323">pool</a>;</pre></td>
+<td><pre>        }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum327" class="linenum-cell" data-linenum="327" href="#linenum327"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum328" class="linenum-cell" data-linenum="328" href="#linenum328"></a></td>
 <td><pre>        void triggerAction(<a class="type" href="/OdinCodeBrowserJdk8/java/lang/management/MemoryUsage.html#linenum106">MemoryUsage</a> usage) {</pre></td>
 </tr>
 <tr>
+<td><a id="linenum328" class="linenum-cell" data-linenum="328" href="#linenum328"></a></td>
+<td><pre>            MemoryImpl.<a class="type" href="/OdinCodeBrowserJdk8/sun/management/MemoryImpl.html#linenum138">createNotification</a>(MEMORY_COLLECTION_THRESHOLD_EXCEEDED,</pre></td>
+</tr>
+<tr>
 <td><a id="linenum329" class="linenum-cell" data-linenum="329" href="#linenum329"></a></td>
-<td><pre>            MemoryImpl.<a class="type" href="/OdinCodeBrowserJdk8/sun/management/MemoryImpl.html#linenum145">createNotification</a>(MEMORY_COLLECTION_THRESHOLD_EXCEEDED,</pre></td>
+<td><pre>                                          <a class="variable" href="#linenum323">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/management/MemoryPoolImpl.html#linenum79">getName</a>(),</pre></td>
 </tr>
 <tr>
 <td><a id="linenum330" class="linenum-cell" data-linenum="330" href="#linenum330"></a></td>
-<td><pre>                                          <a class="variable" href="#linenum324">pool</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/management/MemoryPoolImpl.html#linenum79">getName</a>(),</pre></td>
+<td><pre>                                          <a class="variable" href="#linenum327">usage</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum331" class="linenum-cell" data-linenum="331" href="#linenum331"></a></td>
-<td><pre>                                          <a class="variable" href="#linenum328">usage</a>,</pre></td>
-</tr>
-<tr>
-<td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
 <td><pre>                                          <a class="variable" href="#linenum61">gcSensor</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/management/Sensor.html#linenum82">getCount</a>());</pre></td>
 </tr>
 <tr>
-<td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
+<td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
+<td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
 <td><pre>        void triggerAction() {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum335" class="linenum-cell" data-linenum="335" href="#linenum335"></a></td>
-<td><pre>            <span class='comment'>// Should not reach here</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum336" class="linenum-cell" data-linenum="336" href="#linenum336"></a></td>
-<td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/java/lang/AssertionError.html#linenum43">AssertionError</a>(<span class='string'>&quot;Should not reach here&quot;</span>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum337" class="linenum-cell" data-linenum="337" href="#linenum337"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum338" class="linenum-cell" data-linenum="338" href="#linenum338"></a></td>
-<td><pre>        void clearAction() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum339" class="linenum-cell" data-linenum="339" href="#linenum339"></a></td>
+<td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
 <td><pre>            // do nothing</pre></td>
 </tr>
 <tr>
-<td><a id="linenum340" class="linenum-cell" data-linenum="340" href="#linenum340"></a></td>
+<td><a id="linenum335" class="linenum-cell" data-linenum="335" href="#linenum335"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum341" class="linenum-cell" data-linenum="341" href="#linenum341"></a></td>
+<td><a id="linenum336" class="linenum-cell" data-linenum="336" href="#linenum336"></a></td>
+<td><pre>        void clearAction() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum337" class="linenum-cell" data-linenum="337" href="#linenum337"></a></td>
+<td><pre>            // do nothing</pre></td>
+</tr>
+<tr>
+<td><a id="linenum338" class="linenum-cell" data-linenum="338" href="#linenum338"></a></td>
+<td><pre>        }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum339" class="linenum-cell" data-linenum="339" href="#linenum339"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum342" class="linenum-cell" data-linenum="342" href="#linenum342"></a></td>
+<td><a id="linenum340" class="linenum-cell" data-linenum="340" href="#linenum340"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum343" class="linenum-cell" data-linenum="343" href="#linenum343"></a></td>
+<td><a id="linenum341" class="linenum-cell" data-linenum="341" href="#linenum341"></a></td>
 <td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/management/ObjectName.html#linenum222">ObjectName</a> getObjectName() {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum344" class="linenum-cell" data-linenum="344" href="#linenum344"></a></td>
-<td><pre>        return Util.<a class="type" href="/OdinCodeBrowserJdk8/sun/management/Util.html#linenum50">newObjectName</a>(ManagementFactory.MEMORY_POOL_MXBEAN_DOMAIN_TYPE, <a class="type" href="/OdinCodeBrowserJdk8/sun/management/MemoryPoolImpl.html#linenum79">getName</a>());</pre></td>
+<td><a id="linenum342" class="linenum-cell" data-linenum="342" href="#linenum342"></a></td>
+<td><pre>        return Util.<a class="type" href="/OdinCodeBrowserJdk8/sun/management/Util.html#linenum46">newObjectName</a>(ManagementFactory.MEMORY_POOL_MXBEAN_DOMAIN_TYPE, <a class="type" href="/OdinCodeBrowserJdk8/sun/management/MemoryPoolImpl.html#linenum79">getName</a>());</pre></td>
 </tr>
 <tr>
-<td><a id="linenum345" class="linenum-cell" data-linenum="345" href="#linenum345"></a></td>
+<td><a id="linenum343" class="linenum-cell" data-linenum="343" href="#linenum343"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum346" class="linenum-cell" data-linenum="346" href="#linenum346"></a></td>
+<td><a id="linenum344" class="linenum-cell" data-linenum="344" href="#linenum344"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum347" class="linenum-cell" data-linenum="347" href="#linenum347"></a></td>
+<td><a id="linenum345" class="linenum-cell" data-linenum="345" href="#linenum345"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

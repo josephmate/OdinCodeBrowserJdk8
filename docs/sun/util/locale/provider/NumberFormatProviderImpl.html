@@ -736,11 +736,11 @@
 </tr>
 <tr>
 <td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
-<td><pre>            <a class="variable" href="#linenum180">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3518">setMaximumFractionDigits</a>(0);</pre></td>
+<td><pre>            <a class="variable" href="#linenum180">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3551">setMaximumFractionDigits</a>(0);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
-<td><pre>            <a class="variable" href="#linenum180">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum2640">setDecimalSeparatorAlwaysShown</a>(false);</pre></td>
+<td><pre>            <a class="variable" href="#linenum180">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum2673">setDecimalSeparatorAlwaysShown</a>(false);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
@@ -812,7 +812,7 @@
 </tr>
 <tr>
 <td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
-<td><pre>                <a class="variable" href="#linenum199">currency</a> = Currency.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Currency.html#linenum311">getInstance</a>(<a class="variable" href="#linenum198">symbols</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormatSymbols.html#linenum409">getInternationalCurrencySymbol</a>());</pre></td>
+<td><pre>                <a class="variable" href="#linenum199">currency</a> = Currency.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Currency.html#linenum309">getInstance</a>(<a class="variable" href="#linenum198">symbols</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormatSymbols.html#linenum409">getInternationalCurrencySymbol</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
@@ -832,7 +832,7 @@
 </tr>
 <tr>
 <td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
-<td><pre>            int digits = <a class="variable" href="#linenum199">currency</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Currency.html#linenum525">getDefaultFractionDigits</a>();</pre></td>
+<td><pre>            int digits = <a class="variable" href="#linenum199">currency</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Currency.html#linenum527">getDefaultFractionDigits</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
@@ -840,7 +840,7 @@
 </tr>
 <tr>
 <td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
-<td><pre>                int oldMinDigits = <a class="variable" href="#linenum198">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3599">getMinimumFractionDigits</a>();</pre></td>
+<td><pre>                int oldMinDigits = <a class="variable" href="#linenum198">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3632">getMinimumFractionDigits</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
@@ -852,15 +852,15 @@
 </tr>
 <tr>
 <td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
-<td><pre>                if (<a class="variable" href="#linenum209">oldMinDigits</a> == <a class="variable" href="#linenum198">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3586">getMaximumFractionDigits</a>()) {</pre></td>
+<td><pre>                if (<a class="variable" href="#linenum209">oldMinDigits</a> == <a class="variable" href="#linenum198">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3619">getMaximumFractionDigits</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
-<td><pre>                    <a class="variable" href="#linenum198">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3539">setMinimumFractionDigits</a>(<a class="variable" href="#linenum207">digits</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum198">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3572">setMinimumFractionDigits</a>(<a class="variable" href="#linenum207">digits</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum214" class="linenum-cell" data-linenum="214" href="#linenum214"></a></td>
-<td><pre>                    <a class="variable" href="#linenum198">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3518">setMaximumFractionDigits</a>(<a class="variable" href="#linenum207">digits</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum198">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3551">setMaximumFractionDigits</a>(<a class="variable" href="#linenum207">digits</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum215" class="linenum-cell" data-linenum="215" href="#linenum215"></a></td>
@@ -868,11 +868,11 @@
 </tr>
 <tr>
 <td><a id="linenum216" class="linenum-cell" data-linenum="216" href="#linenum216"></a></td>
-<td><pre>                    <a class="variable" href="#linenum198">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3539">setMinimumFractionDigits</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1393">min</a>(<a class="variable" href="#linenum207">digits</a>, <a class="variable" href="#linenum209">oldMinDigits</a>));</pre></td>
+<td><pre>                    <a class="variable" href="#linenum198">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3572">setMinimumFractionDigits</a>(Math.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/Math.html#linenum1335">min</a>(<a class="variable" href="#linenum207">digits</a>, <a class="variable" href="#linenum209">oldMinDigits</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum217" class="linenum-cell" data-linenum="217" href="#linenum217"></a></td>
-<td><pre>                    <a class="variable" href="#linenum198">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3518">setMaximumFractionDigits</a>(<a class="variable" href="#linenum207">digits</a>);</pre></td>
+<td><pre>                    <a class="variable" href="#linenum198">format</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/text/DecimalFormat.html#linenum3551">setMaximumFractionDigits</a>(<a class="variable" href="#linenum207">digits</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum218" class="linenum-cell" data-linenum="218" href="#linenum218"></a></td>

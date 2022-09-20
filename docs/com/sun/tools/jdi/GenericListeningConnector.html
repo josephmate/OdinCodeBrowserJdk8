@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2003, 2004, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2003, 2018, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -340,7 +340,7 @@
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre>        <a class="variable" href="#linenum48">listenMap</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum137">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,? extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/Connector.html#linenum48">Connector</a>.Argument&gt;,<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/spi/TransportService.html#linenum80">TransportService</a>.ListenKey&gt;(10);</pre></td>
+<td><pre>        <a class="variable" href="#linenum48">listenMap</a> = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/HashMap.html#linenum138">HashMap</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>,? extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/Connector.html#linenum48">Connector</a>.Argument&gt;,<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/spi/TransportService.html#linenum80">TransportService</a>.ListenKey&gt;(10);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
@@ -444,7 +444,7 @@
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
-<td><pre>               new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>&gt;(<a class="variable" href="#linenum104">args</a>.keySet()));</pre></td>
+<td><pre>               new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>&gt;(<a class="variable" href="#linenum104">args</a>.keySet()));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
@@ -452,11 +452,11 @@
 </tr>
 <tr>
 <td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
-<td><pre></pre></td>
+<td><pre>        <a class="variable" href="#linenum107">listener</a> = <a class="variable" href="#linenum49">transportService</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/spi/TransportService.html#linenum281">startListening</a>(<a class="variable" href="#linenum104">address</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
-<td><pre>        <a class="variable" href="#linenum107">listener</a> = <a class="variable" href="#linenum49">transportService</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/spi/TransportService.html#linenum281">startListening</a>(<a class="variable" href="#linenum104">address</a>);</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/tools/jdi/GenericListeningConnector.html#linenum183">updateArgumentMapIfRequired</a>(<a class="variable" href="#linenum104">args</a>, <a class="variable" href="#linenum107">listener</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
@@ -532,7 +532,7 @@
 </tr>
 <tr>
 <td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
-<td><pre>               new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum106">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>&gt;(<a class="variable" href="#linenum126">args</a>.keySet()));</pre></td>
+<td><pre>               new <a class="type" href="/OdinCodeBrowserJdk8/java/util/ArrayList.html#linenum107">ArrayList</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>&gt;(<a class="variable" href="#linenum126">args</a>.keySet()));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
@@ -580,7 +580,7 @@
 </tr>
 <tr>
 <td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum142">ts</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum610">length</a>() &gt; 0) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum142">ts</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum622">length</a>() &gt; 0) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
@@ -736,6 +736,22 @@
 </tr>
 <tr>
 <td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
+<td><pre>    protected void updateArgumentMapIfRequired(</pre></td>
+</tr>
+<tr>
+<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Map.html#linenum129">Map</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>, ? extends <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/Connector.html#linenum48">Connector</a>.Argument&gt; args, <a class="type" href="/OdinCodeBrowserJdk8/com/sun/jdi/connect/spi/TransportService.html#linenum80">TransportService</a>.ListenKey listener) {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

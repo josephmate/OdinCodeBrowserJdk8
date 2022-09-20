@@ -200,7 +200,7 @@
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> domain;    <span class='comment'>// might be updated by Type 2 msg</span></pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> domain;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum50" class="linenum-cell" data-linenum="50" href="#linenum50"></a></td>
@@ -344,7 +344,7 @@
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre>        this.domain = <a class="variable" href="#linenum49">domain</a>;</pre></td>
+<td><pre>        this.domain = <a class="variable" href="#linenum49">domain</a> == null ? <span class='string'>&quot;&quot;</span> : <a class="variable" href="#linenum49">domain</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
@@ -396,415 +396,415 @@
 </tr>
 <tr>
 <td><a id="linenum98" class="linenum-cell" data-linenum="98" href="#linenum98"></a></td>
-<td><pre>        int flags = 0x8203;</pre></td>
+<td><pre>        // Negotiate always sign, Negotiate NTLM,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum99" class="linenum-cell" data-linenum="99" href="#linenum99"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum76">hostname</a> != null) {</pre></td>
+<td><pre>        <span class='comment'>// Request Target, Negotiate OEM, Negotiate unicode</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum100" class="linenum-cell" data-linenum="100" href="#linenum100"></a></td>
-<td><pre>            <a class="variable" href="#linenum98">flags</a> |= 0x2000;</pre></td>
+<td><pre>        int flags = 0x8207;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum101" class="linenum-cell" data-linenum="101" href="#linenum101"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum77">domain</a> != null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre>            <a class="variable" href="#linenum98">flags</a> |= 0x1000;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
 <td><pre>        if (v != Version.NTLM) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre>            <a class="variable" href="#linenum98">flags</a> |= 0x80000;</pre></td>
+<td><a id="linenum102" class="linenum-cell" data-linenum="102" href="#linenum102"></a></td>
+<td><pre>            <a class="variable" href="#linenum100">flags</a> |= 0x80000;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
+<td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
-<td><pre>        <a class="variable" href="#linenum97">p</a>.writeInt(12, <a class="variable" href="#linenum98">flags</a>);</pre></td>
+<td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
+<td><pre>        <a class="variable" href="#linenum97">p</a>.writeInt(12, <a class="variable" href="#linenum100">flags</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>        <a class="variable" href="#linenum97">p</a>.writeSecurityBuffer(24, <a class="variable" href="#linenum76">hostname</a>, false);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
-<td><pre>        <a class="variable" href="#linenum97">p</a>.writeSecurityBuffer(16, <a class="variable" href="#linenum77">domain</a>, false);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
+<td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
 <td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum116">debug</a>(<span class='string'>&quot;NTLM Client: Type 1 created\n&quot;</span>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
+<td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
 <td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum116">debug</a>(<a class="variable" href="#linenum97">p</a>.getBytes());</pre></td>
 </tr>
 <tr>
-<td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
+<td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
 <td><pre>        return <a class="variable" href="#linenum97">p</a>.getBytes();</pre></td>
 </tr>
 <tr>
-<td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
+<td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
+<td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
+<td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
+<td><a id="linenum111" class="linenum-cell" data-linenum="111" href="#linenum111"></a></td>
 <td><pre><span class='comment'>     * Generates the Type 3 message<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
+<td><a id="linenum112" class="linenum-cell" data-linenum="112" href="#linenum112"></a></td>
 <td><pre><span class='comment'>     * @param type2 the responding Type 2 message from server, must not be null<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
+<td><a id="linenum113" class="linenum-cell" data-linenum="113" href="#linenum113"></a></td>
 <td><pre><span class='comment'>     * @param nonce random 8-byte array to be used in message generation,<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
+<td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
 <td><pre><span class='comment'>     * must not be null except for original NTLM v1<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
+<td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
 <td><pre><span class='comment'>     * @return the message generated<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
+<td><a id="linenum116" class="linenum-cell" data-linenum="116" href="#linenum116"></a></td>
 <td><pre><span class='comment'>     * @throws NTLMException if the incoming message is invalid, or<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
+<td><a id="linenum117" class="linenum-cell" data-linenum="117" href="#linenum117"></a></td>
 <td><pre><span class='comment'>     * {@code nonce} is null for NTLM v1.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
+<td><a id="linenum118" class="linenum-cell" data-linenum="118" href="#linenum118"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
+<td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
 <td><pre>    public byte[] type3(byte[] type2, byte[] nonce) throws <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLMException.html#linenum33">NTLMException</a> {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum125">type2</a> == null || (v != Version.NTLM &amp;&amp; <a class="variable" href="#linenum125">nonce</a> == null)) {</pre></td>
+<td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
+<td><pre>        if (<a class="variable" href="#linenum119">type2</a> == null || (v != Version.NTLM &amp;&amp; <a class="variable" href="#linenum119">nonce</a> == null)) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
+<td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
 <td><pre>            throw new <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLMException.html#linenum33">NTLMException</a>(NTLMException.PROTOCOL,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
+<td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
 <td><pre>                    <span class='string'>&quot;type2 and nonce cannot be null&quot;</span>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
+<td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
+<td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
 <td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum116">debug</a>(<span class='string'>&quot;NTLM Client: Type 2 received\n&quot;</span>);</pre></td>
 </tr>
 <tr>
+<td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum116">debug</a>(<a class="variable" href="#linenum119">type2</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
+<td><pre>        Reader r = new Reader(<a class="variable" href="#linenum119">type2</a>);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
+<td><pre>        byte[] challenge = <a class="variable" href="#linenum126">r</a>.readBytes(24, 8);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
+<td><pre>        int inputFlags = <a class="variable" href="#linenum126">r</a>.readInt(20);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum129" class="linenum-cell" data-linenum="129" href="#linenum129"></a></td>
+<td><pre>        boolean unicode = (<a class="variable" href="#linenum128">inputFlags</a> &amp; 1) == 1;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum130" class="linenum-cell" data-linenum="130" href="#linenum130"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
 <td><a id="linenum131" class="linenum-cell" data-linenum="131" href="#linenum131"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum116">debug</a>(<a class="variable" href="#linenum125">type2</a>);</pre></td>
+<td><pre>        // IE uses domainFromServer to generate an alist if server has not</pre></td>
 </tr>
 <tr>
 <td><a id="linenum132" class="linenum-cell" data-linenum="132" href="#linenum132"></a></td>
-<td><pre>        Reader r = new Reader(<a class="variable" href="#linenum125">type2</a>);</pre></td>
+<td><pre>        // provided one. Firefox/WebKit do not. Neither do we.</pre></td>
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>        byte[] challenge = <a class="variable" href="#linenum132">r</a>.readBytes(24, 8);</pre></td>
+<td><pre>        //String domainFromServer = r.readSecurityBuffer(12, unicode);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
-<td><pre>        int inputFlags = <a class="variable" href="#linenum132">r</a>.readInt(20);</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
-<td><pre>        boolean unicode = (<a class="variable" href="#linenum134">inputFlags</a> &amp; 1) == 1;</pre></td>
+<td><pre>        int flags = 0x88200 | (<a class="variable" href="#linenum128">inputFlags</a> &amp; 3);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> domainFromServer = <a class="variable" href="#linenum132">r</a>.readSecurityBuffer(12, <a class="variable" href="#linenum135">unicode</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum136">domainFromServer</a> != null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre>            <a class="variable" href="#linenum77">domain</a> = <a class="variable" href="#linenum136">domainFromServer</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum77">domain</a> == null) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
-<td><pre>            <a class="variable" href="#linenum77">domain</a> = <span class='string'>&quot;&quot;</span>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre>        int flags = 0x88200 | (<a class="variable" href="#linenum134">inputFlags</a> &amp; 3);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
 <td><pre>        Writer p = new Writer(3, 64);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
+<td><a id="linenum137" class="linenum-cell" data-linenum="137" href="#linenum137"></a></td>
 <td><pre>        byte[] lm = null, ntlm = null;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
+<td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
-<td><pre>        <a class="variable" href="#linenum145">p</a>.writeSecurityBuffer(28, <a class="variable" href="#linenum77">domain</a>, <a class="variable" href="#linenum135">unicode</a>);</pre></td>
+<td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
+<td><pre>        <a class="variable" href="#linenum136">p</a>.writeSecurityBuffer(28, <a class="variable" href="#linenum77">domain</a>, <a class="variable" href="#linenum129">unicode</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
-<td><pre>        <a class="variable" href="#linenum145">p</a>.writeSecurityBuffer(36, <a class="variable" href="#linenum76">username</a>, <a class="variable" href="#linenum135">unicode</a>);</pre></td>
+<td><a id="linenum140" class="linenum-cell" data-linenum="140" href="#linenum140"></a></td>
+<td><pre>        <a class="variable" href="#linenum136">p</a>.writeSecurityBuffer(36, <a class="variable" href="#linenum76">username</a>, <a class="variable" href="#linenum129">unicode</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre>        <a class="variable" href="#linenum145">p</a>.writeSecurityBuffer(44, <a class="variable" href="#linenum76">hostname</a>, <a class="variable" href="#linenum135">unicode</a>);</pre></td>
+<td><a id="linenum141" class="linenum-cell" data-linenum="141" href="#linenum141"></a></td>
+<td><pre>        <a class="variable" href="#linenum136">p</a>.writeSecurityBuffer(44, <a class="variable" href="#linenum76">hostname</a>, <a class="variable" href="#linenum129">unicode</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
+<td><a id="linenum142" class="linenum-cell" data-linenum="142" href="#linenum142"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
+<td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
 <td><pre>        if (v == Version.NTLM) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
+<td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
 <td><pre>            byte[] lmhash = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum283">calcLMHash</a>(<a class="variable" href="#linenum50">pw1</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
+<td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
 <td><pre>            byte[] nthash = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum321">calcNTHash</a>(<a class="variable" href="#linenum50">pw2</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
-<td><pre>            if (writeLM) <a class="variable" href="#linenum146">lm</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum332">calcResponse</a> (<a class="variable" href="#linenum153">lmhash</a>, <a class="variable" href="#linenum133">challenge</a>);</pre></td>
+<td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
+<td><pre>            if (writeLM) <a class="variable" href="#linenum137">lm</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum332">calcResponse</a> (<a class="variable" href="#linenum144">lmhash</a>, <a class="variable" href="#linenum127">challenge</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
-<td><pre>            if (writeNTLM) <a class="variable" href="#linenum146">ntlm</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum332">calcResponse</a> (<a class="variable" href="#linenum154">nthash</a>, <a class="variable" href="#linenum133">challenge</a>);</pre></td>
+<td><a id="linenum147" class="linenum-cell" data-linenum="147" href="#linenum147"></a></td>
+<td><pre>            if (writeNTLM) <a class="variable" href="#linenum137">ntlm</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum332">calcResponse</a> (<a class="variable" href="#linenum145">nthash</a>, <a class="variable" href="#linenum127">challenge</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
+<td><a id="linenum148" class="linenum-cell" data-linenum="148" href="#linenum148"></a></td>
 <td><pre>        } else if (v == Version.NTLM2) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
+<td><a id="linenum149" class="linenum-cell" data-linenum="149" href="#linenum149"></a></td>
 <td><pre>            byte[] nthash = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum321">calcNTHash</a>(<a class="variable" href="#linenum50">pw2</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
-<td><pre>            <a class="variable" href="#linenum146">lm</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum399">ntlm2LM</a>(<a class="variable" href="#linenum125">nonce</a>);</pre></td>
+<td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
+<td><pre>            <a class="variable" href="#linenum137">lm</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum399">ntlm2LM</a>(<a class="variable" href="#linenum119">nonce</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
-<td><pre>            <a class="variable" href="#linenum146">ntlm</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum403">ntlm2NTLM</a>(<a class="variable" href="#linenum158">nthash</a>, <a class="variable" href="#linenum125">nonce</a>, <a class="variable" href="#linenum133">challenge</a>);</pre></td>
+<td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
+<td><pre>            <a class="variable" href="#linenum137">ntlm</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum403">ntlm2NTLM</a>(<a class="variable" href="#linenum149">nthash</a>, <a class="variable" href="#linenum119">nonce</a>, <a class="variable" href="#linenum127">challenge</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
+<td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
 <td><pre>        } else {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
+<td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
 <td><pre>            byte[] nthash = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum321">calcNTHash</a>(<a class="variable" href="#linenum50">pw2</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
-<td><pre>            if (writeLM) <a class="variable" href="#linenum146">lm</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum380">calcV2</a>(<a class="variable" href="#linenum162">nthash</a>,</pre></td>
+<td><a id="linenum154" class="linenum-cell" data-linenum="154" href="#linenum154"></a></td>
+<td><pre>            if (writeLM) <a class="variable" href="#linenum137">lm</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum380">calcV2</a>(<a class="variable" href="#linenum153">nthash</a>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre>                    <a class="variable" href="#linenum76">username</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2817">toUpperCase</a>(Locale.US)+<a class="variable" href="#linenum77">domain</a>, <a class="variable" href="#linenum125">nonce</a>, <a class="variable" href="#linenum133">challenge</a>);</pre></td>
+<td><a id="linenum155" class="linenum-cell" data-linenum="155" href="#linenum155"></a></td>
+<td><pre>                    <a class="variable" href="#linenum76">username</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2721">toUpperCase</a>(Locale.US)+<a class="variable" href="#linenum77">domain</a>, <a class="variable" href="#linenum119">nonce</a>, <a class="variable" href="#linenum127">challenge</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
+<td><a id="linenum156" class="linenum-cell" data-linenum="156" href="#linenum156"></a></td>
 <td><pre>            if (writeNTLM) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
-<td><pre>                byte[] alist = <a class="variable" href="#linenum125">type2</a>.length &gt; 48 ?</pre></td>
+<td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
+<td><pre>                // Some client create a alist even if server does not send</pre></td>
 </tr>
 <tr>
-<td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
-<td><pre>                    <a class="variable" href="#linenum132">r</a>.readSecurityBuffer(40) : new byte[0];</pre></td>
+<td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
+<td><pre>                <span class='comment'>// one: (i16)2 (i16)len target_in_unicode (i16)0 (i16) 0</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
-<td><pre>                byte[] blob = new byte[32+<a class="variable" href="#linenum166">alist</a>.length];</pre></td>
+<td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
+<td><pre>                byte[] alist = ((<a class="variable" href="#linenum128">inputFlags</a> &amp; 0x800000) != 0) ?</pre></td>
 </tr>
 <tr>
-<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(new byte[]{1,1,0,0,0,0,0,0}, 0, <a class="variable" href="#linenum168">blob</a>, 0, 8);</pre></td>
+<td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
+<td><pre>                    <a class="variable" href="#linenum126">r</a>.readSecurityBuffer(40) : new byte[0];</pre></td>
 </tr>
 <tr>
-<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
+<td><a id="linenum161" class="linenum-cell" data-linenum="161" href="#linenum161"></a></td>
+<td><pre>                byte[] blob = new byte[32+<a class="variable" href="#linenum159">alist</a>.length];</pre></td>
+</tr>
+<tr>
+<td><a id="linenum162" class="linenum-cell" data-linenum="162" href="#linenum162"></a></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(new byte[]{1,1,0,0,0,0,0,0}, 0, <a class="variable" href="#linenum161">blob</a>, 0, 8);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum163" class="linenum-cell" data-linenum="163" href="#linenum163"></a></td>
 <td><pre>                <span class='comment'>// TS</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
-<td><pre>                byte[] time = BigInteger.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum1120">valueOf</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Date.html#linenum131">Date</a>().getTime())</pre></td>
+<td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
+<td><pre>                byte[] time = BigInteger.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum1098">valueOf</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Date.html#linenum131">Date</a>().getTime())</pre></td>
 </tr>
 <tr>
-<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
+<td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
 <td><pre>                        .add(new <a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum123">BigInteger</a>(<span class='string'>&quot;11644473600000&quot;</span>))</pre></td>
 </tr>
 <tr>
-<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
-<td><pre>                        .multiply(BigInteger.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum1120">valueOf</a>(10000))</pre></td>
+<td><a id="linenum166" class="linenum-cell" data-linenum="166" href="#linenum166"></a></td>
+<td><pre>                        .multiply(BigInteger.<a class="type" href="/OdinCodeBrowserJdk8/java/math/BigInteger.html#linenum1098">valueOf</a>(10000))</pre></td>
 </tr>
 <tr>
-<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
+<td><a id="linenum167" class="linenum-cell" data-linenum="167" href="#linenum167"></a></td>
 <td><pre>                        .toByteArray();</pre></td>
 </tr>
 <tr>
-<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
-<td><pre>                for (int i=0; <a class="variable" href="#linenum175">i</a>&lt;<a class="variable" href="#linenum171">time</a>.length; <a class="variable" href="#linenum175">i</a>++) {</pre></td>
+<td><a id="linenum168" class="linenum-cell" data-linenum="168" href="#linenum168"></a></td>
+<td><pre>                for (int i=0; <a class="variable" href="#linenum168">i</a>&lt;<a class="variable" href="#linenum164">time</a>.length; <a class="variable" href="#linenum168">i</a>++) {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
-<td><pre>                    <a class="variable" href="#linenum168">blob</a>[8+<a class="variable" href="#linenum171">time</a>.length-<a class="variable" href="#linenum175">i</a>-1] = <a class="variable" href="#linenum171">time</a>[<a class="variable" href="#linenum175">i</a>];</pre></td>
+<td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
+<td><pre>                    <a class="variable" href="#linenum161">blob</a>[8+<a class="variable" href="#linenum164">time</a>.length-<a class="variable" href="#linenum168">i</a>-1] = <a class="variable" href="#linenum164">time</a>[<a class="variable" href="#linenum168">i</a>];</pre></td>
 </tr>
 <tr>
-<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
+<td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
 <td><pre>                }</pre></td>
 </tr>
 <tr>
+<td><a id="linenum171" class="linenum-cell" data-linenum="171" href="#linenum171"></a></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum119">nonce</a>, 0, <a class="variable" href="#linenum161">blob</a>, 16, 8);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum172" class="linenum-cell" data-linenum="172" href="#linenum172"></a></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(new byte[]{0,0,0,0}, 0, <a class="variable" href="#linenum161">blob</a>, 24, 4);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(<a class="variable" href="#linenum159">alist</a>, 0, <a class="variable" href="#linenum161">blob</a>, 28, <a class="variable" href="#linenum159">alist</a>.length);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
+<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum495">arraycopy</a>(new byte[]{0,0,0,0}, 0,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum175" class="linenum-cell" data-linenum="175" href="#linenum175"></a></td>
+<td><pre>                        <a class="variable" href="#linenum161">blob</a>, 28+<a class="variable" href="#linenum159">alist</a>.length, 4);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum176" class="linenum-cell" data-linenum="176" href="#linenum176"></a></td>
+<td><pre>                <a class="variable" href="#linenum137">ntlm</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum380">calcV2</a>(<a class="variable" href="#linenum153">nthash</a>, <a class="variable" href="#linenum76">username</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2721">toUpperCase</a>(Locale.US)+<a class="variable" href="#linenum77">domain</a>,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum177" class="linenum-cell" data-linenum="177" href="#linenum177"></a></td>
+<td><pre>                        <a class="variable" href="#linenum161">blob</a>, <a class="variable" href="#linenum127">challenge</a>);</pre></td>
+</tr>
+<tr>
 <td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum125">nonce</a>, 0, <a class="variable" href="#linenum168">blob</a>, 16, 8);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(new byte[]{0,0,0,0}, 0, <a class="variable" href="#linenum168">blob</a>, 24, 4);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(<a class="variable" href="#linenum166">alist</a>, 0, <a class="variable" href="#linenum168">blob</a>, 28, <a class="variable" href="#linenum166">alist</a>.length);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
-<td><pre>                System.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/System.html#linenum493">arraycopy</a>(new byte[]{0,0,0,0}, 0,</pre></td>
-</tr>
-<tr>
-<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
-<td><pre>                        <a class="variable" href="#linenum168">blob</a>, 28+<a class="variable" href="#linenum166">alist</a>.length, 4);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
-<td><pre>                <a class="variable" href="#linenum146">ntlm</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum380">calcV2</a>(<a class="variable" href="#linenum162">nthash</a>, <a class="variable" href="#linenum76">username</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2817">toUpperCase</a>(Locale.US)+<a class="variable" href="#linenum77">domain</a>,</pre></td>
-</tr>
-<tr>
-<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
-<td><pre>                        <a class="variable" href="#linenum168">blob</a>, <a class="variable" href="#linenum133">challenge</a>);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
 <td><pre>            }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
+<td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
-<td><pre>        <a class="variable" href="#linenum145">p</a>.writeSecurityBuffer(12, <a class="variable" href="#linenum146">lm</a>);</pre></td>
+<td><a id="linenum180" class="linenum-cell" data-linenum="180" href="#linenum180"></a></td>
+<td><pre>        <a class="variable" href="#linenum136">p</a>.writeSecurityBuffer(12, <a class="variable" href="#linenum137">lm</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
-<td><pre>        <a class="variable" href="#linenum145">p</a>.writeSecurityBuffer(20, <a class="variable" href="#linenum146">ntlm</a>);</pre></td>
+<td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
+<td><pre>        <a class="variable" href="#linenum136">p</a>.writeSecurityBuffer(20, <a class="variable" href="#linenum137">ntlm</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
-<td><pre>        <a class="variable" href="#linenum145">p</a>.writeSecurityBuffer(52, new byte[0]);</pre></td>
+<td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>
+<td><pre>        <a class="variable" href="#linenum136">p</a>.writeSecurityBuffer(52, new byte[0]);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
+<td><a id="linenum183" class="linenum-cell" data-linenum="183" href="#linenum183"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
-<td><pre>        <a class="variable" href="#linenum145">p</a>.writeInt(60, <a class="variable" href="#linenum144">flags</a>);</pre></td>
+<td><a id="linenum184" class="linenum-cell" data-linenum="184" href="#linenum184"></a></td>
+<td><pre>        <a class="variable" href="#linenum136">p</a>.writeInt(60, <a class="variable" href="#linenum135">flags</a>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
+<td><a id="linenum185" class="linenum-cell" data-linenum="185" href="#linenum185"></a></td>
 <td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum116">debug</a>(<span class='string'>&quot;NTLM Client: Type 3 created\n&quot;</span>);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum116">debug</a>(<a class="variable" href="#linenum145">p</a>.getBytes());</pre></td>
+<td><a id="linenum186" class="linenum-cell" data-linenum="186" href="#linenum186"></a></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/com/sun/security/ntlm/NTLM.html#linenum116">debug</a>(<a class="variable" href="#linenum136">p</a>.getBytes());</pre></td>
 </tr>
 <tr>
-<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
-<td><pre>        return <a class="variable" href="#linenum145">p</a>.getBytes();</pre></td>
+<td><a id="linenum187" class="linenum-cell" data-linenum="187" href="#linenum187"></a></td>
+<td><pre>        return <a class="variable" href="#linenum136">p</a>.getBytes();</pre></td>
 </tr>
 <tr>
-<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
+<td><a id="linenum188" class="linenum-cell" data-linenum="188" href="#linenum188"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
+<td><a id="linenum189" class="linenum-cell" data-linenum="189" href="#linenum189"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
+<td><a id="linenum190" class="linenum-cell" data-linenum="190" href="#linenum190"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
+<td><a id="linenum191" class="linenum-cell" data-linenum="191" href="#linenum191"></a></td>
 <td><pre><span class='comment'>     * Returns the domain value provided by server after the authentication<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
+<td><a id="linenum192" class="linenum-cell" data-linenum="192" href="#linenum192"></a></td>
 <td><pre><span class='comment'>     * is complete, or the domain value provided by the client before it.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
+<td><a id="linenum193" class="linenum-cell" data-linenum="193" href="#linenum193"></a></td>
 <td><pre><span class='comment'>     * @return the domain<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum194" class="linenum-cell" data-linenum="194" href="#linenum194"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum195" class="linenum-cell" data-linenum="195" href="#linenum195"></a></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getDomain() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum196" class="linenum-cell" data-linenum="196" href="#linenum196"></a></td>
+<td><pre>        return <a class="variable" href="#linenum77">domain</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum197" class="linenum-cell" data-linenum="197" href="#linenum197"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum198" class="linenum-cell" data-linenum="198" href="#linenum198"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum199" class="linenum-cell" data-linenum="199" href="#linenum199"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum200" class="linenum-cell" data-linenum="200" href="#linenum200"></a></td>
+<td><pre><span class='comment'>     * Disposes any password-derived information.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum201" class="linenum-cell" data-linenum="201" href="#linenum201"></a></td>
@@ -812,50 +812,22 @@
 </tr>
 <tr>
 <td><a id="linenum202" class="linenum-cell" data-linenum="202" href="#linenum202"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getDomain() {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
-<td><pre>        return <a class="variable" href="#linenum77">domain</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
-</tr>
-<tr>
-<td><a id="linenum207" class="linenum-cell" data-linenum="207" href="#linenum207"></a></td>
-<td><pre><span class='comment'>     * Disposes any password-derived information.<span class='comment'></pre></td>
-</tr>
-<tr>
-<td><a id="linenum208" class="linenum-cell" data-linenum="208" href="#linenum208"></a></td>
-<td><pre>     */</span></pre></td>
-</tr>
-<tr>
-<td><a id="linenum209" class="linenum-cell" data-linenum="209" href="#linenum209"></a></td>
 <td><pre>    public void dispose() {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum210" class="linenum-cell" data-linenum="210" href="#linenum210"></a></td>
-<td><pre>        Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3146">fill</a>(<a class="variable" href="#linenum50">pw1</a>, (byte)0);</pre></td>
+<td><a id="linenum203" class="linenum-cell" data-linenum="203" href="#linenum203"></a></td>
+<td><pre>        Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2845">fill</a>(<a class="variable" href="#linenum50">pw1</a>, (byte)0);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum211" class="linenum-cell" data-linenum="211" href="#linenum211"></a></td>
-<td><pre>        Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum3146">fill</a>(<a class="variable" href="#linenum50">pw2</a>, (byte)0);</pre></td>
+<td><a id="linenum204" class="linenum-cell" data-linenum="204" href="#linenum204"></a></td>
+<td><pre>        Arrays.<a class="type" href="/OdinCodeBrowserJdk8/java/util/Arrays.html#linenum2845">fill</a>(<a class="variable" href="#linenum50">pw2</a>, (byte)0);</pre></td>
 </tr>
 <tr>
-<td><a id="linenum212" class="linenum-cell" data-linenum="212" href="#linenum212"></a></td>
+<td><a id="linenum205" class="linenum-cell" data-linenum="205" href="#linenum205"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum213" class="linenum-cell" data-linenum="213" href="#linenum213"></a></td>
+<td><a id="linenum206" class="linenum-cell" data-linenum="206" href="#linenum206"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

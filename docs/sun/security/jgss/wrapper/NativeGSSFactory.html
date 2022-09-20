@@ -196,7 +196,7 @@
 </tr>
 <tr>
 <td><a id="linenum48" class="linenum-cell" data-linenum="48" href="#linenum48"></a></td>
-<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSCredElement.html#linenum39">GSSCredElement</a> getCredFromSubject(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a> name,</pre></td>
+<td><pre>    private <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSCredElement.html#linenum39">GSSCredElement</a> getCredFromSubject(<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a> name,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum49" class="linenum-cell" data-linenum="49" href="#linenum49"></a></td>
@@ -208,11 +208,11 @@
 </tr>
 <tr>
 <td><a id="linenum51" class="linenum-cell" data-linenum="51" href="#linenum51"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> mech = <a class="variable" href="#linenum45">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum122">getMech</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/org/ietf/jgss/Oid.html#linenum51">Oid</a> mech = <a class="variable" href="#linenum45">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum123">getMech</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSCredElement.html#linenum39">GSSCredElement</a>&gt; creds = GSSUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSUtil.html#linenum319">searchSubject</a></pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSCredElement.html#linenum39">GSSCredElement</a>&gt; creds = GSSUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSUtil.html#linenum315">searchSubject</a></pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
@@ -232,7 +232,7 @@
 </tr>
 <tr>
 <td><a id="linenum57" class="linenum-cell" data-linenum="57" href="#linenum57"></a></td>
-<td><pre>            if (GSSUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSUtil.html#linenum268">useSubjectCredsOnly</a>(<a class="variable" href="#linenum46">caller</a>)) {</pre></td>
+<td><pre>            if (GSSUtil.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/GSSUtil.html#linenum271">useSubjectCredsOnly</a>(<a class="variable" href="#linenum46">caller</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
@@ -316,7 +316,7 @@
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>        <a class="variable" href="#linenum45">cStub</a> = GSSLibStub.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum99">getInstance</a>(<a class="variable" href="#linenum77">mech</a>);</pre></td>
+<td><pre>        <a class="variable" href="#linenum45">cStub</a> = GSSLibStub.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum100">getInstance</a>(<a class="variable" href="#linenum77">mech</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
@@ -344,11 +344,11 @@
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre>                (<a class="variable" href="#linenum81">nameStr</a> == null ? null : <a class="variable" href="#linenum81">nameStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum945">getBytes</a>(<span class='string'>&quot;UTF-8&quot;</span>));</pre></td>
+<td><pre>                (<a class="variable" href="#linenum81">nameStr</a> == null ? null : <a class="variable" href="#linenum81">nameStr</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum915">getBytes</a>(<span class='string'>&quot;UTF-8&quot;</span>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
-<td><pre>            return new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a>(<a class="variable" href="#linenum84">nameBytes</a>, <a class="variable" href="#linenum81">nameType</a>, <a class="variable" href="#linenum45">cStub</a>);</pre></td>
+<td><pre>            return new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a>(<a class="variable" href="#linenum84">nameBytes</a>, <a class="variable" href="#linenum81">nameType</a>, <a class="variable" href="#linenum45">cStub</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum87" class="linenum-cell" data-linenum="87" href="#linenum87"></a></td>
@@ -384,7 +384,7 @@
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
-<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a>(<a class="variable" href="#linenum93">name</a>, <a class="variable" href="#linenum93">nameType</a>, <a class="variable" href="#linenum45">cStub</a>);</pre></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a>(<a class="variable" href="#linenum93">name</a>, <a class="variable" href="#linenum93">nameType</a>, <a class="variable" href="#linenum45">cStub</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum96" class="linenum-cell" data-linenum="96" href="#linenum96"></a></td>
@@ -416,23 +416,23 @@
 </tr>
 <tr>
 <td><a id="linenum103" class="linenum-cell" data-linenum="103" href="#linenum103"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a> nname = null;</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a> nname = null;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum104" class="linenum-cell" data-linenum="104" href="#linenum104"></a></td>
-<td><pre>        if (<a class="variable" href="#linenum98">name</a> != null &amp;&amp; !(<a class="variable" href="#linenum98">name</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a>)) {</pre></td>
+<td><pre>        if (<a class="variable" href="#linenum98">name</a> != null &amp;&amp; !(<a class="variable" href="#linenum98">name</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum105" class="linenum-cell" data-linenum="105" href="#linenum105"></a></td>
-<td><pre>            <a class="variable" href="#linenum103">nname</a> = (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a>)</pre></td>
+<td><pre>            <a class="variable" href="#linenum103">nname</a> = (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum106" class="linenum-cell" data-linenum="106" href="#linenum106"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/NativeGSSFactory.html#linenum93">getNameElement</a>(<a class="variable" href="#linenum98">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/spi/GSSNameSpi.html#linenum101">toString</a>(), <a class="variable" href="#linenum98">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/spi/GSSNameSpi.html#linenum109">getStringNameType</a>());</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/NativeGSSFactory.html#linenum81">getNameElement</a>(<a class="variable" href="#linenum98">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/spi/GSSNameSpi.html#linenum101">toString</a>(), <a class="variable" href="#linenum98">name</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/spi/GSSNameSpi.html#linenum109">getStringNameType</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum107" class="linenum-cell" data-linenum="107" href="#linenum107"></a></td>
-<td><pre>        } else <a class="variable" href="#linenum103">nname</a> = (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a>) <a class="variable" href="#linenum98">name</a>;</pre></td>
+<td><pre>        } else <a class="variable" href="#linenum103">nname</a> = (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a>) <a class="variable" href="#linenum98">name</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum108" class="linenum-cell" data-linenum="108" href="#linenum108"></a></td>
@@ -576,15 +576,15 @@
 </tr>
 <tr>
 <td><a id="linenum143" class="linenum-cell" data-linenum="143" href="#linenum143"></a></td>
-<td><pre>        } else if (!(<a class="variable" href="#linenum137">peer</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a>)) {</pre></td>
+<td><pre>        } else if (!(<a class="variable" href="#linenum137">peer</a> instanceof <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum144" class="linenum-cell" data-linenum="144" href="#linenum144"></a></td>
-<td><pre>            <a class="variable" href="#linenum137">peer</a> = (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a>)</pre></td>
+<td><pre>            <a class="variable" href="#linenum137">peer</a> = (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a>)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum145" class="linenum-cell" data-linenum="145" href="#linenum145"></a></td>
-<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/NativeGSSFactory.html#linenum93">getNameElement</a>(<a class="variable" href="#linenum137">peer</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/spi/GSSNameSpi.html#linenum101">toString</a>(), <a class="variable" href="#linenum137">peer</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/spi/GSSNameSpi.html#linenum109">getStringNameType</a>());</pre></td>
+<td><pre>                <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/NativeGSSFactory.html#linenum81">getNameElement</a>(<a class="variable" href="#linenum137">peer</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/spi/GSSNameSpi.html#linenum101">toString</a>(), <a class="variable" href="#linenum137">peer</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/spi/GSSNameSpi.html#linenum109">getStringNameType</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum146" class="linenum-cell" data-linenum="146" href="#linenum146"></a></td>
@@ -612,7 +612,7 @@
 </tr>
 <tr>
 <td><a id="linenum152" class="linenum-cell" data-linenum="152" href="#linenum152"></a></td>
-<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/NativeGSSContext.html#linenum49">NativeGSSContext</a>((<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum48">GSSNameElement</a>) <a class="variable" href="#linenum137">peer</a>,</pre></td>
+<td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/NativeGSSContext.html#linenum49">NativeGSSContext</a>((<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSNameElement.html#linenum51">GSSNameElement</a>) <a class="variable" href="#linenum137">peer</a>,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum153" class="linenum-cell" data-linenum="153" href="#linenum153"></a></td>
@@ -680,7 +680,7 @@
 </tr>
 <tr>
 <td><a id="linenum169" class="linenum-cell" data-linenum="169" href="#linenum169"></a></td>
-<td><pre>        return <a class="variable" href="#linenum45">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum78">importContext</a>(<a class="variable" href="#linenum167">exportedContext</a>);</pre></td>
+<td><pre>        return <a class="variable" href="#linenum45">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum79">importContext</a>(<a class="variable" href="#linenum167">exportedContext</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum170" class="linenum-cell" data-linenum="170" href="#linenum170"></a></td>
@@ -696,7 +696,7 @@
 </tr>
 <tr>
 <td><a id="linenum173" class="linenum-cell" data-linenum="173" href="#linenum173"></a></td>
-<td><pre>        return <a class="variable" href="#linenum45">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum122">getMech</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum45">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum123">getMech</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum174" class="linenum-cell" data-linenum="174" href="#linenum174"></a></td>
@@ -728,7 +728,7 @@
 </tr>
 <tr>
 <td><a id="linenum181" class="linenum-cell" data-linenum="181" href="#linenum181"></a></td>
-<td><pre>        return <a class="variable" href="#linenum45">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum59">inquireNamesForMech</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum45">cStub</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/jgss/wrapper/GSSLibStub.html#linenum60">inquireNamesForMech</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum182" class="linenum-cell" data-linenum="182" href="#linenum182"></a></td>

@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -236,7 +236,7 @@
 </tr>
 <tr>
 <td><a id="linenum58" class="linenum-cell" data-linenum="58" href="#linenum58"></a></td>
-<td><pre>                <span class='string'>&quot;Tar bort post&quot;</span>}, <span class='comment'>//-delete</span></pre></td>
+<td><pre>                <span class='string'>&quot;Tar bort en post&quot;</span>}, <span class='comment'>//-delete</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum59" class="linenum-cell" data-linenum="59" href="#linenum59"></a></td>
@@ -716,7 +716,7 @@
 </tr>
 <tr>
 <td><a id="linenum178" class="linenum-cell" data-linenum="178" href="#linenum178"></a></td>
-<td><pre>                 <span class='string'>&quot;Seriellt ID f\u00F6r certifikat som ska \u00E5terkallas&quot;</span>}, <span class='comment'>//-id</span></pre></td>
+<td><pre>                 <span class='string'>&quot;Serienummer p\u00E5 certifikat som ska \u00E5terkallas&quot;</span>}, <span class='comment'>//-id</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum179" class="linenum-cell" data-linenum="179" href="#linenum179"></a></td>
@@ -1080,7 +1080,7 @@
 </tr>
 <tr>
 <td><a id="linenum269" class="linenum-cell" data-linenum="269" href="#linenum269"></a></td>
-<td><pre>                <span class='string'>&quot;{0} saknar offentlig nyckel (certifikat)&quot;</span>},</pre></td>
+<td><pre>                <span class='string'>&quot;{0} saknar \u00F6ppen nyckel (certifikat)&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum270" class="linenum-cell" data-linenum="270" href="#linenum270"></a></td>
@@ -1280,7 +1280,7 @@
 </tr>
 <tr>
 <td><a id="linenum319" class="linenum-cell" data-linenum="319" href="#linenum319"></a></td>
-<td><pre>        {<span class='string'>&quot;alias.has.no.public.key&quot;</span>, <span class='string'>&quot;{0} saknar offentlig nyckel&quot;</span>},</pre></td>
+<td><pre>        {<span class='string'>&quot;alias.has.no.public.key&quot;</span>, <span class='string'>&quot;{0} saknar \u00F6ppen nyckel&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum320" class="linenum-cell" data-linenum="320" href="#linenum320"></a></td>
@@ -1360,7 +1360,7 @@
 </tr>
 <tr>
 <td><a id="linenum339" class="linenum-cell" data-linenum="339" href="#linenum339"></a></td>
-<td><pre>        {<span class='string'>&quot;Re.enter.passpword.&quot;</span>, <span class='string'>&quot;Ange l\u00F6senord igen: &quot;</span>},</pre></td>
+<td><pre>        {<span class='string'>&quot;Re.enter.password.&quot;</span>, <span class='string'>&quot;Ange l\u00F6senord igen: &quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum340" class="linenum-cell" data-linenum="340" href="#linenum340"></a></td>
@@ -1396,390 +1396,490 @@
 </tr>
 <tr>
 <td><a id="linenum348" class="linenum-cell" data-linenum="348" href="#linenum348"></a></td>
-<td><pre>        {<span class='string'>&quot;.PATTERN.printX509Cert&quot;</span>,</pre></td>
-</tr>
-<tr>
-<td><a id="linenum349" class="linenum-cell" data-linenum="349" href="#linenum349"></a></td>
-<td><pre>                <span class='string'>&quot;\u00C4gare: {0}\nUtf\u00E4rdare: {1}\nSerienummer: {2}\nGiltigt fr\u00E5n den: {3} till: {4}\nCertifikatets fingeravtryck:\n\t MD5: {5}\n\t SHA1: {6}\n\t SHA256: {7}\n\t Namn p\u00E5 signaturalgoritm: {8}\n\t Version: {9}&quot;</span>},</pre></td>
-</tr>
-<tr>
-<td><a id="linenum350" class="linenum-cell" data-linenum="350" href="#linenum350"></a></td>
 <td><pre>        {<span class='string'>&quot;What.is.your.first.and.last.name.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum351" class="linenum-cell" data-linenum="351" href="#linenum351"></a></td>
+<td><a id="linenum349" class="linenum-cell" data-linenum="349" href="#linenum349"></a></td>
 <td><pre>                <span class='string'>&quot;Vad heter du i f\u00F6r- och efternamn?&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum352" class="linenum-cell" data-linenum="352" href="#linenum352"></a></td>
+<td><a id="linenum350" class="linenum-cell" data-linenum="350" href="#linenum350"></a></td>
 <td><pre>        {<span class='string'>&quot;What.is.the.name.of.your.organizational.unit.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum353" class="linenum-cell" data-linenum="353" href="#linenum353"></a></td>
+<td><a id="linenum351" class="linenum-cell" data-linenum="351" href="#linenum351"></a></td>
 <td><pre>                <span class='string'>&quot;Vad heter din avdelning inom organisationen?&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum354" class="linenum-cell" data-linenum="354" href="#linenum354"></a></td>
+<td><a id="linenum352" class="linenum-cell" data-linenum="352" href="#linenum352"></a></td>
 <td><pre>        {<span class='string'>&quot;What.is.the.name.of.your.organization.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum355" class="linenum-cell" data-linenum="355" href="#linenum355"></a></td>
+<td><a id="linenum353" class="linenum-cell" data-linenum="353" href="#linenum353"></a></td>
 <td><pre>                <span class='string'>&quot;Vad heter din organisation?&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum356" class="linenum-cell" data-linenum="356" href="#linenum356"></a></td>
+<td><a id="linenum354" class="linenum-cell" data-linenum="354" href="#linenum354"></a></td>
 <td><pre>        {<span class='string'>&quot;What.is.the.name.of.your.City.or.Locality.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum357" class="linenum-cell" data-linenum="357" href="#linenum357"></a></td>
+<td><a id="linenum355" class="linenum-cell" data-linenum="355" href="#linenum355"></a></td>
 <td><pre>                <span class='string'>&quot;Vad heter din ort eller plats?&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum358" class="linenum-cell" data-linenum="358" href="#linenum358"></a></td>
+<td><a id="linenum356" class="linenum-cell" data-linenum="356" href="#linenum356"></a></td>
 <td><pre>        {<span class='string'>&quot;What.is.the.name.of.your.State.or.Province.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum359" class="linenum-cell" data-linenum="359" href="#linenum359"></a></td>
+<td><a id="linenum357" class="linenum-cell" data-linenum="357" href="#linenum357"></a></td>
 <td><pre>                <span class='string'>&quot;Vad heter ditt land eller din provins?&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum360" class="linenum-cell" data-linenum="360" href="#linenum360"></a></td>
+<td><a id="linenum358" class="linenum-cell" data-linenum="358" href="#linenum358"></a></td>
 <td><pre>        {<span class='string'>&quot;What.is.the.two.letter.country.code.for.this.unit.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum361" class="linenum-cell" data-linenum="361" href="#linenum361"></a></td>
+<td><a id="linenum359" class="linenum-cell" data-linenum="359" href="#linenum359"></a></td>
 <td><pre>                <span class='string'>&quot;Vilken \u00E4r den tv\u00E5st\u00E4lliga landskoden?&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum362" class="linenum-cell" data-linenum="362" href="#linenum362"></a></td>
+<td><a id="linenum360" class="linenum-cell" data-linenum="360" href="#linenum360"></a></td>
 <td><pre>        {<span class='string'>&quot;Is.name.correct.&quot;</span>, <span class='string'>&quot;\u00C4r {0} korrekt?&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum363" class="linenum-cell" data-linenum="363" href="#linenum363"></a></td>
+<td><a id="linenum361" class="linenum-cell" data-linenum="361" href="#linenum361"></a></td>
 <td><pre>        {<span class='string'>&quot;no&quot;</span>, <span class='string'>&quot;nej&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum364" class="linenum-cell" data-linenum="364" href="#linenum364"></a></td>
+<td><a id="linenum362" class="linenum-cell" data-linenum="362" href="#linenum362"></a></td>
 <td><pre>        {<span class='string'>&quot;yes&quot;</span>, <span class='string'>&quot;ja&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum365" class="linenum-cell" data-linenum="365" href="#linenum365"></a></td>
+<td><a id="linenum363" class="linenum-cell" data-linenum="363" href="#linenum363"></a></td>
 <td><pre>        {<span class='string'>&quot;y&quot;</span>, <span class='string'>&quot;j&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum366" class="linenum-cell" data-linenum="366" href="#linenum366"></a></td>
+<td><a id="linenum364" class="linenum-cell" data-linenum="364" href="#linenum364"></a></td>
 <td><pre>        {<span class='string'>&quot;.defaultValue.&quot;</span>, <span class='string'>&quot;  [{0}]:  &quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum367" class="linenum-cell" data-linenum="367" href="#linenum367"></a></td>
+<td><a id="linenum365" class="linenum-cell" data-linenum="365" href="#linenum365"></a></td>
 <td><pre>        {<span class='string'>&quot;Alias.alias.has.no.key&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum368" class="linenum-cell" data-linenum="368" href="#linenum368"></a></td>
+<td><a id="linenum366" class="linenum-cell" data-linenum="366" href="#linenum366"></a></td>
 <td><pre>                <span class='string'>&quot;Aliaset &lt;{0}&gt; saknar nyckel&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum369" class="linenum-cell" data-linenum="369" href="#linenum369"></a></td>
+<td><a id="linenum367" class="linenum-cell" data-linenum="367" href="#linenum367"></a></td>
 <td><pre>        {<span class='string'>&quot;Alias.alias.references.an.entry.type.that.is.not.a.private.key.entry.The.keyclone.command.only.supports.cloning.of.private.key&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum370" class="linenum-cell" data-linenum="370" href="#linenum370"></a></td>
+<td><a id="linenum368" class="linenum-cell" data-linenum="368" href="#linenum368"></a></td>
 <td><pre>                 <span class='string'>&quot;Aliaset &lt;{0}&gt; refererar till en posttyp som inte \u00E4r n\u00E5gon privat nyckelpost. Kommandot -keyclone har endast st\u00F6d f\u00F6r kloning av privata nyckelposter&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum371" class="linenum-cell" data-linenum="371" href="#linenum371"></a></td>
+<td><a id="linenum369" class="linenum-cell" data-linenum="369" href="#linenum369"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum372" class="linenum-cell" data-linenum="372" href="#linenum372"></a></td>
+<td><a id="linenum370" class="linenum-cell" data-linenum="370" href="#linenum370"></a></td>
 <td><pre>        {<span class='string'>&quot;.WARNING.WARNING.WARNING.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum373" class="linenum-cell" data-linenum="373" href="#linenum373"></a></td>
+<td><a id="linenum371" class="linenum-cell" data-linenum="371" href="#linenum371"></a></td>
 <td><pre>            <span class='string'>&quot;*****************  WARNING WARNING WARNING  *****************&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum374" class="linenum-cell" data-linenum="374" href="#linenum374"></a></td>
-<td><pre>        {<span class='string'>&quot;Signer.d.&quot;</span>, <span class='string'>&quot;Signerare #%d:&quot;</span>},</pre></td>
+<td><a id="linenum372" class="linenum-cell" data-linenum="372" href="#linenum372"></a></td>
+<td><pre>        {<span class='string'>&quot;Signer.d.&quot;</span>, <span class='string'>&quot;Undertecknare %d:&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum375" class="linenum-cell" data-linenum="375" href="#linenum375"></a></td>
+<td><a id="linenum373" class="linenum-cell" data-linenum="373" href="#linenum373"></a></td>
 <td><pre>        {<span class='string'>&quot;Timestamp.&quot;</span>, <span class='string'>&quot;Tidsst\u00E4mpel:&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum376" class="linenum-cell" data-linenum="376" href="#linenum376"></a></td>
-<td><pre>        {<span class='string'>&quot;Signature.&quot;</span>, <span class='string'>&quot;Underskrift:&quot;</span>},</pre></td>
+<td><a id="linenum374" class="linenum-cell" data-linenum="374" href="#linenum374"></a></td>
+<td><pre>        {<span class='string'>&quot;Signature.&quot;</span>, <span class='string'>&quot;Signatur:&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum377" class="linenum-cell" data-linenum="377" href="#linenum377"></a></td>
+<td><a id="linenum375" class="linenum-cell" data-linenum="375" href="#linenum375"></a></td>
 <td><pre>        {<span class='string'>&quot;CRLs.&quot;</span>, <span class='string'>&quot;CRL:er:&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum378" class="linenum-cell" data-linenum="378" href="#linenum378"></a></td>
+<td><a id="linenum376" class="linenum-cell" data-linenum="376" href="#linenum376"></a></td>
 <td><pre>        {<span class='string'>&quot;Certificate.owner.&quot;</span>, <span class='string'>&quot;Certifikat\u00E4gare: &quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum379" class="linenum-cell" data-linenum="379" href="#linenum379"></a></td>
+<td><a id="linenum377" class="linenum-cell" data-linenum="377" href="#linenum377"></a></td>
 <td><pre>        {<span class='string'>&quot;Not.a.signed.jar.file&quot;</span>, <span class='string'>&quot;Ingen signerad jar-fil&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum380" class="linenum-cell" data-linenum="380" href="#linenum380"></a></td>
+<td><a id="linenum378" class="linenum-cell" data-linenum="378" href="#linenum378"></a></td>
 <td><pre>        {<span class='string'>&quot;No.certificate.from.the.SSL.server&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum381" class="linenum-cell" data-linenum="381" href="#linenum381"></a></td>
+<td><a id="linenum379" class="linenum-cell" data-linenum="379" href="#linenum379"></a></td>
 <td><pre>                <span class='string'>&quot;Inget certifikat fr\u00E5n SSL-servern&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum382" class="linenum-cell" data-linenum="382" href="#linenum382"></a></td>
+<td><a id="linenum380" class="linenum-cell" data-linenum="380" href="#linenum380"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum383" class="linenum-cell" data-linenum="383" href="#linenum383"></a></td>
+<td><a id="linenum381" class="linenum-cell" data-linenum="381" href="#linenum381"></a></td>
 <td><pre>        {<span class='string'>&quot;.The.integrity.of.the.information.stored.in.your.keystore.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum384" class="linenum-cell" data-linenum="384" href="#linenum384"></a></td>
+<td><a id="linenum382" class="linenum-cell" data-linenum="382" href="#linenum382"></a></td>
 <td><pre>            <span class='string'>&quot;* Integriteten f\u00F6r den information som lagras i nyckellagerfilen  *\n* har INTE verifierats!  Om du vill verifiera dess integritet *\n* m\u00E5ste du ange l\u00F6senordet f\u00F6r nyckellagret.                  *&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum385" class="linenum-cell" data-linenum="385" href="#linenum385"></a></td>
+<td><a id="linenum383" class="linenum-cell" data-linenum="383" href="#linenum383"></a></td>
 <td><pre>        {<span class='string'>&quot;.The.integrity.of.the.information.stored.in.the.srckeystore.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum386" class="linenum-cell" data-linenum="386" href="#linenum386"></a></td>
+<td><a id="linenum384" class="linenum-cell" data-linenum="384" href="#linenum384"></a></td>
 <td><pre>            <span class='string'>&quot;* Integriteten f\u00F6r den information som lagras i srckeystore*\n* har INTE verifierats!  Om du vill verifiera dess integritet *\n* m\u00E5ste du ange l\u00F6senordet f\u00F6r srckeystore.                *&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum387" class="linenum-cell" data-linenum="387" href="#linenum387"></a></td>
+<td><a id="linenum385" class="linenum-cell" data-linenum="385" href="#linenum385"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum388" class="linenum-cell" data-linenum="388" href="#linenum388"></a></td>
+<td><a id="linenum386" class="linenum-cell" data-linenum="386" href="#linenum386"></a></td>
 <td><pre>        {<span class='string'>&quot;Certificate.reply.does.not.contain.public.key.for.alias.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum389" class="linenum-cell" data-linenum="389" href="#linenum389"></a></td>
-<td><pre>                <span class='string'>&quot;Certifikatsvaret inneh\u00E5ller inte n\u00E5gon offentlig nyckel f\u00F6r &lt;{0}&gt;&quot;</span>},</pre></td>
+<td><a id="linenum387" class="linenum-cell" data-linenum="387" href="#linenum387"></a></td>
+<td><pre>                <span class='string'>&quot;Certifikatsvaret inneh\u00E5ller inte n\u00E5gon \u00F6ppen nyckel f\u00F6r &lt;{0}&gt;&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum390" class="linenum-cell" data-linenum="390" href="#linenum390"></a></td>
+<td><a id="linenum388" class="linenum-cell" data-linenum="388" href="#linenum388"></a></td>
 <td><pre>        {<span class='string'>&quot;Incomplete.certificate.chain.in.reply&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum391" class="linenum-cell" data-linenum="391" href="#linenum391"></a></td>
+<td><a id="linenum389" class="linenum-cell" data-linenum="389" href="#linenum389"></a></td>
 <td><pre>                <span class='string'>&quot;Ofullst\u00E4ndig certifikatskedja i svaret&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum392" class="linenum-cell" data-linenum="392" href="#linenum392"></a></td>
+<td><a id="linenum390" class="linenum-cell" data-linenum="390" href="#linenum390"></a></td>
 <td><pre>        {<span class='string'>&quot;Certificate.chain.in.reply.does.not.verify.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum393" class="linenum-cell" data-linenum="393" href="#linenum393"></a></td>
+<td><a id="linenum391" class="linenum-cell" data-linenum="391" href="#linenum391"></a></td>
 <td><pre>                <span class='string'>&quot;Certifikatskedjan i svaret g\u00E5r inte att verifiera: &quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum394" class="linenum-cell" data-linenum="394" href="#linenum394"></a></td>
+<td><a id="linenum392" class="linenum-cell" data-linenum="392" href="#linenum392"></a></td>
 <td><pre>        {<span class='string'>&quot;Top.level.certificate.in.reply.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum395" class="linenum-cell" data-linenum="395" href="#linenum395"></a></td>
+<td><a id="linenum393" class="linenum-cell" data-linenum="393" href="#linenum393"></a></td>
 <td><pre>                <span class='string'>&quot;Toppniv\u00E5certifikatet i svaret:\n&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum396" class="linenum-cell" data-linenum="396" href="#linenum396"></a></td>
+<td><a id="linenum394" class="linenum-cell" data-linenum="394" href="#linenum394"></a></td>
 <td><pre>        {<span class='string'>&quot;.is.not.trusted.&quot;</span>, <span class='string'>&quot;... \u00E4r inte betrott. &quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum397" class="linenum-cell" data-linenum="397" href="#linenum397"></a></td>
+<td><a id="linenum395" class="linenum-cell" data-linenum="395" href="#linenum395"></a></td>
 <td><pre>        {<span class='string'>&quot;Install.reply.anyway.no.&quot;</span>, <span class='string'>&quot;Vill du installera svaret \u00E4nd\u00E5? [nej]:  &quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum398" class="linenum-cell" data-linenum="398" href="#linenum398"></a></td>
+<td><a id="linenum396" class="linenum-cell" data-linenum="396" href="#linenum396"></a></td>
 <td><pre>        {<span class='string'>&quot;NO&quot;</span>, <span class='string'>&quot;NEJ&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum399" class="linenum-cell" data-linenum="399" href="#linenum399"></a></td>
+<td><a id="linenum397" class="linenum-cell" data-linenum="397" href="#linenum397"></a></td>
 <td><pre>        {<span class='string'>&quot;Public.keys.in.reply.and.keystore.don.t.match&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum400" class="linenum-cell" data-linenum="400" href="#linenum400"></a></td>
+<td><a id="linenum398" class="linenum-cell" data-linenum="398" href="#linenum398"></a></td>
 <td><pre>                <span class='string'>&quot;De offentliga nycklarna i svaret och nyckellagret matchar inte varandra&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum401" class="linenum-cell" data-linenum="401" href="#linenum401"></a></td>
+<td><a id="linenum399" class="linenum-cell" data-linenum="399" href="#linenum399"></a></td>
 <td><pre>        {<span class='string'>&quot;Certificate.reply.and.certificate.in.keystore.are.identical&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum402" class="linenum-cell" data-linenum="402" href="#linenum402"></a></td>
+<td><a id="linenum400" class="linenum-cell" data-linenum="400" href="#linenum400"></a></td>
 <td><pre>                <span class='string'>&quot;Certifikatsvaret och certifikatet i nyckellagret \u00E4r identiska&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum403" class="linenum-cell" data-linenum="403" href="#linenum403"></a></td>
+<td><a id="linenum401" class="linenum-cell" data-linenum="401" href="#linenum401"></a></td>
 <td><pre>        {<span class='string'>&quot;Failed.to.establish.chain.from.reply&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum404" class="linenum-cell" data-linenum="404" href="#linenum404"></a></td>
+<td><a id="linenum402" class="linenum-cell" data-linenum="402" href="#linenum402"></a></td>
 <td><pre>                <span class='string'>&quot;Kunde inte uppr\u00E4tta kedja fr\u00E5n svaret&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum405" class="linenum-cell" data-linenum="405" href="#linenum405"></a></td>
+<td><a id="linenum403" class="linenum-cell" data-linenum="403" href="#linenum403"></a></td>
 <td><pre>        {<span class='string'>&quot;n&quot;</span>, <span class='string'>&quot;n&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum406" class="linenum-cell" data-linenum="406" href="#linenum406"></a></td>
+<td><a id="linenum404" class="linenum-cell" data-linenum="404" href="#linenum404"></a></td>
 <td><pre>        {<span class='string'>&quot;Wrong.answer.try.again&quot;</span>, <span class='string'>&quot;Fel svar. F\u00F6rs\u00F6k p\u00E5 nytt.&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum407" class="linenum-cell" data-linenum="407" href="#linenum407"></a></td>
+<td><a id="linenum405" class="linenum-cell" data-linenum="405" href="#linenum405"></a></td>
 <td><pre>        {<span class='string'>&quot;Secret.key.not.generated.alias.alias.already.exists&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum408" class="linenum-cell" data-linenum="408" href="#linenum408"></a></td>
+<td><a id="linenum406" class="linenum-cell" data-linenum="406" href="#linenum406"></a></td>
 <td><pre>                <span class='string'>&quot;Den hemliga nyckeln har inte genererats eftersom aliaset &lt;{0}&gt; redan finns&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum409" class="linenum-cell" data-linenum="409" href="#linenum409"></a></td>
+<td><a id="linenum407" class="linenum-cell" data-linenum="407" href="#linenum407"></a></td>
 <td><pre>        {<span class='string'>&quot;Please.provide.keysize.for.secret.key.generation&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum410" class="linenum-cell" data-linenum="410" href="#linenum410"></a></td>
+<td><a id="linenum408" class="linenum-cell" data-linenum="408" href="#linenum408"></a></td>
 <td><pre>                <span class='string'>&quot;Ange -keysize f\u00F6r att skapa hemlig nyckel&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum411" class="linenum-cell" data-linenum="411" href="#linenum411"></a></td>
+<td><a id="linenum409" class="linenum-cell" data-linenum="409" href="#linenum409"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum412" class="linenum-cell" data-linenum="412" href="#linenum412"></a></td>
-<td><pre>        {<span class='string'>&quot;verified.by.s.in.s&quot;</span>, <span class='string'>&quot;Verifierad av %s i %s&quot;</span>},</pre></td>
-</tr>
-<tr>
-<td><a id="linenum413" class="linenum-cell" data-linenum="413" href="#linenum413"></a></td>
+<td><a id="linenum410" class="linenum-cell" data-linenum="410" href="#linenum410"></a></td>
 <td><pre>        {<span class='string'>&quot;warning.not.verified.make.sure.keystore.is.correct&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum414" class="linenum-cell" data-linenum="414" href="#linenum414"></a></td>
+<td><a id="linenum411" class="linenum-cell" data-linenum="411" href="#linenum411"></a></td>
 <td><pre>            <span class='string'>&quot;VARNING: ej verifierad. Se till att -nyckellager \u00E4r korrekt.&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum415" class="linenum-cell" data-linenum="415" href="#linenum415"></a></td>
+<td><a id="linenum412" class="linenum-cell" data-linenum="412" href="#linenum412"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum416" class="linenum-cell" data-linenum="416" href="#linenum416"></a></td>
+<td><a id="linenum413" class="linenum-cell" data-linenum="413" href="#linenum413"></a></td>
 <td><pre>        {<span class='string'>&quot;Extensions.&quot;</span>, <span class='string'>&quot;Till\u00E4gg: &quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum417" class="linenum-cell" data-linenum="417" href="#linenum417"></a></td>
+<td><a id="linenum414" class="linenum-cell" data-linenum="414" href="#linenum414"></a></td>
 <td><pre>        {<span class='string'>&quot;.Empty.value.&quot;</span>, <span class='string'>&quot;(Tomt v\u00E4rde)&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum418" class="linenum-cell" data-linenum="418" href="#linenum418"></a></td>
+<td><a id="linenum415" class="linenum-cell" data-linenum="415" href="#linenum415"></a></td>
 <td><pre>        {<span class='string'>&quot;Extension.Request.&quot;</span>, <span class='string'>&quot;Till\u00E4ggsbeg\u00E4ran:&quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum419" class="linenum-cell" data-linenum="419" href="#linenum419"></a></td>
-<td><pre>        {<span class='string'>&quot;PKCS.10.Certificate.Request.Version.1.0.Subject.s.Public.Key.s.format.s.key.&quot;</span>,</pre></td>
-</tr>
-<tr>
-<td><a id="linenum420" class="linenum-cell" data-linenum="420" href="#linenum420"></a></td>
-<td><pre>                <span class='string'>&quot;PKCS #10 certifikatbeg\u00E4ran (version 1.0)\n\u00C4mne: %s\nAllm\u00E4n nyckel: %s-format %s-nyckel\n&quot;</span>},</pre></td>
-</tr>
-<tr>
-<td><a id="linenum421" class="linenum-cell" data-linenum="421" href="#linenum421"></a></td>
+<td><a id="linenum416" class="linenum-cell" data-linenum="416" href="#linenum416"></a></td>
 <td><pre>        {<span class='string'>&quot;Unknown.keyUsage.type.&quot;</span>, <span class='string'>&quot;Ok\u00E4nd keyUsage-typ: &quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum422" class="linenum-cell" data-linenum="422" href="#linenum422"></a></td>
+<td><a id="linenum417" class="linenum-cell" data-linenum="417" href="#linenum417"></a></td>
 <td><pre>        {<span class='string'>&quot;Unknown.extendedkeyUsage.type.&quot;</span>, <span class='string'>&quot;Ok\u00E4nd extendedkeyUsage-typ: &quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum423" class="linenum-cell" data-linenum="423" href="#linenum423"></a></td>
+<td><a id="linenum418" class="linenum-cell" data-linenum="418" href="#linenum418"></a></td>
 <td><pre>        {<span class='string'>&quot;Unknown.AccessDescription.type.&quot;</span>, <span class='string'>&quot;Ok\u00E4nd AccessDescription-typ: &quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum424" class="linenum-cell" data-linenum="424" href="#linenum424"></a></td>
+<td><a id="linenum419" class="linenum-cell" data-linenum="419" href="#linenum419"></a></td>
 <td><pre>        {<span class='string'>&quot;Unrecognized.GeneralName.type.&quot;</span>, <span class='string'>&quot;Ok\u00E4nd GeneralName-typ: &quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum425" class="linenum-cell" data-linenum="425" href="#linenum425"></a></td>
+<td><a id="linenum420" class="linenum-cell" data-linenum="420" href="#linenum420"></a></td>
 <td><pre>        {<span class='string'>&quot;This.extension.cannot.be.marked.as.critical.&quot;</span>,</pre></td>
 </tr>
 <tr>
-<td><a id="linenum426" class="linenum-cell" data-linenum="426" href="#linenum426"></a></td>
+<td><a id="linenum421" class="linenum-cell" data-linenum="421" href="#linenum421"></a></td>
 <td><pre>                 <span class='string'>&quot;Detta till\u00E4gg kan inte markeras som kritiskt. &quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum427" class="linenum-cell" data-linenum="427" href="#linenum427"></a></td>
+<td><a id="linenum422" class="linenum-cell" data-linenum="422" href="#linenum422"></a></td>
 <td><pre>        {<span class='string'>&quot;Odd.number.of.hex.digits.found.&quot;</span>, <span class='string'>&quot;Udda antal hex-siffror p\u00E5tr\u00E4ffades: &quot;</span>},</pre></td>
 </tr>
 <tr>
-<td><a id="linenum428" class="linenum-cell" data-linenum="428" href="#linenum428"></a></td>
+<td><a id="linenum423" class="linenum-cell" data-linenum="423" href="#linenum423"></a></td>
 <td><pre>        {<span class='string'>&quot;Unknown.extension.type.&quot;</span>, <span class='string'>&quot;Ok\u00E4nd till\u00E4ggstyp: &quot;</span>},</pre></td>
 </tr>
 <tr>
+<td><a id="linenum424" class="linenum-cell" data-linenum="424" href="#linenum424"></a></td>
+<td><pre>        {<span class='string'>&quot;command.{0}.is.ambiguous.&quot;</span>, <span class='string'>&quot;kommandot {0} \u00E4r tvetydigt:&quot;</span>},</pre></td>
+</tr>
+<tr>
+<td><a id="linenum425" class="linenum-cell" data-linenum="425" href="#linenum425"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum426" class="linenum-cell" data-linenum="426" href="#linenum426"></a></td>
+<td><pre>        // 8171319: keytool should print out warnings when reading or</pre></td>
+</tr>
+<tr>
+<td><a id="linenum427" class="linenum-cell" data-linenum="427" href="#linenum427"></a></td>
+<td><pre>        <span class='comment'>// generating cert/cert req using weak algorithms</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum428" class="linenum-cell" data-linenum="428" href="#linenum428"></a></td>
+<td><pre>        {<span class='string'>&quot;the.certificate.request&quot;</span>, <span class='string'>&quot;Certifikatbeg\u00E4ran&quot;</span>},</pre></td>
+</tr>
+<tr>
 <td><a id="linenum429" class="linenum-cell" data-linenum="429" href="#linenum429"></a></td>
-<td><pre>        {<span class='string'>&quot;command.{0}.is.ambiguous.&quot;</span>, <span class='string'>&quot;kommandot {0} \u00E4r tvetydigt:&quot;</span>}</pre></td>
+<td><pre>        {<span class='string'>&quot;the.issuer&quot;</span>, <span class='string'>&quot;Utf\u00E4rdaren&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum430" class="linenum-cell" data-linenum="430" href="#linenum430"></a></td>
-<td><pre>    };</pre></td>
+<td><pre>        {<span class='string'>&quot;the.generated.certificate&quot;</span>, <span class='string'>&quot;Det genererade certifikatet&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum431" class="linenum-cell" data-linenum="431" href="#linenum431"></a></td>
-<td><pre></pre></td>
+<td><pre>        {<span class='string'>&quot;the.generated.crl&quot;</span>, <span class='string'>&quot;Den genererade listan \u00F6ver \u00E5terkallade certifikat&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum432" class="linenum-cell" data-linenum="432" href="#linenum432"></a></td>
-<td><pre></pre></td>
+<td><pre>        {<span class='string'>&quot;the.generated.certificate.request&quot;</span>, <span class='string'>&quot;Den genererade certifikatbeg\u00E4ran&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum433" class="linenum-cell" data-linenum="433" href="#linenum433"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>        {<span class='string'>&quot;the.certificate&quot;</span>, <span class='string'>&quot;Certifikatet&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum434" class="linenum-cell" data-linenum="434" href="#linenum434"></a></td>
-<td><pre><span class='comment'>     * Returns the contents of this &lt;code&gt;ResourceBundle&lt;/code&gt;.<span class='comment'></pre></td>
+<td><pre>        {<span class='string'>&quot;the.crl&quot;</span>, <span class='string'>&quot;Listan \u00F6ver \u00E5terkallade certifikat&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum435" class="linenum-cell" data-linenum="435" href="#linenum435"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre>        {<span class='string'>&quot;the.tsa.certificate&quot;</span>, <span class='string'>&quot;TSA-certifikatet&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum436" class="linenum-cell" data-linenum="436" href="#linenum436"></a></td>
-<td><pre><span class='comment'>     * &lt;p&gt;<span class='comment'></pre></td>
+<td><pre>        {<span class='string'>&quot;the.input&quot;</span>, <span class='string'>&quot;Indata&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum437" class="linenum-cell" data-linenum="437" href="#linenum437"></a></td>
-<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+<td><pre>        {<span class='string'>&quot;reply&quot;</span>, <span class='string'>&quot;Svar&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum438" class="linenum-cell" data-linenum="438" href="#linenum438"></a></td>
-<td><pre><span class='comment'>     * @return the contents of this &lt;code&gt;ResourceBundle&lt;/code&gt;.<span class='comment'></pre></td>
+<td><pre>        {<span class='string'>&quot;one.in.many&quot;</span>, <span class='string'>&quot;%1$s #%2$d av %3$d&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum439" class="linenum-cell" data-linenum="439" href="#linenum439"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre>        {<span class='string'>&quot;alias.in.cacerts&quot;</span>, <span class='string'>&quot;Utf\u00E4rdaren &lt;%s&gt; i cacerts&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum440" class="linenum-cell" data-linenum="440" href="#linenum440"></a></td>
-<td><pre>    @Override</pre></td>
+<td><pre>        {<span class='string'>&quot;alias.in.keystore&quot;</span>, <span class='string'>&quot;Utf\u00E4rdaren &lt;%s&gt;&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum441" class="linenum-cell" data-linenum="441" href="#linenum441"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[][] getContents() {</pre></td>
+<td><pre>        {<span class='string'>&quot;with.weak&quot;</span>, <span class='string'>&quot;%s (svag)&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum442" class="linenum-cell" data-linenum="442" href="#linenum442"></a></td>
-<td><pre>        return <a class="variable" href="#linenum35">contents</a>;</pre></td>
+<td><pre>        {<span class='string'>&quot;key.bit&quot;</span>, <span class='string'>&quot;%1$d-bitars %2$s-nyckel&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum443" class="linenum-cell" data-linenum="443" href="#linenum443"></a></td>
-<td><pre>    }</pre></td>
+<td><pre>        {<span class='string'>&quot;key.bit.weak&quot;</span>, <span class='string'>&quot;%1$d-bitars %2$s-nyckel (svag)&quot;</span>},</pre></td>
 </tr>
 <tr>
 <td><a id="linenum444" class="linenum-cell" data-linenum="444" href="#linenum444"></a></td>
+<td><pre>        {<span class='string'>&quot;.PATTERN.printX509Cert.with.weak&quot;</span>,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum445" class="linenum-cell" data-linenum="445" href="#linenum445"></a></td>
+<td><pre>                <span class='string'>&quot;\u00C4gare: {0}\nUtf\u00E4rdare: {1}\nSerienummer: {2}\nGiltigt fr\u00E5n: {3}, till: {4}\nCertifikatfingeravtryck:\n\t MD5:  {5}\n\t SHA1: {6}\n\t SHA256: {7}\nSignaturalgoritmnamn: {8}\nAlgoritm f\u00F6r \u00E4mne f\u00F6r \u00F6ppen nyckel: {9}\nVersion: {10}&quot;</span>},</pre></td>
+</tr>
+<tr>
+<td><a id="linenum446" class="linenum-cell" data-linenum="446" href="#linenum446"></a></td>
+<td><pre>        {<span class='string'>&quot;PKCS.10.with.weak&quot;</span>,</pre></td>
+</tr>
+<tr>
+<td><a id="linenum447" class="linenum-cell" data-linenum="447" href="#linenum447"></a></td>
+<td><pre>                <span class='string'>&quot;PKCS #10-certifikatbeg\u00E4ran (version 1.0)\n\u00C4mne: %1$s\nFormat: %2$s\n\u00D6ppen nyckel: %3$s\nSignaturalgoritm: %4$s\n&quot;</span>},</pre></td>
+</tr>
+<tr>
+<td><a id="linenum448" class="linenum-cell" data-linenum="448" href="#linenum448"></a></td>
+<td><pre>        {<span class='string'>&quot;verified.by.s.in.s.weak&quot;</span>, <span class='string'>&quot;Verifierades av %1$s i %2$s med en %3$s&quot;</span>},</pre></td>
+</tr>
+<tr>
+<td><a id="linenum449" class="linenum-cell" data-linenum="449" href="#linenum449"></a></td>
+<td><pre>        {<span class='string'>&quot;whose.sigalg.risk&quot;</span>, <span class='string'>&quot;%1$s anv\u00E4nder signaturalgoritmen %2$s, vilket anses utg\u00F6ra en s\u00E4kerhetsrisk.&quot;</span>},</pre></td>
+</tr>
+<tr>
+<td><a id="linenum450" class="linenum-cell" data-linenum="450" href="#linenum450"></a></td>
+<td><pre>        {<span class='string'>&quot;whose.key.risk&quot;</span>, <span class='string'>&quot;%1$s anv\u00E4nder en %2$s, vilket anses utg\u00F6ra en s\u00E4kerhetsrisk.&quot;</span>},</pre></td>
+</tr>
+<tr>
+<td><a id="linenum451" class="linenum-cell" data-linenum="451" href="#linenum451"></a></td>
+<td><pre>        {<span class='string'>&quot;jks.storetype.warning&quot;</span>, <span class='string'>&quot;Nyckellagret %1$s anv\u00E4nder ett propriet\u00E4rt format. Du b\u00F6r migrera till PKCS12, som \u00E4r ett branschstandardformat, med \&quot;keytool -importkeystore -srckeystore %2$s -destkeystore %2$s -deststoretype pkcs12\&quot;.&quot;</span>},</pre></td>
+</tr>
+<tr>
+<td><a id="linenum452" class="linenum-cell" data-linenum="452" href="#linenum452"></a></td>
+<td><pre>        {<span class='string'>&quot;migrate.keystore.warning&quot;</span>, <span class='string'>&quot;Migrerade \&quot;%1$s\&quot; till %4$s. Nyckellagret %2$s s\u00E4kerhetskopierades som \&quot;%3$s\&quot;.&quot;</span>},</pre></td>
+</tr>
+<tr>
+<td><a id="linenum453" class="linenum-cell" data-linenum="453" href="#linenum453"></a></td>
+<td><pre>        {<span class='string'>&quot;backup.keystore.warning&quot;</span>, <span class='string'>&quot;Det ursprungliga nyckellagret, \&quot;%1$s\&quot;, s\u00E4kerhetskopieras som \&quot;%3$s\&quot;...&quot;</span>},</pre></td>
+</tr>
+<tr>
+<td><a id="linenum454" class="linenum-cell" data-linenum="454" href="#linenum454"></a></td>
+<td><pre>        {<span class='string'>&quot;importing.keystore.status&quot;</span>, <span class='string'>&quot;Importerar nyckellagret %1$s till %2$s...&quot;</span>},</pre></td>
+</tr>
+<tr>
+<td><a id="linenum455" class="linenum-cell" data-linenum="455" href="#linenum455"></a></td>
+<td><pre>    };</pre></td>
+</tr>
+<tr>
+<td><a id="linenum456" class="linenum-cell" data-linenum="456" href="#linenum456"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum457" class="linenum-cell" data-linenum="457" href="#linenum457"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum458" class="linenum-cell" data-linenum="458" href="#linenum458"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum459" class="linenum-cell" data-linenum="459" href="#linenum459"></a></td>
+<td><pre><span class='comment'>     * Returns the contents of this &lt;code&gt;ResourceBundle&lt;/code&gt;.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum460" class="linenum-cell" data-linenum="460" href="#linenum460"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum461" class="linenum-cell" data-linenum="461" href="#linenum461"></a></td>
+<td><pre><span class='comment'>     * &lt;p&gt;<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum462" class="linenum-cell" data-linenum="462" href="#linenum462"></a></td>
+<td><pre><span class='comment'>     *<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum463" class="linenum-cell" data-linenum="463" href="#linenum463"></a></td>
+<td><pre><span class='comment'>     * @return the contents of this &lt;code&gt;ResourceBundle&lt;/code&gt;.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum464" class="linenum-cell" data-linenum="464" href="#linenum464"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum465" class="linenum-cell" data-linenum="465" href="#linenum465"></a></td>
+<td><pre>    @Override</pre></td>
+</tr>
+<tr>
+<td><a id="linenum466" class="linenum-cell" data-linenum="466" href="#linenum466"></a></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/java/lang/Object.html#linenum37">Object</a>[][] getContents() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum467" class="linenum-cell" data-linenum="467" href="#linenum467"></a></td>
+<td><pre>        return <a class="variable" href="#linenum35">contents</a>;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum468" class="linenum-cell" data-linenum="468" href="#linenum468"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum469" class="linenum-cell" data-linenum="469" href="#linenum469"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

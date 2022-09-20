@@ -184,11 +184,11 @@
 </tr>
 <tr>
 <td><a id="linenum45" class="linenum-cell" data-linenum="45" href="#linenum45"></a></td>
-<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/Realm.html#linenum49">Realm</a> realm;</pre></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/Realm.html#linenum48">Realm</a> realm;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum46" class="linenum-cell" data-linenum="46" href="#linenum46"></a></td>
-<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/KerberosTime.html#linenum67">KerberosTime</a> timestamp;</pre></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/KerberosTime.html#linenum66">KerberosTime</a> timestamp;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum47" class="linenum-cell" data-linenum="47" href="#linenum47"></a></td>
@@ -212,7 +212,7 @@
 </tr>
 <tr>
 <td><a id="linenum52" class="linenum-cell" data-linenum="52" href="#linenum52"></a></td>
-<td><pre>    public KeyTabEntry (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum59">PrincipalName</a> new_service, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/Realm.html#linenum49">Realm</a> new_realm, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/KerberosTime.html#linenum67">KerberosTime</a> new_time,</pre></td>
+<td><pre>    public KeyTabEntry (<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum59">PrincipalName</a> new_service, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/Realm.html#linenum48">Realm</a> new_realm, <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/KerberosTime.html#linenum66">KerberosTime</a> new_time,</pre></td>
 </tr>
 <tr>
 <td><a id="linenum53" class="linenum-cell" data-linenum="53" href="#linenum53"></a></td>
@@ -316,7 +316,7 @@
 </tr>
 <tr>
 <td><a id="linenum78" class="linenum-cell" data-linenum="78" href="#linenum78"></a></td>
-<td><pre>            <a class="variable" href="#linenum76">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum418">append</a>(String.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2965">format</a>(<span class='string'>&quot;%02x&quot;</span>, <a class="variable" href="#linenum49">keyblock</a>[<a class="variable" href="#linenum77">i</a>]&amp;0xff));</pre></td>
+<td><pre>            <a class="variable" href="#linenum76">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum260">append</a>(String.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum2939">format</a>(<span class='string'>&quot;%02x&quot;</span>, <a class="variable" href="#linenum49">keyblock</a>[<a class="variable" href="#linenum77">i</a>]&amp;0xff));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
@@ -324,7 +324,7 @@
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre>        return <a class="variable" href="#linenum76">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum668">toString</a>();</pre></td>
+<td><pre>        return <a class="variable" href="#linenum76">sb</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/lang/StringBuffer.html#linenum666">toString</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
@@ -340,7 +340,7 @@
 </tr>
 <tr>
 <td><a id="linenum84" class="linenum-cell" data-linenum="84" href="#linenum84"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>[] names = <a class="variable" href="#linenum44">service</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum501">getNameStrings</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a>[] names = <a class="variable" href="#linenum44">service</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/PrincipalName.html#linenum518">getNameStrings</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
@@ -380,7 +380,7 @@
 </tr>
 <tr>
 <td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
-<td><pre>            <a class="variable" href="#linenum92">realmLen</a> = <a class="variable" href="#linenum45">realm</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/Realm.html#linenum107">toString</a>().getBytes(<span class='string'>&quot;8859_1&quot;</span>).length;</pre></td>
+<td><pre>            <a class="variable" href="#linenum92">realmLen</a> = <a class="variable" href="#linenum45">realm</a>.<a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/Realm.html#linenum112">toString</a>().getBytes(<span class='string'>&quot;8859_1&quot;</span>).length;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
@@ -440,7 +440,7 @@
 </tr>
 <tr>
 <td><a id="linenum109" class="linenum-cell" data-linenum="109" href="#linenum109"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/KerberosTime.html#linenum67">KerberosTime</a> getTimeStamp() {</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/sun/security/krb5/internal/KerberosTime.html#linenum66">KerberosTime</a> getTimeStamp() {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum110" class="linenum-cell" data-linenum="110" href="#linenum110"></a></td>

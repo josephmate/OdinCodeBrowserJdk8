@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 2006, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 2006, 2015, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -120,30 +120,58 @@
 </tr>
 <tr>
 <td><a id="linenum29" class="linenum-cell" data-linenum="29" href="#linenum29"></a></td>
-<td><pre></pre></td>
+<td><pre>import java.net.InetAddress;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum30" class="linenum-cell" data-linenum="30" href="#linenum30"></a></td>
-<td><pre>public interface JavaNetAccess {</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum31" class="linenum-cell" data-linenum="31" href="#linenum31"></a></td>
-<td><pre>    <span class='comment'>/**</pre></td>
+<td><pre>public interface JavaNetAccess {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum32" class="linenum-cell" data-linenum="32" href="#linenum32"></a></td>
-<td><pre><span class='comment'>     * return the URLClassPath belonging to the given loader<span class='comment'></pre></td>
+<td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
 <td><a id="linenum33" class="linenum-cell" data-linenum="33" href="#linenum33"></a></td>
-<td><pre>     */</span></pre></td>
+<td><pre><span class='comment'>     * return the URLClassPath belonging to the given loader<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum34" class="linenum-cell" data-linenum="34" href="#linenum34"></a></td>
-<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/sun/misc/URLClassPath.html#linenum62">URLClassPath</a> getURLClassPath (<a class="type" href="/OdinCodeBrowserJdk8/java/net/URLClassLoader.html#linenum73">URLClassLoader</a> u);</pre></td>
+<td><pre>     */</span></pre></td>
 </tr>
 <tr>
 <td><a id="linenum35" class="linenum-cell" data-linenum="35" href="#linenum35"></a></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/sun/misc/URLClassPath.html#linenum66">URLClassPath</a> getURLClassPath (<a class="type" href="/OdinCodeBrowserJdk8/java/net/URLClassLoader.html#linenum74">URLClassLoader</a> u);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum36" class="linenum-cell" data-linenum="36" href="#linenum36"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum37" class="linenum-cell" data-linenum="37" href="#linenum37"></a></td>
+<td><pre>    <span class='comment'>/**</pre></td>
+</tr>
+<tr>
+<td><a id="linenum38" class="linenum-cell" data-linenum="38" href="#linenum38"></a></td>
+<td><pre><span class='comment'>     * Return the original application specified hostname of<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum39" class="linenum-cell" data-linenum="39" href="#linenum39"></a></td>
+<td><pre><span class='comment'>     * the given InetAddress object.<span class='comment'></pre></td>
+</tr>
+<tr>
+<td><a id="linenum40" class="linenum-cell" data-linenum="40" href="#linenum40"></a></td>
+<td><pre>     */</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum41" class="linenum-cell" data-linenum="41" href="#linenum41"></a></td>
+<td><pre>    <a class="type" href="/OdinCodeBrowserJdk8/java/lang/String.html#linenum111">String</a> getOriginalHostName(<a class="type" href="/OdinCodeBrowserJdk8/java/net/InetAddress.html#linenum189">InetAddress</a> ia);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum42" class="linenum-cell" data-linenum="42" href="#linenum42"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

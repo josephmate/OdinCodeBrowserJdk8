@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a id="linenum2" class="linenum-cell" data-linenum="2" href="#linenum2"></a></td>
-<td><pre><span class='comment'> * Copyright (c) 1999, 2004, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
+<td><pre><span class='comment'> * Copyright (c) 1999, 2016, Oracle and/or its affiliates. All rights reserved.<span class='comment'></pre></td>
 </tr>
 <tr>
 <td><a id="linenum3" class="linenum-cell" data-linenum="3" href="#linenum3"></a></td>
@@ -460,7 +460,7 @@
 </tr>
 <tr>
 <td><a id="linenum114" class="linenum-cell" data-linenum="114" href="#linenum114"></a></td>
-<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Track.html#linenum64">Track</a>&gt; tracks = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum83">Vector</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Track.html#linenum64">Track</a>&gt;();</pre></td>
+<td><pre>    protected <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Track.html#linenum64">Track</a>&gt; tracks = new <a class="type" href="/OdinCodeBrowserJdk8/java/util/Vector.html#linenum86">Vector</a>&lt;<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Track.html#linenum64">Track</a>&gt;();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum115" class="linenum-cell" data-linenum="115" href="#linenum115"></a></td>
@@ -1080,11 +1080,11 @@
 </tr>
 <tr>
 <td><a id="linenum269" class="linenum-cell" data-linenum="269" href="#linenum269"></a></td>
-<td><pre></pre></td>
+<td><pre>        return <a class="variable" href="#linenum114">tracks</a>.removeElement(<a class="variable" href="#linenum268">track</a>);</pre></td>
 </tr>
 <tr>
 <td><a id="linenum270" class="linenum-cell" data-linenum="270" href="#linenum270"></a></td>
-<td><pre>        synchronized(<a class="variable" href="#linenum114">tracks</a>) {</pre></td>
+<td><pre>    }</pre></td>
 </tr>
 <tr>
 <td><a id="linenum271" class="linenum-cell" data-linenum="271" href="#linenum271"></a></td>
@@ -1092,59 +1092,59 @@
 </tr>
 <tr>
 <td><a id="linenum272" class="linenum-cell" data-linenum="272" href="#linenum272"></a></td>
-<td><pre>            return <a class="variable" href="#linenum114">tracks</a>.removeElement(<a class="variable" href="#linenum268">track</a>);</pre></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum273" class="linenum-cell" data-linenum="273" href="#linenum273"></a></td>
-<td><pre>        }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
+<td><a id="linenum274" class="linenum-cell" data-linenum="274" href="#linenum274"></a></td>
 <td><pre><span class='comment'>     * Obtains an array containing all the tracks in this sequence.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
+<td><a id="linenum275" class="linenum-cell" data-linenum="275" href="#linenum275"></a></td>
 <td><pre><span class='comment'>     * If the sequence contains no tracks, an array of length 0 is returned.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
+<td><a id="linenum276" class="linenum-cell" data-linenum="276" href="#linenum276"></a></td>
 <td><pre><span class='comment'>     * @return the array of tracks<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
+<td><a id="linenum277" class="linenum-cell" data-linenum="277" href="#linenum277"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum282" class="linenum-cell" data-linenum="282" href="#linenum282"></a></td>
+<td><a id="linenum278" class="linenum-cell" data-linenum="278" href="#linenum278"></a></td>
 <td><pre><span class='comment'>     * @see #createTrack<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
+<td><a id="linenum279" class="linenum-cell" data-linenum="279" href="#linenum279"></a></td>
 <td><pre><span class='comment'>     * @see #deleteTrack<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
+<td><a id="linenum280" class="linenum-cell" data-linenum="280" href="#linenum280"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum285" class="linenum-cell" data-linenum="285" href="#linenum285"></a></td>
+<td><a id="linenum281" class="linenum-cell" data-linenum="281" href="#linenum281"></a></td>
 <td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Track.html#linenum64">Track</a>[] getTracks() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum282" class="linenum-cell" data-linenum="282" href="#linenum282"></a></td>
+<td><pre>        <span class='comment'>// Creation of the non-empty array will be synchronized inside toArray()</span></pre></td>
+</tr>
+<tr>
+<td><a id="linenum283" class="linenum-cell" data-linenum="283" href="#linenum283"></a></td>
+<td><pre>        return <a class="variable" href="#linenum114">tracks</a>.toArray(new <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Track.html#linenum64">Track</a>[0]);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum284" class="linenum-cell" data-linenum="284" href="#linenum284"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum285" class="linenum-cell" data-linenum="285" href="#linenum285"></a></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum286" class="linenum-cell" data-linenum="286" href="#linenum286"></a></td>
@@ -1152,39 +1152,39 @@
 </tr>
 <tr>
 <td><a id="linenum287" class="linenum-cell" data-linenum="287" href="#linenum287"></a></td>
-<td><pre>        return (<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Track.html#linenum64">Track</a>[]) <a class="variable" href="#linenum114">tracks</a>.toArray(new <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Track.html#linenum64">Track</a>[<a class="variable" href="#linenum114">tracks</a>.size()]);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum288" class="linenum-cell" data-linenum="288" href="#linenum288"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum289" class="linenum-cell" data-linenum="289" href="#linenum289"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum290" class="linenum-cell" data-linenum="290" href="#linenum290"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum291" class="linenum-cell" data-linenum="291" href="#linenum291"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum292" class="linenum-cell" data-linenum="292" href="#linenum292"></a></td>
+<td><a id="linenum288" class="linenum-cell" data-linenum="288" href="#linenum288"></a></td>
 <td><pre><span class='comment'>     * Obtains the duration of this sequence, expressed in microseconds.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum293" class="linenum-cell" data-linenum="293" href="#linenum293"></a></td>
+<td><a id="linenum289" class="linenum-cell" data-linenum="289" href="#linenum289"></a></td>
 <td><pre><span class='comment'>     * @return this sequence's duration in microseconds.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum294" class="linenum-cell" data-linenum="294" href="#linenum294"></a></td>
+<td><a id="linenum290" class="linenum-cell" data-linenum="290" href="#linenum290"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum295" class="linenum-cell" data-linenum="295" href="#linenum295"></a></td>
+<td><a id="linenum291" class="linenum-cell" data-linenum="291" href="#linenum291"></a></td>
 <td><pre>    public long getMicrosecondLength() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum292" class="linenum-cell" data-linenum="292" href="#linenum292"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum293" class="linenum-cell" data-linenum="293" href="#linenum293"></a></td>
+<td><pre>        return com.sun.media.sound.MidiUtils.tick2microsecond(this, <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Sequence.html#linenum304">getTickLength</a>(), null);</pre></td>
+</tr>
+<tr>
+<td><a id="linenum294" class="linenum-cell" data-linenum="294" href="#linenum294"></a></td>
+<td><pre>    }</pre></td>
+</tr>
+<tr>
+<td><a id="linenum295" class="linenum-cell" data-linenum="295" href="#linenum295"></a></td>
+<td><pre></pre></td>
 </tr>
 <tr>
 <td><a id="linenum296" class="linenum-cell" data-linenum="296" href="#linenum296"></a></td>
@@ -1192,51 +1192,51 @@
 </tr>
 <tr>
 <td><a id="linenum297" class="linenum-cell" data-linenum="297" href="#linenum297"></a></td>
-<td><pre>        return com.sun.media.sound.MidiUtils.tick2microsecond(this, <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Sequence.html#linenum308">getTickLength</a>(), null);</pre></td>
-</tr>
-<tr>
-<td><a id="linenum298" class="linenum-cell" data-linenum="298" href="#linenum298"></a></td>
-<td><pre>    }</pre></td>
-</tr>
-<tr>
-<td><a id="linenum299" class="linenum-cell" data-linenum="299" href="#linenum299"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum300" class="linenum-cell" data-linenum="300" href="#linenum300"></a></td>
-<td><pre></pre></td>
-</tr>
-<tr>
-<td><a id="linenum301" class="linenum-cell" data-linenum="301" href="#linenum301"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum302" class="linenum-cell" data-linenum="302" href="#linenum302"></a></td>
+<td><a id="linenum298" class="linenum-cell" data-linenum="298" href="#linenum298"></a></td>
 <td><pre><span class='comment'>     * Obtains the duration of this sequence, expressed in MIDI ticks.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum303" class="linenum-cell" data-linenum="303" href="#linenum303"></a></td>
+<td><a id="linenum299" class="linenum-cell" data-linenum="299" href="#linenum299"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
+<td><a id="linenum300" class="linenum-cell" data-linenum="300" href="#linenum300"></a></td>
 <td><pre><span class='comment'>     * @return this sequence's length in ticks<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum305" class="linenum-cell" data-linenum="305" href="#linenum305"></a></td>
+<td><a id="linenum301" class="linenum-cell" data-linenum="301" href="#linenum301"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum306" class="linenum-cell" data-linenum="306" href="#linenum306"></a></td>
+<td><a id="linenum302" class="linenum-cell" data-linenum="302" href="#linenum302"></a></td>
 <td><pre><span class='comment'>     * @see #getMicrosecondLength<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum307" class="linenum-cell" data-linenum="307" href="#linenum307"></a></td>
+<td><a id="linenum303" class="linenum-cell" data-linenum="303" href="#linenum303"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
+<td><a id="linenum304" class="linenum-cell" data-linenum="304" href="#linenum304"></a></td>
 <td><pre>    public long getTickLength() {</pre></td>
+</tr>
+<tr>
+<td><a id="linenum305" class="linenum-cell" data-linenum="305" href="#linenum305"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum306" class="linenum-cell" data-linenum="306" href="#linenum306"></a></td>
+<td><pre>        long length = 0;</pre></td>
+</tr>
+<tr>
+<td><a id="linenum307" class="linenum-cell" data-linenum="307" href="#linenum307"></a></td>
+<td><pre></pre></td>
+</tr>
+<tr>
+<td><a id="linenum308" class="linenum-cell" data-linenum="308" href="#linenum308"></a></td>
+<td><pre>        synchronized(<a class="variable" href="#linenum114">tracks</a>) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum309" class="linenum-cell" data-linenum="309" href="#linenum309"></a></td>
@@ -1244,126 +1244,110 @@
 </tr>
 <tr>
 <td><a id="linenum310" class="linenum-cell" data-linenum="310" href="#linenum310"></a></td>
-<td><pre>        long length = 0;</pre></td>
+<td><pre>            for(int i=0; <a class="variable" href="#linenum310">i</a>&lt;<a class="variable" href="#linenum114">tracks</a>.size(); <a class="variable" href="#linenum310">i</a>++ ) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum311" class="linenum-cell" data-linenum="311" href="#linenum311"></a></td>
-<td><pre></pre></td>
+<td><pre>                long temp = ((<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Track.html#linenum64">Track</a>)<a class="variable" href="#linenum114">tracks</a>.elementAt(<a class="variable" href="#linenum310">i</a>)).ticks();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum312" class="linenum-cell" data-linenum="312" href="#linenum312"></a></td>
-<td><pre>        synchronized(<a class="variable" href="#linenum114">tracks</a>) {</pre></td>
+<td><pre>                if( <a class="variable" href="#linenum311">temp</a>&gt;<a class="variable" href="#linenum306">length</a> ) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum313" class="linenum-cell" data-linenum="313" href="#linenum313"></a></td>
-<td><pre></pre></td>
+<td><pre>                    <a class="variable" href="#linenum306">length</a> = <a class="variable" href="#linenum311">temp</a>;</pre></td>
 </tr>
 <tr>
 <td><a id="linenum314" class="linenum-cell" data-linenum="314" href="#linenum314"></a></td>
-<td><pre>            for(int i=0; <a class="variable" href="#linenum314">i</a>&lt;<a class="variable" href="#linenum114">tracks</a>.size(); <a class="variable" href="#linenum314">i</a>++ ) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum315" class="linenum-cell" data-linenum="315" href="#linenum315"></a></td>
-<td><pre>                long temp = ((<a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Track.html#linenum64">Track</a>)<a class="variable" href="#linenum114">tracks</a>.elementAt(<a class="variable" href="#linenum314">i</a>)).ticks();</pre></td>
-</tr>
-<tr>
-<td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
-<td><pre>                if( <a class="variable" href="#linenum315">temp</a>&gt;<a class="variable" href="#linenum310">length</a> ) {</pre></td>
-</tr>
-<tr>
-<td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
-<td><pre>                    <a class="variable" href="#linenum310">length</a> = <a class="variable" href="#linenum315">temp</a>;</pre></td>
-</tr>
-<tr>
-<td><a id="linenum318" class="linenum-cell" data-linenum="318" href="#linenum318"></a></td>
 <td><pre>                }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum319" class="linenum-cell" data-linenum="319" href="#linenum319"></a></td>
+<td><a id="linenum315" class="linenum-cell" data-linenum="315" href="#linenum315"></a></td>
 <td><pre>            }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum320" class="linenum-cell" data-linenum="320" href="#linenum320"></a></td>
-<td><pre>            return <a class="variable" href="#linenum310">length</a>;</pre></td>
+<td><a id="linenum316" class="linenum-cell" data-linenum="316" href="#linenum316"></a></td>
+<td><pre>            return <a class="variable" href="#linenum306">length</a>;</pre></td>
 </tr>
 <tr>
-<td><a id="linenum321" class="linenum-cell" data-linenum="321" href="#linenum321"></a></td>
+<td><a id="linenum317" class="linenum-cell" data-linenum="317" href="#linenum317"></a></td>
 <td><pre>        }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum322" class="linenum-cell" data-linenum="322" href="#linenum322"></a></td>
+<td><a id="linenum318" class="linenum-cell" data-linenum="318" href="#linenum318"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum323" class="linenum-cell" data-linenum="323" href="#linenum323"></a></td>
+<td><a id="linenum319" class="linenum-cell" data-linenum="319" href="#linenum319"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum324" class="linenum-cell" data-linenum="324" href="#linenum324"></a></td>
+<td><a id="linenum320" class="linenum-cell" data-linenum="320" href="#linenum320"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum325" class="linenum-cell" data-linenum="325" href="#linenum325"></a></td>
+<td><a id="linenum321" class="linenum-cell" data-linenum="321" href="#linenum321"></a></td>
 <td><pre>    <span class='comment'>/**</pre></td>
 </tr>
 <tr>
-<td><a id="linenum326" class="linenum-cell" data-linenum="326" href="#linenum326"></a></td>
+<td><a id="linenum322" class="linenum-cell" data-linenum="322" href="#linenum322"></a></td>
 <td><pre><span class='comment'>     * Obtains a list of patches referenced in this sequence.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum327" class="linenum-cell" data-linenum="327" href="#linenum327"></a></td>
+<td><a id="linenum323" class="linenum-cell" data-linenum="323" href="#linenum323"></a></td>
 <td><pre><span class='comment'>     * This patch list may be used to load the required<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum328" class="linenum-cell" data-linenum="328" href="#linenum328"></a></td>
+<td><a id="linenum324" class="linenum-cell" data-linenum="324" href="#linenum324"></a></td>
 <td><pre><span class='comment'>     * &lt;code&gt;{@link Instrument}&lt;/code&gt; objects<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum329" class="linenum-cell" data-linenum="329" href="#linenum329"></a></td>
+<td><a id="linenum325" class="linenum-cell" data-linenum="325" href="#linenum325"></a></td>
 <td><pre><span class='comment'>     * into a &lt;code&gt;{@link Synthesizer}&lt;/code&gt;.<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum330" class="linenum-cell" data-linenum="330" href="#linenum330"></a></td>
+<td><a id="linenum326" class="linenum-cell" data-linenum="326" href="#linenum326"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum331" class="linenum-cell" data-linenum="331" href="#linenum331"></a></td>
+<td><a id="linenum327" class="linenum-cell" data-linenum="327" href="#linenum327"></a></td>
 <td><pre><span class='comment'>     * @return an array of &lt;code&gt;{@link Patch}&lt;/code&gt; objects used in this sequence<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
+<td><a id="linenum328" class="linenum-cell" data-linenum="328" href="#linenum328"></a></td>
 <td><pre><span class='comment'>     *<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
+<td><a id="linenum329" class="linenum-cell" data-linenum="329" href="#linenum329"></a></td>
 <td><pre><span class='comment'>     * @see Synthesizer#loadInstruments(Soundbank, Patch[])<span class='comment'></pre></td>
 </tr>
 <tr>
-<td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
+<td><a id="linenum330" class="linenum-cell" data-linenum="330" href="#linenum330"></a></td>
 <td><pre>     */</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum335" class="linenum-cell" data-linenum="335" href="#linenum335"></a></td>
+<td><a id="linenum331" class="linenum-cell" data-linenum="331" href="#linenum331"></a></td>
 <td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Patch.html#linenum59">Patch</a>[] getPatchList() {</pre></td>
 </tr>
 <tr>
-<td><a id="linenum336" class="linenum-cell" data-linenum="336" href="#linenum336"></a></td>
+<td><a id="linenum332" class="linenum-cell" data-linenum="332" href="#linenum332"></a></td>
 <td><pre></pre></td>
 </tr>
 <tr>
-<td><a id="linenum337" class="linenum-cell" data-linenum="337" href="#linenum337"></a></td>
+<td><a id="linenum333" class="linenum-cell" data-linenum="333" href="#linenum333"></a></td>
 <td><pre>        <span class='comment'>// $$kk: 04.09.99: need to implement!!</span></pre></td>
 </tr>
 <tr>
-<td><a id="linenum338" class="linenum-cell" data-linenum="338" href="#linenum338"></a></td>
+<td><a id="linenum334" class="linenum-cell" data-linenum="334" href="#linenum334"></a></td>
 <td><pre>        return new <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/midi/Patch.html#linenum59">Patch</a>[0];</pre></td>
 </tr>
 <tr>
-<td><a id="linenum339" class="linenum-cell" data-linenum="339" href="#linenum339"></a></td>
+<td><a id="linenum335" class="linenum-cell" data-linenum="335" href="#linenum335"></a></td>
 <td><pre>    }</pre></td>
 </tr>
 <tr>
-<td><a id="linenum340" class="linenum-cell" data-linenum="340" href="#linenum340"></a></td>
+<td><a id="linenum336" class="linenum-cell" data-linenum="336" href="#linenum336"></a></td>
 <td><pre>}</pre></td>
 </tr>
 </table>

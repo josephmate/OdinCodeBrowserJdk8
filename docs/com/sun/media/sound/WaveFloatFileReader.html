@@ -268,7 +268,7 @@
 </tr>
 <tr>
 <td><a id="linenum66" class="linenum-cell" data-linenum="66" href="#linenum66"></a></td>
-<td><pre>        if (!<a class="variable" href="#linenum65">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum108">getFormat</a>().equals(<span class='string'>&quot;RIFF&quot;</span>))</pre></td>
+<td><pre>        if (!<a class="variable" href="#linenum65">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum109">getFormat</a>().equals(<span class='string'>&quot;RIFF&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum67" class="linenum-cell" data-linenum="67" href="#linenum67"></a></td>
@@ -276,7 +276,7 @@
 </tr>
 <tr>
 <td><a id="linenum68" class="linenum-cell" data-linenum="68" href="#linenum68"></a></td>
-<td><pre>        if (!<a class="variable" href="#linenum65">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum112">getType</a>().equals(<span class='string'>&quot;WAVE&quot;</span>))</pre></td>
+<td><pre>        if (!<a class="variable" href="#linenum65">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum113">getType</a>().equals(<span class='string'>&quot;WAVE&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum69" class="linenum-cell" data-linenum="69" href="#linenum69"></a></td>
@@ -320,11 +320,11 @@
 </tr>
 <tr>
 <td><a id="linenum79" class="linenum-cell" data-linenum="79" href="#linenum79"></a></td>
-<td><pre>        while (<a class="variable" href="#linenum65">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum93">hasNextChunk</a>()) {</pre></td>
+<td><pre>        while (<a class="variable" href="#linenum65">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum94">hasNextChunk</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum80" class="linenum-cell" data-linenum="80" href="#linenum80"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum36">RIFFReader</a> chunk = <a class="variable" href="#linenum65">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum99">nextChunk</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum36">RIFFReader</a> chunk = <a class="variable" href="#linenum65">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum100">nextChunk</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum81" class="linenum-cell" data-linenum="81" href="#linenum81"></a></td>
@@ -332,7 +332,7 @@
 </tr>
 <tr>
 <td><a id="linenum82" class="linenum-cell" data-linenum="82" href="#linenum82"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum108">getFormat</a>().equals(<span class='string'>&quot;fmt &quot;</span>)) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum109">getFormat</a>().equals(<span class='string'>&quot;fmt &quot;</span>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum83" class="linenum-cell" data-linenum="83" href="#linenum83"></a></td>
@@ -344,7 +344,7 @@
 </tr>
 <tr>
 <td><a id="linenum85" class="linenum-cell" data-linenum="85" href="#linenum85"></a></td>
-<td><pre>                int format = <a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum299">readUnsignedShort</a>();</pre></td>
+<td><pre>                int format = <a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum305">readUnsignedShort</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum86" class="linenum-cell" data-linenum="86" href="#linenum86"></a></td>
@@ -356,23 +356,23 @@
 </tr>
 <tr>
 <td><a id="linenum88" class="linenum-cell" data-linenum="88" href="#linenum88"></a></td>
-<td><pre>                <a class="variable" href="#linenum74">channels</a> = <a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum299">readUnsignedShort</a>();</pre></td>
+<td><pre>                <a class="variable" href="#linenum74">channels</a> = <a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum305">readUnsignedShort</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum89" class="linenum-cell" data-linenum="89" href="#linenum89"></a></td>
-<td><pre>                <a class="variable" href="#linenum75">samplerate</a> = <a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum310">readUnsignedInt</a>();</pre></td>
+<td><pre>                <a class="variable" href="#linenum75">samplerate</a> = <a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum316">readUnsignedInt</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum90" class="linenum-cell" data-linenum="90" href="#linenum90"></a></td>
-<td><pre>                <span class='comment'>/* framerate = */</span><a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum310">readUnsignedInt</a>();</pre></td>
+<td><pre>                <span class='comment'>/* framerate = */</span><a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum316">readUnsignedInt</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum91" class="linenum-cell" data-linenum="91" href="#linenum91"></a></td>
-<td><pre>                <a class="variable" href="#linenum76">framesize</a> = <a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum299">readUnsignedShort</a>();</pre></td>
+<td><pre>                <a class="variable" href="#linenum76">framesize</a> = <a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum305">readUnsignedShort</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum92" class="linenum-cell" data-linenum="92" href="#linenum92"></a></td>
-<td><pre>                <a class="variable" href="#linenum77">bits</a> = <a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum299">readUnsignedShort</a>();</pre></td>
+<td><pre>                <a class="variable" href="#linenum77">bits</a> = <a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum305">readUnsignedShort</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum93" class="linenum-cell" data-linenum="93" href="#linenum93"></a></td>
@@ -380,7 +380,7 @@
 </tr>
 <tr>
 <td><a id="linenum94" class="linenum-cell" data-linenum="94" href="#linenum94"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum108">getFormat</a>().equals(<span class='string'>&quot;data&quot;</span>)) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum80">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum109">getFormat</a>().equals(<span class='string'>&quot;data&quot;</span>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum95" class="linenum-cell" data-linenum="95" href="#linenum95"></a></td>
@@ -480,7 +480,7 @@
 </tr>
 <tr>
 <td><a id="linenum119" class="linenum-cell" data-linenum="119" href="#linenum119"></a></td>
-<td><pre>        if (!<a class="variable" href="#linenum118">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum108">getFormat</a>().equals(<span class='string'>&quot;RIFF&quot;</span>))</pre></td>
+<td><pre>        if (!<a class="variable" href="#linenum118">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum109">getFormat</a>().equals(<span class='string'>&quot;RIFF&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum120" class="linenum-cell" data-linenum="120" href="#linenum120"></a></td>
@@ -488,7 +488,7 @@
 </tr>
 <tr>
 <td><a id="linenum121" class="linenum-cell" data-linenum="121" href="#linenum121"></a></td>
-<td><pre>        if (!<a class="variable" href="#linenum118">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum112">getType</a>().equals(<span class='string'>&quot;WAVE&quot;</span>))</pre></td>
+<td><pre>        if (!<a class="variable" href="#linenum118">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum113">getType</a>().equals(<span class='string'>&quot;WAVE&quot;</span>))</pre></td>
 </tr>
 <tr>
 <td><a id="linenum122" class="linenum-cell" data-linenum="122" href="#linenum122"></a></td>
@@ -496,15 +496,15 @@
 </tr>
 <tr>
 <td><a id="linenum123" class="linenum-cell" data-linenum="123" href="#linenum123"></a></td>
-<td><pre>        while (<a class="variable" href="#linenum118">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum93">hasNextChunk</a>()) {</pre></td>
+<td><pre>        while (<a class="variable" href="#linenum118">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum94">hasNextChunk</a>()) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum124" class="linenum-cell" data-linenum="124" href="#linenum124"></a></td>
-<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum36">RIFFReader</a> chunk = <a class="variable" href="#linenum118">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum99">nextChunk</a>();</pre></td>
+<td><pre>            <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum36">RIFFReader</a> chunk = <a class="variable" href="#linenum118">riffiterator</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum100">nextChunk</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum125" class="linenum-cell" data-linenum="125" href="#linenum125"></a></td>
-<td><pre>            if (<a class="variable" href="#linenum124">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum108">getFormat</a>().equals(<span class='string'>&quot;data&quot;</span>)) {</pre></td>
+<td><pre>            if (<a class="variable" href="#linenum124">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum109">getFormat</a>().equals(<span class='string'>&quot;data&quot;</span>)) {</pre></td>
 </tr>
 <tr>
 <td><a id="linenum126" class="linenum-cell" data-linenum="126" href="#linenum126"></a></td>
@@ -512,7 +512,7 @@
 </tr>
 <tr>
 <td><a id="linenum127" class="linenum-cell" data-linenum="127" href="#linenum127"></a></td>
-<td><pre>                        <a class="variable" href="#linenum124">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum116">getSize</a>());</pre></td>
+<td><pre>                        <a class="variable" href="#linenum124">chunk</a>.<a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/RIFFReader.html#linenum117">getSize</a>());</pre></td>
 </tr>
 <tr>
 <td><a id="linenum128" class="linenum-cell" data-linenum="128" href="#linenum128"></a></td>
@@ -536,7 +536,7 @@
 </tr>
 <tr>
 <td><a id="linenum133" class="linenum-cell" data-linenum="133" href="#linenum133"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFileFormat.html#linenum105">AudioFileFormat</a> getAudioFileFormat(<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum136">URL</a> url)</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioFileFormat.html#linenum105">AudioFileFormat</a> getAudioFileFormat(<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum142">URL</a> url)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum134" class="linenum-cell" data-linenum="134" href="#linenum134"></a></td>
@@ -544,7 +544,7 @@
 </tr>
 <tr>
 <td><a id="linenum135" class="linenum-cell" data-linenum="135" href="#linenum135"></a></td>
-<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum45">InputStream</a> stream = <a class="variable" href="#linenum133">url</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum1037">openStream</a>();</pre></td>
+<td><pre>        <a class="type" href="/OdinCodeBrowserJdk8/java/io/InputStream.html#linenum45">InputStream</a> stream = <a class="variable" href="#linenum133">url</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum1067">openStream</a>();</pre></td>
 </tr>
 <tr>
 <td><a id="linenum136" class="linenum-cell" data-linenum="136" href="#linenum136"></a></td>
@@ -556,7 +556,7 @@
 </tr>
 <tr>
 <td><a id="linenum138" class="linenum-cell" data-linenum="138" href="#linenum138"></a></td>
-<td><pre>            <a class="variable" href="#linenum136">format</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFloatFileReader.html#linenum145">getAudioFileFormat</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedInputStream.html#linenum50">BufferedInputStream</a>(<a class="variable" href="#linenum135">stream</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum136">format</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFloatFileReader.html#linenum49">getAudioFileFormat</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedInputStream.html#linenum50">BufferedInputStream</a>(<a class="variable" href="#linenum135">stream</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum139" class="linenum-cell" data-linenum="139" href="#linenum139"></a></td>
@@ -604,7 +604,7 @@
 </tr>
 <tr>
 <td><a id="linenum150" class="linenum-cell" data-linenum="150" href="#linenum150"></a></td>
-<td><pre>            <a class="variable" href="#linenum148">format</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFloatFileReader.html#linenum145">getAudioFileFormat</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedInputStream.html#linenum50">BufferedInputStream</a>(<a class="variable" href="#linenum147">stream</a>));</pre></td>
+<td><pre>            <a class="variable" href="#linenum148">format</a> = <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFloatFileReader.html#linenum49">getAudioFileFormat</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedInputStream.html#linenum50">BufferedInputStream</a>(<a class="variable" href="#linenum147">stream</a>));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum151" class="linenum-cell" data-linenum="151" href="#linenum151"></a></td>
@@ -632,7 +632,7 @@
 </tr>
 <tr>
 <td><a id="linenum157" class="linenum-cell" data-linenum="157" href="#linenum157"></a></td>
-<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioInputStream.html#linenum61">AudioInputStream</a> getAudioInputStream(<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum136">URL</a> url)</pre></td>
+<td><pre>    public <a class="type" href="/OdinCodeBrowserJdk8/javax/sound/sampled/AudioInputStream.html#linenum61">AudioInputStream</a> getAudioInputStream(<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum142">URL</a> url)</pre></td>
 </tr>
 <tr>
 <td><a id="linenum158" class="linenum-cell" data-linenum="158" href="#linenum158"></a></td>
@@ -640,7 +640,7 @@
 </tr>
 <tr>
 <td><a id="linenum159" class="linenum-cell" data-linenum="159" href="#linenum159"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFloatFileReader.html#linenum162">getAudioInputStream</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedInputStream.html#linenum50">BufferedInputStream</a>(<a class="variable" href="#linenum157">url</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum1037">openStream</a>()));</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFloatFileReader.html#linenum114">getAudioInputStream</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedInputStream.html#linenum50">BufferedInputStream</a>(<a class="variable" href="#linenum157">url</a>.<a class="type" href="/OdinCodeBrowserJdk8/java/net/URL.html#linenum1067">openStream</a>()));</pre></td>
 </tr>
 <tr>
 <td><a id="linenum160" class="linenum-cell" data-linenum="160" href="#linenum160"></a></td>
@@ -660,7 +660,7 @@
 </tr>
 <tr>
 <td><a id="linenum164" class="linenum-cell" data-linenum="164" href="#linenum164"></a></td>
-<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFloatFileReader.html#linenum162">getAudioInputStream</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedInputStream.html#linenum50">BufferedInputStream</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/io/FileInputStream.html#linenum48">FileInputStream</a>(</pre></td>
+<td><pre>        return <a class="type" href="/OdinCodeBrowserJdk8/com/sun/media/sound/WaveFloatFileReader.html#linenum114">getAudioInputStream</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/io/BufferedInputStream.html#linenum50">BufferedInputStream</a>(new <a class="type" href="/OdinCodeBrowserJdk8/java/io/FileInputStream.html#linenum48">FileInputStream</a>(</pre></td>
 </tr>
 <tr>
 <td><a id="linenum165" class="linenum-cell" data-linenum="165" href="#linenum165"></a></td>
